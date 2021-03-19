@@ -6,7 +6,7 @@ function App() {
 		<div className="App">
 			<header>
 				<nav className="navbar">
-					<img src={logo}/>
+					<img src={logo} alt="cock"/>
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Menu</a></li>
