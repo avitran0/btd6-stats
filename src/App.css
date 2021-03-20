@@ -60,6 +60,7 @@
 
 .tower-grid {
 	margin: 80px 10% 0 10%;
+	width: 80%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
