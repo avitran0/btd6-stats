@@ -1,9 +1,12 @@
 .App {
 	text-align: center;
+	min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #2E3440;
 }
 
 .navbar {
-	background-color: #141518;
+	background-color: #2E3440;
 	height: 120px;
 	display: flex;
 	justify-content: space-between;
@@ -27,11 +30,12 @@
 
 .navbar a {
 	font-size: large;
-	color: dodgerblue;
+	color: #88C0D0;
 	text-decoration: none;
 	transition: 0.3s;
+	font-size: 2em;
 }
 
 .navbar a:hover {
-	color: lightskyblue;
+	color: #5E81AC;
 }
