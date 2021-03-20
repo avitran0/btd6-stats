@@ -5,11 +5,11 @@ function App() {
 	return (
 		<div className="App">
 			<header>
-				<nav className="navbar">
+				<nav className="navbar" id="navbar">
 					<img src={logo} alt="cock"/>
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Menu</a></li>
+						<li><a href="#navbar">Home</a></li>
+						<li><a href="#navbar">Menu</a></li>
 					</ul>
 				</nav>
 			</header>
