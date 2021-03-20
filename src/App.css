@@ -48,10 +48,6 @@
 	outline: none;
 }
 
-.navbar a:visited {
-	color: #88c0d0;
-}
-
 .towers h2 {
 	font-size: 2em;
 	font-weight: 500;
@@ -69,7 +65,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: #88c0d0;
+	color: #5e81ac;
 	text-decoration: none;
 	font-size: 1.6em;
 	transition: 0.2s;
@@ -92,10 +88,6 @@
 
 .tower-grid a:hover {
 	color: #5e81ac;
-}
-
-.tower-grid a:visited {
-	color: #88c0d0;
 }
 
 .tower-grid img {
