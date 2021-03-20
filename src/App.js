@@ -37,9 +37,12 @@ function App() {
 				</header>
 				<Switch>
 					<AnimatedSwitch
-						atEnter={{ opacity: 0 }}
-						atLeave={{ opacity: 0 }}
-						atActive={{ opacity: 1 }}
+						atEnter={{ offset: -100 }}
+						atLeave={{ offset: -100 }}
+						atActive={{ offset: 0 }}
+						mapStyles={(styles) => ({
+							transform: `translateX(${styles.offset}%)`,
+						})}
 						className="switch-wrapper"
 					>
 						<Route path="/" exact component={Home} />
@@ -52,7 +55,11 @@ function App() {
 }
 
 function Home() {
-	return <div className="home"></div>;
+	return (
+		<div className="home">
+			<h2>cock and ball torture</h2>
+		</div>
+	);
 }
 
 function Towers() {
@@ -60,12 +67,24 @@ function Towers() {
 		<div className="towers">
 			<h2>Primary</h2>
 			<div className="tower-grid">
-				<Link to="/" id="dart-monkey"><img src={DartMonkey} alt="Dart Monkey"/></Link>
-				<Link to="/towers" id="boomerang-monkey"><img src={BoomerangMonkey} alt="Boomerang Monkey"/></Link>
-				<Link to="/towers" id="bomb-shooter"><img src={BombShooter} alt="Bomb Shooter"/></Link>
-				<Link to="/towers" id="tack-shooter"><img src={TackShooter} alt="Tack Shooter"/></Link>
-				<Link to="/towers" id="ice-monkey"><img src={IceMonkey} alt="Ice Monkey"/></Link>
-				<Link to="/towers" id="glue-gunner"><img src={GlueGunner} alt="Glue Gunner"/></Link>
+				<Link to="/" id="dart-monkey">
+					<img src={DartMonkey} alt="Dart Monkey" />
+				</Link>
+				<Link to="/towers" id="boomerang-monkey">
+					<img src={BoomerangMonkey} alt="Boomerang Monkey" />
+				</Link>
+				<Link to="/towers" id="bomb-shooter">
+					<img src={BombShooter} alt="Bomb Shooter" />
+				</Link>
+				<Link to="/towers" id="tack-shooter">
+					<img src={TackShooter} alt="Tack Shooter" />
+				</Link>
+				<Link to="/towers" id="ice-monkey">
+					<img src={IceMonkey} alt="Ice Monkey" />
+				</Link>
+				<Link to="/towers" id="glue-gunner">
+					<img src={GlueGunner} alt="Glue Gunner" />
+				</Link>
 			</div>
 		</div>
 	);

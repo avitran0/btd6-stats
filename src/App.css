@@ -48,6 +48,12 @@
 	outline: none;
 }
 
+.home h2 {
+	font-size: 2em;
+	font-weight: 500;
+	color: white;
+}
+
 .towers h2 {
 	font-size: 2em;
 	font-weight: 500;
