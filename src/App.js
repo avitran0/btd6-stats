@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { AnimatedSwitch } from "react-router-transition";
 import logo from "./logo.svg";
 import DartMonkey from "./towers/DartMonkey.png";
@@ -35,20 +35,18 @@ function App() {
 						</ul>
 					</nav>
 				</header>
-				<Switch>
-					<AnimatedSwitch
-						atEnter={{ offset: -100 }}
-						atLeave={{ offset: -100 }}
-						atActive={{ offset: 0 }}
-						mapStyles={(styles) => ({
-							transform: `translateX(${styles.offset}%)`,
-						})}
-						className="switch-wrapper"
-					>
-						<Route path="/" exact component={Home} />
-						<Route path="/towers" component={Towers} />
-					</AnimatedSwitch>
-				</Switch>
+				<AnimatedSwitch
+					atEnter={{ offset: -100 }}
+					atLeave={{ offset: 100 }}
+					atActive={{ offset: 0 }}
+					mapStyles={(styles) => ({
+						transform: `translateX(${styles.offset}%)`,
+					})}
+					className="switch-wrapper"
+				>
+					<Route path="/" exact component={Home} />
+					<Route path="/towers" component={Towers} />
+				</AnimatedSwitch>
 			</div>
 		</Router>
 	);
@@ -58,6 +56,7 @@ function Home() {
 	return (
 		<div className="home">
 			<h2>cock and ball torture</h2>
+			<p>This website is kind of shit but will get better</p>
 		</div>
 	);
 }

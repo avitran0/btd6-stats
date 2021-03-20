@@ -3,6 +3,12 @@
 	min-height: 100vh;
 	box-sizing: border-box;
 	background-color: #2e3440;
+	overflow: hidden;
+}
+
+.switch-wrapper > * {
+	position: absolute;
+	width: 100%;
 }
 
 .navbar {
@@ -54,6 +60,10 @@
 	color: white;
 }
 
+.towers {
+	margin-top: 80px;
+}
+
 .towers h2 {
 	font-size: 2em;
 	font-weight: 500;
@@ -61,7 +71,7 @@
 }
 
 .tower-grid {
-	margin: 80px 10% 0 10%;
+	margin: 0 10%;
 	width: 80%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
