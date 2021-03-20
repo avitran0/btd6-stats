@@ -2,12 +2,12 @@
 	text-align: center;
 	min-height: 100vh;
 	box-sizing: border-box;
-	background-color: #2E3440;
+	background-color: #2e3440;
 }
 
 .navbar {
-	background-color: #2E3440;
-	height: 120px;
+	background-color: #2e3440;
+	height: 80px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -24,18 +24,116 @@
 }
 
 .navbar li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	list-style-type: none;
 	margin: 16px 8px;
 }
 
 .navbar a {
 	font-size: large;
-	color: #88C0D0;
+	color: #88c0d0;
 	text-decoration: none;
-	transition: 0.3s;
+	transition: 0.2s;
 	font-size: 2em;
+	padding: 0px 4px;
 }
 
 .navbar a:hover {
-	color: #5E81AC;
+	color: #5e81ac;
+}
+
+.navbar a:focus {
+	outline: none;
+}
+
+.navbar a:visited {
+	color: #88c0d0;
+}
+
+.towers h2 {
+	font-size: 2em;
+	font-weight: 500;
+	color: white;
+}
+
+.tower-grid {
+	margin: 80px 10% 0 10%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tower-grid a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #88c0d0;
+	text-decoration: none;
+	font-size: 1.6em;
+	transition: 0.2s;
+	margin-bottom: 25%;
+}
+
+.tower-grid a::after {
+	transform: scaleY(0);
+	transform-origin: 100% 0%;
+	content: "";
+	background-color: #2e3440;
+	display: block;
+	transition: transform 0.2s;
+}
+
+.tower-grid a:hover::after {
+	transform: scaleY(1);
+	transform-origin: 100% 0%;
+}
+
+.tower-grid a:hover {
+	color: #5e81ac;
+}
+
+.tower-grid a:visited {
+	color: #88c0d0;
+}
+
+.tower-grid img {
+	height: 80%;
+	padding-bottom: 8px;
+}
+
+#dart-monkey::after {
+	content: "Dart Monkey";
+}
+
+#boomerang-monkey::after {
+	content: "Boomerang Monkey";
+}
+
+#boomerang-monkey img {
+	transform: scale(0.9);
+}
+
+#bomb-shooter::after {
+	content: "Bomb Shooter";
+}
+
+#bomb-shooter img {
+	transform: scale(0.8);
+}
+
+#tack-shooter::after {
+	content: "Tack Shooter";
+}
+
+#tack-shooter img {
+	transform: scale(0.9);
+}
+
+#ice-monkey::after {
+	content: "Ice Monkey";
+}
+
+#glue-gunner::after {
+	content: "Glue Gunner";
 }
