@@ -298,4 +298,8 @@
 	.navbar a {
 		font-size: 1.4em;
 	}
+
+	.tower-grid {
+		margin: 0;
+	}
 }
