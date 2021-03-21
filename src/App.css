@@ -423,7 +423,7 @@ html {
 
 @media (max-width: 500px) {
 	.navbar {
-		height: 180px;
+		height: 240px;
 	}
 
 	.navbar ul {
@@ -439,6 +439,14 @@ html {
 		font-size: 1.4em;
 	}
 
+	.home {
+		margin-top: 0;
+	}
+
+	.towers {
+		margin-top: 0;
+	}
+
 	.grid-container {
 		width: 150px;
 		height: 240px;
@@ -450,5 +458,17 @@ html {
 
 	.tower-grid a::after {
 		transform: scaleY(1);
+	}
+
+	.heroes {
+		margin-top: 0;
+	}
+
+	.bloons {
+		margin-top: 0;
+	}
+
+	.rounds {
+		margin-top: 0;
 	}
 }
