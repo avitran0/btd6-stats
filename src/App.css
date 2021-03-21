@@ -81,7 +81,7 @@ html {
 
 .home h1 {
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: 400;
 	color: white;
 }
 
@@ -101,7 +101,7 @@ html {
 
 .towers h1 {
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: 400;
 	color: white;
 }
 
@@ -278,7 +278,7 @@ html {
 
 .heroes h1 {
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: 400;
 	color: white;
 }
 
@@ -340,7 +340,7 @@ html {
 
 .bloons h1 {
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: 400;
 	color: white;
 }
 
@@ -357,7 +357,7 @@ html {
 
 .bloons th, td {
 	font-size: 1.5em;
-	font-weight: 300;
+	font-weight: 400;
 	color: white;
 	padding: 0.5em;
 	border: 1px solid white;
@@ -365,11 +365,26 @@ html {
 }
 
 .bloons td {
-	font-size: 1.2em;
+	font-size: 1.5em;
+	font-weight: 300;
 }
 
 .bloons img {
-	height: 2em;
+	height: 1.8em;
+}
+
+.rounds {
+	margin-top: 40px;
+	padding-bottom: 80px;
+	width: 100%;
+	overflow: hidden;
+	background-color: #2e3440;
+}
+
+.rounds h1 {
+	font-size: 3em;
+	font-weight: 400;
+	color: white;
 }
 
 @media (max-width: 1200px) {
