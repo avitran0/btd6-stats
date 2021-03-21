@@ -29,13 +29,14 @@ html {
 
 .navbar {
 	background-color: #2e3440;
-	height: 80px;
+	height: 120px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .navbar img {
-	height: 80px;
+	margin: 12px;
+	height: 120px;
 }
 
 .navbar ul {
@@ -351,7 +352,7 @@ html {
 }
 
 .bloons table {
-	margin: 0 auto;
+	margin: 0 auto 80px auto;
 	border-collapse: collapse;
 }
 
@@ -371,6 +372,11 @@ html {
 
 .bloons img {
 	height: 1.8em;
+}
+
+#tableheaderimg {
+	height: 0.9em;
+	margin-left: 8px;
 }
 
 .rounds {
@@ -394,9 +400,10 @@ html {
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
 	.navbar {
 		flex-direction: column;
+		height: 150px;
 	}
 
 	.navbar ul {
@@ -416,7 +423,7 @@ html {
 
 @media (max-width: 500px) {
 	.navbar {
-		height: 160px;
+		height: 180px;
 	}
 
 	.navbar ul {
