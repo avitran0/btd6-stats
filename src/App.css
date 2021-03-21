@@ -72,6 +72,9 @@ html {
 }
 
 .home {
+	margin-top: 40px;
+	padding-bottom: 80px;
+	width: 100%;
 	overflow: hidden;
 	background-color: #2e3440;
 }
@@ -82,8 +85,14 @@ html {
 	color: white;
 }
 
+.home p {
+	font-size: 1em;
+	font-weight: 300;
+	color: white;
+}
+
 .towers {
-	margin-top: 80px;
+	margin-top: 40px;
 	padding-bottom: 80px;
 	width: 100%;
 	overflow: hidden;
@@ -259,6 +268,68 @@ html {
 	content: "Monkey Engineer";
 }
 
+.heroes {
+	margin-top: 40px;
+	padding-bottom: 80px;
+	width: 100%;
+	overflow: hidden;
+	background-color: #2e3440;
+}
+
+.heroes h1 {
+	font-size: 3em;
+	font-weight: 300;
+	color: white;
+}
+
+#quincy::after {
+	content: "Quincy";
+}
+
+#gwendolin::after {
+	content: "Gwendolin";
+}
+
+#striker-jones::after {
+	content: "Striker Jones";
+}
+
+#obyn-greenfoot::after {
+	content: "Obyn Greenfoot";
+}
+
+#captain-churchill::after {
+	content: "Captain Churchill";
+}
+
+#benjamin::after {
+	content: "Benjamin";
+}
+
+#ezili::after {
+	content: "Ezili";
+}
+
+#pat-fusty::after {
+	content: "Pat Fusty";
+}
+
+#adora::after {
+	content: "Adora";
+}
+
+#admiral-brickell::after {
+	content: "Admiral Brickell";
+}
+
+#etienne::after {
+	content: "Etienne";
+}
+
+#sauda::after {
+	content: "Sauda";
+}
+
 @media (max-width: 1200px) {
 	.grid-container {
 		width: 200px;
@@ -302,5 +373,18 @@ html {
 
 	.navbar a {
 		font-size: 1.4em;
+	}
+
+	.grid-container {
+		width: 150px;
+		height: 240px;
+	}
+
+	.tower-grid img {
+		height: 60%;
+	}
+
+	.tower-grid a::after {
+		transform: scaleY(1);
 	}
 }
