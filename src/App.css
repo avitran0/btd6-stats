@@ -288,7 +288,8 @@
 	}
 
 	.navbar ul {
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 
 	.navbar li {
@@ -297,9 +298,5 @@
 
 	.navbar a {
 		font-size: 1.4em;
-	}
-
-	.tower-grid {
-		margin: 0;
 	}
 }
