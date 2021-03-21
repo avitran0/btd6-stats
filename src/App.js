@@ -66,24 +66,36 @@ function Towers() {
 		<div className="towers">
 			<h2>Primary</h2>
 			<div className="tower-grid">
-				<Link to="/" id="dart-monkey">
-					<img src={DartMonkey} alt="Dart Monkey" />
-				</Link>
-				<Link to="/towers" id="boomerang-monkey">
-					<img src={BoomerangMonkey} alt="Boomerang Monkey" />
-				</Link>
-				<Link to="/towers" id="bomb-shooter">
-					<img src={BombShooter} alt="Bomb Shooter" />
-				</Link>
-				<Link to="/towers" id="tack-shooter">
-					<img src={TackShooter} alt="Tack Shooter" />
-				</Link>
-				<Link to="/towers" id="ice-monkey">
-					<img src={IceMonkey} alt="Ice Monkey" />
-				</Link>
-				<Link to="/towers" id="glue-gunner">
-					<img src={GlueGunner} alt="Glue Gunner" />
-				</Link>
+				<div className="grid-container">
+					<Link to="/" id="dart-monkey">
+						<img src={DartMonkey} alt="Dart Monkey" />
+					</Link>
+				</div>
+				<div className="grid-container">
+					<Link to="/towers" id="boomerang-monkey">
+						<img src={BoomerangMonkey} alt="Boomerang Monkey" />
+					</Link>
+				</div>
+				<div className="grid-container">
+					<Link to="/towers" id="bomb-shooter">
+						<img src={BombShooter} alt="Bomb Shooter" />
+					</Link>
+				</div>
+				<div className="grid-container">
+					<Link to="/towers" id="tack-shooter">
+						<img src={TackShooter} alt="Tack Shooter" />
+					</Link>
+				</div>
+				<div className="grid-container">
+					<Link to="/towers" id="ice-monkey">
+						<img src={IceMonkey} alt="Ice Monkey" />
+					</Link>
+				</div>
+				<div className="grid-container">
+					<Link to="/towers" id="glue-gunner">
+						<img src={GlueGunner} alt="Glue Gunner" />
+					</Link>
+				</div>
 			</div>
 		</div>
 	);

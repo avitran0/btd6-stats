@@ -6,6 +6,18 @@
 	overflow: hidden;
 }
 
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #5e81ac;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #2e3440;
+}
+
 .switch-wrapper > * {
 	position: absolute;
 	width: 100%;
@@ -54,6 +66,11 @@
 	outline: none;
 }
 
+.home {
+	overflow: hidden;
+	background-color: #2e3440;
+}
+
 .home h2 {
 	font-size: 2em;
 	font-weight: 500;
@@ -62,6 +79,9 @@
 
 .towers {
 	margin-top: 80px;
+	width: 100%;
+	overflow: hidden;
+	background-color: #2e3440;
 }
 
 .towers h2 {
@@ -71,13 +91,20 @@
 }
 
 .tower-grid {
-	margin: 0 10%;
-	width: 80%;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin: 0 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.grid-container {
+	width: 200px;
+	height: 240px;
 }
 
 .tower-grid a {
+	height: 100%;
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -85,7 +112,6 @@
 	text-decoration: none;
 	font-size: 1.6em;
 	transition: 0.2s;
-	margin-bottom: 25%;
 }
 
 .tower-grid a::after {
@@ -109,6 +135,7 @@
 .tower-grid img {
 	height: 80%;
 	padding-bottom: 8px;
+	transition: 0.2s;
 }
 
 #dart-monkey::after {
@@ -145,4 +172,8 @@
 
 #glue-gunner::after {
 	content: "Glue Gunner";
+}
+
+@media(max-width: 1200px) {
+
 }
