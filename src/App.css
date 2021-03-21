@@ -86,7 +86,7 @@ html {
 }
 
 .home p {
-	font-size: 1em;
+	font-size: 1.5em;
 	font-weight: 300;
 	color: white;
 }
@@ -328,6 +328,48 @@ html {
 
 #sauda::after {
 	content: "Sauda";
+}
+
+.bloons {
+	margin-top: 40px;
+	padding-bottom: 80px;
+	width: 100%;
+	overflow: hidden;
+	background-color: #2e3440;
+}
+
+.bloons h1 {
+	font-size: 3em;
+	font-weight: 300;
+	color: white;
+}
+
+.bloons h2 {
+	font-size: 2em;
+	font-weight: 300;
+	color: white;
+}
+
+.bloons table {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.bloons th, td {
+	font-size: 1.5em;
+	font-weight: 300;
+	color: white;
+	padding: 0.5em;
+	border: 1px solid white;
+	text-align: left;
+}
+
+.bloons td {
+	font-size: 1.2em;
+}
+
+.bloons img {
+	height: 2em;
 }
 
 @media (max-width: 1200px) {
