@@ -32,6 +32,7 @@ html {
 	height: 120px;
 	display: flex;
 	justify-content: space-between;
+	z-index: 1;
 }
 
 .navbar img {
