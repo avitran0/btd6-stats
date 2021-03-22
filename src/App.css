@@ -6,6 +6,8 @@ html {
 	text-align: center;
 	min-height: 100vh;
 	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	background-color: #2e3440;
 	overflow: hidden;
 }
@@ -351,6 +353,10 @@ html {
 	font-size: 2em;
 	font-weight: 300;
 	color: white;
+}
+
+.table-wrapper {
+	overflow-x: auto;
 }
 
 .bloons table {
