@@ -1,5 +1,7 @@
 html {
 	background-color: #2e3440;
+	scrollbar-color: #5e81ac;
+	scrollbar-width: 12px;
 }
 
 .App {
