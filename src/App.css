@@ -359,6 +359,7 @@ html {
 
 .table-wrapper {
 	overflow-x: auto;
+	white-space: nowrap;
 }
 
 .bloons table {
