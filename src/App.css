@@ -427,6 +427,10 @@ html {
 		width: 150px;
 		height: 180px;
 	}
+
+	.bloons table {
+		margin: 0 10px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -474,6 +478,10 @@ html {
 
 	.bloons {
 		margin-top: 0;
+	}
+
+	.bloons table {
+		margin: 0 10px;
 	}
 
 	.rounds {
