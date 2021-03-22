@@ -432,7 +432,8 @@ html {
 	}
 
 	.bloons table {
-		margin: 0 10px;
+		display: inline-table;
+		margin: 0 20px;
 	}
 }
 
@@ -481,10 +482,6 @@ html {
 
 	.bloons {
 		margin-top: 0;
-	}
-
-	.bloons table {
-		margin: 0 10px;
 	}
 
 	.rounds {
