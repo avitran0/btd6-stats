@@ -639,7 +639,9 @@ function Bloons() {
 						</tr>
 					</tfoot>
 				</table>
-				<h2>Fortified</h2>
+			</div>
+			<h2>Fortified</h2>
+			<div className="table-wrapper">
 				<table>
 					<thead>
 						<tr>
