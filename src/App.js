@@ -71,6 +71,8 @@ import DDTFortified from "./bloons/DDTFortified.png";
 import CeramicRegrowFortifiedCamo from "./bloons/CeramicRegrowFortifiedCamo.png";
 import BADFortified from "./bloons/BADFortified.png";
 import YellowRegrow from "./bloons/YellowRegrow.png";
+import GreenCamo from "./bloons/GreenCamo.png";
+import { PureComponent } from "react";
 
 function App() {
 	return (
@@ -1132,6 +1134,121 @@ function Rounds() {
 								<img src={Yellow} alt="Yellow" />
 								&ensp;14x
 								<img src={Pink} alt="Pink" />
+							</td>
+						</tr>
+						<tr>
+							<td>22</td>
+							<td>176</td>
+							<td>176</td>
+							<td>298</td>
+							<td>4867</td>
+							<td>
+								16x
+								<img src={White} alt="White" />
+							</td>
+						</tr>
+						<tr>
+							<td>23</td>
+							<td>154</td>
+							<td>154</td>
+							<td>277</td>
+							<td>5144</td>
+							<td>
+								7x
+								<img src={Black} alt="Black" />
+								&ensp;7x
+								<img src={White} alt="White" />
+							</td>
+						</tr>
+						<tr>
+							<td>24</td>
+							<td>43</td>
+							<td>43</td>
+							<td>167</td>
+							<td>5311</td>
+							<td>
+								20x
+								<img src={Blue} alt="Blue" />
+								&ensp;1x
+								<img src={GreenCamo} alt="GreenCamo" />
+							</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>210</td>
+							<td>210</td>
+							<td>335</td>
+							<td>5646</td>
+							<td>
+								25x
+								<img src={YellowRegrow} alt="Yellow Regrow" />
+								&ensp;10x
+								<img src={Purple} alt="Purple" />
+							</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td>207</td>
+							<td>207</td>
+							<td>333</td>
+							<td>5979</td>
+							<td>
+								23x
+								<img src={Pink} alt="Pink" />
+								&ensp;4x
+								<img src={Zebra} alt="Zebra" />
+							</td>
+						</tr>
+						<tr>
+							<td>27</td>
+							<td>535</td>
+							<td>535</td>
+							<td>662</td>
+							<td>6641</td>
+							<td>
+								100x
+								<img src={Red} alt="Red" />
+								&ensp;60x
+								<img src={Blue} alt="Blue" />
+								&ensp;45x
+								<img src={Green} alt="Green" />
+								&ensp;45x
+								<img src={Yellow} alt="Yellow" />
+							</td>
+						</tr>
+						<tr>
+							<td>28</td>
+							<td>138</td>
+							<td>138</td>
+							<td>266</td>
+							<td>6907</td>
+							<td>
+								6x
+								<img src={Lead} alt="Lead" />
+							</td>
+						</tr>
+						<tr>
+							<td>29</td>
+							<td>260</td>
+							<td>260</td>
+							<td>389</td>
+							<td>7296</td>
+							<td>
+								50x
+								<img src={Yellow} alt="Yellow" />
+								&ensp;15x
+								<img src={YellowRegrow} alt="Yellow Regrow" />
+							</td>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td>207</td>
+							<td>207</td>
+							<td>337</td>
+							<td>7633</td>
+							<td>
+								9x
+								<img src={Lead} alt="Lead" />
 							</td>
 						</tr>
 					</tbody>
