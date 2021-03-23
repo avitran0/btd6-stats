@@ -1110,6 +1110,30 @@ function Rounds() {
 								<img src={Pink} alt="Pink" />
 							</td>
 						</tr>
+						<tr>
+							<td>20</td>
+							<td>66</td>
+							<td>66</td>
+							<td>186</td>
+							<td>4218</td>
+							<td>
+								6x
+								<img src={Black} alt="Black" />
+							</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td>230</td>
+							<td>230</td>
+							<td>351</td>
+							<td>4569</td>
+							<td>
+								40x
+								<img src={Yellow} alt="Yellow" />
+								&ensp;14x
+								<img src={Pink} alt="Pink" />
+							</td>
+						</tr>
 					</tbody>
 					<tfoot>
 						<tr>
