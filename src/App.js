@@ -72,7 +72,6 @@ import CeramicRegrowFortifiedCamo from "./bloons/CeramicRegrowFortifiedCamo.png"
 import BADFortified from "./bloons/BADFortified.png";
 import YellowRegrow from "./bloons/YellowRegrow.png";
 import GreenCamo from "./bloons/GreenCamo.png";
-import { PureComponent } from "react";
 
 function App() {
 	return (
