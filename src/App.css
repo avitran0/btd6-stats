@@ -80,6 +80,10 @@ html {
 	outline: none;
 }
 
+.active-link, .active-link:hover {
+	color: #5281ac !important;
+}
+
 .home {
 	margin-top: 40px;
 	padding-bottom: 80px;
@@ -130,7 +134,8 @@ html {
 
 .grid-container {
 	width: 240px;
-	height: 280px;
+	height: 320px;
+	transition: 0.2s;
 }
 
 .tower-grid a {
@@ -147,17 +152,15 @@ html {
 }
 
 .tower-grid a::after {
-	transform: scaleY(0);
-	transform-origin: 100% 0%;
 	content: "";
+	color: #88c0d0;
 	background-color: #2e3440;
 	display: block;
-	transition: transform 0.2s ease;
+	transition: 0.2s;
 }
 
 .tower-grid a:hover::after {
-	transform: scaleY(1);
-	transform-origin: 100% 0%;
+	color: #5e81ac;
 }
 
 .tower-grid a:hover {
@@ -165,7 +168,7 @@ html {
 }
 
 .tower-grid img {
-	height: 80%;
+	height: 60%;
 	padding-bottom: 8px;
 	transition: 0.2s;
 }
@@ -369,6 +372,7 @@ html {
 .bloons table {
 	margin: 0 auto 80px auto;
 	border-collapse: collapse;
+	background-color: #3b4252;
 }
 
 .bloons th, td {
@@ -453,6 +457,7 @@ html {
 .rounds table {
 	margin: 0 auto 80px auto;
 	border-collapse: collapse;
+	background-color: #3b4252;
 }
 
 .rounds th, td {
@@ -496,8 +501,16 @@ html {
 	}
 
 	.grid-container {
-		width: 150px;
-		height: 180px;
+		width: 200px;
+		height: 240px;
+	}
+
+	.tower-grid a::after {
+		transform: scaleY(1);
+	}
+
+	.tower-grid img {
+		height: 60%;
 	}
 
 	.bloons table {
@@ -532,6 +545,7 @@ html {
 	.home {
 		margin-top: 0;
 		flex-direction: column;
+		justify-content: center;
 	}
 
 	.towers {
@@ -543,7 +557,7 @@ html {
 	}
 
 	.grid-container {
-		width: 150px;
+		width: 180px;
 		height: 240px;
 	}
 

@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
 import { AnimatedSwitch } from "react-router-transition";
 import BTD6Logo from "./misc/BTD6Logo.png";
 
@@ -82,19 +82,19 @@ function App() {
 						</div>
 						<ul>
 							<li>
-								<Link to="/">Home</Link>
+								<NavLink to="/" exact activeClassName="active-link">Home</NavLink>
 							</li>
 							<li>
-								<Link to="/towers">Towers</Link>
+								<NavLink to="/towers" activeClassName="active-link">Towers</NavLink>
 							</li>
 							<li>
-								<Link to="/heroes">Heroes</Link>
+								<NavLink to="/heroes" activeClassName="active-link">Heroes</NavLink>
 							</li>
 							<li>
-								<Link to="/bloons">Bloons</Link>
+								<NavLink to="/bloons" activeClassName="active-link">Bloons</NavLink>
 							</li>
 							<li>
-								<Link to="/rounds">Rounds</Link>
+								<NavLink to="/rounds" activeClassName="active-link">Rounds</NavLink>
 							</li>
 						</ul>
 					</nav>
