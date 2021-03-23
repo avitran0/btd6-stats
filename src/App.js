@@ -94,9 +94,6 @@ function App() {
 								<Link to="/bloons">Bloons</Link>
 							</li>
 							<li>
-								<Link to="/towers">Maps</Link>
-							</li>
-							<li>
 								<Link to="/rounds">Rounds</Link>
 							</li>
 						</ul>
@@ -115,7 +112,9 @@ function App() {
 					<Route path="/towers" component={Towers} />
 					<Route path="/heroes" component={Heroes} />
 					<Route path="/bloons" component={Bloons} />
-					<Route path="/rounds" component={Rounds} />
+					<Route path="/rounds" exact component={Rounds} />
+					<Route path="/rounds/abr" component={ABR} />
+					<Route path="/rounds/apopalypse" component={Apopalypse} />
 				</AnimatedSwitch>
 			</div>
 		</Router>
@@ -495,6 +494,7 @@ function Bloons() {
 							<td>23</td>
 							<td>
 								<img src={Black} alt="Black" />
+								&ensp;
 								<img src={White} alt="White" />
 							</td>
 							<td>1.8</td>
@@ -600,7 +600,7 @@ function Bloons() {
 							<td>
 								2x
 								<img src={ZOMG} alt="ZOMG" />
-								3x
+								&ensp; 3x
 								<img src={DDT} alt="DDT" />
 							</td>
 							<td>0.18</td>
@@ -778,7 +778,7 @@ function Bloons() {
 							<td>
 								2x
 								<img src={ZOMGFortified} alt="ZOMG Fortified" />
-								3x
+								&ensp;3x
 								<img src={DDTFortified} alt="DDT Fortified" />
 							</td>
 							<td>0.18</td>
@@ -827,6 +827,278 @@ function Rounds() {
 	return (
 		<div className="rounds">
 			<h1>Rounds</h1>
+			<ul>
+				<li>Normal</li>
+				<li><Link to="/rounds/abr">ABR</Link></li>
+				<li><Link to="/rounds/apopalypse">Apopalypse</Link></li>
+			</ul>
+			<div className="table-wrapper">
+				<table>
+					<thead>
+						<tr>
+							<th rowspan="2">Round</th>
+							<th rowspan="2">RBE<img src={Red} alt="Red" id="tableheaderimg" /></th>
+							<th colspan="3">Cash<img src={Coin} alt="Coin" id="tableheaderimg" /></th>
+							<th rowspan="2">Bloons</th>
+						</tr>
+						<tr>
+							<th>Pops</th>
+							<th>Total</th>
+							<th>Cumulative</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>20</td>
+							<td>20</td>
+							<td>121</td>
+							<td>121</td>
+							<td>
+								20x
+								<img src={Red} alt="Red" />
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>35</td>
+							<td>35</td>
+							<td>137</td>
+							<td>258</td>
+							<td>
+								35x
+								<img src={Red} alt="Red" />
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>35</td>
+							<td>35</td>
+							<td>138</td>
+							<td>396</td>
+							<td>
+								25x
+								<img src={Red} alt="Red" />
+								&ensp;5x
+								<img src={Blue} alt="Blue" />
+							</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>71</td>
+							<td>71</td>
+							<td>175</td>
+							<td>571</td>
+							<td>
+								35x
+								<img src={Red} alt="Red" />
+								&ensp;18x
+								<img src={Blue} alt="Blue" />
+							</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>59</td>
+							<td>59</td>
+							<td>164</td>
+							<td>735</td>
+							<td>
+								5x
+								<img src={Red} alt="Red" />
+								&ensp;27x
+								<img src={Blue} alt="Blue" />
+							</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>57</td>
+							<td>57</td>
+							<td>163</td>
+							<td>898</td>
+							<td>
+								15x
+								<img src={Red} alt="Red" />
+								&ensp;15x
+								<img src={Blue} alt="Blue" />
+								&ensp;4x
+								<img src={Green} alt="Green" />
+							</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>75</td>
+							<td>75</td>
+							<td>182</td>
+							<td>1080</td>
+							<td>
+								20x
+								<img src={Red} alt="Red" />
+								&ensp;20x
+								<img src={Blue} alt="Blue" />
+								&ensp;5x
+								<img src={Green} alt="Green" />
+							</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>92</td>
+							<td>92</td>
+							<td>200</td>
+							<td>1280</td>
+							<td>
+								10x
+								<img src={Red} alt="Red" />
+								&ensp;20x
+								<img src={Blue} alt="Blue" />
+								&ensp;14x
+								<img src={Green} alt="Green" />
+							</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>90</td>
+							<td>90</td>
+							<td>199</td>
+							<td>1479</td>
+							<td>
+								30x
+								<img src={Green} alt="Green" />
+							</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>204</td>
+							<td>204</td>
+							<td>314</td>
+							<td>1793</td>
+							<td>
+								102x
+								<img src={Blue} alt="Blue" />
+							</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>78</td>
+							<td>78</td>
+							<td>189</td>
+							<td>1982</td>
+							<td>
+								6x
+								<img src={Red} alt="Red" />
+								&ensp;12x
+								<img src={Blue} alt="Blue" />
+								&ensp;12x
+								<img src={Green} alt="Green" />
+								&ensp;3x
+								<img src={Yellow} alt="Yellow" />
+							</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>80</td>
+							<td>80</td>
+							<td>192</td>
+							<td>2174</td>
+							<td>
+								15x
+								<img src={Blue} alt="Blue" />
+								&ensp;10x
+								<img src={Green} alt="Green" />
+								&ensp;5x
+								<img src={Yellow} alt="Yellow" />
+							</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>169</td>
+							<td>169</td>
+							<td>282</td>
+							<td>2456</td>
+							<td>
+								50x
+								<img src={Blue} alt="Blue" />
+								&ensp;23x
+								<img src={Green} alt="Green" />
+							</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>145</td>
+							<td>145</td>
+							<td>259</td>
+							<td>2715</td>
+							<td>
+								49x
+								<img src={Red} alt="Red" />
+								&ensp;15x
+								<img src={Blue} alt="Blue" />
+								&ensp;10x
+								<img src={Green} alt="Green" />
+								&ensp;9x
+								<img src={Yellow} alt="Yellow" />
+							</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>151</td>
+							<td>151</td>
+							<td>266</td>
+							<td>2981</td>
+							<td>
+								20x
+								<img src={Red} alt="Red" />
+								&ensp;15x
+								<img src={Blue} alt="Blue" />
+								&ensp;12x
+								<img src={Green} alt="Green" />
+								&ensp;10x
+								<img src={Yellow} alt="Yellow" />
+								&ensp;5x
+								<img src={Pink} alt="Pink" />
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th rowspan="2">Round</th>
+							<th rowspan="2">RBE<img src={Red} alt="Red" id="tableheaderimg" /></th>
+							<th>Pops</th>
+							<th>Total</th>
+							<th>Cumulative</th>
+							<th rowspan="2">Bloons</th>
+						</tr>
+						<tr>
+							<th colspan="3">Cash<img src={Coin} alt="Coin" id="tableheaderimg" /></th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	);
+}
+
+function ABR() {
+	return (
+		<div className="rounds">
+			<h1>Rounds</h1>
+			<ul>
+				<li><Link to="/rounds">Normal</Link></li>
+				<li>ABR</li>
+				<li><Link to="/rounds/apopalypse">Apopalypse</Link></li>
+			</ul>
+		</div>
+	);
+}
+
+function Apopalypse() {
+	return (
+		<div className="rounds">
+			<h1>Rounds</h1>
+			<ul>
+				<li><Link to="/rounds">Normal</Link></li>
+				<li><Link to="/rounds/abr">ABR</Link></li>
+				<li>Apopalypse</li>
+			</ul>
 		</div>
 	);
 }

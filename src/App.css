@@ -74,11 +74,9 @@ html {
 	font-weight: 300;
 }
 
-.navbar a:hover {
-	color: #5e81ac;
-}
-
+.navbar a:hover,
 .navbar a:focus {
+	color: #5e81ac;
 	outline: none;
 }
 
@@ -410,6 +408,71 @@ html {
 	color: white;
 }
 
+.rounds ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0 16px 0 0;
+	padding: 0;
+}
+
+.rounds li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	list-style-type: none;
+	margin: 16px 8px;
+}
+
+.rounds li {
+	font-size: large;
+	color: white;
+	text-decoration: none;
+	transition: 0.2s;
+	font-size: 2em;
+	padding: 0px 4px;
+	font-weight: 300;
+}
+
+.rounds a {
+	font-size: large;
+	color: #88c0d0;
+	text-decoration: none;
+	transition: 0.2s;
+	font-size: 1em;
+	padding: 0px 4px;
+	font-weight: 300;
+}
+
+.rounds a:hover,
+.rounds a:focus {
+	color: #5e81ac;
+	outline: none;
+}
+
+.rounds table {
+	margin: 0 auto 80px auto;
+	border-collapse: collapse;
+}
+
+.rounds th, td {
+	font-size: 1.5em;
+	font-weight: 400;
+	color: white;
+	padding: 0.5em;
+	border: 1px solid white;
+	text-align: left;
+}
+
+.rounds td {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.rounds img {
+	height: 1.8em;
+}
+
 @media (max-width: 1200px) {
 	.grid-container {
 		width: 200px;
@@ -429,7 +492,7 @@ html {
 	}
 
 	.navbar a {
-		font-size: 1.4em;
+		font-size: 1.6em;
 	}
 
 	.grid-container {
