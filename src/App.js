@@ -551,7 +551,7 @@ function Bloons() {
 							<td>700</td>
 							<td>1525</td>
 							<td>
-								4x
+								4x&nbsp;
 								<img src={MOAB} alt="MOAB" />
 							</td>
 							<td>0.25</td>
@@ -565,7 +565,7 @@ function Bloons() {
 							<td>4000</td>
 							<td>6101</td>
 							<td>
-								4x
+								4x&nbsp;
 								<img src={BFB} alt="BFB" />
 							</td>
 							<td>0.18</td>
@@ -599,9 +599,9 @@ function Bloons() {
 							<td>20000</td>
 							<td>13346</td>
 							<td>
-								2x
+								2x&nbsp;
 								<img src={ZOMG} alt="ZOMG" />
-								&ensp; 3x
+								&ensp; 3x&nbsp;
 								<img src={DDT} alt="DDT" />
 							</td>
 							<td>0.18</td>
@@ -729,7 +729,7 @@ function Bloons() {
 							<td>1400</td>
 							<td>1525</td>
 							<td>
-								4x
+								4x&nbsp;
 								<img src={MOABFortified} alt="MOAB Fortified" />
 							</td>
 							<td>0.25</td>
@@ -743,7 +743,7 @@ function Bloons() {
 							<td>8000</td>
 							<td>6101</td>
 							<td>
-								4x
+								4x&nbsp;
 								<img src={BFBFortified} alt="BFB Fortified" />
 							</td>
 							<td>0.18</td>
@@ -777,9 +777,9 @@ function Bloons() {
 							<td>40000</td>
 							<td>13346</td>
 							<td>
-								2x
+								2x&nbsp;
 								<img src={ZOMGFortified} alt="ZOMG Fortified" />
-								&ensp;3x
+								&ensp;3x&nbsp;
 								<img src={DDTFortified} alt="DDT Fortified" />
 							</td>
 							<td>0.18</td>
