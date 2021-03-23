@@ -3,8 +3,8 @@ html {
 }
 
 @font-face {
-	font-family: UbuntuLight;
-	src: url(./fonts/Ubuntu-Light.ttf);
+	font-family: Nunito-Light;
+	src: url(./fonts/Nunito-Light.ttf);
 }
 
 .App {
@@ -15,7 +15,7 @@ html {
 	-moz-box-sizing: border-box;
 	background-color: #2e3440;
 	overflow: hidden;
-	font-family: UbuntuLight;
+	font-family: Nunito-Light;
 }
 
 ::-webkit-scrollbar {
@@ -95,13 +95,13 @@ html {
 .home h1 {
 	font-size: 3em;
 	font-weight: 400;
-	color: white;
+	color: #eceff4;
 }
 
 .home p {
 	font-size: 1.5em;
 	font-weight: 300;
-	color: white;
+	color: #eceff4;
 }
 
 .towers {
@@ -115,13 +115,13 @@ html {
 .towers h1 {
 	font-size: 3em;
 	font-weight: 400;
-	color: white;
+	color: #eceff4;
 }
 
 .towers h2 {
 	font-size: 2em;
 	font-weight: 300;
-	color: white;
+	color: #eceff4;
 	margin-top: 60px;
 }
 
@@ -169,7 +169,10 @@ html {
 
 .tower-grid img {
 	height: 60%;
-	padding-bottom: 8px;
+	margin-bottom: 8px;
+	padding: 8px;
+	border-radius: 8px;
+	background-color: #3b4252;
 	transition: 0.2s;
 }
 
@@ -292,7 +295,7 @@ html {
 .heroes h1 {
 	font-size: 3em;
 	font-weight: 400;
-	color: white;
+	color: #eceff4;
 }
 
 #quincy::after {
@@ -357,13 +360,13 @@ html {
 .bloons h1 {
 	font-size: 3em;
 	font-weight: 400;
-	color: white;
+	color: #eceff4;
 }
 
 .bloons h2 {
 	font-size: 2em;
 	font-weight: 300;
-	color: white;
+	color: #eceff4;
 	margin-top: 60px;
 }
 
@@ -382,9 +385,9 @@ html {
 .bloons th, td {
 	font-size: 1.5em;
 	font-weight: 400;
-	color: white;
+	color: #eceff4;
 	padding: 0.5em;
-	border: 1px solid white;
+	border: 1px solid #eceff4;
 	text-align: left;
 }
 
@@ -416,7 +419,7 @@ html {
 .rounds h1 {
 	font-size: 3em;
 	font-weight: 400;
-	color: white;
+	color: #eceff4;
 }
 
 .rounds ul {
@@ -435,22 +438,12 @@ html {
 	margin: 16px 8px;
 }
 
-.rounds li {
-	font-size: large;
-	color: white;
-	text-decoration: none;
-	transition: 0.2s;
-	font-size: 2em;
-	padding: 0px 4px;
-	font-weight: 300;
-}
-
 .rounds a {
 	font-size: large;
 	color: #88c0d0;
 	text-decoration: none;
 	transition: 0.2s;
-	font-size: 1em;
+	font-size: 2em;
 	padding: 0px 4px;
 	font-weight: 300;
 }
@@ -471,9 +464,9 @@ html {
 .rounds th, td {
 	font-size: 1.5em;
 	font-weight: 400;
-	color: white;
+	color: #eceff4;
 	padding: 0.5em;
-	border: 1px solid white;
+	border: 1px solid #eceff4;
 	text-align: left;
 }
 

@@ -828,9 +828,9 @@ function Rounds() {
 		<div className="rounds">
 			<h1>Rounds</h1>
 			<ul>
-				<li>Normal</li>
-				<li><Link to="/rounds/abr">ABR</Link></li>
-				<li><Link to="/rounds/apopalypse">Apopalypse</Link></li>
+				<li><NavLink to="/rounds" exact activeClassName="active-link">Normal</NavLink></li>
+				<li><NavLink to="/rounds/abr">ABR</NavLink></li>
+				<li><NavLink to="/rounds/apopalypse">Apopalypse</NavLink></li>
 			</ul>
 			<div className="table-wrapper">
 				<table>
@@ -1057,6 +1057,19 @@ function Rounds() {
 								<img src={Pink} alt="Pink" />
 							</td>
 						</tr>
+						<tr>
+							<td>16</td>
+							<td>152</td>
+							<td>152</td>
+							<td>268</td>
+							<td>3249</td>
+							<td>
+								40x
+								<img src={Green} alt="Green" />
+								&ensp;8x
+								<img src={Yellow} alt="Yellow" />
+							</td>
+						</tr>
 					</tbody>
 					<tfoot>
 						<tr>
@@ -1082,9 +1095,9 @@ function ABR() {
 		<div className="rounds">
 			<h1>Rounds</h1>
 			<ul>
-				<li><Link to="/rounds">Normal</Link></li>
-				<li>ABR</li>
-				<li><Link to="/rounds/apopalypse">Apopalypse</Link></li>
+				<li><NavLink to="/rounds">Normal</NavLink></li>
+				<li><NavLink to="/rounds/abr" activeClassName="active-link">ABR</NavLink></li>
+				<li><NavLink to="/rounds/apopalypse">Apopalypse</NavLink></li>
 			</ul>
 		</div>
 	);
@@ -1095,9 +1108,9 @@ function Apopalypse() {
 		<div className="rounds">
 			<h1>Rounds</h1>
 			<ul>
-				<li><Link to="/rounds">Normal</Link></li>
-				<li><Link to="/rounds/abr">ABR</Link></li>
-				<li>Apopalypse</li>
+				<li><NavLink to="/rounds">Normal</NavLink></li>
+				<li><NavLink to="/rounds/abr">ABR</NavLink></li>
+				<li><NavLink to="/rounds/apopalypse" activeClassName="active-link">Apopalypse</NavLink></li>
 			</ul>
 		</div>
 	);
