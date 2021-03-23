@@ -7,6 +7,11 @@ html {
 	src: url(./fonts/Nunito-Light.ttf);
 }
 
+@font-face {
+	font-family: Nunito-SemiBold;
+	src: url(./fonts/Nunito-SemiBold.ttf);
+}
+
 .App {
 	text-align: center;
 	min-height: 100vh;
@@ -385,7 +390,7 @@ html {
 
 .bloons th, td {
 	font-size: 1.5em;
-	font-weight: 400;
+	font-family: Nunito-SemiBold;
 	color: #eceff4;
 	padding: 0.5em;
 	border: 1px solid #eceff4;
@@ -394,7 +399,7 @@ html {
 
 .bloons td {
 	font-size: 1.5em;
-	font-weight: 300;
+	font-family: Nunito-Light;
 }
 
 .bloons img {
@@ -464,7 +469,7 @@ html {
 
 .rounds th, td {
 	font-size: 1.5em;
-	font-weight: 400;
+	font-family: Nunito-SemiBold;
 	color: #eceff4;
 	padding: 0.5em;
 	border: 1px solid #eceff4;
@@ -473,7 +478,7 @@ html {
 
 .rounds td {
 	font-size: 1.5em;
-	font-weight: 300;
+	font-family: Nunito-Light;
 }
 
 .rounds img {
