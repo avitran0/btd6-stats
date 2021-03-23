@@ -102,6 +102,7 @@ html {
 	font-size: 1.5em;
 	font-weight: 300;
 	color: #eceff4;
+	margin: 0 5%;
 }
 
 .towers {
@@ -498,7 +499,7 @@ html {
 	}
 
 	.navbar a {
-		font-size: 1.6em;
+		font-size: 2em;
 	}
 
 	.grid-container {
@@ -522,6 +523,12 @@ html {
 	.rounds table {
 		display: inline-table;
 		margin: 0 20px;
+	}
+}
+
+@media (max-width: 700px) {
+	.navbar a {
+		font-size: 1.6em;
 	}
 }
 
