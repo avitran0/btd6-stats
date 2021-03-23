@@ -587,7 +587,7 @@ html {
 		flex-direction: column;
 	}
 
-	.rounds li {
+	.rounds a {
 		font-size: 1.4em;
 	}
 }
