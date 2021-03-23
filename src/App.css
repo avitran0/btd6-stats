@@ -412,7 +412,7 @@ html {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin: 0 16px 0 0;
+	margin: 0;
 	padding: 0;
 }
 
@@ -504,6 +504,11 @@ html {
 		display: inline-table;
 		margin: 0 20px;
 	}
+
+	.rounds table {
+		display: inline-table;
+		margin: 0 20px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -526,10 +531,15 @@ html {
 
 	.home {
 		margin-top: 0;
+		flex-direction: column;
 	}
 
 	.towers {
 		margin-top: 0;
+	}
+
+	.towers a {
+		font-size: 1.4em;
 	}
 
 	.grid-container {
@@ -549,11 +559,20 @@ html {
 		margin-top: 0;
 	}
 
+	.heroes a {
+		font-size: 1.4em;
+	}
+
 	.bloons {
 		margin-top: 0;
 	}
 
 	.rounds {
 		margin-top: 0;
+		flex-direction: column;
+	}
+
+	.rounds li {
+		font-size: 1.4em;
 	}
 }
