@@ -70,6 +70,7 @@ import ZOMGFortified from "./bloons/ZOMGFortified.png";
 import DDTFortified from "./bloons/DDTFortified.png";
 import CeramicRegrowFortifiedCamo from "./bloons/CeramicRegrowFortifiedCamo.png";
 import BADFortified from "./bloons/BADFortified.png";
+import YellowRegrow from "./bloons/YellowRegrow.png";
 
 function App() {
 	return (
@@ -1068,6 +1069,45 @@ function Rounds() {
 								<img src={Green} alt="Green" />
 								&ensp;8x
 								<img src={Yellow} alt="Yellow" />
+							</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>48</td>
+							<td>48</td>
+							<td>165</td>
+							<td>3414</td>
+							<td>
+								12x
+								<img src={YellowRegrow} alt="Yellow Regrow" />
+							</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td>240</td>
+							<td>240</td>
+							<td>358</td>
+							<td>3772</td>
+							<td>
+								80x
+								<img src={Green} alt="Green" />
+							</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>141</td>
+							<td>141</td>
+							<td>260</td>
+							<td>4032</td>
+							<td>
+								10x
+								<img src={Green} alt="Green" />
+								&ensp;4x
+								<img src={Yellow} alt="Yellow" />
+								&ensp;5x
+								<img src={YellowRegrow} alt="Yellow Regrow" />
+								&ensp;15x
+								<img src={Pink} alt="Pink" />
 							</td>
 						</tr>
 					</tbody>
