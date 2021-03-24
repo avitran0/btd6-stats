@@ -12,6 +12,22 @@ import Lead from "../bloons/Lead.png";
 import Zebra from "../bloons/Zebra.png";
 import YellowRegrow from "../bloons/YellowRegrow.png";
 import GreenCamo from "../bloons/GreenCamo.png";
+import ZebraRegrow from "../bloons/ZebraRegrow.png";
+import RedCamo from "../bloons/RedCamo.png";
+import YellowCamo from "../bloons/YellowCamo.png";
+import Rainbow from "../bloons/Rainbow.png";
+import GreenRegrowCamo from "../bloons/GreenRegrowCamo.png";
+import WhiteCamo from "../bloons/WhiteCamo.png";
+import Ceramic from "../bloons/Ceramic.png";
+import RainbowRegrow from "../bloons/RainbowRegrow.png";
+import MOAB from "../bloons/MOAB.png";
+import RainbowCamo from "../bloons/RainbowCamo.png";
+import PurpleCamo from "../bloons/PurpleCamo.png";
+import LeadFortified from "../bloons/LeadFortified.png";
+import CeramicFortified from "../bloons/CeramicFortified.png";
+import PinkCamo from "../bloons/PinkCamo.png";
+import PinkRegrow from "../bloons/PinkRegrow.png";
+import PurpleRegrowCamo from "../bloons/PurpleRegrowCamo.png";
 
 export default function Rounds() {
 	return (
@@ -454,6 +470,317 @@ export default function Rounds() {
 							<td>
 								9x
 								<img src={Lead} alt="Lead" />
+							</td>
+						</tr>
+						<tr>
+							<td>31</td>
+							<td>406</td>
+							<td>406</td>
+							<td>537</td>
+							<td>8170</td>
+							<td>
+								8x
+								<img src={Black} alt="Black" />
+								&ensp;8x
+								<img src={White} alt="White" />
+								&ensp;8x
+								<img src={Zebra} alt="Zebra" />
+								&ensp;2x
+								<img src={ZebraRegrow} alt="Zebra Regrow" />
+							</td>
+						</tr>
+						<tr>
+							<td>32</td>
+							<td>545</td>
+							<td>545</td>
+							<td>627</td>
+							<td>8797</td>
+							<td>
+								15x
+								<img src={Black} alt="Black" />
+								&ensp;20x
+								<img src={White} alt="White" />
+								&ensp;10x
+								<img src={Purple} alt="Purple" />
+							</td>
+						</tr>
+						<tr>
+							<td>33</td>
+							<td>72</td>
+							<td>72</td>
+							<td>205</td>
+							<td>9002</td>
+							<td>
+								20x
+								<img src={RedCamo} alt="Red Camo" />
+								&ensp;13x
+								<img src={YellowCamo} alt="Yellow Camo" />
+							</td>
+						</tr>
+						<tr>
+							<td>34</td>
+							<td>778</td>
+							<td>778</td>
+							<td>912</td>
+							<td>9914</td>
+							<td>
+								160x
+								<img src={Yellow} alt="Yellow" />
+								&ensp;6x
+								<img src={Zebra} alt="Zebra" />
+							</td>
+						</tr>
+						<tr>
+							<td>35</td>
+							<td>1015</td>
+							<td>1015</td>
+							<td>1150</td>
+							<td>11064</td>
+							<td>
+								35x
+								<img src={Pink} alt="Pink" />
+								&ensp;30x
+								<img src={Black} alt="Black" />
+								&ensp;25x
+								<img src={White} alt="White" />
+								&ensp;5x
+								<img src={Rainbow} alt="Rainbow" />
+							</td>
+						</tr>
+						<tr>
+							<td>36</td>
+							<td>760</td>
+							<td>760</td>
+							<td>896</td>
+							<td>11960</td>
+							<td>
+								140x
+								<img src={Pink} alt="Pink" />
+								&ensp;20x
+								<img src={GreenRegrowCamo} alt="Green Regrow Camo" />
+							</td>
+						</tr>
+						<tr>
+							<td>37</td>
+							<td>1202</td>
+							<td>1202</td>
+							<td>1339</td>
+							<td>13299</td>
+							<td>
+								25x
+								<img src={Black} alt="Black" />
+								&ensp;25x
+								<img src={White} alt="White" />
+								&ensp;7x
+								<img src={WhiteCamo} alt="White Camo" />
+								&ensp;10x
+								<img src={Zebra} alt="Zebra" />
+								&ensp;15x
+								<img src={Lead} alt="Lead" />
+							</td>
+						</tr>
+						<tr>
+							<td>38</td>
+							<td>1157</td>
+							<td>1139</td>
+							<td>1277</td>
+							<td>14576</td>
+							<td>
+								42x
+								<img src={Pink} alt="Pink" />
+								&ensp;17x
+								<img src={White} alt="White" />
+								&ensp;10x
+								<img src={Zebra} alt="Zebra" />
+								&ensp;14x
+								<img src={Lead} alt="Lead" />
+								&ensp;2x
+								<img src={Ceramic} alt="Ceramic" />
+							</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>20</td>
+							<td>20</td>
+							<td>121</td>
+							<td>121</td>
+							<td>
+								20x
+								<img src={Red} alt="Red" />
+							</td>
+						</tr>
+						<tr>
+							<td>39</td>
+							<td>1620</td>
+							<td>1620</td>
+							<td>1759</td>
+							<td>16335</td>
+							<td>
+								10x
+								<img src={Black} alt="Black" />
+								&ensp;10x
+								<img src={White} alt="White" />
+								&ensp;20x
+								<img src={Zebra} alt="Zebra" />
+								&ensp;18x
+								<img src={Rainbow} alt="Rainbow" />
+								&ensp;2x
+								<img src={RainbowRegrow} alt="Rainbow Regrow" />
+							</td>
+						</tr>
+						<tr>
+							<td>40</td>
+							<td>616</td>
+							<td>381</td>
+							<td>521</td>
+							<td>16856</td>
+							<td>
+								1x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>41</td>
+							<td>2040</td>
+							<td>2040</td>
+							<td>2181</td>
+							<td>19037</td>
+							<td>
+								60x
+								<img src={Black} alt="Black" />
+								&ensp;60x
+								<img src={Zebra} alt="Zebra" />
+							</td>
+						</tr>
+						<tr>
+							<td>42</td>
+							<td>517</td>
+							<td>517</td>
+							<td>659</td>
+							<td>19696</td>
+							<td>
+								6x
+								<img src={RainbowRegrow} alt="Rainbow Regrow" />
+								&ensp;5x
+								<img src={RainbowCamo} alt="Rainbow Camo" />
+							</td>
+						</tr>
+						<tr>
+							<td>43</td>
+							<td>1198</td>
+							<td>1135</td>
+							<td>1278</td>
+							<td>20974</td>
+							<td>
+								10x
+								<img src={Rainbow} alt="Rainbow" />
+								&ensp;7x
+								<img src={Ceramic} alt="Ceramic" />
+							</td>
+						</tr>
+						<tr>
+							<td>44</td>
+							<td>1150</td>
+							<td>1150</td>
+							<td>1294</td>
+							<td>22268</td>
+							<td>
+								50x
+								<img src={Zebra} alt="Zebra" />
+							</td>
+						</tr>
+						<tr>
+							<td>45</td>
+							<td>2289</td>
+							<td>2289</td>
+							<td>2422</td>
+							<td>24690</td>
+							<td>
+								180x
+								<img src={Pink} alt="Pink" />
+								&ensp;10x
+								<img src={PurpleCamo} alt="Purple Camo" />
+								&ensp;4x
+								<img src={LeadFortified} alt="Lead Fortified" />
+								&ensp;25x
+								<img src={Rainbow} alt="Rainbow" />
+							</td>
+						</tr>
+						<tr>
+							<td>46</td>
+							<td>684</td>
+							<td>570</td>
+							<td>716</td>
+							<td>25406</td>
+							<td>
+								6x
+								<img src={CeramicFortified} alt="Ceramic Fortified" />
+							</td>
+						</tr>
+						<tr>
+							<td>47</td>
+							<td>1598</td>
+							<td>1490</td>
+							<td>1637</td>
+							<td>27043</td>
+							<td>
+								70x
+								<img src={PinkCamo} alt="Pink Camo" />
+								&ensp;12x
+								<img src={Ceramic} alt="Ceramic" />
+							</td>
+						</tr>
+						<tr>
+							<td>48</td>
+							<td>2752</td>
+							<td>2695</td>
+							<td>2843</td>
+							<td>29886</td>
+							<td>
+								40x
+								<img src={PinkRegrow} alt="Pink Regrow" />
+								&ensp;30x
+								<img src={PurpleRegrowCamo} alt="Purple Regrow Camo" />
+								&ensp;40x
+								<img src={Rainbow} alt="Rainbow" />
+								&ensp;3x
+								<img src={CeramicFortified} alt="Ceramic Fortified" />
+							</td>
+						</tr>
+						<tr>
+							<td>49</td>
+							<td>4771</td>
+							<td>4609</td>
+							<td>4758</td>
+							<td>34644</td>
+							<td>
+								343x
+								<img src={Green} alt="Green" />
+								&ensp;20x
+								<img src={Zebra} alt="Zebra" />
+								&ensp;20x
+								<img src={Rainbow} alt="Rainbow" />
+								&ensp;10x
+								<img src={RainbowRegrow} alt="Rainbow Regrow" />
+								&ensp;18x
+								<img src={Ceramic} alt="Ceramic" />
+							</td>
+						</tr>
+						<tr>
+							<td>50</td>
+							<td>3540</td>
+							<td>2866</td>
+							<td>3016</td>
+							<td>37660</td>
+							<td>
+								20x
+								<img src={Red} alt="Red" />
+								&ensp;8x
+								<img src={LeadFortified} alt="Lead Fortified" />
+								&ensp;20x
+								<img src={Ceramic} alt="Ceramic" />
+								&ensp;2x&nbsp;
+								<img src={MOAB} alt="MOAB" />
 							</td>
 						</tr>
 					</tbody>
