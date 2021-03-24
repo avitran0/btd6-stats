@@ -599,17 +599,6 @@ export default function Rounds() {
 							</td>
 						</tr>
 						<tr>
-							<td>1</td>
-							<td>20</td>
-							<td>20</td>
-							<td>121</td>
-							<td>121</td>
-							<td>
-								20x
-								<img src={Red} alt="Red" />
-							</td>
-						</tr>
-						<tr>
 							<td>39</td>
 							<td>1620</td>
 							<td>1620</td>
