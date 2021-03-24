@@ -1,4 +1,4 @@
-import NavLink from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Coin from "../misc/Coin.png";
 import Red from "../bloons/Red.png";
 import Blue from "../bloons/Blue.png";

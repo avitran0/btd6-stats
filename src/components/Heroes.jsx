@@ -1,4 +1,4 @@
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 import Quincy from "../heroes/Quincy.png";
 import Gwendolin from "../heroes/Gwendolin.png";
 import StrikerJones from "../heroes/StrikerJones.png";

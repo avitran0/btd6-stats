@@ -1,4 +1,4 @@
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 import DartMonkey from "../towers/DartMonkey.png";
 import BoomerangMonkey from "../towers/BoomerangMonkey.png";
 import BombShooter from "../towers/BombShooter.png";
