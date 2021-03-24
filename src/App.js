@@ -111,8 +111,10 @@ function App() {
 					className="switch-wrapper"
 				>
 					<Route path="/" exact component={Home} />
-					<Route path="/towers" component={Towers} />
-					<Route path="/heroes" component={Heroes} />
+					<Route path="/towers" exact component={Towers} />
+					<Route path="/towers/dart-monkey" component={DartMonkeySelect} />
+					<Route path="/heroes" exact component={Heroes} />
+					<Route path="/heroes/quincy" component={HeroQuincy} />
 					<Route path="/bloons" component={Bloons} />
 					<Route path="/rounds" exact component={Rounds} />
 					<Route path="/rounds/abr" component={ABR} />
@@ -140,7 +142,7 @@ function Towers() {
 			<h2>Primary</h2>
 			<div className="tower-grid">
 				<div className="grid-container">
-					<Link to="/" id="dart-monkey">
+					<Link to="/towers/dart-monkey" id="dart-monkey">
 						<img src={DartMonkey} alt="Dart Monkey" />
 					</Link>
 				</div>
@@ -269,7 +271,7 @@ function Heroes() {
 			<h1>Heroes</h1>
 			<div className="tower-grid">
 				<div className="grid-container">
-					<Link to="/" id="quincy">
+					<Link to="/heroes/quincy" id="quincy">
 						<img src={Quincy} alt="Quincy" />
 					</Link>
 				</div>
@@ -1292,6 +1294,22 @@ function Apopalypse() {
 				<li><NavLink to="/rounds/abr">ABR</NavLink></li>
 				<li><NavLink to="/rounds/apopalypse" activeClassName="active-link">Apopalypse</NavLink></li>
 			</ul>
+		</div>
+	);
+}
+
+function DartMonkeySelect() {
+	return (
+		<div className="dart-monkey-select">
+			<h1>Dart Monkey</h1>
+		</div>
+	);
+}
+
+function HeroQuincy() {
+	return (
+		<div className="hero-quincy">
+			<h1>Quincy</h1>
 		</div>
 	);
 }

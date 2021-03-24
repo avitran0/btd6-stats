@@ -1,0 +1,580 @@
+$nord0: #2e3440;
+$nord1: #3b4252;
+$nord6: #eceff4;
+$nord8: #88c0d0;
+$nord10: #5e81ac;
+$nord11: #bf616a;
+$nord12: #d08770;
+$nord13: #ebcb8b;
+$nord14: #a3be8c;
+
+@mixin transform($property) {
+	-webkit-transform: $property;
+	-ms-transform: $property;
+	transform: $property;
+}
+
+html {
+	background-color: $nord0;
+}
+
+@font-face {
+	font-family: Nunito-Light;
+	src: url(./fonts/Nunito-Light.ttf);
+}
+
+@font-face {
+	font-family: Nunito-SemiBold;
+	src: url(./fonts/Nunito-SemiBold.ttf);
+}
+
+.App {
+	text-align: center;
+	min-height: 100vh;
+	box-sizing: border-box;
+	background-color: $nord0;
+	overflow: hidden;
+	font-family: Nunito-Light;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: $nord10;
+}
+
+::-webkit-scrollbar-track {
+	background-color: $nord0;
+}
+
+.switch-wrapper > * {
+	position: absolute;
+	width: 100%;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 300;
+	color: $nord6;
+}
+
+h2 {
+	font-size: 2em;
+	color: $nord6;
+	margin-top: 60px;
+}
+
+p {
+	font-size: 1.5em;
+	color: $nord6;
+	margin: 0 5%;
+}
+
+.navbar {
+	background-color: $nord0;
+	height: 120px;
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	position: relative;
+
+	img {
+		margin: 12px;
+		height: 120px;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		margin: 0 16px 0 0;
+		padding: 0;
+	}
+
+	li {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		list-style-type: none;
+		margin: 16px 8px;
+	}
+
+	a {
+		font-size: large;
+		color: $nord8;
+		text-decoration: none;
+		transition: 0.2s;
+		font-size: 2em;
+		padding: 0px 4px;
+		font-weight: 300;
+
+		&:hover,
+		&:focus {
+			color: $nord10;
+			outline: none;
+		}
+	}
+}
+
+.active-link {
+	color: $nord10 !important;
+
+	&:hover {
+		color: $nord10 !important;
+	}
+}
+
+.home,
+.towers {
+	margin-top: 40px;
+	padding-bottom: 80px;
+	width: 100%;
+	overflow: hidden;
+	background-color: $nord0;
+}
+
+.tower-grid {
+	margin: 0 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.grid-container {
+	width: 240px;
+	height: 320px;
+	transition: 0.2s;
+}
+
+.tower-grid {
+	a {
+		height: 100%;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: $nord10;
+		text-decoration: none;
+		font-size: 1.6em;
+		font-weight: 300;
+		transition: 0.2s;
+
+		&::after {
+			content: "";
+			color: $nord8;
+			background-color: $nord0;
+			display: block;
+			transition: 0.2s;
+		}
+
+		&:hover {
+			&::after {
+				color: $nord10;
+			}
+
+			color: $nord10;
+		}
+	}
+
+	img {
+		height: 60%;
+		margin-bottom: 8px;
+		padding: 8px;
+		border-radius: 8px;
+		background-color: $nord0;
+		transition: 0.2s;
+	}
+}
+
+#dart-monkey::after {
+	content: "Dart Monkey";
+}
+
+#boomerang-monkey {
+	&::after {
+		content: "Boomerang Monkey";
+	}
+
+	img {
+		@include transform(scale(0.8));
+	}
+}
+
+#bomb-shooter {
+	&::after {
+		content: "Bomb Shooter";
+	}
+
+	img {
+		@include transform(scale(0.8));
+	}
+}
+
+#tack-shooter {
+	&::after {
+		content: "Tack Shooter";
+	}
+
+	img {
+		@include transform(scale(0.85));
+	}
+}
+
+#ice-monkey::after {
+	content: "Ice Monkey";
+}
+
+#glue-gunner::after {
+	content: "Glue Gunner";
+}
+
+#sniper-monkey::after {
+	content: "Sniper Monkey";
+}
+
+#monkey-sub::after {
+	content: "Monkey Sub";
+}
+
+#monkey-buccaneer::after {
+	content: "Monkey Buccaneer";
+}
+
+#monkey-ace::after {
+	content: "Monkey Ace";
+}
+
+#heli-pilot::after {
+	content: "Heli Pilot";
+}
+
+#mortar-monkey::after {
+	content: "Mortar Monkey";
+}
+
+#dartling-gunner::after {
+	content: "Dartling Gunner";
+}
+
+#wizard-monkey::after {
+	content: "Wizard Monkey";
+}
+
+#super-monkey::after {
+	content: "Super Monkey";
+}
+
+#ninja-monkey {
+	&::after {
+		content: "Ninja Monkey";
+	}
+
+	img {
+		@include transform(scale(0.9));
+	}
+}
+
+#alchemist::after {
+	content: "Alchemist";
+}
+
+#druid::after {
+	content: "Druid";
+}
+
+#banana-farm::after {
+	content: "Banana Farm";
+}
+
+#spike-factory {
+	&::after {
+		content: "Spike Factory";
+	}
+
+	img {
+		@include transform(scale(0.8));
+	}
+}
+
+#monkey-village::after {
+	content: "Monkey Village";
+}
+
+#monkey-engineer::after {
+	content: "Monkey Engineer";
+}
+
+.heroes {
+	margin-top: 40px;
+	padding-bottom: 80px;
+	width: 100%;
+	overflow: hidden;
+	background-color: $nord0;
+}
+
+#quincy::after {
+	content: "Quincy";
+}
+
+#gwendolin::after {
+	content: "Gwendolin";
+}
+
+#striker-jones::after {
+	content: "Striker Jones";
+}
+
+#obyn-greenfoot::after {
+	content: "Obyn Greenfoot";
+}
+
+#captain-churchill::after {
+	content: "Captain Churchill";
+}
+
+#benjamin::after {
+	content: "Benjamin";
+}
+
+#ezili::after {
+	content: "Ezili";
+}
+
+#pat-fusty::after {
+	content: "Pat Fusty";
+}
+
+#adora::after {
+	content: "Adora";
+}
+
+#admiral-brickell::after {
+	content: "Admiral Brickell";
+}
+
+#etienne::after {
+	content: "Etienne";
+}
+
+#sauda::after {
+	content: "Sauda";
+}
+
+.bloons {
+	margin-top: 40px;
+	padding-bottom: 80px;
+	width: 100%;
+	overflow: hidden;
+	background-color: #2e3440;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.table-wrapper {
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+table {
+	display: inline-table;
+	margin: 0 20px 80px 20px;
+	border-collapse: collapse;
+	background-color: $nord1;
+}
+
+th {
+	font-size: 1.5em;
+	font-family: Nunito-SemiBold;
+	color: $nord6;
+	padding: 0.5em;
+	border: 1px solid $nord6;
+	text-align: left;
+}
+
+td {
+	font-size: 1.5em;
+	font-family: Nunito-SemiBold;
+	color: $nord6;
+	padding: 0.5em;
+	border: 1px solid $nord6;
+	text-align: left;
+	font-size: 1.5em;
+	font-family: Nunito-Light;
+}
+
+.bloons img {
+	height: 1.8em;
+}
+
+#tableheaderimg {
+	height: 0.9em;
+	margin-left: 8px;
+}
+
+.rounds {
+	margin-top: 40px;
+	padding-bottom: 80px;
+	width: 100%;
+	overflow: hidden;
+	background-color: $nord0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		list-style-type: none;
+		margin: 16px 8px;
+	}
+
+	a {
+		font-size: large;
+		color: $nord8;
+		text-decoration: none;
+		transition: 0.2s;
+		font-size: 2em;
+		padding: 0px 4px;
+		font-weight: 300;
+
+		&:hover,
+		&:focus {
+			color: $nord10;
+			outline: none;
+		}
+	}
+
+	img {
+		height: 1.8em;
+	}
+}
+
+@media (max-width: 1200px) {
+	.grid-container {
+		width: 200px;
+		height: 240px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.navbar {
+		flex-direction: column;
+		height: 150px;
+
+		ul {
+			justify-content: center;
+			margin: 0;
+		}
+
+		a {
+			font-size: 2em;
+		}
+	}
+
+	.grid-container {
+		width: 200px;
+		height: 240px;
+	}
+
+	.tower-grid {
+		a::after {
+			transform: scaleY(1);
+		}
+
+		img {
+			height: 60%;
+		}
+	}
+
+	.bloons table,
+	.rounds table {
+		display: inline-table;
+		margin: 0 20px;
+	}
+}
+
+@media (max-width: 700px) {
+	.navbar a {
+		font-size: 1.6em;
+	}
+}
+
+@media (max-width: 500px) {
+	.navbar {
+		height: 240px;
+
+		ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		li {
+			margin: 4px;
+		}
+
+		a {
+			font-size: 1.4em;
+		}
+	}
+
+	.home {
+		margin-top: 0;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.towers {
+		margin-top: 0;
+
+		a {
+			font-size: 1.4em;
+		}
+	}
+
+	.grid-container {
+		width: 180px;
+		height: 240px;
+	}
+
+	.tower-grid {
+		img {
+			height: 60%;
+		}
+
+		a::after {
+			transform: scaleY(1);
+		}
+	}
+
+	.heroes {
+		margin-top: 0;
+
+		a {
+			font-size: 1.4em;
+		}
+	}
+
+	.bloons {
+		margin-top: 0;
+	}
+
+	.rounds {
+		margin-top: 0;
+		flex-direction: column;
+
+		a {
+			font-size: 1.4em;
+		}
+	}
+}
