@@ -28,6 +28,10 @@ import CeramicFortified from "../bloons/CeramicFortified.png";
 import PinkCamo from "../bloons/PinkCamo.png";
 import PinkRegrow from "../bloons/PinkRegrow.png";
 import PurpleRegrowCamo from "../bloons/PurpleRegrowCamo.png";
+import CeramicCamo from "../bloons/CeramicCamo.png";
+import LeadCamo from "../bloons/LeadCamo.png";
+import CeramicRegrow from "../bloons/CeramicRegrow.png";
+import BFB from "../bloons/BFB.png";
 
 export default function Rounds() {
 	return (
@@ -769,6 +773,153 @@ export default function Rounds() {
 								&ensp;20x
 								<img src={Ceramic} alt="Ceramic" />
 								&ensp;2x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>51</td>
+							<td>2030</td>
+							<td>947</td>
+							<td>1098</td>
+							<td>38758</td>
+							<td>
+								10x
+								<img src={RainbowRegrow} alt="Rainbow Regrow" />
+								&ensp;15x
+								<img src={CeramicCamo} alt="Ceramic Camo" />
+							</td>
+						</tr>
+						<tr>
+							<td>52</td>
+							<td>3447</td>
+							<td>1444</td>
+							<td>1596</td>
+							<td>40354</td>
+							<td>
+								25x
+								<img src={Rainbow} alt="Rainbow" />
+								&ensp;10x
+								<img src={Ceramic} alt="Ceramic" />
+								&ensp;2x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>53</td>
+							<td>2248</td>
+							<td>771</td>
+							<td>924</td>
+							<td>41278</td>
+							<td>
+								80x
+								<img src={PinkCamo} alt="Pink Camo" />
+								&ensp;3x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>54</td>
+							<td>4872</td>
+							<td>2044</td>
+							<td>2198</td>
+							<td>43476</td>
+							<td>
+								35x
+								<img src={Ceramic} alt="Ceramic" />
+								&ensp;2x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>55</td>
+							<td>5296</td>
+							<td>2328</td>
+							<td>2483</td>
+							<td>45959</td>
+							<td>
+								45x
+								<img src={Ceramic} alt="Ceramic" />
+								&ensp;1x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>56</td>
+							<td>2496</td>
+							<td>1130</td>
+							<td>1286</td>
+							<td>47245</td>
+							<td>
+								40x
+								<img src={RainbowCamo} alt="Rainbow Camo" />
+								&ensp;1x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>4344</td>
+							<td>1702</td>
+							<td>1859</td>
+							<td>49104</td>
+							<td>
+								40x
+								<img src={Rainbow} alt="Rainbow" />
+								&ensp;4x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>58</td>
+							<td>5780</td>
+							<td>2140</td>
+							<td>2298</td>
+							<td>51402</td>
+							<td>
+								15x
+								<img src={Ceramic} alt="Ceramic" />
+								&ensp;10x
+								<img src={CeramicFortified} alt="Ceramic Fortified" />
+								&ensp;5x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>59</td>
+							<td>4270</td>
+							<td>2000</td>
+							<td>2159</td>
+							<td>53561</td>
+							<td>
+								50x
+								<img src={LeadCamo} alt="Lead Camo" />
+								&ensp;20x
+								<img src={Ceramic} alt="Ceramic" />
+								&ensp;10x
+								<img src={CeramicRegrow} alt="Ceramic Regrow" />
+							</td>
+						</tr>
+						<tr>
+							<td>60</td>
+							<td>3164</td>
+							<td>763</td>
+							<td>923</td>
+							<td>54484</td>
+							<td>
+								1x&nbsp;
+								<img src={BFB} alt="BFB" />
+							</td>
+						</tr>
+						<tr>
+							<td>61</td>
+							<td>6530</td>
+							<td>1071</td>
+							<td>1232</td>
+							<td>55716</td>
+							<td>
+								150x
+								<img src={ZebraRegrow} alt="Zebra Regrow" />
+								&ensp;5x&nbsp;
 								<img src={MOAB} alt="MOAB" />
 							</td>
 						</tr>
