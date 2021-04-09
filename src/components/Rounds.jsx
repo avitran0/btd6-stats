@@ -32,6 +32,8 @@ import CeramicCamo from "../bloons/CeramicCamo.png";
 import LeadCamo from "../bloons/LeadCamo.png";
 import CeramicRegrow from "../bloons/CeramicRegrow.png";
 import BFB from "../bloons/BFB.png";
+import RainbowRegrowCamo from "../bloons/RainbowRegrowCamo.png";
+import MOABFortified from "../bloons/MOABFortified.png";
 
 export default function Rounds() {
 	return (
@@ -921,6 +923,68 @@ export default function Rounds() {
 								<img src={ZebraRegrow} alt="Zebra Regrow" />
 								&ensp;5x&nbsp;
 								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>62</td>
+							<td>8247</td>
+							<td>1225</td>
+							<td>1387</td>
+							<td>57102</td>
+							<td>
+								250x
+								<img src={Purple} alt="Purple" />
+								&ensp;15x
+								<img src={RainbowRegrowCamo} alt="Rainbow Regrow Camo" />
+								&ensp;5x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+								&ensp;2x&nbsp;
+								<img src={MOABFortified} alt="MOAB Fortified" />
+							</td>
+						</tr>
+						<tr>
+							<td>63</td>
+							<td>14413</td>
+							<td>2663</td>
+							<td>2826</td>
+							<td>59928</td>
+							<td>
+								75x
+								<img src={Lead} alt="Lead" />
+								&ensp;122x
+								<img src={Ceramic} alt="Ceramic" />
+							</td>
+						</tr>
+						<tr>
+							<td>64</td>
+							<td>6264</td>
+							<td>686</td>
+							<td>850</td>
+							<td>60778</td>
+							<td>
+								6x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+								&ensp;3x&nbsp;
+								<img src={MOABFortified} alt="MOAB Fortified" />
+							</td>
+						</tr>
+						<tr>
+							<td>65</td>
+							<td>18966</td>
+							<td>2906</td>
+							<td>3071</td>
+							<td>63849</td>
+							<td>
+								100x
+								<img src={Zebra} alt="Zebra" />
+								&ensp;70x
+								<img src={Rainbow} alt="Rainbow" />
+								&ensp;50x
+								<img src={Ceramic} alt="Ceramic" />
+								&ensp;3x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+								&ensp;2x&nbsp;
+								<img src={BFB} alt="BFB" />
 							</td>
 						</tr>
 					</tbody>
