@@ -104,7 +104,7 @@ p {
 		font-size: large;
 		color: $nord8;
 		text-decoration: none;
-		transition: 0.2s;
+		transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 		font-size: 2em;
 		padding: 0px 4px;
 		font-weight: 300;
@@ -144,7 +144,7 @@ p {
 .grid-container {
 	width: 240px;
 	height: 320px;
-	transition: 0.2s;
+	transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 }
 
 .tower-grid {
@@ -158,14 +158,14 @@ p {
 		text-decoration: none;
 		font-size: 1.6em;
 		font-weight: 300;
-		transition: 0.2s;
+		transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 
 		&::after {
 			content: "";
 			color: $nord8;
 			background-color: $nord0;
 			display: block;
-			transition: 0.2s;
+			transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 		}
 
 		&:hover {
@@ -183,7 +183,7 @@ p {
 		padding: 8px;
 		border-radius: 8px;
 		background-color: $nord1;
-		transition: 0.2s;
+		transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 	}
 }
 
@@ -366,7 +366,7 @@ p {
 	padding-bottom: 80px;
 	width: 100%;
 	overflow: hidden;
-	background-color: #2e3440;
+	background-color: $nord0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -443,7 +443,7 @@ td {
 		font-size: large;
 		color: $nord8;
 		text-decoration: none;
-		transition: 0.2s;
+		transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 		font-size: 2em;
 		padding: 0px 4px;
 		font-weight: 300;

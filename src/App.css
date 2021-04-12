@@ -106,8 +106,8 @@ p {
 	font-size: large;
 	color: #88c0d0;
 	text-decoration: none;
-	-webkit-transition: 0.2s;
-	transition: 0.2s;
+	-webkit-transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+	transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 	font-size: 2em;
 	padding: 0px 4px;
 	font-weight: 300;
@@ -151,8 +151,8 @@ p {
 .grid-container {
 	width: 240px;
 	height: 320px;
-	-webkit-transition: 0.2s;
-	transition: 0.2s;
+	-webkit-transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+	transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 }
 
 .tower-grid a {
@@ -174,8 +174,8 @@ p {
 	text-decoration: none;
 	font-size: 1.6em;
 	font-weight: 300;
-	-webkit-transition: 0.2s;
-	transition: 0.2s;
+	-webkit-transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+	transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 }
 
 .tower-grid a::after {
@@ -183,8 +183,8 @@ p {
 	color: #88c0d0;
 	background-color: #2e3440;
 	display: block;
-	-webkit-transition: 0.2s;
-	transition: 0.2s;
+	-webkit-transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+	transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 }
 
 .tower-grid a:hover {
@@ -201,8 +201,8 @@ p {
 	padding: 8px;
 	border-radius: 8px;
 	background-color: #3b4252;
-	-webkit-transition: 0.2s;
-	transition: 0.2s;
+	-webkit-transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+	transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 }
 
 #dart-monkey::after {
@@ -485,8 +485,8 @@ td {
 	font-size: large;
 	color: #88c0d0;
 	text-decoration: none;
-	-webkit-transition: 0.2s;
-	transition: 0.2s;
+	-webkit-transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+	transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
 	font-size: 2em;
 	padding: 0px 4px;
 	font-weight: 300;
