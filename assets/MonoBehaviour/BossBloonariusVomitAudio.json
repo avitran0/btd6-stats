@@ -1,0 +1,23 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -671837217138340628
+  },
+  "m_Name": "BossBloonariusVomitAudio",
+  "audioClips": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -4543218939014905250
+    }
+  ],
+  "assetId": "BossBloonariusVomit",
+  "groupId": "BossBloonariusVomit",
+  "groupLimit": 1,
+  "volume": 1.0,
+  "delay": 0.0
+}

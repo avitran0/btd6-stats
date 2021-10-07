@@ -1,0 +1,29 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 8724506070044719340
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2580865318141159626
+  },
+  "m_Name": "",
+  "animationClip": {
+    "m_FileID": 0,
+    "m_PathID": -1229559365605209118
+  },
+  "animator": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "randomizeSpeed": 0,
+  "randomSpeedRange": {
+    "min": 0.8,
+    "max": 1.2
+  },
+  "playbackSpeed": 1.0,
+  "randomStartTime": 0,
+  "resetOnEnable": 0,
+  "dontPlayOnInit": 0
+}

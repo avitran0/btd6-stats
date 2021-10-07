@@ -1,0 +1,72 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -104304053298338984
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2084259058896349868
+  },
+  "m_Name": "",
+  "container": {
+    "m_FileID": 0,
+    "m_PathID": -104304053298338984
+  },
+  "removeButton": {
+    "m_FileID": 0,
+    "m_PathID": -104304052451402683
+  },
+  "giveCashButton": {
+    "m_FileID": 0,
+    "m_PathID": -104304053877207797
+  },
+  "cashTxt": {
+    "m_FileID": 0,
+    "m_PathID": -104304050861478062
+  },
+  "giveCashTxt": {
+    "m_FileID": 0,
+    "m_PathID": -104304051246516600
+  },
+  "notificationIcon": {
+    "m_FileID": 0,
+    "m_PathID": -104304053649797067
+  },
+  "playerNumberIcon": {
+    "m_FileID": 0,
+    "m_PathID": -104304052657544977
+  },
+  "playerNameTxt": {
+    "m_FileID": 0,
+    "m_PathID": -104304052503629737
+  },
+  "disconnectedPanel": {
+    "m_FileID": 0,
+    "m_PathID": -104304050226777978
+  },
+  "coopActiveDetails": {
+    "m_FileID": 0,
+    "m_PathID": -104304052905085702
+  },
+  "muteEmotesButton": {
+    "m_FileID": 0,
+    "m_PathID": -104304051310864616
+  },
+  "muteEnabledState": {
+    "m_FileID": 0,
+    "m_PathID": -104304053298552960
+  },
+  "muteDisabledState": {
+    "m_FileID": 0,
+    "m_PathID": -104304051335979816
+  },
+  "monkeysRemainingObj": {
+    "m_FileID": 0,
+    "m_PathID": -104304053513597254
+  },
+  "monkeysRemainingTxt": {
+    "m_FileID": 0,
+    "m_PathID": -104304050750179590
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 1741688565665259530
+  },
+  "m_Name": "",
+  "idleCount": 3,
+  "weightOverrides": [
+    100.0,
+    2.0,
+    2.0
+  ],
+  "lockToDefault": 0
+}

@@ -1,0 +1,104 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -9015483368125196342
+  },
+  "m_Enabled": 0,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7489478044908218714
+  },
+  "m_Name": "",
+  "target": {
+    "m_FileID": 0,
+    "m_PathID": -9015483366847988552
+  },
+  "duration": 1.5,
+  "curve": {
+    "m_Curve": [
+      {
+        "time": 0.0,
+        "value": 1.0,
+        "inSlope": 0.0,
+        "outSlope": -7.341434,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.18419072,
+        "value": -0.352224,
+        "inSlope": -7.341434,
+        "outSlope": 10.1069994,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.373028636,
+        "value": 1.55636072,
+        "inSlope": 10.1069994,
+        "outSlope": -5.072185,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.639389336,
+        "value": 0.205329984,
+        "inSlope": -5.072185,
+        "outSlope": 11.9993286,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.7932914,
+        "value": 2.05205131,
+        "inSlope": 11.9993286,
+        "outSlope": -16.4803371,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.9510556,
+        "value": -0.547955632,
+        "inSlope": -16.4803371,
+        "outSlope": 31.62681,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 1.0,
+        "value": 1.0,
+        "inSlope": 31.62681,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+  },
+  "isPlaying": 1,
+  "loop": 1,
+  "disableOnEnd": 0,
+  "stopPlayingOnEnd": 0,
+  "resetOnEnable": 1,
+  "updateAnimOnReset": 0,
+  "speedMultiplier": 1.0,
+  "useUnscaledTime": 0,
+  "rotationsPerDuration": 2.0,
+  "axis": 2,
+  "useLocalCoordinateSustem": 1,
+  "randomizeAngle": 1,
+  "randomizeSpeed": 0,
+  "randomSpeedMultiplierRange": {
+    "min": 0.8,
+    "max": 1.2
+  }
+}

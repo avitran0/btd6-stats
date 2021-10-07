@@ -1,0 +1,32 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1118620529328977558
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -8443150441212372250
+  },
+  "m_Name": "",
+  "powerButtons": {
+    "m_FileID": 0,
+    "m_PathID": 1118620527816703944
+  },
+  "unusedButtons": {
+    "m_FileID": 0,
+    "m_PathID": 1118620526738832407
+  },
+  "powerButtonPrefab": {
+    "m_FileID": 0,
+    "m_PathID": 1118620528633364636
+  },
+  "swipe": {
+    "m_FileID": 0,
+    "m_PathID": 1118620527040383916
+  },
+  "animator": {
+    "m_FileID": 0,
+    "m_PathID": 1118620526037928364
+  }
+}

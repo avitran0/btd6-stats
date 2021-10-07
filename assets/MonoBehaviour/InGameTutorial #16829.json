@@ -1,0 +1,44 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -6042988642711836959
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -1619009466496746417
+  },
+  "m_Name": "",
+  "monkeyArrow": {
+    "m_FileID": 0,
+    "m_PathID": -6042988643954096710
+  },
+  "heroArrow": {
+    "m_FileID": 0,
+    "m_PathID": -6042988643904608331
+  },
+  "placementCircle": {
+    "m_FileID": 0,
+    "m_PathID": -6042988643739704369
+  },
+  "placementAnimationStart": {
+    "m_FileID": 0,
+    "m_PathID": -6042988643695987234
+  },
+  "placementAnimationEnd": {
+    "m_FileID": 0,
+    "m_PathID": -6042988641574212731
+  },
+  "monkeySelectAnimation": {
+    "m_FileID": 0,
+    "m_PathID": 5639532704101891348
+  },
+  "upgradeMonkeyAnimation": {
+    "m_FileID": 0,
+    "m_PathID": 5948840830601440503
+  },
+  "victorySound": {
+    "m_FileID": 0,
+    "m_PathID": 4345421960794156360
+  }
+}

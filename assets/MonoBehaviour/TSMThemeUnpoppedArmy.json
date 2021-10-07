@@ -1,0 +1,96 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -457371296423685808
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 6098949346516118650
+  },
+  "m_Name": "",
+  "infoButton": {
+    "m_FileID": 0,
+    "m_PathID": -457371297522717288
+  },
+  "towerName": {
+    "m_FileID": 0,
+    "m_PathID": -457371296192640285
+  },
+  "popCountText": {
+    "m_FileID": 0,
+    "m_PathID": -457371296103643243
+  },
+  "cashCountText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "targetTypeText": {
+    "m_FileID": 0,
+    "m_PathID": -457371299116376672
+  },
+  "towerMonkeyImage": {
+    "m_FileID": 0,
+    "m_PathID": -457371296070252314
+  },
+  "towerBackgroundImage": {
+    "m_FileID": 0,
+    "m_PathID": -457371297361961194
+  },
+  "primarySprite": {
+    "guidRef": ""
+  },
+  "militarySprite": {
+    "guidRef": ""
+  },
+  "magicSprite": {
+    "guidRef": "IngameUi[PortraitContainerMagic]"
+  },
+  "supportSprite": {
+    "guidRef": ""
+  },
+  "heroSprite": {
+    "guidRef": ""
+  },
+  "paragonSprite": {
+    "guidRef": ""
+  },
+  "targetTypeBackwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": -457371296968255815
+  },
+  "targetTypeForwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": -457371296238347874
+  },
+  "namedMonkeyInput": {
+    "m_FileID": 0,
+    "m_PathID": -457371295980145476
+  },
+  "namedMonkeyButton": {
+    "m_FileID": 0,
+    "m_PathID": -457371294994423297
+  },
+  "coopPlayerIcons": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -457371295707934882
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -457371296983029313
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -457371298313089726
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -457371296593803586
+    }
+  ],
+  "necroCount": {
+    "m_FileID": 0,
+    "m_PathID": -457371297316811573
+  }
+}

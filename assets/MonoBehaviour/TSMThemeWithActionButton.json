@@ -1,0 +1,101 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 7054814333192029618
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -3194278371477732124
+  },
+  "m_Name": "",
+  "infoButton": {
+    "m_FileID": 0,
+    "m_PathID": 7054814336189277682
+  },
+  "towerName": {
+    "m_FileID": 0,
+    "m_PathID": 7054814335685726637
+  },
+  "popCountText": {
+    "m_FileID": 0,
+    "m_PathID": 7054814334498671491
+  },
+  "cashCountText": {
+    "m_FileID": 0,
+    "m_PathID": 7054814334480163661
+  },
+  "targetTypeText": {
+    "m_FileID": 0,
+    "m_PathID": 7054814334527961259
+  },
+  "towerMonkeyImage": {
+    "m_FileID": 0,
+    "m_PathID": 7054814334851900249
+  },
+  "towerBackgroundImage": {
+    "m_FileID": 0,
+    "m_PathID": 7054814335678903912
+  },
+  "primarySprite": {
+    "guidRef": "IngameUi[PortraitContainerPrimary]"
+  },
+  "militarySprite": {
+    "guidRef": "IngameUi[PortraitContainerMilitary]"
+  },
+  "magicSprite": {
+    "guidRef": "IngameUi[PortraitContainerMagic]"
+  },
+  "supportSprite": {
+    "guidRef": "IngameUi[PortraitContainerSupport]"
+  },
+  "heroSprite": {
+    "guidRef": "IngameUi[PortraitContainerHero]"
+  },
+  "paragonSprite": {
+    "guidRef": ""
+  },
+  "targetTypeBackwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": 7054814333083751798
+  },
+  "targetTypeForwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": 7054814334904635116
+  },
+  "namedMonkeyInput": {
+    "m_FileID": 0,
+    "m_PathID": 7054814336403968761
+  },
+  "namedMonkeyButton": {
+    "m_FileID": 0,
+    "m_PathID": 7054814337046636476
+  },
+  "coopPlayerIcons": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 7054814335417721730
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7054814336408218498
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7054814334649263510
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7054814334611532943
+    }
+  ],
+  "targetTypesToShowButtonFor": [
+    "LockInPlace",
+    "PatrolPoints"
+  ],
+  "actionButton": {
+    "m_FileID": 0,
+    "m_PathID": 7054814335141442288
+  },
+  "showOnlyIfTargetTypeActionable": 0
+}

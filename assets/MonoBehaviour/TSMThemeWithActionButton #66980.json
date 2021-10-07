@@ -1,0 +1,98 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1927222438503043939
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -3194278371477732124
+  },
+  "m_Name": "",
+  "infoButton": {
+    "m_FileID": 0,
+    "m_PathID": 1927222435562668133
+  },
+  "towerName": {
+    "m_FileID": 0,
+    "m_PathID": 1927222438282201771
+  },
+  "popCountText": {
+    "m_FileID": 0,
+    "m_PathID": 1927222438886746309
+  },
+  "cashCountText": {
+    "m_FileID": 0,
+    "m_PathID": 1927222435066142155
+  },
+  "targetTypeText": {
+    "m_FileID": 0,
+    "m_PathID": 1927222438359889902
+  },
+  "towerMonkeyImage": {
+    "m_FileID": 0,
+    "m_PathID": 1927222438743725004
+  },
+  "towerBackgroundImage": {
+    "m_FileID": 0,
+    "m_PathID": 1927222437697815310
+  },
+  "primarySprite": {
+    "guidRef": "IngameUi[PortraitContainerPrimary]"
+  },
+  "militarySprite": {
+    "guidRef": "IngameUi[PortraitContainerMilitary]"
+  },
+  "magicSprite": {
+    "guidRef": "IngameUi[PortraitContainerMagic]"
+  },
+  "supportSprite": {
+    "guidRef": "IngameUi[PortraitContainerSupport]"
+  },
+  "heroSprite": {
+    "guidRef": "IngameUi[PortraitContainerHero]"
+  },
+  "paragonSprite": {
+    "guidRef": ""
+  },
+  "targetTypeBackwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": 1927222438160737430
+  },
+  "targetTypeForwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": 1927222438934761981
+  },
+  "namedMonkeyInput": {
+    "m_FileID": 0,
+    "m_PathID": 1927222436899103470
+  },
+  "namedMonkeyButton": {
+    "m_FileID": 0,
+    "m_PathID": 1927222436165636828
+  },
+  "coopPlayerIcons": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 1927222437637864619
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1927222435895236097
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1927222436669809448
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1927222438529478673
+    }
+  ],
+  "targetTypesToShowButtonFor": [],
+  "actionButton": {
+    "m_FileID": 0,
+    "m_PathID": 1927222438229704442
+  },
+  "showOnlyIfTargetTypeActionable": 0
+}

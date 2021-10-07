@@ -1,0 +1,20 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -9106004360711744581
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 6716080062962204375
+  },
+  "m_Name": "",
+  "buffsUi": {
+    "m_FileID": 0,
+    "m_PathID": -9106004359821064568
+  },
+  "buffPrefab": {
+    "m_FileID": 0,
+    "m_PathID": -9106004359351641825
+  }
+}

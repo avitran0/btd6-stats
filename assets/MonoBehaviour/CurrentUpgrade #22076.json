@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -5381174680473262252
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -5550323998130001395
+  },
+  "m_Name": "",
+  "notUpgraded": {
+    "m_FileID": 0,
+    "m_PathID": -5381174679020067520
+  },
+  "label": {
+    "m_FileID": 0,
+    "m_PathID": -5381174678637404382
+  },
+  "cost": {
+    "m_FileID": 0,
+    "m_PathID": -5381174679974169052
+  },
+  "icon": {
+    "m_FileID": 0,
+    "m_PathID": -5381174680043188591
+  },
+  "backgroundActive": {
+    "guidRef": "Ui[BrownInsertArrowPanel]"
+  },
+  "backgroundInactive": {
+    "guidRef": "Ui[BrownInsertArrowPanel]"
+  },
+  "wobbleAnimation": {
+    "m_FileID": 0,
+    "m_PathID": -5381174682593701960
+  },
+  "background": {
+    "m_FileID": 0,
+    "m_PathID": -5381174682549081946
+  },
+  "row": 2
+}

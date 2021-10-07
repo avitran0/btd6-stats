@@ -1,0 +1,136 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 4656907831608146267
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 8553596460092488970
+  },
+  "m_Name": "",
+  "infoButton": {
+    "m_FileID": 0,
+    "m_PathID": 4656907831555820640
+  },
+  "towerName": {
+    "m_FileID": 0,
+    "m_PathID": 4656907830584686003
+  },
+  "popCountText": {
+    "m_FileID": 0,
+    "m_PathID": 4656907831011808904
+  },
+  "cashCountText": {
+    "m_FileID": 0,
+    "m_PathID": 4656907831011808904
+  },
+  "targetTypeText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "towerMonkeyImage": {
+    "m_FileID": 0,
+    "m_PathID": 4656907831374034868
+  },
+  "towerBackgroundImage": {
+    "m_FileID": 0,
+    "m_PathID": 4656907828321209362
+  },
+  "primarySprite": {
+    "guidRef": ""
+  },
+  "militarySprite": {
+    "guidRef": ""
+  },
+  "magicSprite": {
+    "guidRef": ""
+  },
+  "supportSprite": {
+    "guidRef": "IngameUi[PortraitContainerSupport]"
+  },
+  "heroSprite": {
+    "guidRef": ""
+  },
+  "paragonSprite": {
+    "guidRef": ""
+  },
+  "targetTypeBackwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "targetTypeForwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "namedMonkeyInput": {
+    "m_FileID": 0,
+    "m_PathID": 4656907829424231007
+  },
+  "namedMonkeyButton": {
+    "m_FileID": 0,
+    "m_PathID": 4656907830660295543
+  },
+  "coopPlayerIcons": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 4656907830100724831
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4656907829355389028
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4656907830560451012
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4656907830656311958
+    }
+  ],
+  "collectButton": {
+    "m_FileID": 0,
+    "m_PathID": 4656907831525265789
+  },
+  "collectAllButton": {
+    "m_FileID": 0,
+    "m_PathID": 4656907832106798801
+  },
+  "depositButton": {
+    "m_FileID": 0,
+    "m_PathID": 4656907830362567267
+  },
+  "collectObject": {
+    "m_FileID": 0,
+    "m_PathID": 4656907829001895789
+  },
+  "collectAllObject": {
+    "m_FileID": 0,
+    "m_PathID": 4656907831229892628
+  },
+  "depositObject": {
+    "m_FileID": 0,
+    "m_PathID": 4656907829111517655
+  },
+  "collectAmount": {
+    "m_FileID": 0,
+    "m_PathID": 4656907830852555641
+  },
+  "collectAllAmount": {
+    "m_FileID": 0,
+    "m_PathID": 4656907828014561346
+  },
+  "depositAmount": {
+    "m_FileID": 0,
+    "m_PathID": 4656907829569759187
+  },
+  "debtObject": {
+    "m_FileID": 0,
+    "m_PathID": 4656907828679522002
+  },
+  "debtText": {
+    "m_FileID": 0,
+    "m_PathID": 4656907828086764644
+  }
+}

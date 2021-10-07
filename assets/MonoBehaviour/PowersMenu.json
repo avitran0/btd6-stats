@@ -1,0 +1,48 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1118620529928540541
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 4820021298463173166
+  },
+  "m_Name": "",
+  "powerButtons": {
+    "m_FileID": 0,
+    "m_PathID": 1118620529837554705
+  },
+  "unusedButtons": {
+    "m_FileID": 0,
+    "m_PathID": 1118620526631593934
+  },
+  "powerButtonPrefab": {
+    "m_FileID": 0,
+    "m_PathID": 1118620527501027618
+  },
+  "scrollRect": {
+    "m_FileID": 0,
+    "m_PathID": 1118620526465797879
+  },
+  "getMorePowersLarge": {
+    "m_FileID": 0,
+    "m_PathID": 1118620529281232781
+  },
+  "showInstaMonkeysButton": {
+    "m_FileID": 0,
+    "m_PathID": 1118620528710114230
+  },
+  "instaMonkeysText": {
+    "m_FileID": 0,
+    "m_PathID": 1118620529364089066
+  },
+  "powersMenuRect": {
+    "m_FileID": 0,
+    "m_PathID": 1118620527491643142
+  },
+  "instaTowerMenu": {
+    "m_FileID": 0,
+    "m_PathID": 1118620526460069984
+  }
+}

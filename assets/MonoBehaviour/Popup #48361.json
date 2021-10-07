@@ -1,0 +1,79 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -573694779424457236
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -792635378627062763
+  },
+  "m_Name": "",
+  "disablesHotKeys": 0,
+  "animator": {
+    "m_FileID": 0,
+    "m_PathID": -573694777859779730
+  },
+  "titleObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "bodyObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "okObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "cancelObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "cashObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "title": {
+    "m_FileID": 0,
+    "m_PathID": -573694778072320256
+  },
+  "body": {
+    "m_FileID": 0,
+    "m_PathID": -573694779712761024
+  },
+  "image": {
+    "m_FileID": 0,
+    "m_PathID": -573694779430530859
+  },
+  "cashText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "okText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "cancelText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "currentCashInfo": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "currentCashText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "clickSound": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "closeSound": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "animationDelay": 0.0,
+  "background": 0
+}

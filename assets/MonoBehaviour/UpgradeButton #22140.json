@@ -1,0 +1,118 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -5381174680313483569
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 5001686688198400794
+  },
+  "m_Name": "",
+  "label": {
+    "m_FileID": 0,
+    "m_PathID": -5381174679580961501
+  },
+  "cost": {
+    "m_FileID": 0,
+    "m_PathID": -5381174680800337309
+  },
+  "labelParagon": {
+    "m_FileID": 0,
+    "m_PathID": -5381174679344327362
+  },
+  "costParagon": {
+    "m_FileID": 0,
+    "m_PathID": -5381174680332013440
+  },
+  "costActiveColor": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "costInactiveColor": {
+    "r": 1.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 1.0
+  },
+  "lockedText": {
+    "m_FileID": 0,
+    "m_PathID": -5381174681013634203
+  },
+  "icon": {
+    "m_FileID": 0,
+    "m_PathID": -5381174680303085448
+  },
+  "purchaseArrowGlow": {
+    "m_FileID": 0,
+    "m_PathID": -5381174680765045667
+  },
+  "backgroundActive": {
+    "guidRef": "Ui[GreenArrowBtn]"
+  },
+  "backgroundInactive": {
+    "guidRef": "Ui[GreenArrowBtnLocked]"
+  },
+  "backgroundParagon": {
+    "guidRef": "Ui[ParagonArrowBtn]"
+  },
+  "restrictedIcon": {
+    "m_FileID": 0,
+    "m_PathID": -5381174678908663616
+  },
+  "lockedIcon": {
+    "m_FileID": 0,
+    "m_PathID": -5381174680839124118
+  },
+  "upgradableIcon": {
+    "m_FileID": 0,
+    "m_PathID": -5381174679696957492
+  },
+  "upgradeAvailableColor": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "upgradeUnavailableColor": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 0.528
+  },
+  "purchasableColor": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "nonPurchasableColor": {
+    "r": 0.627451,
+    "g": 0.6431373,
+    "b": 0.68235296,
+    "a": 1.0
+  },
+  "lockedMaterial": {
+    "m_FileID": 1,
+    "m_PathID": 3593608698429696713
+  },
+  "unlockedMaterial": {
+    "m_FileID": 1,
+    "m_PathID": 1937920743390500683
+  },
+  "wobbleAnimation": {
+    "m_FileID": 0,
+    "m_PathID": -5381174679594898438
+  },
+  "monkeyVillageRequirement": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "monkeyVillageRequirementText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "row": 0
+}

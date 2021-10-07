@@ -1,0 +1,24 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1118620528920407147
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7749133406997055094
+  },
+  "m_Name": "",
+  "instaTowerGroupButtons": {
+    "m_FileID": 0,
+    "m_PathID": 1118620529837554705
+  },
+  "instaTowerGroupButtonPrefab": {
+    "m_FileID": 0,
+    "m_PathID": 1118620528377650001
+  },
+  "toggleGroup": {
+    "m_FileID": 0,
+    "m_PathID": 1118620529850394650
+  }
+}

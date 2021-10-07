@@ -1,0 +1,98 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -8664189872154215660
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -3194278371477732124
+  },
+  "m_Name": "",
+  "infoButton": {
+    "m_FileID": 0,
+    "m_PathID": -8664189872830606441
+  },
+  "towerName": {
+    "m_FileID": 0,
+    "m_PathID": -8664189872102832356
+  },
+  "popCountText": {
+    "m_FileID": 0,
+    "m_PathID": -8664189870988364773
+  },
+  "cashCountText": {
+    "m_FileID": 0,
+    "m_PathID": -8664189871355230088
+  },
+  "targetTypeText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "towerMonkeyImage": {
+    "m_FileID": 0,
+    "m_PathID": -8664189872179056333
+  },
+  "towerBackgroundImage": {
+    "m_FileID": 0,
+    "m_PathID": -8664189873141941427
+  },
+  "primarySprite": {
+    "guidRef": "IngameUi[PortraitContainerPrimary]"
+  },
+  "militarySprite": {
+    "guidRef": "IngameUi[PortraitContainerMilitary]"
+  },
+  "magicSprite": {
+    "guidRef": "IngameUi[PortraitContainerMagic]"
+  },
+  "supportSprite": {
+    "guidRef": "IngameUi[PortraitContainerSupport]"
+  },
+  "heroSprite": {
+    "guidRef": "IngameUi[PortraitContainerHero]"
+  },
+  "paragonSprite": {
+    "guidRef": ""
+  },
+  "targetTypeBackwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "targetTypeForwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "namedMonkeyInput": {
+    "m_FileID": 0,
+    "m_PathID": -8664189870234104886
+  },
+  "namedMonkeyButton": {
+    "m_FileID": 0,
+    "m_PathID": -8664189872049847435
+  },
+  "coopPlayerIcons": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -8664189872197926339
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -8664189873191347274
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -8664189872954241589
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -8664189871581358935
+    }
+  ],
+  "targetTypesToShowButtonFor": [],
+  "actionButton": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "showOnlyIfTargetTypeActionable": 0
+}
