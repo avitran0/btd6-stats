@@ -1,11 +1,12 @@
-import "./App.css";
-import Home from "./components/Home.jsx";
-import Towers from "./components/Towers.jsx";
-import Heroes from "./components/Heroes.jsx";
-import Bloons from "./components/Bloons.jsx";
-import Rounds from "./components/Rounds.jsx";
-import ABR from "./components/ABR.jsx";
-import Apopalypse from "./components/Apopalypse.jsx";
+import "./App.scss";
+import Home from "./components/Home";
+import Towers from "./components/Towers";
+import Heroes from "./components/Heroes";
+import Bloons from "./components/Bloons";
+import Rounds from "./components/Rounds";
+import ABR from "./components/ABR";
+import Apopalypse from "./components/Apopalypse";
+import DartMonkey from "./components/towers/dart-monkey"
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import { AnimatedSwitch } from "react-router-transition";
 import BTD6Logo from "./misc/BTD6Logo.png";
@@ -49,7 +50,7 @@ function App() {
 				>
 					<Route path="/" exact component={Home} />
 					<Route path="/towers" exact component={Towers} />
-					<Route path="/towers/dart-monkey" component={DartMonkeySelect} />
+					<Route path="/towers/dart-monkey" component={DartMonkey} />
 					<Route path="/heroes" exact component={Heroes} />
 					<Route path="/heroes/quincy" component={HeroQuincy} />
 					<Route path="/bloons" component={Bloons} />
@@ -59,14 +60,6 @@ function App() {
 				</AnimatedSwitch>
 			</div>
 		</Router>
-	);
-}
-
-function DartMonkeySelect() {
-	return (
-		<div className="dart-monkey-select">
-			<h1>Dart Monkey</h1>
-		</div>
 	);
 }
 

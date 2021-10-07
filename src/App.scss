@@ -16,6 +16,12 @@ $nord14: #a3be8c;
 
 html {
 	background-color: $nord0;
+	overflow-x: hidden;
+	scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+	width: 0;
 }
 
 @font-face {
@@ -28,12 +34,16 @@ html {
 	src: url(./fonts/Nunito-SemiBold.ttf);
 }
 
+@font-face {
+	font-family: LuckiestGuy;
+	src: url(./fonts/LuckiestGuy-Regular.ttf);
+}
+
 .App {
 	text-align: center;
 	min-height: 100vh;
 	box-sizing: border-box;
 	background-color: $nord0;
-	overflow: hidden;
 	font-family: Nunito-Light;
 }
 
@@ -104,7 +114,7 @@ p {
 		font-size: large;
 		color: $nord8;
 		text-decoration: none;
-		transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+		transition: 0.2s;
 		font-size: 2em;
 		padding: 0px 4px;
 		font-weight: 300;
@@ -144,7 +154,7 @@ p {
 .grid-container {
 	width: 240px;
 	height: 320px;
-	transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+	transition: 0.2s;
 }
 
 .tower-grid {
@@ -158,14 +168,14 @@ p {
 		text-decoration: none;
 		font-size: 1.6em;
 		font-weight: 300;
-		transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+		transition: 0.2s;
 
 		&::after {
 			content: "";
 			color: $nord8;
 			background-color: $nord0;
 			display: block;
-			transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+			transition: 0.2s;
 		}
 
 		&:hover {
@@ -183,7 +193,7 @@ p {
 		padding: 8px;
 		border-radius: 8px;
 		background-color: $nord1;
-		transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+		transition: 0.2s;
 	}
 }
 
@@ -443,7 +453,7 @@ td {
 		font-size: large;
 		color: $nord8;
 		text-decoration: none;
-		transition: 0.3s cubic-bezier(0.3, 1, 0.7, 1);
+		transition: 0.2s;
 		font-size: 2em;
 		padding: 0px 4px;
 		font-weight: 300;
