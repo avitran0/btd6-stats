@@ -1,0 +1,116 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 8065252751565500245
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 8572549511790343108
+  },
+  "m_Name": "",
+  "infoButton": {
+    "m_FileID": 0,
+    "m_PathID": 8065252750324524978
+  },
+  "towerName": {
+    "m_FileID": 0,
+    "m_PathID": 8065252751111949652
+  },
+  "popCountText": {
+    "m_FileID": 0,
+    "m_PathID": 8065252752422536614
+  },
+  "cashCountText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "targetTypeText": {
+    "m_FileID": 0,
+    "m_PathID": 8065252751382508207
+  },
+  "towerMonkeyImage": {
+    "m_FileID": 0,
+    "m_PathID": 8065252753986103516
+  },
+  "towerBackgroundImage": {
+    "m_FileID": 0,
+    "m_PathID": 8065252750764564444
+  },
+  "primarySprite": {
+    "guidRef": ""
+  },
+  "militarySprite": {
+    "guidRef": ""
+  },
+  "magicSprite": {
+    "guidRef": "IngameUi[PortraitContainerMagic]"
+  },
+  "supportSprite": {
+    "guidRef": ""
+  },
+  "heroSprite": {
+    "guidRef": ""
+  },
+  "paragonSprite": {
+    "guidRef": ""
+  },
+  "targetTypeBackwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "targetTypeForwardsButton": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "namedMonkeyInput": {
+    "m_FileID": 0,
+    "m_PathID": 8065252753439669537
+  },
+  "namedMonkeyButton": {
+    "m_FileID": 0,
+    "m_PathID": 8065252754177575912
+  },
+  "coopPlayerIcons": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 8065252752725607299
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8065252750037383673
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8065252749994172680
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8065252752314340847
+    }
+  ],
+  "targetTypeLeftTxt": {
+    "m_FileID": 0,
+    "m_PathID": 8065252751123581740
+  },
+  "targetLeftPrevBtn": {
+    "m_FileID": 0,
+    "m_PathID": 8065252752224286943
+  },
+  "targetLeftNextBtn": {
+    "m_FileID": 0,
+    "m_PathID": 8065252752270390274
+  },
+  "targetRightPrevBtn": {
+    "m_FileID": 0,
+    "m_PathID": 8065252753050079548
+  },
+  "targetRightNextBtn": {
+    "m_FileID": 0,
+    "m_PathID": 8065252753602242962
+  },
+  "targetBtnSound": {
+    "m_FileID": 0,
+    "m_PathID": 4893666096488506804
+  }
+}

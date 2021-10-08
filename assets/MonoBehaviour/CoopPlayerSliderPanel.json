@@ -1,0 +1,106 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -104304052741798256
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -1648349593895398766
+  },
+  "m_Name": "",
+  "container": {
+    "m_FileID": 0,
+    "m_PathID": -104304052741798256
+  },
+  "animator": {
+    "m_FileID": 0,
+    "m_PathID": -104304053699076643
+  },
+  "requestButton": {
+    "m_FileID": 0,
+    "m_PathID": -104304050649121280
+  },
+  "closeMenuButton": {
+    "m_FileID": 0,
+    "m_PathID": -104304053044555545
+  },
+  "notificationIcon": {
+    "m_FileID": 0,
+    "m_PathID": -104304053410779324
+  },
+  "notificationGlow": {
+    "m_FileID": 0,
+    "m_PathID": -104304052769551539
+  },
+  "coopPlayerPanels": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -104304049921649188
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -104304052646098097
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -104304053562406635
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -104304052435497370
+    }
+  ],
+  "playerSliderPanel": {
+    "m_FileID": 0,
+    "m_PathID": -104304052463317357
+  },
+  "emotesPanel": {
+    "m_FileID": 0,
+    "m_PathID": -104304053714191655
+  },
+  "connectivityLowIconSelf": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "connectivityLowIconOtherPlayers": {
+    "m_FileID": 0,
+    "m_PathID": -104304052528491109
+  },
+  "moneyReminderIcon": {
+    "m_FileID": 0,
+    "m_PathID": -104304053111034784
+  },
+  "cashTransferButton": {
+    "m_FileID": 0,
+    "m_PathID": -104304051634125773
+  },
+  "cashTransferPanelActive": {
+    "m_FileID": 0,
+    "m_PathID": -104304053250612220
+  },
+  "cashTransferPanelInactive": {
+    "m_FileID": 0,
+    "m_PathID": -104304052843753967
+  },
+  "emotesButton": {
+    "m_FileID": 0,
+    "m_PathID": -104304050095728695
+  },
+  "emotesPanelActive": {
+    "m_FileID": 0,
+    "m_PathID": -104304049639929471
+  },
+  "emotesPanelInactive": {
+    "m_FileID": 0,
+    "m_PathID": -104304050348600043
+  },
+  "cashReceivedSound": {
+    "m_FileID": 0,
+    "m_PathID": -8649770524141563700
+  },
+  "alertSound": {
+    "m_FileID": 0,
+    "m_PathID": -2254861749918984011
+  }
+}

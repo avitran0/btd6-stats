@@ -1,0 +1,119 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -5432403344217429385
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 1698654179331943719
+  },
+  "m_Name": "",
+  "playableAnimator": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "animationStates": [
+    {
+      "priority": 0,
+      "interruptibleBehaviour": 1,
+      "forceSingleFrameAdvance": 0,
+      "isUpgradeAnimation": 0,
+      "animationClip": {
+        "m_FileID": 0,
+        "m_PathID": -7180548631260228107
+      },
+      "eventTrigger": {
+        "m_PersistentCalls": {
+          "m_Calls": []
+        }
+      },
+      "looping": 0,
+      "importantFrames": [],
+      "firstFrameReturns": [],
+      "lastFrameReturns": []
+    },
+    {
+      "priority": 1,
+      "interruptibleBehaviour": 0,
+      "forceSingleFrameAdvance": 0,
+      "isUpgradeAnimation": 0,
+      "animationClip": {
+        "m_FileID": 0,
+        "m_PathID": -556474120236239106
+      },
+      "eventTrigger": {
+        "m_PersistentCalls": {
+          "m_Calls": []
+        }
+      },
+      "looping": 0,
+      "importantFrames": [],
+      "firstFrameReturns": [],
+      "lastFrameReturns": []
+    },
+    {
+      "priority": 2,
+      "interruptibleBehaviour": 0,
+      "forceSingleFrameAdvance": 0,
+      "isUpgradeAnimation": 1,
+      "animationClip": {
+        "m_FileID": 0,
+        "m_PathID": 2119861968467435062
+      },
+      "eventTrigger": {
+        "m_PersistentCalls": {
+          "m_Calls": []
+        }
+      },
+      "looping": 0,
+      "importantFrames": [],
+      "firstFrameReturns": [],
+      "lastFrameReturns": []
+    }
+  ],
+  "animationStatesByIndex": [],
+  "placementConfigs": [
+    {
+      "priority": 10,
+      "interruptibleBehaviour": 3,
+      "forceSingleFrameAdvance": 0,
+      "isUpgradeAnimation": 0,
+      "animationClip": {
+        "m_FileID": 0,
+        "m_PathID": -4857041460996044222
+      },
+      "eventTrigger": {
+        "m_PersistentCalls": {
+          "m_Calls": []
+        }
+      },
+      "looping": 0,
+      "importantFrames": [],
+      "firstFrameReturns": [],
+      "lastFrameReturns": []
+    }
+  ],
+  "attackIdleConfigs": [
+    {
+      "priority": 0,
+      "interruptibleBehaviour": 1,
+      "forceSingleFrameAdvance": 0,
+      "isUpgradeAnimation": 0,
+      "animationClip": {
+        "m_FileID": 0,
+        "m_PathID": -562495398377202799
+      },
+      "eventTrigger": {
+        "m_PersistentCalls": {
+          "m_Calls": []
+        }
+      },
+      "looping": 0,
+      "importantFrames": [],
+      "firstFrameReturns": [],
+      "lastFrameReturns": []
+    }
+  ],
+  "IdleVariants": []
+}

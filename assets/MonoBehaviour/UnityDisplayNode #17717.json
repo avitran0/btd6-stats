@@ -1,0 +1,27 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -5864103713068935227
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 8852586755713880523
+  },
+  "m_Name": "",
+  "genericRenderers": [],
+  "genericRendererLayers": [],
+  "sprite": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "spriteInChildren": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "towerPlacementPreCalcOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  }
+}

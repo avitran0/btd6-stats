@@ -1,0 +1,59 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 7546993873500439703
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -1129999868889641676
+  },
+  "m_Name": "",
+  "target": {
+    "m_FileID": 0,
+    "m_PathID": 7546993873500439703
+  },
+  "duration": 3.0,
+  "curve": {
+    "m_Curve": [
+      {
+        "time": 0.318145782,
+        "value": 0.0,
+        "inSlope": 6.586618,
+        "outSlope": 6.586618,
+        "weightedMode": 0,
+        "inWeight": 0.0,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.469968766,
+        "value": 1.0,
+        "inSlope": -0.04503785,
+        "outSlope": -0.04503785,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.123013452
+      },
+      {
+        "time": 0.614439845,
+        "value": 0.0,
+        "inSlope": -6.92180061,
+        "outSlope": -6.92180061,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.0
+      }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+  },
+  "isPlaying": 1,
+  "loop": 1,
+  "disableOnEnd": 0,
+  "stopPlayingOnEnd": 0,
+  "resetOnEnable": 1,
+  "updateAnimOnReset": 0,
+  "speedMultiplier": 1.0,
+  "useUnscaledTime": 1
+}

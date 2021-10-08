@@ -1,0 +1,34 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 6607641444826478956
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2458445146954347395
+  },
+  "m_Name": "",
+  "fps": 12.0,
+  "frames": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 6147398216798673459
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6147398217953294819
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6147398214508085209
+    }
+  ],
+  "currentFrame": 0,
+  "isPlaying": 1,
+  "loop": 1,
+  "randomizeFrames": 0,
+  "randomStartFrame": 0,
+  "resetOnEnable": 1,
+  "endLoopBehaviour": 0
+}

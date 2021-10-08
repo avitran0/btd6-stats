@@ -1,0 +1,55 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -5381174682077064705
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 5315253224081607311
+  },
+  "m_Name": "",
+  "buttonID": 0,
+  "upgradeButton": {
+    "m_FileID": 0,
+    "m_PathID": -5381174679595232953
+  },
+  "currentUpgrade": {
+    "m_FileID": 0,
+    "m_PathID": -5381174681800840609
+  },
+  "tiers": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -5381174680152006240
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -5381174681751851027
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -5381174678636480171
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -5381174679935915326
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -5381174682712660540
+    }
+  ],
+  "locked": {
+    "m_FileID": 0,
+    "m_PathID": -5381174680527405052
+  },
+  "restricted": {
+    "m_FileID": 0,
+    "m_PathID": -5381174679437342163
+  },
+  "towerSelectionMenu": {
+    "m_FileID": 0,
+    "m_PathID": -5381174681405758058
+  }
+}

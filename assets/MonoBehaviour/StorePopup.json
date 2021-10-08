@@ -1,0 +1,111 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 3725607658237314222
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -6658511730613808431
+  },
+  "m_Name": "",
+  "disablesHotKeys": 0,
+  "animator": {
+    "m_FileID": 0,
+    "m_PathID": 3725607660417728714
+  },
+  "titleObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "bodyObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "okObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "cancelObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "cashObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "title": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "body": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "image": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "cashText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "okText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "cancelText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "currentCashInfo": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "currentCashText": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "clickSound": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "closeSound": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "animationDelay": 0.0,
+  "background": 0,
+  "itemImg": {
+    "m_FileID": 0,
+    "m_PathID": 3725607660538758290
+  },
+  "titleTxt": {
+    "m_FileID": 0,
+    "m_PathID": 3725607660705266888
+  },
+  "descTxt": {
+    "m_FileID": 0,
+    "m_PathID": 3725607659643252439
+  },
+  "priceTxt": {
+    "m_FileID": 0,
+    "m_PathID": 3725607659660991578
+  },
+  "salePriceTxt": {
+    "m_FileID": 0,
+    "m_PathID": 3725607658312771264
+  },
+  "saleObject": {
+    "m_FileID": 0,
+    "m_PathID": 3725607660151276546
+  },
+  "purchaseBtn": {
+    "m_FileID": 0,
+    "m_PathID": 3725607661928905447
+  },
+  "closeBtn": {
+    "m_FileID": 0,
+    "m_PathID": 3725607660586452004
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1099017624737169914
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -8677056047698364541
+  },
+  "m_Name": "",
+  "speed": 175.0,
+  "firstCoveragePercent": 0.25,
+  "secondCoveragePercent": 0.75,
+  "enterAndExitBuffer": 5.0,
+  "rate": 0.5,
+  "subRate": 0.1,
+  "numOfArrows": 4,
+  "firstColorStart": {
+    "r": 0.0,
+    "g": 1.0,
+    "b": 0.0,
+    "a": 1.0
+  },
+  "firstColorEnd": {
+    "r": 0.0,
+    "g": 1.0,
+    "b": 0.0,
+    "a": 0.0
+  },
+  "secondColorStart": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 0.0,
+    "a": 0.0
+  },
+  "secondColorEnd": {
+    "r": 1.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 1.0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1312044215692553308
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 338261900181617272
+  },
+  "m_Name": "",
+  "panel": {
+    "m_FileID": 0,
+    "m_PathID": 1312044215692553308
+  },
+  "statsMenuAnimator": {
+    "m_FileID": 0,
+    "m_PathID": 1312044218405169688
+  },
+  "healthButton": {
+    "m_FileID": 0,
+    "m_PathID": 1312044217697981718
+  },
+  "cashButton": {
+    "m_FileID": 0,
+    "m_PathID": 1312044218270077475
+  },
+  "thriveGlow": {
+    "m_FileID": 0,
+    "m_PathID": 1312044218736597493
+  }
+}

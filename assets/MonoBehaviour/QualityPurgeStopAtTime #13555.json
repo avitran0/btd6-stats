@@ -1,0 +1,25 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -6682134673325279729
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 8636384459395959475
+  },
+  "m_Name": "",
+  "behavior": {
+    "m_FileID": 0,
+    "m_PathID": -6682134672703081959
+  },
+  "purgeType": 0,
+  "quality": 0,
+  "animator": {
+    "m_FileID": 0,
+    "m_PathID": 2256655335242566012
+  },
+  "stateName": "CrateDropIdle",
+  "stopAtTime": 1.0,
+  "hasBeenDisabled": 0
+}

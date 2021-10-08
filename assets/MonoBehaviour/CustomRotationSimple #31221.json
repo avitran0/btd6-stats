@@ -1,0 +1,25 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -3618678080085341724
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 850515552865712586
+  },
+  "m_Name": "",
+  "target": {
+    "m_FileID": 0,
+    "m_PathID": -3618678080085341724
+  },
+  "rotationAxis": {
+    "x": 0.0,
+    "y": 1.0,
+    "z": 0.0
+  },
+  "useLocalCoordinates": 1,
+  "speed": 0.5,
+  "minStartingOffset": 0.0,
+  "maxStartingOffset": 0.0
+}

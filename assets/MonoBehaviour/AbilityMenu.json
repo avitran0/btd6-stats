@@ -1,0 +1,41 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -8796069206014940204
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -8884976081164543531
+  },
+  "m_Name": "",
+  "panelAnimator": {
+    "m_FileID": 0,
+    "m_PathID": -8796069204934002270
+  },
+  "abilityGroupAnimator": {
+    "m_FileID": 0,
+    "m_PathID": -8796069203581721904
+  },
+  "buttonAnimator": {
+    "m_FileID": 0,
+    "m_PathID": -8796069204924585345
+  },
+  "rowAnimator": {
+    "m_FileID": 0,
+    "m_PathID": -8796069206011512264
+  },
+  "abilityShifterAnimator": {
+    "m_FileID": 0,
+    "m_PathID": -8796069204804493012
+  },
+  "row": {
+    "m_FileID": 0,
+    "m_PathID": -8796069202670412868
+  },
+  "abilitiesPerRow": 8,
+  "buttonPrefab": {
+    "m_FileID": 0,
+    "m_PathID": -1030036154098435870
+  }
+}

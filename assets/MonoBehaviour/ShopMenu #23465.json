@@ -1,0 +1,61 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -5197265895446348616
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 3143737387501891136
+  },
+  "m_Name": "",
+  "towerButtons": {
+    "m_FileID": 0,
+    "m_PathID": -5197265892668893225
+  },
+  "towerButtonPrefab": {
+    "m_FileID": 0,
+    "m_PathID": -1192371551066633948
+  },
+  "scrollRect": {
+    "m_FileID": 0,
+    "m_PathID": -5197265894547841216
+  },
+  "powersButton": {
+    "m_FileID": 0,
+    "m_PathID": -5197265893737527331
+  },
+  "bloonsButton": {
+    "m_FileID": 0,
+    "m_PathID": -5197265892822974822
+  },
+  "goButton": {
+    "m_FileID": 0,
+    "m_PathID": -5197265896273456034
+  },
+  "goButtonPulse": {
+    "m_FileID": 0,
+    "m_PathID": -5197265895712625567
+  },
+  "sendRound": {
+    "m_FileID": 0,
+    "m_PathID": -5197265896747243797
+  },
+  "upgradesButton": {
+    "m_FileID": 0,
+    "m_PathID": -5197265893632662563
+  },
+  "clickSound": {
+    "m_FileID": 0,
+    "m_PathID": 6086681876514891167
+  },
+  "click3Sound": {
+    "m_FileID": 0,
+    "m_PathID": -7113041710921020191
+  },
+  "shopOrientation": 1,
+  "monkeyTeamsBreakPrefab": {
+    "m_FileID": 0,
+    "m_PathID": -1379090865790429983
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -1192371551293833968
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -4314829290718477613
+  },
+  "m_Name": "",
+  "orientation": 0,
+  "hero": 0,
+  "updateIcon": 0,
+  "icon": {
+    "m_FileID": 0,
+    "m_PathID": -1192371548394511353
+  },
+  "upgradeAailableIcon": {
+    "m_FileID": 0,
+    "m_PathID": -1192371550364878338
+  },
+  "notEnoughCashTextColor": {
+    "r": 1.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 1.0
+  },
+  "towerCountIcon": {
+    "m_FileID": 0,
+    "m_PathID": -1192371548676387755
+  },
+  "towerCountText": {
+    "m_FileID": 0,
+    "m_PathID": -1192371548360694246
+  },
+  "towerCostText": {
+    "m_FileID": 0,
+    "m_PathID": -1192371549739407173
+  },
+  "unlockAnimator": {
+    "m_FileID": 0,
+    "m_PathID": -1192371549215145095
+  },
+  "primarySprite": {
+    "guidRef": "a5263ff19953a32489337ccb7cad58d2"
+  },
+  "militarySprite": {
+    "guidRef": "ad510010fb4f52440acabeb36e1304de"
+  },
+  "magicSprite": {
+    "guidRef": "6b22bda6f7099b943a39dd3bb9e8bc59"
+  },
+  "supportSprite": {
+    "guidRef": "c9618ecd9959be84f8187c6a407165b5"
+  },
+  "heroSprite": {
+    "guidRef": "5509b600f2447014a8dd67219bda422a"
+  },
+  "grayscaleMaterial": {
+    "m_FileID": 0,
+    "m_PathID": -3699277240265123583
+  },
+  "lockedIcon": {
+    "m_FileID": 0,
+    "m_PathID": -1192371551923999661
+  },
+  "highlight": {
+    "m_FileID": 0,
+    "m_PathID": -1192371550816591820
+  },
+  "monkeyTeamsBgSprite": {
+    "guidRef": "76c0b4db08e21bd4eb28c485217d54f6"
+  },
+  "monkeyTeamsTopSprite": {
+    "guidRef": "96b3933f5a33d9b44a4967eaaa01bc15"
+  },
+  "monkeyTeamsTopImg": {
+    "m_FileID": 0,
+    "m_PathID": -1192371549318365519
+  }
+}

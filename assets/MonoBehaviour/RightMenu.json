@@ -1,0 +1,24 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -5197265895367121405
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 356347618240665933
+  },
+  "m_Name": "",
+  "confirmPlacementBtn": {
+    "m_FileID": 0,
+    "m_PathID": -5197265895619897346
+  },
+  "cancelPlacementBtn": {
+    "m_FileID": 0,
+    "m_PathID": -5197265893915429501
+  },
+  "clickSound": {
+    "m_FileID": 0,
+    "m_PathID": 3813792516680501712
+  }
+}

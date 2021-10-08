@@ -1,0 +1,16 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1018351945356756596
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -8300286912834507239
+  },
+  "m_Name": "",
+  "eyeMeshRenderer": {
+    "m_FileID": 0,
+    "m_PathID": 1018351942401237351
+  }
+}

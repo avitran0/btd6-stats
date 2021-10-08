@@ -1,0 +1,23 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2866325134443880727
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -5514232126546696884
+  },
+  "m_Name": "",
+  "audioClips": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -2590355608723925268
+    }
+  ],
+  "audioDelays": [
+    0.0
+  ],
+  "groupLimit": 1,
+  "playOnStart": 1
+}

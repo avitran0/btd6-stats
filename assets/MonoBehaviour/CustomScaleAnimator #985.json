@@ -1,0 +1,95 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -9015483368125196342
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -1129999868889641676
+  },
+  "m_Name": "",
+  "target": {
+    "m_FileID": 0,
+    "m_PathID": -9015483366847988552
+  },
+  "duration": 1.0,
+  "curve": {
+    "m_Curve": [
+      {
+        "time": 0.0,
+        "value": 1.0,
+        "inSlope": 0.0,
+        "outSlope": 1.27154136,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.123992376,
+        "value": 1.15766144,
+        "inSlope": 1.27154136,
+        "outSlope": -1.6338762,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.3049124,
+        "value": 0.862060547,
+        "inSlope": -1.6338762,
+        "outSlope": 1.0175544,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.525194347,
+        "value": 1.08620942,
+        "inSlope": 1.0175544,
+        "outSlope": -0.6629343,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.7406988,
+        "value": 0.9433441,
+        "inSlope": -0.6629343,
+        "outSlope": 1.22328651,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.9420717,
+        "value": 1.18968081,
+        "inSlope": 1.22328651,
+        "outSlope": -3.27440548,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 1.0,
+        "value": 1.0,
+        "inSlope": -3.27440548,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+  },
+  "isPlaying": 1,
+  "loop": 1,
+  "disableOnEnd": 0,
+  "stopPlayingOnEnd": 0,
+  "resetOnEnable": 1,
+  "updateAnimOnReset": 0,
+  "speedMultiplier": 1.0,
+  "useUnscaledTime": 0
+}

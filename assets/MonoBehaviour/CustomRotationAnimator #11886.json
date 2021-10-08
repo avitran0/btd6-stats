@@ -1,0 +1,59 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -6971546027064541917
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7489478044908218714
+  },
+  "m_Name": "",
+  "target": {
+    "m_FileID": 0,
+    "m_PathID": -6971546026366020277
+  },
+  "duration": 0.7,
+  "curve": {
+    "m_Curve": [
+      {
+        "time": 0.0,
+        "value": 0.0,
+        "inSlope": 1.05867636,
+        "outSlope": 1.05867636,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.0355951041
+      },
+      {
+        "time": 1.0,
+        "value": 0.007194519,
+        "inSlope": 1.11600852,
+        "outSlope": 1.11600852,
+        "weightedMode": 0,
+        "inWeight": 0.03003341,
+        "outWeight": 0.333333343
+      }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 0
+  },
+  "isPlaying": 1,
+  "loop": 1,
+  "disableOnEnd": 1,
+  "stopPlayingOnEnd": 0,
+  "resetOnEnable": 1,
+  "updateAnimOnReset": 0,
+  "speedMultiplier": 1.0,
+  "useUnscaledTime": 0,
+  "rotationsPerDuration": 1.0,
+  "axis": 2,
+  "useLocalCoordinateSustem": 1,
+  "randomizeAngle": 0,
+  "randomizeSpeed": 0,
+  "randomSpeedMultiplierRange": {
+    "min": 0.8,
+    "max": 1.2
+  }
+}

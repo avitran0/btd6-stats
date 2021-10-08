@@ -1,0 +1,42 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -5381174680468935600
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -7413804844742936084
+  },
+  "m_Name": "",
+  "m_Material": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Color": {
+    "r": 0.779457152,
+    "g": 0.04705882,
+    "b": 0.945098042,
+    "a": 1.0
+  },
+  "m_RaycastTarget": 0,
+  "m_Maskable": 1,
+  "m_OnCullStateChanged": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  },
+  "m_Sprite": {
+    "m_FileID": 0,
+    "m_PathID": 1424907650805876855
+  },
+  "m_Type": 1,
+  "m_PreserveAspect": 0,
+  "m_FillCenter": 1,
+  "m_FillMethod": 4,
+  "m_FillAmount": 1.0,
+  "m_FillClockwise": 1,
+  "m_FillOrigin": 0,
+  "m_UseSpriteMesh": 0,
+  "m_PixelsPerUnitMultiplier": 1.0
+}

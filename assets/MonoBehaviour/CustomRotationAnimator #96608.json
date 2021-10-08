@@ -1,0 +1,77 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 6883547349506253375
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7489478044908218714
+  },
+  "m_Name": "",
+  "target": {
+    "m_FileID": 0,
+    "m_PathID": 6883547349506253375
+  },
+  "duration": 2.0,
+  "curve": {
+    "m_Curve": [
+      {
+        "time": 0.0,
+        "value": -1.52587891E-05,
+        "inSlope": 0.01889764,
+        "outSlope": 0.01889764,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.9047724
+      },
+      {
+        "time": 0.262496948,
+        "value": 0.003392944,
+        "inSlope": 0.0,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 0.7083334,
+        "value": -0.00409617275,
+        "inSlope": -0.00246326253,
+        "outSlope": -0.00246326253,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 1.0,
+        "value": -1.52587891E-05,
+        "inSlope": 0.0282650683,
+        "outSlope": 0.0282650683,
+        "weightedMode": 0,
+        "inWeight": 0.657142937,
+        "outWeight": 0.333333343
+      }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 0
+  },
+  "isPlaying": 1,
+  "loop": 1,
+  "disableOnEnd": 1,
+  "stopPlayingOnEnd": 0,
+  "resetOnEnable": 1,
+  "updateAnimOnReset": 0,
+  "speedMultiplier": 1.0,
+  "useUnscaledTime": 0,
+  "rotationsPerDuration": 0.5,
+  "axis": 2,
+  "useLocalCoordinateSustem": 1,
+  "randomizeAngle": 0,
+  "randomizeSpeed": 0,
+  "randomSpeedMultiplierRange": {
+    "min": 0.8,
+    "max": 1.2
+  }
+}
