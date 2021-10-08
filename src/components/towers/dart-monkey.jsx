@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DartMonkey000 from "../../towers/DartMonkey.png";
 
 export default function DartMonkey() {
 	const [p1, setP1] = useState(0);
 	const [p2, setP2] = useState(0);
 	const [p3, setP3] = useState(0);
-	const [damage, setDamage] = useState(0);
-	const [pierce, setPierce] = useState(0);
-	const [speed, setSpeed] = useState(0.0);
-	const [range, setRange] = useState(0);
-	async function handleChange() {
+	const [damage, setDamage] = useState(1);
+	const [pierce, setPierce] = useState(2);
+	const [speed, setSpeed] = useState(0.95);
+	const [range, setRange] = useState(32);
+	useEffect(() => {
 		switch (String(p1) + String(p2) + String(p3)) {
 			case "000":
 				setDamage(1);
@@ -36,6 +36,19 @@ export default function DartMonkey() {
 				setRange(0);
 				break;
 		}
+	}, [p1, p2, p3])
+	function handleChange(button) {
+		switch (button) {
+			case "p1+":
+				p1 >= 5 ? setP1(5) : setP1(p1 + 1);
+				break;
+			case "p1-":
+				p1 <= 0 ? setP1(0) : setP1(p1 - 1);
+				break;
+			default:
+				break;
+		}
+		
 	}
 	return (
 		<div className="tower">
@@ -50,16 +63,14 @@ export default function DartMonkey() {
 			</p>
 			<button
 				onClick={() => {
-					p1 >= 5 ? setP1(5) : setP1(p1 + 1);
-					handleChange()
+					handleChange("p1+");
 				}}
 			>
 				+
 			</button>
 			<button
 				onClick={() => {
-					p1 <= 0 ? setP1(0) : setP1(p1 - 1);
-					handleChange()
+					handleChange("p1-");
 				}}
 			>
 				-
@@ -67,7 +78,7 @@ export default function DartMonkey() {
 			<button
 				onClick={() => {
 					p2 >= 5 ? setP2(5) : setP2(p2 + 1);
-					handleChange()
+					handleChange();
 				}}
 			>
 				+
@@ -75,7 +86,7 @@ export default function DartMonkey() {
 			<button
 				onClick={() => {
 					p3 >= 5 ? setP3(5) : setP3(p3 + 1);
-					handleChange()
+					handleChange();
 				}}
 			>
 				+
