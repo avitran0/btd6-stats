@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import Quincy from "../heroes/Quincy.png";
 import Gwendolin from "../heroes/Gwendolin.png";
 import StrikerJones from "../heroes/StrikerJones.png";
@@ -14,7 +15,13 @@ import Sauda from "../heroes/Sauda.png";
 
 export default function Heroes() {
 	return (
-		<div className="heroes">
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			transition={{ ease: "easeInOut", duration: 0.2 }}
+			className="heroes"
+		>
 			<h1>Heroes</h1>
 			<div className="tower-grid">
 				<div className="grid-container">
@@ -78,6 +85,6 @@ export default function Heroes() {
 					</Link>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

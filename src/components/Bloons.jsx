@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Lives from "../misc/Lives.png";
 import Coin from "../misc/Coin.png";
 import Red from "../bloons/Red.png";
@@ -29,7 +30,13 @@ import BADFortified from "../bloons/BADFortified.png";
 
 export default function Bloons() {
 	return (
-		<div className="bloons">
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			transition={{ ease: "easeInOut", duration: 0.2 }}
+			className="bloons"
+		>
 			<h1>Bloons</h1>
 			<h2>Normal</h2>
 			<div className="table-wrapper">
@@ -39,19 +46,11 @@ export default function Bloons() {
 							<th>Type</th>
 							<th>
 								Health
-								<img
-									src={Lives}
-									alt="Lives"
-									id="tableheaderimg"
-								/>
+								<img src={Lives} alt="Lives" id="tableheaderimg" />
 							</th>
 							<th>
 								Total Cash
-								<img
-									src={Coin}
-									alt="Coin"
-									id="tableheaderimg"
-								/>
+								<img src={Coin} alt="Coin" id="tableheaderimg" />
 							</th>
 							<th>Children</th>
 							<th>Speed</th>
@@ -180,7 +179,7 @@ export default function Bloons() {
 							</td>
 							<td>1</td>
 							<td>23</td>
-							<td>- Immune to sharpness (Darts)</td>
+							<td>- Immune to sharpness</td>
 						</tr>
 						<tr>
 							<td>
@@ -275,10 +274,7 @@ export default function Bloons() {
 							<td>381</td>
 							<td>
 								4x
-								<img
-									src={CeramicRegrowCamo}
-									alt="Ceramic Regrow Camo"
-								/>
+								<img src={CeramicRegrowCamo} alt="Ceramic Regrow Camo" />
 							</td>
 							<td>2.75</td>
 							<td>816</td>
@@ -312,19 +308,11 @@ export default function Bloons() {
 							<th>Type</th>
 							<th>
 								Health
-								<img
-									src={Lives}
-									alt="Lives"
-									id="tableheaderimg"
-								/>
+								<img src={Lives} alt="Lives" id="tableheaderimg" />
 							</th>
 							<th>
 								Total Cash
-								<img
-									src={Coin}
-									alt="Coin"
-									id="tableheaderimg"
-								/>
+								<img src={Coin} alt="Coin" id="tableheaderimg" />
 							</th>
 							<th>Children</th>
 							<th>Speed</th>
@@ -345,19 +333,11 @@ export default function Bloons() {
 							<th>Type</th>
 							<th>
 								Health
-								<img
-									src={Lives}
-									alt="Lives"
-									id="tableheaderimg"
-								/>
+								<img src={Lives} alt="Lives" id="tableheaderimg" />
 							</th>
 							<th>
 								Total Cash
-								<img
-									src={Coin}
-									alt="Coin"
-									id="tableheaderimg"
-								/>
+								<img src={Coin} alt="Coin" id="tableheaderimg" />
 							</th>
 							<th>Children</th>
 							<th>Speed</th>
@@ -381,14 +361,11 @@ export default function Bloons() {
 							</td>
 							<td>1</td>
 							<td>26</td>
-							<td>- Immune to sharpness (Darts)</td>
+							<td>- Immune to sharpness</td>
 						</tr>
 						<tr>
 							<td>
-								<img
-									src={CeramicFortified}
-									alt="Ceramic Fortified"
-								/>
+								<img src={CeramicFortified} alt="Ceramic Fortified" />
 							</td>
 							<td>20</td>
 							<td>95</td>
@@ -408,10 +385,7 @@ export default function Bloons() {
 							<td>381</td>
 							<td>
 								4x
-								<img
-									src={CeramicFortified}
-									alt="Ceramic Fortified"
-								/>
+								<img src={CeramicFortified} alt="Ceramic Fortified" />
 							</td>
 							<td>1</td>
 							<td>856</td>
@@ -453,10 +427,7 @@ export default function Bloons() {
 							<td>381</td>
 							<td>
 								4x
-								<img
-									src={CeramicRegrowFortifiedCamo}
-									alt="Ceramic Regrow Fortified Camo"
-								/>
+								<img src={CeramicRegrowFortifiedCamo} alt="Ceramic Regrow Fortified Camo" />
 							</td>
 							<td>2.75</td>
 							<td>1256</td>
@@ -490,19 +461,11 @@ export default function Bloons() {
 							<th>Type</th>
 							<th>
 								Health
-								<img
-									src={Lives}
-									alt="Lives"
-									id="tableheaderimg"
-								/>
+								<img src={Lives} alt="Lives" id="tableheaderimg" />
 							</th>
 							<th>
 								Total Cash
-								<img
-									src={Coin}
-									alt="Coin"
-									id="tableheaderimg"
-								/>
+								<img src={Coin} alt="Coin" id="tableheaderimg" />
 							</th>
 							<th>Children</th>
 							<th>Speed</th>
@@ -515,6 +478,6 @@ export default function Bloons() {
 					</tfoot>
 				</table>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

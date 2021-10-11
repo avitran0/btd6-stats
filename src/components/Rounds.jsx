@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import Coin from "../misc/Coin.png";
 import Red from "../bloons/Red.png";
 import Blue from "../bloons/Blue.png";
@@ -42,7 +43,13 @@ import ZOMG from "../bloons/ZOMG.png";
 
 export default function Rounds() {
 	return (
-		<div className="rounds">
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			transition={{ ease: "easeInOut", duration: 0.2 }}
+			className="rounds"
+		>
 			<h1>Rounds</h1>
 			<ul>
 				<li>
@@ -68,11 +75,7 @@ export default function Rounds() {
 							</th>
 							<th colspan="3">
 								Cash
-								<img
-									src={Coin}
-									alt="Coin"
-									id="tableheaderimg"
-								/>
+								<img src={Coin} alt="Coin" id="tableheaderimg" />
 							</th>
 							<th rowspan="2">Bloons</th>
 						</tr>
@@ -1219,16 +1222,12 @@ export default function Rounds() {
 						<tr>
 							<th colspan="3">
 								Cash
-								<img
-									src={Coin}
-									alt="Coin"
-									id="tableheaderimg"
-								/>
+								<img src={Coin} alt="Coin" id="tableheaderimg" />
 							</th>
 						</tr>
 					</tfoot>
 				</table>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

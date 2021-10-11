@@ -315,6 +315,32 @@ p {
 	content: "Monkey Engineer";
 }
 
+.tower-container {
+	img {
+		height: 8em;
+	}
+	button {
+		//background-color: $nord0;
+		border: none;
+		border-radius: 8px;
+		transition: 0.2s
+	}
+	button:hover {
+		background-color: $nord1;
+	}
+	table {
+		border-radius: 8px;
+	}
+	td {
+		border: none;
+		background-color: $nord0;
+		padding: 1em 0.5em;
+	}
+	p {
+		transition: 0.2s;
+	}
+}
+
 .heroes {
 	margin-top: 40px;
 	padding-bottom: 80px;
@@ -392,6 +418,7 @@ table {
 	margin: 0 20px 80px 20px;
 	border-collapse: collapse;
 	background-color: $nord1;
+	border-radius: 8px;
 }
 
 th {

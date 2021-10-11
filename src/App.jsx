@@ -6,48 +6,51 @@ import Bloons from "./components/Bloons";
 import Rounds from "./components/Rounds";
 import ABR from "./components/ABR";
 import Apopalypse from "./components/Apopalypse";
-import DartMonkey from "./components/towers/dart-monkey"
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-import { AnimatedSwitch } from "react-router-transition";
+import DartMonkey from "./components/towers/dart-monkey";
+import { Route, NavLink, Switch, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import BTD6Logo from "./misc/BTD6Logo.png";
 
 function App() {
+	const location = useLocation();
 	return (
-		<Router>
-			<div className="App">
-				<header>
-					<nav className="navbar">
-						<div>
-							<img src={BTD6Logo} alt="cock" />
-						</div>
-						<ul>
-							<li>
-								<NavLink to="/" exact activeClassName="active-link">Home</NavLink>
-							</li>
-							<li>
-								<NavLink to="/towers" activeClassName="active-link">Towers</NavLink>
-							</li>
-							<li>
-								<NavLink to="/heroes" activeClassName="active-link">Heroes</NavLink>
-							</li>
-							<li>
-								<NavLink to="/bloons" activeClassName="active-link">Bloons</NavLink>
-							</li>
-							<li>
-								<NavLink to="/rounds" activeClassName="active-link">Rounds</NavLink>
-							</li>
-						</ul>
-					</nav>
-				</header>
-				<AnimatedSwitch
-					atEnter={{ offset: -100 }}
-					atLeave={{ offset: 100 }}
-					atActive={{ offset: 0 }}
-					mapStyles={(styles) => ({
-						transform: `translateX(${styles.offset}%)`,
-					})}
-					className="switch-wrapper"
-				>
+		<div className="App">
+			<header>
+				<nav className="navbar">
+					<div>
+						<img src={BTD6Logo} alt="cock" />
+					</div>
+					<ul>
+						<li>
+							<NavLink to="/" exact activeClassName="active-link">
+								Home
+							</NavLink>
+						</li>
+						<li>
+							<NavLink to="/towers" activeClassName="active-link">
+								Towers
+							</NavLink>
+						</li>
+						<li>
+							<NavLink to="/heroes" activeClassName="active-link">
+								Heroes
+							</NavLink>
+						</li>
+						<li>
+							<NavLink to="/bloons" activeClassName="active-link">
+								Bloons
+							</NavLink>
+						</li>
+						<li>
+							<NavLink to="/rounds" activeClassName="active-link">
+								Rounds
+							</NavLink>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<AnimatePresence exitBeforeEnter initial={false}>
+				<Switch location={location} key={location.pathname}>
 					<Route path="/" exact component={Home} />
 					<Route path="/towers" exact component={Towers} />
 					<Route path="/towers/dart-monkey" component={DartMonkey} />
@@ -57,9 +60,9 @@ function App() {
 					<Route path="/rounds" exact component={Rounds} />
 					<Route path="/rounds/abr" component={ABR} />
 					<Route path="/rounds/apopalypse" component={Apopalypse} />
-				</AnimatedSwitch>
-			</div>
-		</Router>
+				</Switch>
+			</AnimatePresence>
+		</div>
 	);
 }
 

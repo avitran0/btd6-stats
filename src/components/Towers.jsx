@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import DartMonkey from "../towers/DartMonkey.png";
 import BoomerangMonkey from "../towers/BoomerangMonkey.png";
 import BombShooter from "../towers/BombShooter.png";
@@ -24,7 +25,13 @@ import MonkeyEngineer from "../towers/MonkeyEngineer.png";
 
 export default function Towers() {
 	return (
-		<div className="towers">
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			transition={{ ease: "easeInOut", duration: 0.2 }}
+			className="towers"
+		>
 			<h1>Towers</h1>
 			<h2>Primary</h2>
 			<div className="tower-grid">
@@ -148,6 +155,6 @@ export default function Towers() {
 					</Link>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
