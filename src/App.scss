@@ -34,11 +34,6 @@ html {
 	src: url(./fonts/Nunito-SemiBold.ttf);
 }
 
-@font-face {
-	font-family: LuckiestGuy;
-	src: url(./fonts/LuckiestGuy-Regular.ttf);
-}
-
 .App {
 	text-align: center;
 	min-height: 100vh;
@@ -317,16 +312,21 @@ p {
 
 .tower-container {
 	img {
-		height: 8em;
+		max-height: 8em;
+		max-width: 8em;
 	}
 	button {
-		//background-color: $nord0;
+		background-color: $nord1;
 		border: none;
 		border-radius: 8px;
-		transition: 0.2s
-	}
-	button:hover {
-		background-color: $nord1;
+		transition: 0.2s;
+
+		&:hover {
+			background-color: $nord10;
+		}
+		&:disabled {
+			background-color: $nord11;
+		}
 	}
 	table {
 		border-radius: 8px;
@@ -334,10 +334,42 @@ p {
 	td {
 		border: none;
 		background-color: $nord0;
-		padding: 1em 0.5em;
+		padding: 0.5em;
 	}
 	p {
 		transition: 0.2s;
+	}
+}
+
+.active {
+	background-color: $nord14 !important;
+}
+
+.cancel {
+	height: 4em;
+	padding: 1em;
+}
+
+#p1-1 {
+	display: flex;
+	flex-direction: column;
+	&::after {
+		content: "Sharp Shots";
+		color: $nord6;
+		display: block;
+		font: 1.4em Nunito-light;
+	}
+}
+
+#p1-2 {
+	display: flex;
+	flex-direction: column;
+	&::after {
+		content: "Razor Sharp Shots";
+		color: $nord6;
+		display: block;
+		font: 1.4em Nunito-light;
+		max-width: 100%;
 	}
 }
 

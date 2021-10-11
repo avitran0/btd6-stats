@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import DartMonkey000 from "../../dart-monkey/000-DartMonkey.png";
+import Cancel from "../../misc/CloseIcon.png";
 import SharpShots from "../../dart-monkey/SharpShotsUpgradeIcon.png";
 import RazorSharpShots from "../../dart-monkey/RazorSharpShotsUpgradeIcon.png";
 import SpikeOPult from "../../dart-monkey/Spike-o-pultUpgradeIcon.png";
@@ -96,15 +97,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
 				break;
 			case "100":
 				setStats({
@@ -140,15 +132,6 @@ export default function DartMonkey() {
 					costHard: 365,
 					costImpoppable: 410,
 					notes: "",
-				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
 				});
 				break;
 			case "200":
@@ -186,15 +169,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
 				break;
 			case "300":
 				setStats({
@@ -230,15 +204,6 @@ export default function DartMonkey() {
 					costHard: 215,
 					costImpoppable: 240,
 					notes: "",
-				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
 				});
 				break;
 			case "400":
@@ -276,15 +241,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
 				break;
 			case "500":
 				setStats({
@@ -320,15 +276,6 @@ export default function DartMonkey() {
 					costHard: 215,
 					costImpoppable: 240,
 					notes: "",
-				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
 				});
 				break;
 			case "010":
@@ -366,15 +313,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
 				break;
 			case "020":
 				setStats({
@@ -410,15 +348,6 @@ export default function DartMonkey() {
 					costHard: 215,
 					costImpoppable: 240,
 					notes: "",
-				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
 				});
 				break;
 			case "030":
@@ -456,15 +385,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
 				break;
 			case "040":
 				setStats({
@@ -500,15 +420,6 @@ export default function DartMonkey() {
 					costHard: 215,
 					costImpoppable: 240,
 					notes: "",
-				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
 				});
 				break;
 			case "050":
@@ -546,15 +457,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
 				break;
 			case "001":
 				setStats({
@@ -590,15 +492,6 @@ export default function DartMonkey() {
 					costHard: 215,
 					costImpoppable: 240,
 					notes: "",
-				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
 				});
 				break;
 			case "002":
@@ -636,15 +529,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
 				break;
 			case "003":
 				setStats({
@@ -680,15 +564,6 @@ export default function DartMonkey() {
 					costHard: 215,
 					costImpoppable: 240,
 					notes: "",
-				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
 				});
 				break;
 			case "004":
@@ -726,15 +601,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "Crits every 8-12 shots, deals 50 damage",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
 				break;
 			case "005":
 				setStats({
@@ -771,15 +637,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
 				break;
 			case "110":
 				setStats({
@@ -814,15 +671,6 @@ export default function DartMonkey() {
 					costHard: 215,
 					costImpoppable: 240,
 					notes: "",
-				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.setAttribute("disabled", "disabled");
 				});
 				break;
 			case "210":
@@ -860,15 +708,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.setAttribute("disabled", "disabled");
-				});
 				break;
 			case "310":
 				setStats({
@@ -904,15 +743,6 @@ export default function DartMonkey() {
 					costHard: 215,
 					costImpoppable: 240,
 					notes: "",
-				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.setAttribute("disabled", "disabled");
 				});
 				break;
 			case "410":
@@ -950,15 +780,6 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.setAttribute("disabled", "disabled");
-				});
 				break;
 			case "510":
 				setStats({
@@ -994,15 +815,6 @@ export default function DartMonkey() {
 					costHard: 215,
 					costImpoppable: 240,
 					notes: "",
-				});
-				document.querySelectorAll("button.p1").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p2").forEach(function (element) {
-					element.removeAttribute("disabled");
-				});
-				document.querySelectorAll("button.p3").forEach(function (element) {
-					element.setAttribute("disabled", "disabled");
 				});
 				break;
 			case "120":
@@ -2526,95 +2338,199 @@ export default function DartMonkey() {
 						p1: {p1} p2: {p2} p3: {p3}
 					</p>
 					<table>
-						<tr>
-							<td>
-								<button onClick={() => handleChange("p1-1")} id="p1-1" class="p1">
-									<img src={SharpShots} alt="Sharp Shots" title="Sharp Shots"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p1-2")} id="p1-2" class="p1">
-									<img src={RazorSharpShots} alt="Razor Sharp Shots" title="Razor Sharp Shots"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p1-3")} id="p1-3" class="p1">
-									<img src={SpikeOPult} alt="Spike-O-Pult" title="Spike-O-Pult"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p1-4")} id="p1-4" class="p1">
-									<img src={Juggernaut} alt="Juggernaut" title="Juggernaut"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p1-5")} id="p1-5" class="p1">
-									<img src={UltraJuggernaut} alt="Ultra-Juggernaut" title="Ultra-Juggernaut"></img>
-								</button>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<button onClick={() => handleChange("p2-1")} id="p2-1" class="p1">
-									<img src={QuickShots} alt="Quick Shots" title="Quick Shots"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p2-2")} id="p2-2" class="p1">
-									<img src={VeryQuickShots} alt="Very Quick Shots" title="Very Quick Shots"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p2-3")} id="p2-3" class="p1">
-									<img src={TripleShot} alt="Triple Shot" title="Triple Shot"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p2-4")} id="p2-4" class="p1">
-									<img
-										src={SuperMonkeyFanClub}
-										alt="Super Monkey Fan Club"
-										title="Super Monkey Fan Club"
-									></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p2-5")} id="p2-5" class="p1">
-									<img
-										src={PlasmaMonkeyFanClub}
-										alt="Plasma Monkey Fan Club"
-										title="Plasma Monkey Fan Club"
-									></img>
-								</button>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<button onClick={() => handleChange("p3-1")} id="p3-1" class="p1">
-									<img src={LongRangeDarts} alt="Long Range Darts" title="Long Range Darts"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p3-2")} id="p3-2" class="p1">
-									<img src={EnhancedEyesight} alt="Enhanced Eyesight" title="Enhanced Eyesight"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p3-3")} id="p3-3" class="p1">
-									<img src={Crossbow} alt="Crossbow" title="Crossbow"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p3-4")} id="p3-4" class="p1">
-									<img src={Sharpshooter} alt="Sharpshooter" title="Sharpshooter"></img>
-								</button>
-							</td>
-							<td>
-								<button onClick={() => handleChange("p3-5")} id="p3-5" class="p1">
-									<img src={CrossbowMaster} alt="Crossbow Master" title="Crossbow Master"></img>
-								</button>
-							</td>
-						</tr>
+						<tbody>
+							<tr>
+								<td>
+									<button onClick={() => handleChange("p1-0")}>
+										<img src={Cancel} alt="Cancel" title="Cancel" className="cancel"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p1-1")}
+										id="p1-1"
+										className={p1 === 1 ? "active" : ""}
+										disabled={p2 > 0 && p3 > 0 ? true : false}
+									>
+										<img src={SharpShots} alt="Sharp Shots" title="Sharp Shots"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p1-2")}
+										id="p1-2"
+										className={p1 === 2 ? "active" : ""}
+										disabled={p2 > 0 && p3 > 0 ? true : false}
+									>
+										<img
+											src={RazorSharpShots}
+											alt="Razor Sharp Shots"
+											title="Razor Sharp Shots"
+										></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p1-3")}
+										id="p1-3"
+										className={p1 === 3 ? "active" : ""}
+										disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 ? true : false}
+									>
+										<img src={SpikeOPult} alt="Spike-O-Pult" title="Spike-O-Pult"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p1-4")}
+										id="p1-4"
+										className={p1 === 4 ? "active" : ""}
+										disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 ? true : false}
+									>
+										<img src={Juggernaut} alt="Juggernaut" title="Juggernaut"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p1-5")}
+										id="p1-5"
+										className={p1 === 5 ? "active" : ""}
+										disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 ? true : false}
+									>
+										<img
+											src={UltraJuggernaut}
+											alt="Ultra-Juggernaut"
+											title="Ultra-Juggernaut"
+										></img>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button onClick={() => handleChange("p2-0")}>
+										<img src={Cancel} alt="Cancel" title="Cancel" className="cancel"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p2-1")}
+										id="p2-1"
+										className={p2 === 1 ? "active" : ""}
+										disabled={p1 > 0 && p3 > 0 ? true : false}
+									>
+										<img src={QuickShots} alt="Quick Shots" title="Quick Shots"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p2-2")}
+										id="p2-2"
+										className={p2 === 2 ? "active" : ""}
+										disabled={p1 > 0 && p3 > 0 ? true : false}
+									>
+										<img src={VeryQuickShots} alt="Very Quick Shots" title="Very Quick Shots"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p2-3")}
+										id="p2-3"
+										className={p2 === 3 ? "active" : ""}
+										disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 ? true : false}
+									>
+										<img src={TripleShot} alt="Triple Shot" title="Triple Shot"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p2-4")}
+										id="p2-4"
+										className={p2 === 4 ? "active" : ""}
+										disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 ? true : false}
+									>
+										<img
+											src={SuperMonkeyFanClub}
+											alt="Super Monkey Fan Club"
+											title="Super Monkey Fan Club"
+										></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p2-5")}
+										id="p2-5"
+										className={p2 === 5 ? "active" : ""}
+										disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 ? true : false}
+									>
+										<img
+											src={PlasmaMonkeyFanClub}
+											alt="Plasma Monkey Fan Club"
+											title="Plasma Monkey Fan Club"
+										></img>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button onClick={() => handleChange("p3-0")}>
+										<img src={Cancel} alt="Cancel" title="Cancel" className="cancel"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p3-1")}
+										id="p3-1"
+										className={p3 === 1 ? "active" : ""}
+										disabled={p1 > 0 && p2 > 0 ? true : false}
+									>
+										<img src={LongRangeDarts} alt="Long Range Darts" title="Long Range Darts"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p3-2")}
+										id="p3-2"
+										className={p3 === 2 ? "active" : ""}
+										disabled={p1 > 0 && p2 > 0 ? true : false}
+									>
+										<img
+											src={EnhancedEyesight}
+											alt="Enhanced Eyesight"
+											title="Enhanced Eyesight"
+										></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p3-3")}
+										id="p3-3"
+										className={p3 === 3 ? "active" : ""}
+										disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 ? true : false}
+									>
+										<img src={Crossbow} alt="Crossbow" title="Crossbow"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p3-4")}
+										id="p3-4"
+										className={p3 === 4 ? "active" : ""}
+										disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 ? true : false}
+									>
+										<img src={Sharpshooter} alt="Sharpshooter" title="Sharpshooter"></img>
+									</button>
+								</td>
+								<td>
+									<button
+										onClick={() => handleChange("p3-5")}
+										id="p3-5"
+										className={p3 === 5 ? "active" : ""}
+										disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 ? true : false}
+									>
+										<img src={CrossbowMaster} alt="Crossbow Master" title="Crossbow Master"></img>
+									</button>
+								</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 			</div>
