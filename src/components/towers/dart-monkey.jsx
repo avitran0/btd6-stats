@@ -2814,6 +2814,50 @@ export default function DartMonkey() {
 							</button>
 						</div>
 					</div>
+					<div className="tower-input">
+						<div>
+							<h2>Top Path</h2>
+							<div>
+								<button onClick={() => (p1 <= 0 ? setP1(0) : setP1(p1 - 1))}>-</button>
+								<input
+									type="number"
+									min="0"
+									max="5"
+									value={p1}
+									onChange={(e) => setP1(e.target.value)}
+								></input>
+								<button onClick={() => (p1 >= 5 ? setP1(5) : setP1(p1 + 1))}>+</button>
+							</div>
+						</div>
+						<div>
+							<h2>Middle Path</h2>
+							<div>
+								<button onClick={() => (p2 <= 0 ? setP2(0) : setP2(p2 - 1))}>-</button>
+								<input
+									type="number"
+									min="0"
+									max="5"
+									value={p2}
+									onChange={(e) => setP2(e.target.value)}
+								></input>
+								<button onClick={() => (p2 >= 5 ? setP2(5) : setP2(p2 + 1))}>+</button>
+							</div>
+						</div>
+						<div>
+							<h2>Bottom Path</h2>
+							<div>
+								<button onClick={() => (p3 <= 0 ? setP3(0) : setP3(p3 - 1))}>-</button>
+								<input
+									type="number"
+									min="0"
+									max="5"
+									value={p3}
+									onChange={(e) => setP3(e.target.value)}
+								></input>
+								<button onClick={() => (p3 >= 5 ? setP3(5) : setP3(p3 + 1))}>+</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</motion.div>

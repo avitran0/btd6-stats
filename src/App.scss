@@ -351,13 +351,14 @@ p {
 	flex-wrap: wrap;
 	margin: 0 auto;
 	width: 100%;
+	justify-content: space-around;
 	img {
 		height: 1.8em;
 	}
 	table {
 		transition: 0.2s;
 		height: 0;
-		margin: 1em auto;
+		margin: 1em;
 	}
 	th,
 	td {
@@ -396,6 +397,44 @@ p {
 #p3-0 {
 	height: 6em;
 	width: 6em;
+}
+
+.tower-input {
+	display: none;
+	margin: 0 auto 0 0;
+	flex-direction: column;
+	input {
+		border-radius: 0;
+		margin: 0;
+		padding: 0.2em;
+		border: none;
+		border-bottom: 2px solid $nord6;
+		transition: 0.2s;
+		outline: none;
+		background-color: transparent;
+		color: $nord6;
+		font: 1.8em Nunito-light;
+		width: 5em;
+		-moz-appearance: textfield;
+		appearance: textfield;
+	}
+	input:focus {
+		border-bottom: 2px solid $nord10;
+	}
+	input::-webkit-inner-spin-button,
+	input::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	div {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1em;
+		height: 4em;
+	}
+	h2 {
+		margin: 0;
+	}
 }
 
 .yesno {
@@ -680,7 +719,8 @@ td {
 		}
 	}
 
-	.bloons {
+	.bloons,
+	.tower {
 		margin-top: 0;
 	}
 
@@ -691,5 +731,8 @@ td {
 		a {
 			font-size: 1.4em;
 		}
+	}
+	table {
+		font-size: 0.8em;
 	}
 }
