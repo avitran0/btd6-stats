@@ -348,13 +348,16 @@ p {
 
 .stats-container {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0 auto;
+	width: 100%;
 	img {
 		height: 1.8em;
 	}
 	table {
 		transition: 0.2s;
 		height: 0;
+		margin: 1em auto;
 	}
 	th,
 	td {
@@ -373,6 +376,7 @@ p {
 
 .image-container {
 	display: flex;
+	margin-top: 2em;
 }
 
 .image-container-inner {
@@ -559,6 +563,15 @@ td {
 	}
 }
 
+@media (max-width: 1400px) {
+	.tower-grid {
+		display: none;
+	}
+	.tower-input {
+		display: flex;
+	}
+}
+
 @media (max-width: 1200px) {
 	.grid-container {
 		width: 200px;
@@ -600,6 +613,9 @@ td {
 	.rounds table {
 		display: inline-table;
 		margin: 0 20px;
+	}
+	.tower-img {
+		display: none;
 	}
 }
 

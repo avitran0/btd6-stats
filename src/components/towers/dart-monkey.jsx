@@ -2598,7 +2598,7 @@ export default function DartMonkey() {
 					<table>
 						<thead>
 							<tr>
-								<th>Bloons</th>
+								<th colspan="2">Bloons</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -2607,20 +2607,6 @@ export default function DartMonkey() {
 									<img src={Camo} alt="Camo"></img>&nbsp;
 									<img src={stats.camo ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src={Black} alt="Camo"></img>&nbsp;
-									<img src={stats.black ? Yes : No} alt="Yes" className="yesno"></img>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src={White} alt="Camo"></img>&nbsp;
-									<img src={stats.white ? Yes : No} alt="Yes" className="yesno"></img>
-								</td>
-							</tr>
-							<tr>
 								<td>
 									<img src={Purple} alt="Camo"></img>&nbsp;
 									<img src={stats.purple ? Yes : No} alt="Yes" className="yesno"></img>
@@ -2628,11 +2614,19 @@ export default function DartMonkey() {
 							</tr>
 							<tr>
 								<td>
+									<img src={Black} alt="Camo"></img>&nbsp;
+									<img src={stats.black ? Yes : No} alt="Yes" className="yesno"></img>
+								</td>
+								<td>
 									<img src={Lead} alt="Camo"></img>&nbsp;
 									<img src={stats.lead ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
 							</tr>
 							<tr>
+								<td>
+									<img src={White} alt="Camo"></img>&nbsp;
+									<img src={stats.white ? Yes : No} alt="Yes" className="yesno"></img>
+								</td>
 								<td>
 									<img src={Zebra} alt="Camo"></img>&nbsp;
 									<img src={stats.zebra ? Yes : No} alt="Yes" className="yesno"></img>
