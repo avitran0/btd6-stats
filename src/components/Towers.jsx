@@ -34,7 +34,7 @@ export default function Towers() {
 		>
 			<h1>Towers</h1>
 			<h2>Primary</h2>
-			<div className="tower-grid">
+			<div className="towers-grid">
 				<div className="grid-container">
 					<Link to="/towers/dart-monkey" id="dart-monkey">
 						<img src={DartMonkey} alt="Dart Monkey" />
@@ -67,7 +67,7 @@ export default function Towers() {
 				</div>
 			</div>
 			<h2>Military</h2>
-			<div className="tower-grid">
+			<div className="towers-grid">
 				<div className="grid-container">
 					<Link to="/" id="sniper-monkey">
 						<img src={SniperMonkey} alt="Sniper Monkey" />
@@ -105,7 +105,7 @@ export default function Towers() {
 				</div>
 			</div>
 			<h2>Magic</h2>
-			<div className="tower-grid">
+			<div className="towers-grid">
 				<div className="grid-container">
 					<Link to="/" id="wizard-monkey">
 						<img src={WizardMonkey} alt="Wizard Monkey" />
@@ -133,7 +133,7 @@ export default function Towers() {
 				</div>
 			</div>
 			<h2>Support</h2>
-			<div className="tower-grid">
+			<div className="towers-grid">
 				<div className="grid-container">
 					<Link to="/" id="banana-farm">
 						<img src={BananaFarm} alt="Banana Farm" />

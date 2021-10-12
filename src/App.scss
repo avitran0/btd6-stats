@@ -71,6 +71,12 @@ h2 {
 	margin-top: 60px;
 }
 
+h3 {
+	font-size: 1.8em;
+	color: $nord6;
+	transition: 0.2s;
+}
+
 p {
 	font-size: 1.5em;
 	color: $nord6;
@@ -131,19 +137,13 @@ p {
 }
 
 .home,
-.towers {
+.towers,
+.tower {
 	margin-top: 40px;
 	padding-bottom: 80px;
 	width: 100%;
 	overflow: hidden;
 	background-color: $nord0;
-}
-
-.tower-grid {
-	margin: 0 5%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 }
 
 .grid-container {
@@ -152,7 +152,11 @@ p {
 	transition: 0.2s;
 }
 
-.tower-grid {
+.towers-grid {
+	margin: 0 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	a {
 		height: 100%;
 		flex: 1;
@@ -311,15 +315,35 @@ p {
 }
 
 .tower-container {
+	display: flex;
+	flex-direction: column;
+	p {
+		transition: 0.2s;
+	}
+}
+
+.tower-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 1em 2em;
+	align-items: center;
+	margin: 0 auto 0 2%;
 	img {
-		max-height: 8em;
-		max-width: 8em;
+		max-height: 9em;
+		max-width: 9em;
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
 	}
 	button {
 		background-color: $nord1;
 		border: none;
 		border-radius: 8px;
 		transition: 0.2s;
+		height: 10em;
+		width: 10em;
+		margin: 0;
 
 		&:hover {
 			background-color: $nord10;
@@ -328,17 +352,54 @@ p {
 			background-color: $nord11;
 		}
 	}
-	table {
-		border-radius: 8px;
+}
+
+.stats-container {
+	display: flex;
+	margin: 0 auto;
+	img {
+		height: 1.8em;
 	}
+	table {
+		transition: 0.2s;
+		height: 0;
+	}
+	th,
 	td {
 		border: none;
-		background-color: $nord0;
-		padding: 0.5em;
+		min-width: 4em;
+		text-align: center;
+		font-size: 1.5em;
+		font-family: Nunito-SemiBold;
 	}
-	p {
-		transition: 0.2s;
+	td {
+		padding: 0.2em;
+		vertical-align: middle;
+		font-family: Nunito-light;
 	}
+}
+
+.image-container {
+	display: flex;
+}
+
+.image-container-inner {
+	width: 24em;
+	height: 24em;
+	margin: 0 0 0 auto;
+}
+
+.tower-img {
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0 0 0 auto;
+}
+
+#p1-0,
+#p2-0,
+#p3-0 {
+	height: 6em;
+	width: 6em;
 }
 
 .active {
@@ -348,29 +409,6 @@ p {
 .cancel {
 	height: 4em;
 	padding: 1em;
-}
-
-#p1-1 {
-	display: flex;
-	flex-direction: column;
-	&::after {
-		content: "Sharp Shots";
-		color: $nord6;
-		display: block;
-		font: 1.4em Nunito-light;
-	}
-}
-
-#p1-2 {
-	display: flex;
-	flex-direction: column;
-	&::after {
-		content: "Razor Sharp Shots";
-		color: $nord6;
-		display: block;
-		font: 1.4em Nunito-light;
-		max-width: 100%;
-	}
 }
 
 .heroes {
@@ -454,8 +492,7 @@ table {
 }
 
 th {
-	font-size: 1.5em;
-	font-family: Nunito-SemiBold;
+	font: 1.5em Nunito-SemiBold;
 	color: $nord6;
 	padding: 0.5em;
 	border: 1px solid $nord6;
@@ -463,14 +500,11 @@ th {
 }
 
 td {
-	font-size: 1.5em;
-	font-family: Nunito-SemiBold;
 	color: $nord6;
 	padding: 0.5em;
 	border: 1px solid $nord6;
 	text-align: left;
-	font-size: 1.5em;
-	font-family: Nunito-Light;
+	font: 1.5em Nunito-Light;
 }
 
 .bloons img {
