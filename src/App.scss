@@ -402,6 +402,10 @@ p {
 	width: 6em;
 }
 
+.yesno {
+	height: 1.4em !important;
+}
+
 .active {
 	background-color: $nord14 !important;
 }
@@ -512,7 +516,7 @@ td {
 }
 
 #tableheaderimg {
-	height: 0.9em;
+	height: 1.2em;
 	margin-left: 8px;
 }
 

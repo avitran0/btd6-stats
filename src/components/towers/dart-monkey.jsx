@@ -30,6 +30,15 @@ import Range from "../../misc/Range.png";
 import Pierce from "../../misc/Pierce.png";
 import Speed from "../../misc/Speed.png";
 import Cooldown from "../../misc/RetryIcon.png";
+import Coin from "../../misc/Coin.png";
+import Yes from "../../misc/TickGreenIcon.png";
+import No from "../../misc/CloseIcon.png";
+import Camo from "../../bloons/GreenCamo.png";
+import Black from "../../bloons/Black.png";
+import White from "../../bloons/White.png";
+import Purple from "../../bloons/Purple.png";
+import Lead from "../../bloons/Lead.png";
+import Zebra from "../../bloons/Zebra.png";
 
 export default function DartMonkey() {
 	let images = {
@@ -1757,7 +1766,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 3,
 					projectilesSecondary: 0,
-
 					speed: 0.61,
 					range: 48,
 					abilityName: "",
@@ -1767,7 +1775,7 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: false,
+					camo: true,
 					black: true,
 					white: true,
 					purple: true,
@@ -1792,7 +1800,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.425,
 					range: 48,
 					abilityName: "Super Monkey Fan Club",
@@ -1802,7 +1809,7 @@ export default function DartMonkey() {
 					abilityPierce: 2,
 					abilitySpeed: 0.06,
 					abilityRange: 48,
-					camo: false,
+					camo: true,
 					black: true,
 					white: true,
 					purple: true,
@@ -1827,7 +1834,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.425,
 					range: 48,
 					abilityName: "Plasma Monkey Fan Club",
@@ -1837,7 +1843,7 @@ export default function DartMonkey() {
 					abilityPierce: 5,
 					abilitySpeed: 0.03,
 					abilityRange: 48,
-					camo: false,
+					camo: true,
 					black: true,
 					white: true,
 					purple: true,
@@ -1862,7 +1868,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.95,
 					range: 56,
 					abilityName: "",
@@ -1897,7 +1902,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.75,
 					range: 56,
 					abilityName: "",
@@ -1932,7 +1936,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.16,
 					range: 56,
 					abilityName: "",
@@ -1967,7 +1970,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.95,
 					range: 56,
 					abilityName: "",
@@ -2002,7 +2004,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.75,
 					range: 56,
 					abilityName: "",
@@ -2037,7 +2038,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.16,
 					range: 56,
 					abilityName: "",
@@ -2072,7 +2072,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.8075,
 					range: 48,
 					abilityName: "",
@@ -2082,7 +2081,7 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: false,
+					camo: true,
 					black: true,
 					white: true,
 					purple: true,
@@ -2107,7 +2106,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.8075,
 					range: 56,
 					abilityName: "",
@@ -2142,7 +2140,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.6375,
 					range: 56,
 					abilityName: "",
@@ -2177,7 +2174,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.136,
 					range: 56,
 					abilityName: "",
@@ -2212,7 +2208,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.63,
 					range: 48,
 					abilityName: "",
@@ -2222,7 +2217,7 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: false,
+					camo: true,
 					black: true,
 					white: true,
 					purple: true,
@@ -2247,7 +2242,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.63,
 					range: 56,
 					abilityName: "",
@@ -2282,7 +2276,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.5,
 					range: 56,
 					abilityName: "",
@@ -2317,7 +2310,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.107,
 					range: 56,
 					abilityName: "",
@@ -2486,6 +2478,41 @@ export default function DartMonkey() {
 								</td>
 							</tr>
 						</tbody>
+						<tfoot>
+							<tr>
+								<th>Damage</th>
+								<th>Projectiles</th>
+							</tr>
+						</tfoot>
+					</table>
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">
+									Cost&nbsp;<img src={Coin} alt="Coin" id="tableheaderimg"></img>
+								</th>
+							</tr>
+							<tr>
+								<th>Easy</th>
+								<th>Medium</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>{stats.costEasy}</td>
+								<td>{stats.costMedium}</td>
+							</tr>
+							<tr>
+								<td>{stats.costHard}</td>
+								<td>{stats.costImpoppable}</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Hard</th>
+								<th>Impoppable</th>
+							</tr>
+						</tfoot>
 					</table>
 					<table>
 						<thead>
@@ -2517,11 +2544,17 @@ export default function DartMonkey() {
 								</td>
 							</tr>
 						</tbody>
+						<tfoot>
+							<tr>
+								<th>Damage</th>
+								<th>Projectiles</th>
+							</tr>
+						</tfoot>
 					</table>
 					<table>
 						<thead>
 							<tr>
-								<th colspan="6">Ability</th>
+								<th colspan="6">Ability: {stats.abilityName}</th>
 							</tr>
 							<tr>
 								<th>Damage</th>
@@ -2561,6 +2594,51 @@ export default function DartMonkey() {
 								<th>Cooldown</th>
 							</tr>
 						</tfoot>
+					</table>
+					<table>
+						<thead>
+							<tr>
+								<th>Bloons</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src={Camo} alt="Camo"></img>&nbsp;
+									<img src={stats.camo ? Yes : No} alt="Yes" className="yesno"></img>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src={Black} alt="Camo"></img>&nbsp;
+									<img src={stats.black ? Yes : No} alt="Yes" className="yesno"></img>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src={White} alt="Camo"></img>&nbsp;
+									<img src={stats.white ? Yes : No} alt="Yes" className="yesno"></img>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src={Purple} alt="Camo"></img>&nbsp;
+									<img src={stats.purple ? Yes : No} alt="Yes" className="yesno"></img>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src={Lead} alt="Camo"></img>&nbsp;
+									<img src={stats.lead ? Yes : No} alt="Yes" className="yesno"></img>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src={Zebra} alt="Camo"></img>&nbsp;
+									<img src={stats.zebra ? Yes : No} alt="Yes" className="yesno"></img>
+								</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 				<div className="image-container">

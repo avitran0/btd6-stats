@@ -23,7 +23,7 @@ export default function Heroes() {
 			className="heroes"
 		>
 			<h1>Heroes</h1>
-			<div className="tower-grid">
+			<div className="towers-grid">
 				<div className="grid-container">
 					<Link to="/heroes/quincy" id="quincy">
 						<img src={Quincy} alt="Quincy" />
