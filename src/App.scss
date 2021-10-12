@@ -42,18 +42,6 @@ html {
 	font-family: Nunito-Light;
 }
 
-::-webkit-scrollbar {
-	width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: $nord10;
-}
-
-::-webkit-scrollbar-track {
-	background-color: $nord0;
-}
-
 .switch-wrapper > * {
 	position: absolute;
 	width: 100%;
@@ -144,6 +132,10 @@ p {
 	width: 100%;
 	overflow: hidden;
 	background-color: $nord0;
+}
+
+.tower {
+	overflow: auto;
 }
 
 .grid-container {
