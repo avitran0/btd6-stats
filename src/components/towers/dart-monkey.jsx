@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import ReactTooltip from "react-tooltip";
 import DartMonkey000 from "../../dart-monkey/000-DartMonkey.png";
 import DartMonkey001 from "../../dart-monkey/001-Dartmonkey.png";
 import DartMonkey002 from "../../dart-monkey/002-Dartmonkey.png";
@@ -31,6 +32,7 @@ import Pierce from "../../misc/Pierce.png";
 import Speed from "../../misc/Speed.png";
 import Cooldown from "../../misc/RetryIcon.png";
 import Coin from "../../misc/Coin.png";
+import Projectiles from "../../misc/Projectiles.png";
 import Yes from "../../misc/TickGreenIcon.png";
 import No from "../../misc/CloseIcon.png";
 import Camo from "../../bloons/GreenCamo.png";
@@ -39,6 +41,8 @@ import White from "../../bloons/White.png";
 import Purple from "../../bloons/Purple.png";
 import Lead from "../../bloons/Lead.png";
 import Zebra from "../../bloons/Zebra.png";
+import Plus from "../../misc/AddMoreBtn.png";
+import Minus from "../../misc/AddRemoveBtn.png";
 
 export default function DartMonkey() {
 	let images = {
@@ -2442,13 +2446,42 @@ export default function DartMonkey() {
 					<table className="stats">
 						<thead>
 							<tr>
-								<th colspan="4">Main</th>
+								<th colspan="3">Main</th>
 							</tr>
 							<tr>
-								<th>Damage</th>
-								<th>Pierce</th>
-								<th>Speed</th>
-								<th>Range</th>
+								<th data-tip="How many layers each projectile can pop" data-for="damage">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage"
+									/>
+									Damage
+								</th>
+								<th data-tip="How many bloons a single projectile can affect" data-for="pierce">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="pierce"
+									/>
+									Pierce
+								</th>
+								<th data-tip="The rate of attacks per second" data-for="speed">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="speed"
+									/>
+									Speed
+								</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -2463,9 +2496,6 @@ export default function DartMonkey() {
 									<img src={Speed} alt="Speed"></img>&nbsp;{Math.round((1 / stats.speed) * 100) / 100}
 									/s
 								</td>
-								<td>
-									<img src={Range} alt="Range"></img>&nbsp;{stats.range}
-								</td>
 							</tr>
 							<tr>
 								<td>
@@ -2476,20 +2506,69 @@ export default function DartMonkey() {
 								<td>
 									<img src={Ceramic} alt="Ceramic"></img>&nbsp;{stats.damageCeramic}
 								</td>
+								<td>
+									<img src={Projectiles} alt="Projectiles"></img>&nbsp;{stats.projectiles}
+								</td>
+								<td>
+									<img src={Range} alt="Range"></img>&nbsp;{stats.range}
+								</td>
 							</tr>
 						</tbody>
 						<tfoot>
 							<tr>
-								<th>Damage</th>
-								<th>Projectiles</th>
+								<th data-tip="How many layers each projectile can pop" data-for="damage2">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage2"
+									/>
+									Damage
+								</th>
+								<th data-tip="How many projectiles are shot per attack" data-for="projectiles">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="projectiles"
+									/>
+									Projectiles
+								</th>
+								<th data-tip="The range where the tower can detect bloons" data-for="range">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="range"
+									/>
+									Range
+								</th>
 							</tr>
 						</tfoot>
 					</table>
 					<table>
 						<thead>
 							<tr>
-								<th colspan="2">
-									Cost&nbsp;<img src={Coin} alt="Coin" id="tableheaderimg"></img>
+								<th
+									colspan="2"
+									data-tip="The cumulative cost of the<br>tower and all selected upgrades"
+									data-for="cost"
+								>
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="cost"
+									/>
+									Cost
 								</th>
 							</tr>
 							<tr>
@@ -2499,12 +2578,20 @@ export default function DartMonkey() {
 						</thead>
 						<tbody>
 							<tr>
-								<td>{stats.costEasy}</td>
-								<td>{stats.costMedium}</td>
+								<td>
+									<img src={Coin} alt="Coin" id="tableheaderimg"></img>&nbsp;{stats.costEasy}
+								</td>
+								<td>
+									<img src={Coin} alt="Coin" id="tableheaderimg"></img>&nbsp;{stats.costMedium}
+								</td>
 							</tr>
 							<tr>
-								<td>{stats.costHard}</td>
-								<td>{stats.costImpoppable}</td>
+								<td>
+									<img src={Coin} alt="Coin" id="tableheaderimg"></img>&nbsp;{stats.costHard}
+								</td>
+								<td>
+									<img src={Coin} alt="Coin" id="tableheaderimg"></img>&nbsp;{stats.costImpoppable}
+								</td>
 							</tr>
 						</tbody>
 						<tfoot>
@@ -2541,6 +2628,9 @@ export default function DartMonkey() {
 							<tr>
 								<td>
 									<img src={Ceramic} alt="Ceramic"></img>&nbsp;{stats.damageCeramicSecondary}
+								</td>
+								<td>
+									<img src={Projectiles} alt="Projectiles"></img>&nbsp;{stats.projectilesSecondary}
 								</td>
 							</tr>
 						</tbody>
@@ -2590,8 +2680,31 @@ export default function DartMonkey() {
 						<tfoot>
 							<tr>
 								<th>Range</th>
-								<th>Duration</th>
-								<th>Cooldown</th>
+								<th data-tip="How long the ability lasts" data-for="duration">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="duration"
+									/>
+									Duration
+								</th>
+								<th
+									data-tip="How long the ability needs to<br>cool down before using it again"
+									data-for="cooldown"
+								>
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="cooldown"
+									/>
+									Cooldown
+								</th>
 							</tr>
 						</tfoot>
 					</table>
@@ -2651,8 +2764,19 @@ export default function DartMonkey() {
 								id="p1-1"
 								className={p1 === 1 ? "active" : ""}
 								disabled={p2 > 0 && p3 > 0 ? true : false}
+								data-tip="Sharp Shots<br>Cost"
+								data-for="sharp-shots"
 							>
-								<img src={SharpShots} alt="Sharp Shots" title="Sharp Shots"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="sharp-shots"
+									className="select"
+								/>
+								<img src={SharpShots} alt="Sharp Shots"></img>
 							</button>
 						</div>
 						<div>
@@ -2815,10 +2939,12 @@ export default function DartMonkey() {
 						</div>
 					</div>
 					<div className="tower-input">
-						<div>
+						<div className="tower-input-flex">
 							<h2>Top Path</h2>
 							<div>
-								<button onClick={() => (p1 <= 0 ? setP1(0) : setP1(p1 - 1))}>-</button>
+								<button onClick={() => (p1 <= 0 ? setP1(0) : setP1(p1 - 1))}>
+									<img src={Minus} alt="minus"></img>
+								</button>
 								<input
 									type="number"
 									min="0"
@@ -2826,13 +2952,17 @@ export default function DartMonkey() {
 									value={p1}
 									onChange={(e) => setP1(e.target.value)}
 								></input>
-								<button onClick={() => (p1 >= 5 ? setP1(5) : setP1(p1 + 1))}>+</button>
+								<button onClick={() => (p1 >= 5 ? setP1(5) : setP1(p1 + 1))}>
+									<img src={Plus} alt="plus"></img>
+								</button>
 							</div>
 						</div>
-						<div>
+						<div className="tower-input-flex">
 							<h2>Middle Path</h2>
 							<div>
-								<button onClick={() => (p2 <= 0 ? setP2(0) : setP2(p2 - 1))}>-</button>
+								<button onClick={() => (p2 <= 0 ? setP2(0) : setP2(p2 - 1))}>
+									<img src={Minus} alt="minus"></img>
+								</button>
 								<input
 									type="number"
 									min="0"
@@ -2840,13 +2970,17 @@ export default function DartMonkey() {
 									value={p2}
 									onChange={(e) => setP2(e.target.value)}
 								></input>
-								<button onClick={() => (p2 >= 5 ? setP2(5) : setP2(p2 + 1))}>+</button>
+								<button onClick={() => (p2 >= 5 ? setP2(5) : setP2(p2 + 1))}>
+									<img src={Plus} alt="plus"></img>
+								</button>
 							</div>
 						</div>
-						<div>
+						<div className="tower-input-flex">
 							<h2>Bottom Path</h2>
 							<div>
-								<button onClick={() => (p3 <= 0 ? setP3(0) : setP3(p3 - 1))}>-</button>
+								<button onClick={() => (p3 <= 0 ? setP3(0) : setP3(p3 - 1))}>
+									<img src={Minus} alt="minus"></img>
+								</button>
 								<input
 									type="number"
 									min="0"
@@ -2854,7 +2988,9 @@ export default function DartMonkey() {
 									value={p3}
 									onChange={(e) => setP3(e.target.value)}
 								></input>
-								<button onClick={() => (p3 >= 5 ? setP3(5) : setP3(p3 + 1))}>+</button>
+								<button onClick={() => (p3 >= 5 ? setP3(5) : setP3(p3 + 1))}>
+									<img src={Plus} alt="plus"></img>
+								</button>
 							</div>
 						</div>
 					</div>

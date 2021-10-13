@@ -1,5 +1,6 @@
 $nord0: #2e3440;
 $nord1: #3b4252;
+$nord3: #4c566a;
 $nord6: #eceff4;
 $nord8: #88c0d0;
 $nord10: #5e81ac;
@@ -41,7 +42,7 @@ html {
 	box-sizing: border-box;
 	background-color: $nord0;
 	font-family: Nunito-Light;
-	cursor: url(./misc/Cursor.png), auto;
+	cursor: url(./misc/Cursor32.png), auto;
 }
 
 .switch-wrapper > * {
@@ -71,6 +72,18 @@ p {
 	font-size: 1.5em;
 	color: $nord6;
 	margin: 0 5%;
+}
+
+a {
+	cursor: url(./misc/Cursor32.png), auto;
+}
+
+button {
+	cursor: url(./misc/Cursor32.png), auto;
+}
+
+input {
+	cursor: url(./misc/Cursor32.png), auto;
 }
 
 .navbar {
@@ -405,37 +418,68 @@ p {
 	display: none;
 	margin: 0 auto 0 0;
 	flex-direction: column;
+	justify-content: space-between;
 	input {
 		border-radius: 0;
 		margin: 0;
-		padding: 0.2em;
+		padding: 0;
 		border: none;
-		border-bottom: 2px solid $nord6;
+		border-bottom: 1px solid $nord6;
 		transition: 0.2s;
 		outline: none;
 		background-color: transparent;
 		color: $nord6;
-		font: 1.8em Nunito-light;
-		width: 5em;
+		font: 0.8em Nunito-light;
+		width: 3em;
 		-moz-appearance: textfield;
 		appearance: textfield;
+		caret-color: $nord6;
+		text-align: center;
+		height: 1.8em;
 	}
 	input:focus {
-		border-bottom: 2px solid $nord10;
+		border-bottom: 1px solid $nord10;
 	}
 	input::-webkit-inner-spin-button,
 	input::-webkit-outer-spin-button {
 		-webkit-appearance: none;
 		margin: 0;
 	}
-	div {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		gap: 1em;
-		height: 4em;
-	}
+
 	h2 {
-		margin: 0;
+		margin: 0 auto;
+		font-size: 0.8em;
+	}
+	button {
+		color: $nord6;
+		background-color: transparent;
+		border: none;
+		border-radius: 8px;
+		height: 1.8em;
+		width: 1.8em;
+	}
+	img {
+		height: 1.2em;
+	}
+}
+
+.tower-input-flex {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.8em;
+	div {
+		display: flex;
+		height: 2em;
+		margin: 0 25% 0 0;
+	}
+}
+
+.__react_component_tooltip {
+	border-radius: 8px !important;
+	font-size: 1.2rem !important;
+	transition: 0.2s !important;
+	&.show {
+		opacity: 1 !important;
 	}
 }
 
@@ -655,7 +699,7 @@ td {
 		display: inline-table;
 		margin: 0 20px;
 	}
-	.tower-img {
+	.image-container-inner {
 		display: none;
 	}
 }
@@ -667,6 +711,9 @@ td {
 }
 
 @media (max-width: 500px) {
+	h1 {
+		font-size: 2.4em;
+	}
 	.navbar {
 		height: 240px;
 
@@ -735,6 +782,11 @@ td {
 		}
 	}
 	table {
-		font-size: 0.8em;
+		font-size: 0.5em;
+	}
+
+	.tower-input {
+		margin: 0;
+		width: 100%;
 	}
 }
