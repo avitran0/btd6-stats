@@ -68,16 +68,16 @@ export default function Rounds() {
 				<table>
 					<thead>
 						<tr>
-							<th rowspan="2">Round</th>
-							<th rowspan="2">
+							<th rowSpan="2">Round</th>
+							<th rowSpan="2">
 								RBE
 								<img src={Red} alt="Red" id="tableheaderimg" />
 							</th>
-							<th colspan="3">
+							<th colSpan="3">
 								Cash
 								<img src={Coin} alt="Coin" id="tableheaderimg" />
 							</th>
-							<th rowspan="2">Bloons</th>
+							<th rowSpan="2">Bloons</th>
 						</tr>
 						<tr>
 							<th>Pops</th>
@@ -1209,18 +1209,18 @@ export default function Rounds() {
 					</tbody>
 					<tfoot>
 						<tr>
-							<th rowspan="2">Round</th>
-							<th rowspan="2">
+							<th rowSpan="2">Round</th>
+							<th rowSpan="2">
 								RBE
 								<img src={Red} alt="Red" id="tableheaderimg" />
 							</th>
 							<th>Pops</th>
 							<th>Total</th>
 							<th>Cumulative</th>
-							<th rowspan="2">Bloons</th>
+							<th rowSpan="2">Bloons</th>
 						</tr>
 						<tr>
-							<th colspan="3">
+							<th colSpan="3">
 								Cash
 								<img src={Coin} alt="Coin" id="tableheaderimg" />
 							</th>
