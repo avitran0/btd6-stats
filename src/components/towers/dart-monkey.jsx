@@ -8,7 +8,7 @@ import DartMonkey003 from "../../dart-monkey/003-Dartmonkey.png";
 import DartMonkey004 from "../../dart-monkey/004-Dartmonkey.png";
 import DartMonkey005 from "../../dart-monkey/005-Dartmonkey.png";
 import DartMonkey100 from "../../dart-monkey/100-Dartmonkey.png";
-import Cancel from "../../misc/CloseIcon.png";
+import Reset from "../../misc/CloseIcon.png";
 import SharpShots from "../../dart-monkey/SharpShotsUpgradeIcon.png";
 import RazorSharpShots from "../../dart-monkey/RazorSharpShotsUpgradeIcon.png";
 import SpikeOPult from "../../dart-monkey/Spike-o-pultUpgradeIcon.png";
@@ -2848,8 +2848,21 @@ export default function DartMonkey() {
 					</div>
 					<div className="tower-grid">
 						<div>
-							<button onClick={() => handleChange("p1-0")} id="p1-0">
-								<img src={Cancel} alt="Cancel" title="Cancel" className="cancel"></img>
+							<button
+								onClick={() => handleChange("p1-0")}
+								id="p1-0"
+								data-tip="Resets the top path."
+								data-for="reset1"
+							>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="reset1"
+								/>
+								<img src={Reset} alt="Reset" className="reset"></img>
 							</button>
 						</div>
 						<div>
@@ -2868,7 +2881,6 @@ export default function DartMonkey() {
 									arrowColor="transparent"
 									multiline={true}
 									id="sharp-shots"
-									className="select"
 								/>
 								<img src={SharpShots} alt="Sharp Shots"></img>
 							</button>
@@ -2879,8 +2891,18 @@ export default function DartMonkey() {
 								id="p1-2"
 								className={p1 === 2 ? "active" : ""}
 								disabled={p2 > 0 && p3 > 0 ? true : false}
+								data-tip="Razor Sharp Shots<br>Can pop 2 more bloons per shot.<br>Cost: $185 / $220 / $235 / $265"
+								data-for="razor-sharp-shots"
 							>
-								<img src={RazorSharpShots} alt="Razor Sharp Shots" title="Razor Sharp Shots"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="razor-sharp-shots"
+								/>
+								<img src={RazorSharpShots} alt="Razor Sharp Shots"></img>
 							</button>
 						</div>
 						<div>
@@ -2889,8 +2911,18 @@ export default function DartMonkey() {
 								id="p1-3"
 								className={p1 === 3 ? "active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 ? true : false}
+								data-tip="Spike-O-Pult<br>Converts the Dart Monkey into a Spike-o-pult that hurls a large spiked ball instead of darts.<br>Good range, but slower attack speed. Each ball can pop lots of Bloons and rebounds off obstacles.<br>Cost: $255 / $300 / $325 / $360"
+								data-for="spike-o-pult"
 							>
-								<img src={SpikeOPult} alt="Spike-O-Pult" title="Spike-O-Pult"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="spike-o-pult"
+								/>
+								<img src={SpikeOPult} alt="Spike-O-Pult"></img>
 							</button>
 						</div>
 						<div>
@@ -2899,8 +2931,18 @@ export default function DartMonkey() {
 								id="p1-4"
 								className={p1 === 4 ? "active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 ? true : false}
+								data-tip="Juggernaut<br>Hurls a giant spiked ball that pops lead and excels at crushing Ceramic Bloons.<br>Cost: $1.530 / $1.800 / $1.945 / $2.160"
+								data-for="juggernaut"
 							>
-								<img src={Juggernaut} alt="Juggernaut" title="Juggernaut"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="juggernaut"
+								/>
+								<img src={Juggernaut} alt="Juggernaut"></img>
 							</button>
 						</div>
 						<div>
@@ -2909,13 +2951,36 @@ export default function DartMonkey() {
 								id="p1-5"
 								className={p1 === 5 ? "active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 ? true : false}
+								data-tip="Ultra-Juggernaut<br>Gigantic spiked ball splits twice into 6 Juggernaut balls for even more destructive power.<br>Cost: $12.750 / $15.000 / $16.200 / $18.000"
+								data-for="ultra-juggernaut"
 							>
-								<img src={UltraJuggernaut} alt="Ultra-Juggernaut" title="Ultra-Juggernaut"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="ultra-juggernaut"
+								/>
+								<img src={UltraJuggernaut} alt="Ultra-Juggernaut"></img>
 							</button>
 						</div>
 						<div>
-							<button onClick={() => handleChange("p2-0")} id="p2-0">
-								<img src={Cancel} alt="Cancel" title="Cancel" className="cancel"></img>
+							<button
+								onClick={() => handleChange("p2-0")}
+								id="p2-0"
+								data-tip="Resets the middle path."
+								data-for="reset2"
+							>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="reset2"
+								/>
+								<img src={Reset} alt="Reset" className="reset"></img>
 							</button>
 						</div>
 						<div>
@@ -2924,8 +2989,18 @@ export default function DartMonkey() {
 								id="p2-1"
 								className={p2 === 1 ? "active" : ""}
 								disabled={p1 > 0 && p3 > 0 ? true : false}
+								data-tip="Quick Shots<br>Shoots 15% faster.<br>Cost: $85 / $100 / $110 / $120"
+								data-for="quick-shots"
 							>
-								<img src={QuickShots} alt="Quick Shots" title="Quick Shots"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="quick-shots"
+								/>
+								<img src={QuickShots} alt="Quick Shots"></img>
 							</button>
 						</div>
 						<div>
@@ -2934,8 +3009,18 @@ export default function DartMonkey() {
 								id="p2-2"
 								className={p2 === 2 ? "active" : ""}
 								disabled={p1 > 0 && p3 > 0 ? true : false}
+								data-tip="Quick Shots<br>Shoots 33% faster!<br>Cost: $160 / $190 / $205 / $230"
+								data-for="very-quick-shots"
 							>
-								<img src={VeryQuickShots} alt="Very Quick Shots" title="Very Quick Shots"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="very-quick-shots"
+								/>
+								<img src={VeryQuickShots} alt="Very Quick Shots"></img>
 							</button>
 						</div>
 						<div>
@@ -2944,8 +3029,18 @@ export default function DartMonkey() {
 								id="p2-3"
 								className={p2 === 3 ? "active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 ? true : false}
+								data-tip="Triple Shot<br>Throws 3 darts at a time instead of 1.<br>Cost: $340 / $400 / $430 / $480"
+								data-for="triple-shot"
 							>
-								<img src={TripleShot} alt="Triple Shot" title="Triple Shot"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="triple-shot"
+								/>
+								<img src={TripleShot} alt="Triple Shot"></img>
 							</button>
 						</div>
 						<div>
@@ -2954,12 +3049,18 @@ export default function DartMonkey() {
 								id="p2-4"
 								className={p2 === 4 ? "active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 ? true : false}
+								data-tip="Super Monkey Fan Club<br>Super Monkey Fan Club Ability: Converts up to 10 nearby Dart Monkeys including himself into Super Monkeys for 15 seconds.<br>Regular attack speed also increased.<br>Cost: $6.800 / $8.000 / $8.640 / $9.600"
+								data-for="super-monkey-fan-club"
 							>
-								<img
-									src={SuperMonkeyFanClub}
-									alt="Super Monkey Fan Club"
-									title="Super Monkey Fan Club"
-								></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="super-monkey-fan-club"
+								/>
+								<img src={SuperMonkeyFanClub} alt="Super Monkey Fan Club"></img>
 							</button>
 						</div>
 						<div>
@@ -2968,7 +3069,17 @@ export default function DartMonkey() {
 								id="p2-5"
 								className={p2 === 5 ? "active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 ? true : false}
+								data-tip="Plasma Monkey Fan Club<br> Elite membership of this club grants the Dart Monkeys even more power.<br>Cost: $38.250 / $45.000 / $48.600 / $54.000"
+								data-for="plasma-monkey-fan-club"
 							>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="plasma-monkey-fan-club"
+								/>
 								<img
 									src={PlasmaMonkeyFanClub}
 									alt="Plasma Monkey Fan Club"
@@ -2977,8 +3088,21 @@ export default function DartMonkey() {
 							</button>
 						</div>
 						<div>
-							<button onClick={() => handleChange("p3-0")} id="p3-0">
-								<img src={Cancel} alt="Cancel" title="Cancel" className="cancel"></img>
+							<button
+								onClick={() => handleChange("p3-0")}
+								id="p3-0"
+								data-tip="Resets the bottom path."
+								data-for="reset3"
+							>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="reset3"
+								/>
+								<img src={Reset} alt="Reset" className="reset"></img>
 							</button>
 						</div>
 						<div>
