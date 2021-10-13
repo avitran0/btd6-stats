@@ -2446,7 +2446,7 @@ export default function DartMonkey() {
 					<table className="stats">
 						<thead>
 							<tr>
-								<th colspan="3">Main</th>
+								<th colSpan="3">Main</th>
 							</tr>
 							<tr>
 								<th data-tip="How many layers each projectile can pop" data-for="damage">
@@ -2556,7 +2556,7 @@ export default function DartMonkey() {
 						<thead>
 							<tr>
 								<th
-									colspan="2"
+									colSpan="2"
 									data-tip="The cumulative cost of the<br>tower and all selected upgrades"
 									data-for="cost"
 								>
@@ -2604,11 +2604,31 @@ export default function DartMonkey() {
 					<table>
 						<thead>
 							<tr>
-								<th colspan="2">Secondary Projectile</th>
+								<th colSpan="2">Secondary Projectile</th>
 							</tr>
 							<tr>
-								<th>Damage</th>
-								<th>Pierce</th>
+								<th data-tip="How many layers each projectile can pop" data-for="damage3">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage3"
+									/>
+									Damage
+								</th>
+								<th data-tip="How many bloons a single projectile can affect" data-for="pierce2">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="pierce2"
+									/>
+									Pierce
+								</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -2636,20 +2656,70 @@ export default function DartMonkey() {
 						</tbody>
 						<tfoot>
 							<tr>
-								<th>Damage</th>
-								<th>Projectiles</th>
+								<th data-tip="How many layers each projectile can pop" data-for="damage4">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage4"
+									/>
+									Damage
+								</th>
+								<th data-tip="How many projectiles are shot per attack" data-for="projectiles2">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="projectiles2"
+									/>
+									Projectiles
+								</th>
 							</tr>
 						</tfoot>
 					</table>
 					<table>
 						<thead>
 							<tr>
-								<th colspan="6">Ability: {stats.abilityName}</th>
+								<th colSpan="3">Ability: {stats.abilityName}</th>
 							</tr>
 							<tr>
-								<th>Damage</th>
-								<th>Pierce</th>
-								<th>Speed</th>
+								<th data-tip="How many layers each projectile can pop" data-for="damage5">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage5"
+									/>
+									Damage
+								</th>
+								<th data-tip="How many bloons a single projectile can affect" data-for="pierce3">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="pierce3"
+									/>
+									Pierce
+								</th>
+								<th data-tip="The rate of attacks per second" data-for="speed2">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="speed2"
+									/>
+									Speed
+								</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -2679,7 +2749,17 @@ export default function DartMonkey() {
 						</tbody>
 						<tfoot>
 							<tr>
-								<th>Range</th>
+								<th data-tip="The range where the tower can detect bloons" data-for="range">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="range"
+									/>
+									Range
+								</th>
 								<th data-tip="How long the ability lasts" data-for="duration">
 									<ReactTooltip
 										effect="solid"
@@ -2711,7 +2791,21 @@ export default function DartMonkey() {
 					<table>
 						<thead>
 							<tr>
-								<th colspan="2">Bloons</th>
+								<th
+									colSpan="2"
+									data-tip="Which bloons the tower can detect and damage"
+									data-for="bloons"
+								>
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="bloons"
+									/>
+									Bloons
+								</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -2764,7 +2858,7 @@ export default function DartMonkey() {
 								id="p1-1"
 								className={p1 === 1 ? "active" : ""}
 								disabled={p2 > 0 && p3 > 0 ? true : false}
-								data-tip="Sharp Shots<br>Cost"
+								data-tip="Sharp Shots<br>Can pop 1 extra Bloon per shot.<br>Cost: $120 / $140 / $150 / $170"
 								data-for="sharp-shots"
 							>
 								<ReactTooltip

@@ -476,7 +476,7 @@ input {
 
 .__react_component_tooltip {
 	border-radius: 8px !important;
-	font-size: 1.2rem !important;
+	font: 1.2rem Nunito-light !important;
 	transition: 0.2s !important;
 	&.show {
 		opacity: 1 !important;
