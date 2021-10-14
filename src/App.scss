@@ -331,7 +331,7 @@ input {
 
 .tower-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 	gap: 1em 2em;
 	align-items: center;
@@ -407,9 +407,7 @@ input {
 	margin: 0 0 0 auto;
 }
 
-#p1-0,
-#p2-0,
-#p3-0 {
+#p0 {
 	height: 6em;
 	width: 6em;
 }
@@ -429,7 +427,7 @@ input {
 		outline: none;
 		background-color: transparent;
 		color: $nord6;
-		font: 1.2em Nunito-light;
+		font: 2.4em Nunito-light;
 		width: 3em;
 		-moz-appearance: textfield;
 		appearance: textfield;
@@ -448,19 +446,19 @@ input {
 
 	h2 {
 		margin: 0 auto;
-		font-size: 1.2em;
+		font-size: 2.4em;
 	}
 	button {
 		color: $nord6;
 		background-color: transparent;
 		border: none;
 		border-radius: 8px;
-		height: 2.4em;
-		width: 2.4em;
+		height: 4.8em;
+		width: 4.8em;
 		padding: 0;
 	}
 	img {
-		height: 2.4em;
+		height: 4.8em;
 	}
 }
 
@@ -703,6 +701,23 @@ td {
 	.image-container-inner {
 		display: none;
 	}
+	.tower-input {
+		margin: 0;
+		width: 100%;
+		img {
+			height: 3.2em;
+		}
+		h2 {
+			font-size: 1.8em;
+		}
+		input {
+			font-size: 1.8em;
+		}
+		button {
+			height: 3.2em;
+			width: 3.2em;
+		}
+	}
 }
 
 @media (max-width: 700px) {
@@ -786,11 +801,22 @@ td {
 		font-size: 0.8em;
 	}
 
-	.tower-input {
-		margin: 0;
-		width: 100%;
-	}
 	.__react_component_tooltip {
 		font-size: 0.8rem !important;
+	}
+	.tower-input {
+		img {
+			height: 2.4em;
+		}
+		button {
+			height: 2.4em;
+			width: 2.4em;
+		}
+		h2 {
+			font-size: 1.2em;
+		}
+		input {
+			font-size: 1.2em;
+		}
 	}
 }

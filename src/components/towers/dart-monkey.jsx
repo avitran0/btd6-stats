@@ -7,7 +7,17 @@ import DartMonkey002 from "../../dart-monkey/002-Dartmonkey.png";
 import DartMonkey003 from "../../dart-monkey/003-Dartmonkey.png";
 import DartMonkey004 from "../../dart-monkey/004-Dartmonkey.png";
 import DartMonkey005 from "../../dart-monkey/005-Dartmonkey.png";
+import DartMonkey010 from "../../dart-monkey/010-Dartmonkey.png";
+import DartMonkey020 from "../../dart-monkey/020-Dartmonkey.png";
+import DartMonkey030 from "../../dart-monkey/030-Dartmonkey.png";
+import DartMonkey040 from "../../dart-monkey/040-Dartmonkey.png";
+import DartMonkey050 from "../../dart-monkey/050-Dartmonkey.png";
 import DartMonkey100 from "../../dart-monkey/100-Dartmonkey.png";
+import DartMonkey200 from "../../dart-monkey/200-Dartmonkey.png";
+import DartMonkey300 from "../../dart-monkey/300-Dartmonkey.png";
+import DartMonkey400 from "../../dart-monkey/400-Dartmonkey.png";
+import DartMonkey500 from "../../dart-monkey/500-Dartmonkey.png";
+import Paragon from "../../dart-monkey/ApexPlasmaMaster.png";
 import Reset from "../../misc/CloseIcon.png";
 import SharpShots from "../../dart-monkey/SharpShotsUpgradeIcon.png";
 import RazorSharpShots from "../../dart-monkey/RazorSharpShotsUpgradeIcon.png";
@@ -24,6 +34,7 @@ import EnhancedEyesight from "../../dart-monkey/EnhancedEyesightUpgradeIcon.png"
 import Crossbow from "../../dart-monkey/CrossBowUpgradeIcon.png";
 import Sharpshooter from "../../dart-monkey/SharpShooterUpgradeIcon.png";
 import CrossbowMaster from "../../dart-monkey/CrossBowMasterUpgradeIcon.png";
+import ApexPlasmaMaster from "../../dart-monkey/ApexPlasmaMasterUpgradeIcon.png";
 import Red from "../../bloons/Red.png";
 import Ceramic from "../../bloons/Ceramic.png";
 import MOAB from "../../bloons/MOAB.png";
@@ -31,7 +42,6 @@ import Range from "../../misc/Range.png";
 import Pierce from "../../misc/Pierce.png";
 import Speed from "../../misc/Speed.png";
 import Cooldown from "../../misc/RetryIcon.png";
-import Coin from "../../misc/Coin.png";
 import Projectiles from "../../misc/Projectiles.png";
 import Yes from "../../misc/TickGreenIcon.png";
 import No from "../../misc/CloseIcon.png";
@@ -52,7 +62,17 @@ export default function DartMonkey() {
 		"003": DartMonkey003,
 		"004": DartMonkey004,
 		"005": DartMonkey005,
+		"010": DartMonkey010,
+		"020": DartMonkey020,
+		"030": DartMonkey030,
+		"040": DartMonkey040,
+		"050": DartMonkey050,
 		100: DartMonkey100,
+		200: DartMonkey200,
+		300: DartMonkey300,
+		400: DartMonkey400,
+		500: DartMonkey500,
+		par: Paragon,
 	};
 	const [p1, setP1] = useState(0);
 	const [p2, setP2] = useState(0);
@@ -88,8 +108,6 @@ export default function DartMonkey() {
 			costMedium: 200,
 			costHard: 215,
 			costImpoppable: 240,
-			notes: "",
-			size: 6,
 		},
 	]);
 	const [image, setImage] = useState("000");
@@ -126,7 +144,6 @@ export default function DartMonkey() {
 					costMedium: 200,
 					costHard: 215,
 					costImpoppable: 240,
-					notes: "",
 				});
 				setImage("000");
 				break;
@@ -161,7 +178,6 @@ export default function DartMonkey() {
 					costMedium: 340,
 					costHard: 365,
 					costImpoppable: 410,
-					notes: "",
 				});
 				setImage("100");
 				break;
@@ -192,12 +208,12 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 475,
+					costMedium: 560,
+					costHard: 600,
+					costImpoppable: 675,
 				});
+				setImage("200");
 				break;
 			case "300":
 				setStats({
@@ -211,8 +227,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					projectile: "Ball",
-
 					speed: 1.15,
 					range: 32,
 					abilityName: "",
@@ -228,12 +242,13 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
+					costEasy: 730,
+					costMedium: 860,
+					costHard: 925,
+					costImpoppable: 1035,
 					notes: "",
 				});
+				setImage("300");
 				break;
 			case "400":
 				setStats({
@@ -247,8 +262,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					projectile: "Juggernaut",
-
 					speed: 1.0,
 					range: 36.8,
 					abilityName: "",
@@ -270,6 +283,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("400");
 				break;
 			case "500":
 				setStats({
@@ -283,8 +297,6 @@ export default function DartMonkey() {
 					pierceSecondary: 100,
 					projectiles: 1,
 					projectilesSecondary: 6,
-					projectile: "Ultra-Juggernaut",
-					projectileSecondary: "Juggernaut",
 					speed: 1.0,
 					range: 36.8,
 					abilityName: "",
@@ -306,6 +318,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("500");
 				break;
 			case "010":
 				setStats({
@@ -319,7 +332,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.8075,
 					range: 32,
 					abilityName: "",
@@ -341,6 +353,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("010");
 				break;
 			case "020":
 				setStats({
@@ -354,7 +367,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.63,
 					range: 32,
 					abilityName: "",
@@ -376,6 +388,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("020");
 				break;
 			case "030":
 				setStats({
@@ -389,7 +402,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 3,
 					projectilesSecondary: 0,
-
 					speed: 0.61,
 					range: 32,
 					abilityName: "",
@@ -411,6 +423,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("030");
 				break;
 			case "040":
 				setStats({
@@ -424,7 +437,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.425,
 					range: 32,
 					abilityName: "Super Monkey Fan Club",
@@ -446,6 +458,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("040");
 				break;
 			case "050":
 				setStats({
@@ -459,7 +472,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.425,
 					range: 32,
 					abilityName: "Plasma Monkey Fan Club",
@@ -481,6 +493,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("050");
 				break;
 			case "001":
 				setStats({
@@ -494,7 +507,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.95,
 					range: 40,
 					abilityName: "",
@@ -530,7 +542,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.95,
 					range: 48,
 					abilityName: "",
@@ -566,7 +577,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.95,
 					range: 56,
 					abilityName: "",
@@ -602,7 +612,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.75,
 					range: 56,
 					abilityName: "",
@@ -638,9 +647,8 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.16,
-					range: 56,
+					range: 76,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -673,7 +681,6 @@ export default function DartMonkey() {
 					pierce: 3,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.8075,
 					range: 32,
 					abilityName: "",
@@ -695,6 +702,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("010");
 				break;
 			case "210":
 				setStats({
@@ -708,7 +716,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.8075,
 					range: 32,
 					abilityName: "",
@@ -730,6 +737,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("200");
 				break;
 			case "310":
 				setStats({
@@ -743,8 +751,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					projectile: "Ball",
-
 					speed: 0.9775,
 					range: 32,
 					abilityName: "",
@@ -766,6 +772,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("300");
 				break;
 			case "410":
 				setStats({
@@ -779,8 +786,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					projectile: "Juggernaut",
-
 					speed: 0.85,
 					range: 36.5,
 					abilityName: "",
@@ -802,6 +807,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("400");
 				break;
 			case "510":
 				setStats({
@@ -815,8 +821,6 @@ export default function DartMonkey() {
 					pierceSecondary: 100,
 					projectiles: 1,
 					projectilesSecondary: 6,
-					projectile: "Ultra-Juggernaut",
-					projectileSecondary: "Juggernaut",
 					speed: 0.85,
 					range: 36.5,
 					abilityName: "",
@@ -838,6 +842,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("500");
 				break;
 			case "120":
 				setStats({
@@ -851,7 +856,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.63,
 					range: 32,
 					abilityName: "",
@@ -873,6 +877,7 @@ export default function DartMonkey() {
 					costImpoppable: 410,
 					notes: "",
 				});
+				setImage("020");
 				break;
 			case "220":
 				setStats({
@@ -886,7 +891,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.63,
 					range: 32,
 					abilityName: "",
@@ -908,6 +912,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("020");
 				break;
 			case "320":
 				setStats({
@@ -921,8 +926,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					projectile: "Ball",
-
 					speed: 0.7666,
 					range: 32,
 					abilityName: "",
@@ -944,6 +947,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("300");
 				break;
 			case "420":
 				setStats({
@@ -957,8 +961,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					projectile: "Juggernaut",
-
 					speed: 0.666,
 					range: 36.5,
 					abilityName: "",
@@ -980,6 +982,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("400");
 				break;
 			case "520":
 				setStats({
@@ -993,8 +996,6 @@ export default function DartMonkey() {
 					pierceSecondary: 100,
 					projectiles: 1,
 					projectilesSecondary: 6,
-					projectile: "Ultra-Juggernaut",
-					projectileSecondary: "Juggernaut",
 					speed: 0.666,
 					range: 36.5,
 					abilityName: "",
@@ -1016,6 +1017,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("500");
 				break;
 			case "101":
 				setStats({
@@ -1029,7 +1031,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.95,
 					range: 40,
 					abilityName: "",
@@ -1051,6 +1052,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("001");
 				break;
 			case "201":
 				setStats({
@@ -1064,7 +1066,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.95,
 					range: 40,
 					abilityName: "",
@@ -1086,6 +1087,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("200");
 				break;
 			case "301":
 				setStats({
@@ -1099,8 +1101,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					projectile: "Ball",
-
 					speed: 1.15,
 					range: 40,
 					abilityName: "",
@@ -1122,6 +1122,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("300");
 				break;
 			case "401":
 				setStats({
@@ -1135,8 +1136,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					projectile: "Juggernaut",
-
 					speed: 1.0,
 					range: 44.8,
 					abilityName: "",
@@ -1158,6 +1157,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("400");
 				break;
 			case "501":
 				setStats({
@@ -1171,8 +1171,6 @@ export default function DartMonkey() {
 					pierceSecondary: 100,
 					projectiles: 1,
 					projectilesSecondary: 6,
-					projectile: "Ultra-Juggernaut",
-					projectileSecondary: "Juggernaut",
 					speed: 1.0,
 					range: 44.8,
 					abilityName: "",
@@ -1194,6 +1192,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("500");
 				break;
 			case "102":
 				setStats({
@@ -1207,7 +1206,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.95,
 					range: 48,
 					abilityName: "",
@@ -1229,6 +1227,7 @@ export default function DartMonkey() {
 					costImpoppable: 410,
 					notes: "",
 				});
+				setImage("002");
 				break;
 			case "202":
 				setStats({
@@ -1242,7 +1241,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.95,
 					range: 48,
 					abilityName: "",
@@ -1264,6 +1262,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("002");
 				break;
 			case "302":
 				setStats({
@@ -1277,8 +1276,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					projectile: "Ball",
-
 					speed: 1.15,
 					range: 48,
 					abilityName: "",
@@ -1300,6 +1297,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("300");
 				break;
 			case "402":
 				setStats({
@@ -1313,8 +1311,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					projectile: "Juggernaut",
-
 					speed: 1.0,
 					range: 52.8,
 					abilityName: "",
@@ -1336,6 +1332,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("400");
 				break;
 			case "502":
 				setStats({
@@ -1349,8 +1346,6 @@ export default function DartMonkey() {
 					pierceSecondary: 100,
 					projectiles: 1,
 					projectilesSecondary: 6,
-					projectile: "Ultra-Juggernaut",
-					projectileSecondary: "Juggernaut",
 					speed: 1.0,
 					range: 52.8,
 					abilityName: "",
@@ -1372,6 +1367,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("500");
 				break;
 			case "130":
 				setStats({
@@ -1385,7 +1381,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 3,
 					projectilesSecondary: 0,
-
 					speed: 0.61,
 					range: 32,
 					abilityName: "",
@@ -1407,6 +1402,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("030");
 				break;
 			case "140":
 				setStats({
@@ -1420,7 +1416,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.425,
 					range: 32,
 					abilityName: "Super Monkey Fan Club",
@@ -1442,6 +1437,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("040");
 				break;
 			case "150":
 				setStats({
@@ -1455,7 +1451,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.425,
 					range: 32,
 					abilityName: "Plasma Monkey Fan Club",
@@ -1477,6 +1472,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("050");
 				break;
 			case "230":
 				setStats({
@@ -1490,7 +1486,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 3,
 					projectilesSecondary: 0,
-
 					speed: 0.61,
 					range: 32,
 					abilityName: "",
@@ -1512,6 +1507,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("030");
 				break;
 			case "240":
 				setStats({
@@ -1525,7 +1521,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.425,
 					range: 32,
 					abilityName: "Super Monkey Fan Club",
@@ -1547,6 +1542,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("040");
 				break;
 			case "250":
 				setStats({
@@ -1560,7 +1556,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.425,
 					range: 32,
 					abilityName: "Plasma Monkey Fan Club",
@@ -1582,6 +1577,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("050");
 				break;
 			case "011":
 				setStats({
@@ -1595,7 +1591,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.8075,
 					range: 40,
 					abilityName: "",
@@ -1617,6 +1612,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("010");
 				break;
 			case "021":
 				setStats({
@@ -1630,7 +1626,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.63,
 					range: 40,
 					abilityName: "",
@@ -1652,6 +1647,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("020");
 				break;
 			case "031":
 				setStats({
@@ -1665,7 +1661,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 3,
 					projectilesSecondary: 0,
-
 					speed: 0.61,
 					range: 40,
 					abilityName: "",
@@ -1687,6 +1682,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("030");
 				break;
 			case "041":
 				setStats({
@@ -1700,7 +1696,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.425,
 					range: 40,
 					abilityName: "Super Monkey Fan Club",
@@ -1722,6 +1717,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("040");
 				break;
 			case "051":
 				setStats({
@@ -1735,7 +1731,6 @@ export default function DartMonkey() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.425,
 					range: 40,
 					abilityName: "Plasma Monkey Fan Club",
@@ -1757,6 +1752,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("050");
 				break;
 			case "032":
 				setStats({
@@ -1791,6 +1787,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("030");
 				break;
 			case "042":
 				setStats({
@@ -1825,6 +1822,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("040");
 				break;
 			case "052":
 				setStats({
@@ -1859,6 +1857,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("050");
 				break;
 			case "103":
 				setStats({
@@ -1893,6 +1892,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("003");
 				break;
 			case "104":
 				setStats({
@@ -1925,8 +1925,9 @@ export default function DartMonkey() {
 					costMedium: 200,
 					costHard: 215,
 					costImpoppable: 240,
-					notes: "Crits every 8-12 shots, deals 50 damage",
+					notes: "",
 				});
+				setImage("004");
 				break;
 			case "105":
 				setStats({
@@ -1941,7 +1942,7 @@ export default function DartMonkey() {
 					projectiles: 1,
 					projectilesSecondary: 0,
 					speed: 0.16,
-					range: 56,
+					range: 76,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1961,6 +1962,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("005");
 				break;
 			case "203":
 				setStats({
@@ -1995,6 +1997,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("003");
 				break;
 			case "204":
 				setStats({
@@ -2027,8 +2030,9 @@ export default function DartMonkey() {
 					costMedium: 200,
 					costHard: 215,
 					costImpoppable: 240,
-					notes: "Crits every 8-12 shots, deals 50 damage",
+					notes: "",
 				});
+				setImage("004");
 				break;
 			case "205":
 				setStats({
@@ -2043,7 +2047,7 @@ export default function DartMonkey() {
 					projectiles: 1,
 					projectilesSecondary: 0,
 					speed: 0.16,
-					range: 56,
+					range: 76,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2063,6 +2067,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("005");
 				break;
 			case "012":
 				setStats({
@@ -2097,6 +2102,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("002");
 				break;
 			case "013":
 				setStats({
@@ -2131,6 +2137,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("003");
 				break;
 			case "014":
 				setStats({
@@ -2145,7 +2152,7 @@ export default function DartMonkey() {
 					projectiles: 1,
 					projectilesSecondary: 0,
 					speed: 0.6375,
-					range: 56,
+					range: 76,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2163,8 +2170,9 @@ export default function DartMonkey() {
 					costMedium: 200,
 					costHard: 215,
 					costImpoppable: 240,
-					notes: "Crits every 8-12 shots, deals 50 damage",
+					notes: "",
 				});
+				setImage("004");
 				break;
 			case "015":
 				setStats({
@@ -2179,7 +2187,7 @@ export default function DartMonkey() {
 					projectiles: 1,
 					projectilesSecondary: 0,
 					speed: 0.136,
-					range: 56,
+					range: 76,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2199,6 +2207,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("005");
 				break;
 			case "022":
 				setStats({
@@ -2233,6 +2242,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("020");
 				break;
 			case "023":
 				setStats({
@@ -2267,6 +2277,7 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("003");
 				break;
 			case "024":
 				setStats({
@@ -2299,8 +2310,9 @@ export default function DartMonkey() {
 					costMedium: 200,
 					costHard: 215,
 					costImpoppable: 240,
-					notes: "Crits every 8-12 shots, deals 50 damage",
+					notes: "",
 				});
+				setImage("004");
 				break;
 			case "025":
 				setStats({
@@ -2315,7 +2327,7 @@ export default function DartMonkey() {
 					projectiles: 1,
 					projectilesSecondary: 0,
 					speed: 0.107,
-					range: 56,
+					range: 76,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2335,6 +2347,42 @@ export default function DartMonkey() {
 					costImpoppable: 240,
 					notes: "",
 				});
+				setImage("005");
+				break;
+			case "-100":
+				setStats({
+					damage: 20,
+					damageMOAB: 20,
+					damageCeramic: 50,
+					damageSecondary: 20,
+					damageMOABSecondary: 20,
+					damageCeramicSecondary: 50,
+					pierce: 200,
+					pierceSecondary: 200,
+					projectiles: 3,
+					projectilesSecondary: 2,
+					speed: 0.3,
+					range: 85,
+					abilityName: "",
+					abilityDuration: 0,
+					abilityCooldown: 0,
+					abilityDamage: 0,
+					abilityPierce: 0,
+					abilitySpeed: 0.0,
+					abilityRange: 0,
+					camo: true,
+					black: true,
+					white: true,
+					purple: true,
+					lead: true,
+					zebra: true,
+					costEasy: 170,
+					costMedium: 200,
+					costHard: 215,
+					costImpoppable: 240,
+					notes: "",
+				});
+				setImage("par");
 				break;
 			default:
 				setStats({
@@ -2347,7 +2395,6 @@ export default function DartMonkey() {
 					pierce: 2,
 					projectiles: 1,
 					projectilesSecondary: 0,
-
 					speed: 0.95,
 					range: 32,
 					abilityName: "",
@@ -2374,8 +2421,10 @@ export default function DartMonkey() {
 	}, [p1, p2, p3]);
 	function handleChange(button) {
 		switch (button) {
-			case "p1-0":
+			case "p0":
 				setP1(0);
+				setP2(0);
+				setP3(0);
 				break;
 			case "p1-1":
 				setP1(1);
@@ -2392,9 +2441,6 @@ export default function DartMonkey() {
 			case "p1-5":
 				setP1(5);
 				break;
-			case "p2-0":
-				setP2(0);
-				break;
 			case "p2-1":
 				setP2(1);
 				break;
@@ -2410,9 +2456,6 @@ export default function DartMonkey() {
 			case "p2-5":
 				setP2(5);
 				break;
-			case "p3-0":
-				setP3(0);
-				break;
 			case "p3-1":
 				setP3(1);
 				break;
@@ -2427,6 +2470,11 @@ export default function DartMonkey() {
 				break;
 			case "p3-5":
 				setP3(5);
+				break;
+			case "par":
+				setP1(-1);
+				setP2(0);
+				setP3(0);
 				break;
 			default:
 				break;
@@ -2460,7 +2508,7 @@ export default function DartMonkey() {
 									/>
 									Damage
 								</th>
-								<th data-tip="How many bloons a single projectile can affect" data-for="pierce">
+								<th data-tip="How many Bloons a single projectile can affect" data-for="pierce">
 									<ReactTooltip
 										effect="solid"
 										textColor="#eceff4"
@@ -2486,7 +2534,15 @@ export default function DartMonkey() {
 						</thead>
 						<tbody>
 							<tr>
-								<td>
+								<td data-tip="Damage against normal Bloons" data-for="damage-normal">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage-normal"
+									/>
 									<img src={Red} alt="Red"></img>&nbsp;{stats.damage}
 								</td>
 								<td>
@@ -2498,12 +2554,28 @@ export default function DartMonkey() {
 								</td>
 							</tr>
 							<tr>
-								<td>
+								<td data-tip="Damage against MOABs" data-for="damage-moab">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage-moab"
+									/>
 									<img src={MOAB} alt="MOAB"></img>&nbsp;{stats.damageMOAB}
 								</td>
 							</tr>
 							<tr>
-								<td>
+								<td data-tip="Damage against Ceramics" data-for="damage-ceramic">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage-ceramic"
+									/>
 									<img src={Ceramic} alt="Ceramic"></img>&nbsp;{stats.damageCeramic}
 								</td>
 								<td>
@@ -2538,7 +2610,7 @@ export default function DartMonkey() {
 									/>
 									Projectiles
 								</th>
-								<th data-tip="The range where the tower can detect bloons" data-for="range">
+								<th data-tip="The range where the tower can detect Bloons" data-for="range">
 									<ReactTooltip
 										effect="solid"
 										textColor="#eceff4"
@@ -2578,20 +2650,12 @@ export default function DartMonkey() {
 						</thead>
 						<tbody>
 							<tr>
-								<td>
-									<img src={Coin} alt="Coin" id="tableheaderimg"></img>&nbsp;{stats.costEasy}
-								</td>
-								<td>
-									<img src={Coin} alt="Coin" id="tableheaderimg"></img>&nbsp;{stats.costMedium}
-								</td>
+								<td>${stats.costEasy}</td>
+								<td>${stats.costMedium}</td>
 							</tr>
 							<tr>
-								<td>
-									<img src={Coin} alt="Coin" id="tableheaderimg"></img>&nbsp;{stats.costHard}
-								</td>
-								<td>
-									<img src={Coin} alt="Coin" id="tableheaderimg"></img>&nbsp;{stats.costImpoppable}
-								</td>
+								<td>${stats.costHard}</td>
+								<td>${stats.costImpoppable}</td>
 							</tr>
 						</tbody>
 						<tfoot>
@@ -2618,7 +2682,7 @@ export default function DartMonkey() {
 									/>
 									Damage
 								</th>
-								<th data-tip="How many bloons a single projectile can affect" data-for="pierce2">
+								<th data-tip="How many Bloons a single projectile can affect" data-for="pierce2">
 									<ReactTooltip
 										effect="solid"
 										textColor="#eceff4"
@@ -2633,7 +2697,15 @@ export default function DartMonkey() {
 						</thead>
 						<tbody>
 							<tr>
-								<td>
+								<td data-tip="Damage against normal Bloons" data-for="damage-normal2">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage-normal2"
+									/>
 									<img src={Red} alt="Red"></img>&nbsp;{stats.damageSecondary}
 								</td>
 								<td>
@@ -2641,12 +2713,28 @@ export default function DartMonkey() {
 								</td>
 							</tr>
 							<tr>
-								<td>
+								<td data-tip="Damage against MOABs" data-for="damage-moab2">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage-moab2"
+									/>
 									<img src={MOAB} alt="MOAB"></img>&nbsp;{stats.damageMOABSecondary}
 								</td>
 							</tr>
 							<tr>
-								<td>
+								<td data-tip="Damage against Ceramics" data-for="damage-ceramic2">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="damage-ceramic2"
+									/>
 									<img src={Ceramic} alt="Ceramic"></img>&nbsp;{stats.damageCeramicSecondary}
 								</td>
 								<td>
@@ -2698,7 +2786,7 @@ export default function DartMonkey() {
 									/>
 									Damage
 								</th>
-								<th data-tip="How many bloons a single projectile can affect" data-for="pierce3">
+								<th data-tip="How many Bloons a single projectile can affect" data-for="pierce3">
 									<ReactTooltip
 										effect="solid"
 										textColor="#eceff4"
@@ -2749,7 +2837,7 @@ export default function DartMonkey() {
 						</tbody>
 						<tfoot>
 							<tr>
-								<th data-tip="The range where the tower can detect bloons" data-for="range">
+								<th data-tip="The range where the tower can detect Bloons" data-for="range">
 									<ReactTooltip
 										effect="solid"
 										textColor="#eceff4"
@@ -2793,7 +2881,7 @@ export default function DartMonkey() {
 							<tr>
 								<th
 									colSpan="2"
-									data-tip="Which bloons the tower can detect and damage"
+									data-tip="Which Bloons the tower can detect and damage"
 									data-for="bloons"
 								>
 									<ReactTooltip
@@ -2810,32 +2898,80 @@ export default function DartMonkey() {
 						</thead>
 						<tbody>
 							<tr>
-								<td>
+								<td data-tip="Can detect camo Bloons?" data-for="camo">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="camo"
+									/>
 									<img src={Camo} alt="Camo"></img>&nbsp;
 									<img src={stats.camo ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
-								<td>
-									<img src={Purple} alt="Camo"></img>&nbsp;
+								<td data-tip="Can damage purple bloons?" data-for="purple">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="purple"
+									/>
+									<img src={Purple} alt="Purple"></img>&nbsp;
 									<img src={stats.purple ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
 							</tr>
 							<tr>
-								<td>
-									<img src={Black} alt="Camo"></img>&nbsp;
+								<td data-tip="Can damage Black Bloons?" data-for="black">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="black"
+									/>
+									<img src={Black} alt="Black"></img>&nbsp;
 									<img src={stats.black ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
-								<td>
-									<img src={Lead} alt="Camo"></img>&nbsp;
+								<td data-tip="Can damage Lead Bloons?" data-for="lead">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="lead"
+									/>
+									<img src={Lead} alt="Lead"></img>&nbsp;
 									<img src={stats.lead ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
 							</tr>
 							<tr>
-								<td>
-									<img src={White} alt="Camo"></img>&nbsp;
+								<td data-tip="Can damage White Bloons?" data-for="white">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="white"
+									/>
+									<img src={White} alt="White"></img>&nbsp;
 									<img src={stats.white ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
-								<td>
-									<img src={Zebra} alt="Camo"></img>&nbsp;
+								<td data-tip="Can damage Zebra Bloons?" data-for="zebra">
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="zebra"
+									/>
+									<img src={Zebra} alt="Zebra"></img>&nbsp;
 									<img src={stats.zebra ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
 							</tr>
@@ -2847,30 +2983,13 @@ export default function DartMonkey() {
 						<img src={images[image]} alt="Dart Monkey 000" className="tower-img" id="tower-img"></img>
 					</div>
 					<div className="tower-grid">
-						<div>
-							<button
-								onClick={() => handleChange("p1-0")}
-								id="p1-0"
-								data-tip="Resets the top path."
-								data-for="reset1"
-							>
-								<ReactTooltip
-									effect="solid"
-									textColor="#eceff4"
-									backgroundColor="#4c566aff"
-									arrowColor="transparent"
-									multiline={true}
-									id="reset1"
-								/>
-								<img src={Reset} alt="Reset" className="reset"></img>
-							</button>
-						</div>
+						<div></div>
 						<div>
 							<button
 								onClick={() => handleChange("p1-1")}
 								id="p1-1"
 								className={p1 === 1 ? "active" : ""}
-								disabled={p2 > 0 && p3 > 0 ? true : false}
+								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Sharp Shots<br>Can pop 1 extra Bloon per shot.<br>Cost: $120 / $140 / $150 / $170"
 								data-for="sharp-shots"
 							>
@@ -2890,7 +3009,7 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p1-2")}
 								id="p1-2"
 								className={p1 === 2 ? "active" : ""}
-								disabled={p2 > 0 && p3 > 0 ? true : false}
+								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Razor Sharp Shots<br>Can pop 2 more bloons per shot.<br>Cost: $185 / $220 / $235 / $265"
 								data-for="razor-sharp-shots"
 							>
@@ -2910,7 +3029,7 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p1-3")}
 								id="p1-3"
 								className={p1 === 3 ? "active" : ""}
-								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 ? true : false}
+								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Spike-O-Pult<br>Converts the Dart Monkey into a Spike-o-pult that hurls a large spiked ball instead of darts.<br>Good range, but slower attack speed. Each ball can pop lots of Bloons and rebounds off obstacles.<br>Cost: $255 / $300 / $325 / $360"
 								data-for="spike-o-pult"
 							>
@@ -2930,7 +3049,7 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p1-4")}
 								id="p1-4"
 								className={p1 === 4 ? "active" : ""}
-								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 ? true : false}
+								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Juggernaut<br>Hurls a giant spiked ball that pops lead and excels at crushing Ceramic Bloons.<br>Cost: $1.530 / $1.800 / $1.945 / $2.160"
 								data-for="juggernaut"
 							>
@@ -2950,7 +3069,7 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p1-5")}
 								id="p1-5"
 								className={p1 === 5 ? "active" : ""}
-								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 ? true : false}
+								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Ultra-Juggernaut<br>Gigantic spiked ball splits twice into 6 Juggernaut balls for even more destructive power.<br>Cost: $12.750 / $15.000 / $16.200 / $18.000"
 								data-for="ultra-juggernaut"
 							>
@@ -2965,12 +3084,13 @@ export default function DartMonkey() {
 								<img src={UltraJuggernaut} alt="Ultra-Juggernaut"></img>
 							</button>
 						</div>
+						<div></div>
 						<div>
 							<button
-								onClick={() => handleChange("p2-0")}
-								id="p2-0"
-								data-tip="Resets the middle path."
-								data-for="reset2"
+								onClick={() => handleChange("p0")}
+								id="p0"
+								data-tip="Resets all upgrades."
+								data-for="reset"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -2978,7 +3098,7 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="reset2"
+									id="reset"
 								/>
 								<img src={Reset} alt="Reset" className="reset"></img>
 							</button>
@@ -2988,7 +3108,7 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p2-1")}
 								id="p2-1"
 								className={p2 === 1 ? "active" : ""}
-								disabled={p1 > 0 && p3 > 0 ? true : false}
+								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Quick Shots<br>Shoots 15% faster.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="quick-shots"
 							>
@@ -3008,7 +3128,7 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p2-2")}
 								id="p2-2"
 								className={p2 === 2 ? "active" : ""}
-								disabled={p1 > 0 && p3 > 0 ? true : false}
+								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Quick Shots<br>Shoots 33% faster!<br>Cost: $160 / $190 / $205 / $230"
 								data-for="very-quick-shots"
 							>
@@ -3028,7 +3148,7 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p2-3")}
 								id="p2-3"
 								className={p2 === 3 ? "active" : ""}
-								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 ? true : false}
+								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Triple Shot<br>Throws 3 darts at a time instead of 1.<br>Cost: $340 / $400 / $430 / $480"
 								data-for="triple-shot"
 							>
@@ -3048,7 +3168,7 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p2-4")}
 								id="p2-4"
 								className={p2 === 4 ? "active" : ""}
-								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 ? true : false}
+								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Super Monkey Fan Club<br>Super Monkey Fan Club Ability: Converts up to 10 nearby Dart Monkeys including himself into Super Monkeys for 15 seconds.<br>Regular attack speed also increased.<br>Cost: $6.800 / $8.000 / $8.640 / $9.600"
 								data-for="super-monkey-fan-club"
 							>
@@ -3068,8 +3188,8 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p2-5")}
 								id="p2-5"
 								className={p2 === 5 ? "active" : ""}
-								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 ? true : false}
-								data-tip="Plasma Monkey Fan Club<br> Elite membership of this club grants the Dart Monkeys even more power.<br>Cost: $38.250 / $45.000 / $48.600 / $54.000"
+								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
+								data-tip="Plasma Monkey Fan Club<br>Elite membership of this club grants the Dart Monkeys even more power.<br>Cost: $38.250 / $45.000 / $48.600 / $54.000"
 								data-for="plasma-monkey-fan-club"
 							>
 								<ReactTooltip
@@ -3080,19 +3200,16 @@ export default function DartMonkey() {
 									multiline={true}
 									id="plasma-monkey-fan-club"
 								/>
-								<img
-									src={PlasmaMonkeyFanClub}
-									alt="Plasma Monkey Fan Club"
-									title="Plasma Monkey Fan Club"
-								></img>
+								<img src={PlasmaMonkeyFanClub} alt="Plasma Monkey Fan Club"></img>
 							</button>
 						</div>
 						<div>
 							<button
-								onClick={() => handleChange("p3-0")}
-								id="p3-0"
-								data-tip="Resets the bottom path."
-								data-for="reset3"
+								onClick={() => handleChange("par")}
+								id="par"
+								className={p1 === -1 ? "active" : ""}
+								data-tip="Apex Plasma Master<br>Fill the area with Bloon shredding plasma juggernaut balls, leaving nothing behind...<br>Cost: $297.500 / $350.000 / $378.600 / $420.000"
+								data-for="apex-plasma-master"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -3100,18 +3217,29 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="reset3"
+									id="apex-plasma-master"
 								/>
-								<img src={Reset} alt="Reset" className="reset"></img>
+								<img src={ApexPlasmaMaster} alt="Apex Plasma Master"></img>
 							</button>
 						</div>
+						<div></div>
 						<div>
 							<button
 								onClick={() => handleChange("p3-1")}
 								id="p3-1"
 								className={p3 === 1 ? "active" : ""}
-								disabled={p1 > 0 && p2 > 0 ? true : false}
+								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
+								data-tip="Long Range Darts<br>Makes the Dart Monkey shoot further than normal.<br>Cost: $75 / $90 / $95 / $110"
+								data-for="long-range-darts"
 							>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="long-range-darts"
+								/>
 								<img src={LongRangeDarts} alt="Long Range Darts" title="Long Range Darts"></img>
 							</button>
 						</div>
@@ -3120,8 +3248,18 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p3-2")}
 								id="p3-2"
 								className={p3 === 2 ? "active" : ""}
-								disabled={p1 > 0 && p2 > 0 ? true : false}
+								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
+								data-tip="Enhanced Eyesight<br>Shoots even further and can detect Camo bloons.<br>Cost: $170 / $200 / $215 / $240"
+								data-for="enhanced-eyesight"
 							>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="enhanced-eyesight"
+								/>
 								<img src={EnhancedEyesight} alt="Enhanced Eyesight" title="Enhanced Eyesight"></img>
 							</button>
 						</div>
@@ -3130,9 +3268,19 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p3-3")}
 								id="p3-3"
 								className={p3 === 3 ? "active" : ""}
-								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 ? true : false}
+								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
+								data-tip="Crossbow<br>Uses a long range Crossbow that can pop 3 layers of Bloon for every hit.<br>Cost: $530 / $625 / $675 / $750"
+								data-for="crossbow"
 							>
-								<img src={Crossbow} alt="Crossbow" title="Crossbow"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="crossbow"
+								/>
+								<img src={Crossbow} alt="Crossbow"></img>
 							</button>
 						</div>
 						<div>
@@ -3140,9 +3288,19 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p3-4")}
 								id="p3-4"
 								className={p3 === 4 ? "active" : ""}
-								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 ? true : false}
+								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
+								data-tip="Sharpshooter<br>Sharp Shooter attacks faster and does powerful Crit shots every few shots that do a lot more damage.<br>Cost: $1.700 / $2.000 / $2.160 / $2.400"
+								data-for="sharpshooter"
 							>
-								<img src={Sharpshooter} alt="Sharpshooter" title="Sharpshooter"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="sharpshooter"
+								/>
+								<img src={Sharpshooter} alt="Sharpshooter"></img>
 							</button>
 						</div>
 						<div>
@@ -3150,9 +3308,19 @@ export default function DartMonkey() {
 								onClick={() => handleChange("p3-5")}
 								id="p3-5"
 								className={p3 === 5 ? "active" : ""}
-								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 ? true : false}
+								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
+								data-tip="Crossbow Master<br>Crossbow Master shoots really fast and devastates most Bloon types with ease.<br>Cost: $21.250 / $25.000 / $27.000 / $30.000"
+								data-for="crossbow-master"
 							>
-								<img src={CrossbowMaster} alt="Crossbow Master" title="Crossbow Master"></img>
+								<ReactTooltip
+									effect="solid"
+									textColor="#eceff4"
+									backgroundColor="#4c566aff"
+									arrowColor="transparent"
+									multiline={true}
+									id="crossbow-master"
+								/>
+								<img src={CrossbowMaster} alt="Crossbow Master"></img>
 							</button>
 						</div>
 					</div>
@@ -3169,8 +3337,12 @@ export default function DartMonkey() {
 									max="5"
 									value={p1}
 									onChange={(e) => setP1(e.target.value)}
+									disabled={p2 > 0 && p3 > 0 ? true : false}
 								></input>
-								<button onClick={() => (p1 >= 5 ? setP1(5) : setP1(p1 + 1))}>
+								<button
+									onClick={() => (p1 >= 5 ? setP1(5) : setP1(p1 + 1))}
+									disabled={(p2 > 0 && p3 > 0) || ((p2 || p3) > 2 && p1 === 2) ? true : false}
+								>
 									<img src={Plus} alt="plus"></img>
 								</button>
 							</div>
@@ -3187,8 +3359,12 @@ export default function DartMonkey() {
 									max="5"
 									value={p2}
 									onChange={(e) => setP2(e.target.value)}
+									disabled={p1 > 0 && p3 > 0 ? true : false}
 								></input>
-								<button onClick={() => (p2 >= 5 ? setP2(5) : setP2(p2 + 1))}>
+								<button
+									onClick={() => (p2 >= 5 ? setP2(5) : setP2(p2 + 1))}
+									disabled={(p1 > 0 && p3 > 0) || ((p1 || p3) > 2 && p2 === 2) ? true : false}
+								>
 									<img src={Plus} alt="plus"></img>
 								</button>
 							</div>
@@ -3205,8 +3381,12 @@ export default function DartMonkey() {
 									max="5"
 									value={p3}
 									onChange={(e) => setP3(e.target.value)}
+									disabled={p1 > 0 && p2 > 0 ? true : false}
 								></input>
-								<button onClick={() => (p3 >= 5 ? setP3(5) : setP3(p3 + 1))}>
+								<button
+									onClick={() => (p3 >= 5 ? setP3(5) : setP3(p3 + 1))}
+									disabled={(p1 > 0 && p2 > 0) || ((p1 || p2) > 2 && p3 === 2) ? true : false}
+								>
 									<img src={Plus} alt="plus"></img>
 								</button>
 							</div>
