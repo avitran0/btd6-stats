@@ -67,13 +67,26 @@ export default function DartMonkey() {
 		"030": DartMonkey030,
 		"040": DartMonkey040,
 		"050": DartMonkey050,
-		100: DartMonkey100,
-		200: DartMonkey200,
-		300: DartMonkey300,
-		400: DartMonkey400,
-		500: DartMonkey500,
-		par: Paragon,
+		"100": DartMonkey100,
+		"200": DartMonkey200,
+		"300": DartMonkey300,
+		"400": DartMonkey400,
+		"500": DartMonkey500,
+		"par": Paragon,
 	};
+	let colors = {
+		"ss": "#98c379",
+		"s": "#9fba79",
+		"s-": "#a6b278",
+		"a": "#aea978",
+		"a-": "#b5a077",
+		"b": "#bc9877",
+		"b-": "#c38f77",
+		"c": "#ca8676",
+		"c-": "#d27d76",
+		"d": "#d97575",
+		"f": "#e06c75",
+	}
 	const [p1, setP1] = useState(0);
 	const [p2, setP2] = useState(0);
 	const [p3, setP3] = useState(0);
@@ -3073,6 +3086,9 @@ export default function DartMonkey() {
 						</div>
 						<div></div>
 						<div>
+							<h1 style={{color: colors["c-"]}}>C-</h1>
+						</div>
+						<div>
 							<button
 								onClick={() => handleChange("p0")}
 								id="p0"
@@ -3209,6 +3225,9 @@ export default function DartMonkey() {
 								<img src={ApexPlasmaMaster} alt="Apex Plasma Master"></img>
 							</button>
 						</div>
+						<div>
+							<h1 style={{color: colors["b-"]}}>B-</h1>
+						</div>
 						<div></div>
 						<div>
 							<button
@@ -3309,6 +3328,10 @@ export default function DartMonkey() {
 								/>
 								<img src={CrossbowMaster} alt="Crossbow Master"></img>
 							</button>
+						</div>
+						<div></div>
+						<div>
+							<h1 style={{color: colors["b-"]}}>B-</h1>
 						</div>
 					</div>
 					<div className="tower-input">

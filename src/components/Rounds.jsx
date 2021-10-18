@@ -1206,6 +1206,34 @@ export default function Rounds() {
 								<img src={ZOMG} alt="ZOMG" />
 							</td>
 						</tr>
+						<tr>
+							<td>81</td>
+							<td>44506</td>
+							<td>5185</td>
+							<td>5221</td>
+							<td>99969</td>
+							<td>
+								40x
+								<img src={Ceramic} alt="Ceramic" />
+								&ensp;40x
+								<img src={CeramicRegrow} alt="Cermic Regrow" />
+								&ensp;40x
+								<img src={CeramicFortified} alt="Ceramic Fortified" />
+								&ensp;30x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+							</td>
+						</tr>
+						<tr>
+							<td>82</td>
+							<td>52320</td>
+							<td>4575</td>
+							<td>4611</td>
+							<td>104581</td>
+							<td>
+								1x&nbsp;
+								<img src={ZOMG} alt="ZOMG" />
+							</td>
+						</tr>
 					</tbody>
 					<tfoot>
 						<tr>
