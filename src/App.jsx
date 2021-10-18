@@ -49,19 +49,24 @@ function App() {
 					</ul>
 				</nav>
 			</header>
-			<AnimatePresence exitBeforeEnter initial={false}>
-				<Switch location={location} key={location.pathname}>
-					<Route path="/" exact component={Home} />
-					<Route path="/towers" exact component={Towers} />
-					<Route path="/towers/dart-monkey" component={DartMonkey} />
-					<Route path="/heroes" exact component={Heroes} />
-					<Route path="/heroes/quincy" component={HeroQuincy} />
-					<Route path="/bloons" component={Bloons} />
-					<Route path="/rounds" exact component={Rounds} />
-					<Route path="/rounds/abr" component={ABR} />
-					<Route path="/rounds/apopalypse" component={Apopalypse} />
-				</Switch>
-			</AnimatePresence>
+			<body>
+				<AnimatePresence exitBeforeEnter initial={false}>
+					<Switch location={location} key={location.pathname}>
+						<Route path="/" exact component={Home} />
+						<Route path="/towers" exact component={Towers} />
+						<Route path="/towers/dart-monkey" component={DartMonkey} />
+						<Route path="/heroes" exact component={Heroes} />
+						<Route path="/heroes/quincy" component={HeroQuincy} />
+						<Route path="/bloons" component={Bloons} />
+						<Route path="/rounds" exact component={Rounds} />
+						<Route path="/rounds/abr" component={ABR} />
+						<Route path="/rounds/apopalypse" component={Apopalypse} />
+					</Switch>
+				</AnimatePresence>
+			</body>
+			<footer>
+				<p>Made by <a href="https://www.github.com/HolyHades">HolyHades</a></p>
+			</footer>
 		</div>
 	);
 }

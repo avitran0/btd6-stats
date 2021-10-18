@@ -1,6 +1,3 @@
-$nord0: #2e3440;
-$nord1: #3b4252;
-$nord3: #4c566a;
 $nord6: #eceff4;
 $nord8: #88c0d0;
 $nord10: #5e81ac;
@@ -9,6 +6,18 @@ $nord12: #d08770;
 $nord13: #ebcb8b;
 $nord14: #a3be8c;
 
+$bg: #282c34;
+$darkblue: #61afef;
+$lightblue: #56b6c2;
+$darkorange: #d19a66;
+$lightorange: #e5c07b;
+$red: #e06c75;
+$purple: #c678dd;
+$green: #98c379;
+$lightgray: #323842;
+$mediumgray: #2c313a;
+$darkgray: #21252b;
+
 @mixin transform($property) {
 	-webkit-transform: $property;
 	-ms-transform: $property;
@@ -16,7 +25,7 @@ $nord14: #a3be8c;
 }
 
 html {
-	background-color: $nord0;
+	background-color: $bg;
 	overflow-x: hidden;
 	scrollbar-width: none;
 	scroll-behavior: smooth;
@@ -40,9 +49,18 @@ html {
 	text-align: center;
 	min-height: 100vh;
 	box-sizing: border-box;
-	background-color: $nord0;
+	background-color: $bg;
 	font-family: Nunito-Light;
 	cursor: url(./misc/Cursor32.png) 5 0, auto;
+	transition: 0.2s;
+	a {
+		color: $nord6;
+		transition: 0.2s;
+		text-decoration: none;
+		&:hover {
+			color: $darkblue;
+		}
+	}
 }
 
 .switch-wrapper > * {
@@ -51,31 +69,39 @@ html {
 }
 
 h1 {
-	font-size: 3em;
-	font-weight: 300;
+	font: 300 3rem Nunito-light;
 	color: $nord6;
 }
 
 h2 {
-	font-size: 2em;
+	font: 2rem Nunito-SemiBold;
 	color: $nord6;
 	margin-top: 60px;
 }
 
 h3 {
-	font-size: 1.8em;
+	font: 1.8rem Nunito-light;
 	color: $nord6;
 	transition: 0.2s;
 }
 
 p {
-	font-size: 1.5em;
+	font: 1.5rem Nunito-light;
 	color: $nord6;
 	margin: 0 5%;
 }
 
 a {
+	font: 1.5rem Nunito-light;
 	cursor: url(./misc/Cursor32.png) 5 0, auto;
+	transition: 0.2s;
+	color: $nord6;
+	outline: none;
+	text-decoration: none;
+	&:hover,
+	&:active {
+		color: $darkblue;
+	}
 }
 
 button {
@@ -87,7 +113,7 @@ input {
 }
 
 .navbar {
-	background-color: $nord0;
+	background-color: $bg;
 	height: 120px;
 	display: flex;
 	justify-content: space-between;
@@ -115,38 +141,28 @@ input {
 	}
 
 	a {
-		font-size: large;
-		color: $nord8;
-		text-decoration: none;
-		transition: 0.2s;
-		font-size: 2em;
+		font-size: 2rem;
 		padding: 0px 4px;
-		font-weight: 300;
-
-		&:hover,
-		&:focus {
-			color: $nord10;
-			outline: none;
-		}
 	}
 }
 
 .active-link {
-	color: $nord10 !important;
+	color: $darkblue !important;
 
 	&:hover {
-		color: $nord10 !important;
+		color: $darkblue !important;
 	}
 }
 
 .home,
 .towers,
-.tower {
+.tower,
+.heroes {
 	margin-top: 40px;
 	padding-bottom: 80px;
 	width: 100%;
 	overflow: hidden;
-	background-color: $nord0;
+	background-color: $bg;
 }
 
 .tower {
@@ -154,9 +170,10 @@ input {
 }
 
 .grid-container {
-	width: 240px;
-	height: 320px;
+	max-width: 240px;
+	max-height: 260px;
 	transition: 0.2s;
+	margin: 0 15px 40px 15px;
 }
 
 .towers-grid {
@@ -170,35 +187,27 @@ input {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		color: $nord10;
-		text-decoration: none;
-		font-size: 1.6em;
-		font-weight: 300;
-		transition: 0.2s;
-
+		font-size: 1.6rem;
 		&::after {
-			content: "";
-			color: $nord8;
-			background-color: $nord0;
+			color: $nord6;
+			background-color: $bg;
 			display: block;
 			transition: 0.2s;
 		}
 
 		&:hover {
 			&::after {
-				color: $nord10;
+				color: $darkblue;
 			}
-
-			color: $nord10;
 		}
 	}
 
 	img {
-		height: 60%;
+		height: 75%;
 		margin-bottom: 8px;
 		padding: 8px;
 		border-radius: 8px;
-		background-color: $nord1;
+		background-color: $lightgray;
 		transition: 0.2s;
 	}
 }
@@ -333,30 +342,30 @@ input {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	gap: 1em 2em;
+	gap: 1rem 2rem;
 	align-items: center;
 	margin: 0 auto 0 2%;
 	img {
-		max-height: 9em;
-		max-width: 9em;
+		max-height: 7rem;
+		max-width: 7rem;
 		background-color: transparent;
 		padding: 0;
 		margin: 0;
 	}
 	button {
-		background-color: $nord1;
+		background-color: $lightgray;
 		border: none;
 		border-radius: 8px;
 		transition: 0.2s;
-		height: 10em;
-		width: 10em;
+		height: 8rem;
+		width: 8rem;
 		margin: 0;
 
 		&:hover {
-			background-color: $nord10;
+			background-color: $darkblue;
 		}
 		&:disabled {
-			background-color: $nord11;
+			background-color: $red;
 		}
 	}
 }
@@ -368,23 +377,23 @@ input {
 	width: 100%;
 	justify-content: space-around;
 	img {
-		height: 1.8em;
+		height: 2.4rem;
 	}
 	table {
 		transition: 0.2s;
 		height: 0;
-		margin: 1em;
+		margin: 1rem;
 	}
 	th,
 	td {
 		border: none;
-		min-width: 4em;
+		min-width: 4rem;
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		font-family: Nunito-SemiBold;
+		padding: 0.4rem 0.8rem;
 	}
 	td {
-		padding: 0.2em;
 		vertical-align: middle;
 		font-family: Nunito-light;
 	}
@@ -392,12 +401,12 @@ input {
 
 .image-container {
 	display: flex;
-	margin-top: 2em;
+	margin-top: 2rem;
 }
 
 .image-container-inner {
-	width: 24em;
-	height: 24em;
+	width: 24rem;
+	height: 24rem;
 	margin: 0 0 0 auto;
 }
 
@@ -408,8 +417,8 @@ input {
 }
 
 #p0 {
-	height: 6em;
-	width: 6em;
+	height: 5rem;
+	width: 5rem;
 }
 
 .tower-input {
@@ -419,7 +428,7 @@ input {
 	justify-content: space-between;
 	input {
 		border-radius: 0;
-		margin: 0;
+		margin: 0 0.4rem;
 		padding: 0;
 		border: none;
 		border-bottom: 1px solid $nord6;
@@ -427,16 +436,16 @@ input {
 		outline: none;
 		background-color: transparent;
 		color: $nord6;
-		font: 2.4em Nunito-light;
-		width: 3em;
+		font: 2.4rem Nunito-light;
+		width: 3rem;
 		-moz-appearance: textfield;
 		appearance: textfield;
 		caret-color: $nord6;
 		text-align: center;
-		height: 1.8em;
+		height: 2.4rem;
 	}
 	input:focus {
-		border-bottom: 1px solid $nord10;
+		border-bottom: 1px solid $darkblue;
 	}
 	input::-webkit-inner-spin-button,
 	input::-webkit-outer-spin-button {
@@ -446,29 +455,29 @@ input {
 
 	h2 {
 		margin: 0 auto;
-		font-size: 2.4em;
+		font-size: 2.4rem;
 	}
 	button {
 		color: $nord6;
 		background-color: transparent;
 		border: none;
 		border-radius: 8px;
-		height: 4.8em;
-		width: 4.8em;
+		height: 4.8rem;
+		width: 4.8rem;
 		padding: 0;
 	}
 	img {
-		height: 4.8em;
+		height: 4.8rem;
 	}
 }
 
 .tower-input-flex {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 0.8em;
+	margin-bottom: 0.8rem;
 	div {
 		display: flex;
-		height: 2.8em;
+		height: 2.8rem;
 		margin: 0 20% 0 0;
 	}
 }
@@ -483,24 +492,16 @@ input {
 }
 
 .yesno {
-	height: 1.4em !important;
+	height: 1.8rem !important;
 }
 
-.active {
-	background-color: $nord14 !important;
+.tower-active {
+	background-color: $green !important;
 }
 
 .reset {
-	height: 4em;
-	padding: 1em;
-}
-
-.heroes {
-	margin-top: 40px;
-	padding-bottom: 80px;
-	width: 100%;
-	overflow: hidden;
-	background-color: $nord0;
+	height: 3rem;
+	padding: 1rem;
 }
 
 #quincy::after {
@@ -556,7 +557,7 @@ input {
 	padding-bottom: 80px;
 	width: 100%;
 	overflow: hidden;
-	background-color: $nord0;
+	background-color: $bg;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -571,32 +572,32 @@ table {
 	display: inline-table;
 	margin: 0 20px 80px 20px;
 	border-collapse: collapse;
-	background-color: $nord1;
+	background-color: $lightgray;
 	border-radius: 8px;
 }
 
 th {
-	font: 1.5em Nunito-SemiBold;
+	font: 1.5rem Nunito-SemiBold;
 	color: $nord6;
-	padding: 0.5em;
+	padding: 0.5rem;
 	border: 1px solid $nord6;
 	text-align: left;
 }
 
 td {
 	color: $nord6;
-	padding: 0.5em;
+	padding: 0.5rem;
 	border: 1px solid $nord6;
 	text-align: left;
-	font: 1.5em Nunito-Light;
+	font: 1.5rem Nunito-Light;
 }
 
 .bloons img {
-	height: 1.8em;
+	height: 2.4rem;
 }
 
 #tableheaderimg {
-	height: 1.2em;
+	height: 1.6rem;
 	margin-left: 8px;
 }
 
@@ -605,7 +606,7 @@ td {
 	padding-bottom: 80px;
 	width: 100%;
 	overflow: hidden;
-	background-color: $nord0;
+	background-color: $bg;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -628,23 +629,27 @@ td {
 
 	a {
 		font-size: large;
-		color: $nord8;
+		color: $nord6;
 		text-decoration: none;
 		transition: 0.2s;
-		font-size: 2em;
+		font-size: 2rem;
 		padding: 0px 4px;
 		font-weight: 300;
 
 		&:hover,
 		&:focus {
-			color: $nord10;
+			color: $darkblue;
 			outline: none;
 		}
 	}
 
 	img {
-		height: 1.8em;
+		height: 2.4rem;
 	}
+}
+
+footer {
+	margin-bottom: 2rem;
 }
 
 @media (max-width: 1400px) {

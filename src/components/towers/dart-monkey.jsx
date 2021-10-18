@@ -246,7 +246,6 @@ export default function DartMonkey() {
 					costMedium: 860,
 					costHard: 925,
 					costImpoppable: 1035,
-					notes: "",
 				});
 				setImage("300");
 				break;
@@ -277,11 +276,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: true,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 2260,
+					costMedium: 2660,
+					costHard: 2870,
+					costImpoppable: 3195,
 				});
 				setImage("400");
 				break;
@@ -312,11 +310,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: true,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 15010,
+					costMedium: 17660,
+					costHard: 19070,
+					costImpoppable: 21195,
 				});
 				setImage("500");
 				break;
@@ -347,11 +344,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 255,
+					costMedium: 300,
+					costHard: 325,
+					costImpoppable: 360,
 				});
 				setImage("010");
 				break;
@@ -382,11 +378,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 415,
+					costMedium: 490,
+					costHard: 530,
+					costImpoppable: 590,
 				});
 				setImage("020");
 				break;
@@ -417,11 +412,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 755,
+					costMedium: 890,
+					costHard: 960,
+					costImpoppable: 1070,
 				});
 				setImage("030");
 				break;
@@ -452,11 +446,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 7555,
+					costMedium: 8890,
+					costHard: 9600,
+					costImpoppable: 10670,
 				});
 				setImage("040");
 				break;
@@ -487,11 +480,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 45805,
+					costMedium: 53890,
+					costHard: 58200,
+					costImpoppable: 64670,
 				});
 				setImage("050");
 				break;
@@ -522,11 +514,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 245,
+					costMedium: 290,
+					costHard: 310,
+					costImpoppable: 350,
 				});
 				setImage("001");
 				break;
@@ -557,11 +548,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 415,
+					costMedium: 490,
+					costHard: 525,
+					costImpoppable: 590,
 				});
 				setImage("002");
 				break;
@@ -592,11 +582,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 945,
+					costMedium: 1115,
+					costHard: 1200,
+					costImpoppable: 1340,
 				});
 				setImage("003");
 				break;
@@ -627,11 +616,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "Crits every 8-12 shots, deals 50 damage",
+					costEasy: 2645,
+					costMedium: 3115,
+					costHard: 3360,
+					costImpoppable: 3740,
 				});
 				setImage("004");
 				break;
@@ -662,11 +650,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: true,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
-					notes: "",
+					costEasy: 23895,
+					costMedium: 28115,
+					costHard: 30360,
+					costImpoppable: 33740,
 				});
 				setImage("005");
 				break;
@@ -2988,7 +2975,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p1-1")}
 								id="p1-1"
-								className={p1 === 1 ? "active" : ""}
+								className={p1 === 1 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Sharp Shots<br>Can pop 1 extra Bloon per shot.<br>Cost: $120 / $140 / $150 / $170"
 								data-for="sharp-shots"
@@ -3008,7 +2995,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p1-2")}
 								id="p1-2"
-								className={p1 === 2 ? "active" : ""}
+								className={p1 === 2 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Razor Sharp Shots<br>Can pop 2 more bloons per shot.<br>Cost: $185 / $220 / $235 / $265"
 								data-for="razor-sharp-shots"
@@ -3028,7 +3015,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p1-3")}
 								id="p1-3"
-								className={p1 === 3 ? "active" : ""}
+								className={p1 === 3 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Spike-O-Pult<br>Converts the Dart Monkey into a Spike-o-pult that hurls a large spiked ball instead of darts.<br>Good range, but slower attack speed. Each ball can pop lots of Bloons and rebounds off obstacles.<br>Cost: $255 / $300 / $325 / $360"
 								data-for="spike-o-pult"
@@ -3048,7 +3035,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p1-4")}
 								id="p1-4"
-								className={p1 === 4 ? "active" : ""}
+								className={p1 === 4 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Juggernaut<br>Hurls a giant spiked ball that pops lead and excels at crushing Ceramic Bloons.<br>Cost: $1.530 / $1.800 / $1.945 / $2.160"
 								data-for="juggernaut"
@@ -3068,7 +3055,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p1-5")}
 								id="p1-5"
-								className={p1 === 5 ? "active" : ""}
+								className={p1 === 5 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Ultra-Juggernaut<br>Gigantic spiked ball splits twice into 6 Juggernaut balls for even more destructive power.<br>Cost: $12.750 / $15.000 / $16.200 / $18.000"
 								data-for="ultra-juggernaut"
@@ -3107,7 +3094,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p2-1")}
 								id="p2-1"
-								className={p2 === 1 ? "active" : ""}
+								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Quick Shots<br>Shoots 15% faster.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="quick-shots"
@@ -3127,7 +3114,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p2-2")}
 								id="p2-2"
-								className={p2 === 2 ? "active" : ""}
+								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Quick Shots<br>Shoots 33% faster!<br>Cost: $160 / $190 / $205 / $230"
 								data-for="very-quick-shots"
@@ -3147,7 +3134,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p2-3")}
 								id="p2-3"
-								className={p2 === 3 ? "active" : ""}
+								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Triple Shot<br>Throws 3 darts at a time instead of 1.<br>Cost: $340 / $400 / $430 / $480"
 								data-for="triple-shot"
@@ -3167,7 +3154,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p2-4")}
 								id="p2-4"
-								className={p2 === 4 ? "active" : ""}
+								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Super Monkey Fan Club<br>Super Monkey Fan Club Ability: Converts up to 10 nearby Dart Monkeys including himself into Super Monkeys for 15 seconds.<br>Regular attack speed also increased.<br>Cost: $6.800 / $8.000 / $8.640 / $9.600"
 								data-for="super-monkey-fan-club"
@@ -3187,7 +3174,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p2-5")}
 								id="p2-5"
-								className={p2 === 5 ? "active" : ""}
+								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Plasma Monkey Fan Club<br>Elite membership of this club grants the Dart Monkeys even more power.<br>Cost: $38.250 / $45.000 / $48.600 / $54.000"
 								data-for="plasma-monkey-fan-club"
@@ -3207,7 +3194,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("par")}
 								id="par"
-								className={p1 === -1 ? "active" : ""}
+								className={p1 === -1 ? "tower-active" : ""}
 								data-tip="Apex Plasma Master<br>Fill the area with Bloon shredding plasma juggernaut balls, leaving nothing behind...<br>Cost: $297.500 / $350.000 / $378.600 / $420.000"
 								data-for="apex-plasma-master"
 							>
@@ -3227,7 +3214,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p3-1")}
 								id="p3-1"
-								className={p3 === 1 ? "active" : ""}
+								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
 								data-tip="Long Range Darts<br>Makes the Dart Monkey shoot further than normal.<br>Cost: $75 / $90 / $95 / $110"
 								data-for="long-range-darts"
@@ -3247,7 +3234,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p3-2")}
 								id="p3-2"
-								className={p3 === 2 ? "active" : ""}
+								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
 								data-tip="Enhanced Eyesight<br>Shoots even further and can detect Camo bloons.<br>Cost: $170 / $200 / $215 / $240"
 								data-for="enhanced-eyesight"
@@ -3267,7 +3254,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p3-3")}
 								id="p3-3"
-								className={p3 === 3 ? "active" : ""}
+								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
 								data-tip="Crossbow<br>Uses a long range Crossbow that can pop 3 layers of Bloon for every hit.<br>Cost: $530 / $625 / $675 / $750"
 								data-for="crossbow"
@@ -3287,7 +3274,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p3-4")}
 								id="p3-4"
-								className={p3 === 4 ? "active" : ""}
+								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
 								data-tip="Sharpshooter<br>Sharp Shooter attacks faster and does powerful Crit shots every few shots that do a lot more damage.<br>Cost: $1.700 / $2.000 / $2.160 / $2.400"
 								data-for="sharpshooter"
@@ -3307,7 +3294,7 @@ export default function DartMonkey() {
 							<button
 								onClick={() => handleChange("p3-5")}
 								id="p3-5"
-								className={p3 === 5 ? "active" : ""}
+								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
 								data-tip="Crossbow Master<br>Crossbow Master shoots really fast and devastates most Bloon types with ease.<br>Cost: $21.250 / $25.000 / $27.000 / $30.000"
 								data-for="crossbow-master"
