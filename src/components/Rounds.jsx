@@ -90,8 +90,8 @@ export default function Rounds() {
 							<td>1</td>
 							<td>20</td>
 							<td>20</td>
-							<td>121</td>
-							<td>121</td>
+							<td>771</td>
+							<td>771</td>
 							<td>
 								20x
 								<img src={Red} alt="Red" />
@@ -102,7 +102,7 @@ export default function Rounds() {
 							<td>35</td>
 							<td>35</td>
 							<td>137</td>
-							<td>258</td>
+							<td>908</td>
 							<td>
 								35x
 								<img src={Red} alt="Red" />
@@ -113,7 +113,7 @@ export default function Rounds() {
 							<td>35</td>
 							<td>35</td>
 							<td>138</td>
-							<td>396</td>
+							<td>1046</td>
 							<td>
 								25x
 								<img src={Red} alt="Red" />
@@ -126,7 +126,7 @@ export default function Rounds() {
 							<td>71</td>
 							<td>71</td>
 							<td>175</td>
-							<td>571</td>
+							<td>1221</td>
 							<td>
 								35x
 								<img src={Red} alt="Red" />
@@ -139,7 +139,7 @@ export default function Rounds() {
 							<td>59</td>
 							<td>59</td>
 							<td>164</td>
-							<td>735</td>
+							<td>1385</td>
 							<td>
 								5x
 								<img src={Red} alt="Red" />
@@ -152,7 +152,7 @@ export default function Rounds() {
 							<td>57</td>
 							<td>57</td>
 							<td>163</td>
-							<td>898</td>
+							<td>1548</td>
 							<td>
 								15x
 								<img src={Red} alt="Red" />
@@ -167,7 +167,7 @@ export default function Rounds() {
 							<td>75</td>
 							<td>75</td>
 							<td>182</td>
-							<td>1080</td>
+							<td>1730</td>
 							<td>
 								20x
 								<img src={Red} alt="Red" />
@@ -182,7 +182,7 @@ export default function Rounds() {
 							<td>92</td>
 							<td>92</td>
 							<td>200</td>
-							<td>1280</td>
+							<td>1930</td>
 							<td>
 								10x
 								<img src={Red} alt="Red" />
@@ -197,7 +197,7 @@ export default function Rounds() {
 							<td>90</td>
 							<td>90</td>
 							<td>199</td>
-							<td>1479</td>
+							<td>2129</td>
 							<td>
 								30x
 								<img src={Green} alt="Green" />
@@ -208,7 +208,7 @@ export default function Rounds() {
 							<td>204</td>
 							<td>204</td>
 							<td>314</td>
-							<td>1793</td>
+							<td>2443</td>
 							<td>
 								102x
 								<img src={Blue} alt="Blue" />
@@ -219,7 +219,7 @@ export default function Rounds() {
 							<td>78</td>
 							<td>78</td>
 							<td>189</td>
-							<td>1982</td>
+							<td>2632</td>
 							<td>
 								6x
 								<img src={Red} alt="Red" />
@@ -236,7 +236,7 @@ export default function Rounds() {
 							<td>80</td>
 							<td>80</td>
 							<td>192</td>
-							<td>2174</td>
+							<td>2824</td>
 							<td>
 								15x
 								<img src={Blue} alt="Blue" />
@@ -251,7 +251,7 @@ export default function Rounds() {
 							<td>169</td>
 							<td>169</td>
 							<td>282</td>
-							<td>2456</td>
+							<td>3106</td>
 							<td>
 								50x
 								<img src={Blue} alt="Blue" />
@@ -264,7 +264,7 @@ export default function Rounds() {
 							<td>145</td>
 							<td>145</td>
 							<td>259</td>
-							<td>2715</td>
+							<td>3365</td>
 							<td>
 								49x
 								<img src={Red} alt="Red" />
@@ -281,7 +281,7 @@ export default function Rounds() {
 							<td>151</td>
 							<td>151</td>
 							<td>266</td>
-							<td>2981</td>
+							<td>3631</td>
 							<td>
 								20x
 								<img src={Red} alt="Red" />
@@ -300,7 +300,7 @@ export default function Rounds() {
 							<td>152</td>
 							<td>152</td>
 							<td>268</td>
-							<td>3249</td>
+							<td>3899</td>
 							<td>
 								40x
 								<img src={Green} alt="Green" />
@@ -313,7 +313,7 @@ export default function Rounds() {
 							<td>48</td>
 							<td>48</td>
 							<td>165</td>
-							<td>3414</td>
+							<td>4064</td>
 							<td>
 								12x
 								<img src={YellowRegrow} alt="Yellow Regrow" />
@@ -324,7 +324,7 @@ export default function Rounds() {
 							<td>240</td>
 							<td>240</td>
 							<td>358</td>
-							<td>3772</td>
+							<td>4422</td>
 							<td>
 								80x
 								<img src={Green} alt="Green" />
@@ -335,7 +335,7 @@ export default function Rounds() {
 							<td>141</td>
 							<td>141</td>
 							<td>260</td>
-							<td>4032</td>
+							<td>4682</td>
 							<td>
 								10x
 								<img src={Green} alt="Green" />
@@ -352,7 +352,7 @@ export default function Rounds() {
 							<td>66</td>
 							<td>66</td>
 							<td>186</td>
-							<td>4218</td>
+							<td>4868</td>
 							<td>
 								6x
 								<img src={Black} alt="Black" />
@@ -363,7 +363,7 @@ export default function Rounds() {
 							<td>230</td>
 							<td>230</td>
 							<td>351</td>
-							<td>4569</td>
+							<td>5219</td>
 							<td>
 								40x
 								<img src={Yellow} alt="Yellow" />
@@ -387,7 +387,7 @@ export default function Rounds() {
 							<td>154</td>
 							<td>154</td>
 							<td>277</td>
-							<td>5144</td>
+							<td>5517</td>
 							<td>
 								7x
 								<img src={Black} alt="Black" />
@@ -400,7 +400,7 @@ export default function Rounds() {
 							<td>43</td>
 							<td>43</td>
 							<td>167</td>
-							<td>5311</td>
+							<td>5794</td>
 							<td>
 								20x
 								<img src={Blue} alt="Blue" />
@@ -413,7 +413,7 @@ export default function Rounds() {
 							<td>210</td>
 							<td>210</td>
 							<td>335</td>
-							<td>5646</td>
+							<td>6296</td>
 							<td>
 								25x
 								<img src={YellowRegrow} alt="Yellow Regrow" />
@@ -426,7 +426,7 @@ export default function Rounds() {
 							<td>207</td>
 							<td>207</td>
 							<td>333</td>
-							<td>5979</td>
+							<td>6629</td>
 							<td>
 								23x
 								<img src={Pink} alt="Pink" />
@@ -439,7 +439,7 @@ export default function Rounds() {
 							<td>535</td>
 							<td>535</td>
 							<td>662</td>
-							<td>6641</td>
+							<td>7291</td>
 							<td>
 								100x
 								<img src={Red} alt="Red" />
@@ -456,7 +456,7 @@ export default function Rounds() {
 							<td>138</td>
 							<td>138</td>
 							<td>266</td>
-							<td>6907</td>
+							<td>7557</td>
 							<td>
 								6x
 								<img src={Lead} alt="Lead" />
@@ -467,7 +467,7 @@ export default function Rounds() {
 							<td>260</td>
 							<td>260</td>
 							<td>389</td>
-							<td>7296</td>
+							<td>7946</td>
 							<td>
 								50x
 								<img src={Yellow} alt="Yellow" />
@@ -480,7 +480,7 @@ export default function Rounds() {
 							<td>207</td>
 							<td>207</td>
 							<td>337</td>
-							<td>7633</td>
+							<td>8283</td>
 							<td>
 								9x
 								<img src={Lead} alt="Lead" />
@@ -491,7 +491,7 @@ export default function Rounds() {
 							<td>406</td>
 							<td>406</td>
 							<td>537</td>
-							<td>8170</td>
+							<td>8820</td>
 							<td>
 								8x
 								<img src={Black} alt="Black" />
@@ -508,7 +508,7 @@ export default function Rounds() {
 							<td>545</td>
 							<td>545</td>
 							<td>627</td>
-							<td>8797</td>
+							<td>9447</td>
 							<td>
 								15x
 								<img src={Black} alt="Black" />
@@ -523,7 +523,7 @@ export default function Rounds() {
 							<td>72</td>
 							<td>72</td>
 							<td>205</td>
-							<td>9002</td>
+							<td>9652</td>
 							<td>
 								20x
 								<img src={RedCamo} alt="Red Camo" />
@@ -536,7 +536,7 @@ export default function Rounds() {
 							<td>778</td>
 							<td>778</td>
 							<td>912</td>
-							<td>9914</td>
+							<td>10564</td>
 							<td>
 								160x
 								<img src={Yellow} alt="Yellow" />
@@ -549,7 +549,7 @@ export default function Rounds() {
 							<td>1015</td>
 							<td>1015</td>
 							<td>1150</td>
-							<td>11064</td>
+							<td>11714</td>
 							<td>
 								35x
 								<img src={Pink} alt="Pink" />
@@ -566,7 +566,7 @@ export default function Rounds() {
 							<td>760</td>
 							<td>760</td>
 							<td>896</td>
-							<td>11960</td>
+							<td>12610</td>
 							<td>
 								140x
 								<img src={Pink} alt="Pink" />
@@ -579,7 +579,7 @@ export default function Rounds() {
 							<td>1202</td>
 							<td>1202</td>
 							<td>1339</td>
-							<td>13299</td>
+							<td>13949</td>
 							<td>
 								25x
 								<img src={Black} alt="Black" />
@@ -598,7 +598,7 @@ export default function Rounds() {
 							<td>1157</td>
 							<td>1139</td>
 							<td>1277</td>
-							<td>14576</td>
+							<td>15226</td>
 							<td>
 								42x
 								<img src={Pink} alt="Pink" />
@@ -617,7 +617,7 @@ export default function Rounds() {
 							<td>1620</td>
 							<td>1620</td>
 							<td>1759</td>
-							<td>16335</td>
+							<td>16985</td>
 							<td>
 								10x
 								<img src={Black} alt="Black" />
@@ -636,7 +636,7 @@ export default function Rounds() {
 							<td>616</td>
 							<td>381</td>
 							<td>521</td>
-							<td>16856</td>
+							<td>17506</td>
 							<td>
 								1x&nbsp;
 								<img src={MOAB} alt="MOAB" />
@@ -647,7 +647,7 @@ export default function Rounds() {
 							<td>2040</td>
 							<td>2040</td>
 							<td>2181</td>
-							<td>19037</td>
+							<td>19687</td>
 							<td>
 								60x
 								<img src={Black} alt="Black" />
@@ -660,7 +660,7 @@ export default function Rounds() {
 							<td>517</td>
 							<td>517</td>
 							<td>659</td>
-							<td>19696</td>
+							<td>20346</td>
 							<td>
 								6x
 								<img src={RainbowRegrow} alt="Rainbow Regrow" />
@@ -673,7 +673,7 @@ export default function Rounds() {
 							<td>1198</td>
 							<td>1135</td>
 							<td>1278</td>
-							<td>20974</td>
+							<td>21624</td>
 							<td>
 								10x
 								<img src={Rainbow} alt="Rainbow" />
@@ -686,7 +686,7 @@ export default function Rounds() {
 							<td>1150</td>
 							<td>1150</td>
 							<td>1294</td>
-							<td>22268</td>
+							<td>22918</td>
 							<td>
 								50x
 								<img src={Zebra} alt="Zebra" />
@@ -697,7 +697,7 @@ export default function Rounds() {
 							<td>2289</td>
 							<td>2289</td>
 							<td>2422</td>
-							<td>24690</td>
+							<td>25340</td>
 							<td>
 								180x
 								<img src={Pink} alt="Pink" />
@@ -714,7 +714,7 @@ export default function Rounds() {
 							<td>684</td>
 							<td>570</td>
 							<td>716</td>
-							<td>25406</td>
+							<td>26056</td>
 							<td>
 								6x
 								<img src={CeramicFortified} alt="Ceramic Fortified" />
@@ -725,7 +725,7 @@ export default function Rounds() {
 							<td>1598</td>
 							<td>1490</td>
 							<td>1637</td>
-							<td>27043</td>
+							<td>27693</td>
 							<td>
 								70x
 								<img src={PinkCamo} alt="Pink Camo" />
@@ -738,7 +738,7 @@ export default function Rounds() {
 							<td>2752</td>
 							<td>2695</td>
 							<td>2843</td>
-							<td>29886</td>
+							<td>30536</td>
 							<td>
 								40x
 								<img src={PinkRegrow} alt="Pink Regrow" />
@@ -755,7 +755,7 @@ export default function Rounds() {
 							<td>4771</td>
 							<td>4609</td>
 							<td>4758</td>
-							<td>34644</td>
+							<td>35294</td>
 							<td>
 								343x
 								<img src={Green} alt="Green" />
@@ -774,7 +774,7 @@ export default function Rounds() {
 							<td>3540</td>
 							<td>2866</td>
 							<td>3016</td>
-							<td>37660</td>
+							<td>38310</td>
 							<td>
 								20x
 								<img src={Red} alt="Red" />
@@ -789,9 +789,9 @@ export default function Rounds() {
 						<tr>
 							<td>51</td>
 							<td>2030</td>
-							<td>947</td>
-							<td>1098</td>
-							<td>38758</td>
+							<td>948</td>
+							<td>1023</td>
+							<td>39333</td>
 							<td>
 								10x
 								<img src={RainbowRegrow} alt="Rainbow Regrow" />
@@ -803,8 +803,8 @@ export default function Rounds() {
 							<td>52</td>
 							<td>3447</td>
 							<td>1444</td>
-							<td>1596</td>
-							<td>40354</td>
+							<td>1520</td>
+							<td>40853</td>
 							<td>
 								25x
 								<img src={Rainbow} alt="Rainbow" />
@@ -817,9 +817,9 @@ export default function Rounds() {
 						<tr>
 							<td>53</td>
 							<td>2248</td>
-							<td>771</td>
-							<td>924</td>
-							<td>41278</td>
+							<td>772</td>
+							<td>848</td>
+							<td>41701</td>
 							<td>
 								80x
 								<img src={PinkCamo} alt="Pink Camo" />
@@ -831,8 +831,8 @@ export default function Rounds() {
 							<td>54</td>
 							<td>4872</td>
 							<td>2044</td>
-							<td>2198</td>
-							<td>43476</td>
+							<td>2121</td>
+							<td>43821</td>
 							<td>
 								35x
 								<img src={Ceramic} alt="Ceramic" />
@@ -844,8 +844,8 @@ export default function Rounds() {
 							<td>55</td>
 							<td>5296</td>
 							<td>2328</td>
-							<td>2483</td>
-							<td>45959</td>
+							<td>2406</td>
+							<td>46227</td>
 							<td>
 								45x
 								<img src={Ceramic} alt="Ceramic" />
@@ -857,8 +857,8 @@ export default function Rounds() {
 							<td>56</td>
 							<td>2496</td>
 							<td>1130</td>
-							<td>1286</td>
-							<td>47245</td>
+							<td>1209</td>
+							<td>47435</td>
 							<td>
 								40x
 								<img src={RainbowCamo} alt="Rainbow Camo" />
@@ -870,8 +870,8 @@ export default function Rounds() {
 							<td>57</td>
 							<td>4344</td>
 							<td>1702</td>
-							<td>1859</td>
-							<td>49104</td>
+							<td>1781</td>
+							<td>49216</td>
 							<td>
 								40x
 								<img src={Rainbow} alt="Rainbow" />
@@ -883,8 +883,8 @@ export default function Rounds() {
 							<td>58</td>
 							<td>5780</td>
 							<td>2140</td>
-							<td>2298</td>
-							<td>51402</td>
+							<td>2219</td>
+							<td>51435</td>
 							<td>
 								15x
 								<img src={Ceramic} alt="Ceramic" />
@@ -898,8 +898,8 @@ export default function Rounds() {
 							<td>59</td>
 							<td>4270</td>
 							<td>2000</td>
-							<td>2159</td>
-							<td>53561</td>
+							<td>2080</td>
+							<td>53514</td>
 							<td>
 								50x
 								<img src={LeadCamo} alt="Lead Camo" />
@@ -913,8 +913,8 @@ export default function Rounds() {
 							<td>60</td>
 							<td>3164</td>
 							<td>763</td>
-							<td>923</td>
-							<td>54484</td>
+							<td>943</td>
+							<td>54357</td>
 							<td>
 								1x&nbsp;
 								<img src={BFB} alt="BFB" />
@@ -924,8 +924,8 @@ export default function Rounds() {
 							<td>61</td>
 							<td>6530</td>
 							<td>1071</td>
-							<td>1232</td>
-							<td>55716</td>
+							<td>1103</td>
+							<td>55460</td>
 							<td>
 								150x
 								<img src={ZebraRegrow} alt="Zebra Regrow" />
@@ -937,8 +937,8 @@ export default function Rounds() {
 							<td>62</td>
 							<td>8247</td>
 							<td>1225</td>
-							<td>1387</td>
-							<td>57102</td>
+							<td>1257</td>
+							<td>56717</td>
 							<td>
 								250x
 								<img src={Purple} alt="Purple" />
@@ -954,8 +954,8 @@ export default function Rounds() {
 							<td>63</td>
 							<td>14413</td>
 							<td>2663</td>
-							<td>2826</td>
-							<td>59928</td>
+							<td>2696</td>
+							<td>59412</td>
 							<td>
 								75x
 								<img src={Lead} alt="Lead" />
@@ -967,8 +967,8 @@ export default function Rounds() {
 							<td>64</td>
 							<td>6264</td>
 							<td>686</td>
-							<td>850</td>
-							<td>60778</td>
+							<td>719</td>
+							<td>60131</td>
 							<td>
 								6x&nbsp;
 								<img src={MOAB} alt="MOAB" />
@@ -980,8 +980,8 @@ export default function Rounds() {
 							<td>65</td>
 							<td>18966</td>
 							<td>2906</td>
-							<td>3071</td>
-							<td>63849</td>
+							<td>2940</td>
+							<td>63070</td>
 							<td>
 								100x
 								<img src={Zebra} alt="Zebra" />
@@ -999,8 +999,8 @@ export default function Rounds() {
 							<td>66</td>
 							<td>7496</td>
 							<td>838</td>
-							<td>1004</td>
-							<td>64854</td>
+							<td>871</td>
+							<td>63952</td>
 							<td>
 								8x&nbsp;
 								<img src={MOAB} alt="MOAB" />
@@ -1012,8 +1012,8 @@ export default function Rounds() {
 							<td>67</td>
 							<td>6410</td>
 							<td>856</td>
-							<td>1024</td>
-							<td>65877</td>
+							<td>890</td>
+							<td>64832</td>
 							<td>
 								13x
 								<img src={CeramicRegrowFortifiedCamo} alt="Ceramic Regrow Fortified Camo" />
@@ -1025,8 +1025,8 @@ export default function Rounds() {
 							<td>68</td>
 							<td>5628</td>
 							<td>609</td>
-							<td>778</td>
-							<td>66655</td>
+							<td>643</td>
+							<td>65475</td>
 							<td>
 								4x&nbsp;
 								<img src={MOAB} alt="MOAB" />
@@ -1038,8 +1038,8 @@ export default function Rounds() {
 							<td>69</td>
 							<td>6680</td>
 							<td>1222</td>
-							<td>1391</td>
-							<td>68046</td>
+							<td>1256</td>
+							<td>66731</td>
 							<td>
 								40x
 								<img src={BlackRegrow} alt="Black Regrow" />
@@ -1053,8 +1053,8 @@ export default function Rounds() {
 							<td>70</td>
 							<td>13184</td>
 							<td>2449</td>
-							<td>2619</td>
-							<td>70665</td>
+							<td>2483</td>
+							<td>69214</td>
 							<td>
 								120x
 								<img src={WhiteRegrowCamo} alt="White Regrow Camo" />
@@ -1068,8 +1068,8 @@ export default function Rounds() {
 							<td>71</td>
 							<td>9280</td>
 							<td>1332</td>
-							<td>1503</td>
-							<td>72168</td>
+							<td>1366</td>
+							<td>70580</td>
 							<td>
 								30x
 								<img src={Ceramic} alt="Ceramic" />
@@ -1081,8 +1081,8 @@ export default function Rounds() {
 							<td>72</td>
 							<td>10280</td>
 							<td>1332</td>
-							<td>1504</td>
-							<td>73672</td>
+							<td>1366</td>
+							<td>71946</td>
 							<td>
 								38x
 								<img src={CeramicRegrow} alt="Ceramic Regrow" />
@@ -1094,8 +1094,8 @@ export default function Rounds() {
 							<td>73</td>
 							<td>11256</td>
 							<td>1220</td>
-							<td>1392</td>
-							<td>75064</td>
+							<td>1254</td>
+							<td>73201</td>
 							<td>
 								8x&nbsp;
 								<img src={MOAB} alt="MOAB" />
@@ -1107,8 +1107,8 @@ export default function Rounds() {
 							<td>74</td>
 							<td>18054</td>
 							<td>2870</td>
-							<td>3044</td>
-							<td>78108</td>
+							<td>2905</td>
+							<td>76105</td>
 							<td>
 								50x
 								<img src={Ceramic} alt="Ceramic" />
@@ -1124,8 +1124,8 @@ export default function Rounds() {
 							<td>75</td>
 							<td>25402</td>
 							<td>2493</td>
-							<td>2668</td>
-							<td>80776</td>
+							<td>2527</td>
+							<td>78633</td>
 							<td>
 								14x
 								<img src={Lead} alt="Lead" />
@@ -1141,8 +1141,8 @@ export default function Rounds() {
 							<td>76</td>
 							<td>6240</td>
 							<td>1140</td>
-							<td>1316</td>
-							<td>82092</td>
+							<td>1175</td>
+							<td>79808</td>
 							<td>
 								60x
 								<img src={CeramicRegrow} alt="Ceramic Regrow" />
@@ -1152,8 +1152,8 @@ export default function Rounds() {
 							<td>77</td>
 							<td>22596</td>
 							<td>2363</td>
-							<td>2540</td>
-							<td>84632</td>
+							<td>2399</td>
+							<td>82207</td>
 							<td>
 								11x&nbsp;
 								<img src={MOAB} alt="MOAB" />
@@ -1165,7 +1165,7 @@ export default function Rounds() {
 							<td>78</td>
 							<td>26382</td>
 							<td>4684</td>
-							<td>4862</td>
+							<td>4720</td>
 							<td>89494</td>
 							<td>
 								80x
@@ -1184,8 +1184,8 @@ export default function Rounds() {
 							<td>79</td>
 							<td>45804</td>
 							<td>6530</td>
-							<td>6709</td>
-							<td>96203</td>
+							<td>6566</td>
+							<td>93492</td>
 							<td>
 								500x
 								<img src={RainbowRegrow} alt="Rainbow Regrow" />
@@ -1199,8 +1199,8 @@ export default function Rounds() {
 							<td>80</td>
 							<td>16656</td>
 							<td>1220</td>
-							<td>1400</td>
-							<td>97603</td>
+							<td>1256</td>
+							<td>94748</td>
 							<td>
 								1x&nbsp;
 								<img src={ZOMG} alt="ZOMG" />
@@ -1213,14 +1213,8 @@ export default function Rounds() {
 							<td>5221</td>
 							<td>99969</td>
 							<td>
-								40x
-								<img src={Ceramic} alt="Ceramic" />
-								&ensp;40x
-								<img src={CeramicRegrow} alt="Cermic Regrow" />
-								&ensp;40x
-								<img src={CeramicFortified} alt="Ceramic Fortified" />
-								&ensp;30x&nbsp;
-								<img src={MOAB} alt="MOAB" />
+								17x
+								<img src={BFB} alt="BFB" />
 							</td>
 						</tr>
 						<tr>
@@ -1230,8 +1224,27 @@ export default function Rounds() {
 							<td>4611</td>
 							<td>104581</td>
 							<td>
-								1x&nbsp;
-								<img src={ZOMG} alt="ZOMG" />
+								10x&nbsp;
+								<img src={BFB} alt="BFB" />
+								&ensp;5x&nbsp;
+								<img src={BFBFortified} alt="BFB Fortified" />
+							</td>
+						</tr>
+						<tr>
+							<td>82</td>
+							<td>25080</td>
+							<td>4566</td>
+							<td>4603</td>
+							<td>109183</td>
+							<td>
+								40x
+								<img src={Ceramic} alt="Ceramic" />
+								&ensp;40x
+								<img src={CeramicRegrow} alt="Cermic Regrow" />
+								&ensp;40x
+								<img src={CeramicFortified} alt="Ceramic Fortified" />
+								&ensp;30x&nbsp;
+								<img src={MOAB} alt="MOAB" />
 							</td>
 						</tr>
 					</tbody>
