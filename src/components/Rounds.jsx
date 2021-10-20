@@ -89,9 +89,9 @@ export default function Rounds() {
 						<tr>
 							<td>1</td>
 							<td>20</td>
-							<td>20</td>
-							<td>771</td>
-							<td>771</td>
+							<td>$20</td>
+							<td>$771</td>
+							<td>$771</td>
 							<td>
 								20x
 								<img src={Red} alt="Red" />
@@ -100,9 +100,9 @@ export default function Rounds() {
 						<tr>
 							<td>2</td>
 							<td>35</td>
-							<td>35</td>
-							<td>137</td>
-							<td>908</td>
+							<td>$35</td>
+							<td>$137</td>
+							<td>$908</td>
 							<td>
 								35x
 								<img src={Red} alt="Red" />
@@ -111,9 +111,9 @@ export default function Rounds() {
 						<tr>
 							<td>3</td>
 							<td>35</td>
-							<td>35</td>
-							<td>138</td>
-							<td>1046</td>
+							<td>$35</td>
+							<td>$138</td>
+							<td>$1046</td>
 							<td>
 								25x
 								<img src={Red} alt="Red" />
@@ -124,9 +124,9 @@ export default function Rounds() {
 						<tr>
 							<td>4</td>
 							<td>71</td>
-							<td>71</td>
-							<td>175</td>
-							<td>1221</td>
+							<td>$71</td>
+							<td>$175</td>
+							<td>$1221</td>
 							<td>
 								35x
 								<img src={Red} alt="Red" />
@@ -137,9 +137,9 @@ export default function Rounds() {
 						<tr>
 							<td>5</td>
 							<td>59</td>
-							<td>59</td>
-							<td>164</td>
-							<td>1385</td>
+							<td>$59</td>
+							<td>$164</td>
+							<td>$1385</td>
 							<td>
 								5x
 								<img src={Red} alt="Red" />
@@ -150,9 +150,9 @@ export default function Rounds() {
 						<tr>
 							<td>6</td>
 							<td>57</td>
-							<td>57</td>
-							<td>163</td>
-							<td>1548</td>
+							<td>$57</td>
+							<td>$163</td>
+							<td>$1548</td>
 							<td>
 								15x
 								<img src={Red} alt="Red" />
@@ -165,9 +165,9 @@ export default function Rounds() {
 						<tr>
 							<td>7</td>
 							<td>75</td>
-							<td>75</td>
-							<td>182</td>
-							<td>1730</td>
+							<td>$75</td>
+							<td>$182</td>
+							<td>$1730</td>
 							<td>
 								20x
 								<img src={Red} alt="Red" />
@@ -180,9 +180,9 @@ export default function Rounds() {
 						<tr>
 							<td>8</td>
 							<td>92</td>
-							<td>92</td>
-							<td>200</td>
-							<td>1930</td>
+							<td>$92</td>
+							<td>$200</td>
+							<td>$1930</td>
 							<td>
 								10x
 								<img src={Red} alt="Red" />
@@ -195,9 +195,9 @@ export default function Rounds() {
 						<tr>
 							<td>9</td>
 							<td>90</td>
-							<td>90</td>
-							<td>199</td>
-							<td>2129</td>
+							<td>$90</td>
+							<td>$199</td>
+							<td>$2129</td>
 							<td>
 								30x
 								<img src={Green} alt="Green" />
@@ -206,9 +206,9 @@ export default function Rounds() {
 						<tr>
 							<td>10</td>
 							<td>204</td>
-							<td>204</td>
-							<td>314</td>
-							<td>2443</td>
+							<td>$204</td>
+							<td>$314</td>
+							<td>$2443</td>
 							<td>
 								102x
 								<img src={Blue} alt="Blue" />
@@ -217,9 +217,9 @@ export default function Rounds() {
 						<tr>
 							<td>11</td>
 							<td>78</td>
-							<td>78</td>
-							<td>189</td>
-							<td>2632</td>
+							<td>$78</td>
+							<td>$189</td>
+							<td>$2632</td>
 							<td>
 								6x
 								<img src={Red} alt="Red" />
@@ -234,9 +234,9 @@ export default function Rounds() {
 						<tr>
 							<td>12</td>
 							<td>80</td>
-							<td>80</td>
-							<td>192</td>
-							<td>2824</td>
+							<td>$80</td>
+							<td>$192</td>
+							<td>$2824</td>
 							<td>
 								15x
 								<img src={Blue} alt="Blue" />
@@ -249,9 +249,9 @@ export default function Rounds() {
 						<tr>
 							<td>13</td>
 							<td>169</td>
-							<td>169</td>
-							<td>282</td>
-							<td>3106</td>
+							<td>$169</td>
+							<td>$282</td>
+							<td>$3106</td>
 							<td>
 								50x
 								<img src={Blue} alt="Blue" />
@@ -262,9 +262,9 @@ export default function Rounds() {
 						<tr>
 							<td>14</td>
 							<td>145</td>
-							<td>145</td>
-							<td>259</td>
-							<td>3365</td>
+							<td>$145</td>
+							<td>$259</td>
+							<td>$3365</td>
 							<td>
 								49x
 								<img src={Red} alt="Red" />
@@ -279,9 +279,9 @@ export default function Rounds() {
 						<tr>
 							<td>15</td>
 							<td>151</td>
-							<td>151</td>
-							<td>266</td>
-							<td>3631</td>
+							<td>$151</td>
+							<td>$266</td>
+							<td>$3631</td>
 							<td>
 								20x
 								<img src={Red} alt="Red" />
@@ -298,9 +298,9 @@ export default function Rounds() {
 						<tr>
 							<td>16</td>
 							<td>152</td>
-							<td>152</td>
-							<td>268</td>
-							<td>3899</td>
+							<td>$152</td>
+							<td>$268</td>
+							<td>$3899</td>
 							<td>
 								40x
 								<img src={Green} alt="Green" />
@@ -311,9 +311,9 @@ export default function Rounds() {
 						<tr>
 							<td>17</td>
 							<td>48</td>
-							<td>48</td>
-							<td>165</td>
-							<td>4064</td>
+							<td>$48</td>
+							<td>$165</td>
+							<td>$4064</td>
 							<td>
 								12x
 								<img src={YellowRegrow} alt="Yellow Regrow" />
@@ -322,9 +322,9 @@ export default function Rounds() {
 						<tr>
 							<td>18</td>
 							<td>240</td>
-							<td>240</td>
-							<td>358</td>
-							<td>4422</td>
+							<td>$240</td>
+							<td>$358</td>
+							<td>$4422</td>
 							<td>
 								80x
 								<img src={Green} alt="Green" />
@@ -333,9 +333,9 @@ export default function Rounds() {
 						<tr>
 							<td>19</td>
 							<td>141</td>
-							<td>141</td>
-							<td>260</td>
-							<td>4682</td>
+							<td>$141</td>
+							<td>$260</td>
+							<td>$4682</td>
 							<td>
 								10x
 								<img src={Green} alt="Green" />
@@ -350,9 +350,9 @@ export default function Rounds() {
 						<tr>
 							<td>20</td>
 							<td>66</td>
-							<td>66</td>
-							<td>186</td>
-							<td>4868</td>
+							<td>$66</td>
+							<td>$186</td>
+							<td>$4868</td>
 							<td>
 								6x
 								<img src={Black} alt="Black" />
