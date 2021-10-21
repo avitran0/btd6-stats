@@ -42,6 +42,9 @@ import BFBFortified from "../bloons/BFBFortified.png";
 import ZOMG from "../bloons/ZOMG.png";
 import LeadRegrowFortifiedCamo from "../bloons/LeadRegrowFortifiedCamo.png";
 import DDT from "../bloons/DDT.png";
+import ZOMGFortified from "../bloons/ZOMGFortified.png";
+import DDTFortified from "../bloons/DDTFortified.png";
+import BAD from "../bloons/BAD.png";
 
 export default function Rounds() {
 	return (
@@ -1334,6 +1337,138 @@ export default function Rounds() {
 								<img src={LeadRegrowFortifiedCamo} alt="Lead Regrow Fortified Camo" />
 								&ensp;3x&nbsp;
 								<img src={DDT} alt="DDT" />
+							</td>
+						</tr>
+						<tr>
+							<td>91</td>
+							<td>71160</td>
+							<td>$4000</td>
+							<td>$4019</td>
+							<td>$131131</td>
+							<td>
+								100x&nbsp;
+								<img src={CeramicFortified} alt="Ceramic Fortified" />
+								&ensp;20x&nbsp;
+								<img src={BFB} alt="BFB" />
+							</td>
+						</tr>
+						<tr>
+							<td>92</td>
+							<td>117408</td>
+							<td>$4345</td>
+							<td>$4365</td>
+							<td>$135495</td>
+							<td>
+								50x&nbsp;
+								<img src={MOABFortified} alt="MOAB Fortified" />
+								&ensp;4x&nbsp;
+								<img src={ZOMG} alt="ZOMG" />
+							</td>
+						</tr>
+						<tr>
+							<td>93</td>
+							<td>62936</td>
+							<td>$1754</td>
+							<td>$1773</td>
+							<td>$137268</td>
+							<td>
+								10x&nbsp;
+								<img src={BFBFortified} alt="BFB Fortified" />
+								&ensp;6x&nbsp;
+								<img src={DDT} alt="DDT" />
+							</td>
+						</tr>
+						<tr>
+							<td>94</td>
+							<td>178112</td>
+							<td>$7473</td>
+							<td>$7493</td>
+							<td>$144761</td>
+							<td>
+								25x&nbsp;
+								<img src={BFB} alt="BFB" />
+								&ensp;6x&nbsp;
+								<img src={ZOMG} alt="ZOMG" />
+							</td>
+						</tr>
+						<tr>
+							<td>95</td>
+							<td>80860</td>
+							<td>$3523</td>
+							<td>$3543</td>
+							<td>$148303</td>
+							<td>
+								500x
+								<img src={PurpleRegrowCamo} alt="Purple Regrow Camo" />
+								&ensp;250x
+								<img src={LeadRegrowFortifiedCamo} alt="Lead Regrow Fortified Camo" />
+								&ensp;50x&nbsp;
+								<img src={MOABFortified} alt="MOAB Fortified" />
+								&ensp;30x&nbsp;
+								<img src={DDT} alt="DDT" />
+							</td>
+						</tr>
+						<tr>
+							<td>96</td>
+							<td>238952</td>
+							<td>$9760</td>
+							<td>$9779</td>
+							<td>$158083</td>
+							<td>
+								40x&nbsp;
+								<img src={MOABFortified} alt="MOAB Fortified" />
+								&ensp;30x&nbsp;
+								<img src={BFB} alt="BFB" />
+								&ensp;6x&nbsp;
+								<img src={ZOMG} alt="ZOMG" />
+							</td>
+						</tr>
+						<tr>
+							<td>97</td>
+							<td>69984</td>
+							<td>$1220</td>
+							<td>$1240</td>
+							<td>$159322</td>
+							<td>
+								20x&nbsp;
+								<img src={ZOMGFortified} alt="ZOMG Fortified" />
+							</td>
+						</tr>
+						<tr>
+							<td>98</td>
+							<td>327456</td>
+							<td>$9456</td>
+							<td>$9476</td>
+							<td>$168798</td>
+							<td>
+								30x&nbsp;
+								<img src={BFBFortified} alt="BFB Fortified" />
+								&ensp;8x&nbsp;
+								<img src={ZOMG} alt="ZOMG" />
+							</td>
+						</tr>
+						<tr>
+							<td>99</td>
+							<td>47424</td>
+							<td>$2629</td>
+							<td>$2649</td>
+							<td>$171447</td>
+							<td>
+								60x&nbsp;
+								<img src={MOAB} alt="MOAB" />
+								&ensp;8x&nbsp;
+								<img src={DDTFortified} alt="DDT Fortified" />
+							</td>
+						</tr>
+						<tr>
+							<td>100</td>
+							<td>67200</td>
+							<td>$1335</td>
+							<td>$1355</td>
+							<td>$172801</td>
+							<td>
+								1x&nbsp;
+								<img src={BAD} alt="BAD" />
 							</td>
 						</tr>
 					</tbody>
