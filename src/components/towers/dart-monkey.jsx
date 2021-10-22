@@ -67,26 +67,26 @@ export default function DartMonkey() {
 		"030": DartMonkey030,
 		"040": DartMonkey040,
 		"050": DartMonkey050,
-		"100": DartMonkey100,
-		"200": DartMonkey200,
-		"300": DartMonkey300,
-		"400": DartMonkey400,
-		"500": DartMonkey500,
-		"par": Paragon,
+		100: DartMonkey100,
+		200: DartMonkey200,
+		300: DartMonkey300,
+		400: DartMonkey400,
+		500: DartMonkey500,
+		par: Paragon,
 	};
 	let colors = {
-		"ss": "#98c379",
-		"s": "#9fba79",
+		ss: "#98c379",
+		s: "#9fba79",
 		"s-": "#a6b278",
-		"a": "#aea978",
+		a: "#aea978",
 		"a-": "#b5a077",
-		"b": "#bc9877",
+		b: "#bc9877",
 		"b-": "#c38f77",
-		"c": "#ca8676",
+		c: "#ca8676",
 		"c-": "#d27d76",
-		"d": "#d97575",
-		"f": "#e06c75",
-	}
+		d: "#d97575",
+		f: "#e06c75",
+	};
 	const [p1, setP1] = useState(0);
 	const [p2, setP2] = useState(0);
 	const [p3, setP3] = useState(0);
@@ -125,6 +125,76 @@ export default function DartMonkey() {
 	]);
 	const [image, setImage] = useState("000");
 	useEffect(() => {
+		let costs = {
+			"buy-e": 170,
+			"buy-m": 200,
+			"buy-h": 215,
+			"buy-i": 240,
+			"p1-1-e": 120,
+			"p1-1-m": 140,
+			"p1-1-h": 150,
+			"p1-1-i": 170,
+			"p1-2-e": 185,
+			"p1-2-m": 220,
+			"p1-2-h": 235,
+			"p1-2-i": 265,
+			"p1-3-e": 255,
+			"p1-3-m": 300,
+			"p1-3-h": 325,
+			"p1-3-i": 360,
+			"p1-4-e": 1530,
+			"p1-4-m": 1800,
+			"p1-4-h": 1945,
+			"p1-4-i": 2160,
+			"p1-5-e": 12750,
+			"p1-5-m": 15000,
+			"p1-5-h": 16200,
+			"p1-5-i": 18000,
+			"p2-1-e": 85,
+			"p2-1-m": 100,
+			"p2-1-h": 110,
+			"p2-1-i": 120,
+			"p2-2-e": 160,
+			"p2-2-m": 190,
+			"p2-2-h": 205,
+			"p2-2-i": 230,
+			"p2-3-e": 340,
+			"p2-3-m": 400,
+			"p2-3-h": 430,
+			"p2-3-i": 480,
+			"p2-4-e": 6800,
+			"p2-4-m": 8000,
+			"p2-4-h": 8640,
+			"p2-4-i": 9600,
+			"p2-5-e": 38250,
+			"p2-5-m": 45000,
+			"p2-5-h": 48600,
+			"p2-5-i": 54000,
+			"p3-1-e": 75,
+			"p3-1-m": 90,
+			"p3-1-h": 95,
+			"p3-1-i": 110,
+			"p3-2-e": 170,
+			"p3-2-m": 200,
+			"p3-2-h": 215,
+			"p3-2-i": 240,
+			"p3-3-e": 530,
+			"p3-3-m": 625,
+			"p3-3-h": 675,
+			"p3-3-i": 750,
+			"p3-4-e": 1700,
+			"p3-4-m": 2000,
+			"p3-4-h": 2160,
+			"p3-4-i": 2400,
+			"p3-5-e": 21250,
+			"p3-5-m": 25000,
+			"p3-5-h": 27000,
+			"p3-5-i": 30000,
+			"par-e": 297500,
+			"par-m": 350000,
+			"par-h": 378000,
+			"par-i": 420000,
+		};
 		switch (String(p1) + String(p2) + String(p3)) {
 			case "000":
 				setStats({
@@ -153,10 +223,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
+					costEasy: costs["buy-e"],
+					costMedium: costs["buy-m"],
+					costHard: costs["buy-h"],
+					costImpoppable: costs["buy-i"],
 				});
 				setImage("000");
 				break;
@@ -187,10 +257,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 290,
-					costMedium: 340,
-					costHard: 365,
-					costImpoppable: 410,
+					costEasy: costs["buy-e"] + costs["p1-1-e"],
+					costMedium: costs["buy-m"] + costs["p1-1-m"],
+					costHard: costs["buy-h"] + costs["p1-1-h"],
+					costImpoppable: costs["buy-i"] + costs["p1-1-i"],
 				});
 				setImage("100");
 				break;
@@ -221,10 +291,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 475,
-					costMedium: 560,
-					costHard: 600,
-					costImpoppable: 675,
+					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"],
+					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"],
+					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"],
+					costImpoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"],
 				});
 				setImage("200");
 				break;
@@ -255,10 +325,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 730,
-					costMedium: 860,
-					costHard: 925,
-					costImpoppable: 1035,
+					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"],
+					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"],
+					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"],
+					costImpoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p1-3-i"],
 				});
 				setImage("300");
 				break;
@@ -3086,7 +3156,7 @@ export default function DartMonkey() {
 						</div>
 						<div></div>
 						<div>
-							<h1 style={{color: colors["c-"]}}>C-</h1>
+							<h1 style={{ color: colors["c-"] }}>C-</h1>
 						</div>
 						<div>
 							<button
@@ -3226,7 +3296,7 @@ export default function DartMonkey() {
 							</button>
 						</div>
 						<div>
-							<h1 style={{color: colors["b-"]}}>B-</h1>
+							<h1 style={{ color: colors["b-"] }}>B-</h1>
 						</div>
 						<div></div>
 						<div>
@@ -3331,7 +3401,7 @@ export default function DartMonkey() {
 						</div>
 						<div></div>
 						<div>
-							<h1 style={{color: colors["b-"]}}>B-</h1>
+							<h1 style={{ color: colors["b-"] }}>B-</h1>
 						</div>
 					</div>
 					<div className="tower-input">
