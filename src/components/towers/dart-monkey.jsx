@@ -359,10 +359,11 @@ export default function DartMonkey() {
 					purple: true,
 					lead: true,
 					zebra: true,
-					costEasy: 2260,
-					costMedium: 2660,
-					costHard: 2870,
-					costImpoppable: 3195,
+					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p1-4-e"],
+					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p1-4-m"],
+					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p1-4-h"],
+					costImpoppable:
+						costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p1-3-i"] + costs["p1-4-i"],
 				});
 				setImage("400");
 				break;
@@ -393,10 +394,34 @@ export default function DartMonkey() {
 					purple: true,
 					lead: true,
 					zebra: true,
-					costEasy: 15010,
-					costMedium: 17660,
-					costHard: 19070,
-					costImpoppable: 21195,
+					costEasy:
+						costs["buy-e"] +
+						costs["p1-1-e"] +
+						costs["p1-2-e"] +
+						costs["p1-3-e"] +
+						costs["p1-4-e"] +
+						costs["p1-5-e"],
+					costMedium:
+						costs["buy-m"] +
+						costs["p1-1-m"] +
+						costs["p1-2-m"] +
+						costs["p1-3-m"] +
+						costs["p1-4-m"] +
+						costs["p1-5-m"],
+					costHard:
+						costs["buy-h"] +
+						costs["p1-1-h"] +
+						costs["p1-2-h"] +
+						costs["p1-3-h"] +
+						costs["p1-4-h"] +
+						costs["p1-5-h"],
+					costImpoppable:
+						costs["buy-i"] +
+						costs["p1-1-i"] +
+						costs["p1-2-i"] +
+						costs["p1-3-i"] +
+						costs["p1-4-i"] +
+						costs["p1-5-i"],
 				});
 				setImage("500");
 				break;
@@ -427,10 +452,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 255,
-					costMedium: 300,
-					costHard: 325,
-					costImpoppable: 360,
+					costEasy: costs["buy-e"] + costs["p2-1-e"],
+					costMedium: costs["buy-m"] + costs["p2-1-m"],
+					costHard: costs["buy-h"] + costs["p2-1-h"],
+					costImpoppable: costs["buy-i"] + costs["p2-1-i"],
 				});
 				setImage("010");
 				break;
@@ -461,10 +486,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 415,
-					costMedium: 490,
-					costHard: 530,
-					costImpoppable: 590,
+					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"],
+					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"],
+					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"],
+					costImpoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"],
 				});
 				setImage("020");
 				break;
@@ -495,10 +520,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 755,
-					costMedium: 890,
-					costHard: 960,
-					costImpoppable: 1070,
+					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
+					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
+					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
+					costImpoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p2-3-i"],
 				});
 				setImage("030");
 				break;
@@ -529,10 +554,11 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 7555,
-					costMedium: 8890,
-					costHard: 9600,
-					costImpoppable: 10670,
+					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p2-4-e"],
+					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p2-4-m"],
+					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p2-4-h"],
+					costImpoppable:
+						costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p2-3-i"] + costs["p2-4-i"],
 				});
 				setImage("040");
 				break;
@@ -563,10 +589,34 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					zebra: true,
-					costEasy: 45805,
-					costMedium: 53890,
-					costHard: 58200,
-					costImpoppable: 64670,
+					costEasy:
+						costs["buy-e"] +
+						costs["p2-1-e"] +
+						costs["p2-2-e"] +
+						costs["p2-3-e"] +
+						costs["p2-4-e"] +
+						costs["p2-5-e"],
+					costMedium:
+						costs["buy-m"] +
+						costs["p2-1-m"] +
+						costs["p2-2-m"] +
+						costs["p2-3-m"] +
+						costs["p2-4-m"] +
+						costs["p2-5-m"],
+					costHard:
+						costs["buy-h"] +
+						costs["p2-1-h"] +
+						costs["p2-2-h"] +
+						costs["p2-3-h"] +
+						costs["p2-4-h"] +
+						costs["p2-5-h"],
+					costImpoppable:
+						costs["buy-i"] +
+						costs["p2-1-i"] +
+						costs["p2-2-i"] +
+						costs["p2-3-i"] +
+						costs["p2-4-i"] +
+						costs["p2-5-i"],
 				});
 				setImage("050");
 				break;
