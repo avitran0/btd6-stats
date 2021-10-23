@@ -18,7 +18,7 @@ function App() {
 			<header>
 				<nav className="navbar">
 					<div>
-						<img src={BTD6Logo} alt="cock" />
+						<img src={BTD6Logo} alt="BTD6" />
 					</div>
 					<ul>
 						<li>
