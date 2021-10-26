@@ -1,40 +1,40 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactTooltip from "react-tooltip";
-import DartMonkey000 from "../../dart-monkey/000-DartMonkey.png";
-import DartMonkey001 from "../../dart-monkey/001-Dartmonkey.png";
-import DartMonkey002 from "../../dart-monkey/002-Dartmonkey.png";
-import DartMonkey003 from "../../dart-monkey/003-Dartmonkey.png";
-import DartMonkey004 from "../../dart-monkey/004-Dartmonkey.png";
-import DartMonkey005 from "../../dart-monkey/005-Dartmonkey.png";
-import DartMonkey010 from "../../dart-monkey/010-Dartmonkey.png";
-import DartMonkey020 from "../../dart-monkey/020-Dartmonkey.png";
-import DartMonkey030 from "../../dart-monkey/030-Dartmonkey.png";
-import DartMonkey040 from "../../dart-monkey/040-Dartmonkey.png";
-import DartMonkey050 from "../../dart-monkey/050-Dartmonkey.png";
-import DartMonkey100 from "../../dart-monkey/100-Dartmonkey.png";
-import DartMonkey200 from "../../dart-monkey/200-Dartmonkey.png";
-import DartMonkey300 from "../../dart-monkey/300-Dartmonkey.png";
-import DartMonkey400 from "../../dart-monkey/400-Dartmonkey.png";
-import DartMonkey500 from "../../dart-monkey/500-Dartmonkey.png";
-import Paragon from "../../dart-monkey/ApexPlasmaMaster.png";
+import BoomerangMonkey000 from "../../boomerang-monkey/000-BoomerangMonkey.png";
+import BoomerangMonkey001 from "../../boomerang-monkey/001-BoomerangMonkey.png";
+import BoomerangMonkey002 from "../../boomerang-monkey/002-BoomerangMonkey.png";
+import BoomerangMonkey003 from "../../boomerang-monkey/003-BoomerangMonkey.png";
+import BoomerangMonkey004 from "../../boomerang-monkey/004-BoomerangMonkey.png";
+import BoomerangMonkey005 from "../../boomerang-monkey/005-BoomerangMonkey.png";
+import BoomerangMonkey010 from "../../boomerang-monkey/010-BoomerangMonkey.png";
+import BoomerangMonkey020 from "../../boomerang-monkey/020-BoomerangMonkey.png";
+import BoomerangMonkey030 from "../../boomerang-monkey/030-BoomerangMonkey.png";
+import BoomerangMonkey040 from "../../boomerang-monkey/040-BoomerangMonkey.png";
+import BoomerangMonkey050 from "../../boomerang-monkey/050-BoomerangMonkey.png";
+import BoomerangMonkey100 from "../../boomerang-monkey/100-BoomerangMonkey.png";
+import BoomerangMonkey200 from "../../boomerang-monkey/200-BoomerangMonkey.png";
+import BoomerangMonkey300 from "../../boomerang-monkey/300-BoomerangMonkey.png";
+import BoomerangMonkey400 from "../../boomerang-monkey/400-BoomerangMonkey.png";
+import BoomerangMonkey500 from "../../boomerang-monkey/500-BoomerangMonkey.png";
+import Paragon from "../../boomerang-monkey/GlaiveDominus.png";
 import Reset from "../../misc/CloseIcon.png";
-import SharpShots from "../../dart-monkey/SharpShotsUpgradeIcon.png";
-import RazorSharpShots from "../../dart-monkey/RazorSharpShotsUpgradeIcon.png";
-import SpikeOPult from "../../dart-monkey/Spike-o-pultUpgradeIcon.png";
-import Juggernaut from "../../dart-monkey/JuggernautUpgradeIcon.png";
-import UltraJuggernaut from "../../dart-monkey/UltraJuggernautUpgradeIcon.png";
-import QuickShots from "../../dart-monkey/QuickShotsUpgradeIcon.png";
-import VeryQuickShots from "../../dart-monkey/VeryQuickShotsUpgradeIcon.png";
-import TripleShot from "../../dart-monkey/TripleShotUpgradeIcon.png";
-import SuperMonkeyFanClub from "../../dart-monkey/SuperMonkeyFanClubUpgradeIcon.png";
-import PlasmaMonkeyFanClub from "../../dart-monkey/PlasmaMonkeyFanClubUpgradeIcon.png";
-import LongRangeDarts from "../../dart-monkey/LongRangeDartsUpgradeIcon.png";
-import EnhancedEyesight from "../../dart-monkey/EnhancedEyesightUpgradeIcon.png";
-import Crossbow from "../../dart-monkey/CrossBowUpgradeIcon.png";
-import Sharpshooter from "../../dart-monkey/SharpShooterUpgradeIcon.png";
-import CrossbowMaster from "../../dart-monkey/CrossBowMasterUpgradeIcon.png";
-import ApexPlasmaMaster from "../../dart-monkey/ApexPlasmaMasterUpgradeIcon.png";
+import ImprovedRangs from "../../boomerang-monkey/ImprovedRangsUpgradeIcon.png";
+import Glaives from "../../boomerang-monkey/GlaivesUpgradeIcon.png";
+import GlaiveRicochet from "../../boomerang-monkey/GlaiveRicochetUpgradeIcon.png";
+import MOARGlaives from "../../boomerang-monkey/MoarGlaivesUpgradeIcon.png";
+import GlaiveLord from "../../boomerang-monkey/GlaiveLordUpgradeIcon.png";
+import FasterThrowing from "../../boomerang-monkey/FasterThrowingUpgradeIcon.png";
+import FasterRangs from "../../boomerang-monkey/FasterRangsUpgradeIcon.png";
+import BionicBoomerang from "../../boomerang-monkey/BionicBoomerangUpgradeIcon.png";
+import TurboCharge from "../../boomerang-monkey/TurbochargeUpgradeIcon.png";
+import PermaCharge from "../../boomerang-monkey/PermaChargeUpgradeIcon.png";
+import LongRangeRangs from "../../boomerang-monkey/LongRangeRangsUpgradeIcon.png";
+import RedHotRangs from "../../boomerang-monkey/RedHotRangsUpgradeIcon.png";
+import KylieBoomerang from "../../boomerang-monkey/KylieBoomerangUpgradeIcon.png";
+import MOABPress from "../../boomerang-monkey/MoabPressUpgradeIcon.png";
+import MOABDomination from "../../boomerang-monkey/MoabDominationUpgradeIcon.png";
+import GlaiveDominus from "../../boomerang-monkey/GlaiveDominusUpgradeIcon.png";
 import Red from "../../bloons/Red.png";
 import Ceramic from "../../bloons/Ceramic.png";
 import MOAB from "../../bloons/MOAB.png";
@@ -54,24 +54,24 @@ import Zebra from "../../bloons/Zebra.png";
 import Plus from "../../misc/AddMoreBtn.png";
 import Minus from "../../misc/AddRemoveBtn.png";
 
-export default function DartMonkey() {
+export default function BoomerangMonkey() {
 	let images = {
-		"000": DartMonkey000,
-		"001": DartMonkey001,
-		"002": DartMonkey002,
-		"003": DartMonkey003,
-		"004": DartMonkey004,
-		"005": DartMonkey005,
-		"010": DartMonkey010,
-		"020": DartMonkey020,
-		"030": DartMonkey030,
-		"040": DartMonkey040,
-		"050": DartMonkey050,
-		100: DartMonkey100,
-		200: DartMonkey200,
-		300: DartMonkey300,
-		400: DartMonkey400,
-		500: DartMonkey500,
+		"000": BoomerangMonkey000,
+		"001": BoomerangMonkey001,
+		"002": BoomerangMonkey002,
+		"003": BoomerangMonkey003,
+		"004": BoomerangMonkey004,
+		"005": BoomerangMonkey005,
+		"010": BoomerangMonkey010,
+		"020": BoomerangMonkey020,
+		"030": BoomerangMonkey030,
+		"040": BoomerangMonkey040,
+		"050": BoomerangMonkey050,
+		100: BoomerangMonkey100,
+		200: BoomerangMonkey200,
+		300: BoomerangMonkey300,
+		400: BoomerangMonkey400,
+		500: BoomerangMonkey500,
 		par: Paragon,
 	};
 	let colors = {
@@ -117,83 +117,83 @@ export default function DartMonkey() {
 			purple: true,
 			lead: false,
 			zebra: true,
-			costEasy: 170,
-			costMedium: 200,
-			costHard: 215,
-			costImpoppable: 240,
+			costEasy: 275,
+			costMedium: 325,
+			costHard: 350,
+			costImpoppable: 390,
 		},
 	]);
 	const [image, setImage] = useState("000");
 	useEffect(() => {
 		let costs = {
-			"buy-e": 170,
-			"buy-m": 200,
-			"buy-h": 215,
-			"buy-i": 240,
-			"p1-1-e": 120,
-			"p1-1-m": 140,
-			"p1-1-h": 150,
-			"p1-1-i": 170,
-			"p1-2-e": 185,
-			"p1-2-m": 220,
-			"p1-2-h": 235,
-			"p1-2-i": 265,
-			"p1-3-e": 255,
-			"p1-3-m": 300,
-			"p1-3-h": 325,
-			"p1-3-i": 360,
-			"p1-4-e": 1530,
-			"p1-4-m": 1800,
-			"p1-4-h": 1945,
-			"p1-4-i": 2160,
-			"p1-5-e": 12750,
-			"p1-5-m": 15000,
-			"p1-5-h": 16200,
-			"p1-5-i": 18000,
-			"p2-1-e": 85,
-			"p2-1-m": 100,
-			"p2-1-h": 110,
-			"p2-1-i": 120,
-			"p2-2-e": 160,
-			"p2-2-m": 190,
-			"p2-2-h": 205,
-			"p2-2-i": 230,
-			"p2-3-e": 340,
-			"p2-3-m": 400,
-			"p2-3-h": 430,
-			"p2-3-i": 480,
-			"p2-4-e": 6800,
-			"p2-4-m": 8000,
-			"p2-4-h": 8640,
-			"p2-4-i": 9600,
-			"p2-5-e": 38250,
-			"p2-5-m": 45000,
-			"p2-5-h": 48600,
-			"p2-5-i": 54000,
-			"p3-1-e": 75,
-			"p3-1-m": 90,
-			"p3-1-h": 95,
-			"p3-1-i": 110,
-			"p3-2-e": 170,
-			"p3-2-m": 200,
-			"p3-2-h": 215,
-			"p3-2-i": 240,
-			"p3-3-e": 530,
-			"p3-3-m": 625,
-			"p3-3-h": 675,
-			"p3-3-i": 750,
-			"p3-4-e": 1700,
-			"p3-4-m": 2000,
-			"p3-4-h": 2160,
-			"p3-4-i": 2400,
-			"p3-5-e": 21250,
-			"p3-5-m": 25000,
-			"p3-5-h": 27000,
-			"p3-5-i": 30000,
-			"par-e": 297500,
-			"par-m": 350000,
-			"par-h": 378000,
-			"par-i": 420000,
+			"buy-e": 275,
+			"buy-m": 325,
+			"buy-h": 350,
+			"buy-i": 390,
+			"p1-1-e": 170,
+			"p1-1-m": 200,
+			"p1-1-h": 215,
+			"p1-1-i": 240,
+			"p1-2-e": 240,
+			"p1-2-m": 280,
+			"p1-2-h": 300,
+			"p1-2-i": 335,
+			"p1-3-e": 1105,
+			"p1-3-m": 1300,
+			"p1-3-h": 1405,
+			"p1-3-i": 1560,
+			"p1-4-e": 2550,
+			"p1-4-m": 3000,
+			"p1-4-h": 3240,
+			"p1-4-i": 3600,
+			"p1-5-e": 27540,
+			"p1-5-m": 32400,
+			"p1-5-h": 34990,
+			"p1-5-i": 38880,
+			"p2-1-e": 150,
+			"p2-1-m": 175,
+			"p2-1-h": 190,
+			"p2-1-i": 210,
+			"p2-2-e": 210,
+			"p2-2-m": 250,
+			"p2-2-h": 270,
+			"p2-2-i": 300,
+			"p2-3-e": 1360,
+			"p2-3-m": 1600,
+			"p2-3-h": 1730,
+			"p2-3-i": 1920,
+			"p2-4-e": 3400,
+			"p2-4-m": 4000,
+			"p2-4-h": 4320,
+			"p2-4-i": 4800,
+			"p2-5-e": 29750,
+			"p2-5-m": 35000,
+			"p2-5-h": 37800,
+			"p2-5-i": 42000,
+			"p3-1-e": 85,
+			"p3-1-m": 100,
+			"p3-1-h": 110,
+			"p3-1-i": 120,
+			"p3-2-e": 255,
+			"p3-2-m": 300,
+			"p3-2-h": 325,
+			"p3-2-i": 360,
+			"p3-3-e": 1100,
+			"p3-3-m": 1300,
+			"p3-3-h": 1400,
+			"p3-3-i": 1560,
+			"p3-4-e": 1870,
+			"p3-4-m": 2200,
+			"p3-4-h": 2375,
+			"p3-4-i": 2640,
+			"p3-5-e": 51000,
+			"p3-5-m": 60000,
+			"p3-5-h": 64800,
+			"p3-5-i": 72000,
+			"par-e": 340000,
+			"par-m": 400000,
+			"par-h": 432000,
+			"par-i": 480000,
 		};
 		switch (String(p1) + String(p2) + String(p3)) {
 			case "000":
@@ -3979,8 +3979,8 @@ export default function DartMonkey() {
 								id="p1-1"
 								className={p1 === 1 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Sharp Shots<br>Can pop 1 extra Bloon per shot.<br>Cost: $120 / $140 / $150 / $170"
-								data-for="sharp-shots"
+								data-tip="Improved Rangs<br>Gains +4 pierce, equivalent to 8 pierce for most upgrades.<br>Cost: $170 / $200 / $215 / $240"
+								data-for="improved-rangs"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -3988,9 +3988,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="sharp-shots"
+									id="improved-rangs"
 								/>
-								<img src={SharpShots} alt="Sharp Shots"></img>
+								<img src={ImprovedRangs} alt="Improved Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -3999,8 +3999,8 @@ export default function DartMonkey() {
 								id="p1-2"
 								className={p1 === 2 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Razor Sharp Shots<br>Can pop 2 more bloons per shot.<br>Cost: $185 / $220 / $235 / $265"
-								data-for="razor-sharp-shots"
+								data-tip="Glaives<br>Gains +5 pierce on top of the previous upgrade, equivalent to 13 pierce for most upgrades.<br>Cost: $240 / $280 / $300 / $335"
+								data-for="glaives"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4008,9 +4008,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="razor-sharp-shots"
+									id="glaives"
 								/>
-								<img src={RazorSharpShots} alt="Razor Sharp Shots"></img>
+								<img src={Glaives} alt="Glaives"></img>
 							</button>
 						</div>
 						<div>
@@ -4019,8 +4019,8 @@ export default function DartMonkey() {
 								id="p1-3"
 								className={p1 === 3 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Spike-O-Pult<br>Converts the Dart Monkey into a Spike-o-pult that hurls a large spiked ball instead of darts.<br>Good range, but slower attack speed. Each ball can pop lots of Bloons and rebounds off obstacles.<br>Cost: $255 / $300 / $325 / $360"
-								data-for="spike-o-pult"
+								data-tip="Glaive Ricochet<br>Glaives automatically bounce towards each bloon with sharp turning.<br>Pops up to 50 bloons per glaive.<br>Cost: $1.105 / $1.300 / $1.405 / $1.560"
+								data-for="glaive-ricochet"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4028,9 +4028,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="spike-o-pult"
+									id="glaive-ricochet"
 								/>
-								<img src={SpikeOPult} alt="Spike-O-Pult"></img>
+								<img src={GlaiveRicochet} alt="Glaive Ricochet"></img>
 							</button>
 						</div>
 						<div>
@@ -4039,8 +4039,8 @@ export default function DartMonkey() {
 								id="p1-4"
 								className={p1 === 4 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Juggernaut<br>Hurls a giant spiked ball that pops lead and excels at crushing Ceramic Bloons.<br>Cost: $1.530 / $1.800 / $1.945 / $2.160"
-								data-for="juggernaut"
+								data-tip="M.O.A.R Glaives<br>Pierce increased from 50 to 100, attack speed is doubled, and glaive bounce distance is increased.<br>Cost: $2.550 / $3.000 / $3.240 / $3.600"
+								data-for="moar-glaives"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4048,9 +4048,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="juggernaut"
+									id="moar-glaives"
 								/>
-								<img src={Juggernaut} alt="Juggernaut"></img>
+								<img src={MOARGlaives} alt="M.O.A.R Glaives"></img>
 							</button>
 						</div>
 						<div>
@@ -4059,8 +4059,8 @@ export default function DartMonkey() {
 								id="p1-5"
 								className={p1 === 5 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Ultra-Juggernaut<br>Gigantic spiked ball splits twice into 6 Juggernaut balls for even more destructive power.<br>Cost: $12.750 / $15.000 / $16.200 / $18.000"
-								data-for="ultra-juggernaut"
+								data-tip="Glaive Lord<br>Glaive Lord surrounds itself in 3 special glaives that shred anything that comes near.<br>Glaive Lord's glaives now rip through MOAB-class Bloons, slowly tearing them apart from the inside.<br>Cost: $27.540 / $32.400 / $34.990 / $38.880"
+								data-for="glaive-lord"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4068,14 +4068,14 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="ultra-juggernaut"
+									id="glaive-lord"
 								/>
-								<img src={UltraJuggernaut} alt="Ultra-Juggernaut"></img>
+								<img src={GlaiveLord} alt="Glaive Lord"></img>
 							</button>
 						</div>
 						<div></div>
 						<div>
-							<h1 style={{ color: colors["c-"] }}>C-</h1>
+							<h1 style={{ color: colors["b"] }}>B</h1>
 						</div>
 						<div>
 							<button
@@ -4101,8 +4101,8 @@ export default function DartMonkey() {
 								id="p2-1"
 								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Quick Shots<br>Shoots 15% faster.<br>Cost: $85 / $100 / $110 / $120"
-								data-for="quick-shots"
+								data-tip="Faster Throwing<br>Throws boomerangs faster.<br>Cost: $150 / $175 / $190 / $210"
+								data-for="faster-throwing"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4110,9 +4110,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="quick-shots"
+									id="faster-throwing"
 								/>
-								<img src={QuickShots} alt="Quick Shots"></img>
+								<img src={FasterThrowing} alt="Faster Throwing"></img>
 							</button>
 						</div>
 						<div>
@@ -4121,8 +4121,8 @@ export default function DartMonkey() {
 								id="p2-2"
 								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Very Quick Shots<br>Shoots 33% faster!<br>Cost: $160 / $190 / $205 / $230"
-								data-for="very-quick-shots"
+								data-tip="Faster Rangs<br>Boomerangs fire and travel faster.<br>Cost: $210 / $250 / $270 / $300"
+								data-for="faster-rangs"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4130,9 +4130,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="very-quick-shots"
+									id="faster-rangs"
 								/>
-								<img src={VeryQuickShots} alt="Very Quick Shots"></img>
+								<img src={FasterRangs} alt="Faster Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -4141,8 +4141,8 @@ export default function DartMonkey() {
 								id="p2-3"
 								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Triple Shot<br>Throws 3 darts at a time instead of 1.<br>Cost: $340 / $400 / $430 / $480"
-								data-for="triple-shot"
+								data-tip="Bionic Boomerang<br>Replaces arm with a strong bionic arm that can throw boomerangs extremely fast and does extra damage to MOAB-class bloons.<br>Cost: $1.360 / $1.600 / $1.730 / $1.920"
+								data-for="bionic-boomerang"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4150,9 +4150,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="triple-shot"
+									id="bionic-boomerang"
 								/>
-								<img src={TripleShot} alt="Triple Shot"></img>
+								<img src={BionicBoomerang} alt="Bionic Boomerang"></img>
 							</button>
 						</div>
 						<div>
@@ -4161,8 +4161,8 @@ export default function DartMonkey() {
 								id="p2-4"
 								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Super Monkey Fan Club<br>Super Monkey Fan Club Ability: Converts up to 10 nearby Dart Monkeys including himself into Super Monkeys for 15 seconds.<br>Regular attack speed also increased.<br>Cost: $6.800 / $8.000 / $8.640 / $9.600"
-								data-for="super-monkey-fan-club"
+								data-tip="Turbo Charge<br>Turbo Charge ability: Makes this Monkey attack incredibly fast for 10 seconds.<br>Cost: $3.400 / $4.000 / $4.320 / $4.800"
+								data-for="turbo-charge"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4170,9 +4170,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="super-monkey-fan-club"
+									id="turbo-charge"
 								/>
-								<img src={SuperMonkeyFanClub} alt="Super Monkey Fan Club"></img>
+								<img src={TurboCharge} alt="Turbo Charge"></img>
 							</button>
 						</div>
 						<div>
@@ -4181,8 +4181,8 @@ export default function DartMonkey() {
 								id="p2-5"
 								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Plasma Monkey Fan Club<br>Elite membership of this club grants the Dart Monkeys even more power.<br>Cost: $38.250 / $45.000 / $48.600 / $54.000"
-								data-for="plasma-monkey-fan-club"
+								data-tip="Perma Charge<br>Perma Charge has a permanent super fast attack speed.<br>Ability increases the lethality even more.<br>Cost: $29.750 / $35.000 / $37.800 / $42.000"
+								data-for="perma-charge"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4190,9 +4190,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="plasma-monkey-fan-club"
+									id="perma-charge"
 								/>
-								<img src={PlasmaMonkeyFanClub} alt="Plasma Monkey Fan Club"></img>
+								<img src={PermaCharge} alt="Perma Charge"></img>
 							</button>
 						</div>
 						<div>
@@ -4200,8 +4200,8 @@ export default function DartMonkey() {
 								onClick={() => handleChange("par")}
 								id="par"
 								className={p1 === -1 ? "tower-active" : ""}
-								data-tip="Apex Plasma Master<br>Fill the area with Bloon shredding plasma juggernaut balls, leaving nothing behind...<br>Cost: $297.500 / $350.000 / $378.600 / $420.000"
-								data-for="apex-plasma-master"
+								data-tip="Glaive Dominus<br>The Bloons will look upon my Glaives, and they will know fear.<br>Cost: $340.000 / $400.000 / $432.000 / $480.000"
+								data-for="glaive-dominus"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4209,13 +4209,13 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="apex-plasma-master"
+									id="glaive-dominus"
 								/>
-								<img src={ApexPlasmaMaster} alt="Apex Plasma Master"></img>
+								<img src={GlaiveDominus} alt="Glaive Dominus"></img>
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["b-"] }}>B-</h1>
+							<h1 style={{ color: colors["a-"] }}>A-</h1>
 						</div>
 						<div></div>
 						<div>
@@ -4224,8 +4224,8 @@ export default function DartMonkey() {
 								id="p3-1"
 								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Long Range Darts<br>Makes the Dart Monkey shoot further than normal.<br>Cost: $75 / $90 / $95 / $110"
-								data-for="long-range-darts"
+								data-tip="Long Range Rangs<br>Can throw boomerangs further than normal.<br>Cost: $85 / $100 / $110 / $120"
+								data-for="long-range-rangs"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4233,9 +4233,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="long-range-darts"
+									id="long-range-rangs"
 								/>
-								<img src={LongRangeDarts} alt="Long Range Darts" title="Long Range Darts"></img>
+								<img src={LongRangeRangs} alt="Long Range Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -4244,8 +4244,8 @@ export default function DartMonkey() {
 								id="p3-2"
 								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Enhanced Eyesight<br>Shoots even further and can detect Camo bloons.<br>Cost: $170 / $200 / $215 / $240"
-								data-for="enhanced-eyesight"
+								data-tip="Red Hot Rangs<br>Allows boomerangs to pop Frozen and Lead Bloons and do more damage to all.<br>Cost: $255 / $300 / $325 / $360"
+								data-for="red-hot-rangs"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4253,9 +4253,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="enhanced-eyesight"
+									id="red-hot-rangs"
 								/>
-								<img src={EnhancedEyesight} alt="Enhanced Eyesight" title="Enhanced Eyesight"></img>
+								<img src={RedHotRangs} alt="Red Hot Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -4264,8 +4264,8 @@ export default function DartMonkey() {
 								id="p3-3"
 								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Crossbow<br>Uses a long range Crossbow that can pop 3 layers of Bloon for every hit.<br>Cost: $530 / $625 / $675 / $750"
-								data-for="crossbow"
+								data-tip="Kylie Boomerang<br>Throws heavy Kylie boomerangs that follow a straight path instead of curved.<br>Cost: $1.100 / $1.300 / $1.400 / $1.560"
+								data-for="kylie-boomerang"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4273,9 +4273,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="crossbow"
+									id="kylie-boomerang"
 								/>
-								<img src={Crossbow} alt="Crossbow"></img>
+								<img src={KylieBoomerang} alt="Kylie Boomerang"></img>
 							</button>
 						</div>
 						<div>
@@ -4284,8 +4284,8 @@ export default function DartMonkey() {
 								id="p3-4"
 								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Sharpshooter<br>Sharp Shooter attacks faster and does powerful Crit shots every few shots that do a lot more damage.<br>Cost: $1.700 / $2.000 / $2.160 / $2.400"
-								data-for="sharpshooter"
+								data-tip="MOAB Press<br>Heavy Kylie boomerangs hits MOAB-Class Bloons multiple times per throw and sometimes knocks them back a short way along the path.<br>Cost: $1.870 / $2.200 / $2.375 / $2.640"
+								data-for="moab-press"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4293,9 +4293,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="sharpshooter"
+									id="moab-press"
 								/>
-								<img src={Sharpshooter} alt="Sharpshooter"></img>
+								<img src={MOABPress} alt="MOAB Press"></img>
 							</button>
 						</div>
 						<div>
@@ -4304,8 +4304,8 @@ export default function DartMonkey() {
 								id="p3-5"
 								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Crossbow Master<br>Crossbow Master shoots really fast and devastates most Bloon types with ease.<br>Cost: $21.250 / $25.000 / $27.000 / $30.000"
-								data-for="crossbow-master"
+								data-tip="MOAB Domination<br>Special knockback kylies trigger more often and do lots of extra damage.<br>Cost: $51.000 / $60.000 / $64.800 / $72.000"
+								data-for="moab-domination"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4313,14 +4313,14 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="crossbow-master"
+									id="moab-domination"
 								/>
-								<img src={CrossbowMaster} alt="Crossbow Master"></img>
+								<img src={MOABDomination} alt="MOAB Domination"></img>
 							</button>
 						</div>
 						<div></div>
 						<div>
-							<h1 style={{ color: colors["b-"] }}>B-</h1>
+							<h1 style={{ color: colors["s-"] }}>S-</h1>
 						</div>
 					</div>
 					<div className="tower-input">
