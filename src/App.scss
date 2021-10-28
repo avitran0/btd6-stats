@@ -772,6 +772,12 @@ footer {
 			height: 8rem;
 		}
 	}
+	.stats-container {
+		th,
+		td {
+			font-size: 1.2rem;
+		}
+	}
 }
 
 @media (max-width: 700px) {
