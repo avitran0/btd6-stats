@@ -372,7 +372,7 @@ input {
 		height: 8rem;
 		width: 8rem;
 		margin: 0;
-
+		padding: 0;
 		&:hover {
 			background-color: $darkblue;
 		}
@@ -423,8 +423,10 @@ input {
 
 .image-container-inner {
 	width: 24rem;
-	height: 24rem;
+	height: 28rem;
 	margin: 0 0 0 auto;
+	display: flex;
+	align-items: center;
 }
 
 .tower-img {
@@ -673,6 +675,9 @@ footer {
 	.image-container-inner {
 		display: none;
 	}
+	.tower-grid {
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -682,8 +687,8 @@ footer {
 	}
 	.tower-grid {
 		img {
-			width: 4rem;
-			height: 4rem;
+			max-width: 4rem;
+			max-height: 4rem;
 		}
 		button {
 			width: 5rem;
@@ -754,23 +759,24 @@ footer {
 	}
 }
 @media (max-width: 900px) {
-	.tower-input {
-		display: flex;
-	}
-	.image-container-inner {
-		display: block;
-	}
 	.tower-grid {
-		display: none;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-flow: column;
+		img {
+			max-width: 7rem;
+			max-height: 7rem;
+		}
+		button {
+			width: 8rem;
+			height: 8rem;
+		}
 	}
 }
 
 @media (max-width: 700px) {
 	.navbar a {
 		font-size: 1.6em;
-	}
-	.image-container-inner {
-		display: none;
 	}
 }
 
@@ -814,7 +820,7 @@ footer {
 		height: 240px;
 	}
 
-	.tower-grid {
+	.towers-grid {
 		img {
 			height: 60%;
 		}
@@ -852,19 +858,18 @@ footer {
 	.__react_component_tooltip {
 		font-size: 0.8rem !important;
 	}
-	.tower-input {
+	.tower-grid {
 		img {
-			height: 2.4em;
+			max-width: 4rem;
+			max-height: 4rem;
 		}
 		button {
-			height: 2.4em;
-			width: 2.4em;
+			width: 5rem;
+			height: 5rem;
 		}
-		h2 {
-			font-size: 1.2em;
-		}
-		input {
-			font-size: 1.2em;
-		}
+	}
+	#p0 img {
+		width: 3rem;
+		height: 3rem;
 	}
 }

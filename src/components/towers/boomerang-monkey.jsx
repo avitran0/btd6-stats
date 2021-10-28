@@ -3477,7 +3477,7 @@ export default function BoomerangMonkey() {
 			transition={{ ease: "easeInOut", duration: 0.2 }}
 			className="tower"
 		>
-			<h1>Dart Monkey</h1>
+			<h1>Boomerang Monkey</h1>
 			<div className="tower-container">
 				<div className="stats-container">
 					<table className="stats">
