@@ -472,7 +472,7 @@ input {
 
 	h2 {
 		margin: 0 auto;
-		font-size: 2.4rem;
+		font-size: 1.6rem;
 	}
 	button {
 		color: $nord6;
@@ -679,13 +679,20 @@ footer {
 	.grid-container {
 		width: 200px;
 		height: 240px;
-	}.tower-grid {
-		display: none;
 	}
-	.tower-input {
-		display: flex;
-	}.image-container-inner {
-		display: block;
+	.tower-grid {
+		img {
+			width: 4rem;
+			height: 4rem;
+		}
+		button {
+			width: 5rem;
+			height: 5rem;
+		}
+	}
+	#p0 img {
+		width: 3rem;
+		height: 3rem;
 	}
 }
 
@@ -709,7 +716,7 @@ footer {
 		height: 240px;
 	}
 
-	.tower-grid {
+	.towers-grid {
 		a::after {
 			transform: scaleY(1);
 		}
@@ -724,7 +731,7 @@ footer {
 		display: inline-table;
 		margin: 0 20px;
 	}
-	
+
 	.tower-input {
 		margin: 0;
 		width: 100%;
@@ -746,10 +753,24 @@ footer {
 		display: none;
 	}
 }
+@media (max-width: 900px) {
+	.tower-input {
+		display: flex;
+	}
+	.image-container-inner {
+		display: block;
+	}
+	.tower-grid {
+		display: none;
+	}
+}
 
 @media (max-width: 700px) {
 	.navbar a {
 		font-size: 1.6em;
+	}
+	.image-container-inner {
+		display: none;
 	}
 }
 
