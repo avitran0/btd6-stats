@@ -3403,7 +3403,6 @@ export default function DartMonkey() {
 					costMedium: 200,
 					costHard: 215,
 					costImpoppable: 240,
-					notes: "",
 				});
 				break;
 		}
