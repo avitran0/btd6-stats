@@ -1,0 +1,92 @@
+{
+  "Bloons": {
+    "spriteCount": 232,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "ChallengeRulesIcons": {
+    "spriteCount": 26,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "IngameUi": {
+    "spriteCount": 66,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "Languages": {
+    "spriteCount": 18,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "MainMenuUiAtlas": {
+    "spriteCount": 68,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "MapImages": {
+    "spriteCount": 58,
+    "iOSOverriden": false,
+    "iOSFormat": 33
+  },
+  "MapMedals": {
+    "spriteCount": 32,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "MonkeyIcons": {
+    "spriteCount": 51,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "MonkeyKnowledgeUi": {
+    "spriteCount": 146,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "PowerIcons": {
+    "spriteCount": 15,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "TitleScreenBg": {
+    "spriteCount": 29,
+    "iOSOverriden": false,
+    "iOSFormat": 33
+  },
+  "TitleScreenUi": {
+    "spriteCount": 11,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "Ui": {
+    "spriteCount": 244,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "UiBloonIcons": {
+    "spriteCount": 11,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "UiBuffIcons": {
+    "spriteCount": 49,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "UiEmoteIcons": {
+    "spriteCount": 125,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "UiEventRaceMedals": {
+    "spriteCount": 10,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  },
+  "UiEventsCollection": {
+    "spriteCount": 41,
+    "iOSOverriden": false,
+    "iOSFormat": 4
+  }
+}
