@@ -3477,7 +3477,7 @@ export default function DartMonkey() {
 			<h1>Dart Monkey</h1>
 			<div className="tower-container">
 				<div className="stats-container">
-					<table className="stats">
+					<table>
 						<thead>
 							<tr>
 								<th colSpan="3">Main Projectile</th>
@@ -3610,7 +3610,6 @@ export default function DartMonkey() {
 							</tr>
 						</tfoot>
 					</table>
-
 					<table>
 						<thead>
 							<tr>
@@ -3712,47 +3711,6 @@ export default function DartMonkey() {
 									/>
 									Projectiles
 								</th>
-							</tr>
-						</tfoot>
-					</table>
-					<table>
-						<thead>
-							<tr>
-								<th
-									colSpan="2"
-									data-tip="The cumulative cost of the<br>tower and all selected upgrades"
-									data-for="cost"
-								>
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="cost"
-									/>
-									Cost
-								</th>
-							</tr>
-							<tr>
-								<th>Easy</th>
-								<th>Medium</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>${stats.costEasy}</td>
-								<td>${stats.costMedium}</td>
-							</tr>
-							<tr>
-								<td>${stats.costHard}</td>
-								<td>${stats.costImpoppable}</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<th>Hard</th>
-								<th>Impoppable</th>
 							</tr>
 						</tfoot>
 					</table>
@@ -3963,6 +3921,47 @@ export default function DartMonkey() {
 								</td>
 							</tr>
 						</tbody>
+					</table>
+					<table>
+						<thead>
+							<tr>
+								<th
+									colSpan="2"
+									data-tip="The cumulative cost of the<br>tower and all selected upgrades"
+									data-for="cost"
+								>
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="cost"
+									/>
+									Cost
+								</th>
+							</tr>
+							<tr>
+								<th>Easy</th>
+								<th>Medium</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>${stats.costEasy}</td>
+								<td>${stats.costMedium}</td>
+							</tr>
+							<tr>
+								<td>${stats.costHard}</td>
+								<td>${stats.costImpoppable}</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Hard</th>
+								<th>Impoppable</th>
+							</tr>
+						</tfoot>
 					</table>
 				</div>
 				<div className="image-container">
