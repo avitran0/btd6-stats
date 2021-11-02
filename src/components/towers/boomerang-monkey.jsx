@@ -3480,7 +3480,7 @@ export default function BoomerangMonkey() {
 					<table className="stats">
 						<thead>
 							<tr>
-								<th colSpan="3">Main</th>
+								<th colSpan="3">Main Projectile</th>
 							</tr>
 							<tr>
 								<th data-tip="How many layers each projectile can pop" data-for="damage">
@@ -3610,47 +3610,7 @@ export default function BoomerangMonkey() {
 							</tr>
 						</tfoot>
 					</table>
-					<table>
-						<thead>
-							<tr>
-								<th
-									colSpan="2"
-									data-tip="The cumulative cost of the<br>tower and all selected upgrades"
-									data-for="cost"
-								>
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="cost"
-									/>
-									Cost
-								</th>
-							</tr>
-							<tr>
-								<th>Easy</th>
-								<th>Medium</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>${stats.costEasy}</td>
-								<td>${stats.costMedium}</td>
-							</tr>
-							<tr>
-								<td>${stats.costHard}</td>
-								<td>${stats.costImpoppable}</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<th>Hard</th>
-								<th>Impoppable</th>
-							</tr>
-						</tfoot>
-					</table>
+
 					<table>
 						<thead>
 							<tr>
@@ -3752,6 +3712,47 @@ export default function BoomerangMonkey() {
 									/>
 									Projectiles
 								</th>
+							</tr>
+						</tfoot>
+					</table>
+					<table>
+						<thead>
+							<tr>
+								<th
+									colSpan="2"
+									data-tip="The cumulative cost of the<br>tower and all selected upgrades"
+									data-for="cost"
+								>
+									<ReactTooltip
+										effect="solid"
+										textColor="#eceff4"
+										backgroundColor="#4c566aff"
+										arrowColor="transparent"
+										multiline={true}
+										id="cost"
+									/>
+									Cost
+								</th>
+							</tr>
+							<tr>
+								<th>Easy</th>
+								<th>Medium</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>${stats.costEasy}</td>
+								<td>${stats.costMedium}</td>
+							</tr>
+							<tr>
+								<td>${stats.costHard}</td>
+								<td>${stats.costImpoppable}</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Hard</th>
+								<th>Impoppable</th>
 							</tr>
 						</tfoot>
 					</table>
