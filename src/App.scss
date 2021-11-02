@@ -440,67 +440,6 @@ input {
 	width: 5rem;
 }
 
-.tower-input {
-	display: none;
-	margin: 0 auto 0 0;
-	flex-direction: column;
-	justify-content: space-between;
-	input {
-		border-radius: 0;
-		margin: 0 0.4rem;
-		padding: 0;
-		border: none;
-		border-bottom: 1px solid $nord6;
-		transition: 0.2s;
-		outline: none;
-		background-color: transparent;
-		color: $nord6;
-		font: 2.4rem Nunito-light;
-		width: 3rem;
-		-moz-appearance: textfield;
-		appearance: textfield;
-		caret-color: $nord6;
-		text-align: center;
-		height: 2.4rem;
-	}
-	input:focus {
-		border-bottom: 1px solid $darkblue;
-	}
-	input::-webkit-inner-spin-button,
-	input::-webkit-outer-spin-button {
-		-webkit-appearance: none;
-		margin: 0;
-	}
-
-	h2 {
-		margin: 0 auto;
-		font-size: 1.6rem;
-	}
-	button {
-		color: $nord6;
-		background-color: transparent;
-		border: none;
-		border-radius: 8px;
-		height: 4.8rem;
-		width: 4.8rem;
-		padding: 0;
-	}
-	img {
-		height: 4.8rem;
-	}
-}
-
-.tower-input-flex {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 0.8rem;
-	div {
-		display: flex;
-		height: 2.8rem;
-		margin: 0 20% 0 0;
-	}
-}
-
 .__react_component_tooltip {
 	border-radius: 8px !important;
 	font: 1.2rem Nunito-light !important;
@@ -735,24 +674,6 @@ footer {
 	.rounds table {
 		display: inline-table;
 		margin: 0 20px;
-	}
-
-	.tower-input {
-		margin: 0;
-		width: 100%;
-		img {
-			height: 3.2rem;
-		}
-		h2 {
-			font-size: 2.4rem;
-		}
-		input {
-			font-size: 2.4rem;
-		}
-		button {
-			height: 3.2rem;
-			width: 3.2rem;
-		}
 	}
 	.image-container-inner {
 		display: none;

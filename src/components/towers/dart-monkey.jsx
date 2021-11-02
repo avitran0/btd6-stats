@@ -51,8 +51,6 @@ import White from "../../bloons/White.png";
 import Purple from "../../bloons/Purple.png";
 import Lead from "../../bloons/Lead.png";
 import Zebra from "../../bloons/Zebra.png";
-import Plus from "../../misc/AddMoreBtn.png";
-import Minus from "../../misc/AddRemoveBtn.png";
 
 export default function DartMonkey() {
 	let images = {
@@ -537,7 +535,7 @@ export default function DartMonkey() {
 					damageCeramicSecondary: 0,
 					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 3,
 					projectilesSecondary: 0,
 					speed: 0.425,
 					range: 32,
@@ -572,7 +570,7 @@ export default function DartMonkey() {
 					damageCeramicSecondary: 0,
 					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 3,
 					projectilesSecondary: 0,
 					speed: 0.425,
 					range: 32,
@@ -1815,7 +1813,7 @@ export default function DartMonkey() {
 					damageCeramicSecondary: 0,
 					pierce: 3,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 3,
 					projectilesSecondary: 0,
 					speed: 0.425,
 					range: 32,
@@ -1873,7 +1871,7 @@ export default function DartMonkey() {
 					damageCeramicSecondary: 0,
 					pierce: 3,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 3,
 					projectilesSecondary: 0,
 					speed: 0.425,
 					range: 32,
@@ -1993,7 +1991,7 @@ export default function DartMonkey() {
 					damageCeramicSecondary: 0,
 					pierce: 5,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 3,
 					projectilesSecondary: 0,
 					speed: 0.425,
 					range: 32,
@@ -2055,7 +2053,7 @@ export default function DartMonkey() {
 					damageCeramicSecondary: 0,
 					pierce: 5,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 3,
 					projectilesSecondary: 0,
 					speed: 0.425,
 					range: 32,
@@ -2224,7 +2222,7 @@ export default function DartMonkey() {
 					damageCeramicSecondary: 0,
 					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 3,
 					projectilesSecondary: 0,
 					speed: 0.425,
 					range: 40,
@@ -2282,7 +2280,7 @@ export default function DartMonkey() {
 					damageCeramicSecondary: 0,
 					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 3,
 					projectilesSecondary: 0,
 					speed: 0.425,
 					range: 40,
@@ -2402,7 +2400,7 @@ export default function DartMonkey() {
 					damageCeramicSecondary: 0,
 					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 3,
 					projectilesSecondary: 0,
 					speed: 0.425,
 					range: 48,
@@ -2464,7 +2462,7 @@ export default function DartMonkey() {
 					damageCeramicSecondary: 0,
 					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 3,
 					projectilesSecondary: 0,
 					speed: 0.425,
 					range: 48,
@@ -4320,74 +4318,6 @@ export default function DartMonkey() {
 						<div></div>
 						<div>
 							<h1 style={{ color: colors["b-"] }}>B-</h1>
-						</div>
-					</div>
-					<div className="tower-input">
-						<div className="tower-input-flex">
-							<h2>Top Path</h2>
-							<div>
-								<button onClick={() => (p1 <= 0 ? setP1(0) : setP1(p1 - 1))}>
-									<img src={Minus} alt="minus"></img>
-								</button>
-								<input
-									type="number"
-									min="0"
-									max="5"
-									value={p1}
-									onChange={(e) => setP1(e.target.value)}
-									disabled={p2 > 0 && p3 > 0 ? true : false}
-								></input>
-								<button
-									onClick={() => (p1 >= 5 ? setP1(5) : setP1(p1 + 1))}
-									disabled={(p2 > 0 && p3 > 0) || ((p2 || p3) > 2 && p1 === 2) ? true : false}
-								>
-									<img src={Plus} alt="plus"></img>
-								</button>
-							</div>
-						</div>
-						<div className="tower-input-flex">
-							<h2>Middle Path</h2>
-							<div>
-								<button onClick={() => (p2 <= 0 ? setP2(0) : setP2(p2 - 1))}>
-									<img src={Minus} alt="minus"></img>
-								</button>
-								<input
-									type="number"
-									min="0"
-									max="5"
-									value={p2}
-									onChange={(e) => setP2(e.target.value)}
-									disabled={p1 > 0 && p3 > 0 ? true : false}
-								></input>
-								<button
-									onClick={() => (p2 >= 5 ? setP2(5) : setP2(p2 + 1))}
-									disabled={(p1 > 0 && p3 > 0) || ((p1 || p3) > 2 && p2 === 2) ? true : false}
-								>
-									<img src={Plus} alt="plus"></img>
-								</button>
-							</div>
-						</div>
-						<div className="tower-input-flex">
-							<h2>Bottom Path</h2>
-							<div>
-								<button onClick={() => (p3 <= 0 ? setP3(0) : setP3(p3 - 1))}>
-									<img src={Minus} alt="minus"></img>
-								</button>
-								<input
-									type="number"
-									min="0"
-									max="5"
-									value={p3}
-									onChange={(e) => setP3(e.target.value)}
-									disabled={p1 > 0 && p2 > 0 ? true : false}
-								></input>
-								<button
-									onClick={() => (p3 >= 5 ? setP3(5) : setP3(p3 + 1))}
-									disabled={(p1 > 0 && p2 > 0) || ((p1 || p2) > 2 && p3 === 2) ? true : false}
-								>
-									<img src={Plus} alt="plus"></img>
-								</button>
-							</div>
 						</div>
 					</div>
 				</div>
