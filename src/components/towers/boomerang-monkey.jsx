@@ -3717,7 +3717,7 @@ export default function BoomerangMonkey() {
 					<table>
 						<thead>
 							<tr>
-								<th colSpan="3">Ability: {stats.abilityName}</th>
+								<th colSpan="3">{stats.abilityDamage ? "Ability: ": "Ability"}{stats.abilityName}</th>
 							</tr>
 							<tr>
 								<th data-tip="How many layers each projectile can pop" data-for="damage5">
