@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactTooltip from "react-tooltip";
-import M000 from "../../ninja-monkey/000-NInjaMonkey.png";
+import M000 from "../../ninja-monkey/000-NinjaMonkey.png";
 import M001 from "../../ninja-monkey/001-NinjaMonkey.png";
 import M002 from "../../ninja-monkey/002-NinjaMonkey.png";
 import M003 from "../../ninja-monkey/003-NinjaMonkey.png";
@@ -124,74 +124,74 @@ export default function NinjaMonkey() {
 	const [image, setImage] = useState("000");
 	useEffect(() => {
 		let costs = {
-			"buy-e": 275,
-			"buy-m": 325,
-			"buy-h": 350,
-			"buy-i": 390,
-			"p1-1-e": 170,
-			"p1-1-m": 200,
-			"p1-1-h": 215,
-			"p1-1-i": 240,
-			"p1-2-e": 240,
-			"p1-2-m": 280,
-			"p1-2-h": 300,
-			"p1-2-i": 335,
-			"p1-3-e": 1105,
-			"p1-3-m": 1300,
-			"p1-3-h": 1405,
-			"p1-3-i": 1560,
-			"p1-4-e": 2550,
-			"p1-4-m": 3000,
-			"p1-4-h": 3240,
-			"p1-4-i": 3600,
-			"p1-5-e": 27540,
-			"p1-5-m": 32400,
-			"p1-5-h": 34990,
-			"p1-5-i": 38880,
-			"p2-1-e": 150,
-			"p2-1-m": 175,
-			"p2-1-h": 190,
-			"p2-1-i": 210,
-			"p2-2-e": 210,
-			"p2-2-m": 250,
-			"p2-2-h": 270,
-			"p2-2-i": 300,
-			"p2-3-e": 1360,
-			"p2-3-m": 1600,
-			"p2-3-h": 1730,
-			"p2-3-i": 1920,
-			"p2-4-e": 3400,
-			"p2-4-m": 4000,
-			"p2-4-h": 4320,
-			"p2-4-i": 4800,
-			"p2-5-e": 29750,
-			"p2-5-m": 35000,
-			"p2-5-h": 37800,
-			"p2-5-i": 42000,
-			"p3-1-e": 85,
-			"p3-1-m": 100,
-			"p3-1-h": 110,
-			"p3-1-i": 120,
-			"p3-2-e": 255,
-			"p3-2-m": 300,
-			"p3-2-h": 325,
-			"p3-2-i": 360,
-			"p3-3-e": 1100,
-			"p3-3-m": 1300,
-			"p3-3-h": 1400,
-			"p3-3-i": 1560,
-			"p3-4-e": 1870,
-			"p3-4-m": 2200,
-			"p3-4-h": 2375,
-			"p3-4-i": 2640,
-			"p3-5-e": 51000,
-			"p3-5-m": 60000,
-			"p3-5-h": 64800,
-			"p3-5-i": 72000,
-			"par-e": 340000,
-			"par-m": 400000,
-			"par-h": 432000,
-			"par-i": 480000,
+			"buy-e": 425,
+			"buy-m": 500,
+			"buy-h": 540,
+			"buy-i": 600,
+			"p1-1-e": 255,
+			"p1-1-m": 300,
+			"p1-1-h": 325,
+			"p1-1-i": 360,
+			"p1-2-e": 295,
+			"p1-2-m": 350,
+			"p1-2-h": 380,
+			"p1-2-i": 420,
+			"p1-3-e": 720,
+			"p1-3-m": 850,
+			"p1-3-h": 920,
+			"p1-3-i": 1020,
+			"p1-4-e": 2335,
+			"p1-4-m": 2750,
+			"p1-4-h": 2970,
+			"p1-4-i": 3300,
+			"p1-5-e": 29750,
+			"p1-5-m": 35000,
+			"p1-5-h": 37800,
+			"p1-5-i": 42000,
+			"p2-1-e": 295,
+			"p2-1-m": 350,
+			"p2-1-h": 380,
+			"p2-1-i": 420,
+			"p2-2-e": 425,
+			"p2-2-m": 500,
+			"p2-2-h": 540,
+			"p2-2-i": 600,
+			"p2-3-e": 765,
+			"p2-3-m": 900,
+			"p2-3-h": 970,
+			"p2-3-i": 1080,
+			"p2-4-e": 4420,
+			"p2-4-m": 5200,
+			"p2-4-h": 5615,
+			"p2-4-i": 6240,
+			"p2-5-e": 18700,
+			"p2-5-m": 22000,
+			"p2-5-h": 23760,
+			"p2-5-i": 26400,
+			"p3-1-e": 210,
+			"p3-1-m": 250,
+			"p3-1-h": 270,
+			"p3-1-i": 300,
+			"p3-2-e": 340,
+			"p3-2-m": 400,
+			"p3-2-h": 430,
+			"p3-2-i": 480,
+			"p3-3-e": 2335,
+			"p3-3-m": 2750,
+			"p3-3-h": 2970,
+			"p3-3-i": 3300,
+			"p3-4-e": 3825,
+			"p3-4-m": 4500,
+			"p3-4-h": 4860,
+			"p3-4-i": 5400,
+			"p3-5-e": 34000,
+			"p3-5-m": 40000,
+			"p3-5-h": 43200,
+			"p3-5-i": 48000,
+			"par-e": 510000,
+			"par-m": 600000,
+			"par-h": 648000,
+			"par-i": 720000,
 		};
 		switch (String(p1) + String(p2) + String(p3)) {
 			case "000":
@@ -4196,7 +4196,7 @@ export default function NinjaMonkey() {
 								onClick={() => handleChange("par")}
 								id="par"
 								className={p1 === -1 ? "tower-active" : ""}
-								data-tip="Ascended Shadow<br>One Monkey MOAB demolition machine.<br>Cost: $510.000 / $600.000 / $648.000 / $720.000"
+								data-tip="Ascended Shadow<br>The complete assassin package for dealing with any Bloon threat.<br>Cost: $510.000 / $600.000 / $648.000 / $720.000"
 								data-for="par"
 							>
 								<ReactTooltip
@@ -4260,8 +4260,8 @@ export default function NinjaMonkey() {
 								id="p3-3"
 								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Kylie Boomerang<br>Throws heavy Kylie boomerangs that follow a straight path instead of curved.<br>Cost: $1.100 / $1.300 / $1.400 / $1.560"
-								data-for="kylie-boomerang"
+								data-tip="Flash Bomb<br>Throws a flash bomb that stuns multiple Bloons.<br>Cost: $2.335 / $2.750 / $2.970 / $3.300"
+								data-for="p3-3"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4269,9 +4269,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="kylie-boomerang"
+									id="p3-3"
 								/>
-								<img src={p33} alt="Kylie Boomerang"></img>
+								<img src={p33} alt="Flash Bomb"></img>
 							</button>
 						</div>
 						<div>
@@ -4280,8 +4280,8 @@ export default function NinjaMonkey() {
 								id="p3-4"
 								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Press<br>Heavy Kylie boomerangs hits MOAB-Class Bloons multiple times per throw and sometimes knocks them back a short way along the path.<br>Cost: $1.870 / $2.200 / $2.375 / $2.640"
-								data-for="moab-press"
+								data-tip="Sticky Bomb<br>Throws powerful timed charges at MOAB-Class Bloons.<br>Cost: $3.825 / $4.500 / $4.860 / $5.400"
+								data-for="p3-4"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4289,9 +4289,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="moab-press"
+									id="p3-4"
 								/>
-								<img src={p34} alt="MOAB Press"></img>
+								<img src={p34} alt="Sticky Bomb"></img>
 							</button>
 						</div>
 						<div>
@@ -4300,8 +4300,8 @@ export default function NinjaMonkey() {
 								id="p3-5"
 								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Domination<br>Special knockback kylies trigger more often and do lots of extra damage.<br>Cost: $51.000 / $60.000 / $64.800 / $72.000"
-								data-for="moab-domination"
+								data-tip="Master Bomber<br>One Monkey MOAB demolition machine.<br>Cost: $34.000 / $40.000 / $43.200 / $48.000"
+								data-for="p3-5"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4309,9 +4309,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="moab-domination"
+									id="p3-5"
 								/>
-								<img src={p35} alt="MOAB Domination"></img>
+								<img src={p35} alt="Master Bomber"></img>
 							</button>
 						</div>
 						<div></div>
