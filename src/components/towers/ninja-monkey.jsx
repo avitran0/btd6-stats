@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactTooltip from "react-tooltip";
-import M000 from "../../ninja-monkey/000-NinjaMonkey.png";
+import M000 from "../../ninja-monkey/000-NInjaMonkey.png";
 import M001 from "../../ninja-monkey/001-NinjaMonkey.png";
 import M002 from "../../ninja-monkey/002-NinjaMonkey.png";
 import M003 from "../../ninja-monkey/003-NinjaMonkey.png";
