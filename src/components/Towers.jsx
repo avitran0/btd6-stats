@@ -117,7 +117,7 @@ export default function Towers() {
 					</Link>
 				</div>
 				<div className="grid-container">
-					<Link to="/towers" id="ninja-monkey">
+					<Link to="/towers/ninja-monkey" id="ninja-monkey">
 						<img src={NinjaMonkey} alt="Ninja Monkey" />
 					</Link>
 				</div>

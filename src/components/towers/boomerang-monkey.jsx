@@ -1,40 +1,40 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactTooltip from "react-tooltip";
-import BoomerangMonkey000 from "../../boomerang-monkey/000-BoomerangMonkey.png";
-import BoomerangMonkey001 from "../../boomerang-monkey/001-BoomerangMonkey.png";
-import BoomerangMonkey002 from "../../boomerang-monkey/002-BoomerangMonkey.png";
-import BoomerangMonkey003 from "../../boomerang-monkey/003-BoomerangMonkey.png";
-import BoomerangMonkey004 from "../../boomerang-monkey/004-BoomerangMonkey.png";
-import BoomerangMonkey005 from "../../boomerang-monkey/005-BoomerangMonkey.png";
-import BoomerangMonkey010 from "../../boomerang-monkey/010-BoomerangMonkey.png";
-import BoomerangMonkey020 from "../../boomerang-monkey/020-BoomerangMonkey.png";
-import BoomerangMonkey030 from "../../boomerang-monkey/030-BoomerangMonkey.png";
-import BoomerangMonkey040 from "../../boomerang-monkey/040-BoomerangMonkey.png";
-import BoomerangMonkey050 from "../../boomerang-monkey/050-BoomerangMonkey.png";
-import BoomerangMonkey100 from "../../boomerang-monkey/100-BoomerangMonkey.png";
-import BoomerangMonkey200 from "../../boomerang-monkey/200-BoomerangMonkey.png";
-import BoomerangMonkey300 from "../../boomerang-monkey/300-BoomerangMonkey.png";
-import BoomerangMonkey400 from "../../boomerang-monkey/400-BoomerangMonkey.png";
-import BoomerangMonkey500 from "../../boomerang-monkey/500-BoomerangMonkey.png";
+import M000 from "../../boomerang-monkey/000-BoomerangMonkey.png";
+import M001 from "../../boomerang-monkey/001-BoomerangMonkey.png";
+import M002 from "../../boomerang-monkey/002-BoomerangMonkey.png";
+import M003 from "../../boomerang-monkey/003-BoomerangMonkey.png";
+import M004 from "../../boomerang-monkey/004-BoomerangMonkey.png";
+import M005 from "../../boomerang-monkey/005-BoomerangMonkey.png";
+import M010 from "../../boomerang-monkey/010-BoomerangMonkey.png";
+import M020 from "../../boomerang-monkey/020-BoomerangMonkey.png";
+import M030 from "../../boomerang-monkey/030-BoomerangMonkey.png";
+import M040 from "../../boomerang-monkey/040-BoomerangMonkey.png";
+import M050 from "../../boomerang-monkey/050-BoomerangMonkey.png";
+import M100 from "../../boomerang-monkey/100-BoomerangMonkey.png";
+import M200 from "../../boomerang-monkey/200-BoomerangMonkey.png";
+import M300 from "../../boomerang-monkey/300-BoomerangMonkey.png";
+import M400 from "../../boomerang-monkey/400-BoomerangMonkey.png";
+import M500 from "../../boomerang-monkey/500-BoomerangMonkey.png";
 import Paragon from "../../boomerang-monkey/GlaiveDominus.png";
 import Reset from "../../misc/CloseIcon.png";
-import ImprovedRangs from "../../boomerang-monkey/ImprovedRangsUpgradeIcon.png";
-import Glaives from "../../boomerang-monkey/GlaivesUpgradeIcon.png";
-import GlaiveRicochet from "../../boomerang-monkey/GlaiveRicochetUpgradeIcon.png";
-import MOARGlaives from "../../boomerang-monkey/MoarGlaivesUpgradeIcon.png";
-import GlaiveLord from "../../boomerang-monkey/GlaiveLordUpgradeIcon.png";
-import FasterThrowing from "../../boomerang-monkey/FasterThrowingUpgradeIcon.png";
-import FasterRangs from "../../boomerang-monkey/FasterRangsUpgradeIcon.png";
-import BionicBoomerang from "../../boomerang-monkey/BionicBoomerangUpgradeIcon.png";
-import TurboCharge from "../../boomerang-monkey/TurbochargeUpgradeIcon.png";
-import PermaCharge from "../../boomerang-monkey/PermaChargeUpgradeIcon.png";
-import LongRangeRangs from "../../boomerang-monkey/LongRangeRangsUpgradeIcon.png";
-import RedHotRangs from "../../boomerang-monkey/RedHotRangsUpgradeIcon.png";
-import KylieBoomerang from "../../boomerang-monkey/KylieBoomerangUpgradeIcon.png";
-import MOABPress from "../../boomerang-monkey/MoabPressUpgradeIcon.png";
-import MOABDomination from "../../boomerang-monkey/MoabDominationUpgradeIcon.png";
-import GlaiveDominus from "../../boomerang-monkey/GlaiveDominusUpgradeIcon.png";
+import p11 from "../../boomerang-monkey/ImprovedRangsUpgradeIcon.png";
+import p12 from "../../boomerang-monkey/GlaivesUpgradeIcon.png";
+import p13 from "../../boomerang-monkey/GlaiveRicochetUpgradeIcon.png";
+import p14 from "../../boomerang-monkey/MoarGlaivesUpgradeIcon.png";
+import p15 from "../../boomerang-monkey/GlaiveLordUpgradeIcon.png";
+import p21 from "../../boomerang-monkey/FasterThrowingUpgradeIcon.png";
+import p22 from "../../boomerang-monkey/FasterRangsUpgradeIcon.png";
+import p23 from "../../boomerang-monkey/BionicBoomerangUpgradeIcon.png";
+import p24 from "../../boomerang-monkey/TurbochargeUpgradeIcon.png";
+import p25 from "../../boomerang-monkey/PermaChargeUpgradeIcon.png";
+import p31 from "../../boomerang-monkey/LongRangeRangsUpgradeIcon.png";
+import p32 from "../../boomerang-monkey/RedHotRangsUpgradeIcon.png";
+import p33 from "../../boomerang-monkey/KylieBoomerangUpgradeIcon.png";
+import p34 from "../../boomerang-monkey/MoabPressUpgradeIcon.png";
+import p35 from "../../boomerang-monkey/MoabDominationUpgradeIcon.png";
+import par from "../../boomerang-monkey/GlaiveDominusUpgradeIcon.png";
 import Red from "../../bloons/Red.png";
 import Ceramic from "../../bloons/Ceramic.png";
 import MOAB from "../../bloons/MOAB.png";
@@ -50,26 +50,26 @@ import Black from "../../bloons/Black.png";
 import White from "../../bloons/White.png";
 import Purple from "../../bloons/Purple.png";
 import Lead from "../../bloons/Lead.png";
-import Zebra from "../../bloons/Zebra.png";
+import Frozen from "../../bloons/WhiteIce.png";
 
 export default function BoomerangMonkey() {
 	let images = {
-		"000": BoomerangMonkey000,
-		"001": BoomerangMonkey001,
-		"002": BoomerangMonkey002,
-		"003": BoomerangMonkey003,
-		"004": BoomerangMonkey004,
-		"005": BoomerangMonkey005,
-		"010": BoomerangMonkey010,
-		"020": BoomerangMonkey020,
-		"030": BoomerangMonkey030,
-		"040": BoomerangMonkey040,
-		"050": BoomerangMonkey050,
-		100: BoomerangMonkey100,
-		200: BoomerangMonkey200,
-		300: BoomerangMonkey300,
-		400: BoomerangMonkey400,
-		500: BoomerangMonkey500,
+		"000": M000,
+		"001": M001,
+		"002": M002,
+		"003": M003,
+		"004": M004,
+		"005": M005,
+		"010": M010,
+		"020": M020,
+		"030": M030,
+		"040": M040,
+		"050": M050,
+		100: M100,
+		200: M200,
+		300: M300,
+		400: M400,
+		500: M500,
 		par: Paragon,
 	};
 	let colors = {
@@ -114,7 +114,7 @@ export default function BoomerangMonkey() {
 			white: true,
 			purple: true,
 			lead: false,
-			zebra: true,
+			frozen: true,
 			costEasy: 275,
 			costMedium: 325,
 			costHard: 350,
@@ -220,7 +220,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"],
 					costMedium: costs["buy-m"],
 					costHard: costs["buy-h"],
@@ -254,7 +254,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"],
@@ -288,7 +288,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"],
@@ -322,7 +322,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"],
@@ -356,7 +356,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p1-4-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p1-4-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p1-4-h"],
@@ -391,7 +391,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -449,7 +449,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"],
@@ -483,7 +483,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"],
@@ -517,7 +517,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
@@ -551,7 +551,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p2-4-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p2-4-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p2-4-h"],
@@ -586,7 +586,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -644,7 +644,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p3-1-h"],
@@ -678,7 +678,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"],
 					costHard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"],
@@ -712,7 +712,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
 					costHard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"],
@@ -746,7 +746,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"] + costs["p3-4-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"] + costs["p3-4-m"],
 					costHard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"] + costs["p3-4-h"],
@@ -781,7 +781,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p3-1-e"] +
@@ -838,7 +838,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"],
@@ -872,7 +872,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p2-1-h"],
@@ -906,7 +906,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p2-1-h"],
@@ -941,7 +941,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -999,7 +999,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1061,7 +1061,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"] + costs["p2-2-h"],
@@ -1095,7 +1095,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"] + costs["p2-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p2-1-h"] + costs["p2-2-h"],
@@ -1130,7 +1130,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1188,7 +1188,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1250,7 +1250,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1316,7 +1316,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"],
@@ -1350,7 +1350,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p3-1-h"],
@@ -1384,7 +1384,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p3-1-h"],
@@ -1419,7 +1419,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1477,7 +1477,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1539,7 +1539,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"] + costs["p3-2-h"],
@@ -1573,7 +1573,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p3-1-h"] + costs["p3-2-h"],
@@ -1608,7 +1608,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1666,7 +1666,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1728,7 +1728,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1794,7 +1794,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
@@ -1829,7 +1829,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1887,7 +1887,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1949,7 +1949,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2007,7 +2007,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2069,7 +2069,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2135,7 +2135,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"],
@@ -2169,7 +2169,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p3-1-h"],
@@ -2203,7 +2203,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p3-1-h"],
@@ -2238,7 +2238,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2296,7 +2296,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2358,7 +2358,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2416,7 +2416,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2478,7 +2478,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2544,7 +2544,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"],
@@ -2579,7 +2579,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2637,7 +2637,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2699,7 +2699,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2757,7 +2757,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2819,7 +2819,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2885,7 +2885,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"] + costs["p3-2-h"],
@@ -2919,7 +2919,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"],
@@ -2954,7 +2954,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -3012,7 +3012,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -3074,7 +3074,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p3-1-h"] + costs["p3-2-h"],
@@ -3109,7 +3109,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -3167,7 +3167,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -3229,7 +3229,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -3295,7 +3295,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: true,
-					zebra: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] * 3 +
 						costs["p1-1-e"] +
@@ -3396,7 +3396,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					zebra: true,
+					frozen: true,
 					costEasy: 275,
 					costMedium: 325,
 					costHard: 350,
@@ -3855,7 +3855,7 @@ export default function BoomerangMonkey() {
 									<img src={Camo} alt="Camo"></img>&nbsp;
 									<img src={stats.camo ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
-								<td data-tip="Can damage purple bloons?" data-for="purple">
+								<td data-tip="Can damage Purple Bloons?" data-for="purple">
 									<ReactTooltip
 										effect="solid"
 										textColor="#eceff4"
@@ -3907,17 +3907,17 @@ export default function BoomerangMonkey() {
 									<img src={White} alt="White"></img>&nbsp;
 									<img src={stats.white ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
-								<td data-tip="Can damage Zebra Bloons?" data-for="zebra">
+								<td data-tip="Can damage Frozen Bloons?" data-for="frozen">
 									<ReactTooltip
 										effect="solid"
 										textColor="#eceff4"
 										backgroundColor="#4c566aff"
 										arrowColor="transparent"
 										multiline={true}
-										id="zebra"
+										id="frozen"
 									/>
-									<img src={Zebra} alt="Zebra"></img>&nbsp;
-									<img src={stats.zebra ? Yes : No} alt="Yes" className="yesno"></img>
+									<img src={Frozen} alt="frozen"></img>&nbsp;
+									<img src={stats.frozen ? Yes : No} alt="Yes" className="yesno"></img>
 								</td>
 							</tr>
 						</tbody>
@@ -3965,7 +3965,7 @@ export default function BoomerangMonkey() {
 				</div>
 				<div className="image-container">
 					<div className="image-container-inner">
-						<img src={images[image]} alt="Dart Monkey 000" className="tower-img" id="tower-img"></img>
+						<img src={images[image]} alt="Boomerang Monkey" className="tower-img"></img>
 					</div>
 					<div className="tower-grid">
 						<div></div>
@@ -3976,7 +3976,7 @@ export default function BoomerangMonkey() {
 								className={p1 === 1 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Improved Rangs<br>Gains +4 pierce, equivalent to 8 pierce for most upgrades.<br>Cost: $170 / $200 / $215 / $240"
-								data-for="improved-rangs"
+								data-for="p1-1"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -3984,9 +3984,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="improved-rangs"
+									id="p1-1"
 								/>
-								<img src={ImprovedRangs} alt="Improved Rangs"></img>
+								<img src={p11} alt="Improved Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -3996,7 +3996,7 @@ export default function BoomerangMonkey() {
 								className={p1 === 2 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Glaives<br>Gains +5 pierce on top of the previous upgrade, equivalent to 13 pierce for most upgrades.<br>Cost: $240 / $280 / $300 / $335"
-								data-for="glaives"
+								data-for="p1-2"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4004,9 +4004,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="glaives"
+									id="p1-2"
 								/>
-								<img src={Glaives} alt="Glaives"></img>
+								<img src={p12} alt="Glaives"></img>
 							</button>
 						</div>
 						<div>
@@ -4016,7 +4016,7 @@ export default function BoomerangMonkey() {
 								className={p1 === 3 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Glaive Ricochet<br>Glaives automatically bounce towards each bloon with sharp turning.<br>Pops up to 50 bloons per glaive.<br>Cost: $1.105 / $1.300 / $1.405 / $1.560"
-								data-for="glaive-ricochet"
+								data-for="p1-3"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4024,9 +4024,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="glaive-ricochet"
+									id="p1-3"
 								/>
-								<img src={GlaiveRicochet} alt="Glaive Ricochet"></img>
+								<img src={p13} alt="Glaive Ricochet"></img>
 							</button>
 						</div>
 						<div>
@@ -4036,7 +4036,7 @@ export default function BoomerangMonkey() {
 								className={p1 === 4 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="M.O.A.R Glaives<br>Pierce increased from 50 to 100, attack speed is doubled, and glaive bounce distance is increased.<br>Cost: $2.550 / $3.000 / $3.240 / $3.600"
-								data-for="moar-glaives"
+								data-for="p1-4"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4044,9 +4044,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="moar-glaives"
+									id="p1-4"
 								/>
-								<img src={MOARGlaives} alt="M.O.A.R Glaives"></img>
+								<img src={p14} alt="M.O.A.R Glaives"></img>
 							</button>
 						</div>
 						<div>
@@ -4056,7 +4056,7 @@ export default function BoomerangMonkey() {
 								className={p1 === 5 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Glaive Lord<br>Glaive Lord surrounds itself in 3 special glaives that shred anything that comes near.<br>Glaive Lord's glaives now rip through MOAB-class Bloons, slowly tearing them apart from the inside.<br>Cost: $27.540 / $32.400 / $34.990 / $38.880"
-								data-for="glaive-lord"
+								data-for="p1-5"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4064,14 +4064,14 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="glaive-lord"
+									id="p1-5"
 								/>
-								<img src={GlaiveLord} alt="Glaive Lord"></img>
+								<img src={p15} alt="Glaive Lord"></img>
 							</button>
 						</div>
 						<div></div>
 						<div>
-							<h1 style={{ color: colors["b"] }}>B</h1>
+							<h1 style={{ color: colors["b-"] }}>B-</h1>
 						</div>
 						<div>
 							<button
@@ -4098,7 +4098,7 @@ export default function BoomerangMonkey() {
 								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Faster Throwing<br>Throws boomerangs faster.<br>Cost: $150 / $175 / $190 / $210"
-								data-for="faster-throwing"
+								data-for="p2-1"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4106,9 +4106,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="faster-throwing"
+									id="p2-1"
 								/>
-								<img src={FasterThrowing} alt="Faster Throwing"></img>
+								<img src={p21} alt="Faster Throwing"></img>
 							</button>
 						</div>
 						<div>
@@ -4118,7 +4118,7 @@ export default function BoomerangMonkey() {
 								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
 								data-tip="Faster Rangs<br>Boomerangs fire and travel faster.<br>Cost: $210 / $250 / $270 / $300"
-								data-for="faster-rangs"
+								data-for="p2-2"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4126,9 +4126,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="faster-rangs"
+									id="p2-2"
 								/>
-								<img src={FasterRangs} alt="Faster Rangs"></img>
+								<img src={p22} alt="Faster Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -4138,7 +4138,7 @@ export default function BoomerangMonkey() {
 								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Bionic Boomerang<br>Replaces arm with a strong bionic arm that can throw boomerangs extremely fast and does extra damage to MOAB-class bloons.<br>Cost: $1.360 / $1.600 / $1.730 / $1.920"
-								data-for="bionic-boomerang"
+								data-for="p2-3"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4146,9 +4146,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="bionic-boomerang"
+									id="p2-3"
 								/>
-								<img src={BionicBoomerang} alt="Bionic Boomerang"></img>
+								<img src={p23} alt="Bionic Boomerang"></img>
 							</button>
 						</div>
 						<div>
@@ -4158,7 +4158,7 @@ export default function BoomerangMonkey() {
 								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Turbo Charge<br>Turbo Charge ability: Makes this Monkey attack incredibly fast for 10 seconds.<br>Cost: $3.400 / $4.000 / $4.320 / $4.800"
-								data-for="turbo-charge"
+								data-for="p2-4"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4166,9 +4166,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="turbo-charge"
+									id="p2-4"
 								/>
-								<img src={TurboCharge} alt="Turbo Charge"></img>
+								<img src={p24} alt="Turbo Charge"></img>
 							</button>
 						</div>
 						<div>
@@ -4178,7 +4178,7 @@ export default function BoomerangMonkey() {
 								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
 								data-tip="Perma Charge<br>Perma Charge has a permanent super fast attack speed.<br>Ability increases the lethality even more.<br>Cost: $29.750 / $35.000 / $37.800 / $42.000"
-								data-for="perma-charge"
+								data-for="p2-5"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4186,9 +4186,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="perma-charge"
+									id="p2-5"
 								/>
-								<img src={PermaCharge} alt="Perma Charge"></img>
+								<img src={p25} alt="Perma Charge"></img>
 							</button>
 						</div>
 						<div>
@@ -4197,7 +4197,7 @@ export default function BoomerangMonkey() {
 								id="par"
 								className={p1 === -1 ? "tower-active" : ""}
 								data-tip="Glaive Dominus<br>The Bloons will look upon my Glaives, and they will know fear.<br>Cost: $340.000 / $400.000 / $432.000 / $480.000"
-								data-for="glaive-dominus"
+								data-for="par"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4205,9 +4205,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="glaive-dominus"
+									id="par"
 								/>
-								<img src={GlaiveDominus} alt="Glaive Dominus"></img>
+								<img src={par} alt="Glaive Dominus"></img>
 							</button>
 						</div>
 						<div>
@@ -4221,7 +4221,7 @@ export default function BoomerangMonkey() {
 								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
 								data-tip="Long Range Rangs<br>Can throw boomerangs further than normal.<br>Cost: $85 / $100 / $110 / $120"
-								data-for="long-range-rangs"
+								data-for="p3-1"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4229,9 +4229,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="long-range-rangs"
+									id="p3-1"
 								/>
-								<img src={LongRangeRangs} alt="Long Range Rangs"></img>
+								<img src={p31} alt="Long Range Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -4241,7 +4241,7 @@ export default function BoomerangMonkey() {
 								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
 								data-tip="Red Hot Rangs<br>Allows boomerangs to pop Frozen and Lead Bloons and do more damage to all.<br>Cost: $255 / $300 / $325 / $360"
-								data-for="red-hot-rangs"
+								data-for="p3-2"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4249,9 +4249,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="red-hot-rangs"
+									id="p3-2"
 								/>
-								<img src={RedHotRangs} alt="Red Hot Rangs"></img>
+								<img src={p32} alt="Red Hot Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -4261,7 +4261,7 @@ export default function BoomerangMonkey() {
 								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
 								data-tip="Kylie Boomerang<br>Throws heavy Kylie boomerangs that follow a straight path instead of curved.<br>Cost: $1.100 / $1.300 / $1.400 / $1.560"
-								data-for="kylie-boomerang"
+								data-for="p3-3"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4269,9 +4269,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="kylie-boomerang"
+									id="p3-3"
 								/>
-								<img src={KylieBoomerang} alt="Kylie Boomerang"></img>
+								<img src={p33} alt="Kylie Boomerang"></img>
 							</button>
 						</div>
 						<div>
@@ -4281,7 +4281,7 @@ export default function BoomerangMonkey() {
 								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
 								data-tip="MOAB Press<br>Heavy Kylie boomerangs hits MOAB-Class Bloons multiple times per throw and sometimes knocks them back a short way along the path.<br>Cost: $1.870 / $2.200 / $2.375 / $2.640"
-								data-for="moab-press"
+								data-for="p3-4"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4289,9 +4289,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="moab-press"
+									id="p3-4"
 								/>
-								<img src={MOABPress} alt="MOAB Press"></img>
+								<img src={p34} alt="MOAB Press"></img>
 							</button>
 						</div>
 						<div>
@@ -4301,7 +4301,7 @@ export default function BoomerangMonkey() {
 								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
 								data-tip="MOAB Domination<br>Special knockback kylies trigger more often and do lots of extra damage.<br>Cost: $51.000 / $60.000 / $64.800 / $72.000"
-								data-for="moab-domination"
+								data-for="p3-5"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4309,9 +4309,9 @@ export default function BoomerangMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="moab-domination"
+									id="p3-5"
 								/>
-								<img src={MOABDomination} alt="MOAB Domination"></img>
+								<img src={p35} alt="MOAB Domination"></img>
 							</button>
 						</div>
 						<div></div>

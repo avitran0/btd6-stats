@@ -1,40 +1,40 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactTooltip from "react-tooltip";
-import M000 from "../../dart-monkey/000-DartMonkey.png";
-import M001 from "../../dart-monkey/001-Dartmonkey.png";
-import M002 from "../../dart-monkey/002-Dartmonkey.png";
-import M003 from "../../dart-monkey/003-Dartmonkey.png";
-import M004 from "../../dart-monkey/004-Dartmonkey.png";
-import M005 from "../../dart-monkey/005-Dartmonkey.png";
-import M010 from "../../dart-monkey/010-Dartmonkey.png";
-import M020 from "../../dart-monkey/020-Dartmonkey.png";
-import M030 from "../../dart-monkey/030-Dartmonkey.png";
-import M040 from "../../dart-monkey/040-Dartmonkey.png";
-import M050 from "../../dart-monkey/050-Dartmonkey.png";
-import M100 from "../../dart-monkey/100-Dartmonkey.png";
-import M200 from "../../dart-monkey/200-Dartmonkey.png";
-import M300 from "../../dart-monkey/300-Dartmonkey.png";
-import M400 from "../../dart-monkey/400-Dartmonkey.png";
-import M500 from "../../dart-monkey/500-Dartmonkey.png";
-import Paragon from "../../dart-monkey/ApexPlasmaMaster.png";
+import M000 from "../../ninja-monkey/000-NinjaMonkey.png";
+import M001 from "../../ninja-monkey/001-NinjaMonkey.png";
+import M002 from "../../ninja-monkey/002-NinjaMonkey.png";
+import M003 from "../../ninja-monkey/003-NinjaMonkey.png";
+import M004 from "../../ninja-monkey/004-NinjaMonkey.png";
+import M005 from "../../ninja-monkey/005-NinjaMonkey.png";
+import M010 from "../../ninja-monkey/010-NinjaMonkey.png";
+import M020 from "../../ninja-monkey/020-NinjaMonkey.png";
+import M030 from "../../ninja-monkey/030-NinjaMonkey.png";
+import M040 from "../../ninja-monkey/040-NinjaMonkey.png";
+import M050 from "../../ninja-monkey/050-NinjaMonkey.png";
+import M100 from "../../ninja-monkey/100-NinjaMonkey.png";
+import M200 from "../../ninja-monkey/200-NinjaMonkey.png";
+import M300 from "../../ninja-monkey/300-NinjaMonkey.png";
+import M400 from "../../ninja-monkey/400-NinjaMonkey.png";
+import M500 from "../../ninja-monkey/500-NinjaMonkey.png";
+import Paragon from "../../ninja-monkey/AscendedShadow.png";
 import Reset from "../../misc/CloseIcon.png";
-import p11 from "../../dart-monkey/SharpShotsUpgradeIcon.png";
-import p12 from "../../dart-monkey/RazorSharpShotsUpgradeIcon.png";
-import p13 from "../../dart-monkey/Spike-o-pultUpgradeIcon.png";
-import p14 from "../../dart-monkey/JuggernautUpgradeIcon.png";
-import p15 from "../../dart-monkey/UltraJuggernautUpgradeIcon.png";
-import p21 from "../../dart-monkey/QuickShotsUpgradeIcon.png";
-import p22 from "../../dart-monkey/VeryQuickShotsUpgradeIcon.png";
-import p23 from "../../dart-monkey/TripleShotUpgradeIcon.png";
-import p24 from "../../dart-monkey/SuperMonkeyFanClubUpgradeIcon.png";
-import p25 from "../../dart-monkey/PlasmaMonkeyFanClubUpgradeIcon.png";
-import p31 from "../../dart-monkey/LongRangeDartsUpgradeIcon.png";
-import p32 from "../../dart-monkey/EnhancedEyesightUpgradeIcon.png";
-import p33 from "../../dart-monkey/CrossBowUpgradeIcon.png";
-import p34 from "../../dart-monkey/SharpShooterUpgradeIcon.png";
-import p35 from "../../dart-monkey/CrossBowMasterUpgradeIcon.png";
-import par from "../../dart-monkey/ApexPlasmaMasterUpgradeIcon.png";
+import p11 from "../../ninja-monkey/NinjaDisciplineUpgradeIcon.png";
+import p12 from "../../ninja-monkey/SharpShurikensUpgradeIcon.png";
+import p13 from "../../ninja-monkey/DoubleShotUpgradeIcon.png";
+import p14 from "../../ninja-monkey/BloonjitsuUpgradeIcon.png";
+import p15 from "../../ninja-monkey/GrandmasterNinjaUpgradeIcon.png";
+import p21 from "../../ninja-monkey/DistractionUpgradeIcon.png";
+import p22 from "../../ninja-monkey/CounterEspionageUpgradeIcon.png";
+import p23 from "../../ninja-monkey/ShinobiTacticsUpgradeIcon.png";
+import p24 from "../../ninja-monkey/BloonSabotageUpgradeIcon.png";
+import p25 from "../../ninja-monkey/GrandSaboteurUpgradeIcon.png";
+import p31 from "../../ninja-monkey/SeekingShurikenUpgradeIcon.png";
+import p32 from "../../ninja-monkey/CaltropsUpgradeIcon.png";
+import p33 from "../../ninja-monkey/FlashBombUpgradeIcon.png";
+import p34 from "../../ninja-monkey/StickyBombUpgradeIcon.png";
+import p35 from "../../ninja-monkey/MasterBomberUpgradeIcon.png";
+import par from "../../ninja-monkey/AscendedShadowUpgradeIcon.png";
 import Red from "../../bloons/Red.png";
 import Ceramic from "../../bloons/Ceramic.png";
 import MOAB from "../../bloons/MOAB.png";
@@ -52,7 +52,7 @@ import Purple from "../../bloons/Purple.png";
 import Lead from "../../bloons/Lead.png";
 import Frozen from "../../bloons/WhiteIce.png";
 
-export default function DartMonkey() {
+export default function NinjaMonkey() {
 	let images = {
 		"000": M000,
 		"001": M001,
@@ -96,12 +96,12 @@ export default function DartMonkey() {
 			damageSecondary: 0,
 			damageMOABSecondary: 0,
 			damageCeramicSecondary: 0,
-			pierce: 2,
+			pierce: 4,
 			pierceSecondary: 0,
 			projectiles: 1,
 			projectilesSecondary: 0,
-			speed: 0.95,
-			range: 32,
+			speed: 1.2,
+			range: 43,
 			abilityName: "",
 			abilityDuration: 0,
 			abilityCooldown: 0,
@@ -115,83 +115,83 @@ export default function DartMonkey() {
 			purple: true,
 			lead: false,
 			frozen: true,
-			costEasy: 170,
-			costMedium: 200,
-			costHard: 215,
-			costImpoppable: 240,
+			costEasy: 275,
+			costMedium: 325,
+			costHard: 350,
+			costImpoppable: 390,
 		},
 	]);
 	const [image, setImage] = useState("000");
 	useEffect(() => {
 		let costs = {
-			"buy-e": 170,
-			"buy-m": 200,
-			"buy-h": 215,
-			"buy-i": 240,
-			"p1-1-e": 120,
-			"p1-1-m": 140,
-			"p1-1-h": 150,
-			"p1-1-i": 170,
-			"p1-2-e": 185,
-			"p1-2-m": 220,
-			"p1-2-h": 235,
-			"p1-2-i": 265,
-			"p1-3-e": 255,
-			"p1-3-m": 300,
-			"p1-3-h": 325,
-			"p1-3-i": 360,
-			"p1-4-e": 1530,
-			"p1-4-m": 1800,
-			"p1-4-h": 1945,
-			"p1-4-i": 2160,
-			"p1-5-e": 12750,
-			"p1-5-m": 15000,
-			"p1-5-h": 16200,
-			"p1-5-i": 18000,
-			"p2-1-e": 85,
-			"p2-1-m": 100,
-			"p2-1-h": 110,
-			"p2-1-i": 120,
-			"p2-2-e": 160,
-			"p2-2-m": 190,
-			"p2-2-h": 205,
-			"p2-2-i": 230,
-			"p2-3-e": 340,
-			"p2-3-m": 400,
-			"p2-3-h": 430,
-			"p2-3-i": 480,
-			"p2-4-e": 6800,
-			"p2-4-m": 8000,
-			"p2-4-h": 8640,
-			"p2-4-i": 9600,
-			"p2-5-e": 38250,
-			"p2-5-m": 45000,
-			"p2-5-h": 48600,
-			"p2-5-i": 54000,
-			"p3-1-e": 75,
-			"p3-1-m": 90,
-			"p3-1-h": 95,
-			"p3-1-i": 110,
-			"p3-2-e": 170,
-			"p3-2-m": 200,
-			"p3-2-h": 215,
-			"p3-2-i": 240,
-			"p3-3-e": 530,
-			"p3-3-m": 625,
-			"p3-3-h": 675,
-			"p3-3-i": 750,
-			"p3-4-e": 1700,
-			"p3-4-m": 2000,
-			"p3-4-h": 2160,
-			"p3-4-i": 2400,
-			"p3-5-e": 21250,
-			"p3-5-m": 25000,
-			"p3-5-h": 27000,
-			"p3-5-i": 30000,
-			"par-e": 297500,
-			"par-m": 350000,
-			"par-h": 378000,
-			"par-i": 420000,
+			"buy-e": 275,
+			"buy-m": 325,
+			"buy-h": 350,
+			"buy-i": 390,
+			"p1-1-e": 170,
+			"p1-1-m": 200,
+			"p1-1-h": 215,
+			"p1-1-i": 240,
+			"p1-2-e": 240,
+			"p1-2-m": 280,
+			"p1-2-h": 300,
+			"p1-2-i": 335,
+			"p1-3-e": 1105,
+			"p1-3-m": 1300,
+			"p1-3-h": 1405,
+			"p1-3-i": 1560,
+			"p1-4-e": 2550,
+			"p1-4-m": 3000,
+			"p1-4-h": 3240,
+			"p1-4-i": 3600,
+			"p1-5-e": 27540,
+			"p1-5-m": 32400,
+			"p1-5-h": 34990,
+			"p1-5-i": 38880,
+			"p2-1-e": 150,
+			"p2-1-m": 175,
+			"p2-1-h": 190,
+			"p2-1-i": 210,
+			"p2-2-e": 210,
+			"p2-2-m": 250,
+			"p2-2-h": 270,
+			"p2-2-i": 300,
+			"p2-3-e": 1360,
+			"p2-3-m": 1600,
+			"p2-3-h": 1730,
+			"p2-3-i": 1920,
+			"p2-4-e": 3400,
+			"p2-4-m": 4000,
+			"p2-4-h": 4320,
+			"p2-4-i": 4800,
+			"p2-5-e": 29750,
+			"p2-5-m": 35000,
+			"p2-5-h": 37800,
+			"p2-5-i": 42000,
+			"p3-1-e": 85,
+			"p3-1-m": 100,
+			"p3-1-h": 110,
+			"p3-1-i": 120,
+			"p3-2-e": 255,
+			"p3-2-m": 300,
+			"p3-2-h": 325,
+			"p3-2-i": 360,
+			"p3-3-e": 1100,
+			"p3-3-m": 1300,
+			"p3-3-h": 1400,
+			"p3-3-i": 1560,
+			"p3-4-e": 1870,
+			"p3-4-m": 2200,
+			"p3-4-h": 2375,
+			"p3-4-i": 2640,
+			"p3-5-e": 51000,
+			"p3-5-m": 60000,
+			"p3-5-h": 64800,
+			"p3-5-i": 72000,
+			"par-e": 340000,
+			"par-m": 400000,
+			"par-h": 432000,
+			"par-i": 480000,
 		};
 		switch (String(p1) + String(p2) + String(p3)) {
 			case "000":
@@ -202,12 +202,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 32,
+					speed: 1.2,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -236,12 +236,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 8,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 32,
+					speed: 1.2,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -270,12 +270,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 5,
+					pierce: 13,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 32,
+					speed: 1.2,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -300,16 +300,16 @@ export default function DartMonkey() {
 				setStats({
 					damage: 1,
 					damageMOAB: 1,
-					damageCeramic: 2,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 22,
+					pierce: 50,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.15,
-					range: 32,
+					speed: 1.2,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -332,18 +332,18 @@ export default function DartMonkey() {
 				break;
 			case "400":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 4,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 100,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.0,
-					range: 36.8,
+					speed: 0.6,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -355,7 +355,7 @@ export default function DartMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p1-4-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p1-4-m"],
@@ -367,18 +367,18 @@ export default function DartMonkey() {
 				break;
 			case "500":
 				setStats({
-					damage: 4,
-					damageMOAB: 4,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 3,
-					pierce: 200,
-					pierceSecondary: 100,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 100,
+					damageMOABSecondary: 100,
+					damageCeramicSecondary: 100,
+					pierce: 100,
+					pierceSecondary: 1000,
 					projectiles: 1,
-					projectilesSecondary: 6,
-					speed: 1.0,
-					range: 36.8,
+					projectilesSecondary: 1,
+					speed: 0.6,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -386,11 +386,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: false,
+					camo: true,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -431,12 +431,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.8075,
-					range: 32,
+					speed: 0.9,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -465,12 +465,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.63,
-					range: 32,
+					speed: 0.675,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -494,17 +494,17 @@ export default function DartMonkey() {
 			case "030":
 				setStats({
 					damage: 1,
-					damageMOAB: 1,
+					damageMOAB: 2,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.61,
-					range: 32,
+					speed: 0.24,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -528,24 +528,24 @@ export default function DartMonkey() {
 			case "040":
 				setStats({
 					damage: 1,
-					damageMOAB: 1,
+					damageMOAB: 2,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.425,
-					range: 32,
-					abilityName: "Super Monkey Fan Club",
-					abilityDuration: 20,
-					abilityCooldown: 50,
-					abilityDamage: 1,
-					abilityPierce: 2,
-					abilitySpeed: 0.06,
-					abilityRange: 40,
+					speed: 0.24,
+					range: 43,
+					abilityName: "Turbo Charge",
+					abilityDuration: 10,
+					abilityCooldown: 45,
+					abilityDamage: 2,
+					abilityPierce: 4,
+					abilitySpeed: 0.034,
+					abilityRange: 43,
 					camo: false,
 					black: true,
 					white: true,
@@ -562,25 +562,25 @@ export default function DartMonkey() {
 				break;
 			case "050":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 4,
+					damageMOAB: 5,
+					damageCeramic: 4,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.425,
-					range: 32,
-					abilityName: "Plasma Monkey Fan Club",
-					abilityDuration: 20,
-					abilityCooldown: 50,
-					abilityDamage: 2,
-					abilityPierce: 5,
-					abilitySpeed: 0.03,
-					abilityRange: 40,
+					speed: 0.034,
+					range: 43,
+					abilityName: "Turbo Charge",
+					abilityDuration: 15,
+					abilityCooldown: 45,
+					abilityDamage: 12,
+					abilityPierce: 4,
+					abilitySpeed: 0.034,
+					abilityRange: 43,
 					camo: false,
 					black: true,
 					white: true,
@@ -626,12 +626,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 40,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -654,18 +654,18 @@ export default function DartMonkey() {
 				break;
 			case "002":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 48,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -673,11 +673,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -688,18 +688,18 @@ export default function DartMonkey() {
 				break;
 			case "003":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 18,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 56,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -707,11 +707,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
@@ -722,18 +722,18 @@ export default function DartMonkey() {
 				break;
 			case "004":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 3,
-					pierceSecondary: 0,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 1,
+					damageMOABSecondary: 5,
+					damageCeramicSecondary: 1,
+					pierce: 18,
+					pierceSecondary: 200,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.75,
-					range: 56,
+					projectilesSecondary: 1,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -741,11 +741,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"] + costs["p3-4-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"] + costs["p3-4-m"],
@@ -757,18 +757,18 @@ export default function DartMonkey() {
 				break;
 			case "005":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 10,
-					pierceSecondary: 0,
+					damage: 12,
+					damageMOAB: 12,
+					damageCeramic: 12,
+					damageSecondary: 1,
+					damageMOABSecondary: 25,
+					damageCeramicSecondary: 1,
+					pierce: 18,
+					pierceSecondary: 300,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.16,
-					range: 76,
+					projectilesSecondary: 1,
+					speed: 0.6,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -776,7 +776,7 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
@@ -821,11 +821,11 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 4,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.8075,
-					range: 32,
+					speed: 0.9,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -854,12 +854,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 5,
+					pierce: 13,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.8075,
-					range: 32,
+					speed: 0.9,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -884,16 +884,16 @@ export default function DartMonkey() {
 				setStats({
 					damage: 1,
 					damageMOAB: 1,
-					damageCeramic: 2,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 22,
+					pierce: 50,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.9775,
-					range: 32,
+					speed: 0.85,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -917,18 +917,18 @@ export default function DartMonkey() {
 				break;
 			case "410":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 4,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 100,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.85,
-					range: 36.5,
+					speed: 0.426,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -940,7 +940,7 @@ export default function DartMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -975,18 +975,18 @@ export default function DartMonkey() {
 				break;
 			case "510":
 				setStats({
-					damage: 4,
-					damageMOAB: 4,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 3,
-					pierce: 200,
-					pierceSecondary: 100,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 100,
+					damageMOABSecondary: 100,
+					damageCeramicSecondary: 100,
+					pierce: 100,
+					pierceSecondary: 1000,
 					projectiles: 1,
-					projectilesSecondary: 6,
-					speed: 0.85,
-					range: 36.5,
+					projectilesSecondary: 1,
+					speed: 0.426,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -994,11 +994,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: false,
+					camo: true,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -1043,12 +1043,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 8,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.63,
-					range: 32,
+					speed: 0.675,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1077,12 +1077,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 5,
+					pierce: 13,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.63,
-					range: 32,
+					speed: 0.675,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1108,16 +1108,16 @@ export default function DartMonkey() {
 				setStats({
 					damage: 1,
 					damageMOAB: 1,
-					damageCeramic: 2,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 22,
+					pierce: 50,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.7666,
-					range: 32,
+					speed: 0.586,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1164,18 +1164,18 @@ export default function DartMonkey() {
 				break;
 			case "420":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 4,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 100,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.666,
-					range: 36.5,
+					speed: 0.32,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1187,7 +1187,7 @@ export default function DartMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -1226,18 +1226,18 @@ export default function DartMonkey() {
 				break;
 			case "520":
 				setStats({
-					damage: 4,
-					damageMOAB: 4,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 3,
-					pierce: 200,
-					pierceSecondary: 100,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 100,
+					damageMOABSecondary: 100,
+					damageCeramicSecondary: 100,
+					pierce: 100,
+					pierceSecondary: 1000,
 					projectiles: 1,
-					projectilesSecondary: 6,
-					speed: 0.666,
-					range: 36.5,
+					projectilesSecondary: 1,
+					speed: 0.32,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1245,11 +1245,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: false,
+					camo: true,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -1298,12 +1298,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 8,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 40,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1332,12 +1332,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 5,
+					pierce: 13,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 40,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1362,16 +1362,16 @@ export default function DartMonkey() {
 				setStats({
 					damage: 1,
 					damageMOAB: 1,
-					damageCeramic: 2,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 22,
+					pierce: 50,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.15,
-					range: 40,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1395,18 +1395,18 @@ export default function DartMonkey() {
 				break;
 			case "401":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 4,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 100,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.0,
-					range: 44.8,
+					speed: 0.6,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1418,7 +1418,7 @@ export default function DartMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -1453,18 +1453,18 @@ export default function DartMonkey() {
 				break;
 			case "501":
 				setStats({
-					damage: 4,
-					damageMOAB: 4,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 3,
-					pierce: 200,
-					pierceSecondary: 100,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 100,
+					damageMOABSecondary: 100,
+					damageCeramicSecondary: 100,
+					pierce: 100,
+					pierceSecondary: 1000,
 					projectiles: 1,
-					projectilesSecondary: 6,
-					speed: 1.0,
-					range: 44.8,
+					projectilesSecondary: 1,
+					speed: 0.6,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1472,11 +1472,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: false,
+					camo: true,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -1515,18 +1515,18 @@ export default function DartMonkey() {
 				break;
 			case "102":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 8,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 48,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1534,11 +1534,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -1549,18 +1549,18 @@ export default function DartMonkey() {
 				break;
 			case "202":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 5,
+					pierce: 13,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 48,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1568,11 +1568,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -1584,18 +1584,18 @@ export default function DartMonkey() {
 				break;
 			case "302":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
+					damage: 2,
+					damageMOAB: 2,
 					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 22,
+					pierce: 50,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.15,
-					range: 48,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1603,11 +1603,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -1644,16 +1644,16 @@ export default function DartMonkey() {
 				setStats({
 					damage: 2,
 					damageMOAB: 2,
-					damageCeramic: 4,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 100,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.0,
-					range: 52.8,
+					speed: 0.6,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1661,7 +1661,7 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
@@ -1704,18 +1704,18 @@ export default function DartMonkey() {
 				break;
 			case "502":
 				setStats({
-					damage: 4,
-					damageMOAB: 4,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 3,
-					pierce: 200,
-					pierceSecondary: 100,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 100,
+					damageMOABSecondary: 100,
+					damageCeramicSecondary: 100,
+					pierce: 100,
+					pierceSecondary: 1000,
 					projectiles: 1,
-					projectilesSecondary: 6,
-					speed: 1.0,
-					range: 52.8,
+					projectilesSecondary: 1,
+					speed: 0.6,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1771,17 +1771,17 @@ export default function DartMonkey() {
 			case "130":
 				setStats({
 					damage: 1,
-					damageMOAB: 1,
+					damageMOAB: 2,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 8,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.61,
-					range: 32,
+					speed: 0.24,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1806,24 +1806,24 @@ export default function DartMonkey() {
 			case "140":
 				setStats({
 					damage: 1,
-					damageMOAB: 1,
+					damageMOAB: 2,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 8,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.425,
-					range: 32,
-					abilityName: "Super Monkey Fan Club",
-					abilityDuration: 20,
-					abilityCooldown: 50,
-					abilityDamage: 1,
-					abilityPierce: 3,
-					abilitySpeed: 0.06,
-					abilityRange: 40,
+					speed: 0.24,
+					range: 43,
+					abilityName: "Turbo Charge",
+					abilityDuration: 10,
+					abilityCooldown: 45,
+					abilityDamage: 2,
+					abilityPierce: 8,
+					abilitySpeed: 0.034,
+					abilityRange: 43,
 					camo: false,
 					black: true,
 					white: true,
@@ -1863,25 +1863,25 @@ export default function DartMonkey() {
 				break;
 			case "150":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 4,
+					damageMOAB: 5,
+					damageCeramic: 4,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 8,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.425,
-					range: 32,
-					abilityName: "Plasma Monkey Fan Club",
-					abilityDuration: 20,
-					abilityCooldown: 50,
-					abilityDamage: 2,
-					abilityPierce: 6,
-					abilitySpeed: 0.03,
-					abilityRange: 40,
+					speed: 0.034,
+					range: 43,
+					abilityName: "Turbo Charge",
+					abilityDuration: 15,
+					abilityCooldown: 45,
+					abilityDamage: 12,
+					abilityPierce: 8,
+					abilitySpeed: 0.034,
+					abilityRange: 43,
 					camo: false,
 					black: true,
 					white: true,
@@ -1926,17 +1926,17 @@ export default function DartMonkey() {
 			case "230":
 				setStats({
 					damage: 1,
-					damageMOAB: 1,
+					damageMOAB: 2,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 5,
+					pierce: 13,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.61,
-					range: 32,
+					speed: 0.24,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1984,24 +1984,24 @@ export default function DartMonkey() {
 			case "240":
 				setStats({
 					damage: 1,
-					damageMOAB: 1,
+					damageMOAB: 2,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 5,
+					pierce: 13,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.425,
-					range: 32,
-					abilityName: "Super Monkey Fan Club",
-					abilityDuration: 20,
-					abilityCooldown: 50,
-					abilityDamage: 1,
-					abilityPierce: 5,
-					abilitySpeed: 0.06,
-					abilityRange: 40,
+					speed: 0.24,
+					range: 43,
+					abilityName: "Turbo Charge",
+					abilityDuration: 10,
+					abilityCooldown: 45,
+					abilityDamage: 2,
+					abilityPierce: 8,
+					abilitySpeed: 0.034,
+					abilityRange: 43,
 					camo: false,
 					black: true,
 					white: true,
@@ -2015,7 +2015,7 @@ export default function DartMonkey() {
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
 						costs["p2-3-e"] +
-						costs["p2-4-e"],
+						costs["p2-false4-e"],
 					costMedium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
@@ -2045,25 +2045,25 @@ export default function DartMonkey() {
 				break;
 			case "250":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 4,
+					damageMOAB: 5,
+					damageCeramic: 4,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 5,
+					pierce: 13,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.425,
-					range: 32,
-					abilityName: "Plasma Monkey Fan Club",
-					abilityDuration: 20,
-					abilityCooldown: 50,
-					abilityDamage: 2,
+					speed: 0.034,
+					range: 43,
+					abilityName: "Turbo Charge",
+					abilityDuration: 15,
+					abilityCooldown: 45,
+					abilityDamage: 12,
 					abilityPierce: 8,
-					abilitySpeed: 0.03,
-					abilityRange: 40,
+					abilitySpeed: 0.034,
+					abilityRange: 43,
 					camo: false,
 					black: true,
 					white: true,
@@ -2117,12 +2117,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.8075,
-					range: 40,
+					speed: 0.9,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2151,12 +2151,12 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.63,
-					range: 40,
+					speed: 0.675,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2180,17 +2180,17 @@ export default function DartMonkey() {
 			case "031":
 				setStats({
 					damage: 1,
-					damageMOAB: 1,
+					damageMOAB: 2,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.61,
-					range: 40,
+					speed: 0.24,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2215,24 +2215,24 @@ export default function DartMonkey() {
 			case "041":
 				setStats({
 					damage: 1,
-					damageMOAB: 1,
+					damageMOAB: 2,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.425,
-					range: 40,
-					abilityName: "Super Monkey Fan Club",
-					abilityDuration: 20,
-					abilityCooldown: 50,
-					abilityDamage: 1,
-					abilityPierce: 2,
-					abilitySpeed: 0.06,
-					abilityRange: 40,
+					speed: 0.24,
+					range: 49.5,
+					abilityName: "Turbo Charge",
+					abilityDuration: 10,
+					abilityCooldown: 45,
+					abilityDamage: 2,
+					abilityPierce: 4,
+					abilitySpeed: 0.034,
+					abilityRange: 43,
 					camo: false,
 					black: true,
 					white: true,
@@ -2272,25 +2272,25 @@ export default function DartMonkey() {
 				break;
 			case "051":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 4,
+					damageMOAB: 5,
+					damageCeramic: 4,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.425,
-					range: 40,
-					abilityName: "Plasma Monkey Fan Club",
-					abilityDuration: 20,
-					abilityCooldown: 50,
-					abilityDamage: 2,
-					abilityPierce: 5,
-					abilitySpeed: 0.03,
-					abilityRange: 40,
+					speed: 0.034,
+					range: 49.5,
+					abilityName: "Turbo Charge",
+					abilityDuration: 15,
+					abilityCooldown: 45,
+					abilityDamage: 12,
+					abilityPierce: 4,
+					abilitySpeed: 0.034,
+					abilityRange: 43,
 					camo: false,
 					black: true,
 					white: true,
@@ -2334,18 +2334,18 @@ export default function DartMonkey() {
 				break;
 			case "032":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 3,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.61,
-					range: 48,
+					speed: 0.24,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2353,11 +2353,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2392,30 +2392,30 @@ export default function DartMonkey() {
 				break;
 			case "042":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 3,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.425,
-					range: 48,
-					abilityName: "Super Monkey Fan Club",
-					abilityDuration: 20,
-					abilityCooldown: 50,
-					abilityDamage: 1,
-					abilityPierce: 2,
-					abilitySpeed: 0.06,
-					abilityRange: 48,
-					camo: true,
+					speed: 0.24,
+					range: 49.5,
+					abilityName: "Turbo Charge",
+					abilityDuration: 10,
+					abilityCooldown: 45,
+					abilityDamage: 3,
+					abilityPierce: 4,
+					abilitySpeed: 0.034,
+					abilityRange: 43,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2454,30 +2454,30 @@ export default function DartMonkey() {
 				break;
 			case "052":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 8,
+					damageMOAB: 9,
+					damageCeramic: 8,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
-					projectiles: 3,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.425,
-					range: 48,
-					abilityName: "Plasma Monkey Fan Club",
-					abilityDuration: 20,
-					abilityCooldown: 50,
-					abilityDamage: 2,
-					abilityPierce: 5,
-					abilitySpeed: 0.03,
-					abilityRange: 48,
-					camo: true,
+					speed: 0.034,
+					range: 49.5,
+					abilityName: "Turbo Charge",
+					abilityDuration: 15,
+					abilityCooldown: 45,
+					abilityDamage: 16,
+					abilityPierce: 4,
+					abilitySpeed: 0.034,
+					abilityRange: 43,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2520,18 +2520,18 @@ export default function DartMonkey() {
 				break;
 			case "103":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 22,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 56,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2539,11 +2539,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
@@ -2555,18 +2555,18 @@ export default function DartMonkey() {
 				break;
 			case "104":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 1,
+					damageMOABSecondary: 5,
+					damageCeramicSecondary: 1,
+					pierce: 22,
+					pierceSecondary: 300,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.75,
-					range: 56,
+					projectilesSecondary: 1,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2574,11 +2574,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2613,18 +2613,18 @@ export default function DartMonkey() {
 				break;
 			case "105":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 16,
-					pierceSecondary: 0,
+					damage: 12,
+					damageMOAB: 12,
+					damageCeramic: 12,
+					damageSecondary: 1,
+					damageMOABSecondary: 20,
+					damageCeramicSecondary: 1,
+					pierce: 22,
+					pierceSecondary: 400,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.16,
-					range: 76,
+					projectilesSecondary: 1,
+					speed: 0.6,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2632,7 +2632,7 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
@@ -2675,18 +2675,18 @@ export default function DartMonkey() {
 				break;
 			case "203":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 6,
+					pierce: 27,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 56,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2694,11 +2694,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2733,18 +2733,18 @@ export default function DartMonkey() {
 				break;
 			case "204":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 6,
-					pierceSecondary: 0,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 1,
+					damageMOABSecondary: 5,
+					damageCeramicSecondary: 1,
+					pierce: 27,
+					pierceSecondary: 420,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.75,
-					range: 56,
+					projectilesSecondary: 1,
+					speed: 1.2,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2752,11 +2752,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2795,18 +2795,18 @@ export default function DartMonkey() {
 				break;
 			case "205":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 23,
-					pierceSecondary: 0,
+					damage: 12,
+					damageMOAB: 12,
+					damageCeramic: 12,
+					damageSecondary: 1,
+					damageMOABSecondary: 25,
+					damageCeramicSecondary: 1,
+					pierce: 27,
+					pierceSecondary: 520,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.16,
-					range: 76,
+					projectilesSecondary: 1,
+					speed: 0.6,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2814,7 +2814,7 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
@@ -2861,18 +2861,18 @@ export default function DartMonkey() {
 				break;
 			case "012":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.8075,
-					range: 48,
+					speed: 0.9,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2880,11 +2880,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -2895,18 +2895,18 @@ export default function DartMonkey() {
 				break;
 			case "013":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 18,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.8075,
-					range: 56,
+					speed: 0.9,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2914,11 +2914,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
@@ -2930,18 +2930,18 @@ export default function DartMonkey() {
 				break;
 			case "014":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 3,
-					pierceSecondary: 0,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 1,
+					damageMOABSecondary: 5,
+					damageCeramicSecondary: 1,
+					pierce: 18,
+					pierceSecondary: 200,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.6375,
-					range: 76,
+					projectilesSecondary: 1,
+					speed: 0.9,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2949,11 +2949,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2988,18 +2988,18 @@ export default function DartMonkey() {
 				break;
 			case "015":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 10,
-					pierceSecondary: 0,
+					damage: 12,
+					damageMOAB: 12,
+					damageCeramic: 12,
+					damageSecondary: 1,
+					damageMOABSecondary: 25,
+					damageCeramicSecondary: 1,
+					pierce: 18,
+					pierceSecondary: 300,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.136,
-					range: 76,
+					projectilesSecondary: 1,
+					speed: 0.45,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3007,7 +3007,7 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
@@ -3050,18 +3050,18 @@ export default function DartMonkey() {
 				break;
 			case "022":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.63,
-					range: 48,
+					speed: 0.675,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3069,11 +3069,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -3085,18 +3085,18 @@ export default function DartMonkey() {
 				break;
 			case "023":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 3,
+					pierce: 18,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.63,
-					range: 56,
+					speed: 0.675,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3104,11 +3104,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3143,18 +3143,18 @@ export default function DartMonkey() {
 				break;
 			case "024":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 3,
-					pierceSecondary: 0,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 1,
+					damageMOABSecondary: 5,
+					damageCeramicSecondary: 1,
+					pierce: 18,
+					pierceSecondary: 200,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.5,
-					range: 56,
+					projectilesSecondary: 1,
+					speed: 0.675,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3162,11 +3162,11 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3205,18 +3205,18 @@ export default function DartMonkey() {
 				break;
 			case "025":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 10,
-					pierceSecondary: 0,
+					damage: 12,
+					damageMOAB: 12,
+					damageCeramic: 12,
+					damageSecondary: 1,
+					damageMOABSecondary: 25,
+					damageCeramicSecondary: 1,
+					pierce: 18,
+					pierceSecondary: 300,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.107,
-					range: 76,
+					projectilesSecondary: 1,
+					speed: 0.338,
+					range: 49.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3224,7 +3224,7 @@ export default function DartMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
 					purple: true,
@@ -3273,16 +3273,16 @@ export default function DartMonkey() {
 				setStats({
 					damage: 20,
 					damageMOAB: 20,
-					damageCeramic: 50,
-					damageSecondary: 20,
+					damageCeramic: 20,
+					damageSecondary: 0,
 					damageMOABSecondary: 20,
-					damageCeramicSecondary: 50,
-					pierce: 200,
-					pierceSecondary: 200,
-					projectiles: 3,
-					projectilesSecondary: 2,
-					speed: 0.3,
-					range: 85,
+					damageCeramicSecondary: 0,
+					pierce: 100,
+					pierceSecondary: 300,
+					projectiles: 1,
+					projectilesSecondary: 1,
+					speed: 0.04,
+					range: 75,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3379,11 +3379,11 @@ export default function DartMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 4,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.95,
-					range: 32,
+					speed: 1.2,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3397,10 +3397,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					frozen: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
+					costEasy: 275,
+					costMedium: 325,
+					costHard: 350,
+					costImpoppable: 390,
 				});
 				break;
 		}
@@ -3474,7 +3474,7 @@ export default function DartMonkey() {
 			transition={{ ease: "easeInOut", duration: 0.2 }}
 			className="tower"
 		>
-			<h1>Dart Monkey</h1>
+			<h1>Ninja Monkey</h1>
 			<div className="tower-container">
 				<div className="stats-container">
 					<table>
@@ -3921,8 +3921,7 @@ export default function DartMonkey() {
 								</td>
 							</tr>
 						</tbody>
-					</table>
-					<table>
+					</table><table>
 						<thead>
 							<tr>
 								<th
@@ -3966,7 +3965,7 @@ export default function DartMonkey() {
 				</div>
 				<div className="image-container">
 					<div className="image-container-inner">
-						<img src={images[image]} alt="Dart Monkey" className="tower-img"></img>
+						<img src={images[image]} alt="Ninja Monkey" className="tower-img"></img>
 					</div>
 					<div className="tower-grid">
 						<div></div>
@@ -3976,7 +3975,7 @@ export default function DartMonkey() {
 								id="p1-1"
 								className={p1 === 1 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Sharp Shots<br>Can pop 1 extra Bloon per shot.<br>Cost: $120 / $140 / $150 / $170"
+								data-tip="Ninja Discipline<br>Increases attack range and attack speed.<br>Cost: $255 / $300 / $325 / $360"
 								data-for="p1-1"
 							>
 								<ReactTooltip
@@ -3987,7 +3986,7 @@ export default function DartMonkey() {
 									multiline={true}
 									id="p1-1"
 								/>
-								<img src={p11} alt="Sharp Shots"></img>
+								<img src={p11} alt="Ninja Discipline"></img>
 							</button>
 						</div>
 						<div>
@@ -3996,7 +3995,7 @@ export default function DartMonkey() {
 								id="p1-2"
 								className={p1 === 2 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Razor Sharp Shots<br>Can pop 2 more bloons per shot.<br>Cost: $185 / $220 / $235 / $265"
+								data-tip="Sharp Shurikens<br>Shurikens can pop 4 Bloons each.<br>Cost: $295 / $350 / $380 / $420"
 								data-for="p1-2"
 							>
 								<ReactTooltip
@@ -4007,7 +4006,7 @@ export default function DartMonkey() {
 									multiline={true}
 									id="p1-2"
 								/>
-								<img src={p12} alt="Razor Sharp Shots"></img>
+								<img src={p12} alt="Sharp Shurikens"></img>
 							</button>
 						</div>
 						<div>
@@ -4016,7 +4015,7 @@ export default function DartMonkey() {
 								id="p1-3"
 								className={p1 === 3 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Spike-O-Pult<br>Converts the Dart Monkey into a Spike-o-pult that hurls a large spiked ball instead of darts.<br>Good range, but slower attack speed. Each ball can pop lots of Bloons and rebounds off obstacles.<br>Cost: $255 / $300 / $325 / $360"
+								data-tip="Double Shot<br>Throws 2 shurikens at once.<br>Cost: $720 / $850 / $920 / $1.020"
 								data-for="p1-3"
 							>
 								<ReactTooltip
@@ -4027,7 +4026,7 @@ export default function DartMonkey() {
 									multiline={true}
 									id="p1-3"
 								/>
-								<img src={p13} alt="Spike-O-Pult"></img>
+								<img src={p13} alt="Double Shot"></img>
 							</button>
 						</div>
 						<div>
@@ -4036,7 +4035,7 @@ export default function DartMonkey() {
 								id="p1-4"
 								className={p1 === 4 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Juggernaut<br>Hurls a giant spiked ball that pops lead and excels at crushing Ceramic Bloons.<br>Cost: $1.530 / $1.800 / $1.945 / $2.160"
+								data-tip="Bloonjitsu<br>Throws 5 shurikens at once!<br>Cost: $2.335 / $2.750 / $2.970 / $3.300"
 								data-for="p1-4"
 							>
 								<ReactTooltip
@@ -4047,7 +4046,7 @@ export default function DartMonkey() {
 									multiline={true}
 									id="p1-4"
 								/>
-								<img src={p14} alt="Juggernaut"></img>
+								<img src={p14} alt="Bloonjitsu"></img>
 							</button>
 						</div>
 						<div>
@@ -4056,7 +4055,7 @@ export default function DartMonkey() {
 								id="p1-5"
 								className={p1 === 5 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Ultra-Juggernaut<br>Gigantic spiked ball splits twice into 6 Juggernaut balls for even more destructive power.<br>Cost: $12.750 / $15.000 / $16.200 / $18.000"
+								data-tip="Grandmaster Ninja<br>Throws incredibly fast, 8 shurikens per shot!<br>Cost: $29.750 / $35.000 / $37.800 / $42.000"
 								data-for="p1-5"
 							>
 								<ReactTooltip
@@ -4067,12 +4066,12 @@ export default function DartMonkey() {
 									multiline={true}
 									id="p1-5"
 								/>
-								<img src={p15} alt="Ultra-Juggernaut"></img>
+								<img src={p15} alt="Grandmaster Ninja"></img>
 							</button>
 						</div>
 						<div></div>
 						<div>
-							<h1 style={{ color: colors["c"] }}>C</h1>
+							<h1 style={{ color: colors["a"] }}>A</h1>
 						</div>
 						<div>
 							<button
@@ -4098,8 +4097,8 @@ export default function DartMonkey() {
 								id="p2-1"
 								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Quick Shots<br>Shoots 15% faster.<br>Cost: $85 / $100 / $110 / $120"
-								data-for="p2-1"
+								data-tip="Faster Throwing<br>Throws boomerangs faster.<br>Cost: $150 / $175 / $190 / $210"
+								data-for="faster-throwing"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4107,9 +4106,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="p2-1"
+									id="faster-throwing"
 								/>
-								<img src={p21} alt="Quick Shots"></img>
+								<img src={p21} alt="Faster Throwing"></img>
 							</button>
 						</div>
 						<div>
@@ -4118,8 +4117,8 @@ export default function DartMonkey() {
 								id="p2-2"
 								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Very Quick Shots<br>Shoots 33% faster!<br>Cost: $160 / $190 / $205 / $230"
-								data-for="p2-2"
+								data-tip="Faster Rangs<br>Boomerangs fire and travel faster.<br>Cost: $210 / $250 / $270 / $300"
+								data-for="faster-rangs"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4127,9 +4126,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="p2-2"
+									id="faster-rangs"
 								/>
-								<img src={p22} alt="Very Quick Shots"></img>
+								<img src={p22} alt="Faster Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -4138,8 +4137,8 @@ export default function DartMonkey() {
 								id="p2-3"
 								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Triple Shot<br>Throws 3 darts at a time instead of 1.<br>Cost: $340 / $400 / $430 / $480"
-								data-for="p2-3"
+								data-tip="Bionic Boomerang<br>Replaces arm with a strong bionic arm that can throw boomerangs extremely fast and does extra damage to MOAB-class bloons.<br>Cost: $1.360 / $1.600 / $1.730 / $1.920"
+								data-for="bionic-boomerang"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4147,9 +4146,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="p2-3"
+									id="bionic-boomerang"
 								/>
-								<img src={p23} alt="Triple Shot"></img>
+								<img src={p23} alt="Bionic Boomerang"></img>
 							</button>
 						</div>
 						<div>
@@ -4158,8 +4157,8 @@ export default function DartMonkey() {
 								id="p2-4"
 								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Super Monkey Fan Club<br>Super Monkey Fan Club Ability: Converts up to 10 nearby Dart Monkeys including himself into Super Monkeys for 15 seconds.<br>Regular attack speed also increased.<br>Cost: $6.800 / $8.000 / $8.640 / $9.600"
-								data-for="p2-4"
+								data-tip="Turbo Charge<br>Turbo Charge ability: Makes this Monkey attack incredibly fast for 10 seconds.<br>Cost: $3.400 / $4.000 / $4.320 / $4.800"
+								data-for="turbo-charge"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4167,9 +4166,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="p2-4"
+									id="turbo-charge"
 								/>
-								<img src={p24} alt="Super Monkey Fan Club"></img>
+								<img src={p24} alt="Turbo Charge"></img>
 							</button>
 						</div>
 						<div>
@@ -4178,8 +4177,8 @@ export default function DartMonkey() {
 								id="p2-5"
 								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Plasma Monkey Fan Club<br>Elite membership of this club grants the Dart Monkeys even more power.<br>Cost: $38.250 / $45.000 / $48.600 / $54.000"
-								data-for="p2-5"
+								data-tip="Perma Charge<br>Perma Charge has a permanent super fast attack speed.<br>Ability increases the lethality even more.<br>Cost: $29.750 / $35.000 / $37.800 / $42.000"
+								data-for="perma-charge"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4187,9 +4186,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="p2-5"
+									id="perma-charge"
 								/>
-								<img src={p25} alt="Plasma Monkey Fan Club"></img>
+								<img src={p25} alt="Perma Charge"></img>
 							</button>
 						</div>
 						<div>
@@ -4197,8 +4196,8 @@ export default function DartMonkey() {
 								onClick={() => handleChange("par")}
 								id="par"
 								className={p1 === -1 ? "tower-active" : ""}
-								data-tip="Apex Plasma Master<br>Fill the area with Bloon shredding plasma juggernaut balls, leaving nothing behind...<br>Cost: $297.500 / $350.000 / $378.600 / $420.000"
-								data-for="par"
+								data-tip="Glaive Dominus<br>The Bloons will look upon my Glaives, and they will know fear.<br>Cost: $340.000 / $400.000 / $432.000 / $480.000"
+								data-for="glaive-dominus"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4206,13 +4205,13 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="par"
+									id="glaive-dominus"
 								/>
-								<img src={par} alt="Apex Plasma Master"></img>
+								<img src={par} alt="Glaive Dominus"></img>
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["a-"] }}>A-</h1>
+							<h1 style={{ color: colors["s"] }}>S</h1>
 						</div>
 						<div></div>
 						<div>
@@ -4221,8 +4220,8 @@ export default function DartMonkey() {
 								id="p3-1"
 								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Long Range Darts<br>Makes the Dart Monkey shoot further than normal.<br>Cost: $75 / $90 / $95 / $110"
-								data-for="p3-1"
+								data-tip="Long Range Rangs<br>Can throw boomerangs further than normal.<br>Cost: $85 / $100 / $110 / $120"
+								data-for="long-range-rangs"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4230,9 +4229,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="p3-1"
+									id="long-range-rangs"
 								/>
-								<img src={p31} alt="Long Range Darts" title="Long Range Darts"></img>
+								<img src={p31} alt="Long Range Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -4241,8 +4240,8 @@ export default function DartMonkey() {
 								id="p3-2"
 								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Enhanced Eyesight<br>Shoots even further and can detect Camo bloons.<br>Cost: $170 / $200 / $215 / $240"
-								data-for="p3-2"
+								data-tip="Red Hot Rangs<br>Allows boomerangs to pop Frozen and Lead Bloons and do more damage to all.<br>Cost: $255 / $300 / $325 / $360"
+								data-for="red-hot-rangs"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4250,9 +4249,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="p3-2"
+									id="red-hot-rangs"
 								/>
-								<img src={p32} alt="Enhanced Eyesight" title="Enhanced Eyesight"></img>
+								<img src={p32} alt="Red Hot Rangs"></img>
 							</button>
 						</div>
 						<div>
@@ -4261,8 +4260,8 @@ export default function DartMonkey() {
 								id="p3-3"
 								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Crossbow<br>Uses a long range Crossbow that can pop 3 layers of Bloon for every hit.<br>Cost: $530 / $625 / $675 / $750"
-								data-for="p3-3"
+								data-tip="Kylie Boomerang<br>Throws heavy Kylie boomerangs that follow a straight path instead of curved.<br>Cost: $1.100 / $1.300 / $1.400 / $1.560"
+								data-for="kylie-boomerang"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4270,9 +4269,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="p3-3"
+									id="kylie-boomerang"
 								/>
-								<img src={p33} alt="Crossbow"></img>
+								<img src={p33} alt="Kylie Boomerang"></img>
 							</button>
 						</div>
 						<div>
@@ -4281,8 +4280,8 @@ export default function DartMonkey() {
 								id="p3-4"
 								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Sharpshooter<br>Sharp Shooter attacks faster and does powerful Crit shots every few shots that do a lot more damage.<br>Cost: $1.700 / $2.000 / $2.160 / $2.400"
-								data-for="p3-4"
+								data-tip="MOAB Press<br>Heavy Kylie boomerangs hits MOAB-Class Bloons multiple times per throw and sometimes knocks them back a short way along the path.<br>Cost: $1.870 / $2.200 / $2.375 / $2.640"
+								data-for="moab-press"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4290,9 +4289,9 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="p3-4"
+									id="moab-press"
 								/>
-								<img src={p34} alt="Sharpshooter"></img>
+								<img src={p34} alt="MOAB Press"></img>
 							</button>
 						</div>
 						<div>
@@ -4301,8 +4300,8 @@ export default function DartMonkey() {
 								id="p3-5"
 								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Crossbow Master<br>Crossbow Master shoots really fast and devastates most Bloon types with ease.<br>Cost: $21.250 / $25.000 / $27.000 / $30.000"
-								data-for="p3-5"
+								data-tip="MOAB Domination<br>Special knockback kylies trigger more often and do lots of extra damage.<br>Cost: $51.000 / $60.000 / $64.800 / $72.000"
+								data-for="moab-domination"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4310,14 +4309,14 @@ export default function DartMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="p3-5"
+									id="moab-domination"
 								/>
-								<img src={p35} alt="Crossbow Master"></img>
+								<img src={p35} alt="MOAB Domination"></img>
 							</button>
 						</div>
 						<div></div>
 						<div>
-							<h1 style={{ color: colors["b-"] }}>B-</h1>
+							<h1 style={{ color: colors["b"] }}>B</h1>
 						</div>
 					</div>
 				</div>

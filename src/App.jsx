@@ -8,6 +8,7 @@ import ABR from "./components/ABR";
 import Apopalypse from "./components/Apopalypse";
 import DartMonkey from "./components/towers/dart-monkey";
 import BoomerangMonkey from "./components/towers/boomerang-monkey";
+import NinjaMonkey from "./components/towers/ninja-monkey";
 import { Route, NavLink, Switch, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import BTD6Logo from "./misc/BTD6Logo.png";
@@ -56,6 +57,7 @@ function App() {
 					<Route path="/towers" exact component={Towers} />
 					<Route path="/towers/dart-monkey" component={DartMonkey} />
 					<Route path="/towers/boomerang-monkey" component={BoomerangMonkey} />
+					<Route path="/towers/ninja-monkey" component={NinjaMonkey}/>
 					<Route path="/heroes" exact component={Heroes} />
 					<Route path="/heroes/quincy" component={HeroQuincy} />
 					<Route path="/bloons" component={Bloons} />
