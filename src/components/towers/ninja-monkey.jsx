@@ -4097,8 +4097,8 @@ export default function NinjaMonkey() {
 								id="p2-1"
 								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Faster Throwing<br>Throws boomerangs faster.<br>Cost: $150 / $175 / $190 / $210"
-								data-for="faster-throwing"
+								data-tip="Distraction<br>Some Bloons will become distracted and move backwards.<br>Cost: $295 / $350 / $380 / $420"
+								data-for="p2-1"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4106,9 +4106,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="faster-throwing"
+									id="p2-1"
 								/>
-								<img src={p21} alt="Faster Throwing"></img>
+								<img src={p21} alt="Distraction"></img>
 							</button>
 						</div>
 						<div>
@@ -4117,8 +4117,8 @@ export default function NinjaMonkey() {
 								id="p2-2"
 								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Faster Rangs<br>Boomerangs fire and travel faster.<br>Cost: $210 / $250 / $270 / $300"
-								data-for="faster-rangs"
+								data-tip="Counter-Espionage<br>Ninja attacks can strip camo from Bloons they damage.<br>Cost: $425 / $500 / $540 / $600"
+								data-for="p2-2"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4126,9 +4126,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="faster-rangs"
+									id="p2-2"
 								/>
-								<img src={p22} alt="Faster Rangs"></img>
+								<img src={p22} alt="Counter-Espionage"></img>
 							</button>
 						</div>
 						<div>
@@ -4137,8 +4137,8 @@ export default function NinjaMonkey() {
 								id="p2-3"
 								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Bionic Boomerang<br>Replaces arm with a strong bionic arm that can throw boomerangs extremely fast and does extra damage to MOAB-class bloons.<br>Cost: $1.360 / $1.600 / $1.730 / $1.920"
-								data-for="bionic-boomerang"
+								data-tip="Shinobi Tactics<br>Increases attack speed and pierce of nearby Ninjas. Stacks 20 times.<br>Cost: $765 / $900 / $970 / $1.080"
+								data-for="p2-3"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4146,9 +4146,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="bionic-boomerang"
+									id="p2-3"
 								/>
-								<img src={p23} alt="Bionic Boomerang"></img>
+								<img src={p23} alt="Shinobi Tactics"></img>
 							</button>
 						</div>
 						<div>
@@ -4157,8 +4157,8 @@ export default function NinjaMonkey() {
 								id="p2-4"
 								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Turbo Charge<br>Turbo Charge ability: Makes this Monkey attack incredibly fast for 10 seconds.<br>Cost: $3.400 / $4.000 / $4.320 / $4.800"
-								data-for="turbo-charge"
+								data-tip="Bloon Sabotage<br>Sabotage ability: Lasts 15 seconds. During the sabotage, all Bloons move at half speed.<br>Cost: $4.420 / $5.200 / $5.615 / $6.240"
+								data-for="p2-4"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4166,9 +4166,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="turbo-charge"
+									id="p2-4"
 								/>
-								<img src={p24} alt="Turbo Charge"></img>
+								<img src={p24} alt="Bloon Sabotage"></img>
 							</button>
 						</div>
 						<div>
@@ -4177,8 +4177,8 @@ export default function NinjaMonkey() {
 								id="p2-5"
 								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Perma Charge<br>Perma Charge has a permanent super fast attack speed.<br>Ability increases the lethality even more.<br>Cost: $29.750 / $35.000 / $37.800 / $42.000"
-								data-for="perma-charge"
+								data-tip="Grand Saboteur<br>Ability duration is longer, and MOAB-Class Bloons spawn with less health during the sabotage.<br>Cost: $18.700 / $22.000 / $23.760 / $26.400"
+								data-for="p2-5"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4186,9 +4186,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="perma-charge"
+									id="p2-5"
 								/>
-								<img src={p25} alt="Perma Charge"></img>
+								<img src={p25} alt="Grand Saboteur"></img>
 							</button>
 						</div>
 						<div>
@@ -4196,8 +4196,8 @@ export default function NinjaMonkey() {
 								onClick={() => handleChange("par")}
 								id="par"
 								className={p1 === -1 ? "tower-active" : ""}
-								data-tip="Glaive Dominus<br>The Bloons will look upon my Glaives, and they will know fear.<br>Cost: $340.000 / $400.000 / $432.000 / $480.000"
-								data-for="glaive-dominus"
+								data-tip="Ascended Shadow<br>One Monkey MOAB demolition machine.<br>Cost: $510.000 / $600.000 / $648.000 / $720.000"
+								data-for="par"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4205,9 +4205,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="glaive-dominus"
+									id="par"
 								/>
-								<img src={par} alt="Glaive Dominus"></img>
+								<img src={par} alt="Ascended Shadow"></img>
 							</button>
 						</div>
 						<div>
@@ -4220,8 +4220,8 @@ export default function NinjaMonkey() {
 								id="p3-1"
 								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Long Range Rangs<br>Can throw boomerangs further than normal.<br>Cost: $85 / $100 / $110 / $120"
-								data-for="long-range-rangs"
+								data-tip="Seeking Shuriken<br>Shurikens will seek out and pop Bloons automatically.<br>Cost: $210 / $250 / $270 / $300"
+								data-for="p3-1"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4229,9 +4229,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="long-range-rangs"
+									id="p3-1"
 								/>
-								<img src={p31} alt="Long Range Rangs"></img>
+								<img src={p31} alt="Seeking Shuriken"></img>
 							</button>
 						</div>
 						<div>
@@ -4240,8 +4240,8 @@ export default function NinjaMonkey() {
 								id="p3-2"
 								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Red Hot Rangs<br>Allows boomerangs to pop Frozen and Lead Bloons and do more damage to all.<br>Cost: $255 / $300 / $325 / $360"
-								data-for="red-hot-rangs"
+								data-tip="Caltrops<br>Throws out spiked caltrops onto the track nearby.<br>Cost: $340 / $400 / $430 / $480"
+								data-for="p3-2"
 							>
 								<ReactTooltip
 									effect="solid"
@@ -4249,9 +4249,9 @@ export default function NinjaMonkey() {
 									backgroundColor="#4c566aff"
 									arrowColor="transparent"
 									multiline={true}
-									id="red-hot-rangs"
+									id="p3-2"
 								/>
-								<img src={p32} alt="Red Hot Rangs"></img>
+								<img src={p32} alt="Caltrops"></img>
 							</button>
 						</div>
 						<div>
@@ -4321,6 +4321,9 @@ export default function NinjaMonkey() {
 					</div>
 				</div>
 			</div>
+			<p className="footer">
+				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
+			</p>
 		</motion.div>
 	);
 }

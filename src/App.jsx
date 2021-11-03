@@ -5,7 +5,6 @@ import Heroes from "./components/Heroes";
 import Bloons from "./components/Bloons";
 import Rounds from "./components/Rounds";
 import ABR from "./components/ABR";
-import Apopalypse from "./components/Apopalypse";
 import DartMonkey from "./components/towers/dart-monkey";
 import BoomerangMonkey from "./components/towers/boomerang-monkey";
 import NinjaMonkey from "./components/towers/ninja-monkey";
@@ -63,14 +62,8 @@ function App() {
 					<Route path="/bloons" component={Bloons} />
 					<Route path="/rounds" exact component={Rounds} />
 					<Route path="/rounds/abr" component={ABR} />
-					<Route path="/rounds/apopalypse" component={Apopalypse} />
 				</Switch>
 			</AnimatePresence>
-			<footer>
-				<p>
-					Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
-				</p>
-			</footer>
 		</div>
 	);
 }

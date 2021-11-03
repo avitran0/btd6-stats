@@ -114,7 +114,7 @@ export default function BoomerangMonkey() {
 			white: true,
 			purple: true,
 			lead: false,
-			frozen: true,
+			frozen: false,
 			costEasy: 275,
 			costMedium: 325,
 			costHard: 350,
@@ -220,7 +220,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"],
 					costMedium: costs["buy-m"],
 					costHard: costs["buy-h"],
@@ -254,7 +254,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"],
@@ -288,7 +288,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"],
@@ -322,7 +322,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"],
@@ -356,7 +356,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p1-4-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p1-4-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p1-4-h"],
@@ -391,7 +391,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -449,7 +449,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"],
@@ -483,7 +483,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"],
@@ -517,7 +517,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
@@ -551,7 +551,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p2-4-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p2-4-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p2-4-h"],
@@ -586,7 +586,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -644,7 +644,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p3-1-h"],
@@ -838,7 +838,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"],
@@ -872,7 +872,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p2-1-h"],
@@ -906,7 +906,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p2-1-h"],
@@ -941,7 +941,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -999,7 +999,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1061,7 +1061,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"] + costs["p2-2-h"],
@@ -1095,7 +1095,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"] + costs["p2-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p2-1-h"] + costs["p2-2-h"],
@@ -1130,7 +1130,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1188,7 +1188,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1250,7 +1250,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1316,7 +1316,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"],
@@ -1350,7 +1350,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p3-1-h"],
@@ -1384,7 +1384,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p3-1-h"],
@@ -1419,7 +1419,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1477,7 +1477,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1794,7 +1794,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
@@ -1829,7 +1829,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1887,7 +1887,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1949,7 +1949,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2007,7 +2007,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2069,7 +2069,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2135,7 +2135,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"],
@@ -2169,7 +2169,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p3-1-h"],
@@ -2203,7 +2203,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p3-1-h"],
@@ -2238,7 +2238,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2296,7 +2296,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -3396,7 +3396,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: true,
+					frozen: false,
 					costEasy: 275,
 					costMedium: 325,
 					costHard: 350,
@@ -4321,6 +4321,9 @@ export default function BoomerangMonkey() {
 					</div>
 				</div>
 			</div>
+			<p className="footer">
+				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
+			</p>
 		</motion.div>
 	);
 }

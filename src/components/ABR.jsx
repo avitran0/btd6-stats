@@ -20,10 +20,10 @@ export default function ABR() {
 						ABR
 					</NavLink>
 				</li>
-				<li>
-					<NavLink to="/rounds/apopalypse">Apopalypse</NavLink>
-				</li>
 			</ul>
+			<p className="footer">
+				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
+			</p>
 		</motion.div>
 	);
 }

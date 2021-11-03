@@ -65,9 +65,6 @@ export default function Rounds() {
 				<li>
 					<NavLink to="/rounds/abr">ABR</NavLink>
 				</li>
-				<li>
-					<NavLink to="/rounds/apopalypse">Apopalypse</NavLink>
-				</li>
 			</ul>
 			<div className="table-wrapper">
 				<table>
@@ -1493,6 +1490,9 @@ export default function Rounds() {
 					</tfoot>
 				</table>
 			</div>
+			<p className="footer">
+				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
+			</p>
 		</motion.div>
 	);
 }

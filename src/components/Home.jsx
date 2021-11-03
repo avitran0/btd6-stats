@@ -14,6 +14,9 @@ export default function Home() {
 			<p>work in progress</p>
 			<p>things to add: tower stats, hero stats, rounds</p>
 			<p>things finished: bloon stats</p>
+			<p className="footer">
+				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
+			</p>
 		</motion.div>
 	);
 }

@@ -85,6 +85,9 @@ export default function Heroes() {
 					</Link>
 				</div>
 			</div>
+			<p className="footer">
+				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
+			</p>
 		</motion.div>
 	);
 }

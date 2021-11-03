@@ -478,6 +478,9 @@ export default function Bloons() {
 					</tfoot>
 				</table>
 			</div>
+			<p className="footer">
+				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
+			</p>
 		</motion.div>
 	);
 }
