@@ -3397,10 +3397,10 @@ export default function BoomerangMonkey() {
 					purple: true,
 					lead: false,
 					frozen: false,
-					costEasy: 275,
-					costMedium: 325,
-					costHard: 350,
-					costImpoppable: 390,
+					costEasy: costs["buy-e"],
+					costMedium: costs["buy-m"],
+					costHard: costs["buy-h"],
+					costImpoppable: costs["buy-i"],
 				});
 				break;
 		}

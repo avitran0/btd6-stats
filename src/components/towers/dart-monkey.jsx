@@ -3397,10 +3397,10 @@ export default function DartMonkey() {
 					purple: true,
 					lead: false,
 					frozen: true,
-					costEasy: 170,
-					costMedium: 200,
-					costHard: 215,
-					costImpoppable: 240,
+					costEasy: costs["buy-e"],
+					costMedium: costs["buy-m"],
+					costHard: costs["buy-h"],
+					costImpoppable: costs["buy-i"],
 				});
 				break;
 		}
