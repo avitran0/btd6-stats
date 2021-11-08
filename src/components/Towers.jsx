@@ -24,6 +24,7 @@ import MonkeyVillage from "../towers/MonkeyVillage.png";
 import MonkeyEngineer from "../towers/MonkeyEngineer.png";
 
 export default function Towers() {
+	document.title = "Towers - BTD6 Stats";
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -46,7 +47,7 @@ export default function Towers() {
 					</Link>
 				</div>
 				<div className="grid-container">
-					<Link to="/towers" id="bomb-shooter">
+					<Link to="/towers/bomb-shooter" id="bomb-shooter">
 						<img src={BombShooter} alt="Bomb Shooter" />
 					</Link>
 				</div>

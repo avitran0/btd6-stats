@@ -29,6 +29,7 @@ import CeramicRegrowFortifiedCamo from "../bloons/CeramicRegrowFortifiedCamo.png
 import BADFortified from "../bloons/BADFortified.png";
 
 export default function Bloons() {
+	document.title = "Bloons - BTD6 Stats";
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}

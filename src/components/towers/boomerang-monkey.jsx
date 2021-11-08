@@ -53,6 +53,7 @@ import Lead from "../../bloons/Lead.png";
 import Frozen from "../../bloons/WhiteIce.png";
 
 export default function BoomerangMonkey() {
+	document.title = "Boomerang Monkey - BTD6 Stats";
 	let images = {
 		"000": M000,
 		"001": M001,
@@ -3717,7 +3718,10 @@ export default function BoomerangMonkey() {
 					<table>
 						<thead>
 							<tr>
-								<th colSpan="3">{stats.abilityDamage ? "Ability: ": "Ability"}{stats.abilityName}</th>
+								<th colSpan="3">
+									{stats.abilityDamage ? "Ability: " : "Ability"}
+									{stats.abilityName}
+								</th>
 							</tr>
 							<tr>
 								<th data-tip="How many layers each projectile can pop" data-for="damage5">
@@ -3921,7 +3925,8 @@ export default function BoomerangMonkey() {
 								</td>
 							</tr>
 						</tbody>
-					</table><table>
+					</table>
+					<table>
 						<thead>
 							<tr>
 								<th
@@ -3967,7 +3972,7 @@ export default function BoomerangMonkey() {
 					<div className="image-container-inner">
 						<img src={images[image]} alt="Boomerang Monkey" className="tower-img"></img>
 					</div>
-					<div className="tower-grid">
+					<div className="tower-grid" id="tower-grid-par">
 						<div></div>
 						<div>
 							<button

@@ -47,6 +47,7 @@ import DDTFortified from "../bloons/DDTFortified.png";
 import BAD from "../bloons/BAD.png";
 
 export default function Rounds() {
+	document.title = "Rounds - BTD6 Stats";
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}

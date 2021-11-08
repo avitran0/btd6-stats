@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function Home() {
+	document.title = "BTD6 Stats";
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}

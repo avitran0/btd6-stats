@@ -14,6 +14,7 @@ import Etienne from "../heroes/Etienne.png";
 import Sauda from "../heroes/Sauda.png";
 
 export default function Heroes() {
+	document.title = "Heroes - BTD6 Stats";
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}

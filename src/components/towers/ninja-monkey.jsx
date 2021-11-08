@@ -53,6 +53,7 @@ import Lead from "../../bloons/Lead.png";
 import Frozen from "../../bloons/WhiteIce.png";
 
 export default function NinjaMonkey() {
+	document.title = "Ninja Monkey - BTD6 Stats";
 	let images = {
 		"000": M000,
 		"001": M001,
@@ -3718,7 +3719,10 @@ export default function NinjaMonkey() {
 					<table>
 						<thead>
 							<tr>
-								<th colSpan="3">{stats.abilityDamage ? "Ability: ": "Ability"}{stats.abilityName}</th>
+								<th colSpan="3">
+									{stats.abilityDamage ? "Ability: " : "Ability"}
+									{stats.abilityName}
+								</th>
 							</tr>
 							<tr>
 								<th data-tip="How many layers each projectile can pop" data-for="damage5">
@@ -3922,7 +3926,8 @@ export default function NinjaMonkey() {
 								</td>
 							</tr>
 						</tbody>
-					</table><table>
+					</table>
+					<table>
 						<thead>
 							<tr>
 								<th
@@ -3968,7 +3973,7 @@ export default function NinjaMonkey() {
 					<div className="image-container-inner">
 						<img src={images[image]} alt="Ninja Monkey" className="tower-img"></img>
 					</div>
-					<div className="tower-grid">
+					<div className="tower-grid" id="tower-grid-par">
 						<div></div>
 						<div>
 							<button
