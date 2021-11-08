@@ -595,7 +595,6 @@ td {
 	}
 
 	a {
-		font-size: large;
 		color: $nord6;
 		text-decoration: none;
 		transition: 0.2s;
@@ -721,13 +720,15 @@ td {
 	}
 
 	.rounds {
-		th, td {
+		th,
+		td {
 			font-size: 1.2rem;
 		}
 	}
 
 	.bloons {
-		th, td {
+		th,
+		td {
 			font-size: 1.2rem;
 		}
 	}

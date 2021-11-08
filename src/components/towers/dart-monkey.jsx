@@ -3719,7 +3719,7 @@ export default function DartMonkey() {
 						<thead>
 							<tr>
 								<th colSpan="3">
-									{stats.abilityDamage ? "Ability: " : "Ability"}
+									{stats.abilityName ? "Ability: " : "Ability"}
 									{stats.abilityName}
 								</th>
 							</tr>

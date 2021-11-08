@@ -361,17 +361,17 @@ export default function BombShooter() {
 				break;
 			case "500":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
+					damage: 12,
+					damageMOAB: 12,
+					damageCeramic: 12,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 50,
+					pierceSecondary: 0,
 					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
+					projectilesSecondary: 0,
+					speed: 1.5,
 					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
@@ -380,8 +380,8 @@ export default function BombShooter() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
-					black: false,
+					camo: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -425,12 +425,12 @@ export default function BombShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 14,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 43,
+					speed: 1.125,
+					range: 40,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -459,12 +459,12 @@ export default function BombShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 14,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 43,
+					speed: 0.825,
+					range: 44,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -488,17 +488,17 @@ export default function BombShooter() {
 			case "030":
 				setStats({
 					damage: 1,
-					damageMOAB: 2,
-					damageCeramic: 1,
+					damageMOAB: 19,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 14,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
+					speed: 0.825,
+					range: 49,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -522,24 +522,24 @@ export default function BombShooter() {
 			case "040":
 				setStats({
 					damage: 1,
-					damageMOAB: 2,
-					damageCeramic: 1,
+					damageMOAB: 31,
+					damageCeramic: 5,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 14,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 2,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 0.825,
+					range: 49,
+					abilityName: "Assassinate MOAB",
+					abilityDuration: 0,
+					abilityCooldown: 30,
+					abilityDamage: 750,
+					abilityPierce: 1,
+					abilitySpeed: 0.0,
+					abilityRange: Infinity,
 					camo: false,
 					black: false,
 					white: true,
@@ -556,27 +556,27 @@ export default function BombShooter() {
 				break;
 			case "050":
 				setStats({
-					damage: 4,
-					damageMOAB: 5,
-					damageCeramic: 4,
+					damage: 1,
+					damageMOAB: 130,
+					damageCeramic: 5,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 14,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 12,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 0.825,
+					range: 49,
+					abilityName: "Eliminate MOAB",
+					abilityDuration: 0,
+					abilityCooldown: 10,
+					abilityDamage: 4500,
+					abilityPierce: 0,
+					abilitySpeed: 0.0,
+					abilityRange: Infinity,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -620,12 +620,12 @@ export default function BombShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 14,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 1.5,
+					range: 47,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -648,18 +648,18 @@ export default function BombShooter() {
 				break;
 			case "002":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 1,
+					damageMOABSecondary: 1,
+					damageCeramicSecondary: 1,
+					pierce: 14,
+					pierceSecondary: 1,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					projectilesSecondary: 8,
+					speed: 1.5,
+					range: 49,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -668,7 +668,7 @@ export default function BombShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -682,18 +682,18 @@ export default function BombShooter() {
 				break;
 			case "003":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 18,
-					pierceSecondary: 0,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 1,
+					damageMOABSecondary: 1,
+					damageCeramicSecondary: 1,
+					pierce: 14,
+					pierceSecondary: 10,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					projectilesSecondary: 8,
+					speed: 1.5,
+					range: 49,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -702,7 +702,7 @@ export default function BombShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -716,18 +716,18 @@ export default function BombShooter() {
 				break;
 			case "004":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 200,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 2,
+					damageMOABSecondary: 2,
+					damageCeramicSecondary: 2,
+					pierce: 14,
+					pierceSecondary: 70,
 					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 1.2,
-					range: 49.5,
+					projectilesSecondary: 8,
+					speed: 1.5,
+					range: 49,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -736,7 +736,7 @@ export default function BombShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -751,27 +751,27 @@ export default function BombShooter() {
 				break;
 			case "005":
 				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 25,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 300,
+					damage: 5,
+					damageMOAB: 5,
+					damageCeramic: 5,
+					damageSecondary: 2,
+					damageMOABSecondary: 2,
+					damageCeramicSecondary: 2,
+					pierce: 14,
+					pierceSecondary: 70,
 					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
-					abilityName: "",
+					projectilesSecondary: 8,
+					speed: 1.5,
+					range: 49,
+					abilityName: "Bomb Blitz",
 					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
+					abilityCooldown: 40,
+					abilityDamage: 2000,
+					abilityPierce: Infinity,
 					abilitySpeed: 0.0,
-					abilityRange: 0,
+					abilityRange: Infinity,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -815,11 +815,12 @@ export default function BombShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 20,
+					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 43,
+					speed: 1.125,
+					range: 40,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -842,18 +843,18 @@ export default function BombShooter() {
 				break;
 			case "210":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 30,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 43,
+					speed: 1.125,
+					range: 40,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -876,9 +877,9 @@ export default function BombShooter() {
 				break;
 			case "310":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 3,
+					damageMOAB: 3,
+					damageCeramic: 3,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
@@ -886,8 +887,8 @@ export default function BombShooter() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.85,
-					range: 43,
+					speed: 1.125,
+					range: 40,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -911,17 +912,17 @@ export default function BombShooter() {
 				break;
 			case "410":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 3,
+					damageMOAB: 3,
+					damageCeramic: 3,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 100,
+					pierce: 50,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.426,
+					speed: 1.125,
 					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
@@ -969,17 +970,17 @@ export default function BombShooter() {
 				break;
 			case "510":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
+					damage: 12,
+					damageMOAB: 12,
+					damageCeramic: 12,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 50,
+					pierceSecondary: 0,
 					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.426,
+					projectilesSecondary: 0,
+					speed: 1.5,
 					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
@@ -988,8 +989,8 @@ export default function BombShooter() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
-					black: false,
+					camo: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -1037,12 +1038,12 @@ export default function BombShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 8,
+					pierce: 20,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 43,
+					speed: 0.825,
+					range: 44,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1065,18 +1066,18 @@ export default function BombShooter() {
 				break;
 			case "220":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 30,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 43,
+					speed: 0.825,
+					range: 44,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1100,9 +1101,9 @@ export default function BombShooter() {
 				break;
 			case "320":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 3,
+					damageMOAB: 3,
+					damageCeramic: 3,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
@@ -1110,8 +1111,8 @@ export default function BombShooter() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.586,
-					range: 43,
+					speed: 0.825,
+					range: 44,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1158,18 +1159,18 @@ export default function BombShooter() {
 				break;
 			case "420":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 3,
+					damageMOAB: 3,
+					damageCeramic: 3,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 100,
+					pierce: 50,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.32,
-					range: 43,
+					speed: 0.825,
+					range: 47,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1220,17 +1221,17 @@ export default function BombShooter() {
 				break;
 			case "520":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
+					damage: 12,
+					damageMOAB: 12,
+					damageCeramic: 12,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 50,
+					pierceSecondary: 0,
 					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.32,
+					projectilesSecondary: 0,
+					speed: 1.5,
 					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
@@ -1239,8 +1240,8 @@ export default function BombShooter() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
-					black: false,
+					camo: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -1292,12 +1293,12 @@ export default function BombShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 8,
+					pierce: 20,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 1.5,
+					range: 47,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1320,18 +1321,18 @@ export default function BombShooter() {
 				break;
 			case "201":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 30,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 1.5,
+					range: 47,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1354,9 +1355,9 @@ export default function BombShooter() {
 				break;
 			case "301":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 3,
+					damageMOAB: 3,
+					damageCeramic: 3,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
@@ -1364,8 +1365,8 @@ export default function BombShooter() {
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 1.5,
+					range: 47,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1389,18 +1390,18 @@ export default function BombShooter() {
 				break;
 			case "401":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 3,
+					damageMOAB: 3,
+					damageCeramic: 3,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 100,
+					pierce: 50,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.6,
-					range: 49.5,
+					speed: 1.5,
+					range: 43,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3606,7 +3607,7 @@ export default function BombShooter() {
 						<thead>
 							<tr>
 								<th colSpan="3">
-									{stats.abilityDamage ? "Ability: " : "Ability"}
+									{stats.abilityName ? "Ability: " : "Ability"}
 									{stats.abilityName}
 								</th>
 							</tr>
@@ -3962,7 +3963,7 @@ export default function BombShooter() {
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["b-"] }}>B-</h1>
+							<h1 style={{ color: colors["b"] }}>B</h1>
 						</div>
 						<div>
 							<button
@@ -4083,7 +4084,7 @@ export default function BombShooter() {
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["a-"] }}>A-</h1>
+							<h1 style={{ color: colors["s-"] }}>S-</h1>
 						</div>
 						<div></div>
 						<div>
@@ -4092,7 +4093,7 @@ export default function BombShooter() {
 								id="p3-1"
 								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Long Range Rangs<br>Can throw boomerangs further than normal.<br>Cost: $85 / $100 / $110 / $120"
+								data-tip="Extra Range<br>Increases attack range.<br>Cost: $170 / $200 / $215 / $240"
 								data-for="p3-1"
 							>
 								<ReactTooltip
@@ -4103,7 +4104,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p3-1"
 								/>
-								<img src={p31} alt="Long Range Rangs"></img>
+								<img src={p31} alt="Extra Range"></img>
 							</button>
 						</div>
 						<div>
@@ -4112,7 +4113,7 @@ export default function BombShooter() {
 								id="p3-2"
 								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Red Hot Rangs<br>Allows boomerangs to pop Frozen and Lead Bloons and do more damage to all.<br>Cost: $255 / $300 / $325 / $360"
+								data-tip="Frag Bombs<br>Explosions throw sharp fragments that can pop more Bloons including Black Bloons.<br>Cost: $255 / $300 / $325 / $360"
 								data-for="p3-2"
 							>
 								<ReactTooltip
@@ -4123,7 +4124,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p3-2"
 								/>
-								<img src={p32} alt="Red Hot Rangs"></img>
+								<img src={p32} alt="Frag Bombs"></img>
 							</button>
 						</div>
 						<div>
@@ -4132,7 +4133,7 @@ export default function BombShooter() {
 								id="p3-3"
 								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Kylie Boomerang<br>Throws heavy Kylie boomerangs that follow a straight path instead of curved.<br>Cost: $1.100 / $1.300 / $1.400 / $1.560"
+								data-tip="Cluster Bombs<br>Throws out secondary bombs instead of sharp fragments every shot.<br>Cost: $680 / $800 / $865 / $960"
 								data-for="p3-3"
 							>
 								<ReactTooltip
@@ -4143,7 +4144,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p3-3"
 								/>
-								<img src={p33} alt="Kylie Boomerang"></img>
+								<img src={p33} alt="Cluster Bombs"></img>
 							</button>
 						</div>
 						<div>
@@ -4152,7 +4153,7 @@ export default function BombShooter() {
 								id="p3-4"
 								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Press<br>Heavy Kylie boomerangs hits MOAB-Class Bloons multiple times per throw and sometimes knocks them back a short way along the path.<br>Cost: $1.870 / $2.200 / $2.375 / $2.640"
+								data-tip="Recursive Cluster<br>Every second shot the cluster bombs send out more cluster bombs for even more destruction.<br>Cost: $2.380 / $2.800 / $3.025 / $3.360"
 								data-for="p3-4"
 							>
 								<ReactTooltip
@@ -4163,7 +4164,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p3-4"
 								/>
-								<img src={p34} alt="MOAB Press"></img>
+								<img src={p34} alt="Recursive Cluster"></img>
 							</button>
 						</div>
 						<div>
@@ -4172,7 +4173,7 @@ export default function BombShooter() {
 								id="p3-5"
 								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Domination<br>Special knockback kylies trigger more often and do lots of extra damage.<br>Cost: $51.000 / $60.000 / $64.800 / $72.000"
+								data-tip="Bomb Blitz<br>Deals much more damage and gains the passive Bomb Storm Ability:<br>when lives are lost, the Bomb Storm automatically triggers, which destroys all but the biggest of Bloons.<br>Cost: $29.750 / $35.000 / $37.800 / $42.000"
 								data-for="p3-5"
 							>
 								<ReactTooltip
@@ -4183,11 +4184,11 @@ export default function BombShooter() {
 									multiline={true}
 									id="p3-5"
 								/>
-								<img src={p35} alt="MOAB Domination"></img>
+								<img src={p35} alt="Bomb Blitz"></img>
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["s-"] }}>S-</h1>
+							<h1 style={{ color: colors["b"] }}>B</h1>
 						</div>
 					</div>
 				</div>
