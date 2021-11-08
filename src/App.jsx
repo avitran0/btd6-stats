@@ -9,7 +9,7 @@ import DartMonkey from "./components/towers/dart-monkey";
 import BoomerangMonkey from "./components/towers/boomerang-monkey";
 import BombShooter from "./components/towers/bomb-shooter";
 import NinjaMonkey from "./components/towers/ninja-monkey";
-import { Route, NavLink, Switch, useLocation } from "react-router-dom";
+import { Route, NavLink, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import BTD6Logo from "./misc/BTD6Logo.png";
 
@@ -52,41 +52,19 @@ function App() {
 				</nav>
 			</header>
 			<AnimatePresence exitBeforeEnter initial={false}>
-				<Switch location={location} key={location.pathname}>
-					<Route path="/" exact>
-						<Home />
-					</Route>
-					<Route path="/towers" exact>
-						<Towers />
-					</Route>
-					<Route path="/towers/dart-monkey">
-						<DartMonkey />
-					</Route>
-					<Route path="/towers/boomerang-monkey">
-						<BoomerangMonkey />
-					</Route>
-					<Route path="/towers/bomb-shooter">
-						<BombShooter />
-					</Route>
-					<Route path="/towers/ninja-monkey">
-						<NinjaMonkey />
-					</Route>
-					<Route path="/heroes" exact>
-						<Heroes />
-					</Route>
-					<Route path="/heroes/quincy">
-						<HeroQuincy />
-					</Route>
-					<Route path="/bloons">
-						<Bloons />
-					</Route>
-					<Route path="/rounds" exact>
-						<Rounds />
-					</Route>
-					<Route path="/rounds/abr">
-						<ABR />
-					</Route>
-				</Switch>
+				<Routes location={location} key={location.pathname}>
+					<Route path="/" exact element={<Home />} />
+					<Route path="/towers" exact element={<Towers />} />
+					<Route path="/towers/dart-monkey" element={<DartMonkey />} />
+					<Route path="/towers/boomerang-monkey" element={<BoomerangMonkey />} />
+					<Route path="/towers/bomb-shooter" element={<BombShooter />} />
+					<Route path="/towers/ninja-monkey" element={<NinjaMonkey />} />
+					<Route path="/heroes" exact element={<Heroes />} />
+					<Route path="/heroes/quincy" element={<HeroQuincy />} />
+					<Route path="/bloons" element={<Bloons />} />
+					<Route path="/rounds" exact element={<Rounds />} />
+					<Route path="/rounds/abr" element={<ABR />} />
+				</Routes>
 			</AnimatePresence>
 		</div>
 	);

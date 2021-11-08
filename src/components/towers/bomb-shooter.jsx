@@ -3907,7 +3907,7 @@ export default function BombShooter() {
 								id="p1-3"
 								className={p1 === 3 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Glaive Ricochet<br>Glaives automatically bounce towards each bloon with sharp turning.<br>Pops up to 50 bloons per glaive.<br>Cost: $1.105 / $1.300 / $1.405 / $1.560"
+								data-tip="Really Big Bombs<br>Huge bombs deal greater damage in a large area and allow Frags to pop more Bloons.<br>Cost: $1.020 / $1.200 / $1.295 / $1.440"
 								data-for="p1-3"
 							>
 								<ReactTooltip
@@ -3918,7 +3918,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p1-3"
 								/>
-								<img src={p13} alt="Glaive Ricochet"></img>
+								<img src={p13} alt="Really Big Bombs"></img>
 							</button>
 						</div>
 						<div>
@@ -3927,7 +3927,7 @@ export default function BombShooter() {
 								id="p1-4"
 								className={p1 === 4 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="M.O.A.R Glaives<br>Pierce increased from 50 to 100, attack speed is doubled, and glaive bounce distance is increased.<br>Cost: $2.550 / $3.000 / $3.240 / $3.600"
+								data-tip="Bloon Impact<br>Explosions become so violent Bloons are stunned for a short time when they are hit.<br>Range is increased and frags are even more effective.<br>Cost: $3.060 / $3.600 / $3.890 / $4.320"
 								data-for="p1-4"
 							>
 								<ReactTooltip
@@ -3938,7 +3938,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p1-4"
 								/>
-								<img src={p14} alt="M.O.A.R Glaives"></img>
+								<img src={p14} alt="Bloon Impact"></img>
 							</button>
 						</div>
 						<div>
@@ -3947,7 +3947,7 @@ export default function BombShooter() {
 								id="p1-5"
 								className={p1 === 5 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Glaive Lord<br>Glaive Lord surrounds itself in 3 special glaives that shred anything that comes near.<br>Glaive Lord's glaives now rip through MOAB-class Bloons, slowly tearing them apart from the inside.<br>Cost: $27.540 / $32.400 / $34.990 / $38.880"
+								data-tip="Bloon Impact<br>Bloon shattering explosions do massive damage and can stun MOAB-Class bloons.<br>Cost: $46.750 / $55.000 / $59.400 / $66.000"
 								data-for="p1-5"
 							>
 								<ReactTooltip
@@ -3958,7 +3958,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p1-5"
 								/>
-								<img src={p15} alt="Glaive Lord"></img>
+								<img src={p15} alt="Bloon Impact"></img>
 							</button>
 						</div>
 						<div>
@@ -3988,7 +3988,7 @@ export default function BombShooter() {
 								id="p2-1"
 								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Faster Throwing<br>Throws boomerangs faster.<br>Cost: $150 / $175 / $190 / $210"
+								data-tip="Faster Reload<br>Reloads 20% faster.<br>Cost: $150 / $175 / $190 / $210"
 								data-for="p2-1"
 							>
 								<ReactTooltip
@@ -3999,7 +3999,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p2-1"
 								/>
-								<img src={p21} alt="Faster Throwing"></img>
+								<img src={p21} alt="Faster Reload"></img>
 							</button>
 						</div>
 						<div>
@@ -4008,7 +4008,7 @@ export default function BombShooter() {
 								id="p2-2"
 								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Faster Rangs<br>Boomerangs fire and travel faster.<br>Cost: $210 / $250 / $270 / $300"
+								data-tip="Missile Launcher<br>Exchanges bombs for missiles, which fire faster, fly faster, and increase range.<br>Cost: $340 / $400 / $430 / $480"
 								data-for="p2-2"
 							>
 								<ReactTooltip
@@ -4019,7 +4019,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p2-2"
 								/>
-								<img src={p22} alt="Faster Rangs"></img>
+								<img src={p22} alt="Missile Launcher"></img>
 							</button>
 						</div>
 						<div>
@@ -4028,7 +4028,7 @@ export default function BombShooter() {
 								id="p2-3"
 								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Bionic Boomerang<br>Replaces arm with a strong bionic arm that can throw boomerangs extremely fast and does extra damage to MOAB-class bloons.<br>Cost: $1.360 / $1.600 / $1.730 / $1.920"
+								data-tip="MOAB Mauler<br>MOAB Maulers do much more damage to MOAB-Class Bloons and ceramics.<br>Cost: $935 / $1.100 / $1.190 / $1.320"
 								data-for="p2-3"
 							>
 								<ReactTooltip
@@ -4039,7 +4039,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p2-3"
 								/>
-								<img src={p23} alt="Bionic Boomerang"></img>
+								<img src={p23} alt="MOAB Mauler"></img>
 							</button>
 						</div>
 						<div>
@@ -4048,7 +4048,7 @@ export default function BombShooter() {
 								id="p2-4"
 								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Turbo Charge<br>Turbo Charge ability: Makes this Monkey attack incredibly fast for 10 seconds.<br>Cost: $3.400 / $4.000 / $4.320 / $4.800"
+								data-tip="MOAB Assassin<br>Assassinate MOAB ability: Special missile flies out and does massive damage to MOAB-Class Bloons.<br>Regular attack range and MOAB-class damage also increased.<br>Cost: $2.720 / $3.200 / $3.455 / $3.840"
 								data-for="p2-4"
 							>
 								<ReactTooltip
@@ -4059,7 +4059,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p2-4"
 								/>
-								<img src={p24} alt="Turbo Charge"></img>
+								<img src={p24} alt="MOAB Assassin"></img>
 							</button>
 						</div>
 						<div>
@@ -4068,7 +4068,7 @@ export default function BombShooter() {
 								id="p2-5"
 								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Perma Charge<br>Perma Charge has a permanent super fast attack speed.<br>Ability increases the lethality even more.<br>Cost: $29.750 / $35.000 / $37.800 / $42.000"
+								data-tip="MOAB Eliminator<br>Massive damage to MOABs and Assassinate ability deals 6x damage with a short cooldown.<br>Cost: $21.250 / $25.000 / $27.000 / $30.000"
 								data-for="p2-5"
 							>
 								<ReactTooltip
@@ -4079,7 +4079,7 @@ export default function BombShooter() {
 									multiline={true}
 									id="p2-5"
 								/>
-								<img src={p25} alt="Perma Charge"></img>
+								<img src={p25} alt="MOAB Eliminator"></img>
 							</button>
 						</div>
 						<div>
