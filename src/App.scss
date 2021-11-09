@@ -84,24 +84,28 @@ html {
 h1 {
 	font: 300 3rem Nunito-light;
 	color: $nord6;
+	cursor: default;
 }
 
 h2 {
 	font: 2rem Nunito-SemiBold;
 	color: $nord6;
 	margin-top: 60px;
+	cursor: default;
 }
 
 h3 {
 	font: 1.8rem Nunito-light;
 	color: $nord6;
 	transition: 0.2s;
+	cursor: default;
 }
 
 p {
 	font: 1.5rem Nunito-light;
 	color: $nord6;
 	margin: 0 5%;
+	cursor: default;
 }
 
 a {
@@ -122,10 +126,7 @@ a {
 
 button {
 	/*cursor: url(./misc/Cursor32.png) 5 0, auto;*/
-}
-
-input {
-	/*cursor: url(./misc/Cursor32.png) 5 0, auto;*/
+	cursor: pointer;
 }
 
 .navbar {
@@ -368,6 +369,7 @@ input {
 		padding: 0;
 		margin: 0;
 	}
+
 	button {
 		background-color: $lightgray;
 		border: none;
@@ -554,6 +556,7 @@ th {
 	padding: 0.5rem;
 	border: 1px solid $nord6;
 	text-align: left;
+	cursor: default;
 }
 
 td {
@@ -562,6 +565,7 @@ td {
 	border: 1px solid $nord6;
 	text-align: left;
 	font: 1.5rem Nunito-Light;
+	cursor: default;
 }
 
 .bloons img {
