@@ -24,29 +24,19 @@ function App() {
 					</div>
 					<ul>
 						<li>
-							<NavLink to="/">
-								Home
-							</NavLink>
+							<NavLink to="/">Home</NavLink>
 						</li>
 						<li>
-							<NavLink to="/towers">
-								Towers
-							</NavLink>
+							<NavLink to="/towers">Towers</NavLink>
 						</li>
 						<li>
-							<NavLink to="/heroes">
-								Heroes
-							</NavLink>
+							<NavLink to="/heroes">Heroes</NavLink>
 						</li>
 						<li>
-							<NavLink to="/bloons">
-								Bloons
-							</NavLink>
+							<NavLink to="/bloons">Bloons</NavLink>
 						</li>
 						<li>
-							<NavLink to="/rounds">
-								Rounds
-							</NavLink>
+							<NavLink to="/rounds">Rounds</NavLink>
 						</li>
 					</ul>
 				</nav>

@@ -176,15 +176,10 @@ input {
 .towers,
 .tower,
 .heroes {
-	margin-top: 40px;
+	margin-top: 70px;
 	padding-bottom: 80px;
 	width: 100%;
-	overflow: hidden;
 	background-color: $bg;
-}
-
-.tower {
-	overflow: auto;
 }
 
 .grid-container {
@@ -534,7 +529,6 @@ input {
 	margin-top: 40px;
 	padding-bottom: 80px;
 	width: 100%;
-	overflow: hidden;
 	background-color: $bg;
 	display: flex;
 	flex-direction: column;
