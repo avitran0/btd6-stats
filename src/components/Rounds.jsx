@@ -59,7 +59,7 @@ export default function Rounds() {
 			<h1>Rounds</h1>
 			<ul>
 				<li>
-					<NavLink to="/rounds" exact activeClassName="active-link">
+					<NavLink to="/rounds" exact>
 						Normal
 					</NavLink>
 				</li>

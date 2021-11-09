@@ -64,7 +64,7 @@ html {
 	box-sizing: border-box;
 	background-color: $bg;
 	font-family: Nunito-Light;
-	cursor: url(./misc/Cursor32.png) 5 0, auto;
+	/*cursor: url(./misc/Cursor32.png) 5 0, auto;*/
 	transition: 0.2s;
 	a {
 		color: $nord6;
@@ -106,23 +106,26 @@ p {
 
 a {
 	font: 1.5rem Nunito-light;
-	cursor: url(./misc/Cursor32.png) 5 0, auto;
+	/*cursor: url(./misc/Cursor32.png) 5 0, auto;*/
 	transition: 0.2s;
 	color: $nord6;
 	outline: none;
 	text-decoration: none;
 	&:hover,
-	&:active {
+	&:active,
+	&:focus,
+	&:focus-visible {
 		color: $darkblue;
+		outline: none;
 	}
 }
 
 button {
-	cursor: url(./misc/Cursor32.png) 5 0, auto;
+	/*cursor: url(./misc/Cursor32.png) 5 0, auto;*/
 }
 
 input {
-	cursor: url(./misc/Cursor32.png) 5 0, auto;
+	/*cursor: url(./misc/Cursor32.png) 5 0, auto;*/
 }
 
 .navbar {
@@ -159,11 +162,13 @@ input {
 	}
 }
 
-.active-link {
+.active {
 	color: $darkblue !important;
-
-	&:hover {
+	&:hover,
+	&:focus,
+	&:focus-visible {
 		color: $darkblue !important;
+		outline: none;
 	}
 }
 
@@ -208,9 +213,12 @@ input {
 			transition: 0.2s;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus,
+		&:focus-visible {
 			&::after {
 				color: $darkblue;
+				outline: none;
 			}
 		}
 	}
@@ -374,8 +382,11 @@ input {
 		width: 8rem;
 		margin: 0;
 		padding: 0;
-		&:hover {
+		&:hover,
+		&:focus,
+		&:focus-visible {
 			background-color: $darkblue;
+			outline: none;
 		}
 		&:disabled {
 			background-color: $red;
@@ -616,6 +627,10 @@ td {
 
 .footer {
 	margin-top: 4rem;
+	a {
+		font-size: 1.5rem;
+		padding: 0;
+	}
 }
 
 @media (max-width: 1400px) {

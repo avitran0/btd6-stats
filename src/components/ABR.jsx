@@ -60,10 +60,12 @@ export default function ABR() {
 			<h1>Rounds</h1>
 			<ul>
 				<li>
-					<NavLink to="/rounds">Normal</NavLink>
+					<NavLink to="/rounds" end>
+						Normal
+					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/rounds/abr" activeClassName="active-link">
+					<NavLink to="/rounds/abr">
 						ABR
 					</NavLink>
 				</li>
@@ -1478,4 +1480,3 @@ export default function ABR() {
 		</motion.div>
 	);
 }
-

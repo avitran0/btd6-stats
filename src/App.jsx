@@ -24,27 +24,27 @@ function App() {
 					</div>
 					<ul>
 						<li>
-							<NavLink to="/" exact activeClassName="active-link">
+							<NavLink to="/">
 								Home
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/towers" activeClassName="active-link">
+							<NavLink to="/towers">
 								Towers
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/heroes" activeClassName="active-link">
+							<NavLink to="/heroes">
 								Heroes
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/bloons" activeClassName="active-link">
+							<NavLink to="/bloons">
 								Bloons
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/rounds" activeClassName="active-link">
+							<NavLink to="/rounds">
 								Rounds
 							</NavLink>
 						</li>
