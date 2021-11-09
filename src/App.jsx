@@ -8,6 +8,7 @@ import ABR from "./components/ABR";
 import DartMonkey from "./components/towers/dart-monkey";
 import BoomerangMonkey from "./components/towers/boomerang-monkey";
 import BombShooter from "./components/towers/bomb-shooter";
+import TackShooter from "./components/towers/tack-shooter";
 import NinjaMonkey from "./components/towers/ninja-monkey";
 import { Route, NavLink, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -48,6 +49,7 @@ function App() {
 					<Route path="/towers/dart-monkey" element={<DartMonkey />} />
 					<Route path="/towers/boomerang-monkey" element={<BoomerangMonkey />} />
 					<Route path="/towers/bomb-shooter" element={<BombShooter />} />
+					<Route path="/towers/tack-shooter" element={<TackShooter />} />
 					<Route path="/towers/ninja-monkey" element={<NinjaMonkey />} />
 					<Route path="/heroes" exact element={<Heroes />} />
 					<Route path="/heroes/quincy" element={<HeroQuincy />} />

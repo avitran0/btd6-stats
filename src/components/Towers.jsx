@@ -52,7 +52,7 @@ export default function Towers() {
 					</Link>
 				</div>
 				<div className="grid-container">
-					<Link to="/towers" id="tack-shooter">
+					<Link to="/towers/tack-shooter" id="tack-shooter">
 						<img src={TackShooter} alt="Tack Shooter" />
 					</Link>
 				</div>
