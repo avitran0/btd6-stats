@@ -3868,7 +3868,7 @@ export default function IceMonkey() {
 								id="p1-1"
 								className={p1 === 1 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Faster Shooting<br>Shoots tacks faster.<br>Cost: $125 / $150 / $160 / $180"
+								data-tip="Permafrost<br>Bloons move slowly even after thawing out.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="p1-1"
 							>
 								<ReactTooltip
@@ -3879,7 +3879,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p1-1"
 								/>
-								<img src={p11} alt="Faster Shooting"></img>
+								<img src={p11} alt="Permafrost"></img>
 							</button>
 						</div>
 						<div>
@@ -3888,7 +3888,7 @@ export default function IceMonkey() {
 								id="p1-2"
 								className={p1 === 2 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Even Faster Shooting<br>Shoots tacks even faster.<br>Cost: $255 / $300 / $325 / $360"
+								data-tip="Cold Snap<br>Can freeze and pop Lead Bloons and Camo Bloons.<br>Cost: $295 / $350 / $380 / $420"
 								data-for="p1-2"
 							>
 								<ReactTooltip
@@ -3899,7 +3899,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p1-2"
 								/>
-								<img src={p12} alt="Even Faster Shooting"></img>
+								<img src={p12} alt="Cold Snap"></img>
 							</button>
 						</div>
 						<div>
@@ -3908,7 +3908,7 @@ export default function IceMonkey() {
 								id="p1-3"
 								className={p1 === 3 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Hot Shots<br>Shoots superhot tacks that do extra damage and can pop Lead Bloons.<br>Cost: $510 / $600 / $650 / $720"
+								data-tip="Ice Shards<br>Razor sharp shards fly out when Frozen Bloons pop.<br>Cost: $1.275 / $1.500 / $1.620 / $1.800"
 								data-for="p1-3"
 							>
 								<ReactTooltip
@@ -3919,7 +3919,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p1-3"
 								/>
-								<img src={p13} alt="Hot Shots"></img>
+								<img src={p13} alt="Ice Shards"></img>
 							</button>
 						</div>
 						<div>
@@ -3928,7 +3928,7 @@ export default function IceMonkey() {
 								id="p1-4"
 								className={p1 === 4 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Ring of Fire<br>Shoots a deadly ring of flames instead of tacks.<br>Cost: $2.975 / $3.500 / $3.780 / $4.200"
+								data-tip="Embrittlement<br>All Bloons hit become brittle, take extra damage for a short time and losing Camo & Regrow properties permanently.<br>Cost: $1.870 / $2.200 / $2.375 / $2.640"
 								data-for="p1-4"
 							>
 								<ReactTooltip
@@ -3939,7 +3939,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p1-4"
 								/>
-								<img src={p14} alt="Ring of Fire"></img>
+								<img src={p14} alt="Embrittlement"></img>
 							</button>
 						</div>
 						<div>
@@ -3948,7 +3948,7 @@ export default function IceMonkey() {
 								id="p1-5"
 								className={p1 === 5 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Inferno Ring<br>Deadly inferno of flame roasts Bloons into oblivion.<br>Cost: $38.675 / $45.500 / $49.140 / $54.600"
+								data-tip="Super Brittle<br>Bloons take huge damage while frozen including MOAB-class Bloons.<br>Cost: $23.800 / $28.000 / $30.240 / $33.600"
 								data-for="p1-5"
 							>
 								<ReactTooltip
@@ -3959,7 +3959,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p1-5"
 								/>
-								<img src={p15} alt="Inferno Ring"></img>
+								<img src={p15} alt="Super Brittle"></img>
 							</button>
 						</div>
 						<div>
@@ -3989,7 +3989,7 @@ export default function IceMonkey() {
 								id="p2-1"
 								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Long Range Tacks<br>Tacks fly out further than normal.<br>Cost: $85 / $100 / $110 / $120"
+								data-tip="Enhanced Freeze<br>Attacks faster and freezes for longer.<br>Cost: $190 / $225 / $245 / $270"
 								data-for="p2-1"
 							>
 								<ReactTooltip
@@ -4000,7 +4000,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p2-1"
 								/>
-								<img src={p21} alt="Long Range Tacks"></img>
+								<img src={p21} alt="Enhanced Freeze"></img>
 							</button>
 						</div>
 						<div>
@@ -4009,7 +4009,7 @@ export default function IceMonkey() {
 								id="p2-2"
 								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Super Range Tacks<br>Even longer range tacksthat can pop more Bloons.<br>Cost: $190 / $225 / $245 / $270"
+								data-tip="Deep Freeze<br>Freezes through 2 layers of Bloon.<br>Cost: $295 / $350 / $380 / $420"
 								data-for="p2-2"
 							>
 								<ReactTooltip
@@ -4020,7 +4020,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p2-2"
 								/>
-								<img src={p22} alt="Super Range Tacks"></img>
+								<img src={p22} alt="Deep Freeze"></img>
 							</button>
 						</div>
 						<div>
@@ -4029,7 +4029,7 @@ export default function IceMonkey() {
 								id="p2-3"
 								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Blade Shooter<br>Switches tacks for sharp blades that can pop up to 5 additional Bloons.<br>Cost: $465 / $550 / $595 / $660"
+								data-tip="Arctic Wind<br>Greatly increases pierce & gains a super cold aura that slows Bloons and freezes water nearby.<br>Cost: $2.465 / $2.900 / $3.130 / $3.480"
 								data-for="p2-3"
 							>
 								<ReactTooltip
@@ -4040,7 +4040,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p2-3"
 								/>
-								<img src={p23} alt="Blade Shooter"></img>
+								<img src={p23} alt="Arctic Wind"></img>
 							</button>
 						</div>
 						<div>
@@ -4049,7 +4049,7 @@ export default function IceMonkey() {
 								id="p2-4"
 								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Blade Maelstrom<br>Blade Maelstrom ability: Covers the area in a storm of blades.<br>Cost: $2.295 / $2.700 / $2.915 / $3.240"
+								data-tip="Snowstorm<br>Snowstorm Ability: Freezes all regular bloons on screen, and briefly freezes white, zebra, camo, and slows MOAB class.<br>Cost: $2.550 / $3.000 / $3.240 / $3.600"
 								data-for="p2-4"
 							>
 								<ReactTooltip
@@ -4060,7 +4060,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p2-4"
 								/>
-								<img src={p24} alt="Blade Maelstrom"></img>
+								<img src={p24} alt="Snowstorm"></img>
 							</button>
 						</div>
 						<div>
@@ -4069,7 +4069,7 @@ export default function IceMonkey() {
 								id="p2-5"
 								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Super Maelstrom<br>Even more powerful Maelstrom ability and lasts longer.<br>Cost: $12.750 / $15.000 / $16.200 / $18.000"
+								data-tip="Absolute Zero<br>Ability is so cold it fully freezes all Bloon types including cold immune, camo, and MOAB-Class.<br>Cost: $17.000 / $20.000 / $21.600 / $24.000"
 								data-for="p2-5"
 							>
 								<ReactTooltip
@@ -4080,7 +4080,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p2-5"
 								/>
-								<img src={p25} alt="Super Maelstrom"></img>
+								<img src={p25} alt="Absolute Zero"></img>
 							</button>
 						</div>
 						<div>
@@ -4093,7 +4093,7 @@ export default function IceMonkey() {
 								id="p3-1"
 								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="More Tacks<br>Shoots 10 tacks instead of 8, plus increases Ring of Fire damage.<br>Cost: $85 / $100 / $110 / $120"
+								data-tip="Larger Radius<br>Larger freeze area.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="p3-1"
 							>
 								<ReactTooltip
@@ -4104,7 +4104,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p3-1"
 								/>
-								<img src={p31} alt="More Tacks"></img>
+								<img src={p31} alt="Larger Radius"></img>
 							</button>
 						</div>
 						<div>
@@ -4113,7 +4113,7 @@ export default function IceMonkey() {
 								id="p3-2"
 								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Even More Tacks<br>Shoots out 12 tacks per shot and increases Ring of Fire damage further.<br>Cost: $85 / $100 / $110 / $120"
+								data-tip="Re-Freeze<br>Can re-freeze Bloons that are already frozen.<br>Cost: $190 / $225 / $245 / $270"
 								data-for="p3-2"
 							>
 								<ReactTooltip
@@ -4124,7 +4124,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p3-2"
 								/>
-								<img src={p32} alt="Even More Tacks"></img>
+								<img src={p32} alt="Re-Freeze"></img>
 							</button>
 						</div>
 						<div>
@@ -4133,7 +4133,7 @@ export default function IceMonkey() {
 								id="p3-3"
 								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Tack Sprayer<br>Sprays out 16 tacks per volley.<br>Cost: $350 / $450 / $485 / $540"
+								data-tip="Cryo Cannon<br>Shoots freezing bombs at Bloons over long range.<br>Cost: $1.655 / $1.950 / $2.105 / $2.340"
 								data-for="p3-3"
 							>
 								<ReactTooltip
@@ -4144,7 +4144,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p3-3"
 								/>
-								<img src={p33} alt="Tack Sprayer"></img>
+								<img src={p33} alt="Cryo Cannon"></img>
 							</button>
 						</div>
 						<div>
@@ -4153,7 +4153,7 @@ export default function IceMonkey() {
 								id="p3-4"
 								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Overdrive<br>Shoots incredibly fast.<br>Cost: $2.720 / $3.200 / $3.455 / $3.840"
+								data-tip="Icicles<br>Frozen Bloons grow sharp icicles that can pop Bloons that touch them.<br>Cost: $1.700 / $2.000 / $2.160 / $2.400"
 								data-for="p3-4"
 							>
 								<ReactTooltip
@@ -4164,7 +4164,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p3-4"
 								/>
-								<img src={p34} alt="Overdrive"></img>
+								<img src={p34} alt="Icicles"></img>
 							</button>
 						</div>
 						<div>
@@ -4173,7 +4173,7 @@ export default function IceMonkey() {
 								id="p3-5"
 								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="The Tack Zone<br>Many, many tacks.<br>Cost: $17.000 / $20.000 / $21.600 / $24.000"
+								data-tip="Icicle Impale<br>Shoots huge icicle spikes that do huge damage to MOAB-Class Bloons and freezes them.<br>Cost: $25.500 / $30.000 / $32.400 / $36.000"
 								data-for="p3-5"
 							>
 								<ReactTooltip
@@ -4184,7 +4184,7 @@ export default function IceMonkey() {
 									multiline={true}
 									id="p3-5"
 								/>
-								<img src={p35} alt="The Tack Zone"></img>
+								<img src={p35} alt="Icicle Impale"></img>
 							</button>
 						</div>
 						<div>
