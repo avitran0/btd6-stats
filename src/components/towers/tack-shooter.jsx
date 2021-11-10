@@ -370,7 +370,7 @@ export default function TackShooter() {
 					pierce: 60,
 					pierceSecondary: 1,
 					projectiles: 8,
-					projectilesSecondary: 0,
+					projectilesSecondary: 1,
 					speed: 0.1,
 					range: 34.5,
 					abilityName: "",
@@ -918,7 +918,7 @@ export default function TackShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 60,
+					pierce: 70,
 					pierceSecondary: 0,
 					projectiles: 8,
 					projectilesSecondary: 0,
@@ -976,10 +976,10 @@ export default function TackShooter() {
 					damageSecondary: 700,
 					damageMOABSecondary: 700,
 					damageCeramicSecondary: 700,
-					pierce: 60,
+					pierce: 70,
 					pierceSecondary: 1,
 					projectiles: 8,
-					projectilesSecondary: 0,
+					projectilesSecondary: 1,
 					speed: 0.1,
 					range: 38.5,
 					abilityName: "",
@@ -1038,12 +1038,12 @@ export default function TackShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 20,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 44,
+					speed: 1.05,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1052,10 +1052,10 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"],
@@ -1066,18 +1066,18 @@ export default function TackShooter() {
 				break;
 			case "220":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 30,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 44,
+					speed: 0.63,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1086,10 +1086,10 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"] + costs["p2-2-m"],
@@ -1101,18 +1101,18 @@ export default function TackShooter() {
 				break;
 			case "320":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 44,
+					speed: 0.63,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1121,7 +1121,7 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -1165,12 +1165,12 @@ export default function TackShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 80,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 47,
+					speed: 0.5355,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1179,9 +1179,9 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
-					purple: true,
+					purple: false,
 					lead: true,
 					frozen: true,
 					costEasy:
@@ -1221,18 +1221,18 @@ export default function TackShooter() {
 				break;
 			case "520":
 				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 50,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 43,
+					damage: 4,
+					damageMOAB: 10,
+					damageCeramic: 4,
+					damageSecondary: 700,
+					damageMOABSecondary: 700,
+					damageCeramicSecondary: 700,
+					pierce: 80,
+					pierceSecondary: 1,
+					projectiles: 8,
+					projectilesSecondary: 1,
+					speed: 0.1,
+					range: 42.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1243,7 +1243,7 @@ export default function TackShooter() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: true,
+					purple: false,
 					lead: true,
 					frozen: true,
 					costEasy:
@@ -1293,12 +1293,12 @@ export default function TackShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 20,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 47,
+					speed: 1.05,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1307,10 +1307,10 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"],
@@ -1321,18 +1321,18 @@ export default function TackShooter() {
 				break;
 			case "201":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 30,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 47,
+					speed: 0.63,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1341,10 +1341,10 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"],
@@ -1355,18 +1355,18 @@ export default function TackShooter() {
 				break;
 			case "301":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 47,
+					speed: 0.63,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1375,7 +1375,7 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -1390,18 +1390,18 @@ export default function TackShooter() {
 				break;
 			case "401":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 4,
+					damageMOAB: 4,
+					damageCeramic: 4,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 60,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 50,
+					speed: 0.5355,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1410,9 +1410,9 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
-					purple: true,
+					purple: false,
 					lead: true,
 					frozen: true,
 					costEasy:
@@ -1448,18 +1448,18 @@ export default function TackShooter() {
 				break;
 			case "501":
 				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 50,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 50,
+					damage: 5,
+					damageMOAB: 10,
+					damageCeramic: 5,
+					damageSecondary: 700,
+					damageMOABSecondary: 700,
+					damageCeramicSecondary: 700,
+					pierce: 60,
+					pierceSecondary: 1,
+					projectiles: 10,
+					projectilesSecondary: 1,
+					speed: 0.1,
+					range: 34.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1470,7 +1470,7 @@ export default function TackShooter() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: true,
+					purple: false,
 					lead: true,
 					frozen: true,
 					costEasy:
@@ -1513,15 +1513,15 @@ export default function TackShooter() {
 					damage: 1,
 					damageMOAB: 1,
 					damageCeramic: 1,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 20,
-					pierceSecondary: 1,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 12,
+					projectilesSecondary: 0,
+					speed: 1.05,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1533,7 +1533,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -1544,18 +1544,18 @@ export default function TackShooter() {
 				break;
 			case "202":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 30,
-					pierceSecondary: 1,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 12,
+					projectilesSecondary: 0,
+					speed: 0.63,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1567,7 +1567,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -1579,18 +1579,18 @@ export default function TackShooter() {
 				break;
 			case "302":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 50,
-					pierceSecondary: 2,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 12,
+					projectilesSecondary: 0,
+					speed: 0.63,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1637,18 +1637,18 @@ export default function TackShooter() {
 				break;
 			case "402":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
-					damageSecondary: 2,
-					damageMOABSecondary: 2,
-					damageCeramicSecondary: 2,
-					pierce: 50,
-					pierceSecondary: 2,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 52,
+					damage: 5,
+					damageMOAB: 5,
+					damageCeramic: 5,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 60,
+					pierceSecondary: 0,
+					projectiles: 12,
+					projectilesSecondary: 0,
+					speed: 0.5355,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1659,7 +1659,7 @@ export default function TackShooter() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: true,
+					purple: false,
 					lead: true,
 					frozen: true,
 					costEasy:
@@ -1699,18 +1699,18 @@ export default function TackShooter() {
 				break;
 			case "502":
 				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 12,
-					damageMOABSecondary: 12,
-					damageCeramicSecondary: 12,
-					pierce: 50,
-					pierceSecondary: 3,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 52,
+					damage: 6,
+					damageMOAB: 11,
+					damageCeramic: 6,
+					damageSecondary: 700,
+					damageMOABSecondary: 700,
+					damageCeramicSecondary: 700,
+					pierce: 60,
+					pierceSecondary: 1,
+					projectiles: 12,
+					projectilesSecondary: 1,
+					speed: 0.1,
+					range: 34.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1721,7 +1721,7 @@ export default function TackShooter() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: true,
+					purple: false,
 					lead: true,
 					frozen: true,
 					costEasy:
@@ -1766,17 +1766,17 @@ export default function TackShooter() {
 			case "130":
 				setStats({
 					damage: 1,
-					damageMOAB: 19,
-					damageCeramic: 2,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 20,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 49,
+					speed: 0.8925,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1785,11 +1785,11 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
@@ -1801,30 +1801,30 @@ export default function TackShooter() {
 			case "140":
 				setStats({
 					damage: 1,
-					damageMOAB: 31,
-					damageCeramic: 5,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 20,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 49,
-					abilityName: "Assassinate MOAB",
-					abilityDuration: 0,
-					abilityCooldown: 30,
-					abilityDamage: 750,
-					abilityPierce: 1,
-					abilitySpeed: 0.0,
+					speed: 0.8925,
+					range: 31,
+					abilityName: "Maelstrom",
+					abilityDuration: 3,
+					abilityCooldown: 20,
+					abilityDamage: 1,
+					abilityPierce: 200,
+					abilitySpeed: 0.0333,
 					abilityRange: Infinity,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1858,24 +1858,24 @@ export default function TackShooter() {
 				break;
 			case "150":
 				setStats({
-					damage: 1,
-					damageMOAB: 130,
-					damageCeramic: 5,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 20,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 49,
-					abilityName: "Eliminate MOAB",
-					abilityDuration: 0,
-					abilityCooldown: 10,
-					abilityDamage: 4500,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
+					speed: 0.8925,
+					range: 31,
+					abilityName: "Super Maelstrom",
+					abilityDuration: 9,
+					abilityCooldown: 20,
+					abilityDamage: 2,
+					abilityPierce: 500,
+					abilitySpeed: 0.0333,
 					abilityRange: Infinity,
 					camo: false,
 					black: true,
@@ -1920,18 +1920,18 @@ export default function TackShooter() {
 				break;
 			case "230":
 				setStats({
-					damage: 2,
-					damageMOAB: 20,
-					damageCeramic: 3,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 30,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 49,
+					speed: 0.5355,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1940,11 +1940,11 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1978,31 +1978,31 @@ export default function TackShooter() {
 				break;
 			case "240":
 				setStats({
-					damage: 2,
-					damageMOAB: 32,
-					damageCeramic: 6,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 30,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 49,
-					abilityName: "Assassinate MOAB",
-					abilityDuration: 0,
-					abilityCooldown: 30,
-					abilityDamage: 750,
-					abilityPierce: 1,
-					abilitySpeed: 0.0,
+					speed: 0.5355,
+					range: 31,
+					abilityName: "Maelstrom",
+					abilityDuration: 3,
+					abilityCooldown: 20,
+					abilityDamage: 1,
+					abilityPierce: 200,
+					abilitySpeed: 0.0333,
 					abilityRange: Infinity,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2041,23 +2041,23 @@ export default function TackShooter() {
 			case "250":
 				setStats({
 					damage: 2,
-					damageMOAB: 131,
-					damageCeramic: 6,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 30,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 49,
-					abilityName: "Eliminate MOAB",
-					abilityDuration: 0,
-					abilityCooldown: 10,
-					abilityDamage: 4500,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
+					speed: 0.5355,
+					range: 31,
+					abilityName: "Super Maelstrom",
+					abilityDuration: 9,
+					abilityCooldown: 20,
+					abilityDamage: 2,
+					abilityPierce: 500,
+					abilitySpeed: 0.0333,
 					abilityRange: Infinity,
 					camo: false,
 					black: true,
@@ -2112,12 +2112,12 @@ export default function TackShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 14,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 1.125,
-					range: 47,
+					speed: 1.4,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2126,10 +2126,10 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"],
@@ -2146,12 +2146,12 @@ export default function TackShooter() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 14,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 51,
+					speed: 1.4,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2160,10 +2160,10 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"],
@@ -2175,17 +2175,17 @@ export default function TackShooter() {
 			case "031":
 				setStats({
 					damage: 1,
-					damageMOAB: 19,
-					damageCeramic: 2,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 14,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 56,
+					speed: 1.19,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2194,11 +2194,11 @@ export default function TackShooter() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p3-1-h"],
@@ -2210,30 +2210,30 @@ export default function TackShooter() {
 			case "041":
 				setStats({
 					damage: 1,
-					damageMOAB: 31,
-					damageCeramic: 5,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 14,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 56,
-					abilityName: "Assassinate MOAB",
-					abilityDuration: 0,
-					abilityCooldown: 30,
-					abilityDamage: 750,
-					abilityPierce: 1,
-					abilitySpeed: 0.0,
+					speed: 1.19,
+					range: 31,
+					abilityName: "Maelstrom",
+					abilityDuration: 3,
+					abilityCooldown: 20,
+					abilityDamage: 1,
+					abilityPierce: 200,
+					abilitySpeed: 0.0333,
 					abilityRange: Infinity,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2267,24 +2267,24 @@ export default function TackShooter() {
 				break;
 			case "051":
 				setStats({
-					damage: 1,
-					damageMOAB: 130,
-					damageCeramic: 5,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 14,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 56,
-					abilityName: "Eliminate MOAB",
-					abilityDuration: 0,
-					abilityCooldown: 10,
-					abilityDamage: 4500,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
+					speed: 1.19,
+					range: 31,
+					abilityName: "Super Maelstrom",
+					abilityDuration: 9,
+					abilityCooldown: 20,
+					abilityDamage: 2,
+					abilityPierce: 500,
+					abilitySpeed: 0.0333,
 					abilityRange: Infinity,
 					camo: false,
 					black: true,
@@ -2330,17 +2330,17 @@ export default function TackShooter() {
 			case "032":
 				setStats({
 					damage: 1,
-					damageMOAB: 19,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 14,
-					pierceSecondary: 1,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 0.825,
-					range: 58,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 6,
+					pierceSecondary: 0,
+					projectiles: 12,
+					projectilesSecondary: 0,
+					speed: 1.19,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2352,8 +2352,8 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2388,30 +2388,30 @@ export default function TackShooter() {
 			case "042":
 				setStats({
 					damage: 1,
-					damageMOAB: 31,
-					damageCeramic: 5,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 14,
-					pierceSecondary: 1,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 0.825,
-					range: 58,
-					abilityName: "Assassinate MOAB",
-					abilityDuration: 0,
-					abilityCooldown: 30,
-					abilityDamage: 750,
-					abilityPierce: 1,
-					abilitySpeed: 0.0,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 6,
+					pierceSecondary: 0,
+					projectiles: 12,
+					projectilesSecondary: 0,
+					speed: 1.19,
+					range: 31,
+					abilityName: "Maelstrom",
+					abilityDuration: 3,
+					abilityCooldown: 20,
+					abilityDamage: 1,
+					abilityPierce: 200,
+					abilitySpeed: 0.0333,
 					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2449,24 +2449,24 @@ export default function TackShooter() {
 				break;
 			case "052":
 				setStats({
-					damage: 1,
-					damageMOAB: 130,
-					damageCeramic: 5,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 14,
-					pierceSecondary: 1,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 0.825,
-					range: 58,
-					abilityName: "Eliminate MOAB",
-					abilityDuration: 0,
-					abilityCooldown: 10,
-					abilityDamage: 4500,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 6,
+					pierceSecondary: 0,
+					projectiles: 12,
+					projectilesSecondary: 0,
+					speed: 1.19,
+					range: 31,
+					abilityName: "Super Maelstrom",
+					abilityDuration: 9,
+					abilityCooldown: 20,
+					abilityDamage: 2,
+					abilityPierce: 500,
+					abilitySpeed: 0.0333,
 					abilityRange: Infinity,
 					camo: false,
 					black: true,
@@ -2518,15 +2518,15 @@ export default function TackShooter() {
 					damage: 1,
 					damageMOAB: 1,
 					damageCeramic: 1,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 20,
-					pierceSecondary: 10,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.7875,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2538,7 +2538,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
@@ -2553,15 +2553,15 @@ export default function TackShooter() {
 					damage: 1,
 					damageMOAB: 1,
 					damageCeramic: 1,
-					damageSecondary: 2,
-					damageMOABSecondary: 2,
-					damageCeramicSecondary: 2,
-					pierce: 20,
-					pierceSecondary: 106,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 2,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.2625,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2573,7 +2573,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2608,30 +2608,30 @@ export default function TackShooter() {
 				break;
 			case "105":
 				setStats({
-					damage: 5,
-					damageMOAB: 5,
-					damageCeramic: 5,
-					damageSecondary: 2,
-					damageMOABSecondary: 2,
-					damageCeramicSecondary: 2,
-					pierce: 20,
-					pierceSecondary: 70,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
-					abilityName: "Bomb Blitz",
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 4,
+					pierceSecondary: 0,
+					projectiles: 32,
+					projectilesSecondary: 0,
+					speed: 0.196875,
+					range: 30,
+					abilityName: "",
 					abilityDuration: 0,
-					abilityCooldown: 40,
-					abilityDamage: 2000,
-					abilityPierce: Infinity,
+					abilityCooldown: 0,
+					abilityDamage: 0,
+					abilityPierce: 0,
 					abilitySpeed: 0.0,
-					abilityRange: Infinity,
+					abilityRange: 0,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2670,18 +2670,18 @@ export default function TackShooter() {
 				break;
 			case "203":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 30,
-					pierceSecondary: 10,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.4725,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2693,7 +2693,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2728,18 +2728,18 @@ export default function TackShooter() {
 				break;
 			case "204":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 3,
-					damageMOABSecondary: 3,
-					damageCeramicSecondary: 3,
-					pierce: 30,
-					pierceSecondary: 166,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 2,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.1575,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2751,7 +2751,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2790,30 +2790,30 @@ export default function TackShooter() {
 				break;
 			case "205":
 				setStats({
-					damage: 6,
-					damageMOAB: 6,
-					damageCeramic: 6,
-					damageSecondary: 3,
-					damageMOABSecondary: 3,
-					damageCeramicSecondary: 3,
-					pierce: 30,
-					pierceSecondary: 166,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
-					abilityName: "Bomb Blitz",
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 4,
+					pierceSecondary: 0,
+					projectiles: 32,
+					projectilesSecondary: 0,
+					speed: 0.118125,
+					range: 30,
+					abilityName: "",
 					abilityDuration: 0,
-					abilityCooldown: 40,
-					abilityDamage: 2000,
-					abilityPierce: Infinity,
+					abilityCooldown: 0,
+					abilityDamage: 0,
+					abilityPierce: 0,
 					abilitySpeed: 0.0,
-					abilityRange: Infinity,
+					abilityRange: 0,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2859,15 +2859,15 @@ export default function TackShooter() {
 					damage: 1,
 					damageMOAB: 1,
 					damageCeramic: 1,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 14,
-					pierceSecondary: 1,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.125,
-					range: 49,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 12,
+					projectilesSecondary: 0,
+					speed: 1.4,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2879,7 +2879,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -2893,15 +2893,15 @@ export default function TackShooter() {
 					damage: 1,
 					damageMOAB: 1,
 					damageCeramic: 1,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 14,
-					pierceSecondary: 10,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.125,
-					range: 49,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 1.05,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2913,7 +2913,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
@@ -2928,15 +2928,15 @@ export default function TackShooter() {
 					damage: 1,
 					damageMOAB: 1,
 					damageCeramic: 1,
-					damageSecondary: 2,
-					damageMOABSecondary: 2,
-					damageCeramicSecondary: 2,
-					pierce: 14,
-					pierceSecondary: 70,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.125,
-					range: 49,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 2,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.35,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2948,7 +2948,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2983,30 +2983,30 @@ export default function TackShooter() {
 				break;
 			case "015":
 				setStats({
-					damage: 5,
-					damageMOAB: 5,
-					damageCeramic: 5,
-					damageSecondary: 2,
-					damageMOABSecondary: 2,
-					damageCeramicSecondary: 2,
-					pierce: 14,
-					pierceSecondary: 70,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.125,
-					range: 49,
-					abilityName: "Bomb Blitz",
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 4,
+					pierceSecondary: 0,
+					projectiles: 32,
+					projectilesSecondary: 0,
+					speed: 0.2625,
+					range: 34,
+					abilityName: "",
 					abilityDuration: 0,
-					abilityCooldown: 40,
-					abilityDamage: 2000,
-					abilityPierce: Infinity,
+					abilityCooldown: 0,
+					abilityDamage: 0,
+					abilityPierce: 0,
 					abilitySpeed: 0.0,
-					abilityRange: Infinity,
+					abilityRange: 0,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3048,15 +3048,15 @@ export default function TackShooter() {
 					damage: 1,
 					damageMOAB: 1,
 					damageCeramic: 1,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 14,
-					pierceSecondary: 1,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 0.825,
-					range: 53,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 12,
+					projectilesSecondary: 0,
+					speed: 1.4,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3068,7 +3068,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -3083,15 +3083,15 @@ export default function TackShooter() {
 					damage: 1,
 					damageMOAB: 1,
 					damageCeramic: 1,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 14,
-					pierceSecondary: 10,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 0.825,
-					range: 53,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 1.05,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3103,7 +3103,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3141,15 +3141,15 @@ export default function TackShooter() {
 					damage: 1,
 					damageMOAB: 1,
 					damageCeramic: 1,
-					damageSecondary: 2,
-					damageMOABSecondary: 2,
-					damageCeramicSecondary: 2,
-					pierce: 14,
-					pierceSecondary: 70,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 0.825,
-					range: 53,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 2,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.35,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3161,7 +3161,7 @@ export default function TackShooter() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3200,30 +3200,30 @@ export default function TackShooter() {
 				break;
 			case "025":
 				setStats({
-					damage: 5,
-					damageMOAB: 5,
-					damageCeramic: 5,
-					damageSecondary: 2,
-					damageMOABSecondary: 2,
-					damageCeramicSecondary: 2,
-					pierce: 14,
-					pierceSecondary: 70,
-					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 0.825,
-					range: 53,
-					abilityName: "Bomb Blitz",
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 4,
+					pierceSecondary: 0,
+					projectiles: 32,
+					projectilesSecondary: 0,
+					speed: 0.2625,
+					range: 38,
+					abilityName: "",
 					abilityDuration: 0,
-					abilityCooldown: 40,
-					abilityDamage: 2000,
-					abilityPierce: Infinity,
+					abilityCooldown: 0,
+					abilityDamage: 0,
+					abilityPierce: 0,
 					abilitySpeed: 0.0,
-					abilityRange: Infinity,
+					abilityRange: 0,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3363,7 +3363,7 @@ export default function TackShooter() {
 			transition={{ ease: "easeInOut", duration: 0.2 }}
 			className="tower"
 		>
-			<h1>Bomb Shooter</h1>
+			<h1>Tack Shooter</h1>
 			<div className="tower-container">
 				<div className="stats-container">
 					<table>
@@ -3858,7 +3858,7 @@ export default function TackShooter() {
 				</div>
 				<div className="image-container">
 					<div className="image-container-inner">
-						<img src={images[image]} alt="Boomerang Monkey" className="tower-img"></img>
+						<img src={images[image]} alt="Tack Shooter" className="tower-img"></img>
 					</div>
 					<div className="tower-grid">
 						<div></div>
@@ -3868,7 +3868,7 @@ export default function TackShooter() {
 								id="p1-1"
 								className={p1 === 1 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Bigger Bombs<br>Shoots larger bombs, they have a larger blast area and more popping power.<br>Cost: $300 / $350 / $380 / $420"
+								data-tip="Faster Shooting<br>Shoots tacks faster.<br>Cost: $125 / $150 / $160 / $180"
 								data-for="p1-1"
 							>
 								<ReactTooltip
@@ -3879,7 +3879,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p1-1"
 								/>
-								<img src={p11} alt="Bigger Bombs"></img>
+								<img src={p11} alt="Faster Shooting"></img>
 							</button>
 						</div>
 						<div>
@@ -3888,7 +3888,7 @@ export default function TackShooter() {
 								id="p1-2"
 								className={p1 === 2 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Heavy Bombs<br>Heavy duty bombs can smash through 2 layers of Bloon at once and pop more Bloons.<br>Cost: $555 / $650 / $700 / $780"
+								data-tip="Even Faster Shooting<br>Shoots tacks even faster.<br>Cost: $255 / $300 / $325 / $360"
 								data-for="p1-2"
 							>
 								<ReactTooltip
@@ -3899,7 +3899,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p1-2"
 								/>
-								<img src={p12} alt="Heavy Bombs"></img>
+								<img src={p12} alt="Even Faster Shooting"></img>
 							</button>
 						</div>
 						<div>
@@ -3908,7 +3908,7 @@ export default function TackShooter() {
 								id="p1-3"
 								className={p1 === 3 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Really Big Bombs<br>Huge bombs deal greater damage in a large area and allow Frags to pop more Bloons.<br>Cost: $1.020 / $1.200 / $1.295 / $1.440"
+								data-tip="Hot Shots<br>Shoots superhot tacks that do extra damage and can pop Lead Bloons.<br>Cost: $510 / $600 / $650 / $720"
 								data-for="p1-3"
 							>
 								<ReactTooltip
@@ -3919,7 +3919,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p1-3"
 								/>
-								<img src={p13} alt="Really Big Bombs"></img>
+								<img src={p13} alt="Hot Shots"></img>
 							</button>
 						</div>
 						<div>
@@ -3928,7 +3928,7 @@ export default function TackShooter() {
 								id="p1-4"
 								className={p1 === 4 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Bloon Impact<br>Explosions become so violent Bloons are stunned for a short time when they are hit.<br>Range is increased and frags are even more effective.<br>Cost: $3.060 / $3.600 / $3.890 / $4.320"
+								data-tip="Ring of Fire<br>Shoots a deadly ring of flames instead of tacks.<br>Cost: $2.975 / $3.500 / $3.780 / $4.200"
 								data-for="p1-4"
 							>
 								<ReactTooltip
@@ -3939,7 +3939,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p1-4"
 								/>
-								<img src={p14} alt="Bloon Impact"></img>
+								<img src={p14} alt="Ring of Fire"></img>
 							</button>
 						</div>
 						<div>
@@ -3948,7 +3948,7 @@ export default function TackShooter() {
 								id="p1-5"
 								className={p1 === 5 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Bloon Impact<br>Bloon shattering explosions do massive damage and can stun MOAB-Class bloons.<br>Cost: $46.750 / $55.000 / $59.400 / $66.000"
+								data-tip="Inferno Ring<br>Deadly inferno of flame roasts Bloons into oblivion.<br>Cost: $38.675 / $45.500 / $49.140 / $54.600"
 								data-for="p1-5"
 							>
 								<ReactTooltip
@@ -3959,11 +3959,11 @@ export default function TackShooter() {
 									multiline={true}
 									id="p1-5"
 								/>
-								<img src={p15} alt="Bloon Impact"></img>
+								<img src={p15} alt="Inferno Ring"></img>
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["b"] }}>B</h1>
+							<h1 style={{ color: colors["b-"] }}>B-</h1>
 						</div>
 						<div>
 							<button
@@ -3989,7 +3989,7 @@ export default function TackShooter() {
 								id="p2-1"
 								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Faster Reload<br>Reloads 20% faster.<br>Cost: $150 / $175 / $190 / $210"
+								data-tip="Long Range Tacks<br>Tacks fly out further than normal.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="p2-1"
 							>
 								<ReactTooltip
@@ -4000,7 +4000,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p2-1"
 								/>
-								<img src={p21} alt="Faster Reload"></img>
+								<img src={p21} alt="Long Range Tacks"></img>
 							</button>
 						</div>
 						<div>
@@ -4009,7 +4009,7 @@ export default function TackShooter() {
 								id="p2-2"
 								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Missile Launcher<br>Exchanges bombs for missiles, which fire faster, fly faster, and increase range.<br>Cost: $340 / $400 / $430 / $480"
+								data-tip="Super Range Tacks<br>Even longer range tacksthat can pop more Bloons.<br>Cost: $190 / $225 / $245 / $270"
 								data-for="p2-2"
 							>
 								<ReactTooltip
@@ -4020,7 +4020,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p2-2"
 								/>
-								<img src={p22} alt="Missile Launcher"></img>
+								<img src={p22} alt="Super Range Tacks"></img>
 							</button>
 						</div>
 						<div>
@@ -4029,7 +4029,7 @@ export default function TackShooter() {
 								id="p2-3"
 								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Mauler<br>MOAB Maulers do much more damage to MOAB-Class Bloons and ceramics.<br>Cost: $935 / $1.100 / $1.190 / $1.320"
+								data-tip="Blade Shooter<br>Switches tacks for sharp blades that can pop up to 5 additional Bloons.<br>Cost: $465 / $550 / $595 / $660"
 								data-for="p2-3"
 							>
 								<ReactTooltip
@@ -4040,7 +4040,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p2-3"
 								/>
-								<img src={p23} alt="MOAB Mauler"></img>
+								<img src={p23} alt="Blade Shooter"></img>
 							</button>
 						</div>
 						<div>
@@ -4049,7 +4049,7 @@ export default function TackShooter() {
 								id="p2-4"
 								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Assassin<br>Assassinate MOAB ability: Special missile flies out and does massive damage to MOAB-Class Bloons.<br>Regular attack range and MOAB-class damage also increased.<br>Cost: $2.720 / $3.200 / $3.455 / $3.840"
+								data-tip="Blade Maelstrom<br>Blade Maelstrom ability: Covers the area in a storm of blades.<br>Cost: $2.295 / $2.700 / $2.915 / $3.240"
 								data-for="p2-4"
 							>
 								<ReactTooltip
@@ -4060,7 +4060,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p2-4"
 								/>
-								<img src={p24} alt="MOAB Assassin"></img>
+								<img src={p24} alt="Blade Maelstrom"></img>
 							</button>
 						</div>
 						<div>
@@ -4069,7 +4069,7 @@ export default function TackShooter() {
 								id="p2-5"
 								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Eliminator<br>Massive damage to MOABs and Assassinate ability deals 6x damage with a short cooldown.<br>Cost: $21.250 / $25.000 / $27.000 / $30.000"
+								data-tip="Super Maelstrom<br>Even more powerful Maelstrom ability and lasts longer.<br>Cost: $12.750 / $15.000 / $16.200 / $18.000"
 								data-for="p2-5"
 							>
 								<ReactTooltip
@@ -4080,11 +4080,11 @@ export default function TackShooter() {
 									multiline={true}
 									id="p2-5"
 								/>
-								<img src={p25} alt="MOAB Eliminator"></img>
+								<img src={p25} alt="Super Maelstrom"></img>
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["s-"] }}>S-</h1>
+							<h1 style={{ color: colors["b"] }}>B</h1>
 						</div>
 						<div></div>
 						<div>
@@ -4093,7 +4093,7 @@ export default function TackShooter() {
 								id="p3-1"
 								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Extra Range<br>Increases attack range.<br>Cost: $170 / $200 / $215 / $240"
+								data-tip="More Tacks<br>Shoots 10 tacks instead of 8, plus increases Ring of Fire damage.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="p3-1"
 							>
 								<ReactTooltip
@@ -4104,7 +4104,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p3-1"
 								/>
-								<img src={p31} alt="Extra Range"></img>
+								<img src={p31} alt="More Tacks"></img>
 							</button>
 						</div>
 						<div>
@@ -4113,7 +4113,7 @@ export default function TackShooter() {
 								id="p3-2"
 								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Frag Bombs<br>Explosions throw sharp fragments that can pop more Bloons including Black Bloons.<br>Cost: $255 / $300 / $325 / $360"
+								data-tip="Even More Tacks<br>Shoots out 12 tacks per shot and increases Ring of Fire damage further.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="p3-2"
 							>
 								<ReactTooltip
@@ -4124,7 +4124,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p3-2"
 								/>
-								<img src={p32} alt="Frag Bombs"></img>
+								<img src={p32} alt="Even More Tacks"></img>
 							</button>
 						</div>
 						<div>
@@ -4133,7 +4133,7 @@ export default function TackShooter() {
 								id="p3-3"
 								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Cluster Bombs<br>Throws out secondary bombs instead of sharp fragments every shot.<br>Cost: $680 / $800 / $865 / $960"
+								data-tip="Tack Sprayer<br>Sprays out 16 tacks per volley.<br>Cost: $350 / $450 / $485 / $540"
 								data-for="p3-3"
 							>
 								<ReactTooltip
@@ -4144,7 +4144,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p3-3"
 								/>
-								<img src={p33} alt="Cluster Bombs"></img>
+								<img src={p33} alt="Tack Sprayer"></img>
 							</button>
 						</div>
 						<div>
@@ -4153,7 +4153,7 @@ export default function TackShooter() {
 								id="p3-4"
 								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Recursive Cluster<br>Every second shot the cluster bombs send out more cluster bombs for even more destruction.<br>Cost: $2.380 / $2.800 / $3.025 / $3.360"
+								data-tip="Overdrive<br>Shoots incredibly fast.<br>Cost: $2.720 / $3.200 / $3.455 / $3.840"
 								data-for="p3-4"
 							>
 								<ReactTooltip
@@ -4164,7 +4164,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p3-4"
 								/>
-								<img src={p34} alt="Recursive Cluster"></img>
+								<img src={p34} alt="Overdrive"></img>
 							</button>
 						</div>
 						<div>
@@ -4173,7 +4173,7 @@ export default function TackShooter() {
 								id="p3-5"
 								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Bomb Blitz<br>Deals much more damage and gains the passive Bomb Storm Ability:<br>when lives are lost, the Bomb Storm automatically triggers, which destroys all but the biggest of Bloons.<br>Cost: $29.750 / $35.000 / $37.800 / $42.000"
+								data-tip="The Tack Zone<br>Many, many tacks.<br>Cost: $17.000 / $20.000 / $21.600 / $24.000"
 								data-for="p3-5"
 							>
 								<ReactTooltip
@@ -4184,7 +4184,7 @@ export default function TackShooter() {
 									multiline={true}
 									id="p3-5"
 								/>
-								<img src={p35} alt="Bomb Blitz"></img>
+								<img src={p35} alt="The Tack Zone"></img>
 							</button>
 						</div>
 						<div>
