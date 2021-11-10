@@ -51,11 +51,13 @@ html {
 @font-face {
 	font-family: Nunito-Light;
 	src: url(./fonts/Nunito-Light.ttf);
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Nunito-SemiBold;
 	src: url(./fonts/Nunito-SemiBold.ttf);
+	font-display: swap;
 }
 
 .App {
@@ -85,6 +87,10 @@ h1 {
 	font: 300 3rem Nunito-light;
 	color: $nord6;
 	cursor: default;
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
 }
 
 h2 {
@@ -92,6 +98,10 @@ h2 {
 	color: $nord6;
 	margin-top: 60px;
 	cursor: default;
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
 }
 
 h3 {
@@ -99,6 +109,10 @@ h3 {
 	color: $nord6;
 	transition: 0.2s;
 	cursor: default;
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
 }
 
 p {
@@ -106,6 +120,10 @@ p {
 	color: $nord6;
 	margin: 0 5%;
 	cursor: default;
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
 }
 
 a {
@@ -122,11 +140,23 @@ a {
 		color: $darkblue;
 		outline: none;
 	}
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
 }
 
 button {
 	/*cursor: url(./misc/Cursor32.png) 5 0, auto;*/
 	cursor: pointer;
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
+}
+
+img::selection {
+	background-color: transparent;
 }
 
 .navbar {
@@ -464,6 +494,10 @@ button {
 	&.show {
 		opacity: 1 !important;
 	}
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
 }
 
 .yesno {
@@ -548,6 +582,10 @@ table {
 	border-collapse: collapse;
 	background-color: $lightgray;
 	border-radius: 8px;
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
 }
 
 th {
@@ -557,6 +595,10 @@ th {
 	border: 1px solid $nord6;
 	text-align: left;
 	cursor: default;
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
 }
 
 td {
@@ -566,6 +608,10 @@ td {
 	text-align: left;
 	font: 1.5rem Nunito-Light;
 	cursor: default;
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
 }
 
 .bloons img {
