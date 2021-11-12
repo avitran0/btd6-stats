@@ -13,10 +13,30 @@ import IceMonkey from "./components/towers/ice-monkey";
 import NinjaMonkey from "./components/towers/ninja-monkey";
 import { Route, NavLink, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
 import BTD6Logo from "./misc/BTD6Logo.png";
 
 function App() {
 	const location = useLocation();
+	const [fontSize, setFontSize] = useState(16);
+	function handleChange(type) {
+		switch (type) {
+			case "+":
+				document.documentElement.style.fontSize = fontSize + 1 + "px";
+				setFontSize(fontSize + 1);
+				break;
+			case "-":
+				document.documentElement.style.fontSize = fontSize - 1 + "px";
+				setFontSize(fontSize - 1);
+				break;
+			case "reset":
+				document.documentElement.style.fontSize = "16px";
+				setFontSize(16);
+				break;
+			default:
+				break;
+		}
+	}
 	return (
 		<div className="App">
 			<header>
@@ -39,6 +59,12 @@ function App() {
 						</li>
 						<li>
 							<NavLink to="/rounds">Rounds</NavLink>
+						</li>
+						<li>
+							<button onClick={() => handleChange("+")}>+</button>
+							<button onClick={() => handleChange("reset")}>Reset</button>
+							<button onClick={() => handleChange("-")}>-</button>
+							<p></p>
 						</li>
 					</ul>
 				</nav>

@@ -43,6 +43,7 @@ html {
 	scrollbar-width: none;
 	scroll-behavior: smooth;
 	box-sizing: border-box;
+	transition: 0.2s;
 }
 
 ::-webkit-scrollbar {
@@ -162,21 +163,21 @@ img::selection {
 
 .navbar {
 	background-color: $bg;
-	height: 120px;
+	height: 7.5rem;
 	display: flex;
 	justify-content: space-between;
 	z-index: 1;
 	position: relative;
 
 	img {
-		margin: 12px;
-		height: 120px;
+		margin: 0.75rem;
+		height: 7.5rem;
 	}
 
 	ul {
 		display: flex;
 		flex-direction: row;
-		margin: 0 16px 0 0;
+		margin: 0 1rem 0 0;
 		padding: 0;
 	}
 
@@ -185,12 +186,12 @@ img::selection {
 		flex-direction: column;
 		justify-content: center;
 		list-style-type: none;
-		margin: 16px 8px;
+		margin: 1rem 0.5rem;
 	}
 
 	a {
 		font-size: 2rem;
-		padding: 0px 4px;
+		padding: 0px 0.25rem;
 	}
 }
 
@@ -208,17 +209,17 @@ img::selection {
 .towers,
 .tower,
 .heroes {
-	margin-top: 70px;
-	padding-bottom: 80px;
+	margin-top: 4rem;
+	padding-bottom: 5rem;
 	width: 100%;
 	background-color: $bg;
 }
 
 .grid-container {
-	max-width: 240px;
-	max-height: 260px;
+	max-width: 15rem;
+	max-height: 16rem;
 	transition: 0.2s;
-	margin: 0 15px 40px 15px;
+	margin: 0 1rem 2.5rem 1rem;
 }
 
 .towers-grid {
@@ -252,9 +253,9 @@ img::selection {
 
 	img {
 		height: 75%;
-		margin-bottom: 8px;
-		padding: 8px;
-		border-radius: 8px;
+		margin-bottom: 0.5rem;
+		padding: 0.5rem;
+		border-radius: 0.5rem;
 		background-color: $lightgray;
 		transition: 0.2s;
 		box-shadow: 0 0 1rem $darkdarkgray;
@@ -405,7 +406,7 @@ img::selection {
 	button {
 		background-color: $lightgray;
 		border: none;
-		border-radius: 8px;
+		border-radius: 0.5rem;
 		transition: 0.2s;
 		height: 8rem;
 		width: 8rem;
@@ -566,13 +567,10 @@ img::selection {
 }
 
 .bloons {
-	margin-top: 40px;
-	padding-bottom: 80px;
+	margin-top: 4rem;
+	padding-bottom: 5rem;
 	width: 100%;
 	background-color: $bg;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .table-wrapper {
@@ -584,7 +582,7 @@ table {
 	margin: 1rem;
 	display: inline-table;
 	background-color: $lightgray;
-	border-radius: 8px;
+	border-radius: 0.5rem;
 	border-collapse: collapse;
 	box-shadow: 0 0 1rem $darkdarkgray;
 	overflow-x: auto;
@@ -629,18 +627,14 @@ td {
 
 #tableheaderimg {
 	height: 1.6rem;
-	margin-left: 8px;
+	margin-left: 0.5rem;
 }
 
 .rounds {
-	margin-top: 40px;
-	padding-bottom: 80px;
+	margin-top: 4rem;
+	padding-bottom: 5rem;
 	width: 100%;
-	overflow: hidden;
 	background-color: $bg;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 
 	ul {
 		display: flex;
@@ -655,7 +649,7 @@ td {
 		flex-direction: column;
 		justify-content: center;
 		list-style-type: none;
-		margin: 16px 8px;
+		margin: 1rem 0.5rem;
 	}
 
 	a {
@@ -663,8 +657,7 @@ td {
 		text-decoration: none;
 		transition: 0.2s;
 		font-size: 2rem;
-		padding: 0px 4px;
-		font-weight: 300;
+		padding: 0px 0.25rem;
 
 		&:hover,
 		&:focus {
@@ -686,7 +679,7 @@ td {
 	}
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 90rem) {
 	.image-container-inner {
 		display: none;
 	}
@@ -699,7 +692,7 @@ td {
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
 	.grid-container {
 		width: 200px;
 		height: 240px;
@@ -720,7 +713,7 @@ td {
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62rem) {
 	.navbar {
 		flex-direction: column;
 		height: 150px;
@@ -750,16 +743,11 @@ td {
 		}
 	}
 
-	.bloons table,
-	.rounds table {
-		display: inline-table;
-		margin: 0 20px;
-	}
 	.image-container-inner {
 		display: none;
 	}
 }
-@media (max-width: 900px) {
+@media (max-width: 56rem) {
 	.tower-grid {
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -802,18 +790,18 @@ td {
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 44rem) {
 	.navbar a {
 		font-size: 1.6em;
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 31rem) {
 	h1 {
 		font-size: 2.4em;
 	}
 	.navbar {
-		height: 240px;
+		height: 15rem;
 
 		ul {
 			display: grid;
@@ -821,7 +809,7 @@ td {
 		}
 
 		li {
-			margin: 4px;
+			margin: 0.25rem;
 		}
 
 		a {
@@ -844,8 +832,8 @@ td {
 	}
 
 	.grid-container {
-		width: 180px;
-		height: 240px;
+		width: 11.25rem;
+		height: 15rem;
 	}
 
 	.towers-grid {
