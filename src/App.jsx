@@ -37,6 +37,18 @@ function App() {
 				break;
 		}
 	}
+	function handleModal(type) {
+		switch (type) {
+			case "open":
+				document.getElementById("modal").style.display = "block";
+				break;
+			case "close":
+				document.getElementById("modal").style.display = "none";
+				break;
+			default:
+				break;
+		}
+	}
 	return (
 		<div className="App">
 			<header>
@@ -61,10 +73,7 @@ function App() {
 							<NavLink to="/rounds">Rounds</NavLink>
 						</li>
 						<li>
-							<button onClick={() => handleChange("+")}>+</button>
-							<button onClick={() => handleChange("reset")}>Reset</button>
-							<button onClick={() => handleChange("-")}>-</button>
-							<p></p>
+							<button onClick={() => handleModal("open")}>Font Size</button>
 						</li>
 					</ul>
 				</nav>
@@ -86,6 +95,15 @@ function App() {
 					<Route path="/rounds/abr" element={<ABR />} />
 				</Routes>
 			</AnimatePresence>
+			<div id="modal">
+				<div>
+					<h2>Font Size</h2>
+					<button onClick={() => handleChange("+")}>+</button>
+					<button onClick={() => handleChange("reset")}>Reset</button>
+					<button onClick={() => handleChange("-")}>-</button>
+					<button onClick={() => handleModal("close")}>close</button>
+				</div>
+			</div>
 		</div>
 	);
 }
