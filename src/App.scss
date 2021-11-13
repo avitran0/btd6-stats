@@ -213,6 +213,17 @@ img::selection {
 	width: 100vw;
 	height: 100vh;
 	background-color: #1d20257f;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-box {
+	background-color: $lightgray;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 1rem $darkdarkgray;
+	h2 {
+		margin: 1rem;
+	}
 }
 
 .home,

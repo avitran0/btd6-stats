@@ -40,7 +40,7 @@ function App() {
 	function handleModal(type) {
 		switch (type) {
 			case "open":
-				document.getElementById("modal").style.display = "block";
+				document.getElementById("modal").style.display = "flex";
 				break;
 			case "close":
 				document.getElementById("modal").style.display = "none";
@@ -96,7 +96,7 @@ function App() {
 				</Routes>
 			</AnimatePresence>
 			<div id="modal">
-				<div>
+				<div className="modal-box">
 					<h2>Font Size</h2>
 					<button onClick={() => handleChange("+")}>+</button>
 					<button onClick={() => handleChange("reset")}>Reset</button>
