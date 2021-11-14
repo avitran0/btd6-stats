@@ -163,7 +163,6 @@ img::selection {
 
 .navbar {
 	background-color: $bg;
-	height: 7.5rem;
 	display: flex;
 	justify-content: space-between;
 	z-index: 1;
@@ -207,11 +206,11 @@ img::selection {
 
 #modal {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	z-index: 1;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	background-color: #1d20257f;
 	align-items: center;
 	justify-content: center;
@@ -272,7 +271,6 @@ img::selection {
 .towers,
 .tower,
 .heroes {
-	margin-top: 4rem;
 	padding-bottom: 5rem;
 	width: 100%;
 	background-color: $bg;
@@ -630,7 +628,6 @@ img::selection {
 }
 
 .bloons {
-	margin-top: 4rem;
 	padding-bottom: 5rem;
 	width: 100%;
 	background-color: $bg;
@@ -694,7 +691,6 @@ td {
 }
 
 .rounds {
-	margin-top: 4rem;
 	padding-bottom: 5rem;
 	width: 100%;
 	background-color: $bg;
@@ -742,7 +738,7 @@ td {
 	}
 }
 
-@media (max-width: 90rem) {
+@media screen and (max-width: 90rem) {
 	.image-container-inner {
 		display: none;
 	}
@@ -755,7 +751,7 @@ td {
 	}
 }
 
-@media (max-width: 75rem) {
+@media screen and (max-width: 75rem) {
 	.grid-container {
 		width: 200px;
 		height: 240px;
@@ -776,11 +772,15 @@ td {
 	}
 }
 
-@media (max-width: 62rem) {
+@media screen and (max-width: 70rem) {
+	.image-container-inner {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 62rem) {
 	.navbar {
 		flex-direction: column;
-		height: 9.375rem;
-
 		ul {
 			justify-content: center;
 			margin: 0;
@@ -792,7 +792,7 @@ td {
 	}
 
 	.font-size {
-		font-size: 2rem
+		font-size: 2rem;
 	}
 
 	.grid-container {
@@ -809,12 +809,8 @@ td {
 			height: 60%;
 		}
 	}
-
-	.image-container-inner {
-		display: none;
-	}
 }
-@media (max-width: 56rem) {
+@media screen and (max-width: 56rem) {
 	.tower-grid {
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -857,23 +853,8 @@ td {
 	}
 }
 
-@media (max-width: 44rem) {
-	.navbar a {
-		font-size: 1.6rem;
-	}
-
-	.font-size {
-		font-size: 1.6rem;
-	}
-}
-
-@media (max-width: 31rem) {
-	h1 {
-		font-size: 2.4rem;
-	}
+@media screen and (max-width: 44rem) {
 	.navbar {
-		height: 15rem;
-
 		ul {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
@@ -882,7 +863,21 @@ td {
 		li {
 			margin: 0.25rem;
 		}
+		a {
+			font-size: 1.6rem;
+		}
+	}
 
+	.font-size {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 31rem) {
+	h1 {
+		font-size: 2.4rem;
+	}
+	.navbar {
 		a {
 			font-size: 1.4rem;
 		}
@@ -919,6 +914,10 @@ td {
 		a::after {
 			transform: scaleY(1);
 		}
+	}
+
+	.grid-container {
+		margin-bottom: 0;
 	}
 
 	.heroes {
