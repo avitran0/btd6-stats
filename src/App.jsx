@@ -73,7 +73,9 @@ function App() {
 							<NavLink to="/rounds">Rounds</NavLink>
 						</li>
 						<li>
-							<button onClick={() => handleModal("open")}>Font Size</button>
+							<button onClick={() => handleModal("open")} className="font-size">
+								Font Size
+							</button>
 						</li>
 					</ul>
 				</nav>
@@ -97,11 +99,24 @@ function App() {
 			</AnimatePresence>
 			<div id="modal">
 				<div className="modal-box">
-					<h2>Font Size</h2>
-					<button onClick={() => handleChange("+")}>+</button>
-					<button onClick={() => handleChange("reset")}>Reset</button>
-					<button onClick={() => handleChange("-")}>-</button>
-					<button onClick={() => handleModal("close")}>close</button>
+					<h2>
+						Font Size
+						<button onClick={() => handleModal("close")} className="font-size" style={{marginLeft: "1rem"}}>
+							&#x2715;
+						</button>
+					</h2>
+					<h2 style={{marginBottom: 0}}>{fontSize / 16}x</h2>
+					<div>
+						<button onClick={() => handleChange("+")} className="font-size-btn">
+							+
+						</button>
+						<button onClick={() => handleChange("reset")} className="font-size-btn">
+							&#8635;
+						</button>
+						<button onClick={() => handleChange("-")} className="font-size-btn">
+							-
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -191,7 +191,7 @@ img::selection {
 
 	a {
 		font-size: 2rem;
-		padding: 0px 0.25rem;
+		padding: 0 0.25rem;
 	}
 }
 
@@ -215,6 +215,48 @@ img::selection {
 	background-color: #1d20257f;
 	align-items: center;
 	justify-content: center;
+}
+
+.font-size {
+	font: 2rem Nunito-Light;
+	padding: 0 0.25rem;
+	transition: 0.2s;
+	color: $nord6;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	&:hover,
+	&:active,
+	&:focus,
+	&:focus-visible {
+		color: $darkblue;
+		outline: none;
+	}
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
+}
+
+.font-size-btn {
+	font: 3rem Nunito-Light;
+	padding: 0 0.5rem;
+	transition: 0.2s;
+	color: $nord6;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	&:hover,
+	&:active,
+	&:focus,
+	&:focus-visible {
+		color: $darkblue;
+		outline: none;
+	}
+	&::selection {
+		background-color: $darkblue;
+		color: $bg;
+	}
 }
 
 .modal-box {
