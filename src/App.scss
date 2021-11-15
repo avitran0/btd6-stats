@@ -455,10 +455,10 @@ img::selection {
 	grid-template-rows: 1fr 1fr 1fr;
 	gap: 1rem 2rem;
 	align-items: center;
-	margin: 0 auto 0 2%;
+	margin: 0 auto 0 0;
 	img {
-		max-height: 7rem;
-		max-width: 7rem;
+		max-height: 8rem;
+		max-width: 8rem;
 		background-color: transparent;
 		padding: 0;
 		margin: 0;
@@ -469,8 +469,8 @@ img::selection {
 		border: none;
 		border-radius: 0.5rem;
 		transition: 0.2s;
-		height: 8rem;
-		width: 8rem;
+		height: 9rem;
+		width: 9rem;
 		margin: 0;
 		padding: 0;
 		box-shadow: 0 0 1rem $darkdarkgray;
@@ -514,7 +514,7 @@ img::selection {
 		border: none;
 		min-width: 4rem;
 		text-align: center;
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 		font-family: Nunito-SemiBold;
 		padding: 0.5rem 1rem;
 	}
@@ -537,7 +537,7 @@ img::selection {
 .image-container-inner {
 	width: 24rem;
 	height: 28rem;
-	margin: 0 0 0 auto;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
 }
@@ -739,9 +739,6 @@ td {
 }
 
 @media screen and (max-width: 90rem) {
-	.image-container-inner {
-		display: none;
-	}
 	.tower-grid {
 		margin: 0 auto;
 	}
@@ -749,12 +746,31 @@ td {
 	#tower-grid-par {
 		margin: 0 auto;
 	}
+
+	.tower-grid {
+		img {
+			max-width: 6rem;
+			max-height: 6rem;
+		}
+		button {
+			width: 7rem;
+			height: 7rem;
+		}
+	}
+	.stats-container {
+		td, th {
+			font-size: 1.2rem;
+		}
+	}
 }
 
 @media screen and (max-width: 75rem) {
 	.grid-container {
 		width: 200px;
 		height: 240px;
+	}
+	.image-container-inner {
+		display: none;
 	}
 	.tower-grid {
 		img {
@@ -769,12 +785,6 @@ td {
 	#p0 img {
 		width: 3rem;
 		height: 3rem;
-	}
-}
-
-@media screen and (max-width: 70rem) {
-	.image-container-inner {
-		display: none;
 	}
 }
 
