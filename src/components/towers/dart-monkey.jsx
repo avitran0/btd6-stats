@@ -66,8 +66,8 @@ export default function DartMonkey() {
 		},
 	};
 	const transitionItem = {
-		hidden: { opacity: 0, y: 100 },
-		show: { opacity: 1, y: 0 },
+		hidden: { opacity: 0 },
+		show: { opacity: 1 },
 	};
 	let images = {
 		"000": M000,
