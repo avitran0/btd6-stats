@@ -295,6 +295,7 @@ img::selection {
 		flex-direction: column;
 		align-items: center;
 		font-size: 1.6rem;
+		transition: 0.2s;
 		&::after {
 			color: $nord6;
 			background-color: $bg;
@@ -549,8 +550,8 @@ img::selection {
 }
 
 #p0 {
-	height: 5rem;
-	width: 5rem;
+	height: 6rem;
+	width: 6rem;
 }
 
 .__react_component_tooltip {
@@ -575,7 +576,7 @@ img::selection {
 }
 
 .reset {
-	height: 3rem;
+	height: 4rem;
 	padding: 1rem;
 }
 
@@ -758,13 +759,21 @@ td {
 		}
 	}
 	.stats-container {
-		td, th {
+		td,
+		th {
 			font-size: 1.2rem;
 		}
 	}
+	#p0 {
+		height: 5rem;
+		width: 5rem;
+	}
+	.reset {
+		height: 3.5rem;
+	}
 }
 
-@media screen and (max-width: 75rem) {
+@media screen and (max-width: 80rem) {
 	.grid-container {
 		width: 200px;
 		height: 240px;
@@ -782,8 +791,7 @@ td {
 			height: 5rem;
 		}
 	}
-	#p0 img {
-		width: 3rem;
+	.reset {
 		height: 3rem;
 	}
 }
@@ -860,6 +868,13 @@ td {
 		td {
 			font-size: 1.2rem;
 		}
+	}
+	#p0 {
+		height: 6rem;
+		width: 6rem;
+	}
+	.reset {
+		height: 4rem;
 	}
 }
 
@@ -965,8 +980,11 @@ td {
 			height: 5rem;
 		}
 	}
-	#p0 img {
-		width: 3rem;
+	#p0 {
+		height: 4rem;
+		width: 4rem;
+	}
+	.reset {
 		height: 3rem;
 	}
 }
