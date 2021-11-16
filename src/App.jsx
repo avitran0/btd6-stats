@@ -21,6 +21,10 @@ function App() {
 	const [fontSize, setFontSize] = useState(16);
 	const wrapperRef = useRef(null);
 	useOutsideAlerter(wrapperRef);
+	const { pathname } = useLocation();
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
 	function handleChange(type) {
 		switch (type) {
 			case "+":

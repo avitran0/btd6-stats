@@ -49,28 +49,35 @@ import BlueRegrow from "../bloons/BlueRegrow.png";
 
 export default function ABR() {
 	document.title = "ABR - BTD6 Stats";
+	const transitionContainer = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				ease: "easeInOut",
+				duration: 0.2,
+				staggerChildren: 0.05,
+			},
+		},
+	};
+	const transitionItem = {
+		hidden: { opacity: 0 },
+		show: { opacity: 1 },
+	};
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
-			transition={{ ease: "easeInOut", duration: 0.2 }}
-			className="rounds"
-		>
-			<h1>Rounds</h1>
-			<ul>
+		<motion.div initial="hidden" animate="show" variants={transitionContainer} className="rounds">
+			<motion.h1 variants={transitionItem}>Rounds</motion.h1>
+			<motion.ul variants={transitionItem}>
 				<li>
 					<NavLink to="/rounds" end>
 						Normal
 					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/rounds/abr">
-						ABR
-					</NavLink>
+					<NavLink to="/rounds/abr">ABR</NavLink>
 				</li>
-			</ul>
-			<div className="table-wrapper">
+			</motion.ul>
+			<motion.div variants={transitionItem} className="table-wrapper">
 				<table>
 					<thead>
 						<tr>
@@ -1473,10 +1480,10 @@ export default function ABR() {
 						</tr>
 					</tfoot>
 				</table>
-			</div>
-			<p className="footer">
+			</motion.div>
+			<motion.p variants={transitionItem} className="footer">
 				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
-			</p>
+			</motion.p>
 		</motion.div>
 	);
 }

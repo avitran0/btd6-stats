@@ -54,6 +54,21 @@ import Frozen from "../../bloons/WhiteIce.png";
 
 export default function DartMonkey() {
 	document.title = "Dart Monkey - BTD6 Stats";
+	const transitionContainer = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				ease: "easeInOut",
+				duration: 0.2,
+				staggerChildren: 0.05,
+			},
+		},
+	};
+	const transitionItem = {
+		hidden: { opacity: 0, y: 100 },
+		show: { opacity: 1, y: 0 },
+	};
 	let images = {
 		"000": M000,
 		"001": M001,
@@ -3468,511 +3483,518 @@ export default function DartMonkey() {
 		}
 	}
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
-			transition={{ ease: "easeInOut", duration: 0.2 }}
-			className="tower"
-		>
-			<h1>Dart Monkey</h1>
+		<motion.div initial="hidden" animate="show" variants={transitionContainer} className="tower">
+			<motion.h1 variants={transitionItem}>Dart Monkey</motion.h1>
 			<div className="tower-container">
 				<div className="stats-container">
-					<table>
-						<thead>
-							<tr>
-								<th colSpan="3">Main Projectile</th>
-							</tr>
-							<tr>
-								<th data-tip="How many layers each projectile can pop" data-for="damage">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage"
-									/>
-									Damage
-								</th>
-								<th data-tip="How many Bloons a single projectile can affect" data-for="pierce">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="pierce"
-									/>
-									Pierce
-								</th>
-								<th data-tip="The rate of attacks per second" data-for="speed">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="speed"
-									/>
-									Speed
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td data-tip="Damage against normal Bloons" data-for="damage-normal">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage-normal"
-									/>
-									<img src={Red} alt="Red"></img>&nbsp;{stats.damage}
-								</td>
-								<td>
-									<img src={Pierce} alt="Pierce"></img>&nbsp;{stats.pierce}
-								</td>
-								<td>
-									<img src={Speed} alt="Speed"></img>&nbsp;{Math.round((1 / stats.speed) * 100) / 100}
-									/s
-								</td>
-							</tr>
-							<tr>
-								<td data-tip="Damage against MOABs" data-for="damage-moab">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage-moab"
-									/>
-									<img src={MOAB} alt="MOAB"></img>&nbsp;{stats.damageMOAB}
-								</td>
-							</tr>
-							<tr>
-								<td data-tip="Damage against Ceramics" data-for="damage-ceramic">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage-ceramic"
-									/>
-									<img src={Ceramic} alt="Ceramic"></img>&nbsp;{stats.damageCeramic}
-								</td>
-								<td>
-									<img src={Projectiles} alt="Projectiles"></img>&nbsp;{stats.projectiles}
-								</td>
-								<td>
-									<img src={Range} alt="Range"></img>&nbsp;{stats.range}
-								</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<th data-tip="How many layers each projectile can pop" data-for="damage2">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage2"
-									/>
-									Damage
-								</th>
-								<th data-tip="How many projectiles are shot per attack" data-for="projectiles">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="projectiles"
-									/>
-									Projectiles
-								</th>
-								<th data-tip="The range where the tower can detect Bloons" data-for="range">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="range"
-									/>
-									Range
-								</th>
-							</tr>
-						</tfoot>
-					</table>
-					<table>
-						<thead>
-							<tr>
-								<th colSpan="2">Secondary Projectile</th>
-							</tr>
-							<tr>
-								<th data-tip="How many layers each projectile can pop" data-for="damage3">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage3"
-									/>
-									Damage
-								</th>
-								<th data-tip="How many Bloons a single projectile can affect" data-for="pierce2">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="pierce2"
-									/>
-									Pierce
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td data-tip="Damage against normal Bloons" data-for="damage-normal2">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage-normal2"
-									/>
-									<img src={Red} alt="Red"></img>&nbsp;{stats.damageSecondary}
-								</td>
-								<td>
-									<img src={Pierce} alt="Pierce"></img>&nbsp;{stats.pierceSecondary}
-								</td>
-							</tr>
-							<tr>
-								<td data-tip="Damage against MOABs" data-for="damage-moab2">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage-moab2"
-									/>
-									<img src={MOAB} alt="MOAB"></img>&nbsp;{stats.damageMOABSecondary}
-								</td>
-							</tr>
-							<tr>
-								<td data-tip="Damage against Ceramics" data-for="damage-ceramic2">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage-ceramic2"
-									/>
-									<img src={Ceramic} alt="Ceramic"></img>&nbsp;{stats.damageCeramicSecondary}
-								</td>
-								<td>
-									<img src={Projectiles} alt="Projectiles"></img>&nbsp;{stats.projectilesSecondary}
-								</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<th data-tip="How many layers each projectile can pop" data-for="damage4">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage4"
-									/>
-									Damage
-								</th>
-								<th data-tip="How many projectiles are shot per attack" data-for="projectiles2">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="projectiles2"
-									/>
-									Projectiles
-								</th>
-							</tr>
-						</tfoot>
-					</table>
-					<table>
-						<thead>
-							<tr>
-								<th colSpan="3">
-									{stats.abilityName ? "Ability: " : "Ability"}
-									{stats.abilityName}
-								</th>
-							</tr>
-							<tr>
-								<th data-tip="How many layers each projectile can pop" data-for="damage5">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="damage5"
-									/>
-									Damage
-								</th>
-								<th data-tip="How many Bloons a single projectile can affect" data-for="pierce3">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="pierce3"
-									/>
-									Pierce
-								</th>
-								<th data-tip="The rate of attacks per second" data-for="speed2">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="speed2"
-									/>
-									Speed
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img src={Red} alt="Red"></img>&nbsp;{stats.abilityDamage}
-								</td>
-								<td>
-									<img src={Pierce} alt="Pierce"></img>&nbsp;{stats.abilityPierce}
-								</td>
-								<td>
-									<img src={Speed} alt="Speed"></img>&nbsp;
-									{stats.abilitySpeed > 0 ? Math.round((1 / stats.abilitySpeed) * 100) / 100 : 0}/s
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src={Range} alt="Range"></img>&nbsp;{stats.abilityRange}
-								</td>
-								<td>
-									<img src={Cooldown} alt="Duration"></img>&nbsp;{stats.abilityDuration}s
-								</td>
-								<td>
-									<img src={Cooldown} alt="Cooldown"></img>&nbsp;{stats.abilityCooldown}s
-								</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<th data-tip="The range where the tower can detect Bloons" data-for="range">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="range"
-									/>
-									Range
-								</th>
-								<th data-tip="How long the ability lasts" data-for="duration">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="duration"
-									/>
-									Duration
-								</th>
-								<th
-									data-tip="How long the ability needs to<br>cool down before using it again"
-									data-for="cooldown"
-								>
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="cooldown"
-									/>
-									Cooldown
-								</th>
-							</tr>
-						</tfoot>
-					</table>
-					<table>
-						<thead>
-							<tr>
-								<th
-									colSpan="2"
-									data-tip="Which Bloons the tower can detect and damage"
-									data-for="bloons"
-								>
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="bloons"
-									/>
-									Bloons
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td data-tip="Can detect camo Bloons?" data-for="camo">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="camo"
-									/>
-									<img src={Camo} alt="Camo"></img>&nbsp;
-									<img src={stats.camo ? Yes : No} alt="Yes" className="yesno"></img>
-								</td>
-								<td data-tip="Can damage Purple Bloons?" data-for="purple">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="purple"
-									/>
-									<img src={Purple} alt="Purple"></img>&nbsp;
-									<img src={stats.purple ? Yes : No} alt="Yes" className="yesno"></img>
-								</td>
-							</tr>
-							<tr>
-								<td data-tip="Can damage Black Bloons?" data-for="black">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="black"
-									/>
-									<img src={Black} alt="Black"></img>&nbsp;
-									<img src={stats.black ? Yes : No} alt="Yes" className="yesno"></img>
-								</td>
-								<td data-tip="Can damage Lead Bloons?" data-for="lead">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="lead"
-									/>
-									<img src={Lead} alt="Lead"></img>&nbsp;
-									<img src={stats.lead ? Yes : No} alt="Yes" className="yesno"></img>
-								</td>
-							</tr>
-							<tr>
-								<td data-tip="Can damage White Bloons?" data-for="white">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="white"
-									/>
-									<img src={White} alt="White"></img>&nbsp;
-									<img src={stats.white ? Yes : No} alt="Yes" className="yesno"></img>
-								</td>
-								<td data-tip="Can damage Frozen Bloons?" data-for="frozen">
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="frozen"
-									/>
-									<img src={Frozen} alt="frozen"></img>&nbsp;
-									<img src={stats.frozen ? Yes : No} alt="Yes" className="yesno"></img>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table>
-						<thead>
-							<tr>
-								<th
-									colSpan="2"
-									data-tip="The cumulative cost of the<br>tower and all selected upgrades"
-									data-for="cost"
-								>
-									<ReactTooltip
-										effect="solid"
-										textColor="#eceff4"
-										backgroundColor="#4c566aff"
-										arrowColor="transparent"
-										multiline={true}
-										id="cost"
-									/>
-									Cost
-								</th>
-							</tr>
-							<tr>
-								<th>Easy</th>
-								<th>Medium</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>${stats.costEasy}</td>
-								<td>${stats.costMedium}</td>
-							</tr>
-							<tr>
-								<td>${stats.costHard}</td>
-								<td>${stats.costImpoppable}</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<th>Hard</th>
-								<th>Impoppable</th>
-							</tr>
-						</tfoot>
-					</table>
+					<motion.div variants={transitionItem}>
+						<table>
+							<thead>
+								<tr>
+									<th colSpan="3">Main Projectile</th>
+								</tr>
+								<tr>
+									<th data-tip="How many layers each projectile can pop" data-for="damage">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage"
+										/>
+										Damage
+									</th>
+									<th data-tip="How many Bloons a single projectile can affect" data-for="pierce">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="pierce"
+										/>
+										Pierce
+									</th>
+									<th data-tip="The rate of attacks per second" data-for="speed">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="speed"
+										/>
+										Speed
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-tip="Damage against normal Bloons" data-for="damage-normal">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage-normal"
+										/>
+										<img src={Red} alt="Red"></img>&nbsp;{stats.damage}
+									</td>
+									<td>
+										<img src={Pierce} alt="Pierce"></img>&nbsp;{stats.pierce}
+									</td>
+									<td>
+										<img src={Speed} alt="Speed"></img>&nbsp;
+										{Math.round((1 / stats.speed) * 100) / 100}
+										/s
+									</td>
+								</tr>
+								<tr>
+									<td data-tip="Damage against MOABs" data-for="damage-moab">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage-moab"
+										/>
+										<img src={MOAB} alt="MOAB"></img>&nbsp;{stats.damageMOAB}
+									</td>
+								</tr>
+								<tr>
+									<td data-tip="Damage against Ceramics" data-for="damage-ceramic">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage-ceramic"
+										/>
+										<img src={Ceramic} alt="Ceramic"></img>&nbsp;{stats.damageCeramic}
+									</td>
+									<td>
+										<img src={Projectiles} alt="Projectiles"></img>&nbsp;{stats.projectiles}
+									</td>
+									<td>
+										<img src={Range} alt="Range"></img>&nbsp;{stats.range}
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th data-tip="How many layers each projectile can pop" data-for="damage2">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage2"
+										/>
+										Damage
+									</th>
+									<th data-tip="How many projectiles are shot per attack" data-for="projectiles">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="projectiles"
+										/>
+										Projectiles
+									</th>
+									<th data-tip="The range where the tower can detect Bloons" data-for="range">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="range"
+										/>
+										Range
+									</th>
+								</tr>
+							</tfoot>
+						</table>
+					</motion.div>
+					<motion.div variants={transitionItem}>
+						<table>
+							<thead>
+								<tr>
+									<th colSpan="2">Secondary Projectile</th>
+								</tr>
+								<tr>
+									<th data-tip="How many layers each projectile can pop" data-for="damage3">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage3"
+										/>
+										Damage
+									</th>
+									<th data-tip="How many Bloons a single projectile can affect" data-for="pierce2">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="pierce2"
+										/>
+										Pierce
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-tip="Damage against normal Bloons" data-for="damage-normal2">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage-normal2"
+										/>
+										<img src={Red} alt="Red"></img>&nbsp;{stats.damageSecondary}
+									</td>
+									<td>
+										<img src={Pierce} alt="Pierce"></img>&nbsp;{stats.pierceSecondary}
+									</td>
+								</tr>
+								<tr>
+									<td data-tip="Damage against MOABs" data-for="damage-moab2">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage-moab2"
+										/>
+										<img src={MOAB} alt="MOAB"></img>&nbsp;{stats.damageMOABSecondary}
+									</td>
+								</tr>
+								<tr>
+									<td data-tip="Damage against Ceramics" data-for="damage-ceramic2">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage-ceramic2"
+										/>
+										<img src={Ceramic} alt="Ceramic"></img>&nbsp;{stats.damageCeramicSecondary}
+									</td>
+									<td>
+										<img src={Projectiles} alt="Projectiles"></img>&nbsp;
+										{stats.projectilesSecondary}
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th data-tip="How many layers each projectile can pop" data-for="damage4">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage4"
+										/>
+										Damage
+									</th>
+									<th data-tip="How many projectiles are shot per attack" data-for="projectiles2">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="projectiles2"
+										/>
+										Projectiles
+									</th>
+								</tr>
+							</tfoot>
+						</table>
+					</motion.div>
+					<motion.div variants={transitionItem}>
+						<table>
+							<thead>
+								<tr>
+									<th colSpan="3">
+										{stats.abilityName ? "Ability: " : "Ability"}
+										{stats.abilityName}
+									</th>
+								</tr>
+								<tr>
+									<th data-tip="How many layers each projectile can pop" data-for="damage5">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="damage5"
+										/>
+										Damage
+									</th>
+									<th data-tip="How many Bloons a single projectile can affect" data-for="pierce3">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="pierce3"
+										/>
+										Pierce
+									</th>
+									<th data-tip="The rate of attacks per second" data-for="speed2">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="speed2"
+										/>
+										Speed
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<img src={Red} alt="Red"></img>&nbsp;{stats.abilityDamage}
+									</td>
+									<td>
+										<img src={Pierce} alt="Pierce"></img>&nbsp;{stats.abilityPierce}
+									</td>
+									<td>
+										<img src={Speed} alt="Speed"></img>&nbsp;
+										{stats.abilitySpeed > 0 ? Math.round((1 / stats.abilitySpeed) * 100) / 100 : 0}
+										/s
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img src={Range} alt="Range"></img>&nbsp;{stats.abilityRange}
+									</td>
+									<td>
+										<img src={Cooldown} alt="Duration"></img>&nbsp;{stats.abilityDuration}s
+									</td>
+									<td>
+										<img src={Cooldown} alt="Cooldown"></img>&nbsp;{stats.abilityCooldown}s
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th data-tip="The range where the tower can detect Bloons" data-for="range">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="range"
+										/>
+										Range
+									</th>
+									<th data-tip="How long the ability lasts" data-for="duration">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="duration"
+										/>
+										Duration
+									</th>
+									<th
+										data-tip="How long the ability needs to<br>cool down before using it again"
+										data-for="cooldown"
+									>
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="cooldown"
+										/>
+										Cooldown
+									</th>
+								</tr>
+							</tfoot>
+						</table>
+					</motion.div>
+					<motion.div variants={transitionItem}>
+						<table>
+							<thead>
+								<tr>
+									<th
+										colSpan="2"
+										data-tip="Which Bloons the tower can detect and damage"
+										data-for="bloons"
+									>
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="bloons"
+										/>
+										Bloons
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-tip="Can detect camo Bloons?" data-for="camo">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="camo"
+										/>
+										<img src={Camo} alt="Camo"></img>&nbsp;
+										<img src={stats.camo ? Yes : No} alt="Yes" className="yesno"></img>
+									</td>
+									<td data-tip="Can damage Purple Bloons?" data-for="purple">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="purple"
+										/>
+										<img src={Purple} alt="Purple"></img>&nbsp;
+										<img src={stats.purple ? Yes : No} alt="Yes" className="yesno"></img>
+									</td>
+								</tr>
+								<tr>
+									<td data-tip="Can damage Black Bloons?" data-for="black">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="black"
+										/>
+										<img src={Black} alt="Black"></img>&nbsp;
+										<img src={stats.black ? Yes : No} alt="Yes" className="yesno"></img>
+									</td>
+									<td data-tip="Can damage Lead Bloons?" data-for="lead">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="lead"
+										/>
+										<img src={Lead} alt="Lead"></img>&nbsp;
+										<img src={stats.lead ? Yes : No} alt="Yes" className="yesno"></img>
+									</td>
+								</tr>
+								<tr>
+									<td data-tip="Can damage White Bloons?" data-for="white">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="white"
+										/>
+										<img src={White} alt="White"></img>&nbsp;
+										<img src={stats.white ? Yes : No} alt="Yes" className="yesno"></img>
+									</td>
+									<td data-tip="Can damage Frozen Bloons?" data-for="frozen">
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="frozen"
+										/>
+										<img src={Frozen} alt="frozen"></img>&nbsp;
+										<img src={stats.frozen ? Yes : No} alt="Yes" className="yesno"></img>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</motion.div>
+					<motion.div variants={transitionItem}>
+						<table>
+							<thead>
+								<tr>
+									<th
+										colSpan="2"
+										data-tip="The cumulative cost of the<br>tower and all selected upgrades"
+										data-for="cost"
+									>
+										<ReactTooltip
+											effect="solid"
+											textColor="#eceff4"
+											backgroundColor="#4c566aff"
+											arrowColor="transparent"
+											multiline={true}
+											id="cost"
+										/>
+										Cost
+									</th>
+								</tr>
+								<tr>
+									<th>Easy</th>
+									<th>Medium</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>${stats.costEasy}</td>
+									<td>${stats.costMedium}</td>
+								</tr>
+								<tr>
+									<td>${stats.costHard}</td>
+									<td>${stats.costImpoppable}</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Hard</th>
+									<th>Impoppable</th>
+								</tr>
+							</tfoot>
+						</table>
+					</motion.div>
 				</div>
 				<div className="image-container">
-					<div className="image-container-inner">
+					<motion.div variants={transitionItem} className="image-container-inner">
 						<img src={images[image]} alt="Dart Monkey" className="tower-img"></img>
-					</div>
-					<div className="tower-grid" id="tower-grid-par">
+					</motion.div>
+					<motion.div variants={transitionItem} className="tower-grid" id="tower-grid-par">
 						<div></div>
 						<div>
 							<button
@@ -4323,12 +4345,12 @@ export default function DartMonkey() {
 						<div>
 							<h1 style={{ color: colors["b-"] }}>B-</h1>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
-			<p className="footer">
+			<motion.p variants={transitionItem} className="footer">
 				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
-			</p>
+			</motion.p>
 		</motion.div>
 	);
 }

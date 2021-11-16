@@ -25,140 +25,149 @@ import MonkeyEngineer from "../towers/MonkeyEngineer.png";
 
 export default function Towers() {
 	document.title = "Towers - BTD6 Stats";
+	const transitionContainer = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				ease: "easeInOut",
+				duration: 0.2,
+				staggerChildren: 0.05,
+			},
+		},
+	};
+	const transitionItem = {
+		hidden: { opacity: 0 },
+		show: { opacity: 1 },
+	};
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
-			transition={{ ease: "easeInOut", duration: 0.2 }}
-			className="towers"
-		>
-			<h1>Towers</h1>
-			<h2>Primary</h2>
+		<motion.div initial="hidden" animate="show" variants={transitionContainer} className="towers">
+			<motion.h1 variants={transitionItem}>Towers</motion.h1>
+			<motion.h2 variants={transitionItem}>Primary</motion.h2>
 			<div className="towers-grid">
-				<div className="grid-container">
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers/dart-monkey" id="dart-monkey">
 						<img src={DartMonkey} alt="Dart Monkey" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers/boomerang-monkey" id="boomerang-monkey">
 						<img src={BoomerangMonkey} alt="Boomerang Monkey" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers/bomb-shooter" id="bomb-shooter">
 						<img src={BombShooter} alt="Bomb Shooter" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers/tack-shooter" id="tack-shooter">
 						<img src={TackShooter} alt="Tack Shooter" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers/ice-monkey" id="ice-monkey">
 						<img src={IceMonkey} alt="Ice Monkey" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="glue-gunner">
 						<img src={GlueGunner} alt="Glue Gunner" />
 					</Link>
-				</div>
+				</motion.div>
 			</div>
-			<h2>Military</h2>
+			<motion.h2 variants={transitionItem}>Military</motion.h2>
 			<div className="towers-grid">
-				<div className="grid-container">
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/" id="sniper-monkey">
 						<img src={SniperMonkey} alt="Sniper Monkey" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="monkey-sub">
 						<img src={MonkeySub} alt="Monkey Sub" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="monkey-buccaneer">
 						<img src={MonkeyBuccaneer} alt="Monkey Buccaneer" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="monkey-ace">
 						<img src={MonkeyAce} alt="Monkey Ace" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="heli-pilot">
 						<img src={HeliPilot} alt="Heli Pilot" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="mortar-monkey">
 						<img src={MortarMonkey} alt="Mortar Monkey" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="dartling-gunner">
 						<img src={DartlingGunner} alt="Dartling Gunner" />
 					</Link>
-				</div>
+				</motion.div>
 			</div>
-			<h2>Magic</h2>
+			<motion.h2 variants={transitionItem}>Magic</motion.h2>
 			<div className="towers-grid">
-				<div className="grid-container">
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/" id="wizard-monkey">
 						<img src={WizardMonkey} alt="Wizard Monkey" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="super-monkey">
 						<img src={SuperMonkey} alt="Super Monkey" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers/ninja-monkey" id="ninja-monkey">
 						<img src={NinjaMonkey} alt="Ninja Monkey" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="alchemist">
 						<img src={Alchemist} alt="Alchemist" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="druid">
 						<img src={Druid} alt="Druid" />
 					</Link>
-				</div>
+				</motion.div>
 			</div>
-			<h2>Support</h2>
+			<motion.h2 variants={transitionItem}>Support</motion.h2>
 			<div className="towers-grid">
-				<div className="grid-container">
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/" id="banana-farm">
 						<img src={BananaFarm} alt="Banana Farm" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="spike-factory">
 						<img src={SpikeFactory} alt="Spike Factory" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="monkey-village">
 						<img src={MonkeyVillage} alt="Monkey Village" />
 					</Link>
-				</div>
-				<div className="grid-container">
+				</motion.div>
+				<motion.div variants={transitionItem} className="grid-container">
 					<Link to="/towers" id="monkey-engineer">
 						<img src={MonkeyEngineer} alt="Monkey Engineer" />
 					</Link>
-				</div>
+				</motion.div>
 			</div>
-			<p className="footer">
+			<motion.p variants={transitionItem} className="footer">
 				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
-			</p>
+			</motion.p>
 		</motion.div>
 	);
 }

@@ -30,17 +30,26 @@ import BADFortified from "../bloons/BADFortified.png";
 
 export default function Bloons() {
 	document.title = "Bloons - BTD6 Stats";
+	const transitionContainer = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				ease: "easeInOut",
+				duration: 0.2,
+				staggerChildren: 0.05,
+			},
+		},
+	};
+	const transitionItem = {
+		hidden: { opacity: 0 },
+		show: { opacity: 1 },
+	};
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
-			transition={{ ease: "easeInOut", duration: 0.2 }}
-			className="bloons"
-		>
-			<h1>Bloons</h1>
-			<h2>Normal</h2>
-			<div className="table-wrapper">
+		<motion.div initial="hidden" animate="show" variants={transitionContainer} className="bloons">
+			<motion.h1 variants={transitionItem}>Bloons</motion.h1>
+			<motion.h2 variants={transitionItem}>Normal</motion.h2>
+			<motion.div variants={transitionItem} className="table-wrapper">
 				<table>
 					<thead>
 						<tr>
@@ -325,9 +334,9 @@ export default function Bloons() {
 						</tr>
 					</tfoot>
 				</table>
-			</div>
-			<h2>Fortified</h2>
-			<div className="table-wrapper">
+			</motion.div>
+			<motion.h2 variants={transitionItem}>Fortified</motion.h2>
+			<motion.div variants={transitionItem} className="table-wrapper">
 				<table>
 					<thead>
 						<tr>
@@ -478,10 +487,10 @@ export default function Bloons() {
 						</tr>
 					</tfoot>
 				</table>
-			</div>
-			<p className="footer">
+			</motion.div>
+			<motion.p variants={transitionItem} className="footer">
 				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
-			</p>
+			</motion.p>
 		</motion.div>
 	);
 }
