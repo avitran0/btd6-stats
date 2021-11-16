@@ -10,6 +10,7 @@ import BoomerangMonkey from "./components/towers/boomerang-monkey";
 import BombShooter from "./components/towers/bomb-shooter";
 import TackShooter from "./components/towers/tack-shooter";
 import IceMonkey from "./components/towers/ice-monkey";
+import GlueGunner from "./components/towers/glue-gunner";
 import NinjaMonkey from "./components/towers/ninja-monkey";
 import { Route, NavLink, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -90,7 +91,7 @@ function App() {
 					</ul>
 				</nav>
 			</header>
-			<AnimatePresence exitBeforeEnter initial={false}>
+			<AnimatePresence exitBeforeEnter>
 				<Routes location={location} key={location.pathname}>
 					<Route path="/" exact element={<Home />} />
 					<Route path="/towers" exact element={<Towers />} />
@@ -99,6 +100,7 @@ function App() {
 					<Route path="/towers/bomb-shooter" element={<BombShooter />} />
 					<Route path="/towers/tack-shooter" element={<TackShooter />} />
 					<Route path="/towers/ice-monkey" element={<IceMonkey />} />
+					<Route path="/towers/glue-gunner" element={<GlueGunner />} />
 					<Route path="/towers/ninja-monkey" element={<NinjaMonkey />} />
 					<Route path="/heroes" exact element={<Heroes />} />
 					<Route path="/heroes/quincy" element={<HeroQuincy />} />

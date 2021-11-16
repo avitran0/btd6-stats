@@ -8,7 +8,7 @@ export default function Home() {
 			opacity: 1,
 			transition: {
 				ease: "easeInOut",
-				duration: 0.2,
+				duration: 0.1,
 				staggerChildren: 0.05,
 			},
 		},
@@ -19,7 +19,7 @@ export default function Home() {
 		show: { opacity: 1 },
 	};
 	return (
-		<motion.div initial="hidden" animate="show" variants={transitionContainer} className="home">
+		<motion.div initial="hidden" animate="show" exit="hidden" variants={transitionContainer} className="home">
 			<motion.h1 variants={transitionItem}>BTD6 Stats</motion.h1>
 			<motion.p variants={transitionItem}>This is a collection of all kinds of stats for BTD6</motion.p>
 			<motion.p variants={transitionItem}>work in progress</motion.p>

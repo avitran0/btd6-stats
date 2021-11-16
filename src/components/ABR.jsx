@@ -55,7 +55,7 @@ export default function ABR() {
 			opacity: 1,
 			transition: {
 				ease: "easeInOut",
-				duration: 0.2,
+				duration: 0.1,
 				staggerChildren: 0.05,
 			},
 		},
@@ -65,7 +65,7 @@ export default function ABR() {
 		show: { opacity: 1 },
 	};
 	return (
-		<motion.div initial="hidden" animate="show" variants={transitionContainer} className="rounds">
+		<motion.div initial="hidden" animate="show" exit="hidden" variants={transitionContainer} className="rounds">
 			<motion.h1 variants={transitionItem}>Rounds</motion.h1>
 			<motion.ul variants={transitionItem}>
 				<li>

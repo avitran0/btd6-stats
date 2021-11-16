@@ -60,7 +60,7 @@ export default function DartMonkey() {
 			opacity: 1,
 			transition: {
 				ease: "easeInOut",
-				duration: 0.2,
+				duration: 0.1,
 				staggerChildren: 0.05,
 			},
 		},
@@ -3483,7 +3483,7 @@ export default function DartMonkey() {
 		}
 	}
 	return (
-		<motion.div initial="hidden" animate="show" variants={transitionContainer} className="tower">
+		<motion.div initial="hidden" animate="show" exit="hidden" variants={transitionContainer} className="tower">
 			<motion.h1 variants={transitionItem}>Dart Monkey</motion.h1>
 			<div className="tower-container">
 				<div className="stats-container">

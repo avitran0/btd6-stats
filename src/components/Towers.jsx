@@ -31,7 +31,7 @@ export default function Towers() {
 			opacity: 1,
 			transition: {
 				ease: "easeInOut",
-				duration: 0.2,
+				duration: 0.1,
 				staggerChildren: 0.05,
 			},
 		},
@@ -41,7 +41,7 @@ export default function Towers() {
 		show: { opacity: 1 },
 	};
 	return (
-		<motion.div initial="hidden" animate="show" variants={transitionContainer} className="towers">
+		<motion.div initial="hidden" animate="show" exit="hidden" variants={transitionContainer} className="towers">
 			<motion.h1 variants={transitionItem}>Towers</motion.h1>
 			<motion.h2 variants={transitionItem}>Primary</motion.h2>
 			<div className="towers-grid">
@@ -71,7 +71,7 @@ export default function Towers() {
 					</Link>
 				</motion.div>
 				<motion.div variants={transitionItem} className="grid-container">
-					<Link to="/towers" id="glue-gunner">
+					<Link to="/towers/glue-gunner" id="glue-gunner">
 						<img src={GlueGunner} alt="Glue Gunner" />
 					</Link>
 				</motion.div>

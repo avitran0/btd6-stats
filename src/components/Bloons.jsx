@@ -36,7 +36,7 @@ export default function Bloons() {
 			opacity: 1,
 			transition: {
 				ease: "easeInOut",
-				duration: 0.2,
+				duration: 0.1,
 				staggerChildren: 0.05,
 			},
 		},
@@ -46,7 +46,7 @@ export default function Bloons() {
 		show: { opacity: 1 },
 	};
 	return (
-		<motion.div initial="hidden" animate="show" variants={transitionContainer} className="bloons">
+		<motion.div initial="hidden" animate="show" exit="hidden" variants={transitionContainer} className="bloons">
 			<motion.h1 variants={transitionItem}>Bloons</motion.h1>
 			<motion.h2 variants={transitionItem}>Normal</motion.h2>
 			<motion.div variants={transitionItem} className="table-wrapper">

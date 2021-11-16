@@ -1,40 +1,38 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactTooltip from "react-tooltip";
-import M000 from "../../boomerang-monkey/000-BoomerangMonkey.png";
-import M001 from "../../boomerang-monkey/001-BoomerangMonkey.png";
-import M002 from "../../boomerang-monkey/002-BoomerangMonkey.png";
-import M003 from "../../boomerang-monkey/003-BoomerangMonkey.png";
-import M004 from "../../boomerang-monkey/004-BoomerangMonkey.png";
-import M005 from "../../boomerang-monkey/005-BoomerangMonkey.png";
-import M010 from "../../boomerang-monkey/010-BoomerangMonkey.png";
-import M020 from "../../boomerang-monkey/020-BoomerangMonkey.png";
-import M030 from "../../boomerang-monkey/030-BoomerangMonkey.png";
-import M040 from "../../boomerang-monkey/040-BoomerangMonkey.png";
-import M050 from "../../boomerang-monkey/050-BoomerangMonkey.png";
-import M100 from "../../boomerang-monkey/100-BoomerangMonkey.png";
-import M200 from "../../boomerang-monkey/200-BoomerangMonkey.png";
-import M300 from "../../boomerang-monkey/300-BoomerangMonkey.png";
-import M400 from "../../boomerang-monkey/400-BoomerangMonkey.png";
-import M500 from "../../boomerang-monkey/500-BoomerangMonkey.png";
-import Paragon from "../../boomerang-monkey/GlaiveDominus.png";
+import M000 from "../../glue-gunner/000-GlueGunner.png";
+import M001 from "../../glue-gunner/001-GlueGunner.png";
+import M002 from "../../glue-gunner/002-GlueGunner.png";
+import M003 from "../../glue-gunner/003-GlueGunner.png";
+import M004 from "../../glue-gunner/004-GlueGunner.png";
+import M005 from "../../glue-gunner/005-GlueGunner.png";
+import M010 from "../../glue-gunner/010-GlueGunner.png";
+import M020 from "../../glue-gunner/020-GlueGunner.png";
+import M030 from "../../glue-gunner/030-GlueGunner.png";
+import M040 from "../../glue-gunner/040-GlueGunner.png";
+import M050 from "../../glue-gunner/050-GlueGunner.png";
+import M100 from "../../glue-gunner/100-GlueGunner.png";
+import M200 from "../../glue-gunner/200-GlueGunner.png";
+import M300 from "../../glue-gunner/300-GlueGunner.png";
+import M400 from "../../glue-gunner/400-GlueGunner.png";
+import M500 from "../../glue-gunner/500-GlueGunner.png";
 import Reset from "../../misc/CloseIcon.png";
-import p11 from "../../boomerang-monkey/ImprovedRangsUpgradeIcon.png";
-import p12 from "../../boomerang-monkey/GlaivesUpgradeIcon.png";
-import p13 from "../../boomerang-monkey/GlaiveRicochetUpgradeIcon.png";
-import p14 from "../../boomerang-monkey/MoarGlaivesUpgradeIcon.png";
-import p15 from "../../boomerang-monkey/GlaiveLordUpgradeIcon.png";
-import p21 from "../../boomerang-monkey/FasterThrowingUpgradeIcon.png";
-import p22 from "../../boomerang-monkey/FasterRangsUpgradeIcon.png";
-import p23 from "../../boomerang-monkey/BionicBoomerangUpgradeIcon.png";
-import p24 from "../../boomerang-monkey/TurbochargeUpgradeIcon.png";
-import p25 from "../../boomerang-monkey/PermaChargeUpgradeIcon.png";
-import p31 from "../../boomerang-monkey/LongRangeRangsUpgradeIcon.png";
-import p32 from "../../boomerang-monkey/RedHotRangsUpgradeIcon.png";
-import p33 from "../../boomerang-monkey/KylieBoomerangUpgradeIcon.png";
-import p34 from "../../boomerang-monkey/MoabPressUpgradeIcon.png";
-import p35 from "../../boomerang-monkey/MoabDominationUpgradeIcon.png";
-import par from "../../boomerang-monkey/GlaiveDominusUpgradeIcon.png";
+import p11 from "../../glue-gunner/GlueSoakUpgradeIcon.png";
+import p12 from "../../glue-gunner/CorrosiveGlueUpgradeIcon.png";
+import p13 from "../../glue-gunner/BloonDissolverUpgradeIcon.png";
+import p14 from "../../glue-gunner/BloonLiquefierUpgradeIcon.png";
+import p15 from "../../glue-gunner/TheBloonSolverUpgradeIcon.png";
+import p21 from "../../glue-gunner/BiggerGlobsUpgradeIcon.png";
+import p22 from "../../glue-gunner/GlueSplatterUpgradeIcon.png";
+import p23 from "../../glue-gunner/GlueHoseUpgradeIcon.png";
+import p24 from "../../glue-gunner/GlueStrikeUpgradeIcon.png";
+import p25 from "../../glue-gunner/GlueStormUpgradeIcon.png";
+import p31 from "../../glue-gunner/StickierGlueUpgradeIcon.png";
+import p32 from "../../glue-gunner/StrongerGlueUpgradeIcon.png";
+import p33 from "../../glue-gunner/MoabGlueUpgradeIcon.png";
+import p34 from "../../glue-gunner/RelentlessGlueUpgradeIcon.png";
+import p35 from "../../glue-gunner/SuperGlueUpgradeIcon.png";
 import Red from "../../bloons/Red.png";
 import Ceramic from "../../bloons/Ceramic.png";
 import MOAB from "../../bloons/MOAB.png";
@@ -52,8 +50,8 @@ import Purple from "../../bloons/Purple.png";
 import Lead from "../../bloons/Lead.png";
 import Frozen from "../../bloons/WhiteIce.png";
 
-export default function BoomerangMonkey() {
-	document.title = "Boomerang Monkey - BTD6 Stats";
+export default function GlueGunner() {
+	document.title = "Glue Gunner - BTD6 Stats";
 	const transitionContainer = {
 		hidden: { opacity: 0 },
 		show: {
@@ -86,7 +84,6 @@ export default function BoomerangMonkey() {
 		300: M300,
 		400: M400,
 		500: M500,
-		par: Paragon,
 	};
 	let colors = {
 		ss: "#98c379",
@@ -112,12 +109,12 @@ export default function BoomerangMonkey() {
 			damageSecondary: 0,
 			damageMOABSecondary: 0,
 			damageCeramicSecondary: 0,
-			pierce: 4,
+			pierce: 1,
 			pierceSecondary: 0,
-			projectiles: 1,
+			projectiles: 8,
 			projectilesSecondary: 0,
-			speed: 1.2,
-			range: 43,
+			speed: 1.4,
+			range: 23,
 			abilityName: "",
 			abilityDuration: 0,
 			abilityCooldown: 0,
@@ -130,84 +127,80 @@ export default function BoomerangMonkey() {
 			white: true,
 			purple: true,
 			lead: false,
-			frozen: false,
-			costEasy: 275,
-			costMedium: 325,
-			costHard: 350,
-			costImpoppable: 390,
+			frozen: true,
+			costEasy: 240,
+			costMedium: 280,
+			costHard: 300,
+			costImpoppable: 335,
 		},
 	]);
 	const [image, setImage] = useState("000");
 	useEffect(() => {
 		let costs = {
-			"buy-e": 275,
-			"buy-m": 325,
-			"buy-h": 350,
-			"buy-i": 390,
-			"p1-1-e": 170,
-			"p1-1-m": 200,
-			"p1-1-h": 215,
-			"p1-1-i": 240,
-			"p1-2-e": 240,
-			"p1-2-m": 280,
-			"p1-2-h": 300,
-			"p1-2-i": 335,
-			"p1-3-e": 1105,
-			"p1-3-m": 1300,
-			"p1-3-h": 1405,
-			"p1-3-i": 1560,
-			"p1-4-e": 2550,
-			"p1-4-m": 3000,
-			"p1-4-h": 3240,
-			"p1-4-i": 3600,
-			"p1-5-e": 27540,
-			"p1-5-m": 32400,
-			"p1-5-h": 34990,
-			"p1-5-i": 38880,
-			"p2-1-e": 150,
-			"p2-1-m": 175,
-			"p2-1-h": 190,
-			"p2-1-i": 210,
-			"p2-2-e": 210,
-			"p2-2-m": 250,
-			"p2-2-h": 270,
-			"p2-2-i": 300,
-			"p2-3-e": 1360,
-			"p2-3-m": 1600,
-			"p2-3-h": 1730,
-			"p2-3-i": 1920,
-			"p2-4-e": 3400,
-			"p2-4-m": 4000,
-			"p2-4-h": 4320,
-			"p2-4-i": 4800,
-			"p2-5-e": 29750,
-			"p2-5-m": 35000,
-			"p2-5-h": 37800,
-			"p2-5-i": 42000,
+			"buy-e": 240,
+			"buy-m": 280,
+			"buy-h": 300,
+			"buy-i": 335,
+			"p1-1-e": 125,
+			"p1-1-m": 150,
+			"p1-1-h": 160,
+			"p1-1-i": 180,
+			"p1-2-e": 255,
+			"p1-2-m": 300,
+			"p1-2-h": 325,
+			"p1-2-i": 360,
+			"p1-3-e": 510,
+			"p1-3-m": 600,
+			"p1-3-h": 650,
+			"p1-3-i": 720,
+			"p1-4-e": 2975,
+			"p1-4-m": 3500,
+			"p1-4-h": 3780,
+			"p1-4-i": 4200,
+			"p1-5-e": 38675,
+			"p1-5-m": 45500,
+			"p1-5-h": 49140,
+			"p1-5-i": 54600,
+			"p2-1-e": 85,
+			"p2-1-m": 100,
+			"p2-1-h": 110,
+			"p2-1-i": 120,
+			"p2-2-e": 190,
+			"p2-2-m": 225,
+			"p2-2-h": 245,
+			"p2-2-i": 270,
+			"p2-3-e": 465,
+			"p2-3-m": 550,
+			"p2-3-h": 595,
+			"p2-3-i": 660,
+			"p2-4-e": 2295,
+			"p2-4-m": 2700,
+			"p2-4-h": 2915,
+			"p2-4-i": 3240,
+			"p2-5-e": 12750,
+			"p2-5-m": 15000,
+			"p2-5-h": 16200,
+			"p2-5-i": 18000,
 			"p3-1-e": 85,
 			"p3-1-m": 100,
 			"p3-1-h": 110,
 			"p3-1-i": 120,
-			"p3-2-e": 255,
-			"p3-2-m": 300,
-			"p3-2-h": 325,
-			"p3-2-i": 360,
-			"p3-3-e": 1100,
-			"p3-3-m": 1300,
-			"p3-3-h": 1400,
-			"p3-3-i": 1560,
-			"p3-4-e": 1870,
-			"p3-4-m": 2200,
-			"p3-4-h": 2375,
-			"p3-4-i": 2640,
-			"p3-5-e": 51000,
-			"p3-5-m": 60000,
-			"p3-5-h": 64800,
-			"p3-5-i": 72000,
-			"par-e": 340000,
-			"par-m": 400000,
-			"par-h": 432000,
-			"par-i": 480000,
+			"p3-2-e": 85,
+			"p3-2-m": 100,
+			"p3-2-h": 110,
+			"p3-2-i": 120,
+			"p3-3-e": 350,
+			"p3-3-m": 450,
+			"p3-3-h": 485,
+			"p3-3-i": 540,
+			"p3-4-e": 2720,
+			"p3-4-m": 3200,
+			"p3-4-h": 3455,
+			"p3-4-i": 3840,
+			"p3-5-e": 17000,
+			"p3-5-m": 20000,
+			"p3-5-h": 21600,
+			"p3-5-i": 24000,
 		};
 		switch (String(p1) + String(p2) + String(p3)) {
 			case "000":
@@ -218,12 +211,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 43,
+					speed: 1.4,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -236,7 +229,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"],
 					costMedium: costs["buy-m"],
 					costHard: costs["buy-h"],
@@ -252,12 +245,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 8,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 43,
+					speed: 1.05,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -270,7 +263,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"],
@@ -286,12 +279,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 43,
+					speed: 0.63,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -304,7 +297,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"],
@@ -314,18 +307,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "300":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 43,
+					speed: 0.63,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -337,8 +330,8 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
-					frozen: false,
+					lead: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"],
@@ -348,18 +341,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "400":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 3,
+					damageMOAB: 3,
+					damageCeramic: 3,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 100,
+					pierce: 60,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.6,
-					range: 43,
+					speed: 0.5355,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -370,9 +363,9 @@ export default function BoomerangMonkey() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
+					purple: false,
+					lead: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p1-4-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p1-4-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p1-4-h"],
@@ -383,18 +376,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "500":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
-					projectiles: 1,
+					damage: 4,
+					damageMOAB: 10,
+					damageCeramic: 4,
+					damageSecondary: 700,
+					damageMOABSecondary: 700,
+					damageCeramicSecondary: 700,
+					pierce: 60,
+					pierceSecondary: 1,
+					projectiles: 8,
 					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 43,
+					speed: 0.1,
+					range: 34.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -402,12 +395,12 @@ export default function BoomerangMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
+					purple: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -447,12 +440,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 43,
+					speed: 1.4,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -465,7 +458,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"],
@@ -481,12 +474,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 43,
+					speed: 1.4,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -499,7 +492,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"],
@@ -510,17 +503,17 @@ export default function BoomerangMonkey() {
 			case "030":
 				setStats({
 					damage: 1,
-					damageMOAB: 2,
+					damageMOAB: 1,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
+					speed: 1.19,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -544,24 +537,24 @@ export default function BoomerangMonkey() {
 			case "040":
 				setStats({
 					damage: 1,
-					damageMOAB: 2,
+					damageMOAB: 1,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 2,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 1.19,
+					range: 31,
+					abilityName: "Maelstrom",
+					abilityDuration: 3,
+					abilityCooldown: 20,
+					abilityDamage: 1,
+					abilityPierce: 200,
+					abilitySpeed: 0.0333,
+					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
@@ -578,31 +571,31 @@ export default function BoomerangMonkey() {
 				break;
 			case "050":
 				setStats({
-					damage: 4,
-					damageMOAB: 5,
-					damageCeramic: 4,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 12,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 1.19,
+					range: 31,
+					abilityName: "Super Maelstrom",
+					abilityDuration: 9,
+					abilityCooldown: 20,
+					abilityDamage: 2,
+					abilityPierce: 500,
+					abilitySpeed: 0.0333,
+					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
-					frozen: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -642,12 +635,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 1.4,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -660,7 +653,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p3-1-h"],
@@ -670,18 +663,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "002":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 12,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 1.4,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -693,7 +686,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -704,18 +697,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "003":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 18,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 16,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 1.05,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -727,7 +720,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
@@ -738,18 +731,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "004":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 200,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 1.2,
-					range: 49.5,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 2,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.35,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -761,7 +754,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"] + costs["p3-4-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"] + costs["p3-4-m"],
@@ -773,18 +766,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "005":
 				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 25,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 300,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 4,
+					pierceSecondary: 0,
+					projectiles: 32,
+					projectilesSecondary: 0,
+					speed: 0.2625,
+					range: 30,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -796,7 +789,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -837,11 +830,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
-					projectiles: 1,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 43,
+					speed: 1.05,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -854,7 +848,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"],
@@ -870,12 +864,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 43,
+					speed: 0.63,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -888,7 +882,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p2-1-h"],
@@ -898,18 +892,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "310":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.85,
-					range: 43,
+					speed: 0.63,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -921,8 +915,8 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
-					frozen: false,
+					lead: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p2-1-h"],
@@ -933,18 +927,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "410":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 3,
+					damageMOAB: 3,
+					damageCeramic: 3,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 100,
+					pierce: 70,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.426,
-					range: 43,
+					speed: 0.5355,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -955,9 +949,9 @@ export default function BoomerangMonkey() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
+					purple: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -991,18 +985,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "510":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
-					projectiles: 1,
+					damage: 4,
+					damageMOAB: 10,
+					damageCeramic: 4,
+					damageSecondary: 700,
+					damageMOABSecondary: 700,
+					damageCeramicSecondary: 700,
+					pierce: 70,
+					pierceSecondary: 1,
+					projectiles: 8,
 					projectilesSecondary: 1,
-					speed: 0.426,
-					range: 43,
+					speed: 0.1,
+					range: 38.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1010,12 +1004,12 @@ export default function BoomerangMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
+					purple: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1059,12 +1053,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 8,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 43,
+					speed: 1.05,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1077,7 +1071,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"] + costs["p2-2-h"],
@@ -1093,12 +1087,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 43,
+					speed: 0.63,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1111,7 +1105,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"] + costs["p2-2-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p2-1-h"] + costs["p2-2-h"],
@@ -1122,18 +1116,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "320":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.586,
-					range: 43,
+					speed: 0.63,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1145,8 +1139,8 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
-					frozen: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1180,18 +1174,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "420":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 3,
+					damageMOAB: 3,
+					damageCeramic: 3,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 100,
+					pierce: 80,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.32,
-					range: 43,
+					speed: 0.5355,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1202,9 +1196,9 @@ export default function BoomerangMonkey() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
+					purple: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1242,18 +1236,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "520":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
-					projectiles: 1,
+					damage: 4,
+					damageMOAB: 10,
+					damageCeramic: 4,
+					damageSecondary: 700,
+					damageMOABSecondary: 700,
+					damageCeramicSecondary: 700,
+					pierce: 80,
+					pierceSecondary: 1,
+					projectiles: 8,
 					projectilesSecondary: 1,
-					speed: 0.32,
-					range: 43,
+					speed: 0.1,
+					range: 42.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1261,12 +1255,12 @@ export default function BoomerangMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
+					purple: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1314,12 +1308,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 8,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 1.05,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1332,7 +1326,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"],
@@ -1348,12 +1342,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 0.63,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1366,7 +1360,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p3-1-h"],
@@ -1376,18 +1370,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "301":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 0.63,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1399,8 +1393,8 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
-					frozen: false,
+					lead: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p3-1-h"],
@@ -1411,18 +1405,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "401":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 4,
+					damageMOAB: 4,
+					damageCeramic: 4,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 100,
+					pierce: 60,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 0.6,
-					range: 49.5,
+					speed: 0.5355,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1433,9 +1427,9 @@ export default function BoomerangMonkey() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
+					purple: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1469,18 +1463,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "501":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
-					projectiles: 1,
+					damage: 5,
+					damageMOAB: 10,
+					damageCeramic: 5,
+					damageSecondary: 700,
+					damageMOABSecondary: 700,
+					damageCeramicSecondary: 700,
+					pierce: 60,
+					pierceSecondary: 1,
+					projectiles: 10,
 					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
+					speed: 0.1,
+					range: 34.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1488,12 +1482,12 @@ export default function BoomerangMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
+					purple: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1531,18 +1525,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "102":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 8,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 12,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 1.05,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1554,7 +1548,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -1565,18 +1559,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "202":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 12,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 0.63,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1588,7 +1582,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -1606,12 +1600,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 12,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 0.63,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1658,18 +1652,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "402":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 5,
+					damageMOAB: 5,
+					damageCeramic: 5,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 100,
+					pierce: 60,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 12,
 					projectilesSecondary: 0,
-					speed: 0.6,
-					range: 49.5,
+					speed: 0.5355,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1680,7 +1674,7 @@ export default function BoomerangMonkey() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: true,
+					purple: false,
 					lead: true,
 					frozen: true,
 					costEasy:
@@ -1720,18 +1714,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "502":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
-					projectiles: 1,
+					damage: 6,
+					damageMOAB: 11,
+					damageCeramic: 6,
+					damageSecondary: 700,
+					damageMOABSecondary: 700,
+					damageCeramicSecondary: 700,
+					pierce: 60,
+					pierceSecondary: 1,
+					projectiles: 12,
 					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
+					speed: 0.1,
+					range: 34.5,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1739,10 +1733,10 @@ export default function BoomerangMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: true,
+					camo: false,
 					black: true,
 					white: true,
-					purple: true,
+					purple: false,
 					lead: true,
 					frozen: true,
 					costEasy:
@@ -1787,17 +1781,17 @@ export default function BoomerangMonkey() {
 			case "130":
 				setStats({
 					damage: 1,
-					damageMOAB: 2,
+					damageMOAB: 1,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 8,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
+					speed: 0.8925,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -1822,24 +1816,24 @@ export default function BoomerangMonkey() {
 			case "140":
 				setStats({
 					damage: 1,
-					damageMOAB: 2,
+					damageMOAB: 1,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 8,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 2,
-					abilityPierce: 8,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 0.8925,
+					range: 31,
+					abilityName: "Maelstrom",
+					abilityDuration: 3,
+					abilityCooldown: 20,
+					abilityDamage: 1,
+					abilityPierce: 200,
+					abilitySpeed: 0.0333,
+					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
@@ -1879,31 +1873,31 @@ export default function BoomerangMonkey() {
 				break;
 			case "150":
 				setStats({
-					damage: 4,
-					damageMOAB: 5,
-					damageCeramic: 4,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 8,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 12,
-					abilityPierce: 8,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 0.8925,
+					range: 31,
+					abilityName: "Super Maelstrom",
+					abilityDuration: 9,
+					abilityCooldown: 20,
+					abilityDamage: 2,
+					abilityPierce: 500,
+					abilitySpeed: 0.0333,
+					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
-					frozen: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -1942,17 +1936,17 @@ export default function BoomerangMonkey() {
 			case "230":
 				setStats({
 					damage: 1,
-					damageMOAB: 2,
+					damageMOAB: 1,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
+					speed: 0.5355,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2000,24 +1994,24 @@ export default function BoomerangMonkey() {
 			case "240":
 				setStats({
 					damage: 1,
-					damageMOAB: 2,
+					damageMOAB: 1,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 2,
-					abilityPierce: 8,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 0.5355,
+					range: 31,
+					abilityName: "Maelstrom",
+					abilityDuration: 3,
+					abilityCooldown: 20,
+					abilityDamage: 1,
+					abilityPierce: 200,
+					abilitySpeed: 0.0333,
+					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
@@ -2061,31 +2055,31 @@ export default function BoomerangMonkey() {
 				break;
 			case "250":
 				setStats({
-					damage: 4,
-					damageMOAB: 5,
-					damageCeramic: 4,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 13,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 12,
-					abilityPierce: 8,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 0.5355,
+					range: 31,
+					abilityName: "Super Maelstrom",
+					abilityDuration: 9,
+					abilityCooldown: 20,
+					abilityDamage: 2,
+					abilityPierce: 500,
+					abilitySpeed: 0.0333,
+					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
-					frozen: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
@@ -2133,12 +2127,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 49.5,
+					speed: 1.4,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2151,7 +2145,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"],
@@ -2167,12 +2161,12 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 49.5,
+					speed: 1.4,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2185,7 +2179,7 @@ export default function BoomerangMonkey() {
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p3-1-h"],
@@ -2196,17 +2190,17 @@ export default function BoomerangMonkey() {
 			case "031":
 				setStats({
 					damage: 1,
-					damageMOAB: 2,
+					damageMOAB: 1,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 49.5,
+					speed: 1.19,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2231,24 +2225,24 @@ export default function BoomerangMonkey() {
 			case "041":
 				setStats({
 					damage: 1,
-					damageMOAB: 2,
+					damageMOAB: 1,
 					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 49.5,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 2,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 1.19,
+					range: 31,
+					abilityName: "Maelstrom",
+					abilityDuration: 3,
+					abilityCooldown: 20,
+					abilityDamage: 1,
+					abilityPierce: 200,
+					abilitySpeed: 0.0333,
+					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
@@ -2288,31 +2282,31 @@ export default function BoomerangMonkey() {
 				break;
 			case "051":
 				setStats({
-					damage: 4,
-					damageMOAB: 5,
-					damageCeramic: 4,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 10,
 					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 49.5,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 12,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 1.19,
+					range: 31,
+					abilityName: "Super Maelstrom",
+					abilityDuration: 9,
+					abilityCooldown: 20,
+					abilityDamage: 2,
+					abilityPierce: 500,
+					abilitySpeed: 0.0333,
+					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
-					frozen: false,
+					lead: true,
+					frozen: true,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2350,18 +2344,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "032":
 				setStats({
-					damage: 2,
-					damageMOAB: 3,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 12,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 49.5,
+					speed: 1.19,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2373,8 +2367,8 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2408,31 +2402,31 @@ export default function BoomerangMonkey() {
 				break;
 			case "042":
 				setStats({
-					damage: 2,
-					damageMOAB: 3,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 12,
 					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 49.5,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 3,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 1.19,
+					range: 31,
+					abilityName: "Maelstrom",
+					abilityDuration: 3,
+					abilityCooldown: 20,
+					abilityDamage: 1,
+					abilityPierce: 200,
+					abilitySpeed: 0.0333,
+					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
@@ -2470,25 +2464,25 @@ export default function BoomerangMonkey() {
 				break;
 			case "052":
 				setStats({
-					damage: 8,
-					damageMOAB: 9,
-					damageCeramic: 8,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 6,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 12,
 					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 49.5,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 16,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
+					speed: 1.19,
+					range: 31,
+					abilityName: "Super Maelstrom",
+					abilityDuration: 9,
+					abilityCooldown: 20,
+					abilityDamage: 2,
+					abilityPierce: 500,
+					abilitySpeed: 0.0333,
+					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
@@ -2536,18 +2530,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "103":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 22,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 16,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 0.7875,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2559,7 +2553,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
@@ -2571,18 +2565,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "104":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 22,
-					pierceSecondary: 300,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 1.2,
-					range: 49.5,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 2,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.2625,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2594,7 +2588,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2629,18 +2623,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "105":
 				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 20,
-					damageCeramicSecondary: 1,
-					pierce: 22,
-					pierceSecondary: 400,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 4,
+					pierceSecondary: 0,
+					projectiles: 32,
+					projectilesSecondary: 0,
+					speed: 0.196875,
+					range: 30,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2652,7 +2646,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2691,18 +2685,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "203":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 27,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 16,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
+					speed: 0.4725,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2714,7 +2708,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2749,18 +2743,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "204":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 27,
-					pierceSecondary: 420,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 1.2,
-					range: 49.5,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 2,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.1575,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2772,7 +2766,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2811,18 +2805,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "205":
 				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 25,
-					damageCeramicSecondary: 1,
-					pierce: 27,
-					pierceSecondary: 520,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 4,
+					pierceSecondary: 0,
+					projectiles: 32,
+					projectilesSecondary: 0,
+					speed: 0.118125,
+					range: 30,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2834,7 +2828,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -2877,18 +2871,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "012":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 12,
 					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 49.5,
+					speed: 1.4,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2900,7 +2894,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -2911,18 +2905,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "013":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 18,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 16,
 					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 49.5,
+					speed: 1.05,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2934,7 +2928,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
@@ -2946,18 +2940,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "014":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 200,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.9,
-					range: 49.5,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 2,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.35,
+					range: 27,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -2969,7 +2963,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3004,18 +2998,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "015":
 				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 25,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 300,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.45,
-					range: 49.5,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 4,
+					pierceSecondary: 0,
+					projectiles: 32,
+					projectilesSecondary: 0,
+					speed: 0.2625,
+					range: 34,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3027,7 +3021,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3066,18 +3060,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "022":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 12,
 					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 49.5,
+					speed: 1.4,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3089,7 +3083,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
@@ -3101,18 +3095,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "023":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 18,
+					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 1,
+					projectiles: 16,
 					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 49.5,
+					speed: 1.05,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3124,7 +3118,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3159,18 +3153,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "024":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 200,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.675,
-					range: 49.5,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 2,
+					pierceSecondary: 0,
+					projectiles: 16,
+					projectilesSecondary: 0,
+					speed: 0.35,
+					range: 31,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3182,7 +3176,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3221,18 +3215,18 @@ export default function BoomerangMonkey() {
 				break;
 			case "025":
 				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 25,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 300,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.338,
-					range: 49.5,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 4,
+					pierceSecondary: 0,
+					projectiles: 32,
+					projectilesSecondary: 0,
+					speed: 0.2625,
+					range: 38,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3244,7 +3238,7 @@ export default function BoomerangMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
+					lead: false,
 					frozen: true,
 					costEasy:
 						costs["buy-e"] +
@@ -3285,108 +3279,6 @@ export default function BoomerangMonkey() {
 				});
 				setImage("005");
 				break;
-			case "-100":
-				setStats({
-					damage: 20,
-					damageMOAB: 20,
-					damageCeramic: 20,
-					damageSecondary: 0,
-					damageMOABSecondary: 20,
-					damageCeramicSecondary: 0,
-					pierce: 100,
-					pierceSecondary: 300,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.04,
-					range: 75,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: true,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
-						costs["buy-e"] * 3 +
-						costs["p1-1-e"] +
-						costs["p1-2-e"] +
-						costs["p1-3-e"] +
-						costs["p1-4-e"] +
-						costs["p1-5-e"] +
-						costs["p2-1-e"] +
-						costs["p2-2-e"] +
-						costs["p2-3-e"] +
-						costs["p2-4-e"] +
-						costs["p2-5-e"] +
-						costs["p3-1-e"] +
-						costs["p3-2-e"] +
-						costs["p3-3-e"] +
-						costs["p3-4-e"] +
-						costs["p3-5-e"] +
-						costs["par-e"],
-					costMedium:
-						costs["buy-m"] * 3 +
-						costs["p1-1-m"] +
-						costs["p1-2-m"] +
-						costs["p1-3-m"] +
-						costs["p1-4-m"] +
-						costs["p1-5-m"] +
-						costs["p2-1-m"] +
-						costs["p2-2-m"] +
-						costs["p2-3-m"] +
-						costs["p2-4-m"] +
-						costs["p2-5-m"] +
-						costs["p3-1-m"] +
-						costs["p3-2-m"] +
-						costs["p3-3-m"] +
-						costs["p3-4-m"] +
-						costs["p3-5-m"] +
-						costs["par-m"],
-					costHard:
-						costs["buy-h"] * 3 +
-						costs["p1-1-h"] +
-						costs["p1-2-h"] +
-						costs["p1-3-h"] +
-						costs["p1-4-h"] +
-						costs["p1-5-h"] +
-						costs["p2-1-h"] +
-						costs["p2-2-h"] +
-						costs["p2-3-h"] +
-						costs["p2-4-h"] +
-						costs["p2-5-h"] +
-						costs["p3-1-h"] +
-						costs["p3-2-h"] +
-						costs["p3-3-h"] +
-						costs["p3-4-h"] +
-						costs["p3-5-h"] +
-						costs["par-h"],
-					costImpoppable:
-						costs["buy-i"] * 3 +
-						costs["p1-1-i"] +
-						costs["p1-2-i"] +
-						costs["p1-3-i"] +
-						costs["p1-4-i"] +
-						costs["p1-5-i"] +
-						costs["p2-1-i"] +
-						costs["p2-2-i"] +
-						costs["p2-3-i"] +
-						costs["p2-4-i"] +
-						costs["p2-5-i"] +
-						costs["p3-1-i"] +
-						costs["p3-2-i"] +
-						costs["p3-3-i"] +
-						costs["p3-4-i"] +
-						costs["p3-5-i"] +
-						costs["par-i"],
-				});
-				setImage("par");
-				break;
 			default:
 				setStats({
 					damage: 1,
@@ -3395,24 +3287,25 @@ export default function BoomerangMonkey() {
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 4,
-					projectiles: 1,
+					pierce: 1,
+					pierceSecondary: 0,
+					projectiles: 8,
 					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 43,
+					speed: 1.4,
+					range: 23,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
 					abilityDamage: 0,
 					abilityPierce: 0,
-					abilitySpeed: 0,
+					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
 					lead: false,
-					frozen: false,
+					frozen: true,
 					costEasy: costs["buy-e"],
 					costMedium: costs["buy-m"],
 					costHard: costs["buy-h"],
@@ -3473,18 +3366,13 @@ export default function BoomerangMonkey() {
 			case "p3-5":
 				setP3(5);
 				break;
-			case "par":
-				setP1(-1);
-				setP2(0);
-				setP3(0);
-				break;
 			default:
 				break;
 		}
 	}
 	return (
 		<motion.div initial="hidden" animate="show" exit="hidden" variants={transitionContainer} className="tower">
-			<motion.h1 variants={transitionItem}>Boomerang Monkey</motion.h1>
+			<motion.h1 variants={transitionItem}>Glue Gunner</motion.h1>
 			<div className="tower-container">
 				<div className="stats-container">
 					<motion.div variants={transitionItem}>
@@ -3992,9 +3880,9 @@ export default function BoomerangMonkey() {
 				</div>
 				<div className="image-container">
 					<motion.div variants={transitionItem} className="image-container-inner">
-						<img src={images[image]} alt="Boomerang Monkey" className="tower-img"></img>
+						<img src={images[image]} alt="Tack Shooter" className="tower-img"></img>
 					</motion.div>
-					<motion.div variants={transitionItem} className="tower-grid" id="tower-grid-par">
+					<motion.div variants={transitionItem} className="tower-grid">
 						<div></div>
 						<div>
 							<button
@@ -4002,7 +3890,7 @@ export default function BoomerangMonkey() {
 								id="p1-1"
 								className={p1 === 1 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Improved Rangs<br>Gains +4 pierce, equivalent to 8 pierce for most upgrades.<br>Cost: $170 / $200 / $215 / $240"
+								data-tip="Faster Shooting<br>Shoots tacks faster.<br>Cost: $125 / $150 / $160 / $180"
 								data-for="p1-1"
 							>
 								<ReactTooltip
@@ -4013,7 +3901,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p1-1"
 								/>
-								<img src={p11} alt="Improved Rangs"></img>
+								<img src={p11} alt="Faster Shooting"></img>
 							</button>
 						</div>
 						<div>
@@ -4022,7 +3910,7 @@ export default function BoomerangMonkey() {
 								id="p1-2"
 								className={p1 === 2 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Glaives<br>Gains +5 pierce on top of the previous upgrade, equivalent to 13 pierce for most upgrades.<br>Cost: $240 / $280 / $300 / $335"
+								data-tip="Even Faster Shooting<br>Shoots tacks even faster.<br>Cost: $255 / $300 / $325 / $360"
 								data-for="p1-2"
 							>
 								<ReactTooltip
@@ -4033,7 +3921,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p1-2"
 								/>
-								<img src={p12} alt="Glaives"></img>
+								<img src={p12} alt="Even Faster Shooting"></img>
 							</button>
 						</div>
 						<div>
@@ -4042,7 +3930,7 @@ export default function BoomerangMonkey() {
 								id="p1-3"
 								className={p1 === 3 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Glaive Ricochet<br>Glaives automatically bounce towards each bloon with sharp turning.<br>Pops up to 50 bloons per glaive.<br>Cost: $1.105 / $1.300 / $1.405 / $1.560"
+								data-tip="Hot Shots<br>Shoots superhot tacks that do extra damage and can pop Lead Bloons.<br>Cost: $510 / $600 / $650 / $720"
 								data-for="p1-3"
 							>
 								<ReactTooltip
@@ -4053,7 +3941,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p1-3"
 								/>
-								<img src={p13} alt="Glaive Ricochet"></img>
+								<img src={p13} alt="Hot Shots"></img>
 							</button>
 						</div>
 						<div>
@@ -4062,7 +3950,7 @@ export default function BoomerangMonkey() {
 								id="p1-4"
 								className={p1 === 4 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="M.O.A.R Glaives<br>Pierce increased from 50 to 100, attack speed is doubled, and glaive bounce distance is increased.<br>Cost: $2.550 / $3.000 / $3.240 / $3.600"
+								data-tip="Ring of Fire<br>Shoots a deadly ring of flames instead of tacks.<br>Cost: $2.975 / $3.500 / $3.780 / $4.200"
 								data-for="p1-4"
 							>
 								<ReactTooltip
@@ -4073,7 +3961,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p1-4"
 								/>
-								<img src={p14} alt="M.O.A.R Glaives"></img>
+								<img src={p14} alt="Ring of Fire"></img>
 							</button>
 						</div>
 						<div>
@@ -4082,7 +3970,7 @@ export default function BoomerangMonkey() {
 								id="p1-5"
 								className={p1 === 5 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Glaive Lord<br>Glaive Lord surrounds itself in 3 special glaives that shred anything that comes near.<br>Glaive Lord's glaives now rip through MOAB-class Bloons, slowly tearing them apart from the inside.<br>Cost: $27.540 / $32.400 / $34.990 / $38.880"
+								data-tip="Inferno Ring<br>Deadly inferno of flame roasts Bloons into oblivion.<br>Cost: $38.675 / $45.500 / $49.140 / $54.600"
 								data-for="p1-5"
 							>
 								<ReactTooltip
@@ -4093,10 +3981,9 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p1-5"
 								/>
-								<img src={p15} alt="Glaive Lord"></img>
+								<img src={p15} alt="Inferno Ring"></img>
 							</button>
 						</div>
-						<div></div>
 						<div>
 							<h1 style={{ color: colors["b-"] }}>B-</h1>
 						</div>
@@ -4124,7 +4011,7 @@ export default function BoomerangMonkey() {
 								id="p2-1"
 								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Faster Throwing<br>Throws boomerangs faster.<br>Cost: $150 / $175 / $190 / $210"
+								data-tip="Long Range Tacks<br>Tacks fly out further than normal.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="p2-1"
 							>
 								<ReactTooltip
@@ -4135,7 +4022,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p2-1"
 								/>
-								<img src={p21} alt="Faster Throwing"></img>
+								<img src={p21} alt="Long Range Tacks"></img>
 							</button>
 						</div>
 						<div>
@@ -4144,7 +4031,7 @@ export default function BoomerangMonkey() {
 								id="p2-2"
 								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Faster Rangs<br>Boomerangs fire and travel faster.<br>Cost: $210 / $250 / $270 / $300"
+								data-tip="Super Range Tacks<br>Even longer range tacksthat can pop more Bloons.<br>Cost: $190 / $225 / $245 / $270"
 								data-for="p2-2"
 							>
 								<ReactTooltip
@@ -4155,7 +4042,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p2-2"
 								/>
-								<img src={p22} alt="Faster Rangs"></img>
+								<img src={p22} alt="Super Range Tacks"></img>
 							</button>
 						</div>
 						<div>
@@ -4164,7 +4051,7 @@ export default function BoomerangMonkey() {
 								id="p2-3"
 								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Bionic Boomerang<br>Replaces arm with a strong bionic arm that can throw boomerangs extremely fast and does extra damage to MOAB-class bloons.<br>Cost: $1.360 / $1.600 / $1.730 / $1.920"
+								data-tip="Blade Shooter<br>Switches tacks for sharp blades that can pop up to 5 additional Bloons.<br>Cost: $465 / $550 / $595 / $660"
 								data-for="p2-3"
 							>
 								<ReactTooltip
@@ -4175,7 +4062,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p2-3"
 								/>
-								<img src={p23} alt="Bionic Boomerang"></img>
+								<img src={p23} alt="Blade Shooter"></img>
 							</button>
 						</div>
 						<div>
@@ -4184,7 +4071,7 @@ export default function BoomerangMonkey() {
 								id="p2-4"
 								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Turbo Charge<br>Turbo Charge ability: Makes this Monkey attack incredibly fast for 10 seconds.<br>Cost: $3.400 / $4.000 / $4.320 / $4.800"
+								data-tip="Blade Maelstrom<br>Blade Maelstrom ability: Covers the area in a storm of blades.<br>Cost: $2.295 / $2.700 / $2.915 / $3.240"
 								data-for="p2-4"
 							>
 								<ReactTooltip
@@ -4195,7 +4082,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p2-4"
 								/>
-								<img src={p24} alt="Turbo Charge"></img>
+								<img src={p24} alt="Blade Maelstrom"></img>
 							</button>
 						</div>
 						<div>
@@ -4204,7 +4091,7 @@ export default function BoomerangMonkey() {
 								id="p2-5"
 								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Perma Charge<br>Perma Charge has a permanent super fast attack speed.<br>Ability increases the lethality even more.<br>Cost: $29.750 / $35.000 / $37.800 / $42.000"
+								data-tip="Super Maelstrom<br>Even more powerful Maelstrom ability and lasts longer.<br>Cost: $12.750 / $15.000 / $16.200 / $18.000"
 								data-for="p2-5"
 							>
 								<ReactTooltip
@@ -4215,30 +4102,11 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p2-5"
 								/>
-								<img src={p25} alt="Perma Charge"></img>
+								<img src={p25} alt="Super Maelstrom"></img>
 							</button>
 						</div>
 						<div>
-							<button
-								onClick={() => handleChange("par")}
-								id="par"
-								className={p1 === -1 ? "tower-active" : ""}
-								data-tip="Glaive Dominus<br>The Bloons will look upon my Glaives, and they will know fear.<br>Cost: $340.000 / $400.000 / $432.000 / $480.000"
-								data-for="par"
-							>
-								<ReactTooltip
-									effect="solid"
-									textColor="#eceff4"
-									backgroundColor="#4c566aff"
-									arrowColor="transparent"
-									multiline={true}
-									id="par"
-								/>
-								<img src={par} alt="Glaive Dominus"></img>
-							</button>
-						</div>
-						<div>
-							<h1 style={{ color: colors["a-"] }}>A-</h1>
+							<h1 style={{ color: colors["b"] }}>B</h1>
 						</div>
 						<div></div>
 						<div>
@@ -4247,7 +4115,7 @@ export default function BoomerangMonkey() {
 								id="p3-1"
 								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Long Range Rangs<br>Can throw boomerangs further than normal.<br>Cost: $85 / $100 / $110 / $120"
+								data-tip="More Tacks<br>Shoots 10 tacks instead of 8, plus increases Ring of Fire damage.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="p3-1"
 							>
 								<ReactTooltip
@@ -4258,7 +4126,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p3-1"
 								/>
-								<img src={p31} alt="Long Range Rangs"></img>
+								<img src={p31} alt="More Tacks"></img>
 							</button>
 						</div>
 						<div>
@@ -4267,7 +4135,7 @@ export default function BoomerangMonkey() {
 								id="p3-2"
 								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Red Hot Rangs<br>Allows boomerangs to pop Frozen and Lead Bloons and do more damage to all.<br>Cost: $255 / $300 / $325 / $360"
+								data-tip="Even More Tacks<br>Shoots out 12 tacks per shot and increases Ring of Fire damage further.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="p3-2"
 							>
 								<ReactTooltip
@@ -4278,7 +4146,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p3-2"
 								/>
-								<img src={p32} alt="Red Hot Rangs"></img>
+								<img src={p32} alt="Even More Tacks"></img>
 							</button>
 						</div>
 						<div>
@@ -4287,7 +4155,7 @@ export default function BoomerangMonkey() {
 								id="p3-3"
 								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Kylie Boomerang<br>Throws heavy Kylie boomerangs that follow a straight path instead of curved.<br>Cost: $1.100 / $1.300 / $1.400 / $1.560"
+								data-tip="Tack Sprayer<br>Sprays out 16 tacks per volley.<br>Cost: $350 / $450 / $485 / $540"
 								data-for="p3-3"
 							>
 								<ReactTooltip
@@ -4298,7 +4166,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p3-3"
 								/>
-								<img src={p33} alt="Kylie Boomerang"></img>
+								<img src={p33} alt="Tack Sprayer"></img>
 							</button>
 						</div>
 						<div>
@@ -4307,7 +4175,7 @@ export default function BoomerangMonkey() {
 								id="p3-4"
 								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Press<br>Heavy Kylie boomerangs hits MOAB-Class Bloons multiple times per throw and sometimes knocks them back a short way along the path.<br>Cost: $1.870 / $2.200 / $2.375 / $2.640"
+								data-tip="Overdrive<br>Shoots incredibly fast.<br>Cost: $2.720 / $3.200 / $3.455 / $3.840"
 								data-for="p3-4"
 							>
 								<ReactTooltip
@@ -4318,7 +4186,7 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p3-4"
 								/>
-								<img src={p34} alt="MOAB Press"></img>
+								<img src={p34} alt="Overdrive"></img>
 							</button>
 						</div>
 						<div>
@@ -4327,7 +4195,7 @@ export default function BoomerangMonkey() {
 								id="p3-5"
 								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Domination<br>Special knockback kylies trigger more often and do lots of extra damage.<br>Cost: $51.000 / $60.000 / $64.800 / $72.000"
+								data-tip="The Tack Zone<br>Many, many tacks.<br>Cost: $17.000 / $20.000 / $21.600 / $24.000"
 								data-for="p3-5"
 							>
 								<ReactTooltip
@@ -4338,12 +4206,11 @@ export default function BoomerangMonkey() {
 									multiline={true}
 									id="p3-5"
 								/>
-								<img src={p35} alt="MOAB Domination"></img>
+								<img src={p35} alt="The Tack Zone"></img>
 							</button>
 						</div>
-						<div></div>
 						<div>
-							<h1 style={{ color: colors["s-"] }}>S-</h1>
+							<h1 style={{ color: colors["b"] }}>B</h1>
 						</div>
 					</motion.div>
 				</div>

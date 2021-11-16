@@ -22,7 +22,7 @@ export default function Heroes() {
 			opacity: 1,
 			transition: {
 				ease: "easeInOut",
-				duration: 0.2,
+				duration: 0.1,
 				staggerChildren: 0.05,
 			},
 		},
@@ -32,7 +32,7 @@ export default function Heroes() {
 		show: { opacity: 1 },
 	};
 	return (
-		<motion.div initial="hidden" animate="show" variants={transitionContainer} className="heroes">
+		<motion.div initial="hidden" animate="show" exit="hidden" variants={transitionContainer} className="heroes">
 			<motion.h1 variants={transitionItem}>Heroes</motion.h1>
 			<div className="towers-grid">
 				<motion.div variants={transitionItem} className="grid-container">
