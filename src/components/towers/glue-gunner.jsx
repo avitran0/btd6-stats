@@ -137,70 +137,70 @@ export default function GlueGunner() {
 	const [image, setImage] = useState("000");
 	useEffect(() => {
 		let costs = {
-			"buy-e": 240,
-			"buy-m": 280,
-			"buy-h": 300,
-			"buy-i": 335,
-			"p1-1-e": 125,
-			"p1-1-m": 150,
-			"p1-1-h": 160,
-			"p1-1-i": 180,
+			"buy-e": 235,
+			"buy-m": 275,
+			"buy-h": 295,
+			"buy-i": 330,
+			"p1-1-e": 170,
+			"p1-1-m": 200,
+			"p1-1-h": 215,
+			"p1-1-i": 240,
 			"p1-2-e": 255,
 			"p1-2-m": 300,
 			"p1-2-h": 325,
 			"p1-2-i": 360,
-			"p1-3-e": 510,
-			"p1-3-m": 600,
-			"p1-3-h": 650,
-			"p1-3-i": 720,
-			"p1-4-e": 2975,
-			"p1-4-m": 3500,
-			"p1-4-h": 3780,
-			"p1-4-i": 4200,
-			"p1-5-e": 38675,
-			"p1-5-m": 45500,
-			"p1-5-h": 49140,
-			"p1-5-i": 54600,
+			"p1-3-e": 2125,
+			"p1-3-m": 2500,
+			"p1-3-h": 2700,
+			"p1-3-i": 3000,
+			"p1-4-e": 4250,
+			"p1-4-m": 5000,
+			"p1-4-h": 5400,
+			"p1-4-i": 6000,
+			"p1-5-e": 18700,
+			"p1-5-m": 22000,
+			"p1-5-h": 23760,
+			"p1-5-i": 26400,
 			"p2-1-e": 85,
 			"p2-1-m": 100,
 			"p2-1-h": 110,
 			"p2-1-i": 120,
-			"p2-2-e": 190,
-			"p2-2-m": 225,
-			"p2-2-h": 245,
-			"p2-2-i": 270,
-			"p2-3-e": 465,
-			"p2-3-m": 550,
-			"p2-3-h": 595,
-			"p2-3-i": 660,
-			"p2-4-e": 2295,
-			"p2-4-m": 2700,
-			"p2-4-h": 2915,
-			"p2-4-i": 3240,
+			"p2-2-e": 1530,
+			"p2-2-m": 1800,
+			"p2-2-h": 1945,
+			"p2-2-i": 2160,
+			"p2-3-e": 2760,
+			"p2-3-m": 3250,
+			"p2-3-h": 3510,
+			"p2-3-i": 3900,
+			"p2-4-e": 2975,
+			"p2-4-m": 3500,
+			"p2-4-h": 3780,
+			"p2-4-i": 4200,
 			"p2-5-e": 12750,
 			"p2-5-m": 15000,
 			"p2-5-h": 16200,
 			"p2-5-i": 18000,
-			"p3-1-e": 85,
-			"p3-1-m": 100,
-			"p3-1-h": 110,
-			"p3-1-i": 120,
-			"p3-2-e": 85,
-			"p3-2-m": 100,
-			"p3-2-h": 110,
-			"p3-2-i": 120,
-			"p3-3-e": 350,
-			"p3-3-m": 450,
-			"p3-3-h": 485,
-			"p3-3-i": 540,
-			"p3-4-e": 2720,
-			"p3-4-m": 3200,
-			"p3-4-h": 3455,
-			"p3-4-i": 3840,
-			"p3-5-e": 17000,
-			"p3-5-m": 20000,
-			"p3-5-h": 21600,
-			"p3-5-i": 24000,
+			"p3-1-e": 100,
+			"p3-1-m": 120,
+			"p3-1-h": 130,
+			"p3-1-i": 145,
+			"p3-2-e": 340,
+			"p3-2-m": 400,
+			"p3-2-h": 430,
+			"p3-2-i": 480,
+			"p3-3-e": 2890,
+			"p3-3-m": 3400,
+			"p3-3-h": 3670,
+			"p3-3-i": 4080,
+			"p3-4-e": 2550,
+			"p3-4-m": 3000,
+			"p3-4-h": 3240,
+			"p3-4-i": 3600,
+			"p3-5-e": 23800,
+			"p3-5-m": 28000,
+			"p3-5-h": 30240,
+			"p3-5-i": 33600,
 		};
 		switch (String(p1) + String(p2) + String(p3)) {
 			case "000":
@@ -3890,7 +3890,7 @@ export default function GlueGunner() {
 								id="p1-1"
 								className={p1 === 1 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Faster Shooting<br>Shoots tacks faster.<br>Cost: $125 / $150 / $160 / $180"
+								data-tip="Glue Soak<br>Glue soaks through all layers of Bloon.<br>Cost: $170 / $200 / $215 / $240"
 								data-for="p1-1"
 							>
 								<ReactTooltip
@@ -3901,7 +3901,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p1-1"
 								/>
-								<img src={p11} alt="Faster Shooting"></img>
+								<img src={p11} alt="Glue Soak"></img>
 							</button>
 						</div>
 						<div>
@@ -3910,7 +3910,7 @@ export default function GlueGunner() {
 								id="p1-2"
 								className={p1 === 2 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Even Faster Shooting<br>Shoots tacks even faster.<br>Cost: $255 / $300 / $325 / $360"
+								data-tip="Corrosive Glue<br>Glued Bloons pop one layer every few seconds.<br>Cost: $255 / $300 / $325 / $360"
 								data-for="p1-2"
 							>
 								<ReactTooltip
@@ -3921,7 +3921,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p1-2"
 								/>
-								<img src={p12} alt="Even Faster Shooting"></img>
+								<img src={p12} alt="Corrosive Glue"></img>
 							</button>
 						</div>
 						<div>
@@ -3930,7 +3930,7 @@ export default function GlueGunner() {
 								id="p1-3"
 								className={p1 === 3 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Hot Shots<br>Shoots superhot tacks that do extra damage and can pop Lead Bloons.<br>Cost: $510 / $600 / $650 / $720"
+								data-tip="Bloon Dissolver<br>Extreme solvents melt two layers every second.<br>Cost: $2.125 / $2.500 / $2.700 / $3.000"
 								data-for="p1-3"
 							>
 								<ReactTooltip
@@ -3941,7 +3941,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p1-3"
 								/>
-								<img src={p13} alt="Hot Shots"></img>
+								<img src={p13} alt="Bloon Dissolver"></img>
 							</button>
 						</div>
 						<div>
@@ -3950,7 +3950,7 @@ export default function GlueGunner() {
 								id="p1-4"
 								className={p1 === 4 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Ring of Fire<br>Shoots a deadly ring of flames instead of tacks.<br>Cost: $2.975 / $3.500 / $3.780 / $4.200"
+								data-tip="Bloon Liquefier<br>Can glue one additional Bloon per shot and applies liquefying compounds that do 10 pops every second.<br>Cost: $4.250 / $5.000 / $5.400 / $6.000"
 								data-for="p1-4"
 							>
 								<ReactTooltip
@@ -3961,7 +3961,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p1-4"
 								/>
-								<img src={p14} alt="Ring of Fire"></img>
+								<img src={p14} alt="Bloon Liquefier"></img>
 							</button>
 						</div>
 						<div>
@@ -3970,7 +3970,7 @@ export default function GlueGunner() {
 								id="p1-5"
 								className={p1 === 5 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Inferno Ring<br>Deadly inferno of flame roasts Bloons into oblivion.<br>Cost: $38.675 / $45.500 / $49.140 / $54.600"
+								data-tip="The Bloon Solver<br>Bloons a problem? Here's the solution.<br>Cost: $18.700 / $22.000 / $23.760 / $26.400"
 								data-for="p1-5"
 							>
 								<ReactTooltip
@@ -3981,7 +3981,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p1-5"
 								/>
-								<img src={p15} alt="Inferno Ring"></img>
+								<img src={p15} alt="The Bloon Solver"></img>
 							</button>
 						</div>
 						<div>
@@ -4011,7 +4011,7 @@ export default function GlueGunner() {
 								id="p2-1"
 								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Long Range Tacks<br>Tacks fly out further than normal.<br>Cost: $85 / $100 / $110 / $120"
+								data-tip="Bigger Globs<br>Can coat 2 Bloons per shot.<br>Cost: $85 / $100 / $110 / $120"
 								data-for="p2-1"
 							>
 								<ReactTooltip
@@ -4022,7 +4022,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p2-1"
 								/>
-								<img src={p21} alt="Long Range Tacks"></img>
+								<img src={p21} alt="Bigger Globs"></img>
 							</button>
 						</div>
 						<div>
@@ -4031,7 +4031,7 @@ export default function GlueGunner() {
 								id="p2-2"
 								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Super Range Tacks<br>Even longer range tacksthat can pop more Bloons.<br>Cost: $190 / $225 / $245 / $270"
+								data-tip="Glue Splatter<br>Splatters glue across up to 6 Bloons per shot.<br>Cost: $1.530 / $1.800 / $1.945 / $2.160"
 								data-for="p2-2"
 							>
 								<ReactTooltip
@@ -4042,7 +4042,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p2-2"
 								/>
-								<img src={p22} alt="Super Range Tacks"></img>
+								<img src={p22} alt="Glue Splatter"></img>
 							</button>
 						</div>
 						<div>
@@ -4051,7 +4051,7 @@ export default function GlueGunner() {
 								id="p2-3"
 								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Blade Shooter<br>Switches tacks for sharp blades that can pop up to 5 additional Bloons.<br>Cost: $465 / $550 / $595 / $660"
+								data-tip="Glue Hose<br>Shoots glue 3x as fast!<br>Cost: $2.760 / $3.250 / $3.510 / $3.900"
 								data-for="p2-3"
 							>
 								<ReactTooltip
@@ -4062,7 +4062,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p2-3"
 								/>
-								<img src={p23} alt="Blade Shooter"></img>
+								<img src={p23} alt="Glue Hose"></img>
 							</button>
 						</div>
 						<div>
@@ -4071,7 +4071,7 @@ export default function GlueGunner() {
 								id="p2-4"
 								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Blade Maelstrom<br>Blade Maelstrom ability: Covers the area in a storm of blades.<br>Cost: $2.295 / $2.700 / $2.915 / $3.240"
+								data-tip="Glue Strike<br>Glue Strike ability: Glues all Bloons on screen, causing them to take more damage from all sources while it lasts.<br>Cost: $2.975 / $3.500 / $3.780 / $4.200"
 								data-for="p2-4"
 							>
 								<ReactTooltip
@@ -4082,7 +4082,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p2-4"
 								/>
-								<img src={p24} alt="Blade Maelstrom"></img>
+								<img src={p24} alt="Glue Strike"></img>
 							</button>
 						</div>
 						<div>
@@ -4091,7 +4091,7 @@ export default function GlueGunner() {
 								id="p2-5"
 								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Super Maelstrom<br>Even more powerful Maelstrom ability and lasts longer.<br>Cost: $12.750 / $15.000 / $16.200 / $18.000"
+								data-tip="Glue Storm<br>Glue Storm ability pelts the whole screen over 15 seconds with glue. Glued Bloons take extra damage while glued.<br>Cost: $12.750 / $15.000 / $16.200 / $18.000"
 								data-for="p2-5"
 							>
 								<ReactTooltip
@@ -4102,7 +4102,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p2-5"
 								/>
-								<img src={p25} alt="Super Maelstrom"></img>
+								<img src={p25} alt="Glue Storm"></img>
 							</button>
 						</div>
 						<div>
@@ -4115,7 +4115,7 @@ export default function GlueGunner() {
 								id="p3-1"
 								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="More Tacks<br>Shoots 10 tacks instead of 8, plus increases Ring of Fire damage.<br>Cost: $85 / $100 / $110 / $120"
+								data-tip="Stickier Glue<br>Makes glue effect last much longer.<br>Cost: $100 / $120 / $130 / $145"
 								data-for="p3-1"
 							>
 								<ReactTooltip
@@ -4126,7 +4126,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p3-1"
 								/>
-								<img src={p31} alt="More Tacks"></img>
+								<img src={p31} alt="Stickier Glue"></img>
 							</button>
 						</div>
 						<div>
