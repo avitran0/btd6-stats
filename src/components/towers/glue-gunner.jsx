@@ -239,18 +239,18 @@ export default function GlueGunner() {
 				break;
 			case "100":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 0,
+					damageMOAB: 0,
+					damageCeramic: 0,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
 					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 8,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.05,
-					range: 23,
+					speed: 1.0,
+					range: 46,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -262,7 +262,7 @@ export default function GlueGunner() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"],
@@ -281,10 +281,10 @@ export default function GlueGunner() {
 					damageCeramicSecondary: 0,
 					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 8,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.63,
-					range: 23,
+					speed: 1.0,
+					range: 46,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -296,7 +296,7 @@ export default function GlueGunner() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"],
 					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"],
@@ -307,18 +307,18 @@ export default function GlueGunner() {
 				break;
 			case "300":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
 					pierce: 1,
 					pierceSecondary: 0,
-					projectiles: 8,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.63,
-					range: 23,
+					speed: 1.0,
+					range: 46,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -341,18 +341,18 @@ export default function GlueGunner() {
 				break;
 			case "400":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 1,
+					damageMOAB: 1,
+					damageCeramic: 1,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 60,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 8,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 0.5355,
-					range: 23,
+					speed: 1.0,
+					range: 46,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -363,7 +363,7 @@ export default function GlueGunner() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: false,
+					purple: true,
 					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p1-4-e"],
@@ -376,18 +376,18 @@ export default function GlueGunner() {
 				break;
 			case "500":
 				setStats({
-					damage: 4,
-					damageMOAB: 10,
-					damageCeramic: 4,
-					damageSecondary: 700,
-					damageMOABSecondary: 700,
-					damageCeramicSecondary: 700,
-					pierce: 60,
-					pierceSecondary: 1,
-					projectiles: 8,
-					projectilesSecondary: 1,
-					speed: 0.1,
-					range: 34.5,
+					damage: 1,
+					damageMOAB: 3,
+					damageCeramic: 3,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 12,
+					pierceSecondary: 0,
+					projectiles: 2,
+					projectilesSecondary: 0,
+					speed: 0.25,
+					range: 46,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -398,7 +398,7 @@ export default function GlueGunner() {
 					camo: false,
 					black: true,
 					white: true,
-					purple: false,
+					purple: true,
 					lead: true,
 					frozen: true,
 					costEasy:
@@ -434,18 +434,18 @@ export default function GlueGunner() {
 				break;
 			case "010":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 0,
+					damageMOAB: 0,
+					damageCeramic: 0,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 1,
+					pierce: 2,
 					pierceSecondary: 0,
-					projectiles: 8,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.4,
-					range: 27,
+					speed: 1.0,
+					range: 46,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -457,7 +457,7 @@ export default function GlueGunner() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"],
@@ -468,18 +468,18 @@ export default function GlueGunner() {
 				break;
 			case "020":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 0,
+					damageMOAB: 0,
+					damageCeramic: 0,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 2,
+					pierce: 5,
 					pierceSecondary: 0,
-					projectiles: 8,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.4,
-					range: 31,
+					speed: 1.0,
+					range: 46,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -491,7 +491,7 @@ export default function GlueGunner() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
+					lead: true,
 					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"],
@@ -502,18 +502,18 @@ export default function GlueGunner() {
 				break;
 			case "030":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 0,
+					damageMOAB: 0,
+					damageCeramic: 0,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 6,
+					pierce: 5,
 					pierceSecondary: 0,
-					projectiles: 8,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.19,
-					range: 31,
+					speed: 0.34,
+					range: 46,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -525,8 +525,8 @@ export default function GlueGunner() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
-					frozen: false,
+					lead: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
@@ -536,31 +536,31 @@ export default function GlueGunner() {
 				break;
 			case "040":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 0,
+					damageMOAB: 0,
+					damageCeramic: 0,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 6,
+					pierce: 5,
 					pierceSecondary: 0,
-					projectiles: 8,
+					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.19,
-					range: 31,
-					abilityName: "Maelstrom",
-					abilityDuration: 3,
-					abilityCooldown: 20,
-					abilityDamage: 1,
-					abilityPierce: 200,
-					abilitySpeed: 0.0333,
+					speed: 0.34,
+					range: 46,
+					abilityName: "Glue Strike",
+					abilityDuration: 0,
+					abilityCooldown: 0,
+					abilityDamage: 0,
+					abilityPierce: Infinity,
+					abilitySpeed: 0.0,
 					abilityRange: Infinity,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: false,
-					frozen: false,
+					lead: true,
+					frozen: true,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p2-4-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p2-4-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p2-4-h"],
@@ -3985,7 +3985,7 @@ export default function GlueGunner() {
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["b-"] }}>B-</h1>
+							<h1 style={{ color: colors["c"] }}>C</h1>
 						</div>
 						<div>
 							<button
@@ -4135,7 +4135,7 @@ export default function GlueGunner() {
 								id="p3-2"
 								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Even More Tacks<br>Shoots out 12 tacks per shot and increases Ring of Fire damage further.<br>Cost: $85 / $100 / $110 / $120"
+								data-tip="Stronger Glue<br>Slows down Bloons even more.<br>Cost: $340 / $400 / $430 / $480"
 								data-for="p3-2"
 							>
 								<ReactTooltip
@@ -4146,7 +4146,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p3-2"
 								/>
-								<img src={p32} alt="Even More Tacks"></img>
+								<img src={p32} alt="Stronger Glue"></img>
 							</button>
 						</div>
 						<div>
@@ -4155,7 +4155,7 @@ export default function GlueGunner() {
 								id="p3-3"
 								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Tack Sprayer<br>Sprays out 16 tacks per volley.<br>Cost: $350 / $450 / $485 / $540"
+								data-tip="MOAB Glue<br>Improved glue formula allows it to stick to MOAB-class Bloons.<br>Cost: $2.890 / $3.400 / $3.670 / $4.080"
 								data-for="p3-3"
 							>
 								<ReactTooltip
@@ -4166,7 +4166,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p3-3"
 								/>
-								<img src={p33} alt="Tack Sprayer"></img>
+								<img src={p33} alt="MOAB Glue"></img>
 							</button>
 						</div>
 						<div>
@@ -4175,7 +4175,7 @@ export default function GlueGunner() {
 								id="p3-4"
 								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Overdrive<br>Shoots incredibly fast.<br>Cost: $2.720 / $3.200 / $3.455 / $3.840"
+								data-tip="Relentless Glue<br>Popped Bloons that were glued leave a blob of glue on the track.<br>Cost: $2.550 / $3.000 / $3.240 / $3.600"
 								data-for="p3-4"
 							>
 								<ReactTooltip
@@ -4186,7 +4186,7 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p3-4"
 								/>
-								<img src={p34} alt="Overdrive"></img>
+								<img src={p34} alt="Relentless Glue"></img>
 							</button>
 						</div>
 						<div>
@@ -4195,7 +4195,7 @@ export default function GlueGunner() {
 								id="p3-5"
 								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="The Tack Zone<br>Many, many tacks.<br>Cost: $17.000 / $20.000 / $21.600 / $24.000"
+								data-tip="Super Glue<br>Glue so strong it temporarily immobilizes all affected Bloons!<br>Cost: $23.800 / $28.000 / $30.240 / $33.600"
 								data-for="p3-5"
 							>
 								<ReactTooltip
@@ -4206,11 +4206,11 @@ export default function GlueGunner() {
 									multiline={true}
 									id="p3-5"
 								/>
-								<img src={p35} alt="The Tack Zone"></img>
+								<img src={p35} alt="Super Glue"></img>
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["b"] }}>B</h1>
+							<h1 style={{ color: colors["s"] }}>S</h1>
 						</div>
 					</motion.div>
 				</div>
