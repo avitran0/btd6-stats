@@ -68,7 +68,7 @@ export default function Rounds() {
 			<motion.h1 variants={transitionItem}>Rounds</motion.h1>
 			<motion.ul variants={transitionItem}>
 				<li>
-					<NavLink to="/rounds" exact>
+					<NavLink to="/rounds" exact="true">
 						Normal
 					</NavLink>
 				</li>

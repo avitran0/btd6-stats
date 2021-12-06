@@ -22,15 +22,21 @@ function App() {
 	const [fontSize, setFontSize] = useState(16);
 	const wrapperRef = useRef(null);
 	useOutsideAlerter(wrapperRef);
+	useEffect(() => {
+		if (localStorage.getItem("size")) setFontSize(parseInt(localStorage.getItem("size")));
+	}, [])
+	//if (localStorage.getItem("size")) setFontSize(parseInt(localStorage.getItem("size")));
 	function handleChange(type) {
 		switch (type) {
 			case "+":
 				document.documentElement.style.fontSize = fontSize + 1 + "px";
 				setFontSize(fontSize + 1);
+				localStorage.setItem("size", fontSize + 1)
 				break;
 			case "-":
 				document.documentElement.style.fontSize = fontSize - 1 + "px";
 				setFontSize(fontSize - 1);
+				localStorage.setItem("size", fontSize - 1)
 				break;
 			case "reset":
 				document.documentElement.style.fontSize = "16px";
@@ -39,6 +45,7 @@ function App() {
 			default:
 				break;
 		}
+		console.log(localStorage.getItem("size"));
 	}
 	function handleModal(type) {
 		switch (type) {
@@ -61,17 +68,17 @@ function App() {
 					</div>
 					<ul>
 						<li>
-							<NavLink to="/" exact>
+							<NavLink to="/" exact="true">
 								Home
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/towers" exact>
+							<NavLink to="/towers" exact="true">
 								Towers
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/heroes" exact>
+							<NavLink to="/heroes" exact="true">
 								Heroes
 							</NavLink>
 						</li>
@@ -79,7 +86,7 @@ function App() {
 							<NavLink to="/bloons">Bloons</NavLink>
 						</li>
 						<li>
-							<NavLink to="/rounds" exact>
+							<NavLink to="/rounds" exact="true">
 								Rounds
 							</NavLink>
 						</li>
