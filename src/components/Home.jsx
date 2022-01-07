@@ -23,8 +23,8 @@ export default function Home() {
 			<motion.h1 variants={transitionItem}>BTD6 Stats</motion.h1>
 			<motion.p variants={transitionItem}>This is a collection of all kinds of stats for BTD6</motion.p>
 			<motion.p variants={transitionItem}>work in progress</motion.p>
+			<motion.p variants={transitionItem}>things finished: primary towers, bloon stats, normal rounds</motion.p>
 			<motion.p variants={transitionItem}>things to add: tower stats, hero stats, rounds</motion.p>
-			<motion.p variants={transitionItem}>things finished: bloon stats, normal rounds</motion.p>
 			<motion.p variants={transitionItem} className="footer">
 				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
 			</motion.p>
