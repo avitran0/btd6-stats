@@ -12,6 +12,7 @@ import TackShooter from "./components/towers/tack-shooter";
 import IceMonkey from "./components/towers/ice-monkey";
 import GlueGunner from "./components/towers/glue-gunner";
 import NinjaMonkey from "./components/towers/ninja-monkey";
+import SniperMonkey from "./components/towers/sniper-monkey";
 import { Route, NavLink, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import BTD6Logo from "./misc/BTD6Logo.png";
@@ -63,6 +64,7 @@ function App() {
 					<Route path="/towers/ice-monkey" element={<IceMonkey />} />
 					<Route path="/towers/glue-gunner" element={<GlueGunner />} />
 					<Route path="/towers/ninja-monkey" element={<NinjaMonkey />} />
+					<Route path="/towers/sniper-monkey" element={<SniperMonkey />} />
 					<Route path="/heroes" exact element={<Heroes />} />
 					<Route path="/heroes/quincy" element={<HeroQuincy />} />
 					<Route path="/bloons" element={<Bloons />} />
