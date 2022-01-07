@@ -79,7 +79,7 @@ export default function Towers() {
 			<motion.h2 variants={transitionItem}>Military</motion.h2>
 			<div className="towers-grid">
 				<motion.div variants={transitionItem} className="grid-container">
-					<Link to="/" id="sniper-monkey">
+					<Link to="/towers/sniper-monkey" id="sniper-monkey">
 						<img src={SniperMonkey} alt="Sniper Monkey" />
 					</Link>
 				</motion.div>
