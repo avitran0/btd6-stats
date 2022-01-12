@@ -103,18 +103,18 @@ export default function SniperMonkey() {
 	const [p3, setP3] = useState(0);
 	const [stats, setStats] = useState([
 		{
-			damage: 1,
-			damageMOAB: 1,
-			damageCeramic: 1,
+			damage: 2,
+			damageMOAB: 2,
+			damageCeramic: 2,
 			damageSecondary: 0,
 			damageMOABSecondary: 0,
 			damageCeramicSecondary: 0,
-			pierce: 14,
+			pierce: 1,
 			pierceSecondary: 0,
 			projectiles: 1,
 			projectilesSecondary: 0,
-			speed: 1.5,
-			range: 40,
+			speed: 1.59,
+			range: Infinity,
 			abilityName: "",
 			abilityDuration: 0,
 			abilityCooldown: 0,
@@ -123,100 +123,100 @@ export default function SniperMonkey() {
 			abilitySpeed: 0.0,
 			abilityRange: 0,
 			camo: false,
-			black: false,
+			black: true,
 			white: true,
 			purple: true,
-			lead: true,
-			frozen: true,
-			costEasy: 445,
-			costMedium: 525,
-			costHard: 565,
-			costImpoppable: 630,
+			lead: false,
+			frozen: false,
+			costEasy: 295,
+			costMedium: 350,
+			costHard: 380,
+			costImpoppable: 420,
 		},
 	]);
 	const [image, setImage] = useState("000");
 	useEffect(() => {
 		let costs = {
-			"buy-e": 445,
-			"buy-m": 525,
-			"buy-h": 565,
-			"buy-i": 630,
-			"p1-1-e": 300,
+			"buy-e": 295,
+			"buy-m": 350,
+			"buy-h": 380,
+			"buy-i": 420,
+			"p1-1-e": 295,
 			"p1-1-m": 350,
 			"p1-1-h": 380,
 			"p1-1-i": 420,
-			"p1-2-e": 555,
-			"p1-2-m": 650,
-			"p1-2-h": 700,
-			"p1-2-i": 780,
-			"p1-3-e": 1020,
-			"p1-3-m": 1200,
-			"p1-3-h": 1295,
-			"p1-3-i": 1440,
-			"p1-4-e": 3060,
-			"p1-4-m": 3600,
-			"p1-4-h": 3890,
-			"p1-4-i": 4320,
-			"p1-5-e": 46750,
-			"p1-5-m": 55000,
-			"p1-5-h": 59400,
-			"p1-5-i": 66000,
-			"p2-1-e": 210,
-			"p2-1-m": 250,
-			"p2-1-h": 270,
-			"p2-1-i": 300,
-			"p2-2-e": 340,
-			"p2-2-m": 400,
-			"p2-2-h": 430,
-			"p2-2-i": 480,
-			"p2-3-e": 935,
-			"p2-3-m": 1100,
-			"p2-3-h": 1190,
-			"p2-3-i": 1320,
-			"p2-4-e": 2720,
-			"p2-4-m": 3200,
-			"p2-4-h": 3455,
-			"p2-4-i": 3840,
-			"p2-5-e": 21250,
-			"p2-5-m": 25000,
-			"p2-5-h": 27000,
-			"p2-5-i": 30000,
-			"p3-1-e": 170,
-			"p3-1-m": 200,
-			"p3-1-h": 215,
-			"p3-1-i": 240,
-			"p3-2-e": 255,
-			"p3-2-m": 300,
-			"p3-2-h": 325,
-			"p3-2-i": 360,
-			"p3-3-e": 680,
-			"p3-3-m": 800,
-			"p3-3-h": 865,
-			"p3-3-i": 960,
-			"p3-4-e": 2380,
-			"p3-4-m": 2800,
-			"p3-4-h": 3025,
-			"p3-4-i": 3360,
-			"p3-5-e": 29750,
-			"p3-5-m": 35000,
-			"p3-5-h": 37800,
-			"p3-5-i": 42000,
+			"p1-2-e": 1275,
+			"p1-2-m": 1500,
+			"p1-2-h": 1620,
+			"p1-2-i": 1800,
+			"p1-3-e": 2550,
+			"p1-3-m": 3000,
+			"p1-3-h": 3240,
+			"p1-3-i": 3600,
+			"p1-4-e": 4250,
+			"p1-4-m": 5000,
+			"p1-4-h": 5400,
+			"p1-4-i": 6000,
+			"p1-5-e": 28900,
+			"p1-5-m": 34000,
+			"p1-5-h": 36720,
+			"p1-5-i": 40800,
+			"p2-1-e": 255,
+			"p2-1-m": 300,
+			"p2-1-h": 325,
+			"p2-1-i": 360,
+			"p2-2-e": 380,
+			"p2-2-m": 450,
+			"p2-2-h": 485,
+			"p2-2-i": 540,
+			"p2-3-e": 2720,
+			"p2-3-m": 3200,
+			"p2-3-h": 3455,
+			"p2-3-i": 3840,
+			"p2-4-e": 6120,
+			"p2-4-m": 7200,
+			"p2-4-h": 7775,
+			"p2-4-i": 8640,
+			"p2-5-e": 11050,
+			"p2-5-m": 13000,
+			"p2-5-h": 14040,
+			"p2-5-i": 15600,
+			"p3-1-e": 340,
+			"p3-1-m": 400,
+			"p3-1-h": 430,
+			"p3-1-i": 480,
+			"p3-2-e": 340,
+			"p3-2-m": 400,
+			"p3-2-h": 430,
+			"p3-2-i": 480,
+			"p3-3-e": 2975,
+			"p3-3-m": 3500,
+			"p3-3-h": 3780,
+			"p3-3-i": 4200,
+			"p3-4-e": 3610,
+			"p3-4-m": 4250,
+			"p3-4-h": 4590,
+			"p3-4-i": 5100,
+			"p3-5-e": 11900,
+			"p3-5-m": 14000,
+			"p3-5-h": 15120,
+			"p3-5-i": 16800,
 		};
 		switch (String(p1) + String(p2) + String(p3)) {
 			case "000":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 14,
+					pierce: 1,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 40,
+					speed: 1.59,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -225,11 +225,11 @@ export default function SniperMonkey() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"],
 					costMedium: costs["buy-m"],
 					costHard: costs["buy-h"],
@@ -239,18 +239,18 @@ export default function SniperMonkey() {
 				break;
 			case "100":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 4,
+					damageMOAB: 4,
+					damageCeramic: 4,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 20,
+					pierce: 1,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 40,
+					speed: 1.59,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -259,7 +259,7 @@ export default function SniperMonkey() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -273,18 +273,18 @@ export default function SniperMonkey() {
 				break;
 			case "200":
 				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
+					damage: 7,
+					damageMOAB: 7,
+					damageCeramic: 7,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 30,
+					pierce: 1,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 40,
+					speed: 1.59,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -293,7 +293,7 @@ export default function SniperMonkey() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -307,18 +307,18 @@ export default function SniperMonkey() {
 				break;
 			case "300":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 20,
+					damageMOAB: 20,
+					damageCeramic: 35,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 1,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 40,
+					speed: 1.59,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -327,7 +327,7 @@ export default function SniperMonkey() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -341,18 +341,18 @@ export default function SniperMonkey() {
 				break;
 			case "400":
 				setStats({
-					damage: 3,
-					damageMOAB: 3,
-					damageCeramic: 3,
+					damage: 30,
+					damageMOAB: 30,
+					damageCeramic: 45,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 1,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 43,
+					speed: 1.59,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -361,7 +361,7 @@ export default function SniperMonkey() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -376,18 +376,18 @@ export default function SniperMonkey() {
 				break;
 			case "500":
 				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
+					damage: 80,
+					damageMOAB: 80,
+					damageCeramic: 95,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 50,
+					pierce: 1,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 43,
+					speed: 1.59,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -434,18 +434,18 @@ export default function SniperMonkey() {
 				break;
 			case "010":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 14,
+					pierce: 1,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.125,
-					range: 40,
+					speed: 1.59,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -453,12 +453,12 @@ export default function SniperMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: false,
-					black: false,
+					camo: true,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"],
@@ -468,18 +468,18 @@ export default function SniperMonkey() {
 				break;
 			case "020":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 14,
-					pierceSecondary: 0,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 1,
+					damageMOABSecondary: 1,
+					damageCeramicSecondary: 1,
+					pierce: 1,
+					pierceSecondary: 2,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 44,
+					projectilesSecondary: 5,
+					speed: 1.59,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -487,12 +487,12 @@ export default function SniperMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: false,
-					black: false,
+					camo: true,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"],
@@ -502,18 +502,18 @@ export default function SniperMonkey() {
 				break;
 			case "030":
 				setStats({
-					damage: 1,
-					damageMOAB: 19,
+					damage: 2,
+					damageMOAB: 2,
 					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 14,
-					pierceSecondary: 0,
+					damageSecondary: 1,
+					damageMOABSecondary: 1,
+					damageCeramicSecondary: 1,
+					pierce: 5,
+					pierceSecondary: 3,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 49,
+					projectilesSecondary: 5,
+					speed: 1.59,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -521,12 +521,12 @@ export default function SniperMonkey() {
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
 					abilityRange: 0,
-					camo: false,
-					black: false,
+					camo: true,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
 					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
 					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
@@ -536,27 +536,27 @@ export default function SniperMonkey() {
 				break;
 			case "040":
 				setStats({
-					damage: 1,
-					damageMOAB: 31,
-					damageCeramic: 5,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 14,
-					pierceSecondary: 0,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 1,
+					damageMOABSecondary: 1,
+					damageCeramicSecondary: 1,
+					pierce: 5,
+					pierceSecondary: 3,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 49,
-					abilityName: "Assassinate MOAB",
+					projectilesSecondary: 5,
+					speed: 1.59,
+					range: Infinity,
+					abilityName: "Supply Drop",
 					abilityDuration: 0,
-					abilityCooldown: 30,
-					abilityDamage: 750,
-					abilityPierce: 1,
+					abilityCooldown: 90,
+					abilityDamage: "1200$",
+					abilityPierce: 0,
 					abilitySpeed: 0.0,
-					abilityRange: Infinity,
-					camo: false,
-					black: false,
+					abilityRange: 0,
+					camo: true,
+					black: true,
 					white: true,
 					purple: true,
 					lead: true,
@@ -571,26 +571,26 @@ export default function SniperMonkey() {
 				break;
 			case "050":
 				setStats({
-					damage: 1,
-					damageMOAB: 130,
-					damageCeramic: 5,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 14,
-					pierceSecondary: 0,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 1,
+					damageMOABSecondary: 1,
+					damageCeramicSecondary: 1,
+					pierce: 5,
+					pierceSecondary: 3,
 					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.825,
-					range: 49,
-					abilityName: "Eliminate MOAB",
+					projectilesSecondary: 5,
+					speed: 0.636,
+					range: Infinity,
+					abilityName: "Elite Supply Drop",
 					abilityDuration: 0,
-					abilityCooldown: 10,
-					abilityDamage: 4500,
+					abilityCooldown: 90,
+					abilityDamage: "3000$",
 					abilityPierce: 0,
 					abilitySpeed: 0.0,
-					abilityRange: Infinity,
-					camo: false,
+					abilityRange: 0,
+					camo: true,
 					black: true,
 					white: true,
 					purple: true,
@@ -629,18 +629,18 @@ export default function SniperMonkey() {
 				break;
 			case "001":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 14,
+					pierce: 1,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 47,
+					speed: 1.113,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -649,11 +649,11 @@ export default function SniperMonkey() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p3-1-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"],
 					costHard: costs["buy-h"] + costs["p3-1-h"],
@@ -663,18 +663,18 @@ export default function SniperMonkey() {
 				break;
 			case "002":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 14,
-					pierceSecondary: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
 					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
+					projectilesSecondary: 0,
+					speed: 0.7791,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -686,8 +686,8 @@ export default function SniperMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"],
 					costHard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"],
@@ -697,18 +697,18 @@ export default function SniperMonkey() {
 				break;
 			case "003":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 1,
-					damageMOABSecondary: 1,
-					damageCeramicSecondary: 1,
-					pierce: 14,
-					pierceSecondary: 10,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
 					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
+					projectilesSecondary: 0,
+					speed: 0.2597,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -720,8 +720,8 @@ export default function SniperMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
 					costHard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"],
@@ -731,18 +731,18 @@ export default function SniperMonkey() {
 				break;
 			case "004":
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 2,
-					damageMOABSecondary: 2,
-					damageCeramicSecondary: 2,
-					pierce: 14,
-					pierceSecondary: 70,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
 					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
+					projectilesSecondary: 0,
+					speed: 0.12985,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -754,8 +754,8 @@ export default function SniperMonkey() {
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"] + costs["p3-4-e"],
 					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"] + costs["p3-4-m"],
 					costHard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"] + costs["p3-4-h"],
@@ -766,31 +766,31 @@ export default function SniperMonkey() {
 				break;
 			case "005":
 				setStats({
-					damage: 5,
-					damageMOAB: 5,
-					damageCeramic: 5,
-					damageSecondary: 2,
-					damageMOABSecondary: 2,
-					damageCeramicSecondary: 2,
-					pierce: 14,
-					pierceSecondary: 70,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
+					damageSecondary: 0,
+					damageMOABSecondary: 0,
+					damageCeramicSecondary: 0,
+					pierce: 1,
+					pierceSecondary: 0,
 					projectiles: 1,
-					projectilesSecondary: 8,
-					speed: 1.5,
-					range: 49,
-					abilityName: "Bomb Blitz",
-					abilityDuration: 0,
-					abilityCooldown: 40,
-					abilityDamage: 2000,
-					abilityPierce: Infinity,
-					abilitySpeed: 0.0,
-					abilityRange: Infinity,
+					projectilesSecondary: 0,
+					speed: 0.064925,
+					range: Infinity,
+					abilityName: "Retaliation",
+					abilityDuration: 7,
+					abilityCooldown: 10,
+					abilityDamage: 0,
+					abilityPierce: 0,
+					abilitySpeed: 0.01623125,
+					abilityRange: 0,
 					camo: false,
 					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy:
 						costs["buy-e"] +
 						costs["p3-1-e"] +
@@ -3281,18 +3281,18 @@ export default function SniperMonkey() {
 				break;
 			default:
 				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
+					damage: 2,
+					damageMOAB: 2,
+					damageCeramic: 2,
 					damageSecondary: 0,
 					damageMOABSecondary: 0,
 					damageCeramicSecondary: 0,
-					pierce: 14,
+					pierce: 1,
 					pierceSecondary: 0,
 					projectiles: 1,
 					projectilesSecondary: 0,
-					speed: 1.5,
-					range: 40,
+					speed: 1.59,
+					range: Infinity,
 					abilityName: "",
 					abilityDuration: 0,
 					abilityCooldown: 0,
@@ -3301,11 +3301,11 @@ export default function SniperMonkey() {
 					abilitySpeed: 0.0,
 					abilityRange: 0,
 					camo: false,
-					black: false,
+					black: true,
 					white: true,
 					purple: true,
-					lead: true,
-					frozen: true,
+					lead: false,
+					frozen: false,
 					costEasy: costs["buy-e"],
 					costMedium: costs["buy-m"],
 					costHard: costs["buy-h"],
@@ -3890,7 +3890,7 @@ export default function SniperMonkey() {
 								id="p1-1"
 								className={p1 === 1 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Bigger Bombs<br>Shoots larger bombs, they have a larger blast area and more popping power.<br>Cost: $300 / $350 / $380 / $420"
+								data-tip="Full Metal Jacket<br>Shots pop through 4 layers of bloon,<br>and both bullets and shrapnel can pop Lead and Frozen Bloons.<br>Cost: $295 / $350 / $380 / $420"
 								data-for="p1-1"
 							>
 								<ReactTooltip
@@ -3901,7 +3901,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p1-1"
 								/>
-								<img src={p11} alt="Bigger Bombs"></img>
+								<img src={p11} alt="Full Metal Jacket"></img>
 							</button>
 						</div>
 						<div>
@@ -3910,7 +3910,7 @@ export default function SniperMonkey() {
 								id="p1-2"
 								className={p1 === 2 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Heavy Bombs<br>Heavy duty bombs can smash through 2 layers of Bloon at once and pop more Bloons.<br>Cost: $555 / $650 / $700 / $780"
+								data-tip="Large Calibre<br>Shots can pop through 7 layers of Bloon.<br>Cost: $1.275 / $1.500 / $1.620 / $1.800"
 								data-for="p1-2"
 							>
 								<ReactTooltip
@@ -3921,7 +3921,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p1-2"
 								/>
-								<img src={p12} alt="Heavy Bombs"></img>
+								<img src={p12} alt="Large Calibre"></img>
 							</button>
 						</div>
 						<div>
@@ -3930,7 +3930,7 @@ export default function SniperMonkey() {
 								id="p1-3"
 								className={p1 === 3 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Really Big Bombs<br>Huge bombs deal greater damage in a large area and allow Frags to pop more Bloons.<br>Cost: $1.020 / $1.200 / $1.295 / $1.440"
+								data-tip="Deadly Precision<br>20 damage per shot, plus bonus damage to Ceramics.<br>Cost: $2.550 / $3.000 / $3.240 / $3.600"
 								data-for="p1-3"
 							>
 								<ReactTooltip
@@ -3941,7 +3941,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p1-3"
 								/>
-								<img src={p13} alt="Really Big Bombs"></img>
+								<img src={p13} alt="Deadly Precision"></img>
 							</button>
 						</div>
 						<div>
@@ -3950,7 +3950,7 @@ export default function SniperMonkey() {
 								id="p1-4"
 								className={p1 === 4 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Bloon Impact<br>Explosions become so violent Bloons are stunned for a short time when they are hit.<br>Range is increased and frags are even more effective.<br>Cost: $3.060 / $3.600 / $3.890 / $4.320"
+								data-tip="Maim MOAB<br>Deals much more damage and immobilizes MOAB class bloons for a short time.<br>Cost: $4.250 / $5.000 / $5.400 / $6.000"
 								data-for="p1-4"
 							>
 								<ReactTooltip
@@ -3961,7 +3961,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p1-4"
 								/>
-								<img src={p14} alt="Bloon Impact"></img>
+								<img src={p14} alt="Maim MOAB"></img>
 							</button>
 						</div>
 						<div>
@@ -3970,7 +3970,7 @@ export default function SniperMonkey() {
 								id="p1-5"
 								className={p1 === 5 ? "tower-active" : ""}
 								disabled={(p2 > 0 && p3 > 0) || (p2 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="Bloon Impact<br>Bloon shattering explosions do massive damage and can stun MOAB-Class bloons.<br>Cost: $46.750 / $55.000 / $59.400 / $66.000"
+								data-tip="Cripple MOAB<br>Crippled MOABs are immobilized for longer and take extra damage from all other attacks.<br>Cost: $28.900 / $34.000 / $36.720 / $40.800"
 								data-for="p1-5"
 							>
 								<ReactTooltip
@@ -3981,11 +3981,11 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p1-5"
 								/>
-								<img src={p15} alt="Bloon Impact"></img>
+								<img src={p15} alt="Cripple MOAB"></img>
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["b"] }}>B</h1>
+							<h1 style={{ color: colors["s-"] }}>S-</h1>
 						</div>
 						<div>
 							<button
@@ -4011,7 +4011,7 @@ export default function SniperMonkey() {
 								id="p2-1"
 								className={p2 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Faster Reload<br>Reloads 20% faster.<br>Cost: $150 / $175 / $190 / $210"
+								data-tip="Night Vision Goggles<br>Allows Sniper to detect and do an additional 2 damage to Camo bloons.<br>Cost: $255 / $300 / $325 / $360"
 								data-for="p2-1"
 							>
 								<ReactTooltip
@@ -4022,7 +4022,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p2-1"
 								/>
-								<img src={p21} alt="Faster Reload"></img>
+								<img src={p21} alt="Night Vision Goggles"></img>
 							</button>
 						</div>
 						<div>
@@ -4031,7 +4031,7 @@ export default function SniperMonkey() {
 								id="p2-2"
 								className={p2 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || p1 < 0 ? true : false}
-								data-tip="Missile Launcher<br>Exchanges bombs for missiles, which fire faster, fly faster, and increase range.<br>Cost: $340 / $400 / $430 / $480"
+								data-tip="Shrapnel Shot<br>Damaged bloons spray out a cone of sharp shrapnel.<br>Cost: $380 / $450 / $485 / $540"
 								data-for="p2-2"
 							>
 								<ReactTooltip
@@ -4042,7 +4042,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p2-2"
 								/>
-								<img src={p22} alt="Missile Launcher"></img>
+								<img src={p22} alt="Shrapnel Shot"></img>
 							</button>
 						</div>
 						<div>
@@ -4051,7 +4051,7 @@ export default function SniperMonkey() {
 								id="p2-3"
 								className={p2 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Mauler<br>MOAB Maulers do much more damage to MOAB-Class Bloons and ceramics.<br>Cost: $935 / $1.100 / $1.190 / $1.320"
+								data-tip="Bouncing Bullet<br>Shots bounce to new targets up to 3 times.<br>Cost: $2.720 / $3.200 / $3.455 / $3.840"
 								data-for="p2-3"
 							>
 								<ReactTooltip
@@ -4062,7 +4062,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p2-3"
 								/>
-								<img src={p23} alt="MOAB Mauler"></img>
+								<img src={p23} alt="Bouncing Bullet"></img>
 							</button>
 						</div>
 						<div>
@@ -4071,7 +4071,7 @@ export default function SniperMonkey() {
 								id="p2-4"
 								className={p2 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Assassin<br>Assassinate MOAB ability: Special missile flies out and does massive damage to MOAB-Class Bloons.<br>Regular attack range and MOAB-class damage also increased.<br>Cost: $2.720 / $3.200 / $3.455 / $3.840"
+								data-tip="Supply Drop<br>Supply Drop ability: Drops a crate full of cash.<br>Regular attack also damages Lead Bloons and increases Shrapnel popping power.<br>Cost: $6.120 / $7.200 / $7.775 / $8.640"
 								data-for="p2-4"
 							>
 								<ReactTooltip
@@ -4082,7 +4082,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p2-4"
 								/>
-								<img src={p24} alt="MOAB Assassin"></img>
+								<img src={p24} alt="Supply Drop"></img>
 							</button>
 						</div>
 						<div>
@@ -4091,7 +4091,7 @@ export default function SniperMonkey() {
 								id="p2-5"
 								className={p2 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p3 > 0) || (p1 || p3) > 2 || p1 < 0 ? true : false}
-								data-tip="MOAB Eliminator<br>Massive damage to MOABs and Assassinate ability deals 6x damage with a short cooldown.<br>Cost: $21.250 / $25.000 / $27.000 / $30.000"
+								data-tip="Elite Sniper<br>Supply Drop gives much more cash.<br>Grants Elite targeting prio and faster reload to all snipers.<br>Cost: $11.050 / $13.000 / $14.040 / $15.600"
 								data-for="p2-5"
 							>
 								<ReactTooltip
@@ -4102,11 +4102,11 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p2-5"
 								/>
-								<img src={p25} alt="MOAB Eliminator"></img>
+								<img src={p25} alt="Elite Sniper"></img>
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["s-"] }}>S-</h1>
+							<h1 style={{ color: colors["a-"] }}>A-</h1>
 						</div>
 						<div></div>
 						<div>
@@ -4115,7 +4115,7 @@ export default function SniperMonkey() {
 								id="p3-1"
 								className={p3 === 1 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Extra Range<br>Increases attack range.<br>Cost: $170 / $200 / $215 / $240"
+								data-tip="Fast Firing<br>Shoots faster than normal.<br>Cost: $340 / $400 / $430 / $480"
 								data-for="p3-1"
 							>
 								<ReactTooltip
@@ -4126,7 +4126,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p3-1"
 								/>
-								<img src={p31} alt="Extra Range"></img>
+								<img src={p31} alt="Fast Firing"></img>
 							</button>
 						</div>
 						<div>
@@ -4135,7 +4135,7 @@ export default function SniperMonkey() {
 								id="p3-2"
 								className={p3 === 2 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || p1 < 0 ? true : false}
-								data-tip="Frag Bombs<br>Explosions throw sharp fragments that can pop more Bloons including Black Bloons.<br>Cost: $255 / $300 / $325 / $360"
+								data-tip="Even Faster Firing<br>Shoots even faster!<br>Cost: $340 / $400 / $430 / $480"
 								data-for="p3-2"
 							>
 								<ReactTooltip
@@ -4146,7 +4146,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p3-2"
 								/>
-								<img src={p32} alt="Frag Bombs"></img>
+								<img src={p32} alt="Even Faster Firing"></img>
 							</button>
 						</div>
 						<div>
@@ -4155,7 +4155,7 @@ export default function SniperMonkey() {
 								id="p3-3"
 								className={p3 === 3 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Cluster Bombs<br>Throws out secondary bombs instead of sharp fragments every shot.<br>Cost: $680 / $800 / $865 / $960"
+								data-tip="Semi-Automatic<br>Attacks 3x as fast!<br>Cost: $2.975 / $3.500 / $3.780 / $4.200"
 								data-for="p3-3"
 							>
 								<ReactTooltip
@@ -4166,7 +4166,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p3-3"
 								/>
-								<img src={p33} alt="Cluster Bombs"></img>
+								<img src={p33} alt="Semi-Automatic"></img>
 							</button>
 						</div>
 						<div>
@@ -4175,7 +4175,7 @@ export default function SniperMonkey() {
 								id="p3-4"
 								className={p3 === 4 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Recursive Cluster<br>Every second shot the cluster bombs send out more cluster bombs for even more destruction.<br>Cost: $2.380 / $2.800 / $3.025 / $3.360"
+								data-tip="Full Auto Rifle<br>Fully automatic weapon with incredible popping power.<br>Cost: $3.610 / $4.250 / $4.590 / $5.100"
 								data-for="p3-4"
 							>
 								<ReactTooltip
@@ -4186,7 +4186,7 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p3-4"
 								/>
-								<img src={p34} alt="Recursive Cluster"></img>
+								<img src={p34} alt="Full Auto Rifle"></img>
 							</button>
 						</div>
 						<div>
@@ -4195,7 +4195,7 @@ export default function SniperMonkey() {
 								id="p3-5"
 								className={p3 === 5 ? "tower-active" : ""}
 								disabled={(p1 > 0 && p2 > 0) || (p1 || p2) > 2 || p1 < 0 ? true : false}
-								data-tip="Bomb Blitz<br>Deals much more damage and gains the passive Bomb Storm Ability:<br>when lives are lost, the Bomb Storm automatically triggers, which destroys all but the biggest of Bloons.<br>Cost: $29.750 / $35.000 / $37.800 / $42.000"
+								data-tip="Elite Defender<br>A lost life gives this Sniper 4x attack speed for a short time in retaliation.<br>Also attacks faster the further the Bloons are along the track.<br>Cost: $11.900 / $14.000 / $15.120 / $16.800"
 								data-for="p3-5"
 							>
 								<ReactTooltip
@@ -4206,11 +4206,11 @@ export default function SniperMonkey() {
 									multiline={true}
 									id="p3-5"
 								/>
-								<img src={p35} alt="Bomb Blitz"></img>
+								<img src={p35} alt="Elite Defender"></img>
 							</button>
 						</div>
 						<div>
-							<h1 style={{ color: colors["b"] }}>B</h1>
+							<h1 style={{ color: colors["b-"] }}>B-</h1>
 						</div>
 					</motion.div>
 				</div>
