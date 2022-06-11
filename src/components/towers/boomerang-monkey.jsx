@@ -51,6 +51,7 @@ import White from "../../bloons/White.png";
 import Purple from "../../bloons/Purple.png";
 import Lead from "../../bloons/Lead.png";
 import Frozen from "../../bloons/WhiteIce.png";
+import Stats from "../../boomerang-monkey/BoomerangMonkeyStats.json";
 
 export default function BoomerangMonkey() {
 	document.title = "Boomerang Monkey - BTD6 Stats";
@@ -106,35 +107,39 @@ export default function BoomerangMonkey() {
 	const [p3, setP3] = useState(0);
 	const [stats, setStats] = useState([
 		{
-			damage: 1,
-			damageMOAB: 1,
-			damageCeramic: 1,
-			damageSecondary: 0,
-			damageMOABSecondary: 0,
-			damageCeramicSecondary: 0,
-			pierce: 4,
-			pierceSecondary: 0,
-			projectiles: 1,
-			projectilesSecondary: 0,
-			speed: 1.2,
-			range: 43,
-			abilityName: "",
-			abilityDuration: 0,
-			abilityCooldown: 0,
-			abilityDamage: 0,
-			abilityPierce: 0,
-			abilitySpeed: 0.0,
-			abilityRange: 0,
-			camo: false,
-			black: true,
-			white: true,
-			purple: true,
-			lead: false,
-			frozen: false,
-			costEasy: 275,
-			costMedium: 325,
-			costHard: 350,
-			costImpoppable: 390,
+			damage: Stats["000"].damage,
+			damageMOAB: Stats["000"].damageMOAB,
+			damageCeramic: Stats["000"].damageCeramic,
+			damageSecondary: Stats["000"].damageSecondary,
+			damageMOABSecondary: Stats["000"].damageMOABSecondary,
+			damageCeramicSecondary: Stats["000"].damageCeramicSecondary,
+			pierce: Stats["000"].pierce,
+			pierceSecondary: Stats["000"].pierceSecondary,
+			projectiles: Stats["000"].projectiles,
+			projectilesSecondary: Stats["000"].projectilesSecondary,
+			speed: Stats["000"].speed,
+			range: Stats["000"].range,
+			abilityName: Stats["000"].abilityName,
+			abilityDuration: Stats["000"].abilityDuration,
+			abilityCooldown: Stats["000"].abilityCooldown,
+			abilityDamage: Stats["000"].abilityDamage,
+			abilityPierce: Stats["000"].abilityPierce,
+			abilitySpeed: Stats["000"].abilitySpeed,
+			abilityRange: Stats["000"].abilityRange,
+			camo: Stats["000"].camo,
+			black: Stats["000"].black,
+			white: Stats["000"].white,
+			purple: Stats["000"].purple,
+			lead: Stats["000"].lead,
+			frozen: Stats["000"].frozen,
+		},
+	]);
+	const [cost, setCost] = useState([
+		{
+			easy: 445,
+			medium: 525,
+			hard: 565,
+			impoppable: 630,
 		},
 	]);
 	const [image, setImage] = useState("000");
@@ -209,227 +214,103 @@ export default function BoomerangMonkey() {
 			"par-h": 432000,
 			"par-i": 480000,
 		};
+		setStats({
+			damage: Stats[String(p1) + String(p2) + String(p3)].damage,
+			damageMOAB: Stats[String(p1) + String(p2) + String(p3)].damageMOAB,
+			damageCeramic: Stats[String(p1) + String(p2) + String(p3)].damageCeramic,
+			damageSecondary: Stats[String(p1) + String(p2) + String(p3)].damageSecondary,
+			damageMOABSecondary: Stats[String(p1) + String(p2) + String(p3)].damageMOABSecondary,
+			damageCeramicSecondary: Stats[String(p1) + String(p2) + String(p3)].damageCeramicSecondary,
+			pierce: Stats[String(p1) + String(p2) + String(p3)].pierce,
+			pierceSecondary: Stats[String(p1) + String(p2) + String(p3)].pierceSecondary,
+			projectiles: Stats[String(p1) + String(p2) + String(p3)].projectiles,
+			projectilesSecondary: Stats[String(p1) + String(p2) + String(p3)].projectilesSecondary,
+			speed: Stats[String(p1) + String(p2) + String(p3)].speed,
+			range: Stats[String(p1) + String(p2) + String(p3)].range,
+			abilityName: Stats[String(p1) + String(p2) + String(p3)].abilityName,
+			abilityDuration: Stats[String(p1) + String(p2) + String(p3)].abilityDuration,
+			abilityCooldown: Stats[String(p1) + String(p2) + String(p3)].abilityCooldown,
+			abilityDamage: Stats[String(p1) + String(p2) + String(p3)].abilityDamage,
+			abilityPierce: Stats[String(p1) + String(p2) + String(p3)].abilityPierce,
+			abilitySpeed: Stats[String(p1) + String(p2) + String(p3)].abilitySpeed,
+			abilityRange: Stats[String(p1) + String(p2) + String(p3)].abilityRange,
+			camo: Stats[String(p1) + String(p2) + String(p3)].camo,
+			black: Stats[String(p1) + String(p2) + String(p3)].black,
+			white: Stats[String(p1) + String(p2) + String(p3)].white,
+			purple: Stats[String(p1) + String(p2) + String(p3)].purple,
+			lead: Stats[String(p1) + String(p2) + String(p3)].lead,
+			frozen: Stats[String(p1) + String(p2) + String(p3)].frozen,
+		});
 		switch (String(p1) + String(p2) + String(p3)) {
 			case "000":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"],
-					costMedium: costs["buy-m"],
-					costHard: costs["buy-h"],
-					costImpoppable: costs["buy-i"],
+				setCost({
+					easy: costs["buy-e"],
+					medium: costs["buy-m"],
+					hard: costs["buy-h"],
+					impoppable: costs["buy-i"],
 				});
 				setImage("000");
 				break;
 			case "100":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 8,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"],
-					costImpoppable: costs["buy-i"] + costs["p1-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"],
 				});
 				setImage("100");
 				break;
 			case "200":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 13,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"],
-					costImpoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"],
 				});
 				setImage("200");
 				break;
 			case "300":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 50,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"],
-					costImpoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p1-3-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p1-3-i"],
 				});
 				setImage("300");
 				break;
 			case "400":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 100,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.6,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p1-4-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p1-4-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p1-4-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p1-3-i"] + costs["p1-4-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p1-4-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p1-4-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p1-4-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p1-3-i"] + costs["p1-4-i"],
 				});
 				setImage("400");
 				break;
 			case "500":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: true,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
 						costs["p1-3-e"] +
 						costs["p1-4-e"] +
 						costs["p1-5-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
 						costs["p1-3-m"] +
 						costs["p1-4-m"] +
 						costs["p1-5-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
 						costs["p1-3-h"] +
 						costs["p1-4-h"] +
 						costs["p1-5-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -440,191 +321,65 @@ export default function BoomerangMonkey() {
 				setImage("500");
 				break;
 			case "010":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p2-1-e"],
-					costMedium: costs["buy-m"] + costs["p2-1-m"],
-					costHard: costs["buy-h"] + costs["p2-1-h"],
-					costImpoppable: costs["buy-i"] + costs["p2-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p2-1-e"],
+					medium: costs["buy-m"] + costs["p2-1-m"],
+					hard: costs["buy-h"] + costs["p2-1-h"],
+					impoppable: costs["buy-i"] + costs["p2-1-i"],
 				});
 				setImage("010");
 				break;
 			case "020":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"],
-					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"],
-					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"],
-					costImpoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"],
+					medium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"],
+					hard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"],
+					impoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"],
 				});
 				setImage("020");
 				break;
 			case "030":
-				setStats({
-					damage: 1,
-					damageMOAB: 2,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
-					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
-					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
-					costImpoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p2-3-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
+					medium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
+					hard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
+					impoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p2-3-i"],
 				});
 				setImage("030");
 				break;
 			case "040":
-				setStats({
-					damage: 1,
-					damageMOAB: 2,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 2,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p2-4-e"],
-					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p2-4-m"],
-					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p2-4-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p2-3-i"] + costs["p2-4-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p2-4-e"],
+					medium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p2-4-m"],
+					hard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p2-4-h"],
+					impoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p2-3-i"] + costs["p2-4-i"],
 				});
 				setImage("040");
 				break;
 			case "050":
-				setStats({
-					damage: 4,
-					damageMOAB: 5,
-					damageCeramic: 4,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 12,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
 						costs["p2-3-e"] +
 						costs["p2-4-e"] +
 						costs["p2-5-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
 						costs["p2-3-m"] +
 						costs["p2-4-m"] +
 						costs["p2-5-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
 						costs["p2-3-h"] +
 						costs["p2-4-h"] +
 						costs["p2-5-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p2-2-i"] +
@@ -635,191 +390,65 @@ export default function BoomerangMonkey() {
 				setImage("050");
 				break;
 			case "001":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p3-1-e"],
-					costMedium: costs["buy-m"] + costs["p3-1-m"],
-					costHard: costs["buy-h"] + costs["p3-1-h"],
-					costImpoppable: costs["buy-i"] + costs["p3-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p3-1-e"],
+					medium: costs["buy-m"] + costs["p3-1-m"],
+					hard: costs["buy-h"] + costs["p3-1-h"],
+					impoppable: costs["buy-i"] + costs["p3-1-i"],
 				});
 				setImage("001");
 				break;
 			case "002":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"],
-					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"],
-					costHard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"],
-					costImpoppable: costs["buy-i"] + costs["p3-1-i"] + costs["p3-2-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"],
+					medium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"],
+					hard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"],
+					impoppable: costs["buy-i"] + costs["p3-1-i"] + costs["p3-2-i"],
 				});
 				setImage("002");
 				break;
 			case "003":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 18,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
-					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
-					costHard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"],
-					costImpoppable: costs["buy-i"] + costs["p3-1-i"] + costs["p3-2-i"] + costs["p3-3-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
+					medium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
+					hard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"],
+					impoppable: costs["buy-i"] + costs["p3-1-i"] + costs["p3-2-i"] + costs["p3-3-i"],
 				});
 				setImage("003");
 				break;
 			case "004":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 200,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"] + costs["p3-4-e"],
-					costMedium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"] + costs["p3-4-m"],
-					costHard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"] + costs["p3-4-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p3-1-i"] + costs["p3-2-i"] + costs["p3-3-i"] + costs["p3-4-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"] + costs["p3-4-e"],
+					medium: costs["buy-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"] + costs["p3-4-m"],
+					hard: costs["buy-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"] + costs["p3-4-h"],
+					impoppable: costs["buy-i"] + costs["p3-1-i"] + costs["p3-2-i"] + costs["p3-3-i"] + costs["p3-4-i"],
 				});
 				setImage("004");
 				break;
 			case "005":
-				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 25,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 300,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"] +
 						costs["p3-3-e"] +
 						costs["p3-4-e"] +
 						costs["p3-5-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"] +
 						costs["p3-3-m"] +
 						costs["p3-4-m"] +
 						costs["p3-5-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"] +
 						costs["p3-3-h"] +
 						costs["p3-4-h"] +
 						costs["p3-5-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p3-1-i"] +
 						costs["p3-2-i"] +
@@ -830,156 +459,56 @@ export default function BoomerangMonkey() {
 				setImage("005");
 				break;
 			case "110":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"],
-					costImpoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p2-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p2-1-i"],
 				});
 				setImage("010");
 				break;
 			case "210":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 13,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p2-1-h"],
-					costImpoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p2-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p2-1-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p2-1-i"],
 				});
 				setImage("200");
 				break;
 			case "310":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 50,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.85,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p2-1-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p2-1-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p2-1-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p1-3-i"] + costs["p2-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p2-1-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p2-1-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p2-1-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p1-3-i"] + costs["p2-1-i"],
 				});
 				setImage("300");
 				break;
 			case "410":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 100,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.426,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
 						costs["p1-3-e"] +
 						costs["p1-4-e"] +
 						costs["p2-1-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
 						costs["p1-3-m"] +
 						costs["p1-4-m"] +
 						costs["p2-1-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
 						costs["p1-3-h"] +
 						costs["p1-4-h"] +
 						costs["p2-1-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -990,33 +519,8 @@ export default function BoomerangMonkey() {
 				setImage("400");
 				break;
 			case "510":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.426,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: true,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
@@ -1024,7 +528,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-e"] +
 						costs["p1-5-e"] +
 						costs["p2-1-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
@@ -1032,7 +536,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-m"] +
 						costs["p1-5-m"] +
 						costs["p2-1-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
@@ -1040,7 +544,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-h"] +
 						costs["p1-5-h"] +
 						costs["p2-1-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -1052,123 +556,47 @@ export default function BoomerangMonkey() {
 				setImage("500");
 				break;
 			case "120":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 8,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"] + costs["p2-2-h"],
-					costImpoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p2-1-i"] + costs["p2-2-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"] + costs["p2-2-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p2-1-i"] + costs["p2-2-i"],
 				});
 				setImage("020");
 				break;
 			case "220":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 13,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"] + costs["p2-2-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"] + costs["p2-2-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p2-1-h"] + costs["p2-2-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p2-1-i"] + costs["p2-2-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p2-1-e"] + costs["p2-2-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p2-1-m"] + costs["p2-2-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p2-1-h"] + costs["p2-2-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p2-1-i"] + costs["p2-2-i"],
 				});
 				setImage("020");
 				break;
 			case "320":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 50,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.586,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
 						costs["p1-3-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
 						costs["p1-3-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
 						costs["p1-3-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -1179,33 +607,8 @@ export default function BoomerangMonkey() {
 				setImage("300");
 				break;
 			case "420":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 100,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.32,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
@@ -1213,7 +616,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
@@ -1221,7 +624,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
@@ -1229,7 +632,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -1241,33 +644,8 @@ export default function BoomerangMonkey() {
 				setImage("400");
 				break;
 			case "520":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.32,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: true,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
@@ -1276,7 +654,7 @@ export default function BoomerangMonkey() {
 						costs["p1-5-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
@@ -1285,7 +663,7 @@ export default function BoomerangMonkey() {
 						costs["p1-5-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
@@ -1294,7 +672,7 @@ export default function BoomerangMonkey() {
 						costs["p1-5-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -1307,157 +685,56 @@ export default function BoomerangMonkey() {
 				setImage("500");
 				break;
 			case "101":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 8,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"],
-					costImpoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p3-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p3-1-i"],
 				});
 				setImage("001");
 				break;
 			case "201":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 13,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p3-1-h"],
-					costImpoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p3-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p3-1-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p3-1-i"],
 				});
 				setImage("200");
 				break;
 			case "301":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 50,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p3-1-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p3-1-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p3-1-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p1-3-i"] + costs["p3-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p1-3-e"] + costs["p3-1-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p1-3-m"] + costs["p3-1-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p1-3-h"] + costs["p3-1-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p1-3-i"] + costs["p3-1-i"],
 				});
 				setImage("300");
 				break;
 			case "401":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 100,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.6,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
 						costs["p1-3-e"] +
 						costs["p1-4-e"] +
 						costs["p3-1-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
 						costs["p1-3-m"] +
 						costs["p1-4-m"] +
 						costs["p3-1-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
 						costs["p1-3-h"] +
 						costs["p1-4-h"] +
 						costs["p3-1-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -1468,33 +745,8 @@ export default function BoomerangMonkey() {
 				setImage("400");
 				break;
 			case "501":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: true,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
@@ -1502,7 +754,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-e"] +
 						costs["p1-5-e"] +
 						costs["p3-1-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
@@ -1510,7 +762,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-m"] +
 						costs["p1-5-m"] +
 						costs["p3-1-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
@@ -1518,7 +770,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-h"] +
 						costs["p1-5-h"] +
 						costs["p3-1-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -1530,123 +782,47 @@ export default function BoomerangMonkey() {
 				setImage("500");
 				break;
 			case "102":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 8,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"] + costs["p3-2-h"],
-					costImpoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p3-1-i"] + costs["p3-2-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"] + costs["p3-2-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p3-1-i"] + costs["p3-2-i"],
 				});
 				setImage("002");
 				break;
 			case "202":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 13,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p3-1-h"] + costs["p3-2-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p3-1-i"] + costs["p3-2-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p1-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p1-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p1-2-h"] + costs["p3-1-h"] + costs["p3-2-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p1-2-i"] + costs["p3-1-i"] + costs["p3-2-i"],
 				});
 				setImage("002");
 				break;
 			case "302":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 50,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
 						costs["p1-3-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
 						costs["p1-3-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
 						costs["p1-3-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -1657,33 +833,8 @@ export default function BoomerangMonkey() {
 				setImage("300");
 				break;
 			case "402":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 100,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.6,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
@@ -1691,7 +842,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
@@ -1699,7 +850,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
@@ -1707,7 +858,7 @@ export default function BoomerangMonkey() {
 						costs["p1-4-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -1719,33 +870,8 @@ export default function BoomerangMonkey() {
 				setImage("400");
 				break;
 			case "502":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 100,
-					damageMOABSecondary: 100,
-					damageCeramicSecondary: 100,
-					pierce: 100,
-					pierceSecondary: 1000,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: true,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
@@ -1754,7 +880,7 @@ export default function BoomerangMonkey() {
 						costs["p1-5-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
@@ -1763,7 +889,7 @@ export default function BoomerangMonkey() {
 						costs["p1-5-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
@@ -1772,7 +898,7 @@ export default function BoomerangMonkey() {
 						costs["p1-5-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -1785,89 +911,38 @@ export default function BoomerangMonkey() {
 				setImage("500");
 				break;
 			case "130":
-				setStats({
-					damage: 1,
-					damageMOAB: 2,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 8,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p1-1-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p2-3-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p2-3-i"],
 				});
 				setImage("030");
 				break;
 			case "140":
-				setStats({
-					damage: 1,
-					damageMOAB: 2,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 8,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 2,
-					abilityPierce: 8,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
 						costs["p2-3-e"] +
 						costs["p2-4-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
 						costs["p2-3-m"] +
 						costs["p2-4-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
 						costs["p2-3-h"] +
 						costs["p2-4-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p2-1-i"] +
@@ -1878,33 +953,8 @@ export default function BoomerangMonkey() {
 				setImage("040");
 				break;
 			case "150":
-				setStats({
-					damage: 4,
-					damageMOAB: 5,
-					damageCeramic: 4,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 8,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 12,
-					abilityPierce: 8,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p2-1-e"] +
@@ -1912,7 +962,7 @@ export default function BoomerangMonkey() {
 						costs["p2-3-e"] +
 						costs["p2-4-e"] +
 						costs["p2-5-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p2-1-m"] +
@@ -1920,7 +970,7 @@ export default function BoomerangMonkey() {
 						costs["p2-3-m"] +
 						costs["p2-4-m"] +
 						costs["p2-5-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p2-1-h"] +
@@ -1928,7 +978,7 @@ export default function BoomerangMonkey() {
 						costs["p2-3-h"] +
 						costs["p2-4-h"] +
 						costs["p2-5-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p2-1-i"] +
@@ -1940,54 +990,29 @@ export default function BoomerangMonkey() {
 				setImage("050");
 				break;
 			case "230":
-				setStats({
-					damage: 1,
-					damageMOAB: 2,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 13,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
 						costs["p2-3-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
 						costs["p2-3-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
 						costs["p2-3-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -1998,33 +1023,8 @@ export default function BoomerangMonkey() {
 				setImage("030");
 				break;
 			case "240":
-				setStats({
-					damage: 1,
-					damageMOAB: 2,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 13,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 2,
-					abilityPierce: 8,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
@@ -2032,7 +1032,7 @@ export default function BoomerangMonkey() {
 						costs["p2-2-e"] +
 						costs["p2-3-e"] +
 						costs["p2-false4-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
@@ -2040,7 +1040,7 @@ export default function BoomerangMonkey() {
 						costs["p2-2-m"] +
 						costs["p2-3-m"] +
 						costs["p2-4-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
@@ -2048,7 +1048,7 @@ export default function BoomerangMonkey() {
 						costs["p2-2-h"] +
 						costs["p2-3-h"] +
 						costs["p2-4-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -2060,33 +1060,8 @@ export default function BoomerangMonkey() {
 				setImage("040");
 				break;
 			case "250":
-				setStats({
-					damage: 4,
-					damageMOAB: 5,
-					damageCeramic: 4,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 13,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 43,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 12,
-					abilityPierce: 8,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
@@ -2095,7 +1070,7 @@ export default function BoomerangMonkey() {
 						costs["p2-3-e"] +
 						costs["p2-4-e"] +
 						costs["p2-5-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
@@ -2104,7 +1079,7 @@ export default function BoomerangMonkey() {
 						costs["p2-3-m"] +
 						costs["p2-4-m"] +
 						costs["p2-5-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
@@ -2113,7 +1088,7 @@ export default function BoomerangMonkey() {
 						costs["p2-3-h"] +
 						costs["p2-4-h"] +
 						costs["p2-5-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -2126,157 +1101,56 @@ export default function BoomerangMonkey() {
 				setImage("050");
 				break;
 			case "011":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"],
-					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"],
-					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"],
-					costImpoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p3-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"],
+					medium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"],
+					hard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"],
+					impoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p3-1-i"],
 				});
 				setImage("010");
 				break;
 			case "021":
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"],
-					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"],
-					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p3-1-h"],
-					costImpoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p3-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"],
+					medium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"],
+					hard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p3-1-h"],
+					impoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p3-1-i"],
 				});
 				setImage("020");
 				break;
 			case "031":
-				setStats({
-					damage: 1,
-					damageMOAB: 2,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p3-1-e"],
-					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p3-1-m"],
-					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p3-1-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p2-3-i"] + costs["p3-1-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p2-3-e"] + costs["p3-1-e"],
+					medium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p2-3-m"] + costs["p3-1-m"],
+					hard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p2-3-h"] + costs["p3-1-h"],
+					impoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p2-3-i"] + costs["p3-1-i"],
 				});
 				setImage("030");
 				break;
 			case "041":
-				setStats({
-					damage: 1,
-					damageMOAB: 2,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 49.5,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 2,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
 						costs["p2-3-e"] +
 						costs["p2-4-e"] +
 						costs["p3-1-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
 						costs["p2-3-m"] +
 						costs["p2-4-m"] +
 						costs["p3-1-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
 						costs["p2-3-h"] +
 						costs["p2-4-h"] +
 						costs["p3-1-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p2-2-i"] +
@@ -2287,33 +1161,8 @@ export default function BoomerangMonkey() {
 				setImage("040");
 				break;
 			case "051":
-				setStats({
-					damage: 4,
-					damageMOAB: 5,
-					damageCeramic: 4,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 49.5,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 12,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
@@ -2321,7 +1170,7 @@ export default function BoomerangMonkey() {
 						costs["p2-4-e"] +
 						costs["p2-5-e"] +
 						costs["p3-1-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
@@ -2329,7 +1178,7 @@ export default function BoomerangMonkey() {
 						costs["p2-4-m"] +
 						costs["p2-5-m"] +
 						costs["p3-1-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
@@ -2337,7 +1186,7 @@ export default function BoomerangMonkey() {
 						costs["p2-4-h"] +
 						costs["p2-5-h"] +
 						costs["p3-1-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p2-2-i"] +
@@ -2349,54 +1198,29 @@ export default function BoomerangMonkey() {
 				setImage("050");
 				break;
 			case "032":
-				setStats({
-					damage: 2,
-					damageMOAB: 3,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
 						costs["p2-3-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
 						costs["p2-3-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
 						costs["p2-3-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p2-2-i"] +
@@ -2407,33 +1231,8 @@ export default function BoomerangMonkey() {
 				setImage("030");
 				break;
 			case "042":
-				setStats({
-					damage: 2,
-					damageMOAB: 3,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.24,
-					range: 49.5,
-					abilityName: "Turbo Charge",
-					abilityDuration: 10,
-					abilityCooldown: 45,
-					abilityDamage: 3,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
@@ -2441,7 +1240,7 @@ export default function BoomerangMonkey() {
 						costs["p2-4-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
@@ -2449,7 +1248,7 @@ export default function BoomerangMonkey() {
 						costs["p2-4-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
@@ -2457,7 +1256,7 @@ export default function BoomerangMonkey() {
 						costs["p2-4-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p2-2-i"] +
@@ -2469,33 +1268,8 @@ export default function BoomerangMonkey() {
 				setImage("040");
 				break;
 			case "052":
-				setStats({
-					damage: 8,
-					damageMOAB: 9,
-					damageCeramic: 8,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.034,
-					range: 49.5,
-					abilityName: "Turbo Charge",
-					abilityDuration: 15,
-					abilityCooldown: 45,
-					abilityDamage: 16,
-					abilityPierce: 4,
-					abilitySpeed: 0.034,
-					abilityRange: 43,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
@@ -2504,7 +1278,7 @@ export default function BoomerangMonkey() {
 						costs["p2-5-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
@@ -2513,7 +1287,7 @@ export default function BoomerangMonkey() {
 						costs["p2-5-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
@@ -2522,7 +1296,7 @@ export default function BoomerangMonkey() {
 						costs["p2-5-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p2-2-i"] +
@@ -2535,89 +1309,38 @@ export default function BoomerangMonkey() {
 				setImage("050");
 				break;
 			case "103":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 22,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
-					costMedium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
-					costHard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p1-1-i"] + costs["p3-1-i"] + costs["p3-2-i"] + costs["p3-3-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p1-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
+					medium: costs["buy-m"] + costs["p1-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
+					hard: costs["buy-h"] + costs["p1-1-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"],
+					impoppable: costs["buy-i"] + costs["p1-1-i"] + costs["p3-1-i"] + costs["p3-2-i"] + costs["p3-3-i"],
 				});
 				setImage("003");
 				break;
 			case "104":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 22,
-					pierceSecondary: 300,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"] +
 						costs["p3-3-e"] +
 						costs["p3-4-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"] +
 						costs["p3-3-m"] +
 						costs["p3-4-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"] +
 						costs["p3-3-h"] +
 						costs["p3-4-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p3-1-i"] +
@@ -2628,33 +1351,8 @@ export default function BoomerangMonkey() {
 				setImage("004");
 				break;
 			case "105":
-				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 20,
-					damageCeramicSecondary: 1,
-					pierce: 22,
-					pierceSecondary: 400,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p3-1-e"] +
@@ -2662,7 +1360,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-e"] +
 						costs["p3-4-e"] +
 						costs["p3-5-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p3-1-m"] +
@@ -2670,7 +1368,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-m"] +
 						costs["p3-4-m"] +
 						costs["p3-5-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p3-1-h"] +
@@ -2678,7 +1376,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-h"] +
 						costs["p3-4-h"] +
 						costs["p3-5-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p3-1-i"] +
@@ -2690,54 +1388,29 @@ export default function BoomerangMonkey() {
 				setImage("005");
 				break;
 			case "203":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 27,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"] +
 						costs["p3-3-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"] +
 						costs["p3-3-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"] +
 						costs["p3-3-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -2748,33 +1421,8 @@ export default function BoomerangMonkey() {
 				setImage("003");
 				break;
 			case "204":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 27,
-					pierceSecondary: 420,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 1.2,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
@@ -2782,7 +1430,7 @@ export default function BoomerangMonkey() {
 						costs["p3-2-e"] +
 						costs["p3-3-e"] +
 						costs["p3-4-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
@@ -2790,7 +1438,7 @@ export default function BoomerangMonkey() {
 						costs["p3-2-m"] +
 						costs["p3-3-m"] +
 						costs["p3-4-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
@@ -2798,7 +1446,7 @@ export default function BoomerangMonkey() {
 						costs["p3-2-h"] +
 						costs["p3-3-h"] +
 						costs["p3-4-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -2810,33 +1458,8 @@ export default function BoomerangMonkey() {
 				setImage("004");
 				break;
 			case "205":
-				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 25,
-					damageCeramicSecondary: 1,
-					pierce: 27,
-					pierceSecondary: 520,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.6,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p1-1-e"] +
 						costs["p1-2-e"] +
@@ -2845,7 +1468,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-e"] +
 						costs["p3-4-e"] +
 						costs["p3-5-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p1-1-m"] +
 						costs["p1-2-m"] +
@@ -2854,7 +1477,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-m"] +
 						costs["p3-4-m"] +
 						costs["p3-5-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p1-1-h"] +
 						costs["p1-2-h"] +
@@ -2863,7 +1486,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-h"] +
 						costs["p3-4-h"] +
 						costs["p3-5-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p1-1-i"] +
 						costs["p1-2-i"] +
@@ -2876,123 +1499,47 @@ export default function BoomerangMonkey() {
 				setImage("005");
 				break;
 			case "012":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
-					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
-					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"] + costs["p3-2-h"],
-					costImpoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p3-1-i"] + costs["p3-2-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"],
+					medium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"],
+					hard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"] + costs["p3-2-h"],
+					impoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p3-1-i"] + costs["p3-2-i"],
 				});
 				setImage("002");
 				break;
 			case "013":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 18,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.9,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
-					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
-					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p2-1-i"] + costs["p3-1-i"] + costs["p3-2-i"] + costs["p3-3-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p2-1-e"] + costs["p3-1-e"] + costs["p3-2-e"] + costs["p3-3-e"],
+					medium: costs["buy-m"] + costs["p2-1-m"] + costs["p3-1-m"] + costs["p3-2-m"] + costs["p3-3-m"],
+					hard: costs["buy-h"] + costs["p2-1-h"] + costs["p3-1-h"] + costs["p3-2-h"] + costs["p3-3-h"],
+					impoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p3-1-i"] + costs["p3-2-i"] + costs["p3-3-i"],
 				});
 				setImage("003");
 				break;
 			case "014":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 200,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.9,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"] +
 						costs["p3-3-e"] +
 						costs["p3-4-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"] +
 						costs["p3-3-m"] +
 						costs["p3-4-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"] +
 						costs["p3-3-h"] +
 						costs["p3-4-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p3-1-i"] +
@@ -3003,33 +1550,8 @@ export default function BoomerangMonkey() {
 				setImage("004");
 				break;
 			case "015":
-				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 25,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 300,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.45,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p3-1-e"] +
@@ -3037,7 +1559,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-e"] +
 						costs["p3-4-e"] +
 						costs["p3-5-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p3-1-m"] +
@@ -3045,7 +1567,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-m"] +
 						costs["p3-4-m"] +
 						costs["p3-5-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p3-1-h"] +
@@ -3053,7 +1575,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-h"] +
 						costs["p3-4-h"] +
 						costs["p3-5-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p3-1-i"] +
@@ -3065,89 +1587,38 @@ export default function BoomerangMonkey() {
 				setImage("005");
 				break;
 			case "022":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
-					costMedium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
-					costHard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p3-1-h"] + costs["p3-2-h"],
-					costImpoppable:
-						costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p3-1-i"] + costs["p3-2-i"],
+				setCost({
+					easy: costs["buy-e"] + costs["p2-1-e"] + costs["p2-2-e"] + costs["p3-1-e"] + costs["p3-2-e"],
+					medium: costs["buy-m"] + costs["p2-1-m"] + costs["p2-2-m"] + costs["p3-1-m"] + costs["p3-2-m"],
+					hard: costs["buy-h"] + costs["p2-1-h"] + costs["p2-2-h"] + costs["p3-1-h"] + costs["p3-2-h"],
+					impoppable: costs["buy-i"] + costs["p2-1-i"] + costs["p2-2-i"] + costs["p3-1-i"] + costs["p3-2-i"],
 				});
 				setImage("020");
 				break;
 			case "023":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 18,
-					pierceSecondary: 0,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 0.675,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
 						costs["p3-1-e"] +
 						costs["p3-2-e"] +
 						costs["p3-3-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
 						costs["p3-1-m"] +
 						costs["p3-2-m"] +
 						costs["p3-3-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
 						costs["p3-1-h"] +
 						costs["p3-2-h"] +
 						costs["p3-3-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p2-2-i"] +
@@ -3158,33 +1629,8 @@ export default function BoomerangMonkey() {
 				setImage("003");
 				break;
 			case "024":
-				setStats({
-					damage: 2,
-					damageMOAB: 2,
-					damageCeramic: 2,
-					damageSecondary: 1,
-					damageMOABSecondary: 5,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 200,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.675,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
@@ -3192,7 +1638,7 @@ export default function BoomerangMonkey() {
 						costs["p3-2-e"] +
 						costs["p3-3-e"] +
 						costs["p3-4-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
@@ -3200,7 +1646,7 @@ export default function BoomerangMonkey() {
 						costs["p3-2-m"] +
 						costs["p3-3-m"] +
 						costs["p3-4-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
@@ -3208,7 +1654,7 @@ export default function BoomerangMonkey() {
 						costs["p3-2-h"] +
 						costs["p3-3-h"] +
 						costs["p3-4-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p2-2-i"] +
@@ -3220,33 +1666,8 @@ export default function BoomerangMonkey() {
 				setImage("004");
 				break;
 			case "025":
-				setStats({
-					damage: 12,
-					damageMOAB: 12,
-					damageCeramic: 12,
-					damageSecondary: 1,
-					damageMOABSecondary: 25,
-					damageCeramicSecondary: 1,
-					pierce: 18,
-					pierceSecondary: 300,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.338,
-					range: 49.5,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
-					costEasy:
+				setCost({
+					easy:
 						costs["buy-e"] +
 						costs["p2-1-e"] +
 						costs["p2-2-e"] +
@@ -3255,7 +1676,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-e"] +
 						costs["p3-4-e"] +
 						costs["p3-5-e"],
-					costMedium:
+					medium:
 						costs["buy-m"] +
 						costs["p2-1-m"] +
 						costs["p2-2-m"] +
@@ -3264,7 +1685,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-m"] +
 						costs["p3-4-m"] +
 						costs["p3-5-m"],
-					costHard:
+					hard:
 						costs["buy-h"] +
 						costs["p2-1-h"] +
 						costs["p2-2-h"] +
@@ -3273,7 +1694,7 @@ export default function BoomerangMonkey() {
 						costs["p3-3-h"] +
 						costs["p3-4-h"] +
 						costs["p3-5-h"],
-					costImpoppable:
+					impoppable:
 						costs["buy-i"] +
 						costs["p2-1-i"] +
 						costs["p2-2-i"] +
@@ -3286,32 +1707,7 @@ export default function BoomerangMonkey() {
 				setImage("005");
 				break;
 			case "-100":
-				setStats({
-					damage: 20,
-					damageMOAB: 20,
-					damageCeramic: 20,
-					damageSecondary: 0,
-					damageMOABSecondary: 20,
-					damageCeramicSecondary: 0,
-					pierce: 100,
-					pierceSecondary: 300,
-					projectiles: 1,
-					projectilesSecondary: 1,
-					speed: 0.04,
-					range: 75,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0.0,
-					abilityRange: 0,
-					camo: true,
-					black: true,
-					white: true,
-					purple: true,
-					lead: true,
-					frozen: true,
+				setCost({
 					costEasy:
 						costs["buy-e"] * 3 +
 						costs["p1-1-e"] +
@@ -3388,35 +1784,11 @@ export default function BoomerangMonkey() {
 				setImage("par");
 				break;
 			default:
-				setStats({
-					damage: 1,
-					damageMOAB: 1,
-					damageCeramic: 1,
-					damageSecondary: 0,
-					damageMOABSecondary: 0,
-					damageCeramicSecondary: 0,
-					pierce: 4,
-					projectiles: 1,
-					projectilesSecondary: 0,
-					speed: 1.2,
-					range: 43,
-					abilityName: "",
-					abilityDuration: 0,
-					abilityCooldown: 0,
-					abilityDamage: 0,
-					abilityPierce: 0,
-					abilitySpeed: 0,
-					abilityRange: 0,
-					camo: false,
-					black: true,
-					white: true,
-					purple: true,
-					lead: false,
-					frozen: false,
-					costEasy: costs["buy-e"],
-					costMedium: costs["buy-m"],
-					costHard: costs["buy-h"],
-					costImpoppable: costs["buy-i"],
+				setCost({
+					easy: costs["buy-e"],
+					medium: costs["buy-m"],
+					hard: costs["buy-h"],
+					impoppable: costs["buy-i"],
 				});
 				break;
 		}
@@ -3973,12 +2345,12 @@ export default function BoomerangMonkey() {
 							</thead>
 							<tbody>
 								<tr>
-									<td>${stats.costEasy}</td>
-									<td>${stats.costMedium}</td>
+									<td>${cost.easy}</td>
+									<td>${cost.medium}</td>
 								</tr>
 								<tr>
-									<td>${stats.costHard}</td>
-									<td>${stats.costImpoppable}</td>
+									<td>${cost.hard}</td>
+									<td>${cost.impoppable}</td>
 								</tr>
 							</tbody>
 							<tfoot>
