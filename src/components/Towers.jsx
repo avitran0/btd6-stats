@@ -165,9 +165,6 @@ export default function Towers() {
 					</Link>
 				</motion.div>
 			</div>
-			<motion.p variants={transitionItem} className="footer">
-				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
-			</motion.p>
 		</motion.div>
 	);
 }

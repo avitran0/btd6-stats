@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./App.css";
 import Home from "./components/Home";
 import Towers from "./components/Towers";
 import Heroes from "./components/Heroes";
@@ -72,6 +72,9 @@ function App() {
 					<Route path="/rounds/abr" element={<ABR />} />
 				</Routes>
 			</AnimatePresence>
+			<p className="footer">
+				Made by <a href="https://www.github.com/avitrano">avitrano</a>
+			</p>
 		</div>
 	);
 }

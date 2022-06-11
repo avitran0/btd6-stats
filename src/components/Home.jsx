@@ -25,9 +25,6 @@ export default function Home() {
 			<motion.p variants={transitionItem}>work in progress</motion.p>
 			<motion.p variants={transitionItem}>things finished: primary towers, bloon stats, normal rounds</motion.p>
 			<motion.p variants={transitionItem}>things to add: tower stats, hero stats, rounds</motion.p>
-			<motion.p variants={transitionItem} className="footer">
-				Made by <a href="https://www.github.com/HolyHades">HolyHades</a>
-			</motion.p>
 		</motion.div>
 	);
 }
