@@ -73,7 +73,7 @@ function App() {
 				</Routes>
 			</AnimatePresence>
 			<p className="footer">
-				Made by <a href="https://www.github.com/avitrano">avitrano</a>
+				Made by <a href="https://www.github.com/avitran0">avitran0</a>
 			</p>
 		</div>
 	);
