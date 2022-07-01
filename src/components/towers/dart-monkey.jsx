@@ -51,7 +51,7 @@ import White from "../../bloons/White.png";
 import Purple from "../../bloons/Purple.png";
 import Lead from "../../bloons/Lead.png";
 import Frozen from "../../bloons/WhiteIce.png";
-import Stats from "../../boomerang-monkey/DartMonkeyStats.json";
+import Stats from "../../dart-monkey/DartMonkeyStats.json";
 
 export default function DartMonkey() {
 	document.title = "Dart Monkey - BTD6 Stats";
