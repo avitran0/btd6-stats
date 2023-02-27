@@ -114,6 +114,10 @@
 		transform: scaleX(0);
 	}
 
+	:global(.light) h3::after {
+		background-color: var(--background);
+	}
+
 	a:hover h3::after {
 		transform: scaleX(1);
 	}

@@ -62,6 +62,7 @@
 	}
 
 	function checkBorder() {
+		if (!pageMounted) return;
 		if (window.scrollY > 5) {
 			document.body.classList.add('scroll');
 		} else {
@@ -76,6 +77,7 @@
 	function setMenuActive(link: string) {
 		let nav = document.getElementById('nav')!;
 		nav.classList.remove('towers', 'heroes', 'bloons', 'rounds');
+		if (!link) return;
 		nav.classList.add(link);
 	}
 </script>
@@ -382,7 +384,7 @@
 
 	svg {
 		stroke: var(--white);
-        transition: var(--transition-linear);
+		transition: var(--transition-linear);
 	}
 
 	:global(.light) svg {
@@ -398,7 +400,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-        margin-right: 0.5rem;
+		margin-right: 0.5rem;
 	}
 
 	.buttons a {
@@ -428,6 +430,10 @@
 
 	.buttons a:hover {
 		border: 2px solid var(--white);
+	}
+
+	:global(.light) .buttons a:hover {
+		border: 2px solid var(--background);
 	}
 
 	#menu-button {
