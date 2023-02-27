@@ -1,0 +1,597 @@
+{
+    "000": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 2,
+                "projectiles": 1,
+                "range": 42,
+                "reloadSpeed": 0.75,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "001": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.5,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "002": {
+        "attacks": [
+            {
+                "name": "Airburst",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            },
+            {
+                "name": "Subdart",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 2,
+                "projectiles": 3,
+                "range": 0,
+                "reloadSpeed": "Infinity",
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "003": {
+        "attacks": [
+            {
+                "name": "Airburst",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.67,
+                "damageType": "sharp",
+                "camo": false
+            },
+            {
+                "name": "Subdart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "004": {
+        "attacks": [
+            {
+                "name": "Airburst",
+                "damage": 1,
+                "damageMOAB": 2,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            },
+            {
+                "name": "Subdart",
+                "damage": 0,
+                "damageMOAB": 1,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 3,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "005": {
+        "attacks": [
+            {
+                "name": "Airburst",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.5,
+                "damageType": "sharp",
+                "camo": false
+            },
+            {
+                "name": "Subdart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "010": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 3,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "020": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "normal",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "030": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "normal",
+                "camo": false
+            },
+            {
+                "name": "Missile",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 5,
+                "damageBoss": 1,
+                "pierce": 100,
+                "projectiles": 1,
+                "range": 50,
+                "reloadSpeed": 1,
+                "damageType": "explosion",
+                "camo": false,
+                "crosspath": [
+                    {
+                        "path": "031",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 0,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 0.875,
+                        "damageType": "explosion",
+                        "camo": false
+                    }
+                ]
+            }
+        ],
+        "ability": {}
+    },
+    "040": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "normal",
+                "camo": false
+            },
+            {
+                "name": "Missile",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "explosion",
+                "camo": false
+            }
+        ],
+        "ability": {
+            "name": "First Strike",
+            "damage": 10000,
+            "damageMOAB": 10000,
+            "damageCeramic": 10000,
+            "damageBoss": 10000,
+            "pierce": 80,
+            "projectiles": 1,
+            "range": "Infinity",
+            "reloadSpeed": "Infinity",
+            "damageType": "normal",
+            "camo": true,
+            "duration": 0,
+            "cooldown": 60
+        }
+    },
+    "050": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.5,
+                "damageType": "normal",
+                "camo": false
+            },
+            {
+                "name": "Missile",
+                "damage": 9,
+                "damageMOAB": 4,
+                "damageCeramic": 4,
+                "damageBoss": 4,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "explosion",
+                "camo": false
+            }
+        ],
+        "ability": {
+            "name": "Pre-Emptive Strike",
+            "damage": 9,
+            "damageMOAB": 4,
+            "damageCeramic": 4,
+            "damageBoss": 1,
+            "pierce": 2,
+            "projectiles": 1,
+            "range": 40,
+            "reloadSpeed": 0.03,
+            "damageType": "plasma",
+            "camo": false,
+            "duration": 15,
+            "cooldown": 50
+        }
+    },
+    "100": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 10,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "200": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "300": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            },
+            {
+                "name": "Sonar",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 100,
+                "projectiles": 0,
+                "range": 52,
+                "reloadSpeed": 1.5,
+                "damageType": "passive",
+                "camo": true,
+                "crosspath": [
+                    {
+                        "path": "310",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 20,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "passive",
+                        "camo": false
+                    },
+                    {
+                        "path": "320",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 50,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "passive",
+                        "camo": false
+                    },
+                    {
+                        "path": "301",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 0,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 0.85,
+                        "damageType": "passive",
+                        "camo": false
+                    },
+                    {
+                        "path": "302",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 0,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 0.6375,
+                        "damageType": "passive",
+                        "camo": false
+                    }
+                ]
+            }
+        ],
+        "ability": {}
+    },
+    "400": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            },
+            {
+                "name": "Sonar",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "passive",
+                "camo": true
+            },
+            {
+                "name": "Radioactive",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 50,
+                "projectiles": 1,
+                "range": 52,
+                "reloadSpeed": 0.3,
+                "damageType": "shatter",
+                "camo": true,
+                "crosspath": [
+                    {
+                        "path": "410",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 20,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "shatter",
+                        "camo": false
+                    },
+                    {
+                        "path": "420",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 50,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "normal",
+                        "camo": false
+                    },
+                    {
+                        "path": "401",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 0,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 0.85,
+                        "damageType": "shatter",
+                        "camo": false
+                    },
+                    {
+                        "path": "402",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 0,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 0.6375,
+                        "damageType": "shatter",
+                        "camo": false
+                    }
+                ]
+            }
+        ],
+        "ability": {}
+    },
+    "500": {
+        "attacks": [
+            {
+                "name": "Dart",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            },
+            {
+                "name": "Sonar",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "passive",
+                "camo": true
+            },
+            {
+                "name": "Radioactive",
+                "damage": 4,
+                "damageMOAB": 4,
+                "damageCeramic": 9,
+                "damageBoss": 4,
+                "pierce": 950,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "shatter",
+                "camo": true
+            }
+        ],
+        "ability": {}
+    }
+}

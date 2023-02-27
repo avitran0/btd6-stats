@@ -1,0 +1,161 @@
+{
+    "000": {
+        "size": 6,
+        "costs": {
+            "easy": 295,
+            "medium": 350,
+            "hard": 380,
+            "impoppable": 420
+        }
+    },
+    "100": {
+        "name": "Full Metal Jacket",
+        "description": "Shots pop through 4 layers of bloon, and both bullets and shrapnel can pop Lead and Frozen Bloons.",
+        "costs": {
+            "easy": 295,
+            "medium": 350,
+            "hard": 380,
+            "impoppable": 420
+        }
+    },
+    "200": {
+        "name": "Large Calibre",
+        "description": "Shots can pop through 7 layers of Bloon.",
+        "costs": {
+            "easy": 1275,
+            "medium": 1500,
+            "hard": 1620,
+            "impoppable": 1800
+        }
+    },
+    "300": {
+        "name": "Deadly Precision",
+        "description": "20 damage per shot, plus bonus damage to Ceramics.",
+        "costs": {
+            "easy": 2550,
+            "medium": 3000,
+            "hard": 3240,
+            "impoppable": 3600
+        }
+    },
+    "400": {
+        "name": "Maim MOAB",
+        "description": "Deals much more damage and immobilizes MOAB class bloons for a short time.",
+        "costs": {
+            "easy": 4250,
+            "medium": 5000,
+            "hard": 5400,
+            "impoppable": 6000
+        }
+    },
+    "500": {
+        "name": "Cripple MOAB",
+        "description": "Crippled MOABs are immobilized for longer and take extra damage from all other attacks.",
+        "costs": {
+            "easy": 28900,
+            "medium": 34000,
+            "hard": 36720,
+            "impoppable": 40800
+        }
+    },
+    "010": {
+        "name": "Night Vision Goggles",
+        "description": "Allows Sniper to detect and do an additional 2 damage to Camo bloons.",
+        "costs": {
+            "easy": 255,
+            "medium": 300,
+            "hard": 325,
+            "impoppable": 360
+        }
+    },
+    "020": {
+        "name": "Shrapnel Shot",
+        "description": "Damaged bloons spray out a cone of sharp shrapnel.",
+        "costs": {
+            "easy": 380,
+            "medium": 450,
+            "hard": 485,
+            "impoppable": 540
+        }
+    },
+    "030": {
+        "name": "Bouncing Bullet",
+        "description": "Shots bounce to new targets up to 3 times.",
+        "costs": {
+            "easy": 2720,
+            "medium": 3200,
+            "hard": 3455,
+            "impoppable": 3840
+        }
+    },
+    "040": {
+        "name": "Supply Drop",
+        "description": "Supply Drop ability: Drops a crate full of cash. Regular attack also damages Lead Bloons and increases Shrapnel popping power.",
+        "costs": {
+            "easy": 6120,
+            "medium": 7200,
+            "hard": 7775,
+            "impoppable": 8640
+        }
+    },
+    "050": {
+        "name": "Elite Sniper",
+        "description": "Supply Drop gives much more cash. Grants Elite targeting prio and faster reload to all snipers.",
+        "costs": {
+            "easy": 11050,
+            "medium": 13000,
+            "hard": 14040,
+            "impoppable": 15600
+        }
+    },
+    "001": {
+        "name": "Fast Firing",
+        "description": "Shoots faster than normal.",
+        "costs": {
+            "easy": 340,
+            "medium": 400,
+            "hard": 430,
+            "impoppable": 480
+        }
+    },
+    "002": {
+        "name": "Even Faster Firing",
+        "description": "Shoots even faster!",
+        "costs": {
+            "easy": 340,
+            "medium": 400,
+            "hard": 430,
+            "impoppable": 480
+        }
+    },
+    "003": {
+        "name": "Semi-Automatic",
+        "description": "Attacks 3x as fast!",
+        "costs": {
+            "easy": 2975,
+            "medium": 3500,
+            "hard": 3780,
+            "impoppable": 4200
+        }
+    },
+    "004": {
+        "name": "Full Auto Rifle",
+        "description": "Fully automatic weapon with incredible popping power.",
+        "costs": {
+            "easy": 3610,
+            "medium": 4250,
+            "hard": 4590,
+            "impoppable": 5100
+        }
+    },
+    "005": {
+        "name": "Elite Defender",
+        "description": "A lost life gives this Sniper 4x attack speed for a short time in retaliation. Also attacks faster the further the Bloons are along the track. Deals more damage to MOAB-class Bloons.",
+        "costs": {
+            "easy": 11900,
+            "medium": 14000,
+            "hard": 15120,
+            "impoppable": 16800
+        }
+    }
+}

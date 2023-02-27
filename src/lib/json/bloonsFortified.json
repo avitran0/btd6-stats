@@ -1,0 +1,75 @@
+[
+    {
+        "name": "Lead Fortified",
+        "id": "LeadFortified",
+        "hp": 4,
+        "cashTotal": 23,
+        "children": [{ "id": "Black", "amount": 2 }],
+        "speed": 1,
+        "rbe": 26,
+        "immunities": "sharpness"
+    },
+    {
+        "name": "Ceramic Fortified",
+        "id": "CeramicFortified",
+        "hp": 20,
+        "cashTotal": 95,
+        "children": [{ "id": "Rainbow", "amount": 2 }],
+        "speed": 2.5,
+        "rbe": 114,
+        "immunities": ""
+    },
+    {
+        "name": "MOAB Fortified",
+        "id": "MOABFortified",
+        "hp": 400,
+        "cashTotal": 381,
+        "children": [{ "id": "CeramicFortified", "amount": 4 }],
+        "speed": 1,
+        "rbe": 856,
+        "immunities": ""
+    },
+    {
+        "name": "BFB Fortified",
+        "id": "BFBFortified",
+        "hp": 1400,
+        "cashTotal": 1525,
+        "children": [{ "id": "MOABFortified", "amount": 4 }],
+        "speed": 0.25,
+        "rbe": 4824,
+        "immunities": ""
+    },
+    {
+        "name": "ZOMG Fortified",
+        "id": "ZOMGFortified",
+        "hp": 8000,
+        "cashTotal": 6101,
+        "children": [{ "id": "BFBFortified", "amount": 4 }],
+        "speed": 0.18,
+        "rbe": 27296,
+        "immunities": ""
+    },
+    {
+        "name": "DDT Fortified",
+        "id": "DDTFortified",
+        "hp": 800,
+        "cashTotal": 381,
+        "children": [{ "id": "CeramicRegrowFortifiedCamo", "amount": 4 }],
+        "speed": 2.75,
+        "rbe": 1256,
+        "immunities": "explosions and sharpness, inherently camo"
+    },
+    {
+        "name": "BAD Fortified",
+        "id": "BADFortified",
+        "hp": 40000,
+        "cashTotal": 13346,
+        "children": [
+            { "id": "ZOMGFortified", "amount": 2 },
+            { "id": "DDTFortified", "amount": 2 }
+        ],
+        "speed": 0.18,
+        "rbe": 98360,
+        "immunities": ""
+    }
+]

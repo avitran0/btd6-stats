@@ -1,0 +1,175 @@
+[
+    { "name": "Red", "id": "Red", "hp": 1, "cashTotal": 1, "children": [], "speed": 1, "rbe": 1, "immunities": "" },
+    {
+        "name": "Blue",
+        "id": "Blue",
+        "hp": 1,
+        "cashTotal": 2,
+        "children": [{ "id": "Red", "amount": 1 }],
+        "speed": 1.4,
+        "rbe": 2,
+        "immunities": ""
+    },
+    {
+        "name": "Green",
+        "id": "Green",
+        "hp": 1,
+        "cashTotal": 3,
+        "children": [{ "id": "Blue", "amount": 1 }],
+        "speed": 1.8,
+        "rbe": 3,
+        "immunities": ""
+    },
+    {
+        "name": "Yellow",
+        "id": "Yellow",
+        "hp": 1,
+        "cashTotal": 4,
+        "children": [{ "id": "Green", "amount": 1 }],
+        "speed": 3.2,
+        "rbe": 4,
+        "immunities": ""
+    },
+    {
+        "name": "Pink",
+        "id": "Pink",
+        "hp": 1,
+        "cashTotal": 5,
+        "children": [{ "id": "Yellow", "amount": 1 }],
+        "speed": 3.5,
+        "rbe": 5,
+        "immunities": ""
+    },
+    {
+        "name": "Black",
+        "id": "Black",
+        "hp": 1,
+        "cashTotal": 11,
+        "cashTotalLate": 6,
+        "children": [{ "id": "Pink", "amount": 2 }],
+        "speed": 1.8,
+        "rbe": 11,
+        "immunities": "explosions"
+    },
+    {
+        "name": "White",
+        "id": "White",
+        "hp": 1,
+        "cashTotal": 11,
+        "cashTotalLate": 6,
+        "children": [{ "id": "Pink", "amount": 2 }],
+        "speed": 2,
+        "rbe": 11,
+        "immunities": "freezing"
+    },
+    {
+        "name": "Purple",
+        "id": "Purple",
+        "hp": 1,
+        "cashTotal": 11,
+        "cashTotalLate": 6,
+        "children": [{ "id": "Pink", "amount": 2 }],
+        "speed": 3,
+        "rbe": 11,
+        "immunities": "fire, energy and plasma"
+    },
+    {
+        "name": "Lead",
+        "id": "Lead",
+        "hp": 1,
+        "cashTotal": 23,
+        "cashTotalLate": 7,
+        "children": [{ "id": "Black", "amount": 2 }],
+        "speed": 1,
+        "rbe": 23,
+        "immunities": "sharpness"
+    },
+    {
+        "name": "Zebra",
+        "id": "Zebra",
+        "hp": 1,
+        "cashTotal": 23,
+        "cashTotalLate": 7,
+        "children": [
+            { "id": "Black", "amount": 1 },
+            { "id": "White", "amount": 1 }
+        ],
+        "speed": 1.8,
+        "rbe": 23,
+        "immunities": "explosions and freezing"
+    },
+    {
+        "name": "Rainbow",
+        "id": "Rainbow",
+        "hp": 1,
+        "cashTotal": 47,
+        "cashTotalLate": 8,
+        "children": [{ "id": "Zebra", "amount": 2 }],
+        "speed": 3.5,
+        "rbe": 47,
+        "immunities": ""
+    },
+    {
+        "name": "Ceramic",
+        "id": "Ceramic",
+        "hp": 10,
+        "cashTotal": 95,
+        "children": [{ "id": "Rainbow", "amount": 2 }],
+        "speed": 2.5,
+        "rbe": 104,
+        "immunities": ""
+    },
+    {
+        "name": "MOAB",
+        "id": "MOAB",
+        "hp": 200,
+        "cashTotal": 381,
+        "children": [{ "id": "Ceramic", "amount": 4 }],
+        "speed": 1,
+        "rbe": 616,
+        "immunities": ""
+    },
+    {
+        "name": "BFB",
+        "id": "BFB",
+        "hp": 700,
+        "cashTotal": 1525,
+        "children": [{ "id": "MOAB", "amount": 4 }],
+        "speed": 0.25,
+        "rbe": 3164,
+        "immunities": ""
+    },
+    {
+        "name": "ZOMG",
+        "id": "ZOMG",
+        "hp": 4000,
+        "cashTotal": 6101,
+        "children": [{ "id": "BFB", "amount": 4 }],
+        "speed": 0.18,
+        "rbe": 16656,
+        "immunities": ""
+    },
+    {
+        "name": "DDT",
+        "id": "DDT",
+        "hp": 400,
+        "cashTotal": 381,
+        "children": [{ "id": "CeramicRegrowCamo", "amount": 4 }],
+        "speed": 2.75,
+        "rbe": 816,
+        "immunities": "explosions and sharpness, inherently camo"
+    },
+    {
+        "name": "BAD",
+        "id": "BAD",
+        "hp": 20000,
+        "cashTotal": 13346,
+        "children": [
+            { "id": "ZOMG", "amount": 2 },
+            { "id": "DDT", "amount": 2 }
+        ],
+        "speed": 0.18,
+        "rbe": 55760,
+        "immunities": ""
+    }
+]

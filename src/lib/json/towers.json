@@ -1,0 +1,108 @@
+[
+    {
+        "name": "Dart Monkey",
+        "id": "dart-monkey",
+        "category": "primary"
+    },
+    {
+        "name": "Boomerang Monkey",
+        "id": "boomerang-monkey",
+        "category": "primary"
+    },
+    {
+        "name": "Bomb Shooter",
+        "id": "bomb-shooter",
+        "category": "primary"
+    },
+    { "name": "Tack Shooter", "id": "tack-shooter", "category": "primary" },
+    {
+        "name": "Ice Monkey",
+        "id": "ice-monkey",
+        "category": "primary"
+    },
+    {
+        "name": "Glue Gunner",
+        "id": "glue-gunner",
+        "category": "primary"
+    },
+    {
+        "name": "Sniper Monkey",
+        "id": "sniper-monkey",
+        "category": "military"
+    },
+    {
+        "name": "Monkey Sub",
+        "id": "monkey-sub",
+        "category": "military"
+    },
+    {
+        "name": "Monkey Buccaneer",
+        "id": "monkey-buccaneer",
+        "category": "military"
+    },
+    {
+        "name": "Monkey Ace",
+        "id": "monkey-ace",
+        "category": "military"
+    },
+    {
+        "name": "Heli Pilot",
+        "id": "heli-pilot",
+        "category": "military"
+    },
+    {
+        "name": "Mortar Monkey",
+        "id": "mortar-monkey",
+        "category": "military"
+    },
+    {
+        "name": "Dartling Gunner",
+        "id": "dartling-gunner",
+        "category": "military"
+    },
+    {
+        "name": "Wizard Monkey",
+        "id": "wizard-monkey",
+        "category": "magic"
+    },
+    {
+        "name": "Super Monkey",
+        "id": "super-monkey",
+        "category": "magic"
+    },
+    {
+        "name": "Ninja Monkey",
+        "id": "ninja-monkey",
+        "category": "magic"
+    },
+    {
+        "name": "Alchemist",
+        "id": "alchemist",
+        "category": "magic"
+    },
+    {
+        "name": "Druid",
+        "id": "druid",
+        "category": "magic"
+    },
+    {
+        "name": "Banana Farm",
+        "id": "banana-farm",
+        "category": "support"
+    },
+    {
+        "name": "Spike Factory",
+        "id": "spike-factory",
+        "category": "support"
+    },
+    {
+        "name": "Monkey Village",
+        "id": "monkey-village",
+        "category": "support"
+    },
+    {
+        "name": "Engineer Monkey",
+        "id": "engineer-monkey",
+        "category": "support"
+    }
+]

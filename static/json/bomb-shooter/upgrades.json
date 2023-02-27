@@ -1,0 +1,161 @@
+{
+    "000": {
+        "size": 7,
+        "costs": {
+            "easy": 445,
+            "medium": 525,
+            "hard": 565,
+            "impoppable": 630
+        }
+    },
+    "100": {
+        "name": "Bigger Bombs",
+        "description": "Shoots larger bombs, they have a larger blast area and more popping power.",
+        "costs": {
+            "easy": 295,
+            "medium": 350,
+            "hard": 380,
+            "impoppable": 420
+        }
+    },
+    "200": {
+        "name": "Heavy Bombs",
+        "description": "Heavy duty bombs can smash through 2 layers of Bloon at once and pop more Bloons.",
+        "costs": {
+            "easy": 550,
+            "medium": 650,
+            "hard": 700,
+            "impoppable": 780
+        }
+    },
+    "300": {
+        "name": "Really Big Bombs",
+        "description": "Huge bombs deal greater damage in a large area and allow Frags to pop more Bloons.",
+        "costs": {
+            "easy": 1020,
+            "medium": 1200,
+            "hard": 1295,
+            "impoppable": 1440
+        }
+    },
+    "400": {
+        "name": "Bloon Impact",
+        "description": "Explosions become so violent Bloons are stunned for a short time when they are hit. Range is increased and frags are even more effective.",
+        "costs": {
+            "easy": 3060,
+            "medium": 3600,
+            "hard": 3890,
+            "impoppable": 4320
+        }
+    },
+    "500": {
+        "name": "Bloon Crush",
+        "description": "Bloon shattering explosions do massive damage and can stun MOAB-Class bloons.",
+        "costs": {
+            "easy": 46750,
+            "medium": 55000,
+            "hard": 59400,
+            "impoppable": 66000
+        }
+    },
+    "010": {
+        "name": "Faster Reload",
+        "description": "Reloads faster.",
+        "costs": {
+            "easy": 210,
+            "medium": 250,
+            "hard": 270,
+            "impoppable": 300
+        }
+    },
+    "020": {
+        "name": "Missile Launcher",
+        "description": "Exchanges bombs for missiles, which fire faster, fly faster, and increase range.",
+        "costs": {
+            "easy": 340,
+            "medium": 400,
+            "hard": 430,
+            "impoppable": 480
+        }
+    },
+    "030": {
+        "name": "MOAB Mauler",
+        "description": "MOAB Maulers do much more damage to MOAB-Class Bloons.",
+        "costs": {
+            "easy": 340,
+            "medium": 400,
+            "hard": 430,
+            "impoppable": 480
+        }
+    },
+    "040": {
+        "name": "MOAB Assassin",
+        "description": "Assassinate MOAB ability: Special missile flies out and does massive damage to MOAB-Class Bloons. Regular attack range and MOAB-class damage also increased.",
+        "costs": {
+            "easy": 2720,
+            "medium": 3200,
+            "hard": 3455,
+            "impoppable": 3840
+        }
+    },
+    "050": {
+        "name": "MOAB Eliminator",
+        "description": "Massive damage to MOABs and Assassinate ability deals 6x damage with a short cooldown.",
+        "costs": {
+            "easy": 21250,
+            "medium": 25000,
+            "hard": 27000,
+            "impoppable": 30000
+        }
+    },
+    "001": {
+        "name": "Extra Range",
+        "description": "Increases attack range.",
+        "costs": {
+            "easy": 170,
+            "medium": 200,
+            "hard": 215,
+            "impoppable": 240
+        }
+    },
+    "002": {
+        "name": "Frag Bombs",
+        "description": "Explosions throw sharp fragments that can pop more Bloons including Black Bloons.",
+        "costs": {
+            "easy": 255,
+            "medium": 300,
+            "hard": 325,
+            "impoppable": 360
+        }
+    },
+    "003": {
+        "name": "Cluster Bombs",
+        "description": "Throws out secondary bombs instead of sharp fragments every shot.",
+        "costs": {
+            "easy": 680,
+            "medium": 800,
+            "hard": 865,
+            "impoppable": 960
+        }
+    },
+    "004": {
+        "name": "Recursive Cluster",
+        "description": "Every second shot the cluster bombs send out more cluster bombs for even more destruction.",
+        "costs": {
+            "easy": 2380,
+            "medium": 2800,
+            "hard": 3025,
+            "impoppable": 3360
+        }
+    },
+    "005": {
+        "name": "Bomb Blitz",
+        "description": "Deals much more damage and gains the passive Bomb Storm Ability - when lives are lost, the Bomb Storm automatically triggers, which destroys all but the biggest of Bloons.",
+        "costs": {
+            "easy": 29750,
+            "medium": 35000,
+            "hard": 37800,
+            "impoppable": 42000
+        }
+    }
+}

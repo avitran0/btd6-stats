@@ -1,0 +1,161 @@
+{
+    "000": {
+        "size": 6,
+        "costs": {
+            "easy": 235,
+            "medium": 275,
+            "hard": 295,
+            "impoppable": 330
+        }
+    },
+    "100": {
+        "name": "Glue Soak",
+        "description": "Glue soaks through all layers of Bloon.",
+        "costs": {
+            "easy": 170,
+            "medium": 200,
+            "hard": 215,
+            "impoppable": 240
+        }
+    },
+    "200": {
+        "name": "Corrosive Glue",
+        "description": "Glued Bloons pop one layer every few seconds. (1d/2s)",
+        "costs": {
+            "easy": 255,
+            "medium": 300,
+            "hard": 325,
+            "impoppable": 360
+        }
+    },
+    "300": {
+        "name": "Bloon Dissolver",
+        "description": "Extreme solvents melt two layers every second. (1d/0.65s)",
+        "costs": {
+            "easy": 2125,
+            "medium": 2500,
+            "hard": 2700,
+            "impoppable": 3000
+        }
+    },
+    "400": {
+        "name": "Bloon Liquefier",
+        "description": "Can glue one additional Bloon per shot and applies liquefying compounds that do 10 pops every second. (1d/0.1s)",
+        "costs": {
+            "easy": 4250,
+            "medium": 5000,
+            "hard": 5400,
+            "impoppable": 6000
+        }
+    },
+    "500": {
+        "name": "The Bloon Solver",
+        "description": "Bloons a problem? Here's the solution.",
+        "costs": {
+            "easy": 18700,
+            "medium": 22000,
+            "hard": 23760,
+            "impoppable": 26400
+        }
+    },
+    "010": {
+        "name": "Bigger Globs",
+        "description": "Can coat 2 Bloons per shot.",
+        "costs": {
+            "easy": 85,
+            "medium": 100,
+            "hard": 110,
+            "impoppable": 120
+        }
+    },
+    "020": {
+        "name": "Glue Splatter",
+        "description": "Splatters glue across up to 6 Bloons per shot.",
+        "costs": {
+            "easy": 1530,
+            "medium": 1800,
+            "hard": 1945,
+            "impoppable": 2160
+        }
+    },
+    "030": {
+        "name": "Glue Hose",
+        "description": "Shoots glue 3x as fast!",
+        "costs": {
+            "easy": 2760,
+            "medium": 3250,
+            "hard": 3510,
+            "impoppable": 3900
+        }
+    },
+    "040": {
+        "name": "Glue Strike",
+        "description": "Glue Strike ability: Glues all Bloons on screen, causing them to take more damage from all sources while it lasts.",
+        "costs": {
+            "easy": 2975,
+            "medium": 3500,
+            "hard": 3780,
+            "impoppable": 4200
+        }
+    },
+    "050": {
+        "name": "Glue Storm",
+        "description": "Glue Storm ability pelts the whole screen over 15 seconds with glue. Glued Bloons take extra damage while glued.",
+        "costs": {
+            "easy": 12750,
+            "medium": 15000,
+            "hard": 16200,
+            "impoppable": 18000
+        }
+    },
+    "001": {
+        "name": "Stickier Glue",
+        "description": "Makes glue effect last much longer.",
+        "costs": {
+            "easy": 100,
+            "medium": 120,
+            "hard": 130,
+            "impoppable": 145
+        }
+    },
+    "002": {
+        "name": "Stronger Glue",
+        "description": "Slows down Bloons even more.",
+        "costs": {
+            "easy": 340,
+            "medium": 400,
+            "hard": 430,
+            "impoppable": 480
+        }
+    },
+    "003": {
+        "name": "MOAB Glue",
+        "description": "Improved glue formula allows it to stick to MOAB-class Bloons.",
+        "costs": {
+            "easy": 2890,
+            "medium": 3400,
+            "hard": 3670,
+            "impoppable": 4080
+        }
+    },
+    "004": {
+        "name": "Relentless Glue",
+        "description": "Popped Bloons that were glued leave a blob of glue on the track.",
+        "costs": {
+            "easy": 2550,
+            "medium": 3000,
+            "hard": 3240,
+            "impoppable": 3600
+        }
+    },
+    "005": {
+        "name": "Super Glue",
+        "description": "Glue so strong it temporarily immobilizes all affected Bloons!",
+        "costs": {
+            "easy": 23800,
+            "medium": 28000,
+            "hard": 30240,
+            "impoppable": 33600
+        }
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "normal": {
+        "normal": true,
+        "black": true,
+        "white": true,
+        "lead": true,
+        "ceramic": true,
+        "purple": true,
+        "frozen": true
+    },
+    "acid": {
+        "normal": true,
+        "black": true,
+        "white": true,
+        "lead": true,
+        "ceramic": true,
+        "purple": true,
+        "frozen": true
+    },
+    "physical": {
+        "normal": true,
+        "black": true,
+        "white": true,
+        "lead": true,
+        "ceramic": true,
+        "purple": true,
+        "frozen": true
+    },
+    "fire": {
+        "normal": true,
+        "black": true,
+        "white": true,
+        "lead": true,
+        "ceramic": true,
+        "purple": false,
+        "frozen": true
+    },
+    "plasma": {
+        "normal": true,
+        "black": true,
+        "white": true,
+        "lead": true,
+        "ceramic": true,
+        "purple": false,
+        "frozen": true
+    },
+    "magic": {
+        "normal": true,
+        "black": true,
+        "white": true,
+        "lead": true,
+        "ceramic": false,
+        "purple": true,
+        "frozen": true
+    },
+    "explosion": {
+        "normal": true,
+        "black": false,
+        "white": true,
+        "lead": true,
+        "ceramic": true,
+        "purple": true,
+        "frozen": true
+    },
+    "shatter": {
+        "normal": true,
+        "black": true,
+        "white": true,
+        "lead": false,
+        "ceramic": true,
+        "purple": true,
+        "frozen": true
+    },
+    "metal_glacier_freeze": {
+        "normal": true,
+        "black": true,
+        "white": false,
+        "lead": true,
+        "ceramic": true,
+        "purple": true,
+        "frozen": true
+    },
+    "glacier": {
+        "normal": true,
+        "black": true,
+        "white": false,
+        "lead": false,
+        "ceramic": true,
+        "purple": true,
+        "frozen": true
+    },
+    "metal_freeze": {
+        "normal": true,
+        "black": true,
+        "white": false,
+        "lead": true,
+        "ceramic": true,
+        "purple": true,
+        "frozen": false
+    },
+    "energy": {
+        "normal": true,
+        "black": true,
+        "white": true,
+        "lead": false,
+        "ceramic": true,
+        "purple": false,
+        "frozen": true
+    },
+    "sharp": {
+        "normal": true,
+        "black": true,
+        "white": true,
+        "lead": false,
+        "ceramic": true,
+        "purple": true,
+        "frozen": false
+    },
+    "cold": {
+        "normal": true,
+        "black": true,
+        "white": false,
+        "lead": false,
+        "ceramic": true,
+        "purple": true,
+        "frozen": false
+    },
+    "passive": {
+        "normal": false,
+        "black": false,
+        "white": false,
+        "lead": false,
+        "ceramic": false,
+        "purple": false,
+        "frozen": false
+    }
+}

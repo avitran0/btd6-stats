@@ -1,0 +1,161 @@
+{
+    "000": {
+        "size": 6,
+        "costs": {
+            "easy": 240,
+            "medium": 280,
+            "hard": 300,
+            "impoppable": 335
+        }
+    },
+    "100": {
+        "name": "Faster Shooting",
+        "description": "Shoots tacks faster.",
+        "costs": {
+            "easy": 125,
+            "medium": 150,
+            "hard": 160,
+            "impoppable": 180
+        }
+    },
+    "200": {
+        "name": "Even Faster Shooting",
+        "description": "Shoots tacks even faster.",
+        "costs": {
+            "easy": 255,
+            "medium": 300,
+            "hard": 325,
+            "impoppable": 360
+        }
+    },
+    "300": {
+        "name": "Hot Shots",
+        "description": "Shoots superhot tacks that do extra damage and can pop Lead Bloons.",
+        "costs": {
+            "easy": 510,
+            "medium": 600,
+            "hard": 650,
+            "impoppable": 720
+        }
+    },
+    "400": {
+        "name": "Ring of Fire",
+        "description": "Damages many more Bloons with a deadly ring of flame instead of tacks.",
+        "costs": {
+            "easy": 2975,
+            "medium": 3500,
+            "hard": 3780,
+            "impoppable": 4200
+        }
+    },
+    "500": {
+        "name": "Inferno Ring",
+        "description": "Deadly inferno of flame roasts Bloons into oblivion.",
+        "costs": {
+            "easy": 38675,
+            "medium": 45500,
+            "hard": 49140,
+            "impoppable": 54600
+        }
+    },
+    "010": {
+        "name": "Long Range Tacks",
+        "description": "Tacks fly out further than normal.",
+        "costs": {
+            "easy": 85,
+            "medium": 100,
+            "hard": 110,
+            "impoppable": 120
+        }
+    },
+    "020": {
+        "name": "Super Range Tacks",
+        "description": "Even longer range tacks that can pop more Bloons.",
+        "costs": {
+            "easy": 190,
+            "medium": 225,
+            "hard": 245,
+            "impoppable": 270
+        }
+    },
+    "030": {
+        "name": "Blade Shooter",
+        "description": "Switches tacks out for sharp blades that can pop up to 5 additional Bloons.",
+        "costs": {
+            "easy": 465,
+            "medium": 550,
+            "hard": 595,
+            "impoppable": 660
+        }
+    },
+    "040": {
+        "name": "Blade Maelstrom",
+        "description": "Blade Maelstrom ability: Covers the area in a storm of blades.",
+        "costs": {
+            "easy": 2295,
+            "medium": 2700,
+            "hard": 2915,
+            "impoppable": 3240
+        }
+    },
+    "050": {
+        "name": "Super Maelstrom",
+        "description": "Even more powerful Maelstrom ability and lasts longer.",
+        "costs": {
+            "easy": 12750,
+            "medium": 15000,
+            "hard": 16200,
+            "impoppable": 18000
+        }
+    },
+    "001": {
+        "name": "More Tacks",
+        "description": "Shoots 10 tacks instead of 8, plus increases Ring of Fire damage.",
+        "costs": {
+            "easy": 85,
+            "medium": 100,
+            "hard": 110,
+            "impoppable": 120
+        }
+    },
+    "002": {
+        "name": "Even More Tacks",
+        "description": "Shoots out 12 tacks per shot and increases Ring of Fire damage further.",
+        "costs": {
+            "easy": 85,
+            "medium": 100,
+            "hard": 110,
+            "impoppable": 120
+        }
+    },
+    "003": {
+        "name": "Tack Sprayer",
+        "description": "Sprays out 16 tacks per volley.",
+        "costs": {
+            "easy": 380,
+            "medium": 450,
+            "hard": 485,
+            "impoppable": 540
+        }
+    },
+    "004": {
+        "name": "Overdrive",
+        "description": "Shoots incredibly fast.",
+        "costs": {
+            "easy": 2720,
+            "medium": 3200,
+            "hard": 3455,
+            "impoppable": 3840
+        }
+    },
+    "005": {
+        "name": "The Tack Zone",
+        "description": "Many, many tacks.",
+        "costs": {
+            "easy": 17000,
+            "medium": 20000,
+            "hard": 21600,
+            "impoppable": 24000
+        }
+    }
+}

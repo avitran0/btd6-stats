@@ -1,0 +1,16 @@
+[
+    { "name": "Quincy", "id": "quincy", "levels": [0, 3, 7, 10, 20] },
+    { "name": "Gwendolin", "id": "gwendolin", "levels": [0, 3, 10, 20] },
+    { "name": "Striker Jones", "id": "striker-jones", "levels": [0, 3, 10, 20] },
+    { "name": "Obyn Greenfoot", "id": "obyn-greenfoot", "levels": [0, 3, 10, 20] },
+    { "name": "Captain Churchill", "id": "captain-churchill", "levels": [0, 3, 5, 6, 10, 20] },
+    { "name": "Benjamin", "id": "benjamin", "levels": [0, 3, 7, 10, 20] },
+    { "name": "Ezili", "id": "ezili", "levels": [0, 3, 7, 10, 16, 20] },
+    { "name": "Pat Fusty", "id": "pat-fusty", "levels": [0, 3, 5, 10, 20] },
+    { "name": "Adora", "id": "adora", "levels": [0, 3, 7, 10, 20] },
+    { "name": "Admiral Brickell", "id": "admiral-brickell", "levels": [0, 3, 7, 10, 20] },
+    { "name": "Etienne", "id": "etienne", "levels": [0, 3, 7, 10, 20] },
+    { "name": "Sauda", "id": "sauda", "levels": [0, 3, 10, 20] },
+    { "name": "Psi", "id": "psi", "levels": [0, 3, 8, 9, 10, 17, 20] },
+    { "name": "Geraldo", "id": "geraldo", "levels": [0, 3, 7, 10, 20] }
+]

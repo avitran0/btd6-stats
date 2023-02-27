@@ -1,0 +1,171 @@
+{
+	"000": {
+		"size": 7,
+		"costs": {
+			"easy": 275,
+			"medium": 325,
+			"hard": 350,
+			"impoppable": 390
+		}
+	},
+	"100": {
+		"name": "Improved Rangs",
+		"description": "Can pop up to 8 Bloons per throw.",
+		"costs": {
+			"easy": 170,
+			"medium": 200,
+			"hard": 215,
+			"impoppable": 240
+		}
+	},
+	"200": {
+		"name": "Glaives",
+		"description": "Throws sharper and faster glaives instead of boomerangs.",
+		"costs": {
+			"easy": 240,
+			"medium": 280,
+			"hard": 300,
+			"impoppable": 335
+		}
+	},
+	"300": {
+		"name": "Glave Ricochet",
+		"description": "Glaives will bounce from Bloon to Bloon automatically and aggressively.",
+		"costs": {
+			"easy": 1105,
+			"medium": 1300,
+			"hard": 1405,
+			"impoppable": 1560
+		}
+	},
+	"400": {
+		"name": "M.O.A.R Glaives",
+		"description": "Multiple Object Advanced Ricochet greatly enhances the already extraordinary powers of the Glaive Ricochet Monkey.",
+		"costs": {
+			"easy": 2550,
+			"medium": 3000,
+			"hard": 3240,
+			"impoppable": 3600
+		}
+	},
+	"500": {
+		"name": "Glaive Lord",
+		"description": "Glaive Lord surrounds itself in 3 special glaives that shred anything that comes near.\nGlaive Lord's glaives now rip through MOAB-class Bloons, slowly tearing them apart from the inside.",
+		"costs": {
+			"easy": 27540,
+			"medium": 32400,
+			"hard": 34990,
+			"impoppable": 38880
+		}
+	},
+	"010": {
+		"name": "Faster Throwing",
+		"description": "Throws boomerangs faster.",
+		"costs": {
+			"easy": 150,
+			"medium": 175,
+			"hard": 190,
+			"impoppable": 210
+		}
+	},
+	"020": {
+		"name": "Faster Rangs",
+		"description": "Boomerangs fire and travel faster.",
+		"costs": {
+			"easy": 210,
+			"medium": 250,
+			"hard": 270,
+			"impoppable": 300
+		}
+	},
+	"030": {
+		"name": "Bionic Boomerang",
+		"description": "Replaces arm with a strong bionic arm that can throw boomerangs extremely fast and does extra damage to MOAB-class bloons.",
+		"costs": {
+			"easy": 1230,
+			"medium": 1450,
+			"hard": 1565,
+			"impoppable": 1740
+		}
+	},
+	"040": {
+		"name": "Turbo Charge",
+		"description": "Turbo Charge ability: Makes this Monkey attack incredibly fast for 10 seconds.",
+		"costs": {
+			"easy": 3570,
+			"medium": 4200,
+			"hard": 4535,
+			"impoppable": 5040
+		}
+	},
+	"050": {
+		"name": "Perma Charge",
+		"description": "Perma Charge has a permanent super fast attack speed. Ability increases the lethality even more.",
+		"costs": {
+			"easy": 29750,
+			"medium": 35000,
+			"hard": 37800,
+			"impoppable": 42000
+		}
+	},
+	"001": {
+		"name": "Long Range Rangs",
+		"description": "Can throw boomerangs further than normal.",
+		"costs": {
+			"easy": 85,
+			"medium": 100,
+			"hard": 110,
+			"impoppable": 120
+		}
+	},
+	"002": {
+		"name": "Red Hot Rangs",
+		"description": "Allows boomerangs to pop Frozen and Lead Bloons and do more damage to all.",
+		"costs": {
+			"easy": 255,
+			"medium": 300,
+			"hard": 325,
+			"impoppable": 360
+		}
+	},
+	"003": {
+		"name": "Kylie Boomerang",
+		"description": "Throws heavy Kylie boomerangs that follow a straight path instead of curved.",
+		"costs": {
+			"easy": 1105,
+			"medium": 1300,
+			"hard": 1405,
+			"impoppable": 1560
+		}
+	},
+	"004": {
+		"name": "MOAB Press",
+		"description": "Heavy Kylie boomerangs hit MOAB-Class Bloons multiple times per throw and sometimes knocks them back a short way along the path.",
+		"costs": {
+			"easy": 1870,
+			"medium": 2200,
+			"hard": 2375,
+			"impoppable": 2640
+		}
+	},
+	"005": {
+		"name": "MOAB Domination",
+		"description": "Special knockback kylies trigger more often and do lots of extra damage.",
+		"costs": {
+			"easy": 42500,
+			"medium": 50000,
+			"hard": 54000,
+			"impoppable": 60000
+		}
+	},
+	"600": {
+		"name": "Glaive Dominus",
+		"description": "The Bloons will look upon my Glaives, and they will know fear.",
+		"costs": {
+			"easy": 340000,
+			"medium": 400000,
+			"hard": 432000,
+			"impoppable": 480000
+		}
+	}
+}

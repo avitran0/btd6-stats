@@ -1,0 +1,161 @@
+{
+    "000": {
+        "size": 6,
+        "costs": {
+            "easy": 425,
+            "medium": 500,
+            "hard": 540,
+            "impoppable": 600
+        }
+    },
+    "100": {
+        "name": "Permafrost",
+        "description": "Bloons move slowly even after thawing out.",
+        "costs": {
+            "easy": 85,
+            "medium": 100,
+            "hard": 110,
+            "impoppable": 120
+        }
+    },
+    "200": {
+        "name": "Cold Snap",
+        "description": "Can freeze and pop Lead Bloons and Camo Bloons.",
+        "costs": {
+            "easy": 295,
+            "medium": 350,
+            "hard": 380,
+            "impoppable": 420
+        }
+    },
+    "300": {
+        "name": "Ice Shards",
+        "description": "Razor sharp shards fly out when Frozen Bloons pop.",
+        "costs": {
+            "easy": 1275,
+            "medium": 1500,
+            "hard": 1620,
+            "impoppable": 1800
+        }
+    },
+    "400": {
+        "name": "Embrittlement",
+        "description": "Can hit MOAB class Bloons. All hit Bloons become brittle, take extra damage while frozen, and lose Camo properties.",
+        "costs": {
+            "easy": 1870,
+            "medium": 2200,
+            "hard": 2375,
+            "impoppable": 2640
+        }
+    },
+    "500": {
+        "name": "Super Brittle",
+        "description": "Bloons take huge damage while frozen including MOAB-class Bloons.",
+        "costs": {
+            "easy": 23800,
+            "medium": 28000,
+            "hard": 30240,
+            "impoppable": 33600
+        }
+    },
+    "010": {
+        "name": "Enhanced Freeze",
+        "description": "Attacks faster and freezes for longer.",
+        "costs": {
+            "easy": 190,
+            "medium": 225,
+            "hard": 245,
+            "impoppable": 270
+        }
+    },
+    "020": {
+        "name": "Deep Freeze",
+        "description": "Freezes through 2 layers of Bloon.",
+        "costs": {
+            "easy": 295,
+            "medium": 350,
+            "hard": 380,
+            "impoppable": 420
+        }
+    },
+    "030": {
+        "name": "Arctic Wind",
+        "description": "Greatly increases pierce & gains a super cold aura that slows Bloons and freezes water nearby.",
+        "costs": {
+            "easy": 2465,
+            "medium": 2900,
+            "hard": 3130,
+            "impoppable": 3480
+        }
+    },
+    "040": {
+        "name": "Snowstorm",
+        "description": "Snowstorm Ability: Freezes all regular bloons on screen, and briefly freezes white, zebra, camo, and slows MOAB class.",
+        "costs": {
+            "easy": 2550,
+            "medium": 3000,
+            "hard": 3240,
+            "impoppable": 3600
+        }
+    },
+    "050": {
+        "name": "Absolute Zero",
+        "description": "Ability is so cold it freezes all regular Bloons for longer, including White, Zebra, and Camo, slows MOAB-class longer, and greatly increases the attack speed of all Ice Monkeys for the duration.",
+        "costs": {
+            "easy": 17000,
+            "medium": 20000,
+            "hard": 21600,
+            "impoppable": 24000
+        }
+    },
+    "001": {
+        "name": "Larger Radius",
+        "description": "Larger freeze area.",
+        "costs": {
+            "easy": 150,
+            "medium": 175,
+            "hard": 190,
+            "impoppable": 210
+        }
+    },
+    "002": {
+        "name": "Re-Freeze",
+        "description": "Can re-freeze Bloons that are already frozen.",
+        "costs": {
+            "easy": 190,
+            "medium": 225,
+            "hard": 245,
+            "impoppable": 270
+        }
+    },
+    "003": {
+        "name": "Cryo Cannon",
+        "description": "Shoots freezing bombs at Bloons over long range.",
+        "costs": {
+            "easy": 1655,
+            "medium": 1950,
+            "hard": 2105,
+            "impoppable": 2340
+        }
+    },
+    "004": {
+        "name": "Icicles",
+        "description": "Frozen Bloons grow sharp icicles that can pop Bloons that touch them.",
+        "costs": {
+            "easy": 2335,
+            "medium": 2750,
+            "hard": 2970,
+            "impoppable": 3300
+        }
+    },
+    "005": {
+        "name": "Icicle Impale",
+        "description": "Shoots huge icicle spikes that do huge damage to MOAB-Class Bloons and freezes them.",
+        "costs": {
+            "easy": 25500,
+            "medium": 30000,
+            "hard": 32400,
+            "impoppable": 36000
+        }
+    }
+}

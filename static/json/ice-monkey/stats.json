@@ -1,0 +1,437 @@
+{
+    "000": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 40,
+                "projectiles": 1,
+                "range": 20,
+                "reloadSpeed": 2.4,
+                "damageType": "cold",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "001": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 7,
+                "reloadSpeed": 1,
+                "damageType": "cold",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "002": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "glacier",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "003": {
+        "attacks": [
+            {
+                "name": "Ice Bomb",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 26,
+                "reloadSpeed": 0.5,
+                "damageType": "glacier",
+                "camo": false
+            },
+            {
+                "name": "Freeze Blast",
+                "damage": 2,
+                "damageMOAB": 2,
+                "damageCeramic": 2,
+                "damageBoss": 2,
+                "pierce": 30,
+                "projectiles": 1,
+                "range": 20,
+                "reloadSpeed": 1.2,
+                "damageType": "glacier",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "004": {
+        "attacks": [
+            {
+                "name": "Ice Bomb",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "glacier",
+                "camo": false
+            },
+            {
+                "name": "Freeze Blast",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "glacier",
+                "camo": false
+            },
+            {
+                "name": "Icicle",
+                "damage": 2,
+                "damageMOAB": 2,
+                "damageCeramic": 2,
+                "damageBoss": 2,
+                "pierce": 3,
+                "projectiles": 1,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false,
+                "crosspath": [
+                    {
+                        "path": "204",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 0,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "metal_glacier_freeze",
+                        "camo": false
+                    }
+                ]
+            }
+        ],
+        "ability": {}
+    },
+    "005": {
+        "attacks": [
+            {
+                "name": "Ice Bomb",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.75,
+                "damageType": "glacier",
+                "camo": false
+            },
+            {
+                "name": "Freeze Blast",
+                "damage": 0,
+                "damageMOAB": 48,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "shatter",
+                "camo": false
+            },
+            {
+                "name": "Icicle",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "010": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.75,
+                "damageType": "cold",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "020": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "cold",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "030": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 60,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "cold",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "040": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "cold",
+                "camo": false
+            }
+        ],
+        "ability": {
+            "name": "Snowstorm",
+            "damage": 1,
+            "damageMOAB": 1,
+            "damageCeramic": 1,
+            "damageBoss": 1,
+            "pierce": "Infinity",
+            "projectiles": 1,
+            "range": "Infinity",
+            "reloadSpeed": "Infinity",
+            "damageType": "shatter",
+            "camo": true,
+            "duration": 0,
+            "cooldown": 30
+        }
+    },
+    "050": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 200,
+                "projectiles": 0,
+                "range": 10,
+                "reloadSpeed": 1,
+                "damageType": "cold",
+                "camo": false
+            }
+        ],
+        "ability": {
+            "name": "Absolute Zero",
+            "damage": 1,
+            "damageMOAB": 1,
+            "damageCeramic": 1,
+            "damageBoss": 1,
+            "pierce": "Infinity",
+            "projectiles": 1,
+            "range": "Infinity",
+            "reloadSpeed": "Infinity",
+            "damageType": "normal",
+            "camo": true,
+            "duration": 0,
+            "cooldown": 20
+        }
+    },
+    "100": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "cold",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "200": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "metal_freeze",
+                "camo": true
+            }
+        ],
+        "ability": {}
+    },
+    "300": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 5,
+                "reloadSpeed": 1,
+                "damageType": "metal_freeze",
+                "camo": true
+            },
+            {
+                "name": "Shard",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 1,
+                "projectiles": 3,
+                "range": 0,
+                "reloadSpeed": "Infinity",
+                "damageType": "shatter",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "400": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "metal_freeze",
+                "camo": true
+            },
+            {
+                "name": "Shard",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "shatter",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "500": {
+        "attacks": [
+            {
+                "name": "Freeze",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.9,
+                "damageType": "normal",
+                "camo": true
+            },
+            {
+                "name": "Shard",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "shatter",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    }
+}

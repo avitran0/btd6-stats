@@ -1,0 +1,171 @@
+{
+    "000": {
+        "size": 8,
+        "costs": {
+            "easy": 425,
+            "medium": 500,
+            "hard": 540,
+            "impoppable": 600
+        }
+    },
+    "100": {
+        "name": "Faster Shooting",
+        "description": "All weapons on board shoot faster.",
+        "costs": {
+            "easy": 295,
+            "medium": 350,
+            "hard": 380,
+            "impoppable": 420
+        }
+    },
+    "200": {
+        "name": "Double Shot",
+        "description": "Double ship weapons fired.",
+        "costs": {
+            "easy": 465,
+            "medium": 550,
+            "hard": 595,
+            "impoppable": 660
+        }
+    },
+    "300": {
+        "name": "Destroyer",
+        "description": "Attacks super duper fast!",
+        "costs": {
+            "easy": 2505,
+            "medium": 2950,
+            "hard": 3185,
+            "impoppable": 3540
+        }
+    },
+    "400": {
+        "name": "Aircraft Carrier",
+        "description": "Launches waves of fighter planes that strafe their targets and fire missiles at MOAB class Bloons.",
+        "costs": {
+            "easy": 6120,
+            "medium": 7200,
+            "hard": 7775,
+            "impoppable": 8640
+        }
+    },
+    "500": {
+        "name": "Carrier Flagship",
+        "description": "Does extra damage. Can place other Monkeys on the upper decks of the ship and increases attack speed of all water based Monkeys and Monkey Aces.",
+        "costs": {
+            "easy": 21250,
+            "medium": 25000,
+            "hard": 27000,
+            "impoppable": 30000
+        }
+    },
+    "010": {
+        "name": "Grape Shot",
+        "description": "Adds a spray of 5 sharpened grapes to the ship.",
+        "costs": {
+            "easy": 465,
+            "medium": 550,
+            "hard": 595,
+            "impoppable": 660
+        }
+    },
+    "020": {
+        "name": "Hot Shot",
+        "description": "Burning hot grape shot can pop Lead Bloons and set Bloons on fire.",
+        "costs": {
+            "easy": 425,
+            "medium": 500,
+            "hard": 540,
+            "impoppable": 600
+        }
+    },
+    "030": {
+        "name": "Cannon Ship",
+        "description": "Adds a powerful cannon that shoots out powerful bombs.",
+        "costs": {
+            "easy": 765,
+            "medium": 900,
+            "hard": 970,
+            "impoppable": 1080
+        }
+    },
+    "040": {
+        "name": "Monkey Pirates",
+        "description": "Adds 2 cannons to the ship and cannon attacks do more damage. MOAB Takedown Ability: harpoons a MOAB class Bloon and brings it down.",
+        "costs": {
+            "easy": 3825,
+            "medium": 4500,
+            "hard": 4860,
+            "impoppable": 5400
+        }
+    },
+    "050": {
+        "name": "Pirate Lord",
+        "description": "Greatly increased attack speed for all attacks and can shoot 3 grappling hooks at once, plundering extra cash from each MOAB-class Bloon taken down.",
+        "costs": {
+            "easy": 17850,
+            "medium": 21000,
+            "hard": 22680,
+            "impoppable": 25200
+        }
+    },
+    "001": {
+        "name": "Long Range",
+        "description": "Much longer range and projectiles fly faster.",
+        "costs": {
+            "easy": 155,
+            "medium": 180,
+            "hard": 195,
+            "impoppable": 215
+        }
+    },
+    "002": {
+        "name": "Crow's Nest",
+        "description": "Allows the ship to hit Camo Bloons.",
+        "costs": {
+            "easy": 340,
+            "medium": 400,
+            "hard": 430,
+            "impoppable": 480
+        }
+    },
+    "003": {
+        "name": "Merchantman",
+        "description": "Generates cash each round automatically.",
+        "costs": {
+            "easy": 1955,
+            "medium": 2300,
+            "hard": 2485,
+            "impoppable": 2760
+        }
+    },
+    "004": {
+        "name": "Favored Trades",
+        "description": "Attacks faster and generates lots of money per round. Monkeys in radius have increased sell value.",
+        "costs": {
+            "easy": 4675,
+            "medium": 5500,
+            "hard": 5940,
+            "impoppable": 6600
+        }
+    },
+    "005": {
+        "name": "Trade Empire",
+        "description": "Generates more cash per round, increases cash earned by up to 20 other Merchantmen by the number of Merchantmen, and boosts all Merchantmen damage.",
+        "costs": {
+            "easy": 19550,
+            "medium": 23000,
+            "hard": 24840,
+            "impoppable": 27600
+        }
+    },
+    "600": {
+        "name": "Navarch of the Seas",
+        "description": "The greatest thing ever to float on water.",
+        "costs": {
+            "easy": 467500,
+            "medium": 550000,
+            "hard": 594000,
+            "impoppable": 660000
+        }
+    }
+}

@@ -1,0 +1,817 @@
+[
+    {
+        "round": 3,
+        "rbe": 37,
+        "bloons": [
+            { "id": "Red", "amount": 15 },
+            { "id": "Blue", "amount": 6 },
+            { "id": "BlueRegrow", "amount": 5 }
+        ]
+    },
+    {
+        "round": 4,
+        "rbe": 76,
+        "bloons": [
+            { "id": "Red", "amount": 10 },
+            { "id": "Blue", "amount": 33 }
+        ]
+    },
+    {
+        "round": 5,
+        "rbe": 52,
+        "bloons": [
+            { "id": "RedCamo", "amount": 12 },
+            { "id": "RedRegrowCamo", "amount": 1 },
+            { "id": "BlueRegrow", "amount": 15 },
+            { "id": "Green", "amount": 3 }
+        ]
+    },
+    {
+        "round": 6,
+        "rbe": 59,
+        "bloons": [
+            { "id": "Blue", "amount": 10 },
+            { "id": "Green", "amount": 8 },
+            { "id": "GreenRegrow", "amount": 5 }
+        ]
+    },
+    {
+        "round": 7,
+        "rbe": 90,
+        "bloons": [
+            { "id": "BlueCamo", "amount": 15 },
+            { "id": "BlueRegrow", "amount": 10 },
+            { "id": "Green", "amount": 6 },
+            { "id": "Black", "amount": 2 }
+        ]
+    },
+    {
+        "round": 8,
+        "rbe": 85,
+        "bloons": [
+            { "id": "Yellow", "amount": 10 },
+            { "id": "Green", "amount": 12 },
+            { "id": "GreenRegrow", "amount": 3 }
+        ]
+    },
+    {
+        "round": 9,
+        "rbe": 90,
+        "bloons": [{ "id": "GreenRegrow", "amount": 30 }]
+    },
+    {
+        "round": 10,
+        "rbe": 210,
+        "bloons": [
+            { "id": "Blue", "amount": 22 },
+            { "id": "Green", "amount": 40 },
+            { "id": "Lead", "amount": 10 }
+        ]
+    },
+    {
+        "round": 11,
+        "rbe": 109,
+        "bloons": [
+            { "id": "Blue", "amount": 10 },
+            { "id": "BlueRegrow", "amount": 10 },
+            { "id": "Green", "amount": 20 },
+            { "id": "GreenCamo", "amount": 3 }
+        ]
+    },
+    {
+        "round": 12,
+        "rbe": 73,
+        "bloons": [
+            { "id": "Blue", "amount": 20 },
+            { "id": "GreenRegrow", "amount": 6 },
+            { "id": "Pink", "amount": 3 }
+        ]
+    },
+    {
+        "round": 13,
+        "rbe": 172,
+        "bloons": [
+            { "id": "Blue", "amount": 50 },
+            { "id": "Yellow", "amount": 18 }
+        ]
+    },
+    {
+        "round": 14,
+        "rbe": 144,
+        "bloons": [
+            { "id": "Red", "amount": 49 },
+            { "id": "BlueRegrow", "amount": 10 },
+            { "id": "GreenRegrowCamo", "amount": 5 },
+            { "id": "YellowRegrow", "amount": 4 },
+            { "id": "Black", "amount": 3 },
+            { "id": "White", "amount": 1 }
+        ]
+    },
+    {
+        "round": 15,
+        "rbe": 216,
+        "bloons": [
+            { "id": "Blue", "amount": 20 },
+            { "id": "Green", "amount": 15 },
+            { "id": "Yellow", "amount": 12 },
+            { "id": "Pink", "amount": 10 },
+            { "id": "Purple", "amount": 3 }
+        ]
+    },
+    {
+        "round": 16,
+        "rbe": 165,
+        "bloons": [
+            { "id": "Green", "amount": 15 },
+            { "id": "GreenCamo", "amount": 20 },
+            { "id": "GreenRegrow", "amount": 20 }
+        ]
+    },
+    {
+        "round": 17,
+        "rbe": 60,
+        "bloons": [{ "id": "Pink", "amount": 12 }]
+    },
+    {
+        "round": 18,
+        "rbe": 330,
+        "bloons": [
+            { "id": "Green", "amount": 30 },
+            { "id": "Yellow", "amount": 60 }
+        ]
+    },
+    {
+        "round": 19,
+        "rbe": 132,
+        "bloons": [
+            { "id": "Blue", "amount": 10 },
+            { "id": "GreenRegrow", "amount": 5 },
+            { "id": "Pink", "amount": 15 },
+            { "id": "Black", "amount": 2 }
+        ]
+    },
+    {
+        "round": 20,
+        "rbe": 66,
+        "bloons": [{ "id": "BlackRegrow", "amount": 6 }]
+    },
+    {
+        "round": 21,
+        "rbe": 58,
+        "bloons": [
+            { "id": "Red", "amount": 50 },
+            { "id": "Blue", "amount": 4 }
+        ]
+    },
+    {
+        "round": 22,
+        "rbe": 176,
+        "bloons": [{ "id": "Purple", "amount": 16 }]
+    },
+    {
+        "round": 23,
+        "rbe": 235,
+        "bloons": [
+            { "id": "Black", "amount": 7 },
+            { "id": "White", "amount": 6 },
+            { "id": "Lead", "amount": 4 }
+        ]
+    },
+    {
+        "round": 24,
+        "rbe": 23,
+        "bloons": [{ "id": "LeadCamo", "amount": 1 }]
+    },
+    {
+        "round": 25,
+        "rbe": 220,
+        "bloons": [
+            { "id": "PinkRegrow", "amount": 22 },
+            { "id": "PurpleRegrow", "amount": 10 }
+        ]
+    },
+    {
+        "round": 26,
+        "rbe": 328,
+        "bloons": [
+            { "id": "Black", "amount": 15 },
+            { "id": "Zebra", "amount": 3 },
+            { "id": "Rainbow", "amount": 2 }
+        ]
+    },
+    {
+        "round": 27,
+        "rbe": 535,
+        "bloons": [
+            { "id": "RedCamo", "amount": 100 },
+            { "id": "BlueCamo", "amount": 60 },
+            { "id": "GreenCamo", "amount": 45 },
+            { "id": "YellowCamo", "amount": 45 }
+        ]
+    },
+    {
+        "round": 28,
+        "rbe": 138,
+        "bloons": [{ "id": "LeadRegrow", "amount": 6 }]
+    },
+    {
+        "round": 29,
+        "rbe": 338,
+        "bloons": [
+            { "id": "PinkRegrow", "amount": 50 },
+            { "id": "White", "amount": 8 }
+        ]
+    },
+    {
+        "round": 30,
+        "rbe": 207,
+        "bloons": [{ "id": "LeadCamo", "amount": 9 }]
+    },
+    {
+        "round": 31,
+        "rbe": 475,
+        "bloons": [
+            { "id": "BlackRegrow", "amount": 8 },
+            { "id": "WhiteCamo", "amount": 8 },
+            { "id": "Zebra", "amount": 10 },
+            { "id": "ZebraRegrow", "amount": 3 }
+        ]
+    },
+    {
+        "round": 32,
+        "rbe": 657,
+        "bloons": [
+            { "id": "Purple", "amount": 10 },
+            { "id": "Rainbow", "amount": 5 },
+            { "id": "Ceramic", "amount": 3 }
+        ]
+    },
+    {
+        "round": 33,
+        "rbe": 46,
+        "bloons": [
+            { "id": "RedCamo", "amount": 20 },
+            { "id": "BlueCamo", "amount": 13 }
+        ]
+    },
+    {
+        "round": 34,
+        "rbe": 882,
+        "bloons": [
+            { "id": "Green", "amount": 200 },
+            { "id": "Rainbow", "amount": 6 }
+        ]
+    },
+    {
+        "round": 35,
+        "rbe": 1192,
+        "bloons": [
+            { "id": "WhiteRegrow", "amount": 25 },
+            { "id": "Ceramic", "amount": 3 },
+            { "id": "Purple", "amount": 25 },
+            { "id": "BlackCamo", "amount": 30 }
+        ]
+    },
+    {
+        "round": 36,
+        "rbe": 638,
+        "bloons": [
+            { "id": "YellowRegrowCamo", "amount": 80 },
+            { "id": "Black", "amount": 10 },
+            { "id": "Ceramic", "amount": 2 }
+        ]
+    },
+    {
+        "round": 37,
+        "rbe": 1271,
+        "bloons": [
+            { "id": "BlackRegrow", "amount": 7 },
+            { "id": "White", "amount": 25 },
+            { "id": "WhiteRegrow", "amount": 25 },
+            { "id": "Lead", "amount": 18 },
+            { "id": "Zebra", "amount": 10 }
+        ]
+    },
+    {
+        "round": 38,
+        "rbe": 1404,
+        "bloons": [
+            { "id": "Purple", "amount": 42 },
+            { "id": "Black", "amount": 17 },
+            { "id": "Lead", "amount": 14 },
+            { "id": "Rainbow", "amount": 7 },
+            { "id": "CeramicRegrow", "amount": 1 }
+        ]
+    },
+    {
+        "round": 39,
+        "rbe": 1369,
+        "bloons": [
+            { "id": "WhiteCamo", "amount": 10 },
+            { "id": "Zebra", "amount": 20 },
+            { "id": "Rainbow", "amount": 15 },
+            { "id": "RainbowCamo", "amount": 2 }
+        ]
+    },
+    {
+        "round": 40,
+        "rbe": 856,
+        "bloons": [{ "id": "MOABFortified", "amount": 1 }]
+    },
+    {
+        "round": 41,
+        "rbe": 2270,
+        "bloons": [
+            { "id": "Black", "amount": 60 },
+            { "id": "Zebra", "amount": 70 }
+        ]
+    },
+    {
+        "round": 42,
+        "rbe": 517,
+        "bloons": [{ "id": "RainbowRegrowCamo", "amount": 1 }]
+    },
+    {
+        "round": 43,
+        "rbe": 1702,
+        "bloons": [
+            { "id": "Rainbow", "amount": 10 },
+            { "id": "MOAB", "amount": 2 }
+        ]
+    },
+    {
+        "round": 44,
+        "rbe": 1180,
+        "bloons": [
+            { "id": "LeadFortified", "amount": 10 },
+            { "id": "Zebra", "amount": 40 }
+        ]
+    },
+    {
+        "round": 45,
+        "rbe": 1854,
+        "bloons": [
+            { "id": "Pink", "amount": 120 },
+            { "id": "PurpleCamo", "amount": 10 },
+            { "id": "LeadFortified", "amount": 4 },
+            { "id": "Ceramic", "amount": 10 }
+        ]
+    },
+    {
+        "round": 46,
+        "rbe": 912,
+        "bloons": [{ "id": "CeramicFortified", "amount": 8 }]
+    },
+    {
+        "round": 47,
+        "rbe": 2198,
+        "bloons": [
+            { "id": "PinkRegrowCamo", "amount": 70 },
+            { "id": "MOAB", "amount": 3 }
+        ]
+    },
+    {
+        "round": 48,
+        "rbe": 1942,
+        "bloons": [
+            { "id": "PurpleRegrowCamo", "amount": 30 },
+            { "id": "BlackRegrow", "amount": 80 },
+            { "id": "LeadRegrowFortified", "amount": 15 },
+            { "id": "CeramicFortified", "amount": 3 }
+        ]
+    },
+    {
+        "round": 49,
+        "rbe": 3826,
+        "bloons": [
+            { "id": "YellowRegrow", "amount": 300 },
+            { "id": "ZebraCamo", "amount": 10 },
+            { "id": "RainbowCamo", "amount": 10 },
+            { "id": "RainbowRegrow", "amount": 10 },
+            { "id": "CeramicRegrow", "amount": 14 }
+        ]
+    },
+    {
+        "round": 50,
+        "rbe": 4384,
+        "bloons": [
+            { "id": "LeadRegrowFortified", "amount": 8 },
+            { "id": "MOAB", "amount": 4 },
+            { "id": "MOABFortified", "amount": 2 }
+        ]
+    },
+    {
+        "round": 51,
+        "rbe": 3422,
+        "bloons": [
+            { "id": "Zebra", "amount": 10 },
+            { "id": "CeramicFortifiedCamo", "amount": 28 }
+        ]
+    },
+    {
+        "round": 52,
+        "rbe": 4207,
+        "bloons": [
+            { "id": "Rainbow", "amount": 35 },
+            { "id": "CeramicRegrow", "amount": 5 },
+            { "id": "CeramicFortified", "amount": 10 },
+            { "id": "MOAB", "amount": 1 },
+            { "id": "MOABFortified", "amount": 1 }
+        ]
+    },
+    {
+        "round": 53,
+        "rbe": 3168,
+        "bloons": [
+            { "id": "PinkCamo", "amount": 120 },
+            { "id": "MOABFortified", "amount": 3 }
+        ]
+    },
+    {
+        "round": 54,
+        "rbe": 4165,
+        "bloons": [
+            { "id": "BlackRegrow", "amount": 35 },
+            { "id": "MOAB", "amount": 1 },
+            { "id": "BFB", "amount": 1 }
+        ]
+    },
+    {
+        "round": 55,
+        "rbe": 5536,
+        "bloons": [
+            { "id": "Ceramic", "amount": 20 },
+            { "id": "CeramicCamo", "amount": 25 },
+            { "id": "MOABFortified", "amount": 1 }
+        ]
+    },
+    {
+        "round": 56,
+        "rbe": 3520,
+        "bloons": [
+            { "id": "PurpleRegrowCamo", "amount": 40 },
+            { "id": "MOAB", "amount": 5 }
+        ]
+    },
+    {
+        "round": 57,
+        "rbe": 7476,
+        "bloons": [
+            { "id": "Ceramic", "amount": 25 },
+            { "id": "MOABFortified", "amount": 2 },
+            { "id": "BFB", "amount": 1 }
+        ]
+    },
+    {
+        "round": 58,
+        "rbe": 8860,
+        "bloons": [
+            { "id": "Ceramic", "amount": 15 },
+            { "id": "CeramicFortified", "amount": 10 },
+            { "id": "MOAB", "amount": 10 }
+        ]
+    },
+    {
+        "round": 59,
+        "rbe": 4605,
+        "bloons": [
+            { "id": "LeadRegrowCamo", "amount": 50 },
+            { "id": "CeramicFortified", "amount": 20 },
+            { "id": "Rainbow", "amount": 25 }
+        ]
+    },
+    {
+        "round": 60,
+        "rbe": 4824,
+        "bloons": [{ "id": "BFBFortified", "amount": 1 }]
+    },
+    {
+        "round": 61,
+        "rbe": 10780,
+        "bloons": [
+            { "id": "ZebraRegrow", "amount": 57 },
+            { "id": "LeadFortified", "amount": 8 },
+            { "id": "MOAB", "amount": 15 }
+        ]
+    },
+    {
+        "round": 62,
+        "rbe": 13748,
+        "bloons": [
+            { "id": "Purple", "amount": 250 },
+            { "id": "LeadRegrowFortifiedCamo", "amount": 15 },
+            { "id": "MOABFortified", "amount": 5 },
+            { "id": "BFB", "amount": 2 }
+        ]
+    },
+    {
+        "round": 63,
+        "rbe": 14820,
+        "bloons": [
+            { "id": "Ceramic", "amount": 40 },
+            { "id": "CeramicFortified", "amount": 30 },
+            { "id": "CeramicCamo", "amount": 40 },
+            { "id": "MOAB", "amount": 5 }
+        ]
+    },
+    {
+        "round": 64,
+        "rbe": 11464,
+        "bloons": [
+            { "id": "MOABFortified", "amount": 6 },
+            { "id": "BFB", "amount": 2 }
+        ]
+    },
+    {
+        "round": 65,
+        "rbe": 21050,
+        "bloons": [
+            { "id": "Rainbow", "amount": 70 },
+            { "id": "CeramicFortified", "amount": 50 },
+            { "id": "MOABFortified", "amount": 3 },
+            { "id": "BFB", "amount": 3 }
+        ]
+    },
+    {
+        "round": 66,
+        "rbe": 13188,
+        "bloons": [
+            { "id": "MOAB", "amount": 6 },
+            { "id": "BFB", "amount": 3 }
+        ]
+    },
+    {
+        "round": 67,
+        "rbe": 9400,
+        "bloons": [
+            { "id": "CeramicRegrowFortifiedCamo", "amount": 20 },
+            { "id": "MOAB", "amount": 6 },
+            { "id": "MOABFortified", "amount": 4 }
+        ]
+    },
+    {
+        "round": 68,
+        "rbe": 7288,
+        "bloons": [
+            { "id": "MOAB", "amount": 4 },
+            { "id": "BFBFortified", "amount": 1 }
+        ]
+    },
+    {
+        "round": 69,
+        "rbe": 6080,
+        "bloons": [
+            { "id": "BlackRegrowCamo", "amount": 40 },
+            { "id": "PurpleRegrowCamo", "amount": 40 },
+            { "id": "CeramicCamo", "amount": 50 }
+        ]
+    },
+    {
+        "round": 70,
+        "rbe": 14536,
+        "bloons": [
+            { "id": "Rainbow", "amount": 200 },
+            { "id": "MOABFortified", "amount": 6 }
+        ]
+    },
+    {
+        "round": 71,
+        "rbe": 11980,
+        "bloons": [
+            { "id": "CeramicRegrowFortified", "amount": 30 },
+            { "id": "MOABFortified", "amount": 10 }
+        ]
+    },
+    {
+        "round": 72,
+        "rbe": 12320,
+        "bloons": [
+            { "id": "CeramicFortified", "amount": 38 },
+            { "id": "BFB", "amount": 1 },
+            { "id": "BFBFortified", "amount": 1 }
+        ]
+    },
+    {
+        "round": 73,
+        "rbe": 16496,
+        "bloons": [
+            { "id": "MOABFortified", "amount": 8 },
+            { "id": "BFBFortified", "amount": 2 }
+        ]
+    },
+    {
+        "round": 74,
+        "rbe": 8774,
+        "bloons": [
+            { "id": "BlackRegrowCamo", "amount": 100 },
+            { "id": "CeramicRegrowFortifiedCamo", "amount": 25 },
+            { "id": "BFBFortified", "amount": 1 }
+        ]
+    },
+    {
+        "round": 75,
+        "rbe": 33570,
+        "bloons": [
+            { "id": "Lead", "amount": 50 },
+            { "id": "LeadFortified", "amount": 14 },
+            { "id": "MOABFortified", "amount": 4 },
+            { "id": "BFB", "amount": 4 },
+            { "id": "BFBFortified", "amount": 4 }
+        ]
+    },
+    {
+        "round": 76,
+        "rbe": 31640,
+        "bloons": [{ "id": "BFB", "amount": 10 }]
+    },
+    {
+        "round": 77,
+        "rbe": 33536,
+        "bloons": [
+            { "id": "MOABFortified", "amount": 11 },
+            { "id": "BFBFortified", "amount": 5 }
+        ]
+    },
+    {
+        "round": 78,
+        "rbe": 23482,
+        "bloons": [
+            { "id": "Purple", "amount": 80 },
+            { "id": "Zebra", "amount": 150 },
+            { "id": "CeramicFortified", "amount": 60 },
+            { "id": "CeramicCamo", "amount": 72 },
+            { "id": "BFBFortified", "amount": 1 }
+        ]
+    },
+    {
+        "round": 79,
+        "rbe": 59452,
+        "bloons": [
+            { "id": "RainbowCamo", "amount": 500 },
+            { "id": "BFBFortified", "amount": 4 },
+            { "id": "ZOMG", "amount": 1 }
+        ]
+    },
+    {
+        "round": 80,
+        "rbe": 33312,
+        "bloons": [{ "id": "ZOMG", "amount": 2 }]
+    },
+    {
+        "round": 81,
+        "rbe": 57670,
+        "bloons": [
+            { "id": "BFB", "amount": 15 },
+            { "id": "MOABFortified", "amount": 20 }
+        ]
+    },
+    {
+        "round": 82,
+        "rbe": 95816,
+        "bloons": [
+            { "id": "BFB", "amount": 15 },
+            { "id": "BFBFortified", "amount": 8 },
+            { "id": "ZOMG", "amount": 1 }
+        ]
+    },
+    {
+        "round": 83,
+        "rbe": 29280,
+        "bloons": [
+            { "id": "Ceramic", "amount": 40 },
+            { "id": "CeramicRegrow", "amount": 40 },
+            { "id": "CeramicFortified", "amount": 40 },
+            { "id": "MOABFortified", "amount": 20 }
+        ]
+    },
+    {
+        "round": 84,
+        "rbe": 103720,
+        "bloons": [
+            { "id": "MOAB", "amount": 50 },
+            { "id": "BFBFortified", "amount": 15 }
+        ]
+    },
+    {
+        "round": 85,
+        "rbe": 46056,
+        "bloons": [{ "id": "ZOMG", "amount": 3 }]
+    },
+    {
+        "round": 86,
+        "rbe": 43264,
+        "bloons": [{ "id": "BFBFortified", "amount": 8 }]
+    },
+    {
+        "round": 87,
+        "rbe": 78760,
+        "bloons": [{ "id": "ZOMG", "amount": 5 }]
+    },
+    {
+        "round": 88,
+        "rbe": 50784,
+        "bloons": [
+            { "id": "MOABFortified", "amount": 15 },
+            { "id": "BFB", "amount": 12 },
+            { "id": "DDT", "amount": 3 }
+        ]
+    },
+    {
+        "round": 89,
+        "rbe": 81768,
+        "bloons": [
+            { "id": "MOABFortified", "amount": 15 },
+            { "id": "BFBFortified", "amount": 12 }
+        ]
+    },
+    {
+        "round": 90,
+        "rbe": 9408,
+        "bloons": [
+            { "id": "CeramicRegrowFortifiedCamo", "amount": 50 },
+            { "id": "DDT", "amount": 4 }
+        ]
+    },
+    {
+        "round": 91,
+        "rbe": 98420,
+        "bloons": [
+            { "id": "CeramicFortified", "amount": 100 },
+            { "id": "BFBFortified", "amount": 15 }
+        ]
+    },
+    {
+        "round": 92,
+        "rbe": 120480,
+        "bloons": [
+            { "id": "MOABFortified", "amount": 50 },
+            { "id": "DDT", "amount": 4 },
+            { "id": "ZOMG", "amount": 4 }
+        ]
+    },
+    {
+        "round": 93,
+        "rbe": 109716,
+        "bloons": [
+            { "id": "BFBFortified", "amount": 17 },
+            { "id": "DDTFortified", "amount": 7 }
+        ]
+    },
+    {
+        "round": 94,
+        "rbe": 212416,
+        "bloons": [
+            { "id": "BFB", "amount": 25 },
+            { "id": "ZOMG", "amount": 8 }
+        ]
+    },
+    {
+        "round": 95,
+        "rbe": 57720,
+        "bloons": [
+            { "id": "PurpleRegrowCamo", "amount": 500 },
+            { "id": "MOABFortified", "amount": 30 },
+            { "id": "DDT", "amount": 30 }
+        ]
+    },
+    {
+        "round": 96,
+        "rbe": 341988,
+        "bloons": [
+            { "id": "MOABFortified", "amount": 20 },
+            { "id": "BFBFortified", "amount": 20 },
+            { "id": "DDT", "amount": 10 },
+            { "id": "ZOMG", "amount": 11 }
+        ]
+    },
+    {
+        "round": 97,
+        "rbe": 82656,
+        "bloons": [
+            { "id": "DDTFortified", "amount": 8 },
+            { "id": "ZOMGFortified", "amount": 2 }
+        ]
+    },
+    {
+        "round": 98,
+        "rbe": 320032,
+        "bloons": [
+            { "id": "BFBFortified", "amount": 20 },
+            { "id": "ZOMG", "amount": 11 }
+        ]
+    },
+    {
+        "round": 99,
+        "rbe": 97360,
+        "bloons": [
+            { "id": "MOAB", "amount": 30 },
+            { "id": "DDTFortified", "amount": 9 },
+            { "id": "BAD", "amount": 1 }
+        ]
+    },
+    {
+        "round": 100,
+        "rbe": 133280,
+        "bloons": [{ "id": "BADFortified", "amount": 1 }]
+    }
+]

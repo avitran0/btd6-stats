@@ -1,0 +1,161 @@
+{
+    "000": {
+        "size": 7,
+        "costs": {
+            "easy": 275,
+            "medium": 325,
+            "hard": 350,
+            "impoppable": 390
+        }
+    },
+    "100": {
+        "name": "Longer Range",
+        "description": "Increases attack range.",
+        "costs": {
+            "easy": 110,
+            "medium": 130,
+            "hard": 140,
+            "impoppable": 155
+        }
+    },
+    "200": {
+        "name": "Advanced Intel",
+        "description": "Allows long range targeting of Bloons in radius of your other towers.",
+        "costs": {
+            "easy": 425,
+            "medium": 500,
+            "hard": 540,
+            "impoppable": 600
+        }
+    },
+    "300": {
+        "name": "Submerge and Support",
+        "description": "Adds Submerge targeting option that permanently reveals Camo bloons in its radius but does not attack while submerged.",
+        "costs": {
+            "easy": 425,
+            "medium": 500,
+            "hard": 540,
+            "impoppable": 600
+        }
+    },
+    "400": {
+        "name": "Bloontonium Reactor",
+        "description": "Submerge to detect Camo, pop Bloons and reduce ability cooldowns of nearby water-based Monkeys by 15%.",
+        "costs": {
+            "easy": 2125,
+            "medium": 2500,
+            "hard": 2700,
+            "impoppable": 3000
+        }
+    },
+    "500": {
+        "name": "Energizer",
+        "description": "Reduces ability cooldowns everywhere by 20%. While in radius, heroes earn XP 50% faster and water Monkey ability cooldowns are halved.",
+        "costs": {
+            "easy": 27200,
+            "medium": 32000,
+            "hard": 34560,
+            "impoppable": 38400
+        }
+    },
+    "010": {
+        "name": "Barbed Darts",
+        "description": "Sub's darts can pop an additional 3 bloons each.",
+        "costs": {
+            "easy": 380,
+            "medium": 450,
+            "hard": 485,
+            "impoppable": 540
+        }
+    },
+    "020": {
+        "name": "Heat-tipped Darts",
+        "description": "Heat tipped darts allow popping of Frozen and Lead Bloons.",
+        "costs": {
+            "easy": 255,
+            "medium": 300,
+            "hard": 325,
+            "impoppable": 360
+        }
+    },
+    "030": {
+        "name": "Ballistic Missile",
+        "description": "Missile seeks target within range and does extra MOAB and Ceramic damage.",
+        "costs": {
+            "easy": 1190,
+            "medium": 1400,
+            "hard": 1510,
+            "impoppable": 1680
+        }
+    },
+    "040": {
+        "name": "First Strike Capability",
+        "description": "First Strike Ability: A devastating missile strike targeting the largest bloon on screen, plus splash damage.",
+        "costs": {
+            "easy": 11050,
+            "medium": 13000,
+            "hard": 14040,
+            "impoppable": 15600
+        }
+    },
+    "050": {
+        "name": "Pre-emptive Strike",
+        "description": "Automatically triggers a powerful missile attack whenever MOAB-Class Bloon spawns from the Bloon entrance.",
+        "costs": {
+            "easy": 27200,
+            "medium": 32000,
+            "hard": 34560,
+            "impoppable": 38400
+        }
+    },
+    "001": {
+        "name": "Twin Guns",
+        "description": "Added twin gun doubles attack speed. Enhances Ballistic Missile and Bloontonium Reactor.",
+        "costs": {
+            "easy": 380,
+            "medium": 450,
+            "hard": 485,
+            "impoppable": 540
+        }
+    },
+    "002": {
+        "name": "Airburst Darts",
+        "description": "Airburst darts split into 3 on impact for massively increased popping power. Further enhances Bloontonium Reactor.",
+        "costs": {
+            "easy": 850,
+            "medium": 1000,
+            "hard": 1080,
+            "impoppable": 1200
+        }
+    },
+    "003": {
+        "name": "Triple Guns",
+        "description": "Adds a third gun for even faster firing.",
+        "costs": {
+            "easy": 935,
+            "medium": 1100,
+            "hard": 1190,
+            "impoppable": 1320
+        }
+    },
+    "004": {
+        "name": "Armor Piercing Darts",
+        "description": "Special AP darts gain increased damage and popping power, plus additional damage to MOAB class Bloons.",
+        "costs": {
+            "easy": 2550,
+            "medium": 3000,
+            "hard": 3240,
+            "impoppable": 3600
+        }
+    },
+    "005": {
+        "name": "Sub Commander",
+        "description": "Adds extra pierce and damage to Commander and all Subs in its radius.",
+        "costs": {
+            "easy": 21250,
+            "medium": 25000,
+            "hard": 27000,
+            "impoppable": 30000
+        }
+    }
+}

@@ -1,0 +1,171 @@
+{
+    "000": {
+        "size": 6,
+        "costs": {
+            "easy": 170,
+            "medium": 200,
+            "hard": 215,
+            "impoppable": 240
+        }
+    },
+    "100": {
+        "name": "Sharp Shots",
+        "description": "Can pop 1 extra Bloon per shot.",
+        "costs": {
+            "easy": 120,
+            "medium": 140,
+            "hard": 150,
+            "impoppable": 170
+        }
+    },
+    "200": {
+        "name": "Razor Sharp Shots",
+        "description": "Can pop 2 more bloons per shot.",
+        "costs": {
+            "easy": 185,
+            "medium": 220,
+            "hard": 235,
+            "impoppable": 265
+        }
+    },
+    "300": {
+        "name": "Spike-O-Pult",
+        "description": "Converts the Dart Monkey into a Spike-o-pult that hurls a large spiked ball instead of darts. Good range, but slower attack speed. Each ball can pop lots of Bloons and rebounds off obstacles.",
+        "costs": {
+            "easy": 255,
+            "medium": 300,
+            "hard": 325,
+            "impoppable": 360
+        }
+    },
+    "400": {
+        "name": "Juggernaut",
+        "description": "Hurls a giant spiked ball that pops lead and excels at crushing Ceramic Bloons.",
+        "costs": {
+            "easy": 1530,
+            "medium": 1800,
+            "hard": 1945,
+            "impoppable": 2160
+        }
+    },
+    "500": {
+        "name": "Ultra Juggernaut",
+        "description": "Gigantic spiked ball splits twice into 6 Juggernaut balls for even more destructive power.",
+        "costs": {
+            "easy": 12750,
+            "medium": 15000,
+            "hard": 16200,
+            "impoppable": 18000
+        }
+    },
+    "010": {
+        "name": "Quick Shots",
+        "description": "Shoots 15% faster.",
+        "costs": {
+            "easy": 85,
+            "medium": 100,
+            "hard": 110,
+            "impoppable": 120
+        }
+    },
+    "020": {
+        "name": "Very Quick Shots",
+        "description": "Shoots 33% faster!",
+        "costs": {
+            "easy": 160,
+            "medium": 190,
+            "hard": 205,
+            "impoppable": 230
+        }
+    },
+    "030": {
+        "name": "Triple Shot",
+        "description": "Throws 3 darts at a time instead of 1.",
+        "costs": {
+            "easy": 340,
+            "medium": 400,
+            "hard": 430,
+            "impoppable": 480
+        }
+    },
+    "040": {
+        "name": "Super Monkey Fan Club",
+        "description": "Super Monkey Fan Club Ability: Converts up to 10 nearby Dart Monkeys including himself into Super Monkeys for 15 seconds. Regular attack speed also increased.",
+        "costs": {
+            "easy": 6800,
+            "medium": 8000,
+            "hard": 8640,
+            "impoppable": 9600
+        }
+    },
+    "050": {
+        "name": "Plasma Monkey Fan Club",
+        "description": "Elite membership of this club grants the Dart Monkeys even more power.",
+        "costs": {
+            "easy": 38250,
+            "medium": 45000,
+            "hard": 48600,
+            "impoppable": 54000
+        }
+    },
+    "001": {
+        "name": "Long Range Darts",
+        "description": "Makes the Dart Monkey shoot further than normal.",
+        "costs": {
+            "easy": 75,
+            "medium": 90,
+            "hard": 95,
+            "impoppable": 110
+        }
+    },
+    "002": {
+        "name": "Enhanced Eyesight",
+        "description": "Shoots even further and can detect Camo bloons.",
+        "costs": {
+            "easy": 170,
+            "medium": 200,
+            "hard": 215,
+            "impoppable": 240
+        }
+    },
+    "003": {
+        "name": "Crossbow",
+        "description": "Uses a long range Crossbow that can pop 3 layers of Bloon for every hit.",
+        "costs": {
+            "easy": 530,
+            "medium": 625,
+            "hard": 675,
+            "impoppable": 750
+        }
+    },
+    "004": {
+        "name": "Sharp Shooter",
+        "description": "Sharp Shooter attacks faster and does powerful Crit shots every few shots that do a lot more damage.",
+        "costs": {
+            "easy": 1700,
+            "medium": 2000,
+            "hard": 2160,
+            "impoppable": 2400
+        }
+    },
+    "005": {
+        "name": "Crossbow Master",
+        "description": "Crossbow Master shoots really fast and devastates most Bloon types with ease.",
+        "costs": {
+            "easy": 19975,
+            "medium": 23500,
+            "hard": 25380,
+            "impoppable": 28200
+        }
+    },
+    "600": {
+        "name": "Apex Plasma Master",
+        "description": "Fill the area with Bloon shredding plasma juggernaut balls, leaving nothing behind...",
+        "costs": {
+            "easy": 297500,
+            "medium": 350000,
+            "hard": 378000,
+            "impoppable": 420000
+        }
+    }
+}

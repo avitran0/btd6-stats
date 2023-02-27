@@ -1,0 +1,539 @@
+{
+	"000": {
+		"attacks": [
+			{
+				"name": "Boomerang",
+				"damage": 1,
+				"damageMOAB": 1,
+				"damageCeramic": 1,
+				"damageBoss": 1,
+				"pierce": 4,
+				"projectiles": 1,
+				"range": 43,
+				"reloadSpeed": 1.2,
+				"damageType": "sharp",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"001": {
+		"attacks": [
+			{
+				"name": "Boomerang",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 6.5,
+				"reloadSpeed": 1,
+				"damageType": "sharp",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"002": {
+		"attacks": [
+			{
+				"name": "Boomerang",
+				"damage": 1,
+				"damageMOAB": 1,
+				"damageCeramic": 1,
+				"damageBoss": 1,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"003": {
+		"attacks": [
+			{
+				"name": "Kylie",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 14,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"004": {
+		"attacks": [
+			{
+				"name": "Kylie",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 14,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			},
+			{
+				"name": "Press",
+				"damage": 1,
+				"damageMOAB": 4,
+				"damageCeramic": 1,
+				"damageBoss": 1,
+				"pierce": 182,
+				"projectiles": 1,
+				"range": 49.5,
+				"reloadSpeed": 10,
+				"damageType": "normal",
+				"camo": false,
+				"crosspath": [
+					{
+						"path": "104",
+						"damage": 0,
+						"damageMOAB": 0,
+						"damageCeramic": 0,
+						"damageBoss": 0,
+						"pierce": 100,
+						"projectiles": 0,
+						"range": 0,
+						"reloadSpeed": 1,
+						"damageType": "normal",
+						"camo": false
+					},
+					{
+						"path": "204",
+						"damage": 0,
+						"damageMOAB": 0,
+						"damageCeramic": 0,
+						"damageBoss": 0,
+						"pierce": 220,
+						"projectiles": 0,
+						"range": 0,
+						"reloadSpeed": 1,
+						"damageType": "normal",
+						"camo": false
+					},
+					{
+						"path": "014",
+						"damage": 0,
+						"damageMOAB": 0,
+						"damageCeramic": 0,
+						"damageBoss": 0,
+						"pierce": 0,
+						"projectiles": 0,
+						"range": 0,
+						"reloadSpeed": 0.75,
+						"damageType": "normal",
+						"camo": false
+					},
+					{
+						"path": "024",
+						"damage": 0,
+						"damageMOAB": 0,
+						"damageCeramic": 0,
+						"damageBoss": 0,
+						"pierce": 0,
+						"projectiles": 0,
+						"range": 0,
+						"reloadSpeed": 0.5625,
+						"damageType": "normal",
+						"camo": false
+					}
+				]
+			}
+		],
+		"ability": {}
+	},
+	"005": {
+		"attacks": [
+			{
+				"name": "Kylie",
+				"damage": 10,
+				"damageMOAB": 10,
+				"damageCeramic": 10,
+				"damageBoss": 10,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 0.5,
+				"damageType": "normal",
+				"camo": false
+			},
+			{
+				"name": "Press",
+				"damage": 0,
+				"damageMOAB": 20,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 100,
+				"projectiles": 0,
+				"range": 50.5,
+				"reloadSpeed": 0.5,
+				"damageType": "normal",
+				"camo": false,
+				"crosspath": [
+					{
+						"path": "205",
+						"damage": 0,
+						"damageMOAB": 0,
+						"damageCeramic": 0,
+						"damageBoss": 0,
+						"pierce": 0,
+						"projectiles": 0,
+						"range": 0,
+						"reloadSpeed": 0.875,
+						"damageType": "sharp",
+						"camo": false
+					}
+				]
+			},
+			{
+				"name": "Explosion",
+				"damage": 100,
+				"damageMOAB": 100,
+				"damageCeramic": 100,
+				"damageBoss": 100,
+				"pierce": 40,
+				"projectiles": 1,
+				"range": 50,
+				"reloadSpeed": "Infinity",
+				"damageType": "normal",
+				"camo": false,
+				"crosspath": [
+					{
+						"path": "205",
+						"damage": 0,
+						"damageMOAB": 0,
+						"damageCeramic": 0,
+						"damageBoss": 0,
+						"pierce": -10,
+						"projectiles": 0,
+						"range": 25,
+						"reloadSpeed": 1,
+						"damageType": "normal",
+						"camo": false
+					}
+				]
+			}
+		],
+		"ability": {}
+	},
+	"010": {
+		"attacks": [
+			{
+				"name": "Boomerang",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 0.75,
+				"damageType": "sharp",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"020": {
+		"attacks": [
+			{
+				"name": "Boomerang",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 0.75,
+				"damageType": "sharp",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"030": {
+		"attacks": [
+			{
+				"name": "Boomerang",
+				"damage": 0,
+				"damageMOAB": 2,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0.353,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "sharp",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"040": {
+		"attacks": [
+			{
+				"name": "Boomerang",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "sharp",
+				"camo": false
+			}
+		],
+		"ability": {
+			"name": "Turbocharge",
+			"damage": 2,
+			"damageMOAB": 4,
+			"damageCeramic": 2,
+			"damageBoss": 2,
+			"pierce": 4,
+			"projectiles": 1,
+			"range": 43,
+			"reloadSpeed": 0.034,
+			"damageType": "sharp",
+			"camo": false,
+			"duration": 10,
+			"cooldown": 45
+		}
+	},
+	"050": {
+		"attacks": [
+			{
+				"name": "Boomerang",
+				"damage": 3,
+				"damageMOAB": 2,
+				"damageCeramic": 3,
+				"damageBoss": 3,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 0.05,
+				"damageType": "sharp",
+				"camo": false
+			}
+		],
+		"ability": {
+			"name": "Turbocharge",
+			"damage": 10,
+			"damageMOAB": 12,
+			"damageCeramic": 10,
+			"damageBoss": 10,
+			"pierce": 4,
+			"projectiles": 1,
+			"range": 43,
+			"reloadSpeed": 0.034,
+			"damageType": "sharp",
+			"camo": false,
+			"duration": 15,
+			"cooldown": 40
+		}
+	},
+	"100": {
+		"attacks": [
+			{
+				"name": "Boomerang",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 4,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "sharp",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"200": {
+		"attacks": [
+			{
+				"name": "Boomerang",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 5,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "sharp",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"300": {
+		"attacks": [
+			{
+				"name": "Glaive",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 37,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "shatter",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"400": {
+		"attacks": [
+			{
+				"name": "Glaive",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 50,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 0.5,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"500": {
+		"attacks": [
+			{
+				"name": "Glaive",
+				"damage": 7,
+				"damageMOAB": 7,
+				"damageCeramic": 7,
+				"damageBoss": 7,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 0.875,
+				"damageType": "normal",
+				"camo": false
+			},
+			{
+				"name": "Orbital Glaive",
+				"damage": 2,
+				"damageMOAB": 5,
+				"damageCeramic": 5,
+				"damageBoss": 2,
+				"pierce": 100,
+				"projectiles": 6,
+				"range": "Infinity",
+				"reloadSpeed": "Infinity",
+				"damageType": "normal",
+				"camo": true,
+				"crosspath": [
+					{
+						"path": "501",
+						"damage": 0,
+						"damageMOAB": 0,
+						"damageCeramic": 0,
+						"damageBoss": 0,
+						"pierce": 0,
+						"projectiles": 0,
+						"range": 4.5,
+						"reloadSpeed": 1,
+						"damageType": "sharp",
+						"camo": true
+					},
+					{
+						"path": "502",
+						"damage": 1,
+						"damageMOAB": 1,
+						"damageCeramic": 1,
+						"damageBoss": 1,
+						"pierce": 10,
+						"projectiles": 0,
+						"range": 4.5,
+						"reloadSpeed": 1,
+						"damageType": "normal",
+						"camo": true
+					}
+				]
+			}
+		],
+		"ability": {}
+	},
+	"600": {
+		"attacks": [
+			{
+				"name": "Glaive",
+				"damage": 20,
+				"damageMOAB": 20,
+				"damageCeramic": 20,
+				"damageBoss": 60,
+				"pierce": 100,
+				"projectiles": 1,
+				"range": 75,
+				"reloadSpeed": 0.04,
+				"damageType": "normal",
+				"camo": true
+			},
+			{
+				"name": "Orbital Glaive",
+				"damage": 42,
+				"damageMOAB": 20,
+				"damageCeramic": 20,
+				"damageBoss": 160,
+				"pierce": 1000,
+				"projectiles": 1,
+				"range": 60,
+				"reloadSpeed": "Infinity",
+				"damageType": "normal",
+				"camo": true
+			},
+			{
+				"name": "Press",
+				"damage": 1,
+				"damageMOAB": 19,
+				"damageCeramic": 1,
+				"damageBoss": 1,
+				"pierce": 300,
+				"projectiles": 1,
+				"range": 100,
+				"reloadSpeed": 2.5,
+				"damageType": "normal",
+				"camo": true
+			},
+			{
+				"name": "Explosion",
+				"damage": 2500,
+				"damageMOAB": 2500,
+				"damageCeramic": 2500,
+				"damageBoss": 5000,
+				"pierce": 20,
+				"projectiles": 1,
+				"range": 50,
+				"reloadSpeed": "Infinity",
+				"damageType": "normal",
+				"camo": true
+			}
+		],
+		"ability": {}
+	}
+}

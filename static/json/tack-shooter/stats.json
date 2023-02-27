@@ -1,0 +1,428 @@
+{
+    "000": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 1,
+                "projectiles": 8,
+                "range": 23,
+                "reloadSpeed": 1.4,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "001": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 2,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "002": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 2,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": true
+            }
+        ],
+        "ability": {}
+    },
+    "003": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 4,
+                "range": 0,
+                "reloadSpeed": 0.75,
+                "damageType": "sharp",
+                "camo": true
+            }
+        ],
+        "ability": {}
+    },
+    "004": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 1,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.3333,
+                "damageType": "sharp",
+                "camo": true
+            }
+        ],
+        "ability": {}
+    },
+    "005": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 2,
+                "projectiles": 16,
+                "range": 7,
+                "reloadSpeed": 0.75,
+                "damageType": "sharp",
+                "camo": true,
+                "crosspath": [
+                    {
+                        "path": "025",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 6,
+                        "projectiles": 0,
+                        "range": 16,
+                        "reloadSpeed": 1,
+                        "damageType": "sharp",
+                        "camo": false
+                    }
+                ]
+            }
+        ],
+        "ability": {}
+    },
+    "010": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 4,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "020": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 1,
+                "projectiles": 0,
+                "range": 4,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "030": {
+        "attacks": [
+            {
+                "name": "Blade",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 4,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.85,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "040": {
+        "attacks": [
+            {
+                "name": "Blade",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {
+            "name": "Maelstrom",
+            "damage": 1,
+            "damageMOAB": 1,
+            "damageCeramic": 1,
+            "damageBoss": 1,
+            "pierce": 200,
+            "projectiles": 2,
+            "range": "Infinity",
+            "reloadSpeed": 0.03333,
+            "damageType": "sharp",
+            "camo": false,
+            "duration": 3,
+            "cooldown": 20
+        }
+    },
+    "050": {
+        "attacks": [
+            {
+                "name": "Blade",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "normal",
+                "camo": false
+            }
+        ],
+        "ability": {
+            "name": "Super Maelstrom",
+            "damage": 2,
+            "damageMOAB": 2,
+            "damageCeramic": 2,
+            "damageBoss": 2,
+            "pierce": 500,
+            "projectiles": 4,
+            "range": "Infinity",
+            "reloadSpeed": 0.03333,
+            "damageType": "normal",
+            "camo": false,
+            "duration": 9,
+            "cooldown": 20
+        }
+    },
+    "100": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.75,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "200": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 0,
+                "damageMOAB": 0,
+                "damageCeramic": 0,
+                "damageBoss": 0,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.6,
+                "damageType": "sharp",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "300": {
+        "attacks": [
+            {
+                "name": "Tack",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 1,
+                "damageType": "normal",
+                "camo": false
+            }
+        ],
+        "ability": {}
+    },
+    "400": {
+        "attacks": [
+            {
+                "name": "Ring of Fire",
+                "damage": 1,
+                "damageMOAB": 1,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 59,
+                "projectiles": 0,
+                "range": 0,
+                "reloadSpeed": 0.75,
+                "damageType": "fire",
+                "camo": false,
+                "crosspath": [
+                    {
+                        "path": "410",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 10,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "fire",
+                        "camo": false
+                    },
+                    {
+                        "path": "420",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 20,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "fire",
+                        "camo": false
+                    },
+                    {
+                        "path": "401",
+                        "damage": 1,
+                        "damageMOAB": 1,
+                        "damageCeramic": 1,
+                        "damageBoss": 1,
+                        "pierce": 0,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "fire",
+                        "camo": false
+                    },
+                    {
+                        "path": "401",
+                        "damage": 2,
+                        "damageMOAB": 2,
+                        "damageCeramic": 2,
+                        "damageBoss": 2,
+                        "pierce": 0,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "fire",
+                        "camo": false
+                    }
+                ]
+            }
+        ],
+        "ability": {}
+    },
+    "500": {
+        "attacks": [
+            {
+                "name": "Ring of Fire",
+                "damage": 1,
+                "damageMOAB": 6,
+                "damageCeramic": 1,
+                "damageBoss": 1,
+                "pierce": 0,
+                "projectiles": 0,
+                "range": 11.5,
+                "reloadSpeed": 0.212,
+                "damageType": "fire",
+                "camo": false
+            },
+            {
+                "name": "Meteor",
+                "damage": 750,
+                "damageMOAB": 750,
+                "damageCeramic": 750,
+                "damageBoss": 750,
+                "pierce": 1,
+                "projectiles": 6,
+                "range": "Infinity",
+                "reloadSpeed": 4,
+                "damageType": "fire",
+                "camo": false,
+                "crosspath": [
+                    {
+                        "path": "520",
+                        "damage": 0,
+                        "damageMOAB": 0,
+                        "damageCeramic": 0,
+                        "damageBoss": 0,
+                        "pierce": 1,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "fire",
+                        "camo": false
+                    },
+                    {
+                        "path": "502",
+                        "damage": 300,
+                        "damageMOAB": 300,
+                        "damageCeramic": 300,
+                        "damageBoss": 300,
+                        "pierce": 0,
+                        "projectiles": 0,
+                        "range": 0,
+                        "reloadSpeed": 1,
+                        "damageType": "fire",
+                        "camo": false
+                    }
+                ]
+            }
+        ],
+        "ability": {}
+    }
+}
