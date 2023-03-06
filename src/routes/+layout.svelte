@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fade, draw } from 'svelte/transition';
+	import { cubicOut } from 'svelte/easing';
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 	import { page } from '$app/stores';
@@ -122,27 +124,43 @@
 				stroke-linecap="round"
 				stroke-linejoin="round"
 			>
-				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-				<path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+				{#if $darkMode}
+					<path
+						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						stroke="none"
+						d="M0 0h24v24H0z"
+						fill="none"
+					/>
+					<path
+						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+					/>
+				{:else}
+					<path
+						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						stroke="none"
+						d="M0 0h24v24H0z"
+						fill="none"
+					/>
+					<circle
+						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						cx="12"
+						cy="12"
+						r="4"
+					/>
+					<path
+						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+					/>
+				{/if}
 			</svg>
-			<div id="slider"><div /></div>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="48"
-				height="48"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			>
-				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-				<circle cx="12" cy="12" r="4" />
-				<path
-					d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
-				/>
-			</svg></button
-		><button on:click={toggleMenu} aria-label="Menu Toggle" id="menu-button">
+		</button>
+		<button on:click={toggleMenu} aria-label="Menu Toggle" id="menu-button">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				class="icon icon-tabler icon-tabler-menu-2"
@@ -481,33 +499,9 @@
 		justify-content: center;
 	}
 
-	#slider {
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		background-color: var(--white);
-		width: 2rem;
-		height: 1rem;
-		border-radius: 0.5rem;
-		margin: 0 0.2rem;
-	}
-
-	:global(.light) #slider {
-		background-color: var(--background);
-	}
-
-	#slider div {
-		width: 0.8rem;
-		height: 0.8rem;
-		background-color: var(--background);
-		border-radius: 0.4rem;
-		margin: 0.1rem;
-		transition: var(--transition-linear);
-	}
-
-	:global(.light) #slider div {
-		background-color: var(--white);
-		margin-left: 1.1rem;
+	#dark-mode-button svg {
+		grid-column: 1;
+		grid-row: 1;
 	}
 
 	#slot-container {
