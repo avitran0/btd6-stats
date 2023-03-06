@@ -124,7 +124,7 @@
 				stroke-linecap="round"
 				stroke-linejoin="round"
 			>
-				{#if $darkMode}
+				{#if $darkMode === 'true'}
 					<path
 						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
@@ -500,6 +500,8 @@
 	}
 
 	#dark-mode-button svg {
+		width: 1.2rem;
+		padding: 0.2rem;
 		grid-column: 1;
 		grid-row: 1;
 	}
