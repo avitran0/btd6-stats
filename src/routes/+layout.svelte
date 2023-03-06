@@ -410,8 +410,8 @@
 	}
 
 	#dark-mode-button svg {
-		width: 1.2rem;
-		height: 1.2rem;
+		width: 1.8rem;
+		height: 1.8rem;
 	}
 
 	.buttons {
