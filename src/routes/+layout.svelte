@@ -126,36 +126,57 @@
 			>
 				{#if $darkMode === 'true'}
 					<path
-						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						stroke="none"
-						d="M0 0h24v24H0z"
-						fill="none"
-					/>
-					<path
-						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
+						in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
 						d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
 					/>
 				{:else}
-					<path
-						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						stroke="none"
-						d="M0 0h24v24H0z"
-						fill="none"
-					/>
 					<circle
-						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
+						in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
 						cx="12"
 						cy="12"
 						r="4"
 					/>
 					<path
-						in:draw={{ duration: 300, delay: 100, easing: cubicOut }}
+						in:draw={{ duration: 100, delay: 100, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
-						d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+						d="M20 12h1"
+					/>
+					<path
+						in:draw={{ duration: 100, delay: 150, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						d="M17.7 17.7l.7.7"
+					/>
+					<path
+						in:draw={{ duration: 100, delay: 200, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						d="M12 20v1"
+					/>
+					<path
+						in:draw={{ duration: 100, delay: 250, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						d="M6.3 17.7l-.7.7"
+					/>
+					<path
+						in:draw={{ duration: 100, delay: 300, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						d="M4 12h-1"
+					/>
+					<path
+						in:draw={{ duration: 100, delay: 350, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						d="M6.3 6.3l-.7-.7"
+					/>
+					<path
+						in:draw={{ duration: 100, delay: 400, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						d="M12 4v-1"
+					/>
+					<path
+						in:draw={{ duration: 100, delay: 450, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						d="M17.7 6.3l.7-.7"
 					/>
 				{/if}
 			</svg>
