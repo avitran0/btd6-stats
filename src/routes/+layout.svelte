@@ -5,24 +5,22 @@
 	import { writable } from 'svelte/store';
 	import { page } from '$app/stores';
 
-	const darkMode = writable('true');
+	const theme = writable('dark');
 
 	let menuOpen = false;
 	let menu: HTMLElement;
 	let pageMounted = false;
 
 	onMount(() => {
-		if (localStorage.getItem('darkMode') !== 'false') {
-			darkMode.set('true');
-		} else {
-			darkMode.set('false');
+		if (localStorage.getItem('theme') === 'light') {
+			theme.set('light');
 		}
 
-		darkMode.subscribe((value) => {
-			localStorage.setItem('darkMode', value);
+		theme.subscribe((value) => {
+			localStorage.setItem('theme', value);
 		});
 
-		if (!$darkMode) {
+		if ($theme === 'light') {
 			document.body.classList.add('light');
 		}
 
@@ -32,8 +30,8 @@
 
 	function toggleDarkMode() {
 		document.body.classList.toggle('light');
-		darkMode.update((value) => {
-			return value === 'true' ? 'false' : 'true';
+		theme.update((value) => {
+			return value === 'dark' ? 'light' : 'dark';
 		});
 	}
 
@@ -124,7 +122,7 @@
 				stroke-linecap="round"
 				stroke-linejoin="round"
 			>
-				{#if $darkMode === 'true'}
+				{#if $theme === 'dark'}
 					<path
 						in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
