@@ -69,8 +69,8 @@
 	}
 
 	a {
-		color: var(--white);
-		transition: var(--transition-linear);
+		color: var(--ctp-macchiato-text);
+		transition: var(--transition);
 		text-decoration: none;
 		display: flex;
 		flex-direction: column;
@@ -80,7 +80,7 @@
 	}
 
 	:global(.light) a {
-		color: var(--background);
+		color: var(--ctp-latte-text);
 	}
 
 	img {
@@ -89,14 +89,14 @@
 		object-fit: cover;
 		padding: 0.5rem;
 		border-radius: 0.5rem;
-		border: 2px solid var(--white);
-		transition: var(--transition-linear);
+		border: 2px solid var(--ctp-macchiato-text);
+		transition: var(--transition);
 		min-width: 5rem;
 		min-height: 5rem;
 	}
 
 	:global(.light) img {
-		border: 2px solid var(--background);
+		border: 2px solid var(--ctp-latte-text);
 	}
 
 	h3 {
@@ -107,19 +107,22 @@
 	h3::after {
 		content: '';
 		display: block;
-		width: 100%;
+		width: 0;
 		height: 2px;
-		background-color: var(--white);
-		transition: var(--transition-linear);
-		transform: scaleX(0);
+		background-color: var(--ctp-macchiato-text);
+		transition: var(--transition);
 	}
 
 	:global(.light) h3::after {
-		background-color: var(--background);
+		background-color: var(--ctp-latte-text);
 	}
 
 	a:hover h3::after {
-		transform: scaleX(1);
+		width: 100%;
+	}
+
+	:global(.light) img {
+		filter: drop-shadow(0 0 0.1rem var(--ctp-latte-text));
 	}
 
 	@media (min-width: 64rem) {

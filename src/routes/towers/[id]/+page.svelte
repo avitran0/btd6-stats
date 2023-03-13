@@ -281,7 +281,7 @@
 
 	function addCrosspath(statsToEdit: Stats, statsToAdd: Stats) {
 		for (let i = 0; i < statsToAdd.attacks.length; i++) {
-			if (statsToAdd.attacks[i].crosspath === null) return statsToEdit;
+			if (statsToAdd.attacks[i].crosspath === undefined) return statsToEdit;
 			for (let j = 0; j < statsToAdd.attacks[i].crosspath!.length; j++) {
 				if (statsToAdd.attacks[i].crosspath![j].path !== pathString) return statsToEdit;
 
@@ -371,6 +371,7 @@
 				}
 			}
 		}
+
 		return tempBloonList;
 	}
 </script>
@@ -679,12 +680,12 @@
 			</div>
 		{:catch error}
 			<main in:fade={{ duration: 300, delay: 300, easing: cubicOut }}>
-				<h1>Failed to load stats</h1>
+				<h1>Failed to load stats1</h1>
 			</main>
 		{/await}
 	{:catch error}
 		<main in:fade={{ duration: 300, delay: 300, easing: cubicOut }}>
-			<h1>Failed to load stats</h1>
+			<h1>Failed to load stats2</h1>
 		</main>
 	{/await}
 	{#if data.images}
@@ -912,47 +913,47 @@
 
 	table {
 		text-align: center;
-		border: 2px solid var(--white);
-		transition: var(--transition-linear);
+		border: 2px solid var(--ctp-macchiato-text);
+		transition: var(--transition);
 		border-radius: 0.5rem;
 		cursor: default;
 		border-spacing: 0;
 	}
 
 	:global(.light) table {
-		border: 2px solid var(--background);
+		border: 2px solid var(--ctp-latte-text);
 	}
 
 	th {
-		font-family: 'ZillaSlab', serif;
+		font-family: 'Heading', serif;
 		font-size: 1.2rem;
-		border-bottom: 1px solid var(--white);
-		transition: var(--transition-linear);
+		border-bottom: 1px solid var(--ctp-macchiato-text);
+		transition: var(--transition);
 	}
 
 	:global(.light) th {
-		border-bottom: 1px solid var(--background);
+		border-bottom: 1px solid var(--ctp-latte-text);
 	}
 
 	.bottom-th {
 		border-bottom: none;
-		border-top: 1px solid var(--white);
+		border-top: 1px solid var(--ctp-macchiato-text);
 	}
 
 	:global(.light) .bottom-th {
 		border-bottom: none;
-		border-top: 1px solid var(--background);
+		border-top: 1px solid var(--ctp-latte-text);
 	}
 
 	td {
 		padding: 0.2rem 0.4rem;
 		font-size: 1rem;
-		border: 1px solid var(--white);
-		transition: var(--transition-linear);
+		border: 1px solid var(--ctp-macchiato-text);
+		transition: var(--transition);
 	}
 
 	:global(.light) td {
-		border: 1px solid var(--background);
+		border: 1px solid var(--ctp-latte-text);
 	}
 
 	td:first-child {
@@ -991,9 +992,9 @@
 	button {
 		width: 4rem;
 		height: 4rem;
-		border: 2px solid var(--white);
+		border: 2px solid var(--ctp-macchiato-text);
 		background-color: transparent;
-		transition: var(--transition-linear);
+		transition: var(--transition);
 		border-radius: 0.5rem;
 		cursor: pointer;
 		display: flex;
@@ -1003,19 +1004,31 @@
 	}
 
 	:global(.light) button {
-		border: 2px solid var(--background);
+		border: 2px solid var(--ctp-latte-text);
 	}
 
 	button:hover {
-		background-color: var(--blue);
+		background-color: var(--ctp-macchiato-blue);
+	}
+
+	:global(.light) button:hover {
+		background-color: var(--ctp-latte-blue);
 	}
 
 	button:disabled {
-		background-color: var(--red);
+		background-color: var(--ctp-macchiato-red);
+	}
+
+	:global(.light) button:disabled {
+		background-color: var(--ctp-latte-red);
 	}
 
 	button.active {
-		background-color: var(--green);
+		background-color: var(--ctp-macchiato-green);
+	}
+
+	:global(.light) button.active {
+		background-color: var(--ctp-latte-green);
 	}
 
 	button[aria-label]::before {
@@ -1024,12 +1037,12 @@
 		bottom: calc(100% + 1rem);
 		left: 50%;
 		transform: translateX(-50%) scale(0);
-		border: 2px solid var(--white);
-		background-color: var(--background);
-		color: var(--white);
+		border: 2px solid var(--ctp-macchiato-text);
+		background-color: var(--ctp-macchiato-base);
+		color: var(--ctp-macchiato-text);
 		padding: 0.5rem;
 		border-radius: 0.5rem;
-		transition: var(--transition-linear);
+		transition: var(--transition);
 		width: max-content;
 		max-width: 20rem;
 		z-index: 3;
@@ -1039,9 +1052,9 @@
 	}
 
 	:global(.light) button[aria-label]::before {
-		border: 2px solid var(--background);
-		background-color: var(--white);
-		color: var(--background);
+		border: 2px solid var(--ctp-latte-text);
+		background-color: var(--ctp-latte-base);
+		color: var(--ctp-latte-text);
 	}
 
 	button[aria-label]:hover::before {
@@ -1054,11 +1067,11 @@
 	}
 
 	img {
-		transition: var(--transition-linear);
+		transition: var(--transition);
 	}
 
 	:global(.light) img {
-		filter: drop-shadow(0 0 0.1rem var(--background));
+		filter: drop-shadow(0 0 0.1rem var(--ctp-latte-text));
 	}
 
 	#reset-btn {

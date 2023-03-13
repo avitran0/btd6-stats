@@ -22,8 +22,8 @@
 	a {
 		color: var(--white);
 		text-decoration: none;
-		transition: var(--transition-linear);
-		font-family: 'ZillaSlab', serif;
+		transition: var(--transition);
+		font-family: 'Heading', serif;
 		font-size: 2rem;
 		padding: 0.5rem;
 	}

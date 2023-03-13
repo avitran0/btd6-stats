@@ -19,15 +19,15 @@
 
 <style>
 	a {
-		color: var(--white);
-		transition: var(--transition-linear);
-		font-family: 'ZillaSlab', serif;
+		color: var(--ctp-macchiato-text);
+		transition: var(--transition);
+		font-family: 'Heading', serif;
 		font-size: 1.5rem;
 		padding: 0.5rem;
 		text-decoration: underline;
 	}
 
 	:global(.light) a {
-		color: var(--background);
+		color: var(--ctp-latte-text);
 	}
 </style>

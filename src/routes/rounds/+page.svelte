@@ -73,7 +73,8 @@
 <main in:fade={{ duration: 300, delay: 300, easing: cubicOut }} out:fade={{ duration: 300 }}>
 	<h1>Rounds</h1>
 	<div class="round-switch">
-		<button class={abrToggle ? '' : 'active'} on:click={abrToggle ? toggleAbr : null}>Normal</button>
+		<button class={abrToggle ? '' : 'active'} on:click={abrToggle ? toggleAbr : null}>Normal</button
+		>
 		<button class={abrToggle ? 'active' : ''} on:click={abrToggle ? null : toggleAbr}>ABR</button>
 	</div>
 	<div class="table-wrapper">
@@ -137,11 +138,11 @@
 	}
 
 	button {
-		font-family: 'ZillaSlab', serif;
+		font-family: 'Heading', serif;
 		font-size: 1.5rem;
-		color: var(--white);
+		color: var(--ctp-macchiato-text);
 		border: none;
-		transition: var(--transition-linear);
+		transition: var(--transition);
 		padding: 0 0.4rem;
 		background-color: transparent;
 		cursor: pointer;
@@ -150,46 +151,45 @@
 	button::after {
 		content: '';
 		display: block;
-		width: 100%;
+		width: 0;
 		height: 2px;
-		background-color: var(--white);
-		transition: var(--transition-linear);
-		transform: scaleX(0);
+		background-color: var(--ctp-macchiato-text);
+		transition: var(--transition);
 	}
 
 	button:hover::after {
-		transform: scaleX(1);
+		width: 100%;
 	}
 
 	button.active::after {
-		transform: scaleX(1);
-	}
-
-	:global(.light) button {
-		color: var(--background);
+		width: 100%;
 	}
 
 	:global(.light) button::after {
-		background-color: var(--background);
+		background-color: var(--ctp-latte-text);
+	}
+
+	:global(.light) button {
+		color: var(--ctp-latte-text);
 	}
 
 	.table-wrapper {
 		overflow-x: auto;
 		white-space: nowrap;
 		max-width: calc(100vw - 4rem);
-		border: 2px solid var(--white);
+		border: 2px solid var(--ctp-macchiato-text);
 		margin: 1rem 0;
 		border-radius: 0.5rem;
-		transition: var(--transition-linear);
+		transition: var(--transition);
 	}
 
 	:global(.light) .table-wrapper {
-		border: 2px solid var(--background);
+		border: 2px solid var(--ctp-latte-text);
 	}
 
 	table {
 		text-align: center;
-		transition: var(--transition-linear);
+		transition: var(--transition);
 		border-radius: 0.5rem;
 		cursor: default;
 		margin: 0 auto;
@@ -197,38 +197,38 @@
 	}
 
 	th {
-		font-family: 'ZillaSlab', serif;
+		font-family: 'Heading', serif;
 		font-size: 1.2rem;
-		border-bottom: 2px solid var(--white);
-		transition: var(--transition-linear);
+		border-bottom: 2px solid var(--ctp-macchiato-text);
+		transition: var(--transition);
 		padding: 0 0.4rem;
 	}
 
 	:global(.light) th {
-		border-bottom: 2px solid var(--background);
+		border-bottom: 2px solid var(--ctp-latte-text);
 	}
 
 	.bottom th {
 		border-bottom: none;
-		border-top: 2px solid var(--white);
+		border-top: 2px solid var(--ctp-macchiato-text);
 	}
 
 	:global(.light) .bottom th {
 		border-bottom: none;
-		border-top: 2px solid var(--background);
+		border-top: 2px solid var(--ctp-latte-text);
 	}
 
 	td {
 		padding: 0.2rem 0.4rem;
 		font-size: 1rem;
-		border-top: 1px solid var(--white);
-		border-bottom: 1px solid var(--white);
-		transition: var(--transition-linear);
+		border-top: 1px solid var(--ctp-macchiato-text);
+		border-bottom: 1px solid var(--ctp-macchiato-text);
+		transition: var(--transition);
 	}
 
 	:global(.light) td {
-		border-top: 1px solid var(--background);
-		border-bottom: 1px solid var(--background);
+		border-top: 1px solid var(--ctp-latte-text);
+		border-bottom: 1px solid var(--ctp-latte-text);
 	}
 
 	td img {
@@ -237,11 +237,11 @@
 	}
 
 	img {
-		transition: var(--transition-linear);
+		transition: var(--transition);
 	}
 
 	:global(.light) img {
-		filter: drop-shadow(0 0 0.1rem var(--background));
+		filter: drop-shadow(0 0 0.1rem var(--ctp-latte-text));
 	}
 
 	.smol {

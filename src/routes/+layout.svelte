@@ -2,104 +2,61 @@
 	import { fade, draw } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
 	import { onMount } from 'svelte';
-	import { writable } from 'svelte/store';
-	import { page } from '$app/stores';
 
-	const theme = writable('dark');
+	import { theme } from '$lib/theme';
 
 	let menuOpen = false;
-	let menu: HTMLElement;
-	let pageMounted = false;
+	let mounted = false;
 
 	onMount(() => {
-		if (localStorage.getItem('theme') === 'light') {
+		if (localStorage.theme === 'light') {
 			theme.set('light');
+		} else {
+			theme.set('dark');
 		}
 
 		theme.subscribe((value) => {
-			localStorage.setItem('theme', value);
+			localStorage.setItem('theme', value.toString());
 		});
 
 		if ($theme === 'light') {
 			document.body.classList.add('light');
 		}
 
-		menu = document.getElementById('menu')!;
-		pageMounted = true;
+		mounted = true;
 	});
 
+	$: {
+		if (mounted) {
+			document.body.classList.toggle('light', $theme === 'light');
+		}
+	}
+
 	function toggleDarkMode() {
-		document.body.classList.toggle('light');
-		theme.update((value) => {
-			return value === 'dark' ? 'light' : 'dark';
-		});
-	}
-
-	function toggleMenu() {
-		if (menuOpen) {
-			closeMenu();
+		if ($theme === 'dark') {
+			theme.set('light');
 		} else {
-			openMenu();
+			theme.set('dark');
 		}
-	}
-
-	function openMenu() {
-		menu.style.display = 'flex';
-		setTimeout(() => {
-			menu.style.opacity = '1';
-			menu.style.transform = 'translateY(0) scale(1)';
-		}, 10);
-		menuOpen = true;
-	}
-
-	function closeMenu() {
-		menu.style.opacity = '0';
-		menu.style.transform = 'translateY(-1rem) scale(0)';
-		setTimeout(() => {
-			menu.style.display = 'none';
-		}, 200);
-		menuOpen = false;
-	}
-
-	function checkBorder() {
-		if (!pageMounted) return;
-		if (window.scrollY > 5) {
-			document.body.classList.add('scroll');
-		} else {
-			document.body.classList.remove('scroll');
-		}
-	}
-
-	$: if (pageMounted && $page.route.id !== null) {
-		setMenuActive($page.route.id.split('/')[0]);
-	}
-
-	function setMenuActive(link: string) {
-		let nav = document.getElementById('nav')!;
-		nav.classList.remove('towers', 'heroes', 'bloons', 'rounds');
-		if (!link) return;
-		nav.classList.add(link);
 	}
 </script>
 
-<svelte:window on:scroll={checkBorder} />
-
-<header id="header">
-	<nav id="nav">
+<header>
+	<nav>
 		<a href="/">BTD6 Stats</a>
-		<a href="/towers" id="towers-link">Towers</a>
-		<a href="/heroes" id="heroes-link">Heroes</a>
-		<a href="/bloons" id="bloons-link">Bloons</a>
-		<a href="/rounds" id="rounds-link">Rounds</a>
+		<a href="/towers">Towers</a>
+		<a href="/heroes">Heroes</a>
+		<a href="/rounds">Rounds</a>
+		<a href="/bloons">Bloons</a>
 	</nav>
-	<div class="buttons">
+	<div id="button-container">
 		<a href="https://www.github.com/avitran0" id="github-link-navbar"
 			><svg
 				xmlns="http://www.w3.org/2000/svg"
-				width="48"
-				height="48"
+				width="24"
+				height="24"
 				viewBox="0 0 24 24"
-				stroke-width="1.5"
+				stroke-width="2"
 				stroke="#fff"
 				fill="none"
 				stroke-linecap="round"
@@ -109,15 +66,16 @@
 				<path
 					d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
 				/>
-			</svg></a
-		>
+			</svg>
+		</a>
 		<button on:click={toggleDarkMode} aria-label="Dark Mode Toggle" id="dark-mode-button">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				width="48"
-				height="48"
+				width="24"
+				height="24"
 				viewBox="0 0 24 24"
-				stroke-width="1.5"
+				stroke-width="2"
+				stroke="white"
 				fill="none"
 				stroke-linecap="round"
 				stroke-linejoin="round"
@@ -142,80 +100,122 @@
 						d="M20 12h1"
 					/>
 					<path
-						in:draw={{ duration: 100, delay: 150, easing: cubicOut }}
+						in:draw={{ duration: 100, delay: 120, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
 						d="M17.7 17.7l.7.7"
 					/>
 					<path
-						in:draw={{ duration: 100, delay: 200, easing: cubicOut }}
+						in:draw={{ duration: 100, delay: 140, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
 						d="M12 20v1"
 					/>
 					<path
-						in:draw={{ duration: 100, delay: 250, easing: cubicOut }}
+						in:draw={{ duration: 100, delay: 170, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
 						d="M6.3 17.7l-.7.7"
 					/>
 					<path
-						in:draw={{ duration: 100, delay: 300, easing: cubicOut }}
+						in:draw={{ duration: 100, delay: 210, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
 						d="M4 12h-1"
 					/>
 					<path
-						in:draw={{ duration: 100, delay: 350, easing: cubicOut }}
+						in:draw={{ duration: 100, delay: 260, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
 						d="M6.3 6.3l-.7-.7"
 					/>
 					<path
-						in:draw={{ duration: 100, delay: 400, easing: cubicOut }}
+						in:draw={{ duration: 100, delay: 330, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
 						d="M12 4v-1"
 					/>
 					<path
-						in:draw={{ duration: 100, delay: 450, easing: cubicOut }}
+						in:draw={{ duration: 100, delay: 400, easing: cubicOut }}
 						out:fade={{ duration: 100 }}
 						d="M17.7 6.3l.7-.7"
 					/>
 				{/if}
 			</svg>
 		</button>
-		<button on:click={toggleMenu} aria-label="Menu Toggle" id="menu-button">
+		<button on:click={() => (menuOpen = !menuOpen)} aria-label="Menu Toggle" id="menu-button">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="icon icon-tabler icon-tabler-menu-2"
-				width="48"
-				height="48"
+				width="24"
+				height="24"
 				viewBox="0 0 24 24"
-				stroke-width="1.5"
+				stroke-width="2"
+				stroke="#fff"
 				fill="none"
 				stroke-linecap="round"
 				stroke-linejoin="round"
 			>
-				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 				<line x1="4" y1="6" x2="20" y2="6" />
 				<line x1="4" y1="12" x2="20" y2="12" />
 				<line x1="4" y1="18" x2="20" y2="18" />
 			</svg>
 		</button>
 	</div>
-	<div id="menu">
-		<a href="/towers" on:click={closeMenu}>Towers</a>
-		<a href="/heroes" on:click={closeMenu}>Heroes</a>
-		<a href="/bloons" on:click={closeMenu}>Bloons</a>
-		<a href="/rounds" on:click={closeMenu}>Rounds</a>
-	</div>
+	{#if menuOpen}
+		<menu in:fade={{ duration: 100 }} out:fade={{ duration: 100 }} id="menu">
+			<a href="/" on:click={() => (menuOpen = !menuOpen)}>Home</a>
+			<a href="/towers" on:click={() => (menuOpen = !menuOpen)}>Towers</a>
+			<a href="/heroes" on:click={() => (menuOpen = !menuOpen)}>Heroes</a>
+			<a href="/rounds" on:click={() => (menuOpen = !menuOpen)}>Rounds</a>
+			<a href="/bloons" on:click={() => (menuOpen = !menuOpen)}>Bloons</a>
+			<button on:click={() => (menuOpen = !menuOpen)} id="menu-close">Close</button>
+			<button
+				on:click={() => (menuOpen = !menuOpen)}
+				aria-label="Menu Toggle"
+				id="menu-button-menu"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="48"
+					height="48"
+					viewBox="0 0 24 24"
+					stroke-width="2"
+					stroke="#fff"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<line
+						in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						x1="18"
+						y1="6"
+						x2="6"
+						y2="18"
+					/>
+					<line
+						in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
+						out:fade={{ duration: 100 }}
+						x1="6"
+						y1="6"
+						x2="18"
+						y2="18"
+					/>
+				</svg>
+			</button>
+		</menu>
+	{/if}
 </header>
+
 <div id="slot-container">
 	<slot />
 </div>
-<footer>&copy; 2022 Felix Fröhlich. All rights reserved.</footer>
+
+<footer>{new Date().getFullYear()} Felix Fröhlich</footer>
 
 <style>
+	@import url('./catppuccin.css');
+
 	:root {
+		box-sizing: border-box;
+		scroll-behavior: smooth;
+
 		--background: rgb(40, 44, 52);
 		--background-transparent: rgba(40, 44, 52, 0.5);
-		--background-dark: rgb(33, 37, 43);
-		--background-light: rgb(55, 61, 72);
 		--blue: rgb(97, 175, 239);
 		--blue-dark: rgb(38, 131, 208);
 		--green: rgb(152, 195, 121);
@@ -224,55 +224,45 @@
 		--orange: rgb(209, 154, 102);
 		--purple: rgb(198, 120, 221);
 		--teal: rgb(86, 182, 194);
-		--white: rgb(230, 230, 230);
-		--white-transparent: rgba(230, 230, 230, 0.5);
-		--white-dark: rgb(200, 200, 200);
-		--white-light: rgb(240, 240, 240);
-		--transition-linear: 0.2s;
-		--transition-ease-out: 0.2s cubic-bezier(0.33, 1, 0.68, 1);
+		--white: rgb(255, 255, 255);
+		--white-transparent: rgba(255, 255, 255, 0.5);
+		--transition: 0.2s cubic-bezier(0.33, 1, 0.68, 1);
 	}
 
 	@font-face {
-		font-family: 'ZillaSlab';
+		font-family: 'Heading';
 		src: url('/fonts/ZillaSlab.woff2') format('woff2');
 		font-display: swap;
 	}
 
 	@font-face {
-		font-family: 'ZillaSlabBold';
-		src: url('/fonts/ZillaSlabBold.woff2') format('woff2');
+		font-family: 'Body';
+		src: url('/fonts/Rubik.woff2') format('woff2');
 		font-display: swap;
 	}
 
 	@font-face {
-		font-family: 'Nunito';
-		src: url('/fonts/Nunito.woff2') format('woff2');
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: 'JetBrainsMono';
+		font-family: 'Code';
 		src: url('/fonts/JetBrainsMono.woff2') format('woff2');
 		font-display: swap;
 	}
 
-	:global(html) {
-		box-sizing: border-box;
-		scroll-behavior: smooth;
+	:global(*) {
+		transition: var(--transition);
 	}
 
 	:global(body) {
-		margin: 0;
-		font-family: 'Nunito', sans-serif;
+		background-color: var(--ctp-macchiato-base);
+		color: var(--ctp-macchiato-text);
+		font-family: 'Body', monospace;
+		overflow-x: hidden;
 		min-height: 100vh;
-		background-color: var(--background);
-		transition: var(--transition-linear);
-		color: var(--white);
+		margin: 0;
 	}
 
 	:global(body.light) {
-		background-color: var(--white);
-		color: var(--background);
+		background-color: var(--ctp-latte-base);
+		color: var(--ctp-latte-text);
 	}
 
 	:global(main) {
@@ -282,247 +272,254 @@
 		justify-content: flex-start;
 	}
 
-	:global(h1) {
-		font-family: 'ZillaSlab', serif;
-		margin: 0.5rem;
-		font-size: 2rem;
-		cursor: default;
-	}
-
-	:global(h2) {
-		font-family: 'ZillaSlab', serif;
-		margin: 0.5rem;
-		font-size: 1.5rem;
-		cursor: default;
-	}
-
-	:global(p) {
-		font-size: 1rem;
-		margin: 0;
-		cursor: default;
-	}
-
 	header {
-		background-color: var(--background-transparent);
-		color: var(--white);
-		transition: var(--transition-linear);
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		position: sticky;
 		top: 0;
+		width: 100vw;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 48rem;
+		margin: 0 auto;
+		text-align: center;
 		backdrop-filter: blur(0.2rem);
-		z-index: 2;
-		height: 4rem;
-	}
-
-	header::after {
-		content: '';
-		display: block;
-		width: 100%;
-		height: 2px;
-		background-color: var(--white);
-		transition: var(--transition-linear);
-		transform: scaleX(0);
-		transform-origin: left;
-		position: absolute;
-		bottom: 0;
-	}
-
-	:global(.scroll) header::after {
-		transform: scaleX(1);
+		z-index: 1;
+		transition: var(--transition);
+		background-color: var(--ctp-macchiato-base-transparent);
 	}
 
 	:global(.light) header {
-		background-color: var(--white-transparent);
-		color: var(--background);
-	}
-
-	:global(.light) header::after {
-		background-color: var(--background);
+		background-color: var(--ctp-latte-base-transparent);
 	}
 
 	nav {
-		height: 100%;
 		display: flex;
+		justify-content: flex-start;
 		align-items: center;
-		justify-content: center;
-		margin-left: 0.5rem;
+		height: 4rem;
+		margin-left: 1rem;
+	}
+
+	:global(h1) {
+		font-size: 2.4rem;
+		margin: 0;
+		padding: 0;
+		font-family: 'Heading', serif;
+		cursor: default;
+	}
+
+	:global(.light h1) {
+		color: var(--ctp-latte-text);
+	}
+
+	:global(h2) {
+		font-size: 1.5rem;
+		margin: 0;
+		margin-bottom: 0.5rem;
+		padding: 0;
+		font-family: 'Heading', serif;
+		cursor: default;
+	}
+
+	:global(.light h2) {
+		color: var(--ctp-latte-text);
+	}
+
+	:global(p) {
+		font-size: 1.2rem;
+		margin: 0;
+		padding: 0;
+		cursor: default;
+		text-align: left;
+	}
+
+	:global(.light p) {
+		color: var(--ctp-latte-text);
 	}
 
 	a {
-		color: var(--white);
 		text-decoration: none;
-		transition: var(--transition-linear);
-		font-family: 'ZillaSlab', serif;
-		font-size: 1.5rem;
-		padding: 0.5rem;
-		display: none;
+		color: var(--ctp-macchiato-text);
+		margin-right: 1rem;
+		font-size: 1.15rem;
+		font-family: 'Code', monospace;
+	}
+
+	nav a::after {
+		content: '';
+		display: block;
+		position: relative;
+		bottom: 0;
+		width: 0;
+		height: 2px;
+		background-color: var(--ctp-macchiato-text);
+		border-radius: 2px;
+		transition: var(--transition);
+	}
+
+	nav a:hover::after,
+	nav a:active::after,
+	nav a:focus::after,
+	nav a:focus-visible::after {
+		width: 100%;
 	}
 
 	:global(.light) a {
-		color: var(--background);
-	}
-
-	a:first-of-type {
-		font-family: 'ZillaSlabBold', serif;
-		display: block;
-	}
-
-	a::after {
-		content: '';
-		display: block;
-		width: 100%;
-		height: 2px;
-		background-color: var(--white);
-		transition: var(--transition-linear);
-		transform: scaleX(0);
-	}
-
-	a:hover::after {
-		transform: scaleX(1);
+		color: var(--ctp-latte-text);
 	}
 
 	:global(.light) a::after {
-		background-color: var(--background);
+		background-color: var(--ctp-latte-text);
 	}
 
-	:global(nav.towers) #towers-link::after {
-		transform: scaleX(1);
+	nav a:first-child {
+		font-family: 'Heading', serif;
+		font-size: 1.4rem;
 	}
 
-	:global(nav.heroes) #heroes-link::after {
-		transform: scaleX(1);
+	nav a:first-child:hover {
+		text-decoration: none;
 	}
 
-	:global(nav.bloons) #bloons-link::after {
-		transform: scaleX(1);
-	}
-
-	:global(nav.rounds) #rounds-link::after {
-		transform: scaleX(1);
+	#button-container {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
 	}
 
 	button {
-		border: 2px solid var(--white);
-		border-radius: 0.5rem;
 		background-color: transparent;
-		height: 2.4rem;
+		border: 2px solid var(--ctp-macchiato-text);
 		cursor: pointer;
+		height: 2.4rem;
+		border-radius: 0.5rem;
 		display: flex;
-		align-items: center;
 		justify-content: center;
-		margin-right: 0.5rem;
+		align-items: center;
+		margin-right: 1rem;
 	}
 
 	:global(.light) button {
-		border: 2px solid var(--background);
+		border: 2px solid var(--ctp-latte-text);
 	}
 
-	svg {
-		stroke: var(--white);
-		transition: var(--transition-linear);
-	}
-
-	:global(.light) svg {
-		stroke: var(--background);
+	#dark-mode-button {
+		display: grid;
+		width: 2.4rem;
+		height: 2.4rem;
 	}
 
 	#dark-mode-button svg {
-		width: 1.8rem;
-		height: 1.8rem;
+		padding: 0.2rem;
+		grid-column: 1;
+		grid-row: 1;
 	}
 
-	.buttons {
+	#github-link-navbar {
 		display: flex;
-		align-items: center;
 		justify-content: center;
-		margin-right: 0.5rem;
-	}
-
-	.buttons a {
-		width: 2.15rem;
-		height: 2.15rem;
-		border: 2px solid var(--white);
-		padding: 0;
-		display: flex;
 		align-items: center;
-		justify-content: center;
-		border-radius: 0.5rem;
-		margin-right: 0.5rem;
-	}
-
-	:global(.light) .buttons a {
-		border: 2px solid var(--background);
-	}
-
-	.buttons a::after {
-		display: none;
+		margin-right: 0.8rem;
 	}
 
 	a svg {
-		width: 1.8rem;
-		height: 1.8rem;
+		width: 1.6rem;
+		height: 1.6rem;
+		border-radius: 0.5rem;
+		padding: 0.2rem;
+		stroke: var(--ctp-macchiato-text);
 	}
 
-	.buttons a:hover {
-		border: 2px solid var(--white);
+	a svg:hover {
+		background-color: var(--ctp-macchiato-blue);
+		stroke: var(--ctp-macchiato-base);
 	}
 
-	:global(.light) .buttons a:hover {
-		border: 2px solid var(--background);
+	:global(.light) a svg {
+		stroke: var(--ctp-latte-text);
+	}
+
+	:global(.light) a svg:hover {
+		stroke: var(--ctp-latte-base);
+		background-color: var(--ctp-latte-blue);
+	}
+
+	button svg {
+		width: 1.6rem;
+		height: 1.6rem;
+		padding: 0.2rem;
+		stroke: var(--ctp-macchiato-text);
+	}
+
+	:global(.light) button svg {
+		stroke: var(--ctp-latte-text);
 	}
 
 	#menu-button {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 		width: 2.4rem;
 	}
 
 	#menu {
-		display: none;
-		opacity: 0;
-		flex-direction: column;
+		z-index: 1;
 		position: absolute;
-		top: 4rem;
-		right: 1rem;
-		border: 2px solid var(--white);
-		border-radius: 0.5rem;
-		background-color: var(--background);
-		transition: var(--transition-linear);
-		transform: translateY(-1rem) scale(0);
-		transform-origin: top right;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--ctp-macchiato-base-transparent);
+		backdrop-filter: blur(0.5rem);
 	}
 
 	:global(.light) #menu {
-		border: 2px solid var(--background);
-		background-color: var(--white);
+		background-color: var(--ctp-latte-base-transparent);
+	}
+
+	#menu-button-menu {
+		position: absolute;
+		top: 0.8rem;
+		right: 0;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 2.4rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--ctp-macchiato-text);
+	}
+
+	:global(.light) #menu-button-menu {
+		border: 2px solid var(--ctp-latte-text);
 	}
 
 	#menu a {
-		font-size: 1.5rem;
-		display: block;
-		padding: 0.2rem 0.4rem;
-		font-family: 'ZillaSlab', serif;
-	}
-
-	#menu a:first-child {
-		padding-top: 0.4rem;
-	}
-
-	#menu a:last-child {
-		padding-bottom: 0.4rem;
-	}
-
-	#dark-mode-button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	#dark-mode-button svg {
-		width: 1.2rem;
+		margin: 0;
 		padding: 0.2rem;
-		grid-column: 1;
-		grid-row: 1;
+		font-size: 2.4rem;
+	}
+
+	#menu-close {
+		margin: 0.4rem 0;
+		padding: 0 0.2rem;
+		height: auto;
+		color: var(--ctp-macchiato-text);
+		border: none;
+		font-family: 'Code', monospace;
+		font-size: 2.4rem;
+		background-color: transparent;
+	}
+
+	:global(.light) #menu-close {
+		color: var(--ctp-latte-text);
 	}
 
 	#slot-container {
@@ -530,37 +527,53 @@
 	}
 
 	#slot-container :global(main) {
-		grid-row: 1 / 1;
-		grid-column: 1 / 1;
+		grid-column: 1;
+		grid-row: 1;
 	}
 
 	footer {
 		text-align: center;
+		color: var(--ctp-macchiato-text);
+		margin: 2rem;
+		font-size: 0.8rem;
 		cursor: default;
-		margin: 2rem 0;
 	}
 
-	@media (min-width: 36rem) {
-		:global(h1) {
-			font-size: 2.5rem;
-		}
-
-		:global(h2) {
-			font-size: 1.8rem;
-		}
-
-		:global(p) {
-			font-size: 1.2rem;
-		}
+	:global(.light) footer {
+		color: var(--ctp-latte-text);
 	}
 
-	@media (min-width: 42rem) {
-		a {
-			display: block;
+	@media (max-width: 32rem) {
+		header {
+			max-width: 100%;
+		}
+
+		nav a:nth-child(2),
+		nav a:nth-child(3),
+		nav a:nth-child(4),
+		nav a:nth-child(5) {
+			display: none;
 		}
 
 		#menu-button {
+			display: flex;
+		}
+	}
+
+	@media (max-width: 48rem) and (min-width: 32rem) {
+		header {
+			max-width: 100%;
+		}
+
+		nav a:nth-child(2),
+		nav a:nth-child(3),
+		nav a:nth-child(4),
+		nav a:nth-child(5) {
 			display: none;
+		}
+
+		#menu-button {
+			display: flex;
 		}
 	}
 </style>

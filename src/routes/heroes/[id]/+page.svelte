@@ -9,27 +9,27 @@
 
 <main in:fade={{ duration: 300, delay: 300, easing: cubicOut }} out:fade={{ duration: 300 }}>
 	<h1>WIP</h1>
-    <a href="/">Home</a>
+	<a href="/">Home</a>
 </main>
 
 <style>
 	main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 
 	a {
-		color: var(--white);
+		color: var(--ctp-macchiato-text);
 		text-decoration: none;
-		transition: var(--transition-linear);
-		font-family: 'ZillaSlab', serif;
+		transition: var(--transition);
+		font-family: 'Heading', serif;
 		font-size: 2rem;
 		padding: 0.5rem;
 	}
 
 	:global(.light) a {
-		color: var(--background);
+		color: var(--ctp-latte-text);
 	}
 </style>
