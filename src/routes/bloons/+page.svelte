@@ -109,14 +109,10 @@
 		overflow-x: auto;
 		white-space: nowrap;
 		max-width: calc(100vw - 4rem);
-		border: 2px solid var(--ctp-macchiato-text);
+		border: 2px solid var(--text);
 		margin: 1rem 0;
 		border-radius: 0.5rem;
 		transition: var(--transition);
-	}
-
-	:global(.light) .table-wrapper {
-		border: 2px solid var(--ctp-latte-text);
 	}
 
 	table {
@@ -131,36 +127,22 @@
 	th {
 		font-family: 'Heading', serif;
 		font-size: 1.2rem;
-		border-bottom: 2px solid var(--ctp-macchiato-text);
+		border-bottom: 2px solid var(--text);
 		transition: var(--transition);
 		padding: 0 0.4rem;
 	}
 
-	:global(.light) th {
-		border-bottom: 2px solid var(--ctp-latte-text);
-	}
-
 	.bottom th {
 		border-bottom: none;
-		border-top: 2px solid var(--ctp-macchiato-text);
-	}
-
-	:global(.light) .bottom th {
-		border-bottom: none;
-		border-top: 2px solid var(--ctp-latte-text);
+		border-top: 2px solid var(--text);
 	}
 
 	td {
 		padding: 0.2rem 0.4rem;
 		font-size: 1rem;
-		border-top: 1px solid var(--ctp-macchiato-text);
-		border-bottom: 1px solid var(--ctp-macchiato-text);
+		border-top: 1px solid var(--text);
+		border-bottom: 1px solid var(--text);
 		transition: var(--transition);
-	}
-
-	:global(.light) td {
-		border-top: 1px solid var(--ctp-latte-text);
-		border-bottom: 1px solid var(--ctp-latte-text);
 	}
 
 	td img {
@@ -170,10 +152,7 @@
 
 	img {
 		transition: var(--transition);
-	}
-
-	:global(.light) img {
-		filter: drop-shadow(0 0 0.1rem var(--ctp-latte-text));
+		filter: var(--filter);
 	}
 
 	.smol {

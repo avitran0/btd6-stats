@@ -21,15 +21,11 @@
 	}
 
 	a {
-		color: var(--ctp-macchiato-text);
+		color: var(--text);
 		text-decoration: none;
 		transition: var(--transition);
 		font-family: 'Heading', serif;
 		font-size: 2rem;
 		padding: 0.5rem;
-	}
-
-	:global(.light) a {
-		color: var(--ctp-latte-text);
 	}
 </style>

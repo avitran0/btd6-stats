@@ -228,8 +228,6 @@
 			towerName = tower.name;
 		});
 		pageMounted = true;
-
-		console.log(data);
 	});
 
 	async function calcStats() {
@@ -237,16 +235,19 @@
 		currentStats = checkForInfinity(currentStats);
 		if (pathString !== '600' && pathString !== '000') {
 			for (let i = 1; i <= paths[0]; i++) {
-				currentStats = addStats(currentStats, data.stats![`${i}00`]);
-				currentStats = addAbility(currentStats, data.stats![`${i}00`]);
+				let statsToAdd = checkForInfinity(data.stats![`${i}00`]);
+				currentStats = addStats(currentStats, statsToAdd);
+				currentStats = addAbility(currentStats, statsToAdd);
 			}
 			for (let i = 1; i <= paths[1]; i++) {
-				currentStats = addStats(currentStats, data.stats![`0${i}0`]);
-				currentStats = addAbility(currentStats, data.stats![`0${i}0`]);
+				let statsToAdd = checkForInfinity(data.stats![`0${i}0`]);
+				currentStats = addStats(currentStats, statsToAdd);
+				currentStats = addAbility(currentStats, statsToAdd);
 			}
 			for (let i = 1; i <= paths[2]; i++) {
-				currentStats = addStats(currentStats, data.stats![`00${i}`]);
-				currentStats = addAbility(currentStats, data.stats![`00${i}`]);
+				let statsToAdd = checkForInfinity(data.stats![`00${i}`]);
+				currentStats = addStats(currentStats, statsToAdd);
+				currentStats = addAbility(currentStats, statsToAdd);
 			}
 		} else if (pathString === '600') {
 			currentStats = data.stats!['600'];
@@ -266,6 +267,7 @@
 				statsToEdit.attacks[i].pierce += statsToAdd.attacks[i].pierce;
 				statsToEdit.attacks[i].projectiles += statsToAdd.attacks[i].projectiles;
 				statsToEdit.attacks[i].range += statsToAdd.attacks[i].range;
+				// todo: damage type is overridden by the last path
 				statsToEdit.attacks[i].damageType = statsToAdd.attacks[i].damageType;
 				statsToEdit.attacks[i].reloadSpeed *= statsToAdd.attacks[i].reloadSpeed;
 				statsToEdit.attacks[i].camo = statsToAdd.attacks[i].camo;
@@ -334,6 +336,24 @@
 	function checkForInfinity(statsToEdit: Stats) {
 		for (let i = 0; i < statsToEdit.attacks.length; i++) {
 			// go through all stats, replace -1 with actual infinity
+			if (statsToEdit.attacks[i].damage === -1) {
+				statsToEdit.attacks[i].damage = Infinity;
+			}
+			if (statsToEdit.attacks[i].damageMOAB === -1) {
+				statsToEdit.attacks[i].damageMOAB = Infinity;
+			}
+			if (statsToEdit.attacks[i].damageCeramic === -1) {
+				statsToEdit.attacks[i].damageCeramic = Infinity;
+			}
+			if (statsToEdit.attacks[i].damageBoss === -1) {
+				statsToEdit.attacks[i].damageBoss = Infinity;
+			}
+			if (statsToEdit.attacks[i].pierce === -1) {
+				statsToEdit.attacks[i].pierce = Infinity;
+			}
+			if (statsToEdit.attacks[i].projectiles === -1) {
+				statsToEdit.attacks[i].projectiles = Infinity;
+			}
 			if (statsToEdit.attacks[i].range === -1) {
 				statsToEdit.attacks[i].range = Infinity;
 			}
@@ -358,7 +378,7 @@
 			frozen: false
 		};
 
-		for (const bloon in bloons) {
+		for (const bloon of bloons) {
 			if (bloon !== 'camo') {
 				for (let i = 0; i < currentStats.attacks.length; i++) {
 					if (!damageTypes[currentStats.attacks[i].damageType][bloon]) continue;
@@ -913,47 +933,30 @@
 
 	table {
 		text-align: center;
-		border: 2px solid var(--ctp-macchiato-text);
+		border: 2px solid var(--text);
 		transition: var(--transition);
 		border-radius: 0.5rem;
 		cursor: default;
 		border-spacing: 0;
 	}
 
-	:global(.light) table {
-		border: 2px solid var(--ctp-latte-text);
-	}
-
 	th {
 		font-family: 'Heading', serif;
 		font-size: 1.2rem;
-		border-bottom: 1px solid var(--ctp-macchiato-text);
+		border-bottom: 1px solid var(--text);
 		transition: var(--transition);
-	}
-
-	:global(.light) th {
-		border-bottom: 1px solid var(--ctp-latte-text);
 	}
 
 	.bottom-th {
 		border-bottom: none;
-		border-top: 1px solid var(--ctp-macchiato-text);
-	}
-
-	:global(.light) .bottom-th {
-		border-bottom: none;
-		border-top: 1px solid var(--ctp-latte-text);
+		border-top: 1px solid var(--text);
 	}
 
 	td {
 		padding: 0.2rem 0.4rem;
 		font-size: 1rem;
-		border: 1px solid var(--ctp-macchiato-text);
+		border: 1px solid var(--text);
 		transition: var(--transition);
-	}
-
-	:global(.light) td {
-		border: 1px solid var(--ctp-latte-text);
 	}
 
 	td:first-child {
@@ -992,7 +995,7 @@
 	button {
 		width: 4rem;
 		height: 4rem;
-		border: 2px solid var(--ctp-macchiato-text);
+		border: 2px solid var(--text);
 		background-color: transparent;
 		transition: var(--transition);
 		border-radius: 0.5rem;
@@ -1003,32 +1006,16 @@
 		position: relative;
 	}
 
-	:global(.light) button {
-		border: 2px solid var(--ctp-latte-text);
-	}
-
 	button:hover {
-		background-color: var(--ctp-macchiato-blue);
-	}
-
-	:global(.light) button:hover {
-		background-color: var(--ctp-latte-blue);
+		background-color: var(--blue);
 	}
 
 	button:disabled {
-		background-color: var(--ctp-macchiato-red);
-	}
-
-	:global(.light) button:disabled {
-		background-color: var(--ctp-latte-red);
+		background-color: var(--red);
 	}
 
 	button.active {
-		background-color: var(--ctp-macchiato-green);
-	}
-
-	:global(.light) button.active {
-		background-color: var(--ctp-latte-green);
+		background-color: var(--green);
 	}
 
 	button[aria-label]::before {
@@ -1037,9 +1024,9 @@
 		bottom: calc(100% + 1rem);
 		left: 50%;
 		transform: translateX(-50%) scale(0);
-		border: 2px solid var(--ctp-macchiato-text);
-		background-color: var(--ctp-macchiato-base);
-		color: var(--ctp-macchiato-text);
+		border: 2px solid var(--text);
+		background-color: var(--base);
+		color: var(--text);
 		padding: 0.5rem;
 		border-radius: 0.5rem;
 		transition: var(--transition);
@@ -1049,12 +1036,6 @@
 		pointer-events: none;
 		font-family: 'Nunito', sans-serif;
 		display: none;
-	}
-
-	:global(.light) button[aria-label]::before {
-		border: 2px solid var(--ctp-latte-text);
-		background-color: var(--ctp-latte-base);
-		color: var(--ctp-latte-text);
 	}
 
 	button[aria-label]:hover::before {
@@ -1068,10 +1049,7 @@
 
 	img {
 		transition: var(--transition);
-	}
-
-	:global(.light) img {
-		filter: drop-shadow(0 0 0.1rem var(--ctp-latte-text));
+		filter: var(--filter);
 	}
 
 	#reset-btn {

@@ -7,6 +7,7 @@
 
 	let menuOpen = false;
 	let mounted = false;
+	let scrollY = 0;
 
 	onMount(() => {
 		if (localStorage.theme === 'light') {
@@ -26,12 +27,6 @@
 		mounted = true;
 	});
 
-	$: {
-		if (mounted) {
-			document.body.classList.toggle('light', $theme === 'light');
-		}
-	}
-
 	function toggleDarkMode() {
 		if ($theme === 'dark') {
 			theme.set('light');
@@ -41,164 +36,170 @@
 	}
 </script>
 
-<header>
-	<nav>
-		<a href="/">BTD6 Stats</a>
-		<a href="/towers">Towers</a>
-		<a href="/heroes">Heroes</a>
-		<a href="/rounds">Rounds</a>
-		<a href="/bloons">Bloons</a>
-	</nav>
-	<div id="button-container">
-		<a href="https://www.github.com/avitran0" id="github-link-navbar"
-			><svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="24"
-				height="24"
-				viewBox="0 0 24 24"
-				stroke-width="2"
-				stroke="#fff"
-				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			>
-				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-				<path
-					d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-				/>
-			</svg>
-		</a>
-		<button on:click={toggleDarkMode} aria-label="Dark Mode Toggle" id="dark-mode-button">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="24"
-				height="24"
-				viewBox="0 0 24 24"
-				stroke-width="2"
-				stroke="white"
-				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			>
-				{#if $theme === 'dark'}
-					<path
-						in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
-					/>
-				{:else}
-					<circle
-						in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						cx="12"
-						cy="12"
-						r="4"
-					/>
-					<path
-						in:draw={{ duration: 100, delay: 100, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						d="M20 12h1"
-					/>
-					<path
-						in:draw={{ duration: 100, delay: 120, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						d="M17.7 17.7l.7.7"
-					/>
-					<path
-						in:draw={{ duration: 100, delay: 140, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						d="M12 20v1"
-					/>
-					<path
-						in:draw={{ duration: 100, delay: 170, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						d="M6.3 17.7l-.7.7"
-					/>
-					<path
-						in:draw={{ duration: 100, delay: 210, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						d="M4 12h-1"
-					/>
-					<path
-						in:draw={{ duration: 100, delay: 260, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						d="M6.3 6.3l-.7-.7"
-					/>
-					<path
-						in:draw={{ duration: 100, delay: 330, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						d="M12 4v-1"
-					/>
-					<path
-						in:draw={{ duration: 100, delay: 400, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						d="M17.7 6.3l.7-.7"
-					/>
-				{/if}
-			</svg>
-		</button>
-		<button on:click={() => (menuOpen = !menuOpen)} aria-label="Menu Toggle" id="menu-button">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="24"
-				height="24"
-				viewBox="0 0 24 24"
-				stroke-width="2"
-				stroke="#fff"
-				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			>
-				<line x1="4" y1="6" x2="20" y2="6" />
-				<line x1="4" y1="12" x2="20" y2="12" />
-				<line x1="4" y1="18" x2="20" y2="18" />
-			</svg>
-		</button>
-	</div>
-	{#if menuOpen}
-		<menu in:fade={{ duration: 100 }} out:fade={{ duration: 100 }} id="menu">
-			<a href="/" on:click={() => (menuOpen = !menuOpen)}>Home</a>
-			<a href="/towers" on:click={() => (menuOpen = !menuOpen)}>Towers</a>
-			<a href="/heroes" on:click={() => (menuOpen = !menuOpen)}>Heroes</a>
-			<a href="/rounds" on:click={() => (menuOpen = !menuOpen)}>Rounds</a>
-			<a href="/bloons" on:click={() => (menuOpen = !menuOpen)}>Bloons</a>
-			<button on:click={() => (menuOpen = !menuOpen)} id="menu-close">Close</button>
-			<button
-				on:click={() => (menuOpen = !menuOpen)}
-				aria-label="Menu Toggle"
-				id="menu-button-menu"
-			>
-				<svg
+<svelte:head><link rel="stylesheet" href="/themes/{$theme}.css" /></svelte:head>
+
+<svelte:window bind:scrollY />
+
+<header class:scroll={scrollY > 5}>
+	<div class="header-container">
+		<nav>
+			<a href="/">BTD6 Stats</a>
+			<a href="/towers">Towers</a>
+			<a href="/heroes">Heroes</a>
+			<a href="/rounds">Rounds</a>
+			<a href="/bloons">Bloons</a>
+		</nav>
+		<div id="button-container">
+			<a href="https://www.github.com/avitran0" id="github-link-navbar"
+				><svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="48"
-					height="48"
+					width="24"
+					height="24"
 					viewBox="0 0 24 24"
 					stroke-width="2"
-					stroke="#fff"
+					stroke="currentColor"
 					fill="none"
 					stroke-linecap="round"
 					stroke-linejoin="round"
 				>
-					<line
-						in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						x1="18"
-						y1="6"
-						x2="6"
-						y2="18"
-					/>
-					<line
-						in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
-						out:fade={{ duration: 100 }}
-						x1="6"
-						y1="6"
-						x2="18"
-						y2="18"
+					<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+					<path
+						d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
 					/>
 				</svg>
+			</a>
+			<button on:click={toggleDarkMode} aria-label="Dark Mode Toggle" id="dark-mode-button">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					stroke-width="2"
+					stroke="currentColor"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					{#if $theme === 'dark'}
+						<path
+							in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+						/>
+					{:else}
+						<circle
+							in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							cx="12"
+							cy="12"
+							r="4"
+						/>
+						<path
+							in:draw={{ duration: 100, delay: 100, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							d="M20 12h1"
+						/>
+						<path
+							in:draw={{ duration: 100, delay: 120, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							d="M17.7 17.7l.7.7"
+						/>
+						<path
+							in:draw={{ duration: 100, delay: 140, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							d="M12 20v1"
+						/>
+						<path
+							in:draw={{ duration: 100, delay: 170, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							d="M6.3 17.7l-.7.7"
+						/>
+						<path
+							in:draw={{ duration: 100, delay: 210, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							d="M4 12h-1"
+						/>
+						<path
+							in:draw={{ duration: 100, delay: 260, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							d="M6.3 6.3l-.7-.7"
+						/>
+						<path
+							in:draw={{ duration: 100, delay: 330, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							d="M12 4v-1"
+						/>
+						<path
+							in:draw={{ duration: 100, delay: 400, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							d="M17.7 6.3l.7-.7"
+						/>
+					{/if}
+				</svg>
 			</button>
-		</menu>
-	{/if}
+			<button on:click={() => (menuOpen = !menuOpen)} aria-label="Menu Toggle" id="menu-button">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					stroke-width="2"
+					stroke="currentColor"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<line x1="4" y1="6" x2="20" y2="6" />
+					<line x1="4" y1="12" x2="20" y2="12" />
+					<line x1="4" y1="18" x2="20" y2="18" />
+				</svg>
+			</button>
+		</div>
+		{#if menuOpen}
+			<menu in:fade={{ duration: 100 }} out:fade={{ duration: 100 }} id="menu">
+				<a href="/" on:click={() => (menuOpen = !menuOpen)}>Home</a>
+				<a href="/towers" on:click={() => (menuOpen = !menuOpen)}>Towers</a>
+				<a href="/heroes" on:click={() => (menuOpen = !menuOpen)}>Heroes</a>
+				<a href="/rounds" on:click={() => (menuOpen = !menuOpen)}>Rounds</a>
+				<a href="/bloons" on:click={() => (menuOpen = !menuOpen)}>Bloons</a>
+				<button on:click={() => (menuOpen = !menuOpen)} id="menu-close">Close</button>
+				<button
+					on:click={() => (menuOpen = !menuOpen)}
+					aria-label="Menu Toggle"
+					id="menu-button-menu"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="48"
+						height="48"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<line
+							in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							x1="18"
+							y1="6"
+							x2="6"
+							y2="18"
+						/>
+						<line
+							in:draw={{ duration: 500, delay: 100, easing: cubicOut }}
+							out:fade={{ duration: 100 }}
+							x1="6"
+							y1="6"
+							x2="18"
+							y2="18"
+						/>
+					</svg>
+				</button>
+			</menu>
+		{/if}
+	</div>
 </header>
 
 <div id="slot-container">
@@ -208,24 +209,10 @@
 <footer>{new Date().getFullYear()} Felix Fröhlich</footer>
 
 <style>
-	@import url('./catppuccin.css');
-
 	:root {
 		box-sizing: border-box;
 		scroll-behavior: smooth;
 
-		--background: rgb(40, 44, 52);
-		--background-transparent: rgba(40, 44, 52, 0.5);
-		--blue: rgb(97, 175, 239);
-		--blue-dark: rgb(38, 131, 208);
-		--green: rgb(152, 195, 121);
-		--red: rgb(224, 108, 117);
-		--yellow: rgb(229, 192, 123);
-		--orange: rgb(209, 154, 102);
-		--purple: rgb(198, 120, 221);
-		--teal: rgb(86, 182, 194);
-		--white: rgb(255, 255, 255);
-		--white-transparent: rgba(255, 255, 255, 0.5);
 		--transition: 0.2s cubic-bezier(0.33, 1, 0.68, 1);
 	}
 
@@ -252,17 +239,12 @@
 	}
 
 	:global(body) {
-		background-color: var(--ctp-macchiato-base);
-		color: var(--ctp-macchiato-text);
+		background-color: var(--base);
+		color: var(--text);
 		font-family: 'Body', monospace;
 		overflow-x: hidden;
 		min-height: 100vh;
 		margin: 0;
-	}
-
-	:global(body.light) {
-		background-color: var(--ctp-latte-base);
-		color: var(--ctp-latte-text);
 	}
 
 	:global(main) {
@@ -276,20 +258,35 @@
 		position: sticky;
 		top: 0;
 		width: 100vw;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		max-width: 48rem;
-		margin: 0 auto;
-		text-align: center;
 		backdrop-filter: blur(0.2rem);
 		z-index: 1;
 		transition: var(--transition);
-		background-color: var(--ctp-macchiato-base-transparent);
+		background-color: rgba(var(--base-raw), 0.5);
 	}
 
-	:global(.light) header {
-		background-color: var(--ctp-latte-base-transparent);
+	header::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background-color: var(--text);
+		z-index: 1;
+		transition: var(--transition);
+	}
+
+	header.scroll::after {
+		width: 100%;
+	}
+
+	.header-container {
+		max-width: 48rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	nav {
@@ -308,10 +305,6 @@
 		cursor: default;
 	}
 
-	:global(.light h1) {
-		color: var(--ctp-latte-text);
-	}
-
 	:global(h2) {
 		font-size: 1.5rem;
 		margin: 0;
@@ -319,10 +312,6 @@
 		padding: 0;
 		font-family: 'Heading', serif;
 		cursor: default;
-	}
-
-	:global(.light h2) {
-		color: var(--ctp-latte-text);
 	}
 
 	:global(p) {
@@ -333,16 +322,12 @@
 		text-align: left;
 	}
 
-	:global(.light p) {
-		color: var(--ctp-latte-text);
-	}
-
 	a {
 		text-decoration: none;
-		color: var(--ctp-macchiato-text);
+		color: var(--text);
 		margin-right: 1rem;
-		font-size: 1.15rem;
-		font-family: 'Code', monospace;
+		font-size: 1.4rem;
+		font-family: 'Heading', sans-serif;
 	}
 
 	nav a::after {
@@ -352,7 +337,7 @@
 		bottom: 0;
 		width: 0;
 		height: 2px;
-		background-color: var(--ctp-macchiato-text);
+		background-color: var(--text);
 		border-radius: 2px;
 		transition: var(--transition);
 	}
@@ -364,23 +349,6 @@
 		width: 100%;
 	}
 
-	:global(.light) a {
-		color: var(--ctp-latte-text);
-	}
-
-	:global(.light) a::after {
-		background-color: var(--ctp-latte-text);
-	}
-
-	nav a:first-child {
-		font-family: 'Heading', serif;
-		font-size: 1.4rem;
-	}
-
-	nav a:first-child:hover {
-		text-decoration: none;
-	}
-
 	#button-container {
 		display: flex;
 		justify-content: flex-end;
@@ -389,7 +357,7 @@
 
 	button {
 		background-color: transparent;
-		border: 2px solid var(--ctp-macchiato-text);
+		border: 2px solid var(--text);
 		cursor: pointer;
 		height: 2.4rem;
 		border-radius: 0.5rem;
@@ -397,10 +365,6 @@
 		justify-content: center;
 		align-items: center;
 		margin-right: 1rem;
-	}
-
-	:global(.light) button {
-		border: 2px solid var(--ctp-latte-text);
 	}
 
 	#dark-mode-button {
@@ -427,32 +391,18 @@
 		height: 1.6rem;
 		border-radius: 0.5rem;
 		padding: 0.2rem;
-		stroke: var(--ctp-macchiato-text);
 	}
 
 	a svg:hover {
-		background-color: var(--ctp-macchiato-blue);
-		stroke: var(--ctp-macchiato-base);
-	}
-
-	:global(.light) a svg {
-		stroke: var(--ctp-latte-text);
-	}
-
-	:global(.light) a svg:hover {
-		stroke: var(--ctp-latte-base);
-		background-color: var(--ctp-latte-blue);
+		background-color: var(--blue);
+		stroke: var(--base);
 	}
 
 	button svg {
 		width: 1.6rem;
 		height: 1.6rem;
 		padding: 0.2rem;
-		stroke: var(--ctp-macchiato-text);
-	}
-
-	:global(.light) button svg {
-		stroke: var(--ctp-latte-text);
+		stroke: var(--text);
 	}
 
 	#menu-button {
@@ -477,12 +427,8 @@
 		margin: 0;
 		justify-content: center;
 		align-items: center;
-		background-color: var(--ctp-macchiato-base-transparent);
+		background-color: var(--base-transparent);
 		backdrop-filter: blur(0.5rem);
-	}
-
-	:global(.light) #menu {
-		background-color: var(--ctp-latte-base-transparent);
 	}
 
 	#menu-button-menu {
@@ -494,11 +440,7 @@
 		flex-direction: column;
 		width: 2.4rem;
 		border-radius: 0.5rem;
-		border: 2px solid var(--ctp-macchiato-text);
-	}
-
-	:global(.light) #menu-button-menu {
-		border: 2px solid var(--ctp-latte-text);
+		border: 2px solid var(--text);
 	}
 
 	#menu a {
@@ -511,15 +453,11 @@
 		margin: 0.4rem 0;
 		padding: 0 0.2rem;
 		height: auto;
-		color: var(--ctp-macchiato-text);
+		color: var(--text);
 		border: none;
 		font-family: 'Code', monospace;
 		font-size: 2.4rem;
 		background-color: transparent;
-	}
-
-	:global(.light) #menu-close {
-		color: var(--ctp-latte-text);
 	}
 
 	#slot-container {
@@ -533,14 +471,10 @@
 
 	footer {
 		text-align: center;
-		color: var(--ctp-macchiato-text);
+		color: var(--text);
 		margin: 2rem;
 		font-size: 0.8rem;
 		cursor: default;
-	}
-
-	:global(.light) footer {
-		color: var(--ctp-latte-text);
 	}
 
 	@media (max-width: 32rem) {

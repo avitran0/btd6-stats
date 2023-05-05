@@ -20,15 +20,11 @@
 	}
 
 	a {
-		color: var(--white);
+		color: var(--text);
 		text-decoration: none;
 		transition: var(--transition);
 		font-family: 'Heading', serif;
 		font-size: 2rem;
 		padding: 0.5rem;
-	}
-
-	:global(.light) a {
-		color: var(--background);
 	}
 </style>

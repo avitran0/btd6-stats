@@ -54,19 +54,20 @@ export interface Stats {
 		  };
 }
 
+interface Upgrade {
+	name: string;
+	description: string;
+	costs: {
+		easy: number;
+		medium: number;
+		hard: number;
+		impoppable: number;
+	};
+}
+
 export interface Upgrades {
 	'000': {
 		size: number;
-        costs: {
-            easy: number;
-            medium: number;
-            hard: number;
-            impoppable: number;
-        };
-	};
-	'100': {
-		name: string;
-		description: string;
 		costs: {
 			easy: number;
 			medium: number;
@@ -74,189 +75,55 @@ export interface Upgrades {
 			impoppable: number;
 		};
 	};
-	'200': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-	'300': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-	'400': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-	'500': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-	'010': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-    '020': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-    '030': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-    '040': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-    '050': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-    '001': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-    '002': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-    '003': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-    '004': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-    '005': {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
-    '600'?: {
-		name: string;
-		description: string;
-		costs: {
-			easy: number;
-			medium: number;
-			hard: number;
-			impoppable: number;
-		};
-	};
+	'100': Upgrade;
+	'200': Upgrade;
+	'300': Upgrade;
+	'400': Upgrade;
+	'500': Upgrade;
+	'010': Upgrade;
+	'020': Upgrade;
+	'030': Upgrade;
+	'040': Upgrade;
+	'050': Upgrade;
+	'001': Upgrade;
+	'002': Upgrade;
+	'003': Upgrade;
+	'004': Upgrade;
+	'005': Upgrade;
+	'600'?: Upgrade;
 }
 
 export interface StatsAll {
-    '000': Stats;
-    '100': Stats;
-    '200': Stats;
-    '300': Stats;
-    '400': Stats;
-    '500': Stats;
-    '010': Stats;
-    '020': Stats;
-    '030': Stats;
-    '040': Stats;
-    '050': Stats;
-    '001': Stats;
-    '002': Stats;
-    '003': Stats;
-    '004': Stats;
-    '005': Stats;
-    '600'?: Stats;
+	'000': Stats;
+	'100': Stats;
+	'200': Stats;
+	'300': Stats;
+	'400': Stats;
+	'500': Stats;
+	'010': Stats;
+	'020': Stats;
+	'030': Stats;
+	'040': Stats;
+	'050': Stats;
+	'001': Stats;
+	'002': Stats;
+	'003': Stats;
+	'004': Stats;
+	'005': Stats;
+	'600'?: Stats;
 }
 
 export type RoundBloons = {
-    name: string;
-    id: string;
-    hp: number;
-    cashTotal: number;
-    cashTotalLate?: number;
-    children: {
-        id: string;
-        amount: number;
-    }[];
-    speed: number;
-    rbe: number;
-    immunities: string;
-}[]
+	name: string;
+	id: string;
+	hp: number;
+	cashTotal: number;
+	cashTotalLate?: number;
+	children: {
+		id: string;
+		amount: number;
+	}[];
+	speed: number;
+	rbe: number;
+	immunities: string;
+}[];

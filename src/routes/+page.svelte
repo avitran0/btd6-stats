@@ -19,15 +19,11 @@
 
 <style>
 	a {
-		color: var(--ctp-macchiato-text);
+		color: var(--text);
 		transition: var(--transition);
 		font-family: 'Heading', serif;
 		font-size: 1.5rem;
 		padding: 0.5rem;
 		text-decoration: underline;
-	}
-
-	:global(.light) a {
-		color: var(--ctp-latte-text);
 	}
 </style>

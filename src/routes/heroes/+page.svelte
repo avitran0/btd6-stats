@@ -14,7 +14,9 @@
 	<div class="tower-container">
 		{#each heroes as data}
 			<a href={'/heroes/' + data.id}>
-				<img src="/images/{data.id}/lv0.png" alt={data.name} loading="lazy" />
+				<div class="image-container">
+					<img src="/images/{data.id}/lv0.png" alt={data.name} loading="lazy" />
+				</div>
 				<h3>{data.name}</h3>
 			</a>
 		{/each}
@@ -33,7 +35,7 @@
 	}
 
 	a {
-		color: var(--ctp-macchiato-text);
+		color: var(--text);
 		transition: var(--transition);
 		text-decoration: none;
 		display: flex;
@@ -43,24 +45,21 @@
 		text-align: center;
 	}
 
-	:global(.light) a {
-		color: var(--ctp-latte-text);
-	}
-
 	img {
 		max-height: 8rem;
 		max-width: 8rem;
 		object-fit: cover;
 		padding: 0.5rem;
 		border-radius: 0.5rem;
-		border: 2px solid var(--ctp-macchiato-text);
 		transition: var(--transition);
 		min-width: 5rem;
 		min-height: 5rem;
+		filter: var(--filter);
 	}
 
-	:global(.light) img {
-		border: 2px solid var(--ctp-latte-text);
+	.image-container {
+		border-radius: 0.5rem;
+		border: 2px solid var(--text);
 	}
 
 	h3 {
@@ -73,20 +72,12 @@
 		display: block;
 		width: 0;
 		height: 2px;
-		background-color: var(--ctp-macchiato-text);
+		background-color: var(--text);
 		transition: var(--transition);
-	}
-
-	:global(.light) h3::after {
-		background-color: var(--ctp-latte-text);
 	}
 
 	a:hover h3::after {
 		width: 100%;
-	}
-
-	:global(.light) img {
-		filter: drop-shadow(0 0 0.1rem var(--ctp-latte-text));
 	}
 
 	@media (min-width: 64rem) {

@@ -1,411 +1,411 @@
 {
-    "000": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 1,
-                "projectiles": 1,
-                "range": 46,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "001": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 8,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "002": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "003": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "004": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "005": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 50,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 5,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "010": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 1,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "020": {
-        "attacks": [
-            {
-                "name": "Glue Bomb",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            },
-            {
-                "name": "Splat",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 5,
-                "projectiles": 1,
-                "range": 13,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "030": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 0.34,
-                "damageType": "normal",
-                "camo": false
-            },
-            {
-                "name": "Splat",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "040": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            },
-            {
-                "name": "Splat",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {
-            "name": "Glue Strike",
-            "damage": 0,
-            "damageMOAB": 0,
-            "damageCeramic": 0,
-            "damageBoss": 0,
-            "pierce": "Infinity",
-            "projectiles": 1,
-            "range": "Infinity",
-            "reloadSpeed": "Infinity",
-            "damageType": "normal",
-            "camo": true,
-            "duration": 0,
-            "cooldown": 30
-        }
-    },
-    "050": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            },
-            {
-                "name": "Splat",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {
-            "name": "Glue Storm",
-            "damage": 0,
-            "damageMOAB": 0,
-            "damageCeramic": 0,
-            "damageBoss": 0,
-            "pierce": "Infinity",
-            "projectiles": 1,
-            "range": "Infinity",
-            "reloadSpeed": "Infinity",
-            "damageType": "normal",
-            "camo": true,
-            "duration": 15,
-            "cooldown": 30
-        }
-    },
-    "100": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "200": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 1,
-                "damageMOAB": 1,
-                "damageCeramic": 1,
-                "damageBoss": 1,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "300": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 1,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "400": {
-        "attacks": [
-            {
-                "name": "Glue",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 1,
-                "projectiles": 0,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            }
-        ],
-        "ability": {}
-    },
-    "500": {
-        "attacks": [
-            {
-                "name": "Glue Bomb",
-                "damage": 0,
-                "damageMOAB": 5,
-                "damageCeramic": 7,
-                "damageBoss": 0,
-                "pierce": 0,
-                "projectiles": 1,
-                "range": 0,
-                "reloadSpeed": 1,
-                "damageType": "normal",
-                "camo": false
-            },
-            {
-                "name": "Splat",
-                "damage": 0,
-                "damageMOAB": 0,
-                "damageCeramic": 0,
-                "damageBoss": 0,
-                "pierce": 5,
-                "projectiles": 1,
-                "range": 13,
-                "reloadSpeed": 0.25,
-                "damageType": "normal",
-                "camo": false,
-                "crosspath": [
-                    {
-                        "path": "510",
-                        "damage": 0,
-                        "damageMOAB": 0,
-                        "damageCeramic": 0,
-                        "damageBoss": 0,
-                        "pierce": 1,
-                        "projectiles": 0,
-                        "range": 0,
-                        "reloadSpeed": 1,
-                        "damageType": "normal",
-                        "camo": false
-                    },
-                    {
-                        "path": "520",
-                        "damage": 0,
-                        "damageMOAB": 0,
-                        "damageCeramic": 0,
-                        "damageBoss": 0,
-                        "pierce": 5,
-                        "projectiles": 0,
-                        "range": 13,
-                        "reloadSpeed": 1,
-                        "damageType": "normal",
-                        "camo": false
-                    }
-                ]
-            }
-        ],
-        "ability": {}
-    }
+	"000": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 1,
+				"projectiles": 1,
+				"range": 46,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"001": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 8,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"002": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"003": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"004": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"005": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 50,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 5,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"010": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 1,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"020": {
+		"attacks": [
+			{
+				"name": "Glue Bomb",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			},
+			{
+				"name": "Splat",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 5,
+				"projectiles": 1,
+				"range": 13,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"030": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 0.34,
+				"damageType": "normal",
+				"camo": false
+			},
+			{
+				"name": "Splat",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"040": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			},
+			{
+				"name": "Splat",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {
+			"name": "Glue Strike",
+			"damage": 0,
+			"damageMOAB": 0,
+			"damageCeramic": 0,
+			"damageBoss": 0,
+			"pierce": -1,
+			"projectiles": 1,
+			"range": -1,
+			"reloadSpeed": -1,
+			"damageType": "normal",
+			"camo": true,
+			"duration": 0,
+			"cooldown": 30
+		}
+	},
+	"050": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			},
+			{
+				"name": "Splat",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {
+			"name": "Glue Storm",
+			"damage": 0,
+			"damageMOAB": 0,
+			"damageCeramic": 0,
+			"damageBoss": 0,
+			"pierce": -1,
+			"projectiles": 1,
+			"range": -1,
+			"reloadSpeed": -1,
+			"damageType": "normal",
+			"camo": true,
+			"duration": 15,
+			"cooldown": 30
+		}
+	},
+	"100": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"200": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 1,
+				"damageMOAB": 1,
+				"damageCeramic": 1,
+				"damageBoss": 1,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"300": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 1,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"400": {
+		"attacks": [
+			{
+				"name": "Glue",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 1,
+				"projectiles": 0,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			}
+		],
+		"ability": {}
+	},
+	"500": {
+		"attacks": [
+			{
+				"name": "Glue Bomb",
+				"damage": 0,
+				"damageMOAB": 5,
+				"damageCeramic": 7,
+				"damageBoss": 0,
+				"pierce": 0,
+				"projectiles": 1,
+				"range": 0,
+				"reloadSpeed": 1,
+				"damageType": "normal",
+				"camo": false
+			},
+			{
+				"name": "Splat",
+				"damage": 0,
+				"damageMOAB": 0,
+				"damageCeramic": 0,
+				"damageBoss": 0,
+				"pierce": 5,
+				"projectiles": 1,
+				"range": 13,
+				"reloadSpeed": 0.25,
+				"damageType": "normal",
+				"camo": false,
+				"crosspath": [
+					{
+						"path": "510",
+						"damage": 0,
+						"damageMOAB": 0,
+						"damageCeramic": 0,
+						"damageBoss": 0,
+						"pierce": 1,
+						"projectiles": 0,
+						"range": 0,
+						"reloadSpeed": 1,
+						"damageType": "normal",
+						"camo": false
+					},
+					{
+						"path": "520",
+						"damage": 0,
+						"damageMOAB": 0,
+						"damageCeramic": 0,
+						"damageBoss": 0,
+						"pierce": 5,
+						"projectiles": 0,
+						"range": 13,
+						"reloadSpeed": 1,
+						"damageType": "normal",
+						"camo": false
+					}
+				]
+			}
+		],
+		"ability": {}
+	}
 }

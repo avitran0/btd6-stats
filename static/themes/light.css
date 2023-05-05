@@ -1,0 +1,27 @@
+:root {
+	--purple: rgb(140, 60, 240);
+	--purple-raw: 140, 60, 240;
+	--red: rgb(240, 50, 50);
+	--red-raw: 240, 50, 50;
+	--orange: rgb(240, 100, 30);
+	--orange-raw: 240, 100, 30;
+	--yellow: rgb(220, 180, 50);
+	--yellow-raw: 220, 180, 50;
+	--green: rgb(80, 160, 60);
+	--green-raw: 80, 160, 60;
+	--teal: rgb(20, 150, 150);
+	--teal-raw: 20, 150, 150;
+	--blue: rgb(30, 100, 240);
+	--blue-raw: 30, 100, 240;
+	--text: rgb(30, 30, 40);
+	--text-raw: 30, 30, 40;
+	--text-subtle: rgb(100, 100, 120);
+	--text-subtle-raw: 100, 100, 120;
+	--base: rgb(240, 240, 240);
+	--base-raw: 240, 240, 240;
+	--base2: rgb(210, 210, 210);
+	--base2-raw: 210, 210, 210;
+	--base3: rgb(190, 190, 190);
+	--base3-raw: 190, 190, 190;
+	--filter: drop-shadow(0 0 0.1rem var(--text));
+}

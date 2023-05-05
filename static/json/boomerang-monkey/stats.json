@@ -208,7 +208,7 @@
 				"pierce": 40,
 				"projectiles": 1,
 				"range": 50,
-				"reloadSpeed": "Infinity",
+				"reloadSpeed": -1,
 				"damageType": "normal",
 				"camo": false,
 				"crosspath": [
@@ -443,8 +443,8 @@
 				"damageBoss": 2,
 				"pierce": 100,
 				"projectiles": 6,
-				"range": "Infinity",
-				"reloadSpeed": "Infinity",
+				"range": -1,
+				"reloadSpeed": -1,
 				"damageType": "normal",
 				"camo": true,
 				"crosspath": [
@@ -503,7 +503,7 @@
 				"pierce": 1000,
 				"projectiles": 1,
 				"range": 60,
-				"reloadSpeed": "Infinity",
+				"reloadSpeed": -1,
 				"damageType": "normal",
 				"camo": true
 			},
@@ -529,7 +529,7 @@
 				"pierce": 20,
 				"projectiles": 1,
 				"range": 50,
-				"reloadSpeed": "Infinity",
+				"reloadSpeed": -1,
 				"damageType": "normal",
 				"camo": true
 			}

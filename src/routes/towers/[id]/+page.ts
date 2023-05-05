@@ -10,7 +10,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 
 	if (!browser) return;
 
-    filterParagons(id);
+    const imagesFiltered = filterParagons(id);
 
 	let stats = await fetch(`/json/${id}/stats.json`);
 	let upgrades = await fetch(`/json/${id}/upgrades.json`);
@@ -20,7 +20,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 	}
 
 	const promises: Promise<Response>[] = [];
-	for (const image of imageList) {
+	for (const image of imagesFiltered) {
 		promises.push(fetch(`/images/${id}/${image}.png`));
 	}
 	const images = await Promise.all(promises);
@@ -31,7 +31,8 @@ export const load: PageLoad = async ({ fetch, params }) => {
 	return { stats, upgrades, images };
 };
 
-function filterParagons(id: string) {
-	if (!paragons.includes(id)) return;
-	imageList.filter((image: string) => image !== 'par' && image !== 'upar');
+function filterParagons(id: string): string[] {
+	if (paragons.includes(id)) return imageList;
+	// filter out par and upar images
+	return imageList.filter((image: string) => !image.includes('par') && !image.includes('upar'));
 }

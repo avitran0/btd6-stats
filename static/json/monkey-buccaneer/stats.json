@@ -317,8 +317,8 @@
 			"damageBoss": 0,
 			"pierce": 0,
 			"projectiles": 1,
-			"range": "Infinity",
-			"reloadSpeed": "Infinity",
+			"range": -1,
+			"reloadSpeed": -1,
 			"damageType": "normal",
 			"camo": false,
 			"duration": 0,
@@ -375,8 +375,8 @@
 			"damageBoss": 0,
 			"pierce": 0,
 			"projectiles": 3,
-			"range": "Infinity",
-			"reloadSpeed": "Infinity",
+			"range": -1,
+			"reloadSpeed": -1,
 			"damageType": "normal",
 			"camo": false,
 			"duration": 0,
@@ -478,8 +478,8 @@
 				"damageBoss": 1,
 				"pierce": 100,
 				"projectiles": 6,
-				"range": "Infinity",
-				"reloadSpeed": "Infinity",
+				"range": -1,
+				"reloadSpeed": -1,
 				"damageType": "normal",
 				"camo": false
 			}
@@ -509,8 +509,8 @@
 				"damageBoss": 80,
 				"pierce": 200,
 				"projectiles": 6,
-				"range": "Infinity",
-				"reloadSpeed": "Infinity",
+				"range": -1,
+				"reloadSpeed": -1,
 				"damageType": "normal",
 				"camo": true
 			}
