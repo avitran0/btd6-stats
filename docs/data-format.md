@@ -9,6 +9,8 @@ every interface is also defined in src/lib/jsonInterfaces.ts, but here is a quic
 
 most stats are directly taken from [advanced popology](https://www.reddit.com/r/btd6/comments/atomg3/advanced_popology_vol_1_primary_towers/)
 
+[//]: # (todo: update stats to newer version, find better source than adv. popology, it's maybe outdated)
+
 ```ts
 {
     "000": { // path is always written as `$top$middle$bottom`, so 520 is 5 upgrades top, 2 upgrades middle, none bottom
