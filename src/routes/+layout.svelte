@@ -162,7 +162,6 @@
 				<a href="/heroes" on:click={() => (menuOpen = !menuOpen)}>Heroes</a>
 				<a href="/rounds" on:click={() => (menuOpen = !menuOpen)}>Rounds</a>
 				<a href="/bloons" on:click={() => (menuOpen = !menuOpen)}>Bloons</a>
-				<button on:click={() => (menuOpen = !menuOpen)} id="menu-close">Close</button>
 				<button
 					on:click={() => (menuOpen = !menuOpen)}
 					aria-label="Menu Toggle"
@@ -241,7 +240,7 @@
 	:global(body) {
 		background-color: var(--base);
 		color: var(--text);
-		font-family: 'Body', monospace;
+		font-family: 'Body', sans-serif;
 		overflow-x: hidden;
 		min-height: 100vh;
 		margin: 0;
@@ -327,7 +326,7 @@
 		color: var(--text);
 		margin-right: 1rem;
 		font-size: 1.4rem;
-		font-family: 'Heading', sans-serif;
+		font-family: 'Heading', serif;
 	}
 
 	nav a::after {
@@ -447,17 +446,6 @@
 		margin: 0;
 		padding: 0.2rem;
 		font-size: 2.4rem;
-	}
-
-	#menu-close {
-		margin: 0.4rem 0;
-		padding: 0 0.2rem;
-		height: auto;
-		color: var(--text);
-		border: none;
-		font-family: 'Code', monospace;
-		font-size: 2.4rem;
-		background-color: transparent;
 	}
 
 	#slot-container {
